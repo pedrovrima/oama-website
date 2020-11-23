@@ -1,18 +1,49 @@
 import Nav from "../components/nav";
+import Image from "next/image";
 
 export default function IndexPage() {
   return (
-    <div className="">
+    <div className="bg-amber-400 min-h-screen">
       <Nav />
-      <div className="py-20 p-6 m-8 mt-0">
-        <h1 className="text-5xl text-center text-accent-1">Bem vindo </h1>
-        
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus risus quis augue volutpat, eu scelerisque lectus fermentum. Integer tempus tristique erat in maximus. Suspendisse fermentum ligula felis, non auctor diam mollis sit amet. Maecenas interdum euismod augue, sit amet eleifend nisl facilisis non. Nam vitae felis vestibulum lorem volutpat mis vel sit amet urna. Vestibulum vulputate egestas pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean dignissim vitae sapien in finibus. Donec a mauris viverra, lobortis lacus ut, dapibus nisi. Aliquam erat volutpat. Vestibulum eu ipsum dapibus, finibus dui eget, commodo eros. Vestibulum malesuada, mauris quis aliquet aliquam, nisi felis auctor lectus, et rutrum ligula nisi nec turpis. Donec eget odio non turpis varius ultricies. In ac varius dolor. Suspendisse suscipit massa ipsum, eget iaculis mauris tempor ut. Mauris venenatis est metus, at tincidunt ipsum fringilla vitae.</p>
-<p>Vivamus sit a1met velit ex. Aenean a tincidunt tortor. Proin a libero sollicitudin, sagittis eros et, dapibus enim. Cras ullamcorper magna vel enim tempor, nec bibendum magna tincidunt. Phasellus varius consequat tortor at tincidunt. Donec magna lacus, dignissim non laoreet vel, euismod sit amet velit. Donec ligula libero, pharetra ut ultrices vitae, aliquam in nibh. Duis sed tellus leo. Aliquam mollis turpis nec finibus faucibus. Vivamus imperdiet ligula metus, ut faciis erat aliquam quis. Aliquam vehicula metus id libero feugiat vehicula. Phasellus pharetra orci finibus enim condimentum, a tempor nisi luctus. Maecenas vel rutrum lacus, non molestie elit.</p>
-<p>Aliquam fermentum, nisi quis suscipit pulvinar, metus arcu semper ex, a elementum turpis risus non sapien. Proin cursus luctus augue quis mollis. Suspendisse ullamcorper tristique nunc, eu commodo arcu ornare non. Integer sit amet libero tincidunt, eleifend tellus nec, accumsan dolor. Sed sed pretium felis. Integer eu rutrum nibh. Cras ac lacinia mauris.</p>
-<p>Maecenas commodo enim in tortor tincidunt tempus. Curabitur in rhoncus purus. Fusce ac sagittis magna, at rutrum enim. Aenean auctor magna id aliquam egestas. Vestibulum eu augue interdum, vestibulum dui sit amet, tristique libero. Maecenas quis mollis libero. Integer vitae placerat lacus. Curabitur dui tellus, luctus id commodo ac, facilisis nec justo. Cras semper posuere lacus, suscipit molestie sapien euismod sit amet. Vivamus ac ligula non nibh porttitor ultricies.</p>
-<p>Aenean molestie nibh sagittis orci mattis imperdiet. Pellentesque eget ornare ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur et dolor tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mattis orci nec tempor egestas. Vivamus nec risus enim. Sed eu mi nec purus auctor accumsan. Proin et elit sit amet mauris congue porta a eget tortor. Sed non magna nisi. Curabitur vitae ante facilisis, porttitor eros at, pharetra nisi. Sed faucibus semper fermentum. Quisque consequat id orci eget vulputate. Quisque purus turpis, lacinia ut sapien et, egestas condimentum tellus. Nam eu ultricies elit. Pellentesque tincidunt tincidunt iaculis. </p>
+
+      <div className="md:mt-36 flex  items-center justify-center ">
+    
+        {/* <div className=" p-6 m-2 grid gap-4 md:grid-cols-2 grid-rows-2 md:grid-rows-1"> */}
+          <div className="p-8 w-1/2 z-0">
+            <p className="text-lg md:text-5xl text-center font-extrabold text-white mb-6 indent-2  ">
+              O Observatório de Aves da Mantiqueira (OAMa) é uma organização não
+              governamental sem fins lucrativos para o estudo das aves
+              brasileiras e seus habitats, com foco na Mata Atlântica e mais
+              especificamente na Serra da Mantiqueira.
+            </p>
+            <p className="text-md md:text-lg mb-3 indent-2">
+              Os principais objetivos da organização são auxiliar a preencher as
+              lacunas no conhecimento ornitológico brasileiro e promover maior
+              conexão entre ciência, sociedade e conservação. Acreditamos que a
+              melhor forma de tomar decisões e planejar ações para a conservação
+              da biodiversidade é sob a luz do conhecimento. A pesquisa
+              científica é a ferramenta que usamos para buscar, adquirir e
+              documentar este conhecimento.
+            </p>
+            <p className="text-md md:text-lg mb-3 indent-2">
+              Você pode fazer parte e apoiar esse projeto sendo um filiado, um
+              voluntário, ajudando a divulgar nosso trabalho ou mesmo fazendo
+              uma doação.
+            </p>
+          </div>
+          {/* <div className="z-50 row-start-1 border-8 border-solid border-white  rounded-xl row-span-2 md:col-start-2 ">
+            <Image
+              src="/sobre_pic.jpg"
+              alt="Picture of the author"
+              layout="responsive"
+              width="1000"
+              height="600"
+              objectFit="cover"
+              className=""
+            />
+          </div> */}
+        </div>
       </div>
-    </div>
+    // </div>
   );
 }

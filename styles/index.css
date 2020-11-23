@@ -16,3 +16,8 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer utilities {
+  .first-letter{
+    
+  }
+}
