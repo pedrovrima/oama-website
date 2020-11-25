@@ -1,23 +1,115 @@
-import Nav from '../components/nav'
+import Nav from "../components/nav";
+import Image from "next/image";
 
 export default function IndexPage() {
   return (
-<>
-    <Nav />
+    <>
+      {/* <div className="bg-gradient-to-bl from-blue-900 to-yellow-500 relative "> */}
+      <Nav />
 
-<div className="bg-gradient-to-br from-orange-600  to-amber-300 py-20 min-h-screen">
-      <div className="grid grid-cols-4 p-6 grid-rows-4 h-screen gap-4 ">
-        <div className="row-start-1 row-span-1 col-start-1 col-span-3 rounded-md   border-black border-2 border-solid"></div>
-        <div className="row-start-1 row-span-1 col-start-4 col-span-1 rounded-md  border-black border-2 border-solid"></div>
-        <div className="row-start-2 row-span-1 col-start-3 col-span-1 rounded-md   border-black border-2 border-solid"></div>
-        <div className="row-start-2 row-span-2 col-start-4 col-span-1 rounded-md  border-black border-2 border-solid"></div>
+      <div className="grid grid-cols-12 gap-2 md:m-4 mb-12 md:mb-24 mt-8 grid-rows-6 md:p-12 min-h-3/4">
+        {/* <div className="col-start-1 col-span-7 relative   row-start-1 row-span-2 ">
+              {" "}
+              <Image
+                className="rounded-2xl"
+                layout="fill"
+                src="/Mantiqueira.jpg"
+                alt="Picture of the author"
+                // width={2500}
+                // height={4500}
+                objectFit={"cover"}
+              ></Image>
+            </div> */}
 
+        <div className="flex flex-col items-center col-start-1 col-span-12 md:col-span-7 justify-center row-start-1 row-span-4 md:row-span-6">
+          <div className="md:hidden">
+            <Image src="/logo.png" width={"200"} height={"200"}></Image>
+          </div>
 
-        <h1 className="row-start-2 row-span-2 col-start-1 col-span-2 overflow-hidden text-5xl text-left text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
+          <h1 className="text-4xl px-2 md:text-7xl mt-4 text-center text-yellow-50 font-montserrat font-extrabold">
+            Conservação com Ciência
+          </h1>
+          <h2 className="text-lg md:text-xl px-4 md: mt-4 text-center text-yellow-50 font-semibold">
+            Gerando dados e engajamento para a conservação das aves da Mata
+            Atlântica
+          </h2>
+          <button className="border-2 border-solid border-yellow-50 font-semibold mt-3 rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl p-2">
+            Apoie
+          </button>
+        </div>
+
+        <div className="hidden md:block col-start-1 col-span-12 row-start-5 row-span-2 md:col-start-8 md:col-span-2 relative   md:row-start-1 md:row-span-6 ">
+          {" "}
+          <Image
+            className="rounded-2xl"
+            layout="fill"
+            src="/IMG_6943.jpg"
+            alt="Picture of the author"
+            // width={2500}
+            // height={4500}
+            objectFit={"cover"}
+          ></Image>
+        </div>
+
+        <div className="hidden md:block relative col-start-10 col-span-3 row-start-3 row-span-4">
+          {" "}
+          <Image
+            className="rounded-2xl"
+            layout="fill"
+            src="/sobre_pic.jpg"
+            alt="Picture of the author"
+            // width={1500}
+            // height={2500}
+            objectFit={"cover"}
+          ></Image>
+        </div>
+        <div className="hidden md:block relative col-start-10 col-span-3 row-start-1 row-span-2">
+          {" "}
+          <Image
+            className="rounded-2xl"
+            layout="fill"
+            src="/DSC_0241.JPG"
+            alt="Picture of the author"
+            // width={1500}
+            // height={1500}
+            objectFit={"cover"}
+          ></Image>
+        </div>
       </div>
-    </div>
+      <div>
+        <div
+          className="px-6 md:px-48 
+          text-yellow-100  z-0"
+        
+        >
+          <p
+            className="text-lg 
+          md:text-xl  md:pxtext-center mb-6 font-extraboldmb-6 indent-2  "
+          >
+            O Observatório de Aves da Mantiqueira (OAMa) é uma organização não
+            governamental sem fins lucrativos para o estudo das aves brasileiras
+            e seus habitats, com foco na Mata Atlântica e mais especificamente
+            na Serra da Mantiqueira.
+          </p>
+        
+          <p className="text-md md:text-lg mb-6 indent-2">
+            Os principais objetivos da organização são auxiliar a preencher as
+            lacunas no conhecimento ornitológico brasileiro e promover maior
+            conexão entre ciência, sociedade e conservação. Acreditamos que a
+            melhor forma de tomar decisões e planejar ações para a conservação
+            da biodiversidade é sob a luz do conhecimento. A pesquisa científica
+            é a ferramenta que usamos para buscar, adquirir e documentar este
+            conhecimento.
+          </p>
+          <p className="text-md md:text-lg mb-3 indent-2">
+            Você pode fazer parte e apoiar esse projeto sendo um filiado, um
+            voluntário, ajudando a divulgar nosso trabalho ou mesmo fazendo uma
+            doação.
+          </p>
+        </div>
+      </div>
+      {/* </div> */}
+      {/* </div> */}
     </>
-  )
+  );
 }

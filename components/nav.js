@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [{ href: "https://nextjs.org/docs", label: "Doe" }];
 
@@ -77,30 +78,26 @@ export default function Nav() {
     //   </div>
     // </nav>
 
-    <nav className={`transition-colors   ${
-      scroll ? "" : ""
-    } bg-gray-900  w-screen relative`}>
+    <nav
+      className={`transition-colors   ${
+        scroll ? "" : ""
+      } bg-gray-900  w-screen relative`}
+    >
       <div className="p-0 sm:px-6 lg:px-8">
-        <ul
-          className={`flex  justify-end items-center p-4 space-x-4 pr-8`}
-        >
+        <div className={`absolute left-2 top-2 items-center p-5 `}>
+          <Image src="/logo.png" layout="fill" objectFit={"cover"}></Image>
+        </div>
+
+        <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>
           {" "}
           <li>
             <Link href="/">
-              <a
-                className={` text-yellow-400 font-bold no-underline`}
-              >
-                Home
-              </a>
+              <a className={` text-yellow-400 font-bold no-underline`}>Home</a>
             </Link>
           </li>
           <li>
             <Link href="/sobre">
-              <a
-                className={` text-yellow-400 font-bold no-underline`}
-              >
-                Sobre
-              </a>
+              <a className={` text-yellow-400 font-bold no-underline`}>Sobre</a>
             </Link>
           </li>
           {links.map(({ href, label }) => (

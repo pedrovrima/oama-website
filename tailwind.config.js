@@ -6,6 +6,23 @@ module.exports = {
   },
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    minHeight: {
+
+      '0': '0',
+
+      '1/4': '25%',
+
+      '1/2': '50vh',
+
+      '3/4': '75vh',
+
+      
+     },
+
+    fontFamily: {
+      'montserrat': ['Montserrat', 'sans-serif'],
+      
+    },
     textIndent: {
       // defaults to {}
       1: "0.25rem",
@@ -164,6 +181,7 @@ module.exports = {
         "accent-1": "#333",
         amber: colors.amber,
         orange: colors.orange,
+        yellow: colors.yellow
       },
     },
   },
