@@ -1,13 +1,14 @@
 import Nav from "../components/nav";
 import Image from "next/image";
+import Form from "../components/form"
 
 export default function IndexPage() {
   return (
     <>
-      {/* <div className="bg-gradient-to-bl from-blue-900 to-yellow-500 relative "> */}
+      {/* <div className="bg-gradient-to-tr -yellow-200 to-yellow-600 absolute h-screen w-screen "/> */}
       <Nav />
 
-      <div className="grid grid-cols-12 gap-2 md:m-4 mb-12 md:mb-24 mt-8 grid-rows-6 md:p-12 min-h-3/4">
+      <div className="grid grid-cols-12 gap-2 md:m-4 mb-6 md:mb-12 lg:mb-24  relative mt-16 md:mt-8 grid-rows-6 md:p-12 min-h-4/5">
         {/* <div className="col-start-1 col-span-7 relative   row-start-1 row-span-2 ">
               {" "}
               <Image
@@ -26,14 +27,14 @@ export default function IndexPage() {
             <Image src="/logo.png" width={"200"} height={"200"}></Image>
           </div>
 
-          <h1 className="text-4xl px-2 md:text-7xl mt-4 text-center text-yellow-50 font-montserrat font-extrabold">
+          <h1 className="text-4xl px-2 md:text-7xl mt-8 text-center text-yellow-50 font-montserrat font-extrabold">
             Conservação com Ciência
           </h1>
-          <h2 className="text-lg md:text-xl px-4 md: mt-4 text-center text-yellow-50 font-semibold">
+          <h2 className="text-lg md:text-2xl px-4 md: mt-8 text-center text-yellow-50 font-semibold">
             Gerando dados e engajamento para a conservação das aves da Mata
             Atlântica
           </h2>
-          <button className="border-2 border-solid border-yellow-50 font-semibold mt-3 rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl p-2">
+          <button className="border-2 border-solid  border-yellow-50 font-semibold mt-16 rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl py-2 px-4">
             Apoie
           </button>
         </div>
@@ -79,19 +80,44 @@ export default function IndexPage() {
       <div>
         <div
           className="px-6 md:px-48 
-          text-yellow-100  z-0"
-        
+          text-yellow-100 mb-36 z-0"
         >
+          <div className=" md:hidden md:float-right mb-4">
+            {" "}
+            <Image
+              className="rounded-2xl"
+              // layout="responsive"
+              src="/_FR_7083.jpg"
+              alt="Picture of the author"
+              width={1600}
+              height={900}
+              objectFit={"cover"}
+            ></Image>
+          </div>
+
+          <div className="hidden md:block md:float-right mx-16 md:mt-4 ">
+            {" "}
+            <Image
+              className="rounded-2xl"
+              // layout="responsive"
+              src="/_FR_7083.jpg"
+              alt="Picture of the author"
+              width={400}
+              height={500}
+              objectFit={"cover"}
+            ></Image>
+          </div>
+
           <p
             className="text-lg 
-          md:text-xl  md:pxtext-center mb-6 font-extraboldmb-6 indent-2  "
+          md:text-xl  md:pxtext-center mb-6 font-bold indent-2  "
           >
             O Observatório de Aves da Mantiqueira (OAMa) é uma organização não
             governamental sem fins lucrativos para o estudo das aves brasileiras
             e seus habitats, com foco na Mata Atlântica e mais especificamente
             na Serra da Mantiqueira.
           </p>
-        
+
           <p className="text-md md:text-lg mb-6 indent-2">
             Os principais objetivos da organização são auxiliar a preencher as
             lacunas no conhecimento ornitológico brasileiro e promover maior
@@ -107,7 +133,16 @@ export default function IndexPage() {
             doação.
           </p>
         </div>
+
+
+<div className="px-6 md:px-48 
+          text-yellow-100 text-center">
+  <h2 className="text-3xl font-montserrat ">Estamos reformulando nosso site e adicionando novas informações</h2>
+  <h2 className="text-md font-bold mt-6 ">Para mais informções e contato, você pode ir no nosso Instagram, Facebook ou enviar mensagem pelo formulário abaixo</h2>
+<Form></Form>
+</div>
       </div>
+
       {/* </div> */}
       {/* </div> */}
     </>

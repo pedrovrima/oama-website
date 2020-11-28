@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.0.2",
+    "aws-sdk": "^2.799.0",
+    "email-validator": "^2.0.4",
     "next": "latest",
     "postcss": "^8.1.8",
     "react": "^16.13.1",
