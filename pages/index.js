@@ -7,7 +7,7 @@ export default function IndexPage() {
       {/* <div className="bg-gradient-to-bl from-blue-900 to-yellow-500 relative "> */}
       <Nav />
 
-      <div className="grid grid-cols-12 gap-2 md:m-4 mb-12 md:mb-24 mt-8 grid-rows-6 md:p-12 min-h-3/4">
+      <div className="grid grid-cols-12 gap-2 md:m-4  md:mb-24 mt-8 grid-rows-6 md:p-12 min-h-3/4">
         {/* <div className="col-start-1 col-span-7 relative   row-start-1 row-span-2 ">
               {" "}
               <Image
@@ -33,7 +33,7 @@ export default function IndexPage() {
             Gerando dados e engajamento para a conservação das aves da Mata
             Atlântica
           </h2>
-          <button className="border-2 border-solid border-yellow-50 font-semibold mt-3 rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl p-2">
+          <button className="border-2 border-solid border-yellow-50 font-semibold rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl p-2 px-4 mt-8">
             Apoie
           </button>
         </div>
@@ -79,19 +79,40 @@ export default function IndexPage() {
       <div>
         <div
           className="px-6 md:px-48 
-          text-yellow-100  z-0"
-        
+          text-yellow-100  z-0 mb-24"
         >
+          <div className="float-right m-8 mt-0 hidden md:block">
+            <Image
+              className="rounded-2xl float-right"
+              // layout="fixed"
+              src="/_FR_7083.jpg"
+              alt="Picture of the author"
+              width={300}
+              height={400}
+              objectFit={"cover"}
+            ></Image>
+          </div>
+
+          <div className=" m-8 mt-0 md:hidden ">
+            <Image
+              className="rounded-2xl float-right"
+              // layout="fixed"
+              src="/_FR_7083.jpg"
+              alt="Picture of the author"
+              width={500}
+              height={300}
+              objectFit={"cover"}
+            ></Image>
+          </div>
           <p
             className="text-lg 
-          md:text-xl  md:pxtext-center mb-6 font-extraboldmb-6 indent-2  "
+          md:text-xl pt-8 font-extrabold mb-6 indent-2  "
           >
             O Observatório de Aves da Mantiqueira (OAMa) é uma organização não
             governamental sem fins lucrativos para o estudo das aves brasileiras
             e seus habitats, com foco na Mata Atlântica e mais especificamente
             na Serra da Mantiqueira.
           </p>
-        
           <p className="text-md md:text-lg mb-6 indent-2">
             Os principais objetivos da organização são auxiliar a preencher as
             lacunas no conhecimento ornitológico brasileiro e promover maior
@@ -106,6 +127,57 @@ export default function IndexPage() {
             voluntário, ajudando a divulgar nosso trabalho ou mesmo fazendo uma
             doação.
           </p>
+        </div>
+
+        <div className="text-center mb-24 mt-36">
+          <p className="text-2xl font-montserrat  text-yellow-50">
+            Nosso novo site está em construção.
+          </p>
+
+          <p className="text-lg font-montserrat  text-yellow-50">
+            Contato e mais informações
+          </p>
+
+          <div className="flex justify-center mt-4"> 
+          <a target="_blank" href="http://facebook.com/oamantiqueira" >          <Image
+              className=""
+              // layout="fixed"
+              src="/facebook.svg"
+              alt="Picture of the author"
+              width={30}
+              height={30}
+              objectFit={"cover"}
+            ></Image>
+            </a>
+
+            <a target="_blank" href="http://instagram.com/oamantiqueira" className="ml-6">
+             <Image
+              className=""
+              // layout="fixed"
+              src="/instagram.svg"
+              alt="Picture of the author"
+              width={30}
+              height={30}
+              objectFit={"cover"}
+            ></Image>
+            </a>
+
+            <a className="ml-6"
+            href="mailto:someone@example.com"
+                        >
+             <Image
+              className=""
+              
+              // layout="fixed"
+              src="/email.svg"
+              alt="Picture of the author"
+              width={30}
+              height={30}
+              objectFit={"cover"}
+            ></Image>
+            </a>
+
+          </div>
         </div>
       </div>
       {/* </div> */}

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const links = [{ href: "https://nextjs.org/docs", label: "Doe" }];
+const links = [{ href: "https://www.paypal.com/donate?hosted_button_id=FXVCKDBL68Q4U&source=url", label: "Doe" }];
 
 export default function Nav() {
   const [scroll, setScroll] = useState(0);
@@ -90,19 +90,16 @@ export default function Nav() {
 
         <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>
           {" "}
+          
           <li>
-            <Link href="/">
-              <a className={` text-yellow-400 font-bold no-underline`}>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/sobre">
-              <a className={` text-yellow-400 font-bold no-underline`}>Sobre</a>
+            <Link href="/en">
+              <a className={` text-yellow-400 font-bold no-underline`}>English</a>
             </Link>
           </li>
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a
+              target="_blank"
                 href={href}
                 className={`ring-yellow-400 text-yellow-400 transition-colors ring-2  font-bold py-2 px-4 rounded no-underline`}
               >
