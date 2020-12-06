@@ -27,8 +27,7 @@ export default function IndexPage() {
           </div>
 
           <h1 className="text-4xl px-2 md:text-7xl mt-4 text-center text-yellow-50 font-montserrat font-extrabold">
-            Conservação com Ciência
-          </h1>
+Science based Conservation          </h1>
           <h2 className="text-lg md:text-xl px-4 md: mt-4 text-center text-yellow-50 font-semibold">
             Gerando dados e engajamento para a conservação das aves da Mata
             Atlântica

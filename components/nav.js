@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const links = [{ href: "https://www.paypal.com/donate?hosted_button_id=FXVCKDBL68Q4U&source=url", label: "Doe" }];
+import { useRouter } from "next/router";
 
 export default function Nav() {
+  const router = useRouter();
+  const links = [
+    {
+      href:
+        "https://www.paypal.com/donate?hosted_button_id=FXVCKDBL68Q4U&source=url",
+      label: router.locale === "pt-BR" ? "Doe" : "Donate",
+    },
+  ];
+
   const [scroll, setScroll] = useState(0);
   useEffect(
     () =>
@@ -90,16 +98,25 @@ export default function Nav() {
 
         <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>
           {" "}
-          
           <li>
-            <Link href="/en">
-              <a className={` text-yellow-400 font-bold no-underline`}>English</a>
-            </Link>
+            {router.locale === "pt-BR" ? (
+              <Link href="/" locale="en-US">
+                <a className={` text-yellow-400 font-bold no-underline`}>
+                  English
+                </a>
+              </Link>
+            ) : (
+              <Link href="/" locale="pt-BR">
+                <a className={` text-yellow-400 font-bold no-underline`}>
+                  Português
+                </a>
+              </Link>
+            )}
           </li>
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a
-              target="_blank"
+                target="_blank"
                 href={href}
                 className={`ring-yellow-400 text-yellow-400 transition-colors ring-2  font-bold py-2 px-4 rounded no-underline`}
               >
