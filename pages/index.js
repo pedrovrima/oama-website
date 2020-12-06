@@ -7,7 +7,7 @@ export default function IndexPage() {
       {/* <div className="bg-gradient-to-bl from-blue-900 to-yellow-500 relative "> */}
       <Nav />
 
-      <div className="grid grid-cols-12 gap-2 md:m-4  md:mb-24 mt-8 grid-rows-6 md:p-12 min-h-3/4">
+      <div className="md:grid grid-cols-12 gap-2 md:m-4  mb-36 md:mb-24 mt-8 grid-rows-6 md:p-12 md:min-h-3/4">
         {/* <div className="col-start-1 col-span-7 relative   row-start-1 row-span-2 ">
               {" "}
               <Image
@@ -93,9 +93,9 @@ export default function IndexPage() {
             ></Image>
           </div>
 
-          <div className=" m-8 mt-0 md:hidden ">
+          <div className=" m-8 mt-0 md:hidden flex justify-center">
             <Image
-              className="rounded-2xl float-right"
+              className="rounded-2xl "
               // layout="fixed"
               src="/_FR_7083.jpg"
               alt="Picture of the author"
