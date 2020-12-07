@@ -27,12 +27,15 @@ export default function IndexPage() {
           </div>
 
           <h1 className="text-4xl px-2 md:text-7xl mt-4 text-center text-yellow-50 font-montserrat font-extrabold">
-Science based Conservation          </h1>
+            Conservação com Ciência
+          </h1>
           <h2 className="text-lg md:text-xl px-4 md: mt-4 text-center text-yellow-50 font-semibold">
-          Generating data and engagement for the conservation of Atlantic Forest birds          </h2>
+            Gerando dados e engajamento para a conservação das aves da Mata
+            Atlântica
+          </h2>
           <a href="https://www.paypal.com/donate?hosted_button_id=FXVCKDBL68Q4U&source=url" target="_blank">
           <button className="border-2 border-solid border-yellow-50 font-semibold rounded-3xl bg-yellow-50 text-yellow-600 shadow-xl p-2 px-4 mt-8">
-            Support
+            Apoie
           </button>
           </a>
         </div>
@@ -107,26 +110,34 @@ Science based Conservation          </h1>
             className="text-lg 
           md:text-xl pt-8 font-extrabold mb-6 indent-2  "
           >
-
-OAMa – The Mantiqueira Bird Observatory is an independent nonprofit organization for the study and conservation of Atlantic Forest birds, especially in the Mantiqueira mountain range, Brazil.
-
+            O Observatório de Aves da Mantiqueira (OAMa) é uma organização não
+            governamental sem fins lucrativos para o estudo das aves brasileiras
+            e seus habitats, com foco na Mata Atlântica e mais especificamente
+            na Serra da Mantiqueira.
           </p>
           <p className="text-md md:text-lg mb-6 indent-2">
- Our main goals are to help to fill the gaps on brazilian ornithology and to promote the connection between science, people and conservation. We believe that the best way to plan and do biodiversity conservation is under the light of knowledge. Scientific research is the tool we use to seek and promote this knowledge. 
-            </p>
+            Os principais objetivos da organização são auxiliar a preencher as
+            lacunas no conhecimento ornitológico brasileiro e promover maior
+            conexão entre ciência, sociedade e conservação. Acreditamos que a
+            melhor forma de tomar decisões e planejar ações para a conservação
+            da biodiversidade é sob a luz do conhecimento. A pesquisa científica
+            é a ferramenta que usamos para buscar, adquirir e documentar este
+            conhecimento.
+          </p>
           <p className="text-md md:text-lg mb-3 indent-2">
-You can be part and support our team as an affiliated, volunteering, helping to share our work or even making an any time any value donation.         
-
+            Você pode fazer parte e apoiar esse projeto sendo um filiado, um
+            voluntário, ajudando a divulgar nosso trabalho ou mesmo fazendo uma
+            doação.
           </p>
         </div>
 
         <div className="text-center mb-24 mt-36">
           <p className="text-2xl font-montserrat  text-yellow-50">
-Our new website is under construction.
+            Nosso novo site está em construção.
           </p>
 
           <p className="text-lg font-montserrat  text-yellow-50">
-            Contact and more information
+            Contato e mais informações
           </p>
 
           <div className="flex justify-center mt-4"> 
