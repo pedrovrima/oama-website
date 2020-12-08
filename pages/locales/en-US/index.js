@@ -98,8 +98,8 @@ Science based Conservation          </h1>
               // layout="fixed"
               src="/_FR_7083.jpg"
               alt="Picture of the author"
-              width={500}
-              height={300}
+              width={350}
+              height={210}
               objectFit={"cover"}
             ></Image>
           </div>
