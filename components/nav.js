@@ -80,12 +80,12 @@ export default function Nav() {
 
     <nav
       className={`transition-colors   ${
-        scroll ? "" : ""
-      } bg-gray-900  w-screen relative`}
+        scroll ? "bg-gray-900" : " "
+      }  fixed w-full z-30 top-0 text-white`}
     >
-      <div className="p-0 sm:px-6 lg:px-8">
-        <div className={`absolute left-2 top-2 items-center p-5 `}>
-          <Image src="/logo.png" layout="fill" objectFit={"cover"}></Image>
+      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div className={`pl-0 flex items-center`}>
+          <Image src="/logo.png" width={50} height={50} objectFit={"cover"}></Image>
         </div>
 
         <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>

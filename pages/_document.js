@@ -11,8 +11,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+
         </Head>
-        <body className="bg-yellow-600">
+        <body className="bg-white" style={{fontFamily: 'Source Sans Pro, sans-serif'}}>
           <Main />
           <NextScript />
         </body>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function IndexPage() {
   return (
-    <div className="bg-amber-500 min-h-screen">
+    <div className="bg-amber-200 min-h-screen">
       <Nav />
 
       <div className="md:mt-36 flex  items-center justify-center ">

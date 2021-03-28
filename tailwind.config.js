@@ -23,7 +23,6 @@ module.exports = {
 
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
-      
     },
     textIndent: {
       // defaults to {}
