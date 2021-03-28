@@ -5,7 +5,7 @@ export default function Hero() {
     //   Hero
     <div className=" relative hero-small md:hero">
       <div className="pt-32 lg:pb-16 md:pb-16 h-full flex justify-items-center items-center">
-        <div className="container px-3 mx-auto h-full flex flex-wrap flex-col z-50 md:flex-row  ">
+        <div className="container px-3 mx-auto h-full flex flex-wrap flex-col z-30 md:flex-row  ">
           {/* Left Col */}
           <div className="flex flex-col text-yellow-100 w-full md:w-1/3 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">
