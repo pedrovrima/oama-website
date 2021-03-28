@@ -18,7 +18,7 @@ export default function Hero() {
               Gerando dados e engajamento para a conservação das aves da Mata
               Atlântica
             </p>
-            <button className="mx-auto md:mx-0 hover:underline bg-yellow-400 text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
+            <button className="mx-auto md:mx-0 hover:underline bg-yellow-500 text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
               Apoie
             </button>
           </div>
