@@ -37,6 +37,7 @@ export default function Hero() {
           //   height={"1000"}
           objectFit="cover"
           objectPosition="center"
+          priority={true}
         ></Image>
       </div>
     </div>
