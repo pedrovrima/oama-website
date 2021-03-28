@@ -50,15 +50,13 @@ Também usamos dados secundários e de ciência cidadã para elaborar estudos po
                 ></Image>
               </div>
             </div>
-            <div class="w-full sm:w-2/3 p-6 mt-6">
-              <div class="align-top text-top">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Conservação{" "}
+
+            <div class="w-full sm:w-2/3 p-6">
+              <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">                  Conservação{" "}
                 </h3>
                 <p class="text-gray-600 mb-8">
                 A conservação e restauração da biodiversidade é o grande objetivo geral do OAMa. Nossas pesquisas e nossas ações são pensadas e realizadas visando fornecer ferramentas para conservação ambiental. Mas buscamos também atuar mais diretamente em ações e projetos de conservação. Somos colaboradores do <strong>Plano de Ação Nacional para Conservação de Aves da Mata Atlântica</strong> e fazemos parte da Allience (vou buscar o nome específico).                </p>
               </div>
-            </div>
             <div class="flex md:flex-row-reverse  justify-center items-center   flex-wrap">
             <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
               <div>
@@ -73,9 +71,9 @@ Também usamos dados secundários e de ciência cidadã para elaborar estudos po
                 </div>
               </div>
 
-              <div class="w-5/6 sm:w-2/3 mt-6 p-6">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Educação e Divulgação Científica
+
+              <div class="w-full sm:w-2/3 p-6">
+              <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">                  Educação e Divulgação Científica
                 </h3>
                 <p class="text-gray-600 mb-8">
                 Acreditamos que além de conhecimento e informação de qualidade, precisamos de muitos "braços" para realizar ações de conservação efetivas. Por isso um dos braços do OAMa visa agregar mais pessoas à nossa causa e disseminar conhecimento, e fazemos isso através de ações de educação e divulgação científica.<br/>
