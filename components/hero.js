@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
     //   Hero
-    <div className=" relative hero">
+    <div className=" relative hero-small md:hero">
       <div className="pt-32 lg:pb-16 md:pb-16 h-full flex justify-items-center items-center">
-        <div className="container px-3 mx-auto h-full flex flex-wrap flex-col z-50 md:flex-row justify-items-center ">
+        <div className="container px-3 mx-auto h-full flex flex-wrap flex-col z-50 md:flex-row  ">
           {/* Left Col */}
-          <div className="flex flex-col text-yellow-100 w-full md:w-2/6  text-center md:text-left">
+          <div className="flex flex-col text-yellow-100 w-full md:w-1/3 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">
               Observatório de Aves da Mantiqueira
             </p>
@@ -18,7 +18,7 @@ export default function Hero() {
               Gerando dados e engajamento para a conservação das aves da Mata
               Atlântica
             </p>
-            <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 w-1/4 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <button className="mx-auto md:mx-0 hover:underline bg-yellow-400 text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
               Apoie
             </button>
           </div>
@@ -36,7 +36,7 @@ export default function Hero() {
           //   width={"2000"}
           //   height={"1000"}
           objectFit="cover"
-          objectPosition="right"
+          objectPosition="center"
         ></Image>
       </div>
     </div>
