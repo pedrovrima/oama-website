@@ -116,6 +116,7 @@ export default function Nav() {
       }`}
     >
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <Link href="/">
         <div class="pl-4 flex items-center">
           <a
             class="flex toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
@@ -129,6 +130,7 @@ export default function Nav() {
             ></Image>
           </a>
         </div>
+        </Link>
         {/* Hamburguer Menu  */}
         {/* <div class="block hidden pr-4">
           <button
@@ -184,6 +186,8 @@ export default function Nav() {
               </a>
             </li>
           </ul> */}
+                  <Link href="/apoie">
+
           <div className="justify-end flex items-end">
             <button
               id="navAction"
@@ -192,6 +196,7 @@ export default function Nav() {
               Doe
             </button>
           </div>
+          </Link>
         </div>
       </div>
     </nav>

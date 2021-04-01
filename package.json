@@ -7,10 +7,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^5.1.1",
     "autoprefixer": "^10.0.2",
     "aws-sdk": "^2.799.0",
     "email-validator": "^2.0.4",
-    "next": "latest",
+    "next": "^10.1.2",
     "postcss": "^8.1.8",
     "react": "^16.13.1",
     "react-cool-onclickoutside": "^1.6.1",
