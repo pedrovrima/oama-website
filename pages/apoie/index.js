@@ -1,6 +1,7 @@
 import Nav from "../../components/nav";
 import { useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import Image from "next/image";
 
 export default function Apoie() {
   const initialOptions = {
@@ -43,17 +44,34 @@ export default function Apoie() {
   // },[])
 
   return (
-    <div>
+    <div className="pb-32">
       <Nav />
-      <div className="mt-32">
-        <div class="container max-w-4xl mx-auto ">
-          <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-            Apoie{" "}
-          </h1>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      <div className=" relative hero-small md:hero min-h-1/2">
+        <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
+          <div className="absolute top-0 h-full w-full">
+            <Image
+              // className="h-32"
+              src="/_FR_7083.jpg"
+              layout="fill"
+              //   width={"2000"}
+              //   height={"1000"}
+              objectFit="cover"
+              objectPosition="center"
+              priority={true}
+            ></Image>
           </div>
+        </div>
+      </div>
 
+      <div className="mt-16">
+        <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
+          Apoie{" "}
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+
+        <div class="container max-w-4xl mx-auto ">
           <p class="text-gray-600 px-8 md:px-0 mb-2">
             O OAMa é uma iniciativa sem fins lucrativos e independente, que só é
             viável graças à energia, dedicação e colaboração de pessoas que
