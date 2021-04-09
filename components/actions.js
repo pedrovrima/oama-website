@@ -101,19 +101,18 @@ export default function Actions() {
             <p class="text-gray-600 mb-8">
               Um dos braços do OAMa visa sensibilizar pessoas de todas as
               idades, classes, gêneros e raças à nossa causa e disseminar
-              conhecimento sobre meio ambiente e biodiversidade. Por meio de
+              conhecimento sobre meio ambiente e biodiversidade. <br/> Por meio de
               ações de Educação e Divulgação científica, nossa equipe busca
               adequar a linguagem da Ciência ao público geral e especializado.
               Na área de educação Educação elaboramos e promovemos cursos, tanto
               em temas técnicos na área derelacionados a ornitologia como em
               temas lúdicos voltados parasobre a avifauna. Para realizar
               divulgação científica usamos as redes sociais como ferramenta de
-              comunicação. Estamos constantemente produzindo e espalhando
+              comunicação. <br/> Estamos constantemente produzindo e espalhando
               conteúdo sobre ciência e ornitologia em nossas redes sociais.
               Realizamos também projetos específicos de divulgação científica,
               com atividades interativas e materiais informativos para
-              distribuição. A atividade
-              <strong>Dia de campo: conhecendo as aves</strong> e o livreto
+              distribuição. A atividade               <strong>Dia de campo: conhecendo as aves</strong> e o livreto
               “Ornitologia pra todo dia” sãoé um exemplos deste tipo de projeto
               elaborado ede ações realizado realizadas pelo OAMa.
             </p>
