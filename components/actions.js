@@ -75,7 +75,7 @@ export default function Actions() {
                 Plano de Ação Nacional para Conservação de Aves da Mata
                 Atlântica
               </strong>{" "}
-              e fazemos parte da Allience (vou buscar o nome específico).{" "}
+              e fazemos parte da <strong>Bird Friendly Coalition</strong>.{" "}
             </p>
           </div>
         </div>
