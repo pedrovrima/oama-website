@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import useOnclickOutside from "react-cool-onclickoutside";
+
+const links = [{ href: "https://nextjs.org/docs", label: "Doe" }];
 
 export default function Nav() {
-  const router = useRouter();
-  const links = [
-    {
-      href:
-        "https://www.paypal.com/donate?hosted_button_id=FXVCKDBL68Q4U&source=url",
-      label: router.locale === "pt-BR" ? "Doe" : "Donate",
-    },
-  ];
-
   const [scroll, setScroll] = useState(0);
+  const [open, setOpen] = useState(false);
+  const ref = useOnclickOutside(() => {
+    setOpen(false);
+  });
+
+  const changeOpen = (state) => setOpen(!state);
+
   useEffect(
     () =>
       window.addEventListener("scroll", (e) =>
@@ -23,108 +23,181 @@ export default function Nav() {
   );
 
   return (
-    //   <nav class="bg-gray-800">
-    //   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-    //     <div class="relative flex items-center justify-between h-16">
-    //       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-    //         <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
-    //           <span class="sr-only">Open main menu</span>
-    //           <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    //   <nav className="bg-gray-800">
+    //   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    //     <div className="relative flex items-center justify-between h-16">
+    //       <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+    //         <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+    //           <span className="sr-only">Open main menu</span>
+    //           <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
     //             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     //           </svg>
-    //           <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    //           <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
     //             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     //           </svg>
     //         </button>
     //       </div>
-    //       <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-    //         <div class="flex-shrink-0 flex items-center">
-    //           <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"/>
-    //           <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow"/>
+    //       <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+    //         <div className="flex-shrink-0 flex items-center">
+    //           <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"/>
+    //           <img className="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow"/>
     //         </div>
-    //         <div class="hidden sm:block sm:ml-6">
-    //           <div class="flex space-x-4">
-    //             <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900">Dashboard</a>
-    //             <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
-    //             <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
-    //             <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
+    //         <div className="hidden sm:block sm:ml-6">
+    //           <div className="flex space-x-4">
+    //             <a href="#" className="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900">Dashboard</a>
+    //             <a href="#" className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
+    //             <a href="#" className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+    //             <a href="#" className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
     //           </div>
     //         </div>
     //       </div>
-    //       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-    //         <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-    //           <span class="sr-only">View notifications</span>
-    //           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    //       <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    //         <button className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+    //           <span className="sr-only">View notifications</span>
+    //           <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
     //             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
     //           </svg>
     //         </button>
 
-    //         <div class="ml-3 relative">
+    //         <div className="ml-3 relative">
     //           <div>
-    //             <button class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
-    //               <span class="sr-only">Open user menu</span>
-    //               <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+    //             <button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+    //               <span className="sr-only">Open user menu</span>
+    //               <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
     //             </button>
     //           </div>
-    //           <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-    //             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
-    //             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-    //             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+    //           <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+    //             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+    //             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
+    //             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
     //           </div>
     //         </div>
     //       </div>
     //     </div>
     //   </div>
 
-    //   <div class="hidden sm:hidden">
-    //     <div class="px-2 pt-2 pb-3 space-y-1">
-    //       <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Dashboard</a>
-    //       <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
-    //       <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
-    //       <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
+    //   <div className="hidden sm:hidden">
+    //     <div className="px-2 pt-2 pb-3 space-y-1">
+    //       <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Dashboard</a>
+    //       <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
+    //       <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+    //       <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
     //     </div>
     //   </div>
     // </nav>
 
-    <nav
-      className={`transition-colors   ${
-        scroll ? "" : ""
-      } bg-gray-900  w-screen relative`}
-    >
-      <div className="p-0 sm:px-6 lg:px-8">
-        <div className={`absolute left-2 top-2 items-center p-5 `}>
-          <Image src="/logo.png" layout="fill" objectFit={"cover"}></Image>
-        </div>
+    // <nav id="header" className="fixed w-full z-30 top-0 text-white">
+    //   <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    //   <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    //     <div className="pl-4 flex items-center">
+    //     </div>
+    //     </div>
 
-        <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>
-          {" "}
-          <li>
-            {router.locale === "pt-BR" ? (
-              <Link href="/" locale="en-US">
-                <a className={` text-yellow-400 font-bold no-underline`}>
-                  English
-                </a>
-              </Link>
-            ) : (
-              <Link href="/" locale="pt-BR">
-                <a className={` text-yellow-400 font-bold no-underline`}>
-                  Português
-                </a>
-              </Link>
-            )}
-          </li>
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
+    //     <ul className={`flex  justify-end items-center p-4 space-x-4 pr-8`}>
+    //       {" "}
+
+    //       {links.map(({ href, label }) => (
+    //         <li key={`${href}${label}`}>
+    //           <a
+    //             href={href}
+    //             className={`bg-yellow-600 text-gray-900 shadow-inner  font-bold py-2 px-4 rounded-2xl no-underline`}
+    //           >
+    //             {label}
+    //           </a>
+    //         </li>
+    //       ))}
+    //     </ul>
+    //   </div>
+    // </nav>
+    <nav
+      id="header"
+      className={`fixed w-full z-50 top-0 text-white ${
+        scroll ? "bg-gray-900" : ""
+      }`}
+    >
+      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <Link href="/">
+        <div className="pl-4 flex items-center">
+          <a
+            className="flex toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            <Image
+              src="/logo.png"
+              width={50}
+              height={50}
+              objectFit={"cover"}
+            ></Image>
+          </a>
+        </div>
+        </Link>
+        {/* Hamburguer Menu  */}
+        {/* <div className="block hidden pr-4">
+          <button
+            onClick={() => changeOpen(open)}
+            id="nav-toggle"
+            className="flex items-center p-1 text-white hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            <svg className="fill-current h-6 w-6" viewBox="0 0 20 20">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div> */}
+        <div
+          className={`flex items-center w-auto
+          mt-0 bg-transparent text-black p-0 z-20 justify-center`}
+          id="nav-content"
+          ref={ref}
+        >
+          {/* For Hamburguer Menu */}
+          {/* <div
+          className={`w-full flex-grow lg:flex items-end lg:w-auto ${
+            open ? "" : "hidden"
+          } mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 justify-end`}
+          id="nav-content"
+          ref={ref}
+        > */}
+
+          {/* <ul className="list-reset lg:flex justify-end flex-1 items-center">
+
+            <li className="mr-3">
               <a
-                target="_blank"
-                href={href}
-                className={`ring-yellow-400 text-yellow-400 transition-colors ring-2  font-bold py-2 px-4 rounded no-underline`}
+                className="inline-block py-2 px-4 text-black font-bold no-underline"
+                href="#"
               >
-                {label}
+                Active
               </a>
             </li>
-          ))}
-        </ul>
+            <li className="mr-3">
+              <a
+                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#"
+              >
+                link
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#"
+              >
+                link
+              </a>
+            </li>
+          </ul> */}
+                  <Link href="/apoie">
+
+          <div className="justify-end flex items-end">
+            <button
+              id="navAction"
+              className="mx-auto lg:mx-0 mr-2 hover:underline bg-yellow-400 text-gray-800 font-bold rounded-full mt-0 py-2  px-8 shadow  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              Doe
+            </button>
+          </div>
+          </Link>
+        </div>
       </div>
     </nav>
   );

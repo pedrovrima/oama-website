@@ -16,12 +16,13 @@ module.exports = {
 
       '3/4': '75vh',
 
+      '4/5': '80vh',
+
       
      },
 
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
-      
     },
     textIndent: {
       // defaults to {}
