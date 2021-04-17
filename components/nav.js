@@ -186,6 +186,12 @@ export default function Nav() {
               </a>
             </li>
           </ul> */}
+          <Link href="/quem-somos">
+            <div className="px-8 cursor-pointer">
+              <p className="text-gray-50  hover:underline font-bold">Quem somos</p>
+            </div>
+
+          </Link>
                   <Link href="/apoie">
 
           <div className="justify-end flex items-end">
@@ -193,7 +199,7 @@ export default function Nav() {
               id="navAction"
               className="mx-auto lg:mx-0 mr-2 hover:underline bg-yellow-400 text-gray-800 font-bold rounded-full mt-0 py-2  px-8 shadow  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
-              Doe
+              Apoie
             </button>
           </div>
           </Link>
