@@ -32,20 +32,24 @@ export default function QuemSomos() {
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
 
-        <div class="container max-w-4xl mx-auto ">
+        <div class="container text-center text-xl max-w-4xl mx-auto mb-12">
           <p class="text-gray-600 px-8 md:px-0 mb-2">
             O OAMa é movido por uma pequena equipe de trabalho e uma grande rede
             de apoio.
           </p>
-
-          <p className="text-2xl">Equipe</p>
-          <p>
+        </div>
+        <div class="container  max-w-4xl mx-auto ">
+          <p className="text-4xl text-center font-bold text-gray-800">Equipe</p>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
             {" "}
             Nossa equipe de trabalho, que coordena e executa as atividades
             continuamente
           </p>
 
-          <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
+          <div class="flex md:flex-row-reverse mb-1  justify-around items-center   flex-wrap">
             <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
               <div>
                 <Image
@@ -89,22 +93,21 @@ export default function QuemSomos() {
             </div>
           </div>
 
-
-          <div class="flex md:flex-row mb-8 justify-center items-center   flex-wrap">
-          <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
-            <div>
-              <Image
-                className="rounded-full"
-                layout="responsive"
-                src="/Mantiqueira.jpg"
-                width={200}
-                objectFit="cover"
-                height={200}
-              ></Image>
+          <div class="flex md:flex-row mb-1 justify-center items-center   flex-wrap">
+            <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
+              <div>
+                <Image
+                  className="rounded-full"
+                  layout="responsive"
+                  src="/LuizaFigueira.jpg"
+                  width={200}
+                  objectFit="cover"
+                  height={200}
+                ></Image>
+              </div>
             </div>
-          </div>
 
-          <div class="w-full sm:w-2/3 p-6">
+            <div class="w-full sm:w-2/3 p-6">
               <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-1">
                 Luiza Figueira{" "}
               </h3>
@@ -112,10 +115,12 @@ export default function QuemSomos() {
                 Coordenadora Geral{" "}
               </h4>
 
-            <p class="text-gray-600 mb-8">
-            Bióloga com mestrado em ecologia, trabalha com aves desde 2012 e tem maior interesse em biologia da conservação e restauração ecológica.
-            </p>
-            <a
+              <p class="text-gray-600">
+                Bióloga com mestrado em ecologia, trabalha com aves desde 2012 e
+                tem maior interesse em biologia da conservação e restauração
+                ecológica.
+              </p>
+              <a
                 className="underline"
                 target="_blank"
                 href="http://lattes.cnpq.br/6486611783204721"
@@ -130,9 +135,8 @@ export default function QuemSomos() {
               >
                 E-mail
               </a>
+            </div>
           </div>
-        </div>
-
 
           <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
             <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
@@ -181,26 +185,66 @@ export default function QuemSomos() {
             </div>
           </div>
 
-          <p class="text-gray-600 px-8 md:px-0 mb-2">
-            {" "}
-            Toda doação feita para o OAMa é direcionada para a realização de
-            nossos projetos de pesquisa e de educação. Tornando-se um filiado ou
-            fazendo uma doação para o OAMa você está apoiando a conservação de
-            aves e habitats brasileiros com base em pesquisas científicas. Sua
-            participação será extremamente apreciada pelo OAMa, e nós nos
-            comprometemos em transformar a sua colaboração em pesquisa,
-            conhecimento e conservação!
-          </p>
-
-          <p class="text-gray-600 px-8 md:px-0 mb-8">
-            {" "}
-            As doações são processadas pelo PayPal. Utilize o botão abaixo para
-            abrir a plataforma de doação. Caso queira se tornar um{" "}
-            <strong>filiado</strong>, marque a opção{" "}
-            <strong>"Fazer desta uma doação mensal"</strong>.
-          </p>
+          <div class="container  max-w-4xl mx-auto ">
+            <p className="text-4xl text-center font-bold text-gray-800">
+              Colaboradores
+            </p>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+              {" "}
+              Nossos membros colaboradores, que contribuem com suas
+              especialidades voluntariamente quando precisamos.
+            </p>
+            <div className="w-full flex flex-col sm:flex-row justify-around">
+              <CollaboratorCard
+                name="Dirlene Martins"
+                postion="Revisora de portugês"
+                image="/DirleneRibeiro.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Ellen Campbell"
+                postion="Revisora de inglês"
+                image="/Ellen.jpeg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Renata Miwa"
+                postion="Designer"
+                image="/RenataMiwa.jpg"
+              ></CollaboratorCard>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+const CollaboratorCard = (props) => {
+  const { name, postion, image } = props;
+
+  return (
+    <div className="w-full flex p-6 sm:flex-col justify-center  items-center">
+      <div className="w-2/5 sm:w-1/2">
+        <Image
+          className="rounded-full border-gray-200 border-8"
+          src={image}
+          layout="responsive"
+          width={100}
+          objectFit="cover"
+          height={100}
+        ></Image>
+      </div>
+
+      <div class="sm:w-full w-2/3 p-6">
+        <h3 class="text-lg text-center text-gray-800 font-bold leading-none mb-1">
+          {name}
+        </h3>
+        <h4 class="text-md text-center text-gray-800 font-bold leading-none mb-3">
+          {postion}{" "}
+        </h4>
+      </div>
+    </div>
+  );
+};
