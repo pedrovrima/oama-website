@@ -38,7 +38,8 @@ export default function QuemSomos() {
             de apoio.
           </p>
         </div>
-        <div class="container  max-w-4xl mx-auto ">
+        <div class="container mb-12 max-w-4xl mx-auto ">
+        <div className="mb-24">
           <p className="text-4xl text-center font-bold text-gray-800">Equipe</p>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -184,20 +185,20 @@ export default function QuemSomos() {
               </a>
             </div>
           </div>
-
-          <div class="container  max-w-4xl mx-auto ">
+          </div>
+          <div class="container  max-w-4xl mx-auto mb-24 ">
             <p className="text-4xl text-center font-bold text-gray-800">
               Colaboradores
             </p>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+            <p class="text-gray-600 px-8 md:px-0 mb-8 text-center text-xl">
               {" "}
               Nossos membros colaboradores, que contribuem com suas
               especialidades voluntariamente quando precisamos.
             </p>
-            <div className="w-full flex flex-col sm:flex-row justify-around">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Dirlene Martins"
                 postion="Revisora de portugês"
@@ -215,6 +216,156 @@ export default function QuemSomos() {
               ></CollaboratorCard>
             </div>
           </div>
+          <div class="container  max-w-4xl mx-auto mb-12">
+            <p className="text-4xl text-center font-bold text-gray-800">
+              Voluntários
+            </p>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <p class="text-gray-600 px-8 md:px-0 mb-8 text-center text-xl">
+              {" "}
+              Contamos ainda com voluntários, pessoas que dedicam algum tempo
+              para trabalhar junto ao OAMa em um programa específico de
+              voluntariado ou em atividades pontuais. Nós vemos e planejamos o
+              voluntariado para ser uma troca em que todo mundo sai ganhando,
+              tanto a organização como o voluntário.
+            </p>
+            <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
+              <CollaboratorCard
+                name="Gabriel Magalhães"
+                postion="Monitoramento da Avifauna"
+                image="/Gabriel Magalhães.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Gabriela Inhesta"
+                postion="Divulgação Científica"
+                image="/GabrielaInhesta.jpeg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Karine Resende"
+                postion="Educação Ambiental"
+                image="/KarineResende.jpeg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Larissa Diniz"
+                postion="Educação Ambiental"
+                image="/LarissaDiniz.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Otávio Rocha"
+                postion="Divulgação Científica"
+                image="/OtávioRocha.jpeg"
+              ></CollaboratorCard>
+            </div>
+          </div>
+          <div class="container  max-w-4xl mx-auto mb-12 ">
+            <p className="text-4xl text-center font-bold text-gray-800">
+              Parcerias
+            </p>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+              {" "}
+              Organizações, instituições, grupos de pesquisa, iniciativas
+              privadas e pessoas físicas com quem mantemos uma relação de
+              parceria em atividades específicas ou num contexto geral.
+            </p>
+            <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
+              <CollaboratorCard
+                name="Klamath Bird Observatory"
+                image="/KBOlogo.jpeg"
+                site="http://www.klamathbird.org"
+                border
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Simone Coimbra"
+                image="/SiCoimbra.png"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="ColaboraNóbrega"
+                image="/colabora.jpg"
+                border
+              ></CollaboratorCard>
+
+              <CollaboratorCard
+                name="BirdsAtlantic"
+                image="/birds atlantic.png"
+                border
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="RPPN Fazenda Boa Vista - MG"
+                image="/LarissaDiniz.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Observatório de Aves do Butantã"
+                image="/Butanta.jpeg"
+                border
+              ></CollaboratorCard>
+              {/* <CollaboratorCard
+                name="Observatório de Aves do Pampa"
+                image="/OtávioRocha.jpeg"
+              ></CollaboratorCard> */}
+              <CollaboratorCard
+                name="PAN Aves da Mata Atlântica"
+                image="/PAN_MA.png"
+                border
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Aves Noronha"
+                image="/PAN_MA.png"
+              ></CollaboratorCard>
+            </div>
+          </div>
+          <div class="container  max-w-4xl mx-auto ">
+            <p className="text-4xl text-center font-bold text-gray-800">
+              Intitucional
+            </p>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+              {" "}
+              O OAMa é uma ONG, composta por associados e diretoria. Os
+              associados são responsáveis por decidir os rumos da organização,
+              enquanto a diretoria é o núcleo que representa o OAMa
+              burocraticamente.{" "}
+            </p>
+            <div className="p-6">
+            <p className="text-gray-800 mb-2 text-center font-bold text-xl">
+              Diretoria
+            </p>
+            <ul className="text-center text-gray-700">
+              <li>
+                <strong>Presidente:</strong> Luiza Figueira
+              </li>
+              <li>
+                <strong>Secretário:</strong> Pedro Martins
+              </li>
+              <li>
+                <strong>Tesoureiro:</strong> Affonso Souza
+              </li>
+            </ul>
+            </div>
+            <div className="flex flex-col items-center p-6">
+            <p className="text-gray-800 text-center mb-2 font-bold text-xl">
+              Associados
+            </p>
+            <ul className="text-gray-700">
+              <li>Affonso Henrique de Souza, biólogo</li>
+              <li>Felipe Cotrim, jornalista</li>
+              <li>Joaquim Mendonça, engenheiro florestal</li>
+              <li>Julia Rodrigues, fotógrafa</li>
+              <li>Lino Matheus de Sá Pereira, ambientalista</li>
+              <li>Luiza Figueira, bióloga</li>
+              <li>Nívea Leite, artista plástica</li>
+              <li>Pedro Martins, biólogo</li>
+              <li>Raquel Justo, bióloga</li>
+              <li>Renata Miwa, artista plástica e designer</li>
+            </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -222,13 +373,15 @@ export default function QuemSomos() {
 }
 
 const CollaboratorCard = (props) => {
-  const { name, postion, image } = props;
+  const { name, postion, image, site, border } = props;
 
   return (
-    <div className="w-full flex p-6 sm:flex-col justify-center  items-center">
-      <div className="w-2/5 sm:w-1/2">
+    <div className=" flex p-2 sm:flex-col justify-start  items-center">
+      <div
+        className={`w-1/4 sm:w-1/2 rounded-full ${border ? " shadow-lg " : ""}`}
+      >
         <Image
-          className="rounded-full border-gray-200 border-8"
+          className="rounded-full "
           src={image}
           layout="responsive"
           width={100}
@@ -237,13 +390,24 @@ const CollaboratorCard = (props) => {
         ></Image>
       </div>
 
-      <div class="sm:w-full w-2/3 p-6">
+      <div class="sm:w-full flex flex-col w-2/3 p-2">
         <h3 class="text-lg text-center text-gray-800 font-bold leading-none mb-1">
           {name}
         </h3>
         <h4 class="text-md text-center text-gray-800 font-bold leading-none mb-3">
           {postion}{" "}
         </h4>
+        {site ? (
+          <a
+            href={site}
+            target="_blank"
+            class="text-sm text-center underline text-gray-800 leading-none mb-3"
+          >
+            Site
+          </a>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
