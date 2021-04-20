@@ -294,10 +294,10 @@ export default function QuemSomos() {
                 image="/birds atlantic.png"
                 border
               ></CollaboratorCard>
-              <CollaboratorCard
+              {/* <CollaboratorCard
                 name="RPPN Fazenda Boa Vista - MG"
                 image="/LarissaDiniz.jpg"
-              ></CollaboratorCard>
+              ></CollaboratorCard> */}
               <CollaboratorCard
                 name="Observatório de Aves do Butantã"
                 image="/Butanta.jpeg"
@@ -312,11 +312,11 @@ export default function QuemSomos() {
                 image="/PAN_MA.png"
                 border
               ></CollaboratorCard>
-              <CollaboratorCard
+              {/* <CollaboratorCard
                 name="Aves Noronha"
                 image="/PAN_MA.png"
               ></CollaboratorCard>
-            </div>
+            </div> */}
           </div>
           <div class="container  max-w-4xl mx-auto ">
             <p className="text-4xl text-center font-bold text-gray-800">
