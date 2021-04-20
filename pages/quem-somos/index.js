@@ -48,13 +48,13 @@ export default function QuemSomos() {
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+            <p class="text-gray-600 px-8 text-center md:px-0 mb-2 text-xl">
               {" "}
               Nossa equipe de trabalho, que coordena e executa as atividades
               continuamente
             </p>
 
-            <div class="flex md:flex-row-reverse mb-1  justify-around items-center   flex-wrap">
+            <div class="flex md:flex-row-reverse mb-1  justify-between items-center   flex-wrap">
               <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
                 <div>
                   <Image
@@ -198,7 +198,7 @@ export default function QuemSomos() {
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <p class="text-gray-600 px-8 md:px-0 mb-8 text-center text-xl">
+            <p class="text-gray-600 px-8 md:px-0 mb-8  text-xl">
               {" "}
               Nossos membros colaboradores, que contribuem com suas
               especialidades voluntariamente quando precisamos.
@@ -228,7 +228,7 @@ export default function QuemSomos() {
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div >
-            <div className="text-gray-600 px-8 md:px-0  sm:text-center text-xl mb-8">
+            <div className="text-gray-600 px-8 md:px-0  text-xl mb-8">
             <p className="mb-2">
               {" "}
               Pessoas que dedicam algum tempo
@@ -239,8 +239,8 @@ export default function QuemSomos() {
                <p>
 
                O
-              voluntariado é planejado para que seja benéfico a todos,
-              tanto a organização como os voluntários.
+              voluntariado é planejado para que seja bom para todos,
+              tanto para organização como para os voluntários.
             </p>
             </div>
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
@@ -278,7 +278,7 @@ export default function QuemSomos() {
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
-            <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
+            <p class="text-gray-600 px-8 md:px-0 mb-2  text-xl">
               {" "}
               Organizações, instituições, grupos de pesquisa, iniciativas
               privadas e pessoas físicas com quem mantemos uma relação de
