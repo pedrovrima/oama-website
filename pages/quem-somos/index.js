@@ -206,7 +206,7 @@ export default function QuemSomos() {
             <div className="w-full grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Dirlene Martins"
-                postion="Revisora de portugês"
+                postion="Revisora de português"
                 image="/DirleneRibeiro.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
