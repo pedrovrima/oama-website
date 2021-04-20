@@ -315,8 +315,8 @@ export default function QuemSomos() {
               {/* <CollaboratorCard
                 name="Aves Noronha"
                 image="/PAN_MA.png"
-              ></CollaboratorCard>
-            </div> */}
+              ></CollaboratorCard> */}
+            </div>
           </div>
           <div class="container  max-w-4xl mx-auto ">
             <p className="text-4xl text-center font-bold text-gray-800">
