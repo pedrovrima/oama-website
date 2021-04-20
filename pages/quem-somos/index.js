@@ -227,15 +227,22 @@ export default function QuemSomos() {
             </p>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-            <p class="text-gray-600 px-8 md:px-0 mb-8 text-center text-xl">
+            </div >
+            <div className="text-gray-600 px-8 md:px-0  sm:text-center text-xl mb-8">
+            <p className="mb-2">
               {" "}
-              Contamos ainda com voluntários, pessoas que dedicam algum tempo
-              para trabalhar junto ao OAMa em um programa específico de
-              voluntariado ou em atividades pontuais. Nós vemos e planejamos o
-              voluntariado para ser uma troca em que todo mundo sai ganhando,
-              tanto a organização como o voluntário.
+              Pessoas que dedicam algum tempo
+              para trabalhar junto ao OAMa no nosso programa de
+              voluntariado ou em atividades pontuais.
+              </p>
+
+               <p>
+
+               O
+              voluntariado é planejado para que seja benéfico a todos,
+              tanto a organização como os voluntários.
             </p>
+            </div>
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Gabriel Magalhães"
