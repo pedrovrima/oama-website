@@ -12,7 +12,7 @@ export default function QuemSomos() {
           <div className="absolute top-0 h-full w-full">
             <Image
               // className="h-32"
-              src="/quem_somos.jpg"
+              src="/quem_somow2.png"
               layout="fill"
               //   width={"2000"}
               //   height={"1000"}
