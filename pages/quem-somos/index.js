@@ -296,11 +296,13 @@ export default function QuemSomos() {
               <CollaboratorCard
                 name="Simone Coimbra"
                 image="/SiCoimbra.png"
+                site="https://instagram.com/si_coimbra"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="ColaboraNóbrega"
                 image="/colabora.png"
                 border
+                site="https://instagram.com/colaboranobrega"
               ></CollaboratorCard>
 
               <CollaboratorCard
