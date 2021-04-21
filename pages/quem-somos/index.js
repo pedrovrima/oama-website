@@ -219,6 +219,7 @@ export default function QuemSomos() {
                 name="Renata Miwa"
                 postion="Designer"
                 image="/RenataMiwa.jpg"
+                site="https://www.instagram.com/renatamiwa/"
               ></CollaboratorCard>
             </div>
           </div>
@@ -306,6 +307,7 @@ export default function QuemSomos() {
                 name="BirdsAtlantic"
                 image="/birds atlantic.png"
                 border
+                site="https://www.birdsatlantic.com/"
               ></CollaboratorCard>
               {/* <CollaboratorCard
                 name="RPPN Fazenda Boa Vista - MG"
@@ -315,6 +317,7 @@ export default function QuemSomos() {
                 name="Observatório de Aves - Instituto Butantan"
                 image="/Butanta.jpeg"
                 border
+                site="https://www.facebook.com/observatoriodeavesibu"
               ></CollaboratorCard>
               {/* <CollaboratorCard
                 name="Observatório de Aves do Pampa"
@@ -324,10 +327,12 @@ export default function QuemSomos() {
                 name="PAN Aves da Mata Atlântica"
                 image="/PAN_MA.png"
                 border
+                site="https://www.icmbio.gov.br/portal/faunabrasileira/planos-de-acao/2865-plano-de-acao-nacional-para-a-conservacao-das-aves-da-mata-atlantica"
               ></CollaboratorCard>
               {/* <CollaboratorCard
                 name="Aves Noronha"
                 image="/PAN_MA.png"
+                site="https://www.instagram.com/avesdenoronha/"
               ></CollaboratorCard> */}
             </div>
           </div>
