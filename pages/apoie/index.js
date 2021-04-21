@@ -81,7 +81,7 @@ export default function Apoie() {
             {" "}
             Toda doação feita para o OAMa é direcionada para a realização de
             nossos projetos de pesquisa e de educação. Tornando-se um filiado ou
-            fazendo uma doação para o OAMa você está apoiando a conservação de
+            fazendo uma doação para o OAMa, você está apoiando a conservação de
             aves e habitats brasileiros com base em pesquisas científicas. Sua
             participação será extremamente apreciada pelo OAMa, e nós nos
             comprometemos em transformar a sua colaboração em pesquisa,

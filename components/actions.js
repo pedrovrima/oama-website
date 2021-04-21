@@ -41,7 +41,7 @@ export default function Actions() {
               fomentam estudos específicos sobre a história natural e ecologia
               das espécies e populações locais. <br />
               Também usamos dados secundários e de ciência cidadã para elaborar
-              estudos pontuais. E ainda, colaboramos com outras instituições de
+              estudos pontuais. E, ainda, colaboramos com outras instituições de
               pesquisa para desenvolver estudos na área de ornitologia.
             </p>
           </div>
@@ -101,20 +101,21 @@ export default function Actions() {
             <p class="text-gray-600 mb-8">
               Um dos braços do OAMa visa sensibilizar pessoas de todas as
               idades, classes, gêneros e raças à nossa causa e disseminar
-              conhecimento sobre meio ambiente e biodiversidade. <br/> Por meio de
-              ações de Educação e Divulgação científica, nossa equipe busca
-              adequar a linguagem da Ciência ao público geral e especializado.
-              Na área de educação Educação elaboramos e promovemos cursos, tanto
-              em temas técnicos na área derelacionados a ornitologia como em
-              temas lúdicos voltados parasobre a avifauna. Para realizar
-              divulgação científica usamos as redes sociais como ferramenta de
-              comunicação. <br/> Estamos constantemente produzindo e espalhando
-              conteúdo sobre ciência e ornitologia em nossas redes sociais.
-              Realizamos também projetos específicos de divulgação científica,
-              com atividades interativas e materiais informativos para
-              distribuição. A atividade               <strong>Dia de campo: conhecendo as aves</strong> e o livreto
-              “Ornitologia pra todo dia” sãoé um exemplos deste tipo de projeto
-              elaborado ede ações realizado realizadas pelo OAMa.
+              conhecimento sobre meio ambiente e biodiversidade. <br />
+              Nas ações de Educação e Divulgação Científica, nossa equipe busca
+              adequar a linguagem da Ciência ao público geral e também ao
+              público especializado. Na área de Educação elaboramos e promovemos
+              cursos, tanto sobre temas técnicos na área de ornitologia como
+              sobre temas lúdicos voltados para a avifauna. Para realizar
+              Divulgação Científica usamos as redes sociais como ferramenta de
+              comunicação. <br />
+              Estamos constantemente produzindo e compartilhando conteúdo sobre
+              ciência e ornitologia em nossas redes sociais. Realizamos também
+              projetos específicos de divulgação científica, com atividades
+              interativas e materiais informativos para distribuição. A
+              atividade <strong>Dia de campo: conhecendo as aves</strong> e o
+              livreto <strong>Ornitologia pra todo dia</strong> são exemplos deste tipo de
+              projeto e de ações realizadas pelo OAMa.
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6"></div>

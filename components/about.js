@@ -11,8 +11,8 @@ export default function About() {
 
         <p className="text-gray-600 text-lg mb-8 p-6">
           O <strong>Observatório de Aves da Mantiqueira (OAMa)</strong> é uma organização não
-          governamental sem fins lucrativos para o estudo das aves brasileiras e
-          seus habitats, com foco na Mata Atlântica e mais especificamente na
+          governamental sem fins lucrativos que se dedica ao estudo das aves brasileiras e
+          seus habitats, com foco na Mata Atlântica e, mais especificamente, na
           Serra da Mantiqueira. Os principais objetivos da organização são
           auxiliar a preencher as lacunas no conhecimento ornitológico
           brasileiro e promover maior conexão entre ciência, sociedade e

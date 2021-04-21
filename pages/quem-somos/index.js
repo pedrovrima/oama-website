@@ -118,7 +118,7 @@ export default function QuemSomos() {
                   Luiza Figueira{" "}
                 </h3>
                 <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
-                  Coordenadora Geral{" "}
+                  Coordenadora geral{" "}
                 </h4>
 
                 <p class="text-gray-600">
@@ -206,13 +206,13 @@ export default function QuemSomos() {
             <div className="w-full grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Dirlene Martins"
-                postion="Revisora de português"
+                postion="Revisora do texto em português"
                 image="/DirleneRibeiro.jpg"
                 site="https://alemdasletrasdrm.wordpress.com"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Ellen Campbell"
-                postion="Revisora de inglês"
+                postion="Revisora do texto em inglês"
                 image="/Ellen.jpeg"
               ></CollaboratorCard>
               <CollaboratorCard
@@ -241,7 +241,7 @@ export default function QuemSomos() {
 
                O
               voluntariado é planejado para que seja bom para todos,
-              tanto para organização como para os voluntários.
+              tanto para a organização como para os voluntários.
             </p>
             </div>
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
@@ -312,7 +312,7 @@ export default function QuemSomos() {
                 image="/LarissaDiniz.jpg"
               ></CollaboratorCard> */}
               <CollaboratorCard
-                name="Observatório de Aves do Butantã"
+                name="Observatório de Aves - Instituto Butantan"
                 image="/Butanta.jpeg"
                 border
               ></CollaboratorCard>
@@ -333,15 +333,15 @@ export default function QuemSomos() {
           </div>
           <div class="container  max-w-4xl mx-auto ">
             <p className="text-4xl text-center font-bold text-gray-800">
-              Intitucional
+              Institucional
             </p>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             <p class="text-gray-600 px-8 md:px-0 mb-2 text-center text-xl">
               {" "}
-              O OAMa é uma ONG, composta por associados e diretoria. Os
-              associados são responsáveis por decidir os rumos da organização,
+              O OAMa é uma ONG composta por associados e diretoria. Os
+              associados são responsáveis por definir os rumos da organização,
               enquanto a diretoria é o núcleo que representa o OAMa
               burocraticamente.{" "}
             </p>
