@@ -208,6 +208,7 @@ export default function QuemSomos() {
                 name="Dirlene Martins"
                 postion="Revisora de português"
                 image="/DirleneRibeiro.jpg"
+                site="https://alemdasletrasdrm.wordpress.com"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Ellen Campbell"
