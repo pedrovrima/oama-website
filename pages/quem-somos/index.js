@@ -12,7 +12,7 @@ export default function QuemSomos() {
           <div className="absolute top-0 h-full w-full">
             <Image
               // className="h-32"
-              src="/_FR_7083.jpg"
+              src="/quem_somos.jpg"
               layout="fill"
               //   width={"2000"}
               //   height={"1000"}
@@ -54,12 +54,12 @@ export default function QuemSomos() {
               continuamente
             </p>
 
-            <div class="flex md:flex-row-reverse mb-1  justify-between items-center   flex-wrap">
+            <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
               <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
-                    src="/AffonsoSouza.jpeg"
+                    src="/AffonsoSouza2.png"
                     layout="responsive"
                     width={50}
                     objectFit="cover"
@@ -149,7 +149,7 @@ export default function QuemSomos() {
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
-                    src="/PedroMartins.jpg"
+                    src="/PedroMartins2.png"
                     layout="responsive"
                     width={50}
                     objectFit="cover"
@@ -263,12 +263,12 @@ export default function QuemSomos() {
               <CollaboratorCard
                 name="Larissa Diniz"
                 postion="Educação Ambiental"
-                image="/LarissaDiniz.jpg"
+                image="/LarissaDiniz2.png"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Otávio Rocha"
                 postion="Divulgação Científica"
-                image="/OtávioRocha.jpeg"
+                image="/OtávioRocha.png"
               ></CollaboratorCard>
             </div>
           </div>
@@ -288,7 +288,7 @@ export default function QuemSomos() {
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Klamath Bird Observatory"
-                image="/KBOlogo.jpeg"
+                image="/kbo.png"
                 site="http://www.klamathbird.org"
                 border
               ></CollaboratorCard>
@@ -298,7 +298,7 @@ export default function QuemSomos() {
               ></CollaboratorCard>
               <CollaboratorCard
                 name="ColaboraNóbrega"
-                image="/colabora.jpg"
+                image="/colabora.png"
                 border
               ></CollaboratorCard>
 
