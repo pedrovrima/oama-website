@@ -55,7 +55,7 @@ export default function QuemSomos() {
             </p>
 
             <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
-              <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
+              <div class="w-3/5 shadow-lg rounded-full  sm:w-1/4 m-2 sm:m-6">
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
@@ -100,7 +100,7 @@ export default function QuemSomos() {
             </div>
 
             <div class="flex md:flex-row mb-1 justify-center items-center   flex-wrap">
-              <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
+              <div class="w-3/5 shadow-lg rounded-full   sm:w-1/4 m-2 sm:m-6">
                 <div>
                   <Image
                     className="rounded-full"
@@ -145,7 +145,7 @@ export default function QuemSomos() {
             </div>
 
             <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
-              <div class="w-3/5  sm:w-1/4 p-2 sm:p-6">
+              <div class="w-3/5 shadow-lg rounded-full  sm:w-1/4 m-2 sm:m-6">
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
@@ -331,11 +331,12 @@ export default function QuemSomos() {
                 border
                 site="https://www.icmbio.gov.br/portal/faunabrasileira/planos-de-acao/2865-plano-de-acao-nacional-para-a-conservacao-das-aves-da-mata-atlantica"
               ></CollaboratorCard>
-              {/* <CollaboratorCard
+              <CollaboratorCard
                 name="Aves Noronha"
-                image="/PAN_MA.png"
+                image="/aves_noronha.png"
                 site="https://www.instagram.com/avesdenoronha/"
-              ></CollaboratorCard> */}
+                border
+              ></CollaboratorCard>
             </div>
           </div>
           <div class="container  max-w-4xl mx-auto ">
@@ -398,7 +399,7 @@ const CollaboratorCard = (props) => {
   return (
     <div className=" flex p-2 sm:flex-col justify-start  items-center">
       <div
-        className={`w-1/4 sm:w-1/2 rounded-full ${border ? " shadow-lg " : ""}`}
+        className={`w-1/4 sm:w-1/2 rounded-full  shadow-lg`}
       >
         <Image
           className="rounded-full "
