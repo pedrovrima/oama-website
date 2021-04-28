@@ -271,6 +271,11 @@ export default function QuemSomos() {
                 postion="Divulgação Científica"
                 image="/OtávioRocha.png"
               ></CollaboratorCard>
+                            <CollaboratorCard
+                name="Rodrigo Oliveira"
+                postion="Manejo de Dados"
+                image="/RodrigoOliveira.png"
+              ></CollaboratorCard>
             </div>
           </div>
           <div class="container  max-w-4xl mx-auto mb-12 ">
