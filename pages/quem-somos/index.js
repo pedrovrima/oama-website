@@ -1,4 +1,4 @@
-import Nav from "../../components/nav";
+import Nav from "@includes/nav";
 import { useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Image from "next/image";

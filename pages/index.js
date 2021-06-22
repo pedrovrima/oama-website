@@ -1,5 +1,5 @@
 
-import Nav from "../components/nav";
+import Nav from "@includes/nav";
 import Image from "next/image";
 import Hero from "../components/hero";
 import Actions from "../components/actions";

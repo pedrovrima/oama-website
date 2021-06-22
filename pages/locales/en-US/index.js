@@ -1,4 +1,4 @@
-import Nav from "../../../components/nav";
+import Nav from "@includes/nav";
 import Image from "next/image";
 
 export default function IndexPage() {

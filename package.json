@@ -11,6 +11,7 @@
     "autoprefixer": "^10.0.2",
     "aws-sdk": "^2.799.0",
     "email-validator": "^2.0.4",
+    "marked": "^2.1.2",
     "next": "^10.1.2",
     "postcss": "^8.1.8",
     "react": "^16.13.1",
@@ -21,8 +22,10 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
+    "gray-matter": "^4.0.3",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "^2.0.1"
   },
   "license": "MIT"
