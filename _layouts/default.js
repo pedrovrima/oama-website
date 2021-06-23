@@ -10,7 +10,6 @@ export default function DefaultLayout(props) {
         <meta name='description' content={props.description}/>
       </Head>
       <Nav/>
-      <Header/>
       {props.children}
       <Footer/>
     </main>

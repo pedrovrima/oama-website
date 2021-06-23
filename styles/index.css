@@ -143,6 +143,27 @@
       );
     }
 
+    .blog-content p {
+      margin-bottom: 1em;
+    }
+
+    .blog-content li p{
+      margin-bottom: 0.2em;
+    }
+
+    .blog-content li {
+      margin-left: 0.5em;
+      list-style-type: disc;
+    }
+
+
+    .blog-content li ul {
+      margin-bottom: 0.2em;
+      margin-left: 1em;
+      list-style-type: disc;
+    }
+
+
     .hero-small::after {
       position: absolute;
       content: "";
