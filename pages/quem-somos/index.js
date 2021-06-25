@@ -2,10 +2,14 @@ import Nav from "@includes/nav";
 import { useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Image from "next/image";
-
+import Head from "next/head";
 export default function QuemSomos() {
   return (
     <div className="pb-32">
+      <Head>
+        <title>Quem somos</title>
+      </Head>
+
       <Nav />
       <div className=" relative hero-small md:hero min-h-1/2">
         <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
@@ -229,21 +233,18 @@ export default function QuemSomos() {
             </p>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div >
+            </div>
             <div className="text-gray-600 px-8 md:px-0  text-xl mb-8">
-            <p className="mb-2">
-              {" "}
-              Pessoas que dedicam algum tempo
-              para trabalhar junto ao OAMa no nosso programa de
-              voluntariado ou em atividades pontuais.
+              <p className="mb-2">
+                {" "}
+                Pessoas que dedicam algum tempo para trabalhar junto ao OAMa no
+                nosso programa de voluntariado ou em atividades pontuais.
               </p>
 
-               <p>
-
-               O
-              voluntariado é planejado para que seja bom para todos,
-              tanto para a organização como para os voluntários.
-            </p>
+              <p>
+                O voluntariado é planejado para que seja bom para todos, tanto
+                para a organização como para os voluntários.
+              </p>
             </div>
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
@@ -271,7 +272,7 @@ export default function QuemSomos() {
                 postion="Divulgação Científica"
                 image="/OtávioRocha.png"
               ></CollaboratorCard>
-                            <CollaboratorCard
+              <CollaboratorCard
                 name="Rodrigo Oliveira"
                 postion="Manejo de Dados"
                 image="/RodrigoOliveira.png"
@@ -403,9 +404,7 @@ const CollaboratorCard = (props) => {
 
   return (
     <div className=" flex p-2 sm:flex-col justify-start  items-center">
-      <div
-        className={`w-1/4 sm:w-1/2 rounded-full  shadow-lg`}
-      >
+      <div className={`w-1/4 sm:w-1/2 rounded-full  shadow-lg`}>
         <Image
           className="rounded-full "
           src={image}
