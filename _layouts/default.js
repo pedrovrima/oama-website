@@ -11,7 +11,6 @@ export default function DefaultLayout(props) {
       </Head>
       <Nav/>
       {props.children}
-      <Footer/>
     </main>
   )
 }

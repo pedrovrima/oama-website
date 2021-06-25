@@ -2,49 +2,14 @@ import Nav from "@includes/nav";
 import { useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Image from "next/image";
-
+import Head from "next/head";
 export default function Apoie() {
-  const initialOptions = {
-    "client-id":
-      "Ab2lPDlKKAMdeKZpmz1wFW2_HYyjuhm1rzPjz3nAleWM4PaAEu5U6TNKwBzMee9NJzJHCpq1qA1hr0rx",
-    // currency: "BRL",
-    intent: "subscription",
-    vault: "true",
-    // locale: "en_US",
-    "enable-funding": "card",
-  };
-
-  const paypal = useRef();
-
-  // useEffect(()=>{
-  //   window.paypal
-  //     .Buttons({
-  //       createOrder: (data, actions, err) => {
-  //         return actions.order.create({
-  //           intent: "CAPTURE",
-  //           purchase_units: [
-  //             {
-  //               description: "Cool looking table",
-  //               amount: {
-  //                 value: 650.0,
-  //               },
-  //             },
-  //           ],
-  //         });
-  //       },
-  //       onApprove: async (data, actions) => {
-  //         const order = await actions.order.capture();
-  //         console.log(order);
-  //       },
-  //       onError: (err) => {
-  //         console.log(err);
-  //       },
-  //     })
-  //     .render(paypal.current);
-  // },[])
-
   return (
     <div className="pb-32">
+      <Head>
+        <title>Apoie</title>
+      </Head>
+
       <Nav />
       <div className=" relative hero-small md:hero min-h-1/2">
         <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">

@@ -9,7 +9,7 @@ return(
   <div className="absolute top-0 h-full w-full">
     <Image
       // className="h-32"
-      src="/_FR_7083.jpg"
+      src={`/${props.img_src}`}
       layout="fill"
       //   width={"2000"}
       //   height={"1000"}
