@@ -9,7 +9,7 @@ import {PostAuthorCard} from "@includes/post_author";
 export default function Blog(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
-      <SmallHero img_src="_FR_7160.jpg" />
+      <SmallHero img_src="heros/blog.jpg" />
       <Title title="Blog" />
       {/* <FirstPost post={props.posts[0]} /> */}
       <div className="w-2/3 mx-auto grid sm:grid-cols-3">
@@ -43,7 +43,7 @@ export async function getStaticProps() {
 
 const FirstPost = ({ post }) => {
   return (
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`}>
       <div className="w-1/2 bg-black flex cursor-pointer shadow-2xl  mx-auto mt-8 mb-4">
         <div className="w-1/3 rounded-xl">
           <Image
@@ -52,7 +52,7 @@ const FirstPost = ({ post }) => {
             width={120}
             objectFit="cover"
             height={150}
-            src={`/${post.hero}`}
+            src={`/blog/${post.hero}`}
           ></Image>
         </div>
         <div className="flex flex-col  justify-between  px-8 py-4">
@@ -68,7 +68,7 @@ const FirstPost = ({ post }) => {
 
 const OtherPost = ({ post }) => {
   return (
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`}>
       <div className="flex flex-col rounded-lg cursor-pointer shadow-2xl mx-2 mt-8 mb-4">
         <div className=" ">
           <Image
@@ -77,7 +77,7 @@ const OtherPost = ({ post }) => {
             width={30}
             objectFit="cover"
             height={20}
-            src={`/${post.hero}`}
+            src={`/blog/${post.hero}`}
           ></Image>
         </div>
         <div className="flex flex-col  h-full justify-between  px-8 py-4">

@@ -16,7 +16,7 @@ export default function Apoie() {
           <div className="absolute top-0 h-full w-full">
             <Image
               // className="h-32"
-              src="/_FR_7083.jpg"
+              src="/heros/apoie.jpg"
               layout="fill"
               //   width={"2000"}
               //   height={"1000"}

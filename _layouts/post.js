@@ -11,7 +11,7 @@ export default function PostLayout(props) {
   console.log(props);
   return (
     <DefaultLayout>
-      <SmallHero img_src={props.hero} />
+      <SmallHero img_src={`blog/${props.hero?props.hero:"default.jpg"}`} />
 
       <Head>
         <title>{props.title}</title>

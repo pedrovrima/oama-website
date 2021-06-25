@@ -16,7 +16,7 @@ export default function Actions() {
             <div>
               <Image
                 className="rounded-full border-gray-200 border-8"
-                src="/IMG_6943.jpg"
+                src="/sobre/anilhamento.jpg"
                 layout="responsive"
                 width={200}
                 objectFit="cover"
@@ -52,7 +52,7 @@ export default function Actions() {
               <Image
                 className="rounded-full"
                 layout="responsive"
-                src="/Mantiqueira.jpg"
+                src="/sobre/Mantiqueira.jpg"
                 width={200}
                 objectFit="cover"
                 height={200}
@@ -85,7 +85,7 @@ export default function Actions() {
               <Image
                 className="rounded-full"
                 layout="responsive"
-                src="/DSC_0241.JPG"
+                src="/sobre/crianca.jpg"
                 width={200}
                 objectFit="cover"
                 height={200}

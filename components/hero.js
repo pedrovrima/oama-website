@@ -36,7 +36,7 @@ export default function Hero() {
       <div className="absolute top-0 h-full w-full">
         <Image
           // className="h-32"
-          src="/luiza_ave_2.png"
+          src="/heros/landing.jpg"
           layout="fill"
           //   width={"2000"}
           //   height={"1000"}

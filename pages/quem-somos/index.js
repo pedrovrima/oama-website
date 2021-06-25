@@ -16,7 +16,7 @@ export default function QuemSomos() {
           <div className="absolute top-0 h-full w-full">
             <Image
               // className="h-32"
-              src="/quem_somow2.png"
+              src="/heros/quem_somos.jpg"
               layout="fill"
               //   width={"2000"}
               //   height={"1000"}
@@ -63,7 +63,7 @@ export default function QuemSomos() {
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
-                    src="/AffonsoSouza2.png"
+                    src="/people/AffonsoSouza.jpg"
                     layout="responsive"
                     width={50}
                     objectFit="cover"
@@ -109,7 +109,7 @@ export default function QuemSomos() {
                   <Image
                     className="rounded-full"
                     layout="responsive"
-                    src="/LuizaFigueira.jpg"
+                    src="/people/LuizaFigueira.jpg"
                     width={200}
                     objectFit="cover"
                     height={200}
@@ -153,7 +153,7 @@ export default function QuemSomos() {
                 <div>
                   <Image
                     className="rounded-full border-gray-200 border-8"
-                    src="/PedroMartins2.png"
+                    src="/people/PedroMartins.jpg"
                     layout="responsive"
                     width={50}
                     objectFit="cover"
@@ -211,18 +211,18 @@ export default function QuemSomos() {
               <CollaboratorCard
                 name="Dirlene Martins"
                 postion="Revisora do texto em português"
-                image="/DirleneRibeiro.jpg"
+                image="/people/DirleneRibeiro.jpg"
                 site="https://alemdasletrasdrm.wordpress.com"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Ellen Campbell"
                 postion="Revisora do texto em inglês"
-                image="/Ellen.jpeg"
+                image="/people/EllenCampbell.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Renata Miwa"
                 postion="Designer"
-                image="/RenataMiwa.jpg"
+                image="/people/RenataMiwa.jpg"
                 site="https://www.instagram.com/renatamiwa/"
               ></CollaboratorCard>
             </div>
@@ -250,32 +250,32 @@ export default function QuemSomos() {
               <CollaboratorCard
                 name="Gabriel Magalhães"
                 postion="Monitoramento da Avifauna"
-                image="/Gabriel Magalhães.jpg"
+                image="/people/GabrielMagalhães.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Gabriela Inhesta"
                 postion="Divulgação Científica"
-                image="/GabrielaInhesta.jpeg"
+                image="/people/GabrielaInhesta.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Karine Resende"
                 postion="Educação Ambiental"
-                image="/KarineResende.jpeg"
+                image="/people/KarineResende.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Larissa Diniz"
                 postion="Educação Ambiental"
-                image="/LarissaDiniz2.png"
+                image="/people/LarissaDiniz.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Otávio Rocha"
                 postion="Divulgação Científica"
-                image="/OtávioRocha.png"
+                image="/people/OtávioRocha.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Rodrigo Oliveira"
                 postion="Manejo de Dados"
-                image="/RodrigoOliveira.png"
+                image="/people/RodrigoOliveira.jpg"
               ></CollaboratorCard>
             </div>
           </div>
@@ -295,51 +295,51 @@ export default function QuemSomos() {
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
               <CollaboratorCard
                 name="Klamath Bird Observatory"
-                image="/kbo.png"
+                image="/partners/kbo.jpg"
                 site="http://www.klamathbird.org"
                 border
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Simone Coimbra"
-                image="/SiCoimbra.png"
+                image="/partners/SiCoimbra.jpg"
                 site="https://instagram.com/si_coimbra"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="ColaboraNóbrega"
-                image="/colabora.png"
+                image="/partners/colabora.jpg"
                 border
                 site="https://instagram.com/colaboranobrega"
               ></CollaboratorCard>
 
               <CollaboratorCard
                 name="BirdsAtlantic"
-                image="/birds atlantic.png"
+                image="/partners/birds atlantic.jpg"
                 border
                 site="https://www.birdsatlantic.com/"
               ></CollaboratorCard>
               {/* <CollaboratorCard
                 name="RPPN Fazenda Boa Vista - MG"
-                image="/LarissaDiniz.jpg"
+                image="/partners/LarissaDiniz.jpg"
               ></CollaboratorCard> */}
               <CollaboratorCard
                 name="Observatório de Aves - Instituto Butantan"
-                image="/Butanta.jpeg"
+                image="/partners/Butanta.jpg"
                 border
                 site="https://www.facebook.com/observatoriodeavesibu"
               ></CollaboratorCard>
               {/* <CollaboratorCard
                 name="Observatório de Aves do Pampa"
-                image="/OtávioRocha.jpeg"
+                image="/partners/OtávioRocha.jpeg"
               ></CollaboratorCard> */}
               <CollaboratorCard
                 name="PAN Aves da Mata Atlântica"
-                image="/PAN_MA.png"
+                image="/partners/PAN_MA.jpg"
                 border
                 site="https://www.icmbio.gov.br/portal/faunabrasileira/planos-de-acao/2865-plano-de-acao-nacional-para-a-conservacao-das-aves-da-mata-atlantica"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Aves Noronha"
-                image="/aves_noronha.png"
+                image="/partners/aves_noronha.jpg"
                 site="https://www.instagram.com/avesdenoronha/"
                 border
               ></CollaboratorCard>

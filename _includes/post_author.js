@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function PostAuthorCard (props)  {
+export function PostAuthorCard(props) {
   return (
     <div class="flex md:flex-row mt-8 items-center   flex-wrap">
       <div class=" shadow-lg rounded-full w-3/12 lg:w-2/12 mr-6">
@@ -8,7 +8,7 @@ export function PostAuthorCard (props)  {
           <Image
             className="rounded-full"
             layout="responsive"
-            src="/LuizaFigueira.jpg"
+            src={`/people/${props.author.replace(/\s+/g, "")}.jpg`}
             width={50}
             objectFit="cover"
             height={50}
@@ -21,11 +21,9 @@ export function PostAuthorCard (props)  {
       </div>
     </div>
   );
-};
+}
 
-
-
-export function PostAuthorPost (props)  {
+export function PostAuthorPost(props) {
   return (
     <div class="flex md:flex-row my-8 items-center   flex-wrap">
       <div class=" shadow-lg rounded-full    w-2/12 lg:w-1/12 mr-6">
@@ -33,7 +31,7 @@ export function PostAuthorPost (props)  {
           <Image
             className="rounded-full"
             layout="responsive"
-            src="/LuizaFigueira.jpg"
+            src={`/people/${props.author.replace(/\s+/g, "")}.jpg`}
             width={50}
             objectFit="cover"
             height={50}
@@ -46,6 +44,4 @@ export function PostAuthorPost (props)  {
       </div>
     </div>
   );
-};
-
-
+}

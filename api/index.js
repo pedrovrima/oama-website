@@ -9,9 +9,11 @@ export async function getAllPosts() {
     const post = key.slice(2);
     const content = await import(`../_posts/${post}`);
     const meta = matter(content.default)
+    const hero = meta.data.hero? meta.data.hero : "default.jpg"
     posts.push({
       slug: post.replace('.mdx',''),
-      ...meta.data
+      ...meta.data,
+      hero
     })
   }
   return(posts);
