@@ -247,30 +247,58 @@ export default function QuemSomos() {
               </p>
             </div>
             <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
-              <CollaboratorCard
-                name="Gabriel Magalhães"
-                postion="Monitoramento da Avifauna"
-                image="/people/GabrielMagalhães.jpg"
+            <CollaboratorCard
+                name="Karine Resende"
+                postion="Educação Ambiental"
+                image="/people/KarineResende.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Gabriela Inhesta"
                 postion="Divulgação Científica"
                 image="/people/GabrielaInhesta.jpg"
               ></CollaboratorCard>
-              <CollaboratorCard
-                name="Karine Resende"
-                postion="Educação Ambiental"
-                image="/people/KarineResende.jpg"
-              ></CollaboratorCard>
-              <CollaboratorCard
-                name="Larissa Diniz"
-                postion="Educação Ambiental"
-                image="/people/LarissaDiniz.jpg"
-              ></CollaboratorCard>
+
               <CollaboratorCard
                 name="Otávio Rocha"
                 postion="Divulgação Científica"
                 image="/people/OtávioRocha.jpg"
+              ></CollaboratorCard>
+
+              <CollaboratorCard
+                name="Rafaella Ferneda"
+                postion="Divulgação Científica"
+                image="/people/RafaellaFerneda.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Andreza Oliveira"
+                postion="Divulgação Científica"
+                image="/people/AndrezaOliveira.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Mariana Costa"
+                postion="Triagem de Dados Sonoros"
+                image="/people/MarianaCosta.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Camila Mendonça"
+                postion="Triagem de Dados Sonoros"
+                image="/people/CamilaMendonça.jpg"
+              ></CollaboratorCard>
+
+              <CollaboratorCard
+                name="Thamires Freitas"
+                postion="Editais"
+                image="/people/ThamiresFreitas.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Michelle Baptista"
+                postion="Levantamento de Dados e Divulgação"
+                image="/people/MichelleBaptista.jpg"
+              ></CollaboratorCard>
+              <CollaboratorCard
+                name="Guilherme Canassa"
+                postion="Manejo de Imagens"
+                image="/people/GuilhermeCanassa.jpg"
               ></CollaboratorCard>
               <CollaboratorCard
                 name="Rodrigo Oliveira"
