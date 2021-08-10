@@ -121,6 +121,7 @@ export default function Nav() {
               href="#"
             >
               <Image
+              alt="logo OAMa"
                 src="/logo.png"
                 width={50}
                 height={50}

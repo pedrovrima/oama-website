@@ -16,6 +16,8 @@ export default function Actions() {
             <div>
               <Image
                 className="rounded-full border-gray-200 border-8"
+                alt="Anilhamento em ação"
+                placeholder="blur"
                 src="/sobre/anilhamento.jpg"
                 layout="responsive"
                 width={200}
@@ -50,6 +52,8 @@ export default function Actions() {
           <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
             <div>
               <Image
+                placeholder="blur"
+    alt="Serra da Mantiqueira"
                 className="rounded-full"
                 layout="responsive"
                 src="/sobre/Mantiqueira.jpg"
@@ -83,6 +87,8 @@ export default function Actions() {
           <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
             <div>
               <Image
+                placeholder="blur"
+                alt="Criança olhando por binóculos"
                 className="rounded-full"
                 layout="responsive"
                 src="/sobre/crianca.jpg"

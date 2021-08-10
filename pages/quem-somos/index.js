@@ -410,13 +410,9 @@ export default function QuemSomos() {
               <ul className="text-gray-700">
                 <li>Affonso Henrique de Souza, biólogo</li>
                 <li>Felipe Cotrim, jornalista</li>
-                <li>Joaquim Mendonça, engenheiro florestal</li>
                 <li>Julia Rodrigues, fotógrafa</li>
-                <li>Lino Matheus de Sá Pereira, ambientalista</li>
                 <li>Luiza Figueira, bióloga</li>
-                <li>Nívea Leite, artista plástica</li>
                 <li>Pedro Martins, biólogo</li>
-                <li>Raquel Justo, bióloga</li>
                 <li>Renata Miwa, artista plástica e designer</li>
               </ul>
             </div>

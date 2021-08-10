@@ -5,7 +5,7 @@ import Hero from "../components/hero";
 import Actions from "../components/actions";
 import About from "../components/about";
 import Head from 'next/head';
-
+import Footer from "@includes/footer";
 
 export default function IndexPage() {
   return (
@@ -14,6 +14,7 @@ export default function IndexPage() {
       <Hero></Hero>
       <About></About>
       <Actions></Actions>
+      <Footer></Footer>
     </>
   );
 }

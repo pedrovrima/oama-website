@@ -6,6 +6,8 @@ export function PostAuthorCard(props) {
       <div class=" shadow-lg rounded-full w-3/12 lg:w-2/12 mr-6">
         <div>
           <Image
+          placeholder="blur"
+            alt={`foto de ${props.author}`}
             className="rounded-full"
             layout="responsive"
             src={`/people/${props.author.replace(/\s+/g, "")}.jpg`}
@@ -29,6 +31,8 @@ export function PostAuthorPost(props) {
       <div class=" shadow-lg rounded-full    w-2/12 lg:w-1/12 mr-6">
         <div>
           <Image
+          placeholder="blur"
+            alt={`foto de ${props.author}`}
             className="rounded-full"
             layout="responsive"
             src={`/people/${props.author.replace(/\s+/g, "")}.jpg`}

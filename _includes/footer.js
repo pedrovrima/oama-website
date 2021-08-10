@@ -20,6 +20,7 @@ export default function Footer() {
                 href="https://www.facebook.com/oamantiqueira"
               >
                 <Image
+                alt="logo do Facebook"
                   className="filter invert cursor-pointer"
                   // layout="responsive"
                   width={25}
@@ -34,6 +35,7 @@ export default function Footer() {
                 href="https://www.instagram.com/oamantiqueira"
               >
                 <Image
+                alt="logo do Instagram"
                   className="filter invert cursor-pointer"
                   width={25}
                   height={25}
