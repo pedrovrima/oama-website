@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Hero() {
   return (
     //   Hero
@@ -21,11 +20,10 @@ export default function Hero() {
               Atlântica
             </p>
             <Link href="/apoie">
-
-            <button className="mx-auto md:mx-0 hover:underline bg-yellow-500 text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
-              Apoie
-            </button>
-</Link>
+              <button className="mx-auto md:mx-0 hover:underline bg-yellow-500 text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
+                Apoie
+              </button>
+            </Link>
           </div>
           {/* <!--Right Col--> */}
           <div className="w-full md:w-3/5 py-6 text-center">
