@@ -29,7 +29,7 @@ export default function Apoie() {
       </div>
 
       <div className="mt-16 flex items-center justify-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/FtL8dOPeu6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FtL8dOPeu6U" title="YouTube video player" frameborder="0" allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   );
