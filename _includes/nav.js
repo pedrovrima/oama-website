@@ -121,7 +121,7 @@ export default function Nav() {
               href="#"
             >
               <Image
-              alt="logo OAMa"
+                alt="logo OAMa"
                 src="/logo.png"
                 width={50}
                 height={50}
@@ -163,12 +163,14 @@ export default function Nav() {
                   <Link href="/quem-somos">Quem somos</Link>
                 </li>
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
-                  <Link
-                    href="/blog"
-                  >
-                    Blog
-                  </Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
+                <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
+                  <a target="_blank" href="https://saltator.oama.eco.br">
+                    Saltator
+                  </a>
+                </li>
+
                 <li className="inline-block bg-yellow-400 w-full  no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                   <Link className="" href="/apoie">
                     Apoie
@@ -193,6 +195,13 @@ export default function Nav() {
                 <p className="text-gray-50  hover:underline font-bold">Blog</p>
               </div>
             </Link>
+
+            <a target="_blank" href="https://saltator.oama.eco.br">
+              {" "}
+              <div className=" mr-4 cursor-pointer">
+                <p className="text-gray-50  hover:underline font-bold">Saltator</p>
+              </div>
+            </a>
           </div>
           <Link href="/apoie">
             <div className="justify-end flex items-end">
