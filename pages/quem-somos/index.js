@@ -140,7 +140,7 @@ export default function QuemSomos() {
                 <a
                   className="underline ml-1"
                   target="_blank"
-                  href="mailto:asouza@oama.eco.br
+                  href="mailto:lfigueira@oama.eco.br
 "
                 >
                   E-mail
