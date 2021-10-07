@@ -25,22 +25,16 @@ export default function Newsletter() {
           </div>
         </div>
       </div>
-      <iframe
-        src="https://77b91d15.sibforms.com/serve/MUIEACnXp6W86QfIYk1wLkcJ-A6Zt042ZBaLT-llD8XILzzaCoFvBnRuR84Q3pLS_yIQWCfWYMnLa1Q6koCnPcqv4jw6b7fMkAoe7uTqU2IDi_cOQV9EoXIVlH5cNvu4uQEVzrbXkYpPKQ8hkrWr7hUczSJ3JhyL-tisfdAqRx0nyjnXPL0-AZ0z5Nid-5XorUu4Ys8GHh0Sy_NA"
-        frameborder="0"
-        scrolling="auto"
-        allowfullscreen
-        style={{
-          height: "100vh",
-          width: "50vw",
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: "100%"
-        }}
-      />
 
-      <div className="mt-16 flex items-center justify-center" />
+      <div className="mt-16 flex items-center justify-center">
+        <iframe
+          className="w-full h-screen "
+          src="https://77b91d15.sibforms.com/serve/MUIEACnXp6W86QfIYk1wLkcJ-A6Zt042ZBaLT-llD8XILzzaCoFvBnRuR84Q3pLS_yIQWCfWYMnLa1Q6koCnPcqv4jw6b7fMkAoe7uTqU2IDi_cOQV9EoXIVlH5cNvu4uQEVzrbXkYpPKQ8hkrWr7hUczSJ3JhyL-tisfdAqRx0nyjnXPL0-AZ0z5Nid-5XorUu4Ys8GHh0Sy_NA"
+          frameborder="0"
+          
+          allowfullscreen
+        />
+      </div>
     </div>
   );
 }
