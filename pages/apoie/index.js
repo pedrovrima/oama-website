@@ -3,8 +3,11 @@ import { useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Image from "next/image";
 import Head from "next/head";
+import Footer from "@includes/footer";
+
 export default function Apoie() {
   return (
+    <>
     <div className="pb-32">
       <Head>
         <title>Apoie</title>
@@ -129,5 +132,7 @@ export default function Apoie() {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }

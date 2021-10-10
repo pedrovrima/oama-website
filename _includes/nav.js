@@ -163,6 +163,10 @@ export default function Nav() {
                   <Link href="/quem-somos">Quem somos</Link>
                 </li>
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
+                  <Link href="/projetos">Projetos</Link>
+                </li>
+
+                <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
@@ -186,6 +190,14 @@ export default function Nav() {
               <div className=" mr-4 cursor-pointer">
                 <p className="text-gray-50  hover:underline font-bold">
                   Quem somos
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/projetos">
+              <div className=" mr-4 cursor-pointer">
+                <p className="text-gray-50  hover:underline font-bold">
+                  Projetos
                 </p>
               </div>
             </Link>
