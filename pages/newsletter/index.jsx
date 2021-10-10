@@ -1,8 +1,11 @@
 import Nav from "@includes/nav";
 import Image from "next/image";
 import Head from "next/head";
+import Footer from "@includes/footer";
+
 export default function Newsletter() {
   return (
+    <>
     <div className="pb-32">
       <Head>
         <title>Assine a Newsletter</title>
@@ -36,5 +39,7 @@ export default function Newsletter() {
         />
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
