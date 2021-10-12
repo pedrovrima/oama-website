@@ -10,3 +10,6 @@ It also implements an .mdx blog compiler;
 - React
 - Deployed at Vercel
 
+## Next steps
+
+I am planning now on setting up a connection between Notion and Next, to use Notion as a CMS for the blog;
