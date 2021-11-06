@@ -8,62 +8,76 @@ import Footer from "@includes/footer";
 export default function Apoie() {
   return (
     <>
-    <div className="pb-32">
-      <Head>
-        <title>Apoie</title>
-      </Head>
+      <div className="pb-32">
+        <Head>
+          <title>Apoie</title>
+        </Head>
 
-      <Nav />
-      <div className=" relative hero-small md:hero min-h-1/2">
-        <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
-          <div className="absolute top-0 h-full w-full">
-            <Image
-              // className="h-32"
-              src="/heros/apoie.jpg"
-              layout="fill"
-              //   width={"2000"}
-              //   height={"1000"}
-              objectFit="cover"
-              objectPosition="center"
-              priority={true}
-            ></Image>
+        <Nav />
+        <div className=" relative hero-small md:hero min-h-1/2">
+          <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
+            <div className="absolute top-0 h-full w-full">
+              <Image
+                // className="h-32"
+                src="/heros/apoie.jpg"
+                layout="fill"
+                //   width={"2000"}
+                //   height={"1000"}
+                objectFit="cover"
+                objectPosition="center"
+                priority={true}
+              ></Image>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="mt-16">
-        <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-          Apoie{" "}
-        </h1>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
+        <div className="mt-16">
+          <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
+            Apoie{" "}
+          </h1>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
 
-        <div class="container max-w-4xl mx-auto ">
-          <p class="text-gray-600 px-8 md:px-0 mb-2">
-            O OAMa é uma iniciativa sem fins lucrativos e independente, que só é
-            viável graças à energia, dedicação e colaboração de pessoas que
-            acreditam que, juntos, podemos fazer diferença.
-          </p>
-          <p class="text-gray-600 px-8 md:px-0 mb-2">
-            {" "}
-            Toda doação feita para o OAMa é direcionada para a realização de
-            nossos projetos de pesquisa e de educação. Tornando-se um filiado ou
-            fazendo uma doação para o OAMa, você está apoiando a conservação de
-            aves e habitats brasileiros com base em pesquisas científicas. Sua
-            participação será extremamente apreciada pelo OAMa, e nós nos
-            comprometemos em transformar a sua colaboração em pesquisa,
-            conhecimento e conservação!
-          </p>
+          <div class="container max-w-4xl mx-auto ">
+            <p class="text-gray-600 px-8 md:px-0 mb-2">
+              O OAMa é uma iniciativa sem fins lucrativos e independente, que só
+              é viável graças à energia, dedicação e colaboração de pessoas que
+              acreditam que, juntos, podemos fazer diferença.
+            </p>
+            <p class="text-gray-600 px-8 md:px-0 mb-2">
+              {" "}
+              Toda doação feita para o OAMa é direcionada para a realização de
+              nossos projetos de pesquisa e de educação. Tornando-se um filiado
+              ou fazendo uma doação para o OAMa, você está apoiando a
+              conservação de aves e habitats brasileiros com base em pesquisas
+              científicas. Sua participação será extremamente apreciada pelo
+              OAMa, e nós nos comprometemos em transformar a sua colaboração em
+              pesquisa, conhecimento e conservação!
+            </p>
 
-          <p class="text-gray-600 px-8 md:px-0 mb-8">
-            {" "}
-            As doações são processadas pelo PayPal. Utilize o botão abaixo para
-            abrir a plataforma de doação. Caso queira se tornar um{" "}
-            <strong>filiado</strong>, marque a opção{" "}
-            <strong>"Fazer desta uma doação mensal"</strong>.
-          </p>
-          {/* <div className="md:grid md:grid-cols-2">
+            <p class="text-gray-600 px-8 md:px-0 mb-8">
+              {" "}
+              As doações podem ser feitas através do PayPal ou por
+              transferência/ depósito diretamente em nossa conta no Banco do
+              Brasil.
+            </p>
+
+            <p class="text-gray-600 px-8 md:px-0 mb-8">
+              Para doar por um depósito no Banco do Brasil, faça um depósito na
+              Conta Corrente: <br/>
+              <strong>Banco do Brasil</strong> - 001 <br/>
+              <strong>Agência</strong> 0131-7 <br/>
+              <strong>Conta corrente</strong> 81487-3 <br/>
+              <strong>CNPJ</strong> 35.713.512/0001-80 <br/>
+            </p>
+
+            <p class="text-gray-600 px-8 md:px-0 mb-8">
+              Ou utilize o botão abaixo para fazer a doação pelo PayPal. Caso
+              queira se tornar um <strong>filiado</strong>, marque a opção{" "}
+              <strong>"Fazer desta uma doação mensal"</strong>.
+            </p>
+            {/* <div className="md:grid md:grid-cols-2">
             <div className="flex flex-col mb-8 items-center">
               <h3 className="text-3xl w-full font-bold text-center mb-8 text-gray-800">
                 Doação
@@ -99,40 +113,40 @@ export default function Apoie() {
               </div>
             </div>
             <div ref={paypal}></div> */}
-          <div className="flex justify-center">
-            <form
-              action="https://www.paypal.com/donate"
-              method="post"
-              target="_top"
-            >
-              <input
-                type="hidden"
-                name="hosted_button_id"
-                value="9HRNWTKA892WS"
-              />
-              <input
-                type="submit"
-                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                className="mx-auto lg:mx-0 mr-2 hover:underline bg-yellow-400 text-gray-800 font-bold rounded-full mt-0 py-2  px-8 shadow cursor-pointer focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                border="0"
-                name="submit"
-                title="PayPal - The safer, easier way to pay online!"
-                alt="Donate with PayPal button"
-                value="Doe"
-              />
-              <img
-                alt=""
-                border="0"
-                src="https://www.paypal.com/en_BR/i/scr/pixel.gif"
-                width="1"
-                height="1"
-              />
-            </form>
+            <div className="flex justify-center">
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="9HRNWTKA892WS"
+                />
+                <input
+                  type="submit"
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                  className="mx-auto lg:mx-0 mr-2 hover:underline bg-yellow-400 text-gray-800 font-bold rounded-full mt-0 py-2  px-8 shadow cursor-pointer focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                  border="0"
+                  name="submit"
+                  title="PayPal - The safer, easier way to pay online!"
+                  alt="Donate with PayPal button"
+                  value="Doe"
+                />
+                <img
+                  alt=""
+                  border="0"
+                  src="https://www.paypal.com/en_BR/i/scr/pixel.gif"
+                  width="1"
+                  height="1"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <Footer></Footer>
+      <Footer></Footer>
     </>
   );
 }
