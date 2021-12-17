@@ -72,7 +72,7 @@ const OtherPost = ({ post }) => {
       <div className="flex flex-col rounded-lg cursor-pointer shadow-2xl mx-2 mt-8 mb-4">
         <div className=" ">
           <Image
-            className="rounded-sm shado"
+            className="rounded-sm "
             layout="responsive"
             width={30}
             objectFit="cover"
