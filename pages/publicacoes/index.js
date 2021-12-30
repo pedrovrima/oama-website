@@ -40,17 +40,21 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
+        <h2 className="w-full text-3xl font-bold leading-tight text-center text-gray-800">Divulgação Científica</h2>
         <div className="w-3/4 mx-auto grid sm:grid-cols-3">
             {div_cient.map(dc=>
               <Publication {...dc}></Publication>
               )}
         </div>
+        <h2 className="w-full text-3xl font-bold mt-24 leading-tight text-center text-gray-800">Institucional</h2>
 
         <div className="w-3/4 mx-auto grid sm:grid-cols-3">
             {institucional.map(inst=>
               <Publication {...inst}></Publication>
               )}
         </div>
+        <h2 className="w-full text-3xl font-bold mt-24 leading-tight text-center text-gray-800">Acadêmico</h2>
+
         <div className="w-3/4 mx-auto grid sm:grid-cols-3">
             {academic.map(inst=>
               <Publication {...inst}></Publication>
