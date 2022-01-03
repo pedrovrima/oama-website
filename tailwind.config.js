@@ -187,8 +187,10 @@ module.exports = {
     },
   },
   variants: {
+    
     extend: {
       // ...
+      display:["group-hover","group-focus"],
       textIndent: ['responsive'],
       textShadow: ['responsive'],
       textDecorationStyle: ['responsive'],

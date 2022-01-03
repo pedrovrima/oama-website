@@ -8,6 +8,7 @@ const links = [{ href: "https://nextjs.org/docs", label: "Doe" }];
 export default function Nav() {
   const [scroll, setScroll] = useState(0);
   const [open, setOpen] = useState(false);
+  // const [openActivities,setActOpen]= useState(false)
   const ref = useOnclickOutside(() => {
     setOpen(false);
   });
@@ -159,11 +160,33 @@ export default function Nav() {
               ref={ref}
             >
               <ul className="list-reset lg:flex justify-end flex-1 items-center">
-                <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
+                <li className="inline-block w-full   no-underline hover:text-gray-800 focus:text-underline py-2  px-4">
                   <Link href="/quem-somos">Quem somos</Link>
                 </li>
-                <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
-                  <Link href="/projetos">Projetos</Link>
+                <li className=" w-full group   no-underline  hover:text-underline py-2  px-4">
+                  <p className="text-gray-600 underline">Atividades</p>
+                  <div
+                    className="px-4
+                    flex
+                    flex-col
+                  "
+                  >
+                    <Link href="/projetos">
+                    <p className="cursor-pointer pb-1">
+                        Projetos
+                      </p>
+                      </Link>
+                    <Link href="/treinamento-cursos">
+                    <p className="cursor-pointer pb-1">
+                      Cursos e Treinamento
+                      </p></Link>
+                    <Link href="/downloads">
+                    <p className="cursor-pointer pb-1">
+                      Arquivos e Downloads
+                      </p>
+                      </Link>
+
+                  </div>
                 </li>
 
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
@@ -194,13 +217,27 @@ export default function Nav() {
               </div>
             </Link>
 
-            <Link href="/projetos">
-              <div className=" mr-4 cursor-pointer">
-                <p className="text-gray-50  hover:underline font-bold">
-                  Projetos
-                </p>
+            <div className=" group mr-4 ">
+              <p className="text-gray-50   font-bold">Atividades</p>
+              <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
+                <Link href="/projetos">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Projetos
+                  </p>
+                </Link>
+                <Link href="/treinamento-cursos">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Cursos e Treinamento
+                  </p>
+                </Link>
+
+                <Link href="/downloads">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Arquivos e Downloads
+                  </p>
+                </Link>
               </div>
-            </Link>
+            </div>
 
             <Link href="/blog">
               <div className=" mr-4 cursor-pointer">
@@ -211,7 +248,9 @@ export default function Nav() {
             <a target="_blank" href="https://saltator.oama.eco.br">
               {" "}
               <div className=" mr-4 cursor-pointer">
-                <p className="text-gray-50  hover:underline font-bold">Saltator</p>
+                <p className="text-gray-50  hover:underline font-bold">
+                  Saltator
+                </p>
               </div>
             </a>
           </div>
