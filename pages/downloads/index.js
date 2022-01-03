@@ -232,7 +232,7 @@ const academic = [
     title: "Pôster 'Padrões e tendências sobre o conhecimento atual da avifauna na Serra da Mantiqueira, sudeste do Brasil'",
     text: "Trabalho apresentado por Affonso Souza no XXVII Congresso Brasileiro de Ornitologia, 2021.",
     img: "Poster CBO2021 ahs.png",
-    link: "Affonso-CBO2021.mp4"
+    direct_link: "https://youtu.be/_Qmz-0XjUQo"
   },
   {
     title: "Palestra 'O que são observatórios de aves'",
