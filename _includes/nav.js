@@ -164,7 +164,7 @@ export default function Nav() {
                   <Link href="/quem-somos">Quem somos</Link>
                 </li>
                 <li className=" w-full group   no-underline  hover:text-underline py-2  px-4">
-                  <p className="text-gray-600 underline">Atividades</p>
+                  <p className="">Atividades</p>
                   <div
                     className="px-4
                     flex
