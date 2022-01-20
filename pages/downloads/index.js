@@ -140,6 +140,12 @@ const institucional = [
     text: "Esse é nosso “cartão de visita”, um material informativo para apresentar o Observatório de Aves da Mantiqueira para quem ainda não nos conhece.",
     img: "_MOCKUP_Folder_Oama_2021.jpg",
     link: "Folder_Oama.pdf"
+  },
+  {
+    title: "Relatório Anual 2021",
+    text: "Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2021.",
+    img: "relatorio_anual_oama_2021.png",
+    link: "Relatório Anual 2021.pdf"
   }
   // {
   //   title:"Portfólio OAMa",
