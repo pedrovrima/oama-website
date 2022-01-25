@@ -32,13 +32,19 @@ export default function Treinamento() {
       <div className="mt-16">
         <div className="mb-24">
           <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-            Cursos e Treinamentos{" "}
+            Cursos e Treinamento{" "}
           </h1>
-          <div class="w-full mb-4">
+          <div class="w-full mb-">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
           </div>
+
+          <p className="p-12 px-32 text-lg text-gray-600">A capacitação e o treinamento de profissionais para o emprego de técnicas de estudo e pesquisa em Ornitologia são essenciais para a qualidade dos trabalhos desenvolvidos e dos dados coletados, como também para o bem-estar dos animais estudados. Para nós, promover oportunidades de capacitação técnica é uma forma de contribuir para o desenvolvimento de ciência de qualidade no Brasil. Por isso, elaboramos e oferecemos cursos em nossas áreas de especialidade técnica.  Promovemos, através de parcerias, cursos também em áreas relacionadas à ornitologia, conservação e observação de aves. 
+Além de cursos, oferecemos oportunidade de treinamento de longo-prazo e intensivo em técnicas de monitoramento de avifauna através de nosso programa de voluntariado de treinamento.  Saiba mais sobre os cursos e sobre nosso programa de treinamento aqui. </p>
+
         </div>
+
       </div>
+
       <div className="px-12 sm:px-32">
         <h2 className="w-full mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
           Programa de Treinamento em Monitoramento da Avifauna
@@ -69,15 +75,15 @@ export default function Treinamento() {
           <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
           Cursos
         </h2>
-        <p className="text-xl text-center w-full">Em breve...</p>
-        {/* <div className="flex flex-col sm:flex-row ">
-          <div class="w-full sm:w-1/3 p-2 sm:p-6 my-auto">
+        <div className="flex mb-8 flex-col sm:flex-row ">
+          <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+
             <div>
               <Image
                 placeholder="blur"
                 alt="Serra da Mantiqueira"
                 layout="responsive"
-                src="/sobre/Mantiqueira.jpg"
+                src="/treinamento-cursos/curso_muda.png"
                 width={400}
                 objectFit="cover"
                 height={400}
@@ -85,93 +91,59 @@ export default function Treinamento() {
             </div>
           </div>
           <div className="w-full sm:w-2/3">
-              <p className="text-gray-600 text-lg font-bold">Nome do Curso</p>
-              <p className="text-gray-500 text-md font-bold">11/01/1991</p>
-              <p className="text-gray-500 text-md font-bold">Estação de Pesquisa Refúgio da Boa Vista</p>
+              <p className="text-gray-600 text-lg font-bold">Curso Online Análise de Mudas e Classificação de idade em Aves</p>
+              <p className="text-gray-500 text-md font-bold">19 e 20 de fevereiro 2022</p>
+              <p className="text-gray-500 text-md font-bold">Online</p>
             <p className="text-gray-600 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget condimentum felis. Nulla ac lacus nisi. Nam eget ultricies
-              leo. Pellentesque rutrum nibh vel nibh hendrerit ultrices.
-              Pellentesque convallis neque at vulputate tempor. Nulla congue
-              mattis lectus, placerat ullamcorper libero egestas a. Vivamus
-              fermentum ex in felis consectetur, et iaculis nulla malesuada. In
-              fringilla condimentum fringilla. Etiam eget pretium nulla. Vivamus
-              quis magna laoreet, aliquet leo nec, condimentum ipsum. Praesent
-              sollicitudin ante non neque tristique, id rutrum dui maximus.
-              Morbi id sem ut velit faucibus mattis. Nulla varius malesuada orci
-              ut dapibus. Ut faucibus gravida ornare. Proin ut pretium dui.
-              Donec tincidunt vitae risus eu ultricies. Suspendisse convallis
-              auctor lacus, vitae posuere quam feugiat ac. Duis a ex non tortor
-              lobortis molestie. Nam in lacus vel enim finibus bibendum. Duis
-              tincidunt porttitor lorem mollis semper. Mauris tincidunt ex in
-              ullamcorper blandit. Suspendisse pulvinar, mauris sit amet congue
-              fringilla, eros magna vestibulum nisl, a ullamcorper libero nisi
-              vel justo. Morbi a ultrices mi. Sed tempor dolor enim, quis cursus
-              enim auctor ac. In finibus tellus sit amet mauris varius, sit amet
-              fringilla mauris tempor. Maecenas pretium sagittis eros, ut
-              interdum mi pulvinar at. Nunc feugiat fermentum turpis, quis
-              finibus nunc rutrum eget. Suspendisse venenatis lacinia sem, sed
-              gravida lectus semper at. Donec volutpat aliquet nisi, eu pretium
-              augue rutrum eget. Integer id vehicula nibh. Aliquam tincidunt
-              pharetra risus. Cras semper erat nisl, id ornare <a className="underline text-yellow-600 cursor-pointer">Link</a>.
+            O curso teórico de Análise de Muda e Classificação de Idade em Aves (CAMCI) acontecerá de forma remota, totalmente online. Nosso objetivo é introduzir o conhecimento básico sobre as estratégias e padrões de muda de penas nas aves e como usar o método WRP para classificação de idade (ou “molt based ageing system”). Visamos também promover a padronização no uso de terminologias e nomenclaturas para mudas e plumagens em aves, e expandir a prática de classificação de idade de aves com base na análise de mudas e plumagem entre os ornitólogos do Brasil. O tema e o nível do curso pode interessar desde estudantes de graduação até pesquisadores e professores que tenham interesse no estudo de muda das aves e suas aplicações para classificação de idade. Quem não é acadêmico mas é muito curioso e gosta de observar aves e suas plumagens também está convidado a participar.
+O curso será ministrado por Luiza Figueira e Pedro Martins. <a href="https://www.sympla.com.br/curso-de-analise-de-mudas-e-classificacao-de-idade-em-aves__1452863" target="_blank" className="underline text-yellow-600 cursor-pointer">Para inscrição e mais informações, acesse a plataforma do curso</a>.
             </p>
           </div>
 
         </div>
+        {/* <div className="flex flex-col sm:flex-row ">
+          <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
 
+            <div>
+              <Image
+                placeholder="blur"
+                alt="Serra da Mantiqueira"
+                layout="responsive"
+                src="/treinamento-cursos/curso-foto.jpg"
+                width={400}
+                objectFit="cover"
+                height={400}
+              />
+            </div>
+          </div>
+          <div className="w-full sm:w-2/3">
+              <p className="text-gray-600 text-lg font-bold">Curso de fotografia de aves com Birds Atlantic</p>
+              <p className="text-gray-500 text-md font-bold">21 a 24 de abril 2022</p>
+              <p className="text-gray-500 text-md font-bold">Estação de Pesquisa OAMa</p>
+            <p className="text-gray-600 ">
+            Esta atividade é voltada para fotógrafos e observadores de aves que buscam aprimorar ou iniciar seus registros fotográficos de natureza, inclusive as aves. O objetivo deste curso é que o participante domine os conceitos da fotografia com qualquer marca de equipamento, através de conhecimentos teóricos e práticos. Na parte prática o instrutor orienta de forma individual, respeitando a peculiaridade de cada equipamento/participante. Também iremos à campo e comedouro para treinar o que foi ensinado. No decorrer do workshop os alunos poderão tirar suas dúvidas particulares e aprender mais sobre sua câmera individualmente. Na parte teórica serão trabalhados os pilares da fotografia, e técnicas que facilitam na agilidade da configuração do equipamento. Além de composição e comportamento do fotógrafo.O workshop será ministrado por <strong className="font-bold">Jorge Lucas Moreira e Karoline Zamluti, sócios da Birds Atlantic.</strong> <a href="" target="_blank" className="underline text-yellow-600 cursor-pointer">Para inscrição, clique aqui</a>.
+            </p>
+          </div>
 
+        </div> */}
+
+<h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
+          Em Breve
+        </h2>
+        <ul className="text-lg p-12">
+          <li className="list-disc">Curso prático de anilhamento - foco em Passeriformes</li>
+          <li className="list-disc">Curso prático de análise de muda e classificação de idade em aves</li>
+
+        </ul>
         <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
           Cursos Concluídos
         </h2>
-        <div className="flex flex-col sm:flex-row ">
-          <div class="w-full sm:w-1/3 p-2 sm:p-6 my-auto">
-            <div>
-              <Image
-                placeholder="blur"
-                alt="Serra da Mantiqueira"
-                layout="responsive"
-                src="/sobre/Mantiqueira.jpg"
-                width={400}
-                objectFit="cover"
-                height={400}
-              />
-            </div>
-          </div>
-          <div className="w-full sm:w-2/3">
-              <p className="text-gray-600 text-lg font-bold">Nome do Curso</p>
-              <p className="text-gray-500 text-md font-bold">11/01/1991</p>
-              <p className="text-gray-500 text-md font-bold">Estação de Pesquisa Refúgio da Boa Vista</p>
-            <p className="text-gray-600 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget condimentum felis. Nulla ac lacus nisi. Nam eget ultricies
-              leo. Pellentesque rutrum nibh vel nibh hendrerit ultrices.
-              Pellentesque convallis neque at vulputate tempor. Nulla congue
-              mattis lectus, placerat ullamcorper libero egestas a. Vivamus
-              fermentum ex in felis consectetur, et iaculis nulla malesuada. In
-              fringilla condimentum fringilla. Etiam eget pretium nulla. Vivamus
-              quis magna laoreet, aliquet leo nec, condimentum ipsum. Praesent
-              sollicitudin ante non neque tristique, id rutrum dui maximus.
-              Morbi id sem ut velit faucibus mattis. Nulla varius malesuada orci
-              ut dapibus. Ut faucibus gravida ornare. Proin ut pretium dui.
-              Donec tincidunt vitae risus eu ultricies. Suspendisse convallis
-              auctor lacus, vitae posuere quam feugiat ac. Duis a ex non tortor
-              lobortis molestie. Nam in lacus vel enim finibus bibendum. Duis
-              tincidunt porttitor lorem mollis semper. Mauris tincidunt ex in
-              ullamcorper blandit. Suspendisse pulvinar, mauris sit amet congue
-              fringilla, eros magna vestibulum nisl, a ullamcorper libero nisi
-              vel justo. Morbi a ultrices mi. Sed tempor dolor enim, quis cursus
-              enim auctor ac. In finibus tellus sit amet mauris varius, sit amet
-              fringilla mauris tempor. Maecenas pretium sagittis eros, ut
-              interdum mi pulvinar at. Nunc feugiat fermentum turpis, quis
-              finibus nunc rutrum eget. Suspendisse venenatis lacinia sem, sed
-              gravida lectus semper at. Donec volutpat aliquet nisi, eu pretium
-              augue rutrum eget. Integer id vehicula nibh. Aliquam tincidunt
-              pharetra risus. Cras semper erat nisl, id ornare <a className="underline text-yellow-600 cursor-pointer">Link</a>.
-            </p>
-          </div>
+        <ul className="text-lg p-12">
+          <li className="list-disc">Curso Análise de Muda e Classificação de Idade em Aves 2019 - presencial</li>
+          <li className="list-disc">Curso teórico Básico de Anilhamento 2021 - Online </li>
 
-        </div>
-*/}
+        </ul>
+
       </div> 
     </div>
           <Footer/>
