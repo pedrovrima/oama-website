@@ -47,8 +47,7 @@ export default function QuemSomos() {
                 <Image
                   className="rounded-full border-gray-200 border-8"
                   alt="Anilhamento em ação"
-                  placeholder="blur"
-                  src="/projetos/monitoramento.jpg"
+                    src="/projetos/monitoramento.jpg"
                   layout="responsive"
                   width={200}
                   objectFit="cover"
@@ -81,8 +80,7 @@ export default function QuemSomos() {
             <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
               <div>
                 <Image
-                  placeholder="blur"
-                  alt="Serra da Mantiqueira"
+                    alt="Serra da Mantiqueira"
                   className="rounded-full"
                   layout="responsive"
                   src="/projetos/aves_mantiqueira.jpg"
@@ -121,8 +119,7 @@ export default function QuemSomos() {
                 <Image
                   className="rounded-full border-gray-200 border-8"
                   alt="Anilhamento em ação"
-                  placeholder="blur"
-                  src="/projetos/saltator.jpg"
+                    src="/projetos/saltator.jpg"
                   layout="responsive"
                   width={200}
                   objectFit="cover"
@@ -155,8 +152,7 @@ export default function QuemSomos() {
             <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
               <div>
                 <Image
-                  placeholder="blur"
-                  alt="Serra da Mantiqueira"
+                    alt="Serra da Mantiqueira"
                   className="rounded-full"
                   layout="responsive"
                   src="/projetos/dia_de_campo.jpg"
@@ -195,8 +191,7 @@ export default function QuemSomos() {
                 <Image
                   className="rounded-full border-gray-200 border-8"
                   alt="Anilhamento em ação"
-                  placeholder="blur"
-                  src="/projetos/redes_sociais.jpg"
+                    src="/projetos/redes_sociais.jpg"
                   layout="responsive"
                   width={200}
                   objectFit="cover"
@@ -235,8 +230,7 @@ export default function QuemSomos() {
             <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
               <div>
                 <Image
-                  placeholder="blur"
-                  alt="Serra da Mantiqueira"
+                    alt="Serra da Mantiqueira"
                   className="rounded-full"
                   layout="responsive"
                   src="/projetos/cursos.jpg"

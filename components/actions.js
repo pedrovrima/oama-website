@@ -17,8 +17,7 @@ export default function Actions() {
               <Image
                 className="rounded-full border-gray-200 border-8"
                 alt="Anilhamento em ação"
-                placeholder="blur"
-                src="/sobre/anilhamento.jpg"
+                src="/sobre/anilhamento.jpeg"
                 layout="responsive"
                 width={200}
                 objectFit="cover"
@@ -52,7 +51,6 @@ export default function Actions() {
           <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
             <div>
               <Image
-                placeholder="blur"
     alt="Serra da Mantiqueira"
                 className="rounded-full"
                 layout="responsive"
@@ -87,7 +85,6 @@ export default function Actions() {
           <div class="w-3/5  sm:w-1/3 p-2 sm:p-6">
             <div>
               <Image
-                placeholder="blur"
                 alt="Criança olhando por binóculos"
                 className="rounded-full"
                 layout="responsive"

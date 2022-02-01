@@ -41,108 +41,65 @@ export default function Apoie() {
 
           <div class="container max-w-4xl mx-auto ">
             <p class="text-gray-600 px-8 md:px-0 mb-2">
-              O OAMa é uma iniciativa sem fins lucrativos e independente, que só
-              é viável graças à energia, dedicação e colaboração de pessoas que
-              acreditam que, juntos, podemos fazer diferença.
+              O Observatório de Aves da Mantiqueira (OAMa) é uma iniciativa sem
+              fins lucrativos e independente, que só é viável graças à energia,
+              dedicação e colaboração de pessoas que acreditam que, juntos,
+              podemos fazer a diferença na Mata Atlântica.
             </p>
             <p class="text-gray-600 px-8 md:px-0 mb-2">
               {" "}
               Toda doação feita para o OAMa é direcionada para a realização de
               nossos projetos de pesquisa e de educação. Tornando-se um filiado
-              ou fazendo uma doação para o OAMa, você está apoiando a
-              conservação de aves e habitats brasileiros com base em pesquisas
-              científicas. Sua participação será extremamente apreciada pelo
-              OAMa, e nós nos comprometemos em transformar a sua colaboração em
-              pesquisa, conhecimento e conservação!
+              ou fazendo uma doação para o OAMa, você apoia a conservação de
+              aves e habitats brasileiros com base em pesquisas científicas. Sua
+              participação será extremamente apreciada pelo OAMa, e nós nos
+              comprometemos em transformar a sua colaboração em pesquisa,
+              conhecimento e conservação!
             </p>
 
-            <p class="text-gray-600 px-8 md:px-0 mb-8">
+            <p className="text-gray-600 px-8 md:px-0 mb-8">
               {" "}
-              As doações podem ser feitas através do PayPal ou por
-              transferência/ depósito diretamente em nossa conta no Banco do
-              Brasil.
-            </p>
-
-            <p class="text-gray-600 px-8 md:px-0 mb-8">
-              Para doar por um depósito no Banco do Brasil, faça um depósito na
-              Conta Corrente: <br/>
-              <strong>Banco do Brasil</strong> - 001 <br/>
-              <strong>Agência</strong> 0131-7 <br/>
-              <strong>Conta corrente</strong> 81487-3 <br/>
-              <strong>CNPJ</strong> 35.713.512/0001-80 <br/>
-            </p>
-
-            <p class="text-gray-600 px-8 md:px-0 mb-8">
-              Ou utilize o botão abaixo para fazer a doação pelo PayPal. Caso
-              queira se tornar um <strong>filiado</strong>, marque a opção{" "}
-              <strong>"Fazer desta uma doação mensal"</strong>.
-            </p>
-            {/* <div className="md:grid md:grid-cols-2">
-            <div className="flex flex-col mb-8 items-center">
-              <h3 className="text-3xl w-full font-bold text-center mb-8 text-gray-800">
-                Doação
-              </h3>
-              <div class="mt-1 relative rounded-md shadow-lg">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <span class="text-gray-500 sm:text-md">R$</span>
-                </div>
-                <input
-                  pattern="[0-9]*"
-                  inputmode="numeric"
-                  placeholder="0,00"
-                  className="border-2 px-4  text-right text-lg text-gray-600 p-1 w-48 border-amber-300 rounded-lg"
-                ></input>
-              </div>
-            </div>
-            <div className="flex flex-col mb-8 items-center">
-              <h3 className="text-3xl w-full font-bold text-center mb-8 text-gray-800">
-                Filie-se
-              </h3>
-              <div class="mt-1 relative rounded-md shadow-lg">
-                <select
-                  placeholder="Escolha seu plano"
-                  className="border-2 px-4  text-center text-lg text-gray-600 p-1 w-64 border-amber-300 rounded-lg"
-                >
-                  <option value="15,00">Tico-tico - R$ 15,00</option>
-                  <option value="30,00">Saí-andorinha - R$ 30,00</option>
-                  <option value="60,00">Saíra-sete-cores - R$ 60,00</option>
-                  <option value="120,00">Saíra-amarela - R$ 120,00</option>
-                  <option value="320,00">Tangará-dançarino - R$ 320,00</option>
-                  <option value="500,00">Gavião-pega-macaco - R$ 500,00</option>
-                </select>
-              </div>
-            </div>
-            <div ref={paypal}></div> */}
-            <div className="flex justify-center">
-              <form
-                action="https://www.paypal.com/donate"
-                method="post"
-                target="_top"
+              Para compor nossa rede de colaboração, acesse a{" "}
+              <a
+                className="text-yellow-400 font-bold"
+                target="_blank"
+                href="https://www.catarse.me/filiadosoama"
               >
-                <input
-                  type="hidden"
-                  name="hosted_button_id"
-                  value="9HRNWTKA892WS"
-                />
-                <input
-                  type="submit"
-                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                  className="mx-auto lg:mx-0 mr-2 hover:underline bg-yellow-400 text-gray-800 font-bold rounded-full mt-0 py-2  px-8 shadow cursor-pointer focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                  border="0"
-                  name="submit"
-                  title="PayPal - The safer, easier way to pay online!"
-                  alt="Donate with PayPal button"
-                  value="Doe"
-                />
-                <img
-                  alt=""
-                  border="0"
-                  src="https://www.paypal.com/en_BR/i/scr/pixel.gif"
-                  width="1"
-                  height="1"
-                />
-              </form>
-            </div>
+                Campanha de Filiação no Catarse
+              </a>{" "}
+              e escolha a categoria que mais se encaixa com você. Temos
+              diferentes <strong>opções de contribuição e recompensas</strong>
+              elaboradas com todo carinho e dedicação.
+            </p>
+
+            <p className="text-gray-600 px-8 md:px-0 mb-8">
+              Doações avulsas podem ser feitas pelo{" "}
+              <a
+                className="text-yellow-400 font-bold"
+                target="_blank"
+                href="https://www.paypal.com/donate?token=l86wJN0mbBBDMB6thbmpbdZjQrzSzgOafhXX9CK5jDGpBRy9ChezEm3y99DuXoDx0657XKpmibie7fc9"
+              >
+                PayPal
+              </a>{" "}
+              ou por{" "}
+              <strong>
+                transferência/ depósito diretamente em nossa conta no Banco do
+                Brasil
+              </strong>
+              . Também oferecemos a comodidade de se tornar um filiado pela
+              opção "Fazer desta uma doação mensal" no PayPal ou por depósitos
+              mensais em nossa conta no Banco do Brasil.
+            </p>
+
+            <p className="text-gray-600 px-8 md:px-0 mb-8">
+              Doações por depósito na Conta Corrente: <br />
+              <strong>Banco do Brasil</strong> - 001 <br />
+              <strong>Agência</strong> 0131-7 <br />
+              <strong>Conta corrente</strong> 81487-3 <br />
+              <strong>CNPJ</strong> 35.713.512/0001-80 <br />
+            </p>
+
+     
           </div>
         </div>
       </div>

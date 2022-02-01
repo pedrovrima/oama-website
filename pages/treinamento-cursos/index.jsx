@@ -53,7 +53,6 @@ Além de cursos, oferecemos oportunidade de treinamento de longo-prazo e intensi
           <div class="w-full my-auto sm:w-1/3 sm:px-6">
             <div>
               <Image
-                placeholder="blur"
                 alt="Serra da Mantiqueira"
                 layout="responsive"
                 src="/treinamento-cursos/treinamento.jpg"
@@ -80,7 +79,6 @@ Além de cursos, oferecemos oportunidade de treinamento de longo-prazo e intensi
 
             <div>
               <Image
-                placeholder="blur"
                 alt="Serra da Mantiqueira"
                 layout="responsive"
                 src="/treinamento-cursos/curso_muda.png"
@@ -107,7 +105,6 @@ O curso será ministrado por Luiza Figueira e Pedro Martins. <strong className="
 
             <div>
               <Image
-                placeholder="blur"
                 alt="Serra da Mantiqueira"
                 layout="responsive"
                 src="/treinamento-cursos/curso-foto.jpg"

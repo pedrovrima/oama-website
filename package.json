@@ -11,8 +11,8 @@
     "autoprefixer": "^10.0.2",
     "aws-sdk": "^2.799.0",
     "email-validator": "^2.0.4",
-    "marked": "^2.1.2",
-    "next": "^10.1.2",
+    "marked": "^4.0.12",
+    "next": "^12.0.10",
     "postcss": "^8.1.8",
     "react": "^16.13.1",
     "react-cool-onclickoutside": "^1.6.1",
@@ -21,7 +21,7 @@
     "tailwindcss-typography": "^3.1.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.2.1",
     "gray-matter": "^4.0.3",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
