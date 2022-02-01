@@ -32,6 +32,7 @@ export default function Blog(props) {
 export async function getStaticProps() {
   const config = await getConfig();
   const allPosts = await getAllPosts();
+  console.log(allPosts)
   return {
     props: {
       posts: allPosts,
