@@ -9,7 +9,7 @@ export async function getAllPosts() {
   for(const key of context.keys()){
     const post = key.slice(2);
     console.log("here",key)
-    const content = await import(`../posts/${post}`);
+    const content = await import(`../_posts/${post}`);
     const meta = matter(content.default)
     const hero = meta.data.hero? meta.data.hero : "default.jpg"
     posts.push({
@@ -25,7 +25,7 @@ export async function getAllPosts() {
 
 
 export async function getPostBySlug(slug) {
-  const fileContent = await import(`../posts/${slug}.mdx`)
+  const fileContent = await import(`../_posts/${slug}.mdx`)
   const meta = matter(fileContent.default)
   const content = marked(meta.content)    
   return {
