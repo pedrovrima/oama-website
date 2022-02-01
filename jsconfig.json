@@ -4,7 +4,7 @@
       "paths": {
         "@includes/*": ["_includes/*"],
         "@layouts/*": ["_layouts/*"],
-        "@posts/*": ["_posts/*"],
+        "@posts/*": ["posts/*"],
         "@api": ["api/index"],
       }
     }

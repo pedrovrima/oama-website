@@ -4,7 +4,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ["./_posts/*.{js,ts,jsx,rsx,mdx}","./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}","./_includes/**/*.{js,ts,jsx,tsx}","./_layouts/**/*.{js,ts,jsx,tsx}"],
+  purge: ["./posts/*.{js,ts,jsx,rsx,mdx}","./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}","./_includes/**/*.{js,ts,jsx,tsx}","./_layouts/**/*.{js,ts,jsx,tsx}"],
   theme: {
     minHeight: {
 
