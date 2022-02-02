@@ -68,7 +68,7 @@ export default function Apoie() {
                 Campanha de Filiação no Catarse
               </a>{" "}
               e escolha a categoria que mais se encaixa com você. Temos
-              diferentes <strong>opções de contribuição e recompensas</strong>
+              diferentes <strong>opções de contribuição e recompensas </strong>
               elaboradas com todo carinho e dedicação.
             </p>
 
@@ -98,8 +98,6 @@ export default function Apoie() {
               <strong>Conta corrente</strong> 81487-3 <br />
               <strong>CNPJ</strong> 35.713.512/0001-80 <br />
             </p>
-
-     
           </div>
         </div>
       </div>
