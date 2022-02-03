@@ -77,7 +77,7 @@ export default function Apoie() {
               <a
                 className="text-yellow-400 font-bold"
                 target="_blank"
-                href="https://www.paypal.com/donate?token=l86wJN0mbBBDMB6thbmpbdZjQrzSzgOafhXX9CK5jDGpBRy9ChezEm3y99DuXoDx0657XKpmibie7fc9"
+                href="https://www.paypal.com/donate/?hosted_button_id=9HRNWTKA892WS"
               >
                 PayPal
               </a>{" "}
