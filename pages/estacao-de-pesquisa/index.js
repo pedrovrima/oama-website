@@ -101,7 +101,7 @@ export default function QuemSomos() {
               registrada para a região de Bocaina de Minas é de 17.8°C, com
               mínimas de 10°C em julho e máximas de 24.6°C em janeiro. Mas
               localmente a variação pode ser mais intensa, com a mínima
-              atingindo 0C nos dias mais frios do inverno. Nos meses de verão,
+              atingindo 0°C nos dias mais frios do inverno. Nos meses de verão,
               os dias são mais quentes e as chuvas mais frequentes e intensas,
               porém as aves e outros animais estão mais ativos e as flores estão
               por todo lado. Nos dias de inverno, ocorre o contrário, dias
@@ -213,9 +213,9 @@ const EPCarousel = (props) => {
   const images = ["/sobre/anilhamento.jpeg", "/sobre/crianca.jpg"];
   return (
     <div className="flex h-100 justify-center items-center sm:pr-8">
-      <Carousel showArrows={true} showStatus autoPlay swipeable  infiniteLoop className="mt-2 bg-gray-700 mb-4 sm:mb-0 w-80 h-52 sm:w-full sm:h-96 my-auto">
+      <Carousel showArrows={true} showStatus autoPlay swipeable  infiniteLoop className="mt-2 bg-gray-700 mb-4 sm:mb-0  h-52 w-full sm:h-96 my-auto">
         {images.map((img) => (
-          <div className="w-full h-96  relative">
+          <div className="h-52 w-full sm:h-96  relative">
             <Image layout="fill" objectFit="contain" src={img}></Image>
           </div>
         ))}
