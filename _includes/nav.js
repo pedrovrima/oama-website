@@ -172,23 +172,23 @@ export default function Nav() {
                   "
                   >
                     <Link href="/projetos">
-                    <p className="cursor-pointer pb-1">
-                        Projetos
-                      </p>
-                      </Link>
+                      <p className="cursor-pointer pb-1">Projetos</p>
+                    </Link>
                     <Link href="/treinamento-cursos">
-                    <p className="cursor-pointer pb-1">
-                      Cursos e Treinamento
-                      </p></Link>
-                    <Link href="/downloads">
-                    <p className="cursor-pointer pb-1">
-                      Arquivos e Downloads
+                      <p className="cursor-pointer pb-1">
+                        Cursos e Treinamento
                       </p>
-                      </Link>
-
+                    </Link>
+                    <Link href="/downloads">
+                      <p className="cursor-pointer pb-1">
+                        Arquivos e Downloads
+                      </p>
+                    </Link>
                   </div>
                 </li>
-
+                <li className="inline-block w-full   no-underline hover:text-gray-800 focus:text-underline py-2  px-4">
+                  <Link href="/estacao-de-pesquisa">Hospedagem</Link>
+                </li>
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
                   <Link href="/blog">Blog</Link>
                 </li>
@@ -238,6 +238,13 @@ export default function Nav() {
                 </Link>
               </div>
             </div>
+            <Link href="/estacao-de-pesquisa">
+              <div className=" mr-4 cursor-pointer">
+                <p className="text-gray-50  hover:underline font-bold">
+                  Hospedagem
+                </p>
+              </div>
+            </Link>
 
             <Link href="/blog">
               <div className=" mr-4 cursor-pointer">
