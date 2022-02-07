@@ -1,9 +1,9 @@
 import matter from 'gray-matter'
-import marked from 'marked'
+import {marked} from 'marked'
 import yaml from 'js-yaml'
 
 export async function getAllPosts() {
-  const context = require.context('../_posts/', false, /\b\.\/*\.mdx$/)
+  const context = require.context('../_posts/', false, /^\.\/.*\.mdx$/)
   const posts = []
   console.log(context.keys().length)
   for(const key of context.keys()){
@@ -18,7 +18,7 @@ export async function getAllPosts() {
       hero
     })
   }
-
+  console.log(posts)
   return(posts);
 }
 
@@ -27,6 +27,7 @@ export async function getAllPosts() {
 export async function getPostBySlug(slug) {
   const fileContent = await import(`../_posts/${slug}.mdx`)
   const meta = matter(fileContent.default)
+  console.log(marked)
   const content = marked(meta.content)    
   return {
     ...meta.data,
