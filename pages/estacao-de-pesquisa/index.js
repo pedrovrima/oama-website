@@ -2,6 +2,7 @@ import Nav from "@includes/nav";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "@includes/footer";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -202,6 +203,8 @@ export default function QuemSomos() {
             </p>
           </div>
           <div>
+          <p className="text-lg px-8 font-bold">          Reservas pelo WhatsApp +55 24 999627394 ou por <a className="text-yellow-600"><Link href="/whatsapp">aqui</Link></a></p>
+
 <p className="text-lg px-8 font-bold">          Importante: Visando mitigar os contágios pelo novo coronavírus, recebemos apenas hóspedes com comprovação de pelo menos duas doses da vacina contra a covid-19 e sem sintomas da doença. O uso de máscaras é indispensável nas áreas de convivência coletiva da EP. </p>
 
           </div>
