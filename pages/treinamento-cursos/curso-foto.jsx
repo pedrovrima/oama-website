@@ -44,6 +44,10 @@ export default function CursoFoto() {
         </div>
 
         <div className="w-3/4 sm:max-w-4xl mx-auto">
+        <h2 className="text-gray-700 pb-2 mt-8 font-bold text-2xl">
+            {" "}
+Sobre o curso          </h2>
+
           <p className="text-gray-700 pb-2">
             Esta atividade é voltada para fotógrafos e observadores de aves que
             buscam aprimorar ou iniciar seus registros fotográficos de natureza,
@@ -83,7 +87,7 @@ export default function CursoFoto() {
             Zamluti, sócios da Birds Atlantic.
           </p>
           <p className="text-gray-700 pb-2">
-            Jorge e Karoline são estudantes de Lic. em turismo, e fotógrafos
+            Jorge e Karoline são estudantes de turismo, e fotógrafos
             formados pela Cruz Vermelha Brasileira de Resende, RJ. São
             especialistas em fotografia de aves em movimento. Através da Birds
             Atlantic atuam no aviturismo desde 2018 na Mata Atlântica da região
@@ -152,7 +156,7 @@ export default function CursoFoto() {
             Para mais detalhes sobre o local de hospedagem, visite nossa{" "}
             <a className="text-yellow-600 underline  ">
               <Link target="_blank" href="/estacao-de-pesquisa">página</Link>
-            </a>
+            </a>{" "}
             ou entre em contato pelo e-mail contato@oama.eco.br ou pelo{" "}
             <a className="text-yellow-600 underline ">
               <Link target="_blank" href="/whatsapp">WhatsApp</Link>
@@ -213,6 +217,10 @@ export default function CursoFoto() {
             <li>
               Transferência/ depósito em conta corrente OAMa no Banco do Brasil
               - a vista
+              <p className="px-2">Ag 0131-7<br/>
+Cc 81487-3<br/>
+CNPJ 357135120001-80<br/>
+Observatório de Aves da Mantiqueira</p>
             </li>
             <li>
               PagSeguro (boleto, cartão de débito e crédito, parcelado. Clique
