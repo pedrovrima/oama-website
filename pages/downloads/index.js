@@ -105,7 +105,7 @@ const div_cient = [
     title: "Ornitologia pra todo dia - conhecendo as aves",
     text: "Livreto para pequenos e grandes curiosos, com muita informação, curiosidades e atividades sobre aves, ciência e conservação. Para divertir, informar e entreter.",
     img: "livreto_Curriculo_OAMA.jpg",
-    link: ""
+    link: "ornito_todo_dia_OAMa.pdf"
   },
   {
     title: "Livreto de colorir - Aves ameaçadas da Mata Atlântica",
