@@ -176,8 +176,15 @@ export default function Treinamento() {
                   >
                     Para entrar na fila de espera, clique aqui
                   </a> */}
-                  
-                   <a href="https://www.sympla.com.br/curso-de-analise-de-mudas-e-classificacao-de-idade-em-aves__1452863" target="_blank" className="underline text-yellow-600 cursor-pointer">Para inscrição e mais informações, acesse a plataforma do curso</a>. 
+                  <a
+                    href="https://www.sympla.com.br/curso-de-analise-de-mudas-e-classificacao-de-idade-em-aves__1452863"
+                    target="_blank"
+                    className="underline text-yellow-600 cursor-pointer"
+                  >
+                    Para inscrição e mais informações, acesse a plataforma do
+                    curso
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -205,6 +212,11 @@ export default function Treinamento() {
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
+                  <span className="font-bold">
+                    Vagas para estadia esgotadas. Para possibilidade de
+                    participar do curso sem estadia,  
+                    <span className="underline  text-yellow-600 cursor-pointer"><Link  href="/whatsapp"> clique aqui. </Link></span>{" "}
+                  </span>
                   Esta atividade é voltada para fotógrafos e observadores de
                   aves que buscam aprimorar ou iniciar seus registros
                   fotográficos de natureza, inclusive as aves. O objetivo deste
