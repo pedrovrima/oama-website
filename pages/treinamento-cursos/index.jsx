@@ -130,7 +130,7 @@ export default function Treinamento() {
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos
             </h2>
-            <div className="flex mb-8 flex-col sm:flex-row ">
+             {/* <div className="flex mb-8 flex-col sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -168,14 +168,7 @@ export default function Treinamento() {
                   curioso e gosta de observar aves e suas plumagens também está
                   convidado a participar. O curso será ministrado por Luiza
                   Figueira e Pedro Martins.{" "}
-                  {/* <strong className="font-bold">Inscrições encerradas. </strong>
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdLXyZ_SekPj9seCeU15v6LOUhLV2qTqPIhrRo15IcDCvg0PA/viewform"
-                    target="_blank"
-                    className="underline text-yellow-600 cursor-pointer"
-                  >
-                    Para entrar na fila de espera, clique aqui
-                  </a> */}
+
                   <a
                     href="https://www.sympla.com.br/curso-de-analise-de-mudas-e-classificacao-de-idade-em-aves__1452863"
                     target="_blank"
@@ -187,7 +180,7 @@ export default function Treinamento() {
                   .
                 </p>
               </div>
-            </div>
+            </div>  */}
             <div className="flex flex-col sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
