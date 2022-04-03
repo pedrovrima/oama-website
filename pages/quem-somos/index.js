@@ -136,7 +136,7 @@ export default function QuemSomos() {
                   <a
                     className="underline"
                     target="_blank"
-                    href="http://lattes.cnpq.br/6486611783204721"
+                    href="http://lattes.cnpq.br/7358568761825100"
                   >
                     Lattes
                   </a>
