@@ -181,17 +181,102 @@ export default function QuemSomos() {
                   <a
                     className="underline"
                     target="_blank"
-                    href="http://lattes.cnpq.br/1082589394374306
-"
+                    href="http://lattes.cnpq.br/1082589394374306"
                   >
                     Lattes
                   </a>
                   <a
                     className="underline ml-1"
                     target="_blank"
-                    href="mailto:pmartins@oama.eco.br
+                    href="mailto:pmartins@oama.eco.br"
+                  >
+                    E-mail
+                  </a>
+                </div>
+              </div>
 
-"
+              <div class="flex  mb-8  justify-around items-center   flex-wrap">
+                <div class="w-3/5 shadow-lg rounded-full  sm:w-1/4 m-2 sm:m-6">
+                  <div>
+                    <Image
+                      className="rounded-full border-gray-200 border-8"
+                      src="/people/OtávioRocha.jpg"
+                      layout="responsive"
+                      width={50}
+                      objectFit="cover"
+                      height={50}
+                    ></Image>
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-2/3 p-6">
+                  <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-1">
+                    Otávio Rocha{" "}
+                  </h3>
+                  <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+                    Auxiliar de comunicação e divulgação científica{" "}
+                  </h4>
+
+                  <p class="text-gray-600 ">
+                    Biólogo e anilhador júnior. Atua na área da ornitologia
+                    desde 2018 e tem afinidade por ecologia e biologia
+                    reprodutiva de aves florestais e marinhas.{" "}
+                  </p>
+                  <a
+                    className="underline"
+                    target="_blank"
+                    href="http://lattes.cnpq.br/8368168241557725"
+                  >
+                    Lattes
+                  </a>
+                  <a
+                    className="underline ml-1"
+                    target="_blank"
+                    href="mailto:otaviodcar1@gmail.com"
+                  >
+                    E-mail
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex md:flex-row-reverse mb-8  justify-around items-center   flex-wrap">
+                <div class="w-3/5 shadow-lg rounded-full  sm:w-1/4 m-2 sm:m-6">
+                  <div>
+                    <Image
+                      className="rounded-full border-gray-200 border-8"
+                      src="/people/KarineResende.jpg"
+                      layout="responsive"
+                      width={50}
+                      objectFit="cover"
+                      height={50}
+                    ></Image>
+                  </div>
+                </div>
+
+                <div class="w-full sm:w-2/3 p-6">
+                  <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-1">
+                    Karine Resende{" "}
+                  </h3>
+                  <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+                    Bolsista de monitoramento{" "}
+                  </h4>
+
+                  <p class="text-gray-600 ">
+                    Técnica em Meio ambiente e estudante de Engenharia
+                    florestal. Apaixonada por aves, tem interesse em estudar a
+                    relação ave-planta.{" "}
+                  </p>
+                  <a
+                    className="underline"
+                    target="_blank"
+                    href="http://lattes.cnpq.br/5217946601349427"
+                  >
+                    Lattes
+                  </a>
+                  <a
+                    className="underline ml-1"
+                    target="_blank"
+                    href="mailto:karircf@gmail.com"
                   >
                     E-mail
                   </a>
@@ -251,23 +336,6 @@ export default function QuemSomos() {
               </div>
               <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-3">
                 <CollaboratorCard
-                  name="Karine Resende"
-                  postion="Educação Ambiental"
-                  image="/people/KarineResende.jpg"
-                ></CollaboratorCard>
-                <CollaboratorCard
-                  name="Gabriela Inhesta"
-                  postion="Divulgação Científica"
-                  image="/people/GabrielaInhesta.jpg"
-                ></CollaboratorCard>
-
-                <CollaboratorCard
-                  name="Otávio Rocha"
-                  postion="Divulgação Científica"
-                  image="/people/OtávioRocha.jpg"
-                ></CollaboratorCard>
-
-                <CollaboratorCard
                   name="Rafaella Ferneda"
                   postion="Divulgação Científica"
                   image="/people/RafaellaFerneda.jpg"
@@ -278,36 +346,27 @@ export default function QuemSomos() {
                   image="/people/AndrezaOliveira.jpg"
                 ></CollaboratorCard>
                 <CollaboratorCard
-                  name="Mariana Costa"
-                  postion="Triagem de Dados Sonoros"
-                  image="/people/MarianaCosta.jpg"
+                  name="Maurício Roveré"
+                  postion="Divulgação Científica"
+                  image="/people/MauR.jpg"
+                ></CollaboratorCard>
+                                <CollaboratorCard
+                  name="Ruan Vaz"
+                  postion="Divulgação Científica"
+                  image="/people/RuQu.jpg"
                 ></CollaboratorCard>
                 <CollaboratorCard
-                  name="Camila Mendonça"
-                  postion="Triagem de Dados Sonoros"
-                  image="/people/CamilaMendonça.jpg"
+                  name="Lucas Silva"
+                  postion="Manejo de arquivos"
+                  image="/people/LuBa.jpg"
                 ></CollaboratorCard>
 
                 <CollaboratorCard
-                  name="Thamires Freitas"
-                  postion="Editais"
-                  image="/people/ThamiresFreitas.jpg"
+                  name="Renata Florence"
+                  postion="Atividades Coringas"
+                  image="/people/RenFl.jpg"
                 ></CollaboratorCard>
-                <CollaboratorCard
-                  name="Michelle Baptista"
-                  postion="Levantamento de Dados e Divulgação"
-                  image="/people/MichelleBaptista.jpg"
-                ></CollaboratorCard>
-                <CollaboratorCard
-                  name="Guilherme Canassa"
-                  postion="Manejo de Imagens"
-                  image="/people/GuilhermeCanassa.jpg"
-                ></CollaboratorCard>
-                <CollaboratorCard
-                  name="Rodrigo Oliveira"
-                  postion="Manejo de Dados"
-                  image="/people/RodrigoOliveira.jpg"
-                ></CollaboratorCard>
+      
               </div>
             </div>
             <div class="container  max-w-4xl mx-auto mb-12 ">
@@ -374,6 +433,13 @@ export default function QuemSomos() {
                   site="https://www.instagram.com/avesdenoronha/"
                   border
                 ></CollaboratorCard>
+                 <CollaboratorCard
+                  name="Previr"
+                  image="/partners/previr.jpg"
+                  site=""
+                  border
+                ></CollaboratorCard>
+                
               </div>
             </div>
             <div class="container  max-w-4xl mx-auto ">
