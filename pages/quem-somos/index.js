@@ -80,7 +80,7 @@ export default function QuemSomos() {
                     Affonso Souza{" "}
                   </h3>
                   <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
-                    Coordenador de monitoramento e pesquisa{" "}
+                  Coordenador de projetos{" "}
                   </h4>
 
                   <p class="text-gray-600 ">
