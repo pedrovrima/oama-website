@@ -166,7 +166,7 @@ export default function Nav() {
                 <li className=" w-full group   no-underline  hover:text-underline py-2  px-4">
                   <p className="">Atividades</p>
                   <div
-                    className="px-4
+                    className="px-2
                     flex
                     flex-col
                   "
@@ -186,9 +186,33 @@ export default function Nav() {
                     </Link>
                   </div>
                 </li>
-                <li className="inline-block w-full   no-underline hover:text-gray-800 focus:text-underline py-2  px-4">
-                  <Link href="/estacao-de-pesquisa">Hospedagem</Link>
+
+
+                <li className=" w-full group   no-underline  hover:text-underline py-2  px-4">
+                  <p className="">Hospedagem</p>
+                  <div
+                    className="px-2
+                    flex
+                    flex-col
+                  "
+                  >
+                    <Link href="/estacao-de-pesquisa">
+                      <p className="cursor-pointer pb-1">Estação de Pesquisa</p>
+                    </Link>
+                    <Link href="/anilhamento-demonstrativo">
+                      <p className="cursor-pointer pb-1">
+                        Anilhamento Demonstrativo
+                      </p>
+                    </Link>
+                    <a target="_blank" href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr">
+                      <p className="cursor-pointer pb-1">
+                        AirBnB
+                      </p>
+                    </a>
+                  </div>
                 </li>
+
+
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
                   <Link href="/blog">Blog</Link>
                 </li>
@@ -238,13 +262,31 @@ export default function Nav() {
                 </Link>
               </div>
             </div>
-            <Link href="/estacao-de-pesquisa">
-              <div className=" mr-4 cursor-pointer">
-                <p className="text-gray-50  hover:underline font-bold">
-                  Hospedagem
-                </p>
+
+            <div className=" group mr-4 ">
+              <p className="text-gray-50   font-bold">Hospedagem</p>
+              <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
+                <Link href="/estacao-de-pesquisa">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Estação de Pesquisa
+                  </p>
+                </Link>
+                <Link href="/anilhamento-demonstrativo">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Anilhamento Demonstrativo
+                  </p>
+                </Link>
+
+                <a
+                  target="_blank"
+                  href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr"
+                >
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    AirBnB
+                  </p>
+                </a>
               </div>
-            </Link>
+            </div>
 
             <Link href="/blog">
               <div className=" mr-4 cursor-pointer">
