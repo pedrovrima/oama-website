@@ -254,7 +254,7 @@ export default function Treinamento() {
               </div>
               <div className="w-full sm:w-2/3  my-auto">
                 <p className="text-gray-600 text-lg font-bold">
-                  II Curso Teórico Básico de Anilhamento
+                  II Curso Teórico Básico de Anilhamento - OAMa + Aves de Noronha
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   09 e 10 de julho de 2022
