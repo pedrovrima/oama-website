@@ -130,7 +130,7 @@ export default function Treinamento() {
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos
             </h2>
-             {/* <div className="flex mb-8 flex-col sm:flex-row ">
+            {/* <div className="flex mb-8 flex-col sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -181,13 +181,13 @@ export default function Treinamento() {
                 </p>
               </div>
             </div>  */}
-            <div className="flex flex-col sm:flex-row ">
+            <div className="flex flex-col mb-8 sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
                     alt="Serra da Mantiqueira"
                     layout="responsive"
-                    src="/treinamento-cursos/curso-foto.jpg"
+                    src="/treinamento-cursos/muda_teorico.jpg"
                     width={400}
                     objectFit="cover"
                     height={400}
@@ -196,50 +196,245 @@ export default function Treinamento() {
               </div>
               <div className="w-full sm:w-2/3  my-auto">
                 <p className="text-gray-600 text-lg font-bold">
-                  Curso de fotografia de aves com Birds Atlantic
+                  II Curso Teórico de Análise de Mudas e Classificação de idade
+                  em Aves
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                  21 a 24 de abril 2022
+                  25 e 26 de junho de 2022
+                </p>
+                <p className="text-gray-500 text-md font-bold">Online</p>
+                <p className="text-gray-600 ">
+                  <span className="font-bold">
+                    Inscrições e mais informações
+                    <span className="underline  text-yellow-600 cursor-pointer">
+                      <a href="https://www.sympla.com.br/ii-curso-de-analise-de-muda-e-classificacao-de-idade-em-aves__1587958">
+                        {" "}
+                        aqui.{" "}
+                      </a>
+                    </span>{" "}
+                    <br />
+                  </span>
+                  Nosso objetivo com o CAMCI é introduzir o conhecimento básico
+                  (e super importante!) sobre as estratégias e padrões de muda
+                  de penas nas aves e como usar o método WRP para classificação
+                  de idade (ou “molt based ageing system”). Visamos também
+                  promover a padronização no uso de terminologias e
+                  nomenclaturas para mudas e plumagens em aves, e expandir a
+                  prática de classificação de idade de aves com base na análise
+                  de mudas e plumagem entre os ornitólogos do Brasil.
+                  <br /> Luiza Figueira e Pedro Martins, Co-Fundadores do
+                  Observatório de Aves da Mantiqueira, tem treinamento pelo Bird
+                  Banding and Molt Analysis Workshop e há quase 10 anos vêm
+                  aplicando a prática de análise de muda e classificação de
+                  idade em diversos projetos e, atualmente, na Serra da
+                  Mantiqueira. Se você é da Ornitologia e se interessa pelo
+                  ciclo de vida, história natural, demografia, fisiologia ou
+                  evolução das aves, esse curso é para você. O tema e o nível do
+                  curso pode interessar desde estudantes de graduação até
+                  pesquisadores e professores que tenham interesse no estudo de
+                  muda das aves e suas aplicações para classificação de idade.
+                  Quem não é acadêmico, mas é muito curioso e gosta de observar
+                  aves e suas plumagens também está convidado a participar!
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row mb-8">
+              <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+                <div>
+                  <Image
+                    alt="Serra da Mantiqueira"
+                    layout="responsive"
+                    src="/treinamento-cursos/anilhamento_teorico.jpg"
+                    width={400}
+                    objectFit="cover"
+                    height={400}
+                  />
+                </div>
+              </div>
+              <div className="w-full sm:w-2/3  my-auto">
+                <p className="text-gray-600 text-lg font-bold">
+                  II Curso Teórico Básico de Anilhamento
+                </p>
+                <p className="text-gray-500 text-md font-bold">
+                  09 e 10 de julho de 2022
+                </p>
+                <p className="text-gray-500 text-md font-bold">Online</p>
+                <p className="text-gray-600 ">
+                  <span className="font-bold">
+                    Inscrições e mais informações
+                    <span className="underline  text-yellow-600 cursor-pointer">
+                      <a href="https://www.sympla.com.br/ii-curso-de-anilhamento-teorico__1588058">
+                        {" "}
+                        aqui.{" "}
+                      </a>
+                    </span>{" "}
+                    <br />
+                  </span>
+                  Quer aprender sobre anilhamento ou se atualizar no assunto?
+                  Neste curso exclusivamente teórico, abordaremos desde uma
+                  introdução até uma revisão aprofundada sobre as aves com
+                  pulseiras. Fundamental no monitoramento da avifauna e em
+                  pesquisas com identificação do indivíduo, o anilhamento é um
+                  método de estudo de grande importância para a conservação das
+                  espécies. Por ser um método com manipulação das aves, sempre
+                  existe um risco, e por isso a capacitação técnica e
+                  aperfeiçoamento constante são indispensáveis para a segurança
+                  das aves e qualidade dos dados!
+                  <br />
+                  Neste curso, Luiza Figueira e Cecília Licarião vão dialogar
+                  sobre aplicações do anilhamento na pesquisa e conservação,
+                  segurança e cuidados com as aves, técnicas de captura das
+                  aves, qualidade e interpretação dos dados coletados e
+                  oportunidades de treinamento. Essas duas já voaram longas
+                  distâncias e tem muito o que compartilhar. Vem com a gente?
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row mb-8">
+              <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+                <div>
+                  <Image
+                    alt="Serra da Mantiqueira"
+                    layout="responsive"
+                    src="/treinamento-cursos/anilhamento_pratico.jpg"
+                    width={400}
+                    objectFit="cover"
+                    height={400}
+                  />
+                </div>
+              </div>
+              <div className="w-full sm:w-2/3  my-auto">
+                <p className="text-gray-600 text-lg font-bold">
+                  I Curso Prático Básico de Anilhamento
+                </p>
+                <p className="text-gray-500 text-md font-bold">
+                  18 a 21 de agosto de 2022
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
                   <span className="font-bold">
-                    Vagas para estadia esgotadas. Para possibilidade de
-                    participar do curso sem estadia,  
-                    <span className="underline  text-yellow-600 cursor-pointer"><Link  href="/whatsapp"> clique aqui. </Link></span>{" "}
+                    Inscrições e mais informações
+                    <span className="underline  text-yellow-600 cursor-pointer">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
+                        {" "}
+                        aqui.{" "}
+                      </a>
+                    </span>{" "}
+                    <br />
                   </span>
-                  Esta atividade é voltada para fotógrafos e observadores de
-                  aves que buscam aprimorar ou iniciar seus registros
-                  fotográficos de natureza, inclusive as aves. O objetivo deste
-                  curso é que o participante domine os conceitos da fotografia
-                  com qualquer marca de equipamento, através de conhecimentos
-                  teóricos e práticos. Na parte prática o instrutor orienta de
-                  forma individual, respeitando a peculiaridade de cada
-                  equipamento/participante. Também iremos à campo e comedouro
-                  para treinar o que foi ensinado. No decorrer do workshop os
-                  alunos poderão tirar suas dúvidas particulares e aprender mais
-                  sobre sua câmera individualmente. Na parte teórica serão
-                  trabalhados os pilares da fotografia, e técnicas que facilitam
-                  na agilidade da configuração do equipamento. Além de
-                  composição e comportamento do fotógrafo.O workshop será
-                  ministrado por{" "}
-                  <strong className="font-bold">
-                    Jorge Lucas Moreira e Karoline Zamluti, sócios da Birds
-                    Atlantic.
-                  </strong>{" "}
-                  <a className="underline text-yellow-600 cursor-pointer">
-                    <Link href="treinamento-cursos/curso-foto" target="_blank">
-                      Para mais informaçãoes, clique aqui
-                    </Link>
-                  </a>
-                  .
+                  O curso tem como objetivo apresentar, na prática e experiência
+                  em campo, técnicas seguras e apropriadas para 1. a manipulação
+                  adequada das aves durante a extração das redes de neblina e
+                  coleta de dados; 2. o manejo de uma estação de anilhamento
+                  visando a prevenção de injúrias e estresse das aves; 3. a
+                  aplicação e ajustes de anilhas; 4. a familiarização com os
+                  tipos de dados coletados e como coletá-los, dentre outros
+                  temas pertinentes. Focamos nos passeriformes e nas redes de
+                  neblina como método de captura. Sendo esse um curso
+                  condensado, não será apresentada a parte teórica completa,
+                  <span className="font-bold">
+                    {" "}
+                    portanto é pré-requisito indispensável ter realizado o
+                    Módulo Teórico!
+                  </span>{" "}
+                  Ressaltamos que, pela curta duração, este curso, por si só,
+                  não habilita ninguém a se tornar um anilhador, nem garante um
+                  registro de anilhador sênior com o CEMAVE.
+                  <br />
+                  <span className="font-bold">
+                    Não é necessária experiência prática prévia.
+                  </span>{" "}
+                  Todos os alunos receberão instruções, acompanhamento
+                  individual, comentários construtivos e terão oportunidades de
+                  extrair aves da rede, de anilhar e de coletar dados. No
+                  entanto, a quantidade de prática que cada aluno será capaz de
+                  fazer depende da taxa de captura das aves durante os dias de
+                  campo. A prática de cada aluno também é dependente da
+                  segurança das aves. Nenhuma ave será colocada em risco para
+                  priorizar a experiência prática dos alunos. Dessa forma, caso
+                  haja a necessidade, os instrutores do curso poderão intervir a
+                  qualquer momento para garantir o bem estar dos animais.
+                  Seguimos o código de ética e recomendações de práticas pelo
+                  NABC e CEMAVE.
+                  <br />O curso será ministrado por Luiza Figueira e Affonso
+                  Souza.
                 </p>
               </div>
             </div>
 
-            <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
+            <div className="flex flex-col sm:flex-row mb-8">
+              <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+                <div>
+                  <Image
+                    alt="Serra da Mantiqueira"
+                    layout="responsive"
+                    src="/treinamento-cursos/muda_pratico.jpg"
+                    width={400}
+                    objectFit="cover"
+                    height={400}
+                  />
+                </div>
+              </div>
+              <div className="w-full sm:w-2/3  my-auto">
+                <p className="text-gray-600 text-lg font-bold">
+                II Curso Prático de Análise de Mudas e Classificação de idade em Aves
+                </p>
+                <p className="text-gray-500 text-md font-bold">
+                21 a 24 de agosto de 2022
+                </p>
+                <p className="text-gray-500 text-md font-bold">
+                  Estação de Pesquisa OAMa
+                </p>
+                <p className="text-gray-600 ">
+                  <span className="font-bold">
+                    Inscrições e mais informações
+                    <span className="underline  text-yellow-600 cursor-pointer">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
+                        {" "}
+                        aqui.{" "}
+                      </a>
+                    </span>{" "}
+                    <br />
+                  </span>
+                  Neste curso, vamos ter a oportunidade de colocar em prática o
+                  conteúdo que foi apresentado durante{" "}
+                  <span className="font-bold">
+                    Módulo Teórico, que é pré-requisito indispensável para a
+                    participação!
+                  </span>{" "}
+                  Pela curta duração, focaremos o máximo na prática, de forma
+                  que cada aluno deverá chegar já com o conhecimento teórico
+                  básico sobre o tema. Trabalharemos em campo a análise de muda
+                  e características de penas, reconhecimento de grupos de penas,
+                  identificação e registro de penas em muda, análise de
+                  plumagens, reconhecimento e descrição de limite de muda,
+                  coleta de dados complementares para determinação de idade e
+                  aplicação de códigos WRP.
+                  <br />
+                  Não trabalharemos técnicas de extração de aves das redes,
+                  contenção e manipulação de aves, aplicação de anilhas e outras
+                  práticas básicas do anilhamento de aves. As extrações das aves
+                  das redes e aplicações de anilhas serão feitas exclusivamente
+                  pela equipe interna do curso (instrutores e assistentes).
+                  Assim, otimizamos o tempo dedicado à análise de muda, plumagem
+                  e dados complementares, e damos maior foco à classificação de
+                  idade das aves. Nenhuma ave será colocada em risco para
+                  priorizar a experiência prática dos alunos. Dessa forma, caso
+                  haja a necessidade, os instrutores do curso poderão intervir a
+                  qualquer momento para garantir o bem estar da ave. Seguimos o
+                  código de ética e recomendações de práticas pelo NABC e
+                  CEMAVE.
+                  <br />O curso será ministrado por Luiza Figueira e Pedro
+                  Martins.
+                </p>
+              </div>
+            </div>
+
+            {/* <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Em Breve
             </h2>
             <ul className="text-lg p-12">
@@ -250,7 +445,7 @@ export default function Treinamento() {
                 Curso prático de análise de muda e classificação de idade em
                 aves
               </li>
-            </ul>
+            </ul> */}
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos Concluídos
             </h2>
@@ -261,6 +456,13 @@ export default function Treinamento() {
               </li>
               <li className="list-disc">
                 Curso teórico Básico de Anilhamento 2021 - Online 
+              </li>
+              <li className="list-disc">
+                Curso Teórico de Análise de Mudas e Classificação de idade em
+                Aves 2022 - Online 
+              </li>
+              <li className="list-disc">
+                Curso de Fotografia de Aves com Birds Atlantic 2022 - Presencial
               </li>
             </ul>
           </div>
