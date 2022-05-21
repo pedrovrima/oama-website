@@ -452,10 +452,10 @@ export default function Treinamento() {
             <ul className="text-lg p-12">
               <li className="list-disc">
                 Curso Análise de Muda e Classificação de Idade em Aves 2019 -
-                presencial
+                Presencial
               </li>
               <li className="list-disc">
-                Curso teórico Básico de Anilhamento 2021 - Online 
+                Curso Teórico Básico de Anilhamento 2021 com Aves de Noronha - Online 
               </li>
               <li className="list-disc">
                 Curso Teórico de Análise de Mudas e Classificação de idade em
