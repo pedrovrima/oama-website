@@ -64,7 +64,7 @@ export default function QuemSomos() {
               Todo último final de semana do mês, de sexta-feira à domingo.
               Próximos eventos:
               <ul>
-                <li className="text-gray-600">24/06/2022 - 26/06/2022</li>
+                <li className="text-gray-600">17/06/2022 - 19/06/2022</li>
                 <li className="text-gray-600">29/07/2022 - 31/07/2022</li>
                 <li className="text-gray-600">26/08/2022 - 28/08/2022</li>
               </ul>
@@ -171,13 +171,13 @@ export default function QuemSomos() {
                 <strong className="text-gray-800">
                   Quarto para uma pessoa:
                 </strong>
-                R$ 1.025,00
+                R$ 900,00
               </li>
               <li className="text-gray-600">
                 <strong className="text-gray-800">
                   Quarto para duas pessoas:
                 </strong>
-                R$ 1.745,00
+                R$ 1.260,00
               </li>
             </ul>
           </div>
