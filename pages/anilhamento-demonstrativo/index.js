@@ -158,8 +158,8 @@ export default function QuemSomos() {
                 descanso, picnic e até um mergulho na piscina natural.
               </li>
               <li className="text-gray-600">10:00-12:00 - Livre</li>
-              <li className="text-gray-600">12:00 - Almoço</li>
-              <li className="text-gray-600">14:00-15:00 - Check-out</li>
+              <li className="text-gray-600">12:00 - Check-out</li>
+              {/* <li className="text-gray-600">14:00-15:00 - Check-out</li> */}
             </ul>
           </div>
           <div className="w-full p-6">
