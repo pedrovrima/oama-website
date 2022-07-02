@@ -140,7 +140,7 @@ export default function QuemSomos() {
               ></iframe>
             </div>
           </div>
-          <div className="w-full p-6">
+          {/* <div className="w-full p-6">
             <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
               Hospedagem Simples{" "}
             </h3>
@@ -201,9 +201,9 @@ export default function QuemSomos() {
               +75,00 por pessoa adicional, com máximo de 8 pessoas
               <br />
             </p>
-          </div>
+          </div> */}
           <div>
-          <p className="text-lg px-8 font-bold">          Reservas pelo WhatsApp +55 24 999627394 ou por <a className="text-yellow-600"><Link href="/whatsapp">aqui</Link></a></p>
+          <p className="text-lg px-8 font-bold">          Reservas pelo <a className="text-yellow-600" href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr" target="_blank">AirBnB</a></p>
 
 <p className="text-lg px-8 font-bold">          Importante: Visando mitigar os contágios pelo novo coronavírus, recebemos apenas hóspedes com comprovação de pelo menos duas doses da vacina contra a covid-19 e sem sintomas da doença. O uso de máscaras é indispensável nas áreas de convivência coletiva da EP. </p>
 
