@@ -184,7 +184,9 @@ export default function Nav() {
                         Arquivos e Downloads
                       </p>
                     </Link>
-
+                    <a target="_blank" href="/relatorio.html">
+                      <p className="cursor-pointer pb-1">Relatório de Dados </p>
+                    </a>
                   </div>
                 </li>
 
@@ -265,9 +267,15 @@ export default function Nav() {
                     Arquivos e Downloads
                   </p>
                 </Link>
+
+                <a target="_blank" href="/relatorio.html">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Relatório de Dados
+                  </p>
+                </a>
               </div>
             </div>
-            
+
             <div className=" group mr-4 ">
               <p className="text-gray-50   font-bold">Hospedagem</p>
               <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
@@ -306,13 +314,13 @@ export default function Nav() {
                   Saltator
                 </p>
               </div>
-             
             </a>
-
 
             <div className=" group mr-4 ">
               <a href="https://oama.kyte.site/">
-                <p className="text-gray-50 hover:underline  font-bold">useOAMa </p>
+                <p className="text-gray-50 hover:underline  font-bold">
+                  useOAMa{" "}
+                </p>
               </a>
             </div>
           </div>
