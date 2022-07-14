@@ -181,7 +181,7 @@ export default function Treinamento() {
                 </p>
               </div>
             </div>  */}
-            <div className="flex flex-col mb-8 sm:flex-row ">
+            {/* <div className="flex flex-col mb-8 sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -290,7 +290,7 @@ export default function Treinamento() {
                   distâncias e tem muito o que compartilhar. Vem com a gente?
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex flex-col sm:flex-row mb-8">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
@@ -381,10 +381,11 @@ export default function Treinamento() {
               </div>
               <div className="w-full sm:w-2/3  my-auto">
                 <p className="text-gray-600 text-lg font-bold">
-                II Curso Prático de Análise de Mudas e Classificação de idade em Aves
+                  II Curso Prático de Análise de Mudas e Classificação de idade
+                  em Aves
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                21 a 24 de agosto de 2022
+                  21 a 24 de agosto de 2022
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
@@ -455,7 +456,8 @@ export default function Treinamento() {
                 Presencial
               </li>
               <li className="list-disc">
-                Curso Teórico Básico de Anilhamento 2021 com Aves de Noronha - Online 
+                Curso Teórico Básico de Anilhamento 2021 com Aves de Noronha -
+                Online 
               </li>
               <li className="list-disc">
                 Curso Teórico de Análise de Mudas e Classificação de idade em
@@ -463,6 +465,15 @@ export default function Treinamento() {
               </li>
               <li className="list-disc">
                 Curso de Fotografia de Aves com Birds Atlantic 2022 - Presencial
+              </li>
+              <li className="list-disc">
+                {" "}
+                II Curso Teórico de Análise de Mudas e Classificação de idade em
+                Aves - 2022 - Online
+              </li>
+              <li className="list-disc">
+                II Curso Teórico Básico de Anilhamento com Aves de Noronha -
+                2022 - Online
               </li>
             </ul>
           </div>
