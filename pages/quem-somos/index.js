@@ -439,6 +439,12 @@ export default function QuemSomos() {
                   site=""
                   border
                 ></CollaboratorCard>
+                 <CollaboratorCard
+                  name="Visconde de Mauá Apaixonante"
+                  image="/partners/vmaua.png"
+                  site=""
+                  border
+                ></CollaboratorCard>
                 
               </div>
             </div>
