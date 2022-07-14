@@ -184,9 +184,9 @@ export default function Nav() {
                         Arquivos e Downloads
                       </p>
                     </Link>
+
                   </div>
                 </li>
-
 
                 <li className=" w-full group   no-underline  hover:text-underline py-2  px-4">
                   <p className="">Hospedagem</p>
@@ -204,14 +204,14 @@ export default function Nav() {
                         Anilhamento Demonstrativo
                       </p>
                     </Link>
-                    <a target="_blank" href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr">
-                      <p className="cursor-pointer pb-1">
-                        AirBnB
-                      </p>
+                    <a
+                      target="_blank"
+                      href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr"
+                    >
+                      <p className="cursor-pointer pb-1">AirBnB</p>
                     </a>
                   </div>
                 </li>
-
 
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
                   <Link href="/blog">Blog</Link>
@@ -222,6 +222,11 @@ export default function Nav() {
                   </a>
                 </li>
 
+                <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
+                  <a target="_blank" href="https://oama.kyte.site/">
+                    useOAMa
+                  </a>
+                </li>
                 <li className="inline-block bg-yellow-400 w-full  no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                   <Link className="" href="/apoie">
                     Apoie
@@ -262,7 +267,7 @@ export default function Nav() {
                 </Link>
               </div>
             </div>
-
+            
             <div className=" group mr-4 ">
               <p className="text-gray-50   font-bold">Hospedagem</p>
               <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
@@ -301,7 +306,15 @@ export default function Nav() {
                   Saltator
                 </p>
               </div>
+             
             </a>
+
+
+            <div className=" group mr-4 ">
+              <a href="https://oama.kyte.site/">
+                <p className="text-gray-50 hover:underline  font-bold">useOAMa </p>
+              </a>
+            </div>
           </div>
           <Link href="/apoie">
             <div className="justify-end flex items-end">
