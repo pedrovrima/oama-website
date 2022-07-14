@@ -84,7 +84,6 @@ export default function QuemSomos() {
               Todo último sábado do mês, de sexta-feira à domingo. Próximos
               eventos:
               <ul>
-                <li className="text-gray-600">30/07/2022</li>
                 <li className="text-gray-600">27/08/2022</li>
               </ul>
             </p>
