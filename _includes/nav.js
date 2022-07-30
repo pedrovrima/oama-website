@@ -174,6 +174,11 @@ export default function Nav() {
                     <Link href="/projetos">
                       <p className="cursor-pointer pb-1">Projetos</p>
                     </Link>
+                    <Link href="/anilhamento-demonstrativo">
+                      <p className="cursor-pointer pb-1">
+                        Anilhamento Demonstrativo
+                      </p>
+                    </Link>
                     <Link href="/treinamento-cursos">
                       <p className="cursor-pointer pb-1">
                         Cursos e Treinamento
@@ -201,11 +206,7 @@ export default function Nav() {
                     <Link href="/estacao-de-pesquisa">
                       <p className="cursor-pointer pb-1">Estação de Pesquisa</p>
                     </Link>
-                    <Link href="/anilhamento-demonstrativo">
-                      <p className="cursor-pointer pb-1">
-                        Anilhamento Demonstrativo
-                      </p>
-                    </Link>
+                 
                     <a
                       target="_blank"
                       href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr"
@@ -256,6 +257,11 @@ export default function Nav() {
                     Projetos
                   </p>
                 </Link>
+                <Link href="/anilhamento-demonstrativo">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Anilhamento Demonstrativo
+                  </p>
+                </Link>
                 <Link href="/treinamento-cursos">
                   <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
                     Cursos e Treinamento
@@ -284,11 +290,7 @@ export default function Nav() {
                     Estação de Pesquisa
                   </p>
                 </Link>
-                <Link href="/anilhamento-demonstrativo">
-                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
-                    Anilhamento Demonstrativo
-                  </p>
-                </Link>
+             
 
                 <a
                   target="_blank"
