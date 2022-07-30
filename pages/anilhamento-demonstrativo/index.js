@@ -12,7 +12,7 @@ export default function QuemSomos() {
     <>
       <div className="pb-32">
         <Head>
-          <title>Hospedagem com anilhamento demonstrativo</title>
+          <title>Anilhamento demonstrativo</title>
         </Head>
 
         <Nav />
@@ -58,9 +58,7 @@ export default function QuemSomos() {
               ciência e conservação. Nessa experiência você tem a chance de ver
               de perto e fotografar algumas das mais de 100 espécies que
               estudamos, e se encantar com a soltura dos animais após a coleta
-              de dados para estudo e monitoramento da avifauna local. E ainda
-              tem o prazer de acompanhar tudo isso ao longo de um café da manhã
-              bem da roça e ao ar livre.{" "}
+              de dados para estudo e monitoramento da avifauna local. {" "}
             </p>
             <AniCarousel className="mb-4" />
           </div>
@@ -84,7 +82,7 @@ export default function QuemSomos() {
               Todo último sábado do mês, de sexta-feira à domingo. Próximos
               eventos:
               <ul>
-                <li className="text-gray-600">27/08/2022</li>
+                <li className="text-gray-600">06/08/2022</li>
               </ul>
             </p>
           </div>
@@ -104,7 +102,7 @@ export default function QuemSomos() {
             </p>
           </div>
           <EPCarousel />{" "}
-          <div className="w-full p-6">
+          {/* <div className="w-full p-6">
             <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-8">
               Pacotes{" "}
             </h3>
@@ -184,9 +182,9 @@ export default function QuemSomos() {
               manhã o grupo terá oportunidades de parar para descanso, picnic e
               até um mergulho na piscina natural.
             </p>
-          </div>
+          </div> */}
           <p className="w-full p-6 text-gray-600">
-            Agende sua visita preenchendo <a className="text-yellow-600" href="https://docs.google.com/forms/d/e/1FAIpQLScjoSjHExbUrShU2K21bgnahhyKUJ5RhX4NrfP4QzFjDeBxhA/viewform" target="_blank">este formulário</a>. Qualque dúvida, escreva para
+            Agende sua visita preenchendo <a className="text-yellow-600" href="https://docs.google.com/forms/d/1QsPi2HTI_ZwsDzlI4uttKI4IrUBwAgPgE3M11fmdyT8/" target="_blank">este formulário</a>. Qualque dúvida, escreva para
             contato@oama.eco.br ou entre em contato pelo{" "}
             <a className="text-yellow-600">
               <Link href="/whatsapp">WhatsApp</Link>.
