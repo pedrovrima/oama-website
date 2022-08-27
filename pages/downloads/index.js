@@ -101,6 +101,55 @@ const Publication = (props) => {
 };
 
 const div_cient = [
+
+  {
+    title: "Campanha pró-aves: Engaiolamento",
+    text: "Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.",
+    img: "engaiolamento.jpg",
+    link: "engaiolamento.pdf"
+  },
+
+
+  {
+    title: "Campanha pró-aves: Animais Domésticos",
+    text: "Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.",
+    img: "predacao.jpg",
+    link: "predacao.pdf"
+  },
+  {
+    title: "Campanha pró-aves: Poluição Luminosa",
+    text: "Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.",
+    img: "luminosa.jpg",
+    link: "luminosa.pdf"
+  },
+
+  {
+    title: "Campanha pró-aves: Poluição Sonora",
+    text: "Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.",
+    img: "sonora.jpg",
+    link: "sonora.pdf"
+  },
+  {
+    title: "Campanha pró-aves: Comedouros",
+    text: "Panfleto informativo sobre como montar comedouros para as aves.",
+    img: "comedouro.jpg",
+    link: "comedouro.pdf"
+  },
+ 
+  {
+    title: "Campanha pró-aves: Colisão com Vidros",
+    text: "Panfleto informativo sobre como mitigar as colisões com vidros.",
+    img: "colisao.jpg",
+    link: "colisao.pdf"
+  },
+ 
+  {
+    title: "Livreto Bird Friendly Coalition",
+    text: "Livreto informativo sobre a iniciativa Bird Friendly Coalition.",
+    img: "birdF.jpg",
+    link: "BF Coalition Brochure Traduzido.pdf"
+  },
+
   {
     title: "Ornitologia pra todo dia - conhecendo as aves",
     text: "Livreto para pequenos e grandes curiosos, com muita informação, curiosidades e atividades sobre aves, ciência e conservação. Para divertir, informar e entreter.",
