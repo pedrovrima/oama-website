@@ -184,6 +184,9 @@ module.exports = {
         orange: colors.orange,
         yellow: colors.yellow
       },
+      height:{
+        "large":"70rem"
+      }
     },
   },
   variants: {
