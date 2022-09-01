@@ -74,7 +74,7 @@ export default function Intro() {
                     <Accordion collapsible>
                         <AccordionItem>
                             <AccordionButton>
-                                <h3 className="font-bold text-gray-800 text-xl mb-4 mt-12">Referências &#9660;</h3>
+                                <h3 className="font-bold text-gray-700 text-xl mb-4 mt-12">Referências &#9660;</h3>
                             </AccordionButton>
                             <AccordionPanel>
                                 <p className="mb-4">1. CLEMENTS, J. F. et al. <strong>The eBird/Clements checklist of birds of the world.</strong> 2019. v2019. </p>

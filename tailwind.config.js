@@ -185,6 +185,7 @@ module.exports = {
         yellow: colors.yellow
       },
       height:{
+        "medium":"40rem", 
         "large":"70rem"
       }
     },
