@@ -8,6 +8,9 @@ import Nav from "@includes/nav"
 
 import Intro from "../../components/pro-aves/intro"
 import Sonora from "../../components/pro-aves/sonora"
+import Luminosa from "components/pro-aves/luminosa";
+import Pets from "components/pro-aves/pets"
+import Comedouros from "components/pro-aves/comedouro"
 
 export default function ProAves() {
     return (
@@ -55,6 +58,9 @@ export default function ProAves() {
                     <Accordion collapsible className="border-2 rounded-lg  border-gray-700">
                     <Intro></Intro>
                     <Sonora></Sonora>
+                    <Luminosa></Luminosa>
+                    <Pets/>
+                    <Comedouros/>
                     </Accordion>
                 </div>
             </div>
