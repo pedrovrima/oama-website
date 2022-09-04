@@ -19,8 +19,12 @@ export default function Luminosa() {
             </AccordionButton>
             <AccordionPanel>
                 <div className="px-6 pt-4 text-gray-600">
+                <Fig section="comedouro"  number={1} legend={
+                        <p>
+                    Casal de saíras-sete-cores <i>(Tangara seledon)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
 
-                    {/* Casal de saíras-sete-cores (Tangara seledon) se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara. */}
+                        </p>
+                    }></Fig>
                     <H3>Por que investir em atrair a vida silvestre para perto de si?</H3>
 
                     <P>O crescimento desenfreado dos centros urbanos, o desmatamento e a correria do dia a dia têm dificultado nosso contato direto com a natureza. Como consequência, acentua-se a distância entre o homem e a vida selvagem e reduzem-se as vantagens que um convívio mais próximo com a natureza proporciona. O contato direto com a natureza tem sido associado a inúmeros benefícios, como sensação de bem-estar¹ e redução dos níveis de estresse² e de ansiedade³. Dessa maneira, muitas pessoas estão buscando formas de se reaproximarem da natureza. Uma das estratégias mais simples é atrair a natureza para perto de si, a partir da instalação de comedouros e bebedouros de aves, por exemplo⁴ ⁵ ⁶.</P>
@@ -29,8 +33,12 @@ export default function Luminosa() {
                     <H3>A oferta de recursos alimentares como forma de aproximar aves e pessoas</H3>
 
                     <P>A observação de aves tem sido associada ao aumento da sensação de conexão com a natureza⁷ ⁸, e a oferta de alimentos – em geral frutas, grãos e água açucarada – tem facilitado esse processo. As aves são animais presentes em praticamente todos os lugares, desde ambientes florestais e rurais até aqueles altamente urbanizados, o que facilita a aproximação com as pessoas. Além disso, a percepção da diminuição de alimento natural durante os períodos de inverno levou muitas pessoas a disponibilizarem fontes extras de alimentos no intuito de ajudá-las⁹. Essa prática está bastante difundida entre países do hemisfério norte, especialmente no Reino Unido, onde mais de 60% das casas oferecem comida para as aves anualmente¹⁰. Nos últimos tempos, essa tem deixado de ser uma atividade apenas de inverno e passou a ser adotada ao longo de todo o ano¹¹. Dessa forma, a previsibilidade local de alimento pode garantir visitas constantes das aves e, consequentemente, manter os animais próximos durante todo o ano.  </P>
+                    <Fig section="comedouro"  number={2} legend={
+                        <p>
+                    Saíra-amarela <i>(Stilpnia cayana)</i> visitando o comedouro da Estação de Pesquisa OAMa.
 
-                    {/* Saíra-amarela (Stilpnia cayana) visitando o comedouro da Estação de Pesquisa OAMa. */}
+                        </p>
+                    }></Fig>
                     <H3>Quais espécies de aves visitam comedouros/bebedouros no Brasil?</H3>
 
                     <P>A observação de aves tem crescido cada vez mais no Brasil¹² e, junto com ela, o uso de comedouros e bebedouros para aves de vida livre. No Brasil, essas estruturas são usadas por ornitólogos, observadores de aves e, principalmente, por admiradores desses animais, que encaram a atividade como um hobby, sem ter qualquer tipo de relação acadêmica ou profissional com as aves silvestres¹³. No geral, as aves visitantes são da família Thraupidae, como o saí-azul <i>(Dacnis cayana)</i>, a saíra-amarela <i>(Stilpnia cayana)</i> e o tiê-de-topete <i>(Trichothraupis melanops)</i>, e da família Turdidae, como o sabiá-barranco <i>(Turdus leucomelas)</i> e o sabiá-coleira <i>(Turdus albicollis)</i>. Isso foi constatado por um estudo que avaliou transmissões online <i>(lives) </i>a partir de diversos comedouros espalhados pelo Brasil durante a pandemia de Covid-19, em 2020. Eles observaram que o sanhaço-cinzento <i>(Thraupis sayaca)</i>, o sabiá-laranjeira <i>(Turdus rufiventris)</i> e a cambacica <i>(Coereba flaveola)</i> são as três aves que visitam os comedouros brasileiros com mais frequência, podendo haver maior diversidade de espécies em áreas rurais do que em áreas urbanas¹⁴. </P>
@@ -44,7 +52,12 @@ export default function Luminosa() {
 
                     <P>Além dos impactos diretos, os comedouros podem estar relacionados com diversos impactos indiretos, mas não menos importantes. Um trabalho recente sobre o impacto dos comedouros na biodiversidade argumentou que os estudos não deveriam focar apenas nas espécies-alvo, mas, sim, em toda a cascata trófica envolvida, incluindo as presas, predadores, patógenos, parasitas ou competidores (Figura 4), já que todos são afetados¹⁸. Imagine que as aves que estão visitando o seu comedouro estejam se tornando presas fáceis para predadores, e que, consequentemente, a população dessas espécies possa vir a diminuir, refletindo no aumento da população de insetos e lagartixas que costumam ser predados pelos mesmos. Além disso, esses indivíduos que visitam os comedouros podem se tornar predominantes na competição por habitat em comparação com os que não visitam, ou, ainda, ter seu ciclo de migração alterado pela estabilidade de oferta de alimentos ao longo do ano. Ou seja, o uso incorreto de comedouros pode estar causando todo um desequilíbrio na comunidade.</P>
 
-                    {/* Esquema mostrando novas interações facilitadas por comedouros em jardins. As flechas vermelhas indicam efeitos negativos e as flechas azuis efeitos positivos. O tamanho da seta não é um indicativo  do tamanho do efeito e as ilustrações não estão em escala. A) ninho provisionado, B) comedouro, C) ave frequentadora, D) ave invasora frequentadora, E) predador omnívoro, F) predador carnívoro, G) competidor natural não frequentador, H) presa natural, I) predador omnívoro invasor, J) predador domestico.  Imagem retirada de Shutt and Lees, 2021. */}
+                    <Fig section="comedouro"  objectFit="contain" number={5} legend={
+                        <p>
+                    Esquema mostrando novas interações facilitadas por comedouros em jardins. As flechas vermelhas indicam efeitos negativos e as flechas azuis efeitos positivos. O tamanho da seta não é um indicativo  do tamanho do efeito e as ilustrações não estão em escala. A) ninho provisionado, B) comedouro, C) ave frequentadora, D) ave invasora frequentadora, E) predador omnívoro, F) predador carnívoro, G) competidor natural não frequentador, H) presa natural, I) predador omnívoro invasor, J) predador domestico.  Imagem retirada de Shutt and Lees, 2021.
+
+                        </p>
+                    }></Fig>
                     <H3>Dicas e cuidados gerais na instalação e manutenção </H3>
 
                     <P>Os comedouros, além de serem estruturas que fornecerão fontes extras de alimento, propiciam uma interação agradável entre aves e pessoas, através da observação e registro da imagem desses animais, ajudando, também, na percepção da necessidade de cuidado e conservação do meio ambiente. Porém, se não forem bem manejados, podem representar sérios riscos para os animais que ali frequentam¹¹. Um comedouro que não recebe a devida atenção pode colocar em risco a saúde dos animais visitantes, de outros indivíduos da espécie e da comunidade de aves¹⁸. Dessa forma, instalação, monitoramento e manejos adequados são essenciais para reduzir tais riscos¹⁷, garantindo, assim, melhor experiência para os animais. </P>
@@ -71,10 +84,35 @@ export default function Luminosa() {
 
                     {/* 12 ideias de comedouros para pássaros que você pode fazer em casa. */}
                     {/* Site de venda de comedouros e bebedouros. */}
-                    {/* Saíras-sete-cores <i>(Tangara seledon)</i> e benedito-de-testa-vermelha <i>(Melanerpes flavifrons)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara. */}
-                    {/* Comedouro feito com tronco de madeira recebendo a visita de vários periquitos-ricos <i>(Brotogeris tirica).</i> Autoria: Maristela Camolesi Alcantara. */}
-                    {/* Tiê-sangue <i>(Ramphocelus bresilia)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara. */}
-                    {/* Bebedouro recebendo a visita do Beija-flor-tesoura <i>(Eupetomena macroura).</i> Autoria: Maristela Camolesi Alcantara. */}
+                    
+                    <Fig section="comedouro"  number={8} legend={
+                        <p>
+                    Saíras-sete-cores <i>(Tangara seledon)</i> e benedito-de-testa-vermelha <i>(Melanerpes flavifrons)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
+
+                        </p>
+                    }></Fig>
+
+<Fig section="comedouro"  number={9} legend={
+                        <p>
+                    Comedouro feito com tronco de madeira recebendo a visita de vários periquitos-ricos <i>(Brotogeris tirica).</i> Autoria: Maristela Camolesi Alcantara.
+
+                        </p>
+                    }></Fig>
+
+<Fig section="comedouro"  number={10} legend={
+                        <p>
+                                   Tiê-sangue <i>(Ramphocelus bresilia)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
+
+                        </p>
+                    }></Fig>
+
+
+<Fig section="comedouro"  number={11} legend={
+                        <p>
+                    Bebedouro recebendo a visita do Beija-flor-tesoura <i>(Eupetomena macroura).</i> Autoria: Maristela Camolesi Alcantara.
+
+                        </p>
+                    }></Fig>
 
 
 

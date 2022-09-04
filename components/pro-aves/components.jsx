@@ -15,3 +15,13 @@ export function P({ children }) {
         </p>
     )
 }
+
+export function H4({ children }) {
+    return (
+        <h3 className="font-bold text-gray-600 text-lg italic mb-4 mt-8">
+            {children}
+        </h3>
+    )
+}
+
+

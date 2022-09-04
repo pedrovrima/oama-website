@@ -11,6 +11,7 @@ import Sonora from "../../components/pro-aves/sonora"
 import Luminosa from "components/pro-aves/luminosa";
 import Pets from "components/pro-aves/pets"
 import Comedouros from "components/pro-aves/comedouro"
+import Trafico from "components/pro-aves/trafico"
 
 export default function ProAves() {
     return (
@@ -61,6 +62,7 @@ export default function ProAves() {
                     <Luminosa></Luminosa>
                     <Pets/>
                     <Comedouros/>
+                    <Trafico/>
                     </Accordion>
                 </div>
             </div>
