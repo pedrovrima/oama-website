@@ -10,8 +10,8 @@ import "@reach/accordion/styles.css";
 export default function Luminosa() {
 
     return (
-        < AccordionItem >
-            <AccordionButton className="border-b-2 border-black w-full  p-6">
+        < AccordionItem  >
+            <AccordionButton style={{backgroundColor:"#C9ACF5"}} className=" border-black w-full  p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">3. Apague a luz, quero dormir
                 </h2>
 

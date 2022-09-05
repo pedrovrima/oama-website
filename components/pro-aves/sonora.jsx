@@ -7,8 +7,8 @@ import "@reach/accordion/styles.css";
 export default function Sonora() {
 
     return (
-        <AccordionItem>
-            <AccordionButton className="border-b-2 border-black w-full mb-2 p-6">
+        <AccordionItem >
+            <AccordionButton style={{backgroundColor:"#98C1D9"}} className=" border-black w-full p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">2. Quem é afetado pela poluição sonora?
                 </h2>
 

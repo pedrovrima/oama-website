@@ -15,7 +15,7 @@ export default function Intro() {
 
     return (
         <AccordionItem>
-            <AccordionButton className="border-b-2 border-black w-full mb-2 p-6">
+            <AccordionButton className="border-black w-full  p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">1. Por que ser pró-aves?</h2>
 
             </AccordionButton>

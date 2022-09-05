@@ -11,7 +11,7 @@ export default function Luminosa() {
 
     return (
         < AccordionItem >
-            <AccordionButton className="border-b-2 border-black w-full  p-6">
+            <AccordionButton style={{backgroundColor:"#FF8989"}} className=" border-black w-full  p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">6. O tráfico em números
 
                 </h2>

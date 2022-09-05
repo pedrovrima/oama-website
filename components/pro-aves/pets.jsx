@@ -10,8 +10,8 @@ import { H3, P } from "./components"
 export default function Luminosa() {
 
     return (
-        < AccordionItem >
-            <AccordionButton className="border-b-2 border-black w-full  p-6">
+        < AccordionItem  >
+            <AccordionButton style={{backgroundColor:"#FFAD58"}} className=" w-full  p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">4. Pets não fazem parte da fauna silvestre
 
                 </h2>
