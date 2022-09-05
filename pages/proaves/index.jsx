@@ -56,7 +56,7 @@ export default function ProAves() {
                         <p className="mb-4">Essa campanha tem como objetivo apresentar alguns dos principais problemas que afetam as aves e que podem ser mitigados com ações simples de cada pessoa. Aqui você vai conhecer sobre o problema da caça e tráfico de animais silvestres, sobre o inimigo invisível que gera a morte por colisão das aves, sobre a problemática das poluições luminosa e sonora e outros.</p>
                         <p className="mb-4">A mudança precisa de todos nós para acontecer!</p>
                     </div>
-                    <Accordion collapsible className="border-2 rounded-lg  border-gray-700">
+                    <Accordion collapsible multiple className="border-2 rounded-lg  border-gray-700">
                     <Intro></Intro>
                     <Sonora></Sonora>
                     <Luminosa></Luminosa>
