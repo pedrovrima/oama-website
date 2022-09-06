@@ -171,6 +171,9 @@ export default function Nav() {
                     flex-col
                   "
                   >
+                    <Link href="/proaves">
+                      <p className="cursor-pointer pb-1">Pró-Aves</p>
+                    </Link>
                     <Link href="/projetos">
                       <p className="cursor-pointer pb-1">Projetos</p>
                     </Link>
@@ -252,6 +255,11 @@ export default function Nav() {
             <div className=" group mr-4 ">
               <p className="text-gray-50   font-bold">Atividades</p>
               <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
+              <Link href="/proaves">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    Pró-Aves
+                  </p>
+                </Link>
                 <Link href="/projetos">
                   <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
                     Projetos
