@@ -57,8 +57,7 @@ export default function Luminosa() {
                     <P>Já os gatos domésticos estão listados entre as 100 piores espécies invasoras não nativas do mundo<sup>7</sup>. Em ilhas, os gatos de vida livre causaram ou contribuíram para a extinção moderna de 33 (14% do total de extinções) das espécies de aves e mamíferos registradas pela Lista Vermelha da União Internacional para a Conservação da Natureza (IUCN) 8. O cenário no continente não é muito diferente! <sup>9, 10</sup>.  Estima-se que os gatos domésticos de vida livre matam de 1,3 a 4,0 bilhões de aves anualmente nos EUA <sup>10</sup>. Na China esse número pode atingir a faixa de 5 bilhões <sup>11</sup>, e a maioria dos países permanecem sem a quantificação destes impactos, como o Brasil, por exemplo.</P>
                     <P>A introdução de gatos no Havaí por volta de 1700, local que costumava ser um paraíso para a biodiversidade de aves,  levou à predação generalizada de pássaros nativos e endêmicos, e a uma ampla contaminação ambiental que afetou pessoas e animais selvagens. O vídeo a seguir ilustra a situação:</P>
 
-                    https://www.youtube.com/watch?v=zfsAyotGnS8
-
+                    <div className="flex justify-center items-center p-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/zfsAyotGnS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <P>Além do impacto pela predação, a presença de gatos em áreas naturais também gera mudanças comportamentais das aves locais, levando a uma redução na alimentação de ninhegos por seus pais, diminuição do cuidado parental pelas aves, e consequente aumento da taxa de predação de ovos e filhotes por outros predadores também <sup>12</sup>. </P>
 
                     <Fig section="pets" number={4} objectFit="contain" legend={
