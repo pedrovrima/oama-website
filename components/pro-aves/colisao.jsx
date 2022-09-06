@@ -76,7 +76,7 @@ export default function Luminosa() {
 
 
                     <Fig section="colisao" number={4} legend={
-                        <p>Uso de vidraças de vidro transparentes em ambiente urbano.
+                        <p>Uso de vidraças em paredes e muros em ambientes urbanos. 
 
                         </p>
                     }></Fig>
