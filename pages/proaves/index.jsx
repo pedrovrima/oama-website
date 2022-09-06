@@ -73,8 +73,8 @@ export default function ProAves() {
                     </Accordion>
 
 
-                    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2"> Pesquisa e elaboração de textos:</h3>
-<ul className="text-gray-600">                
+                    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Pesquisa e elaboração de textos:</h3>
+<ul className="text-gray-600 w-full text-center">                
 <li className="">Affonso Souza</li>
 <li className="">Andreza Freitas</li>
 <li className="">Danielle Santos</li>
@@ -84,8 +84,8 @@ export default function ProAves() {
 <li className="">Ruan Vaz</li>
     </ul>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2"> Montagem do website:</h3>
-<ul className="text-gray-600">                
+    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Montagem do website:</h3>
+<ul className="text-gray-600 w-full text-center">                
 <li className="">Pedro Martins</li>
     </ul>
                 </div>
