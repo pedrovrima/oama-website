@@ -7,19 +7,20 @@ import { H3, P } from "./components"
 
 
 
-export default function Luminosa() {
+export default function Comedouro() {
 
     return (
         < AccordionItem  >
             <AccordionButton style={{backgroundColor:"#EFCF70"}} className=" border-black w-full  p-6">
-                <h2 className="font-bold text-gray-800 text-3xl ">5. Comedouros e bebedouros para aves
+                <h2 className="font-bold text-gray-800 text-3xl ">4. Comedouros e bebedouros para aves
 
                 </h2>
 
             </AccordionButton>
             <AccordionPanel>
                 <div className="px-6 pt-4 text-gray-600">
-                <Fig section="comedouro"  number={1} legend={
+
+                <Fig section="azorra"  number={1} legend={
                         <p>
                     Casal de saíras-sete-cores <i>(Tangara seledon)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
 
@@ -33,7 +34,7 @@ export default function Luminosa() {
                     <H3>A oferta de recursos alimentares como forma de aproximar aves e pessoas</H3>
 
                     <P>A observação de aves tem sido associada ao aumento da sensação de conexão com a natureza⁷ ⁸, e a oferta de alimentos – em geral frutas, grãos e água açucarada – tem facilitado esse processo. As aves são animais presentes em praticamente todos os lugares, desde ambientes florestais e rurais até aqueles altamente urbanizados, o que facilita a aproximação com as pessoas. Além disso, a percepção da diminuição de alimento natural durante os períodos de inverno levou muitas pessoas a disponibilizarem fontes extras de alimentos no intuito de ajudá-las⁹. Essa prática está bastante difundida entre países do hemisfério norte, especialmente no Reino Unido, onde mais de 60% das casas oferecem comida para as aves anualmente¹⁰. Nos últimos tempos, essa tem deixado de ser uma atividade apenas de inverno e passou a ser adotada ao longo de todo o ano¹¹. Dessa forma, a previsibilidade local de alimento pode garantir visitas constantes das aves e, consequentemente, manter os animais próximos durante todo o ano.  </P>
-                    <Fig section="comedouro"  number={2} legend={
+                    <Fig section="azorra"  number={2} legend={
                         <p>
                     Saíra-amarela <i>(Stilpnia cayana)</i> visitando o comedouro da Estação de Pesquisa OAMa.
 
@@ -52,7 +53,7 @@ export default function Luminosa() {
 
                     <P>Além dos impactos diretos, os comedouros podem estar relacionados com diversos impactos indiretos, mas não menos importantes. Um trabalho recente sobre o impacto dos comedouros na biodiversidade argumentou que os estudos não deveriam focar apenas nas espécies-alvo, mas, sim, em toda a cascata trófica envolvida, incluindo as presas, predadores, patógenos, parasitas ou competidores (Figura 4), já que todos são afetados¹⁸. Imagine que as aves que estão visitando o seu comedouro estejam se tornando presas fáceis para predadores, e que, consequentemente, a população dessas espécies possa vir a diminuir, refletindo no aumento da população de insetos e lagartixas que costumam ser predados pelos mesmos. Além disso, esses indivíduos que visitam os comedouros podem se tornar predominantes na competição por habitat em comparação com os que não visitam, ou, ainda, ter seu ciclo de migração alterado pela estabilidade de oferta de alimentos ao longo do ano. Ou seja, o uso incorreto de comedouros pode estar causando todo um desequilíbrio na comunidade.</P>
 
-                    <Fig section="comedouro"  objectFit="contain" number={5} legend={
+                    <Fig section="azorra"  objectFit="contain" number={5} legend={
                         <p>
                     Esquema mostrando novas interações facilitadas por comedouros em jardins. As flechas vermelhas indicam efeitos negativos e as flechas azuis efeitos positivos. O tamanho da seta não é um indicativo  do tamanho do efeito e as ilustrações não estão em escala. A) ninho provisionado, B) comedouro, C) ave frequentadora, D) ave invasora frequentadora, E) predador omnívoro, F) predador carnívoro, G) competidor natural não frequentador, H) presa natural, I) predador omnívoro invasor, J) predador domestico.  Imagem retirada de Shutt and Lees, 2021.
 
@@ -85,21 +86,21 @@ export default function Luminosa() {
                     {/* 12 ideias de comedouros para pássaros que você pode fazer em casa. */}
                     {/* Site de venda de comedouros e bebedouros. */}
                     
-                    <Fig section="comedouro"  number={8} legend={
+                    <Fig section="azorra"  number={8} legend={
                         <p>
                     Saíras-sete-cores <i>(Tangara seledon)</i> e benedito-de-testa-vermelha <i>(Melanerpes flavifrons)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
 
                         </p>
                     }></Fig>
 
-<Fig section="comedouro"  number={9} legend={
+<Fig section="azorra"  number={9} legend={
                         <p>
                     Comedouro feito com tronco de madeira recebendo a visita de vários periquitos-ricos <i>(Brotogeris tirica).</i> Autoria: Maristela Camolesi Alcantara.
 
                         </p>
                     }></Fig>
 
-<Fig section="comedouro"  number={10} legend={
+<Fig section="azorra"  number={10} legend={
                         <p>
                                    Tiê-sangue <i>(Ramphocelus bresilia)</i> se alimentando em um comedouro. Autoria: Maristela Camolesi Alcantara.
 
@@ -107,7 +108,7 @@ export default function Luminosa() {
                     }></Fig>
 
 
-<Fig section="comedouro"  number={11} legend={
+<Fig section="azorra"  number={11} legend={
                         <p>
                     Bebedouro recebendo a visita do Beija-flor-tesoura <i>(Eupetomena macroura).</i> Autoria: Maristela Camolesi Alcantara.
 
