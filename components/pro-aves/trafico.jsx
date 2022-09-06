@@ -3,8 +3,24 @@ import Image from "next/image"
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, } from "@reach/accordion";
 import "@reach/accordion/styles.css";
 
-import { H3, P, H4 } from "./components"
+import { H3, P, H4, Carroussel } from "./components"
 
+const carrousselImages = [{
+    number:6, legend:    <p>
+    Curió <i>(Sporophila angolensis)</i> em vida livre. Autoria: Birds Atlantic.
+
+</p>
+},{number:7,legend:    <p>
+    Trinca-ferro <i>(Saltator similis)</i> em vida livre. Autoria: Birds Atlantic.
+
+</p>},{
+    number:8,
+    legend:    <p>
+    Azulão <i>(Cyanoloxia brissonii)</i> em vida livre, no Vale do Ribeira, São Paulo. Autoria: Dario Sanches (Creative commons 2.0)
+
+</p>
+
+}]
 
 
 export default function Luminosa() {
@@ -12,8 +28,7 @@ export default function Luminosa() {
     return (
         < AccordionItem >
             <AccordionButton style={{ backgroundColor: "#FF8989" }} className=" border-black w-full  p-6">
-                <h2 className="font-bold text-gray-800 text-3xl ">2. O tráfico em números
-
+                <h2 className="font-bold text-gray-800 text-3xl ">2. Tráfico de animais silvestres
                 </h2>
 
             </AccordionButton>
@@ -64,29 +79,7 @@ export default function Luminosa() {
                     <H3>Os impactos ambientais do tráfico de animais silvestres</H3>
 
 
-
-                    <Fig section="trafico" number={6} legend={
-                        <p>
-                            Curió <i>(Sporophila angolensis)</i> em vida livre. Autoria: Birds Atlantic.
-
-                        </p>
-                    }></Fig>
-                    <Fig section="trafico" number={7} legend={
-                        <p>
-                            Trinca-ferro <i>(Saltator similis)</i> em vida livre. Autoria: Birds Atlantic.
-
-                        </p>
-                    }></Fig>
-                    <Fig section="trafico" number={8} legend={
-                        <p>
-                            Azulão <i>(Cyanoloxia brissonii)</i> em vida livre, no Vale do Ribeira, São Paulo. Autoria: Dario Sanches (Creative commons 2.0)
-
-                        </p>
-                    }></Fig>
-
-
-
-
+                    <Carroussel section={"trafico"} figs={carrousselImages}></Carroussel>
 
 
                     <P>Para além do sofrimento contido na captura e aprisionamento ilegal de um animal, o tráfico pode desencadear consequências diversas ao meio ambiente. O efeito direto mais evidente é o declínio populacional e a extinção de aves silvestres nos locais de onde esses animais são capturados. Antes comuns, aves como o curió <i>(Sporophila angolensis)</i>, trinca-ferro <i>(Saltator similis)</i>, azulão <i>(Cyanoloxia brissonii)</i>, papagaio-verdadeiro <i>(Amazona aestiva)</i>, araras e periquitos estão desaparecendo de muitas regiões no Brasil <sup>11</sup>. O papel desempenhado por essas aves nos ecossistemas naturais agora está defasado, significando menos flores polinizadas, sementes dispersadas, e, consequentemente, riscos para a sobrevivência futura de plantas e desbalanceamento no controle populacional de pragas e vetores <sup>12</sup>.</P>

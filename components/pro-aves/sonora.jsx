@@ -9,7 +9,7 @@ export default function Sonora() {
     return (
         <AccordionItem >
             <AccordionButton style={{backgroundColor:"#98C1D9"}} className=" border-black w-full p-6">
-                <h2 className="font-bold text-gray-800 text-3xl ">5. Quem é afetado pela poluição sonora?
+                <h2 className="font-bold text-gray-800 text-3xl ">5. Poluição sonora
                 </h2>
 
             </AccordionButton>

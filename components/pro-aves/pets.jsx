@@ -12,8 +12,7 @@ export default function Luminosa() {
     return (
         < AccordionItem  >
             <AccordionButton style={{backgroundColor:"#FFAD58"}} className=" w-full  p-6">
-                <h2 className="font-bold text-gray-800 text-3xl ">3. Pets não fazem parte da fauna silvestre
-
+                <h2 className="font-bold text-gray-800 text-3xl ">3. Predação de aves por animais domésticos
                 </h2>
 
             </AccordionButton>

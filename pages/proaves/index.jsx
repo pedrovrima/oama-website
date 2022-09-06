@@ -71,6 +71,23 @@ export default function ProAves() {
                         <Luminosa></Luminosa>
 
                     </Accordion>
+
+
+                    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2"> Pesquisa e elaboração de textos:</h3>
+<ul className="text-gray-600">                
+<li className="">Affonso Souza</li>
+<li className="">Andreza Freitas</li>
+<li className="">Danielle Santos</li>
+<li className="">Luiza Figueira</li>
+<li className="">Otávio Rocha</li>
+<li className="">Rafaela Vitti</li>
+<li className="">Ruan Vaz</li>
+    </ul>
+
+    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2"> Montagem do website:</h3>
+<ul className="text-gray-600">                
+<li className="">Pedro Martins</li>
+    </ul>
                 </div>
             </div>
             <Footer></Footer>
