@@ -11,8 +11,8 @@ export default function Luminosa() {
 
     return (
         < AccordionItem  >
-            <AccordionButton style={{backgroundColor:"#C9ACF5"}} className=" border-black w-full  p-6">
-                <h2 className="font-bold text-gray-800 text-3xl ">6. Poluição luminosa </h2>
+            <AccordionButton style={{ backgroundColor: "#C9ACF5" }} className=" border-black w-full  p-6">
+                <h2 className="font-bold text-gray-800 text-3xl ">7. Poluição luminosa </h2>
 
             </AccordionButton>
             <AccordionPanel>
@@ -182,14 +182,14 @@ export default function Luminosa() {
                     <p className="mb-4">Não somente as aves diurnas são afetadas, migrantes noturnos sofrem com o excesso de áreas iluminadas durante a noite, uma vez que sua visão é afetada (causando desorientação)<sup>15</sup>. Seu sentido geomagnético, que funciona como uma bússola para as aves ao migrar, é também afetado<sup>16</sup>, pois seu funcionamento depende de frequências específicas de luz<sup>17</sup>.</p>
 
 
-                    <Fig section="luminosa" number={9} legend={
-                        <p>
-                            Imagem retirada de um vídeo gravado no memorial “Tribute in Lights”, realizado em memória às vítimas dos atentados terroristas de 11 de setembro, em Nova Iorque. A homenagem é realizada no World Trade Center, e é possível observar a concentração de aves voando próximas aos feixes de luz projetados durante o espetáculo. Autoria: Benjamin M. Van Doren.
+
+                    
+                    <div className="flex justify-center items-center px-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/8pvuZmRUin8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <p className="text-gray-500 text-sm mt-4">
+                        Vídeo gravado no memorial “Tribute in Lights”, realizado em memória às vítimas dos atentados terroristas de 11 de setembro, em Nova Iorque. A homenagem é realizada no World Trade Center, e é possível observar a concentração de aves voando próximas aos feixes de luz projetados durante o espetáculo. Autoria: Benjamin M. Van Doren.
 
 
-                        </p>
-                    }></Fig>
-
+                    </p>
 
                     <h4 className="font-bold text-gray-600 text-lg italic mb-4 mt-8">Saúde</h4>
                     <p className="mb-4">A exposição à luz artificial noturna também pode afetar a saúde e condições reprodutivas das aves<sup>18</sup>. Um experimento realizado com ninhegos de 7 a 13 dias identificou que a exposição à luz artificial noturna pode comprometer a habilidade de montar uma resposta imune a infecções bacterianas, quando comparados aos ninhegos que crescem em noites escuras. Outro estudo realizado com indivíduos de melro-preto (Turdus merula)<sup>19</sup> indicou diferenças na fisiologia reprodutiva desses animais, causadas por alta exposição a luzes artificiais durante a noite. Os resultados mostram que, no segundo ano de exposição constante à luz durante a noite, o sistema reprodutivo dos indivíduos não se desenvolveu, ou seja, o tamanho do testículo e a concentração de testosterona estavam em níveis mínimos. Além disso, foi observada uma progressão irregular na muda (a troca de penas das aves) realizada antes do período reprodutivo.</p>

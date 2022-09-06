@@ -12,7 +12,7 @@ import Luminosa from "components/pro-aves/luminosa";
 import Pets from "components/pro-aves/pets"
 import Comedouros from "components/pro-aves/comedouro"
 import Trafico from "components/pro-aves/trafico"
-
+import Colisao from "components/pro-aves/colisao"
 
 
 const image = require("public/proaves/intro (copy)/fig1.jpg")
@@ -66,7 +66,7 @@ export default function ProAves() {
                         <Trafico />
                         <Pets />
                         <Comedouros />
-
+                        <Colisao></Colisao>
                         <Sonora></Sonora>
                         <Luminosa></Luminosa>
 
@@ -74,20 +74,20 @@ export default function ProAves() {
 
 
                     <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Pesquisa e elaboração de textos:</h3>
-<ul className="text-gray-600 w-full text-center">                
-<li className="">Affonso Souza</li>
-<li className="">Andreza Freitas</li>
-<li className="">Danielle Santos</li>
-<li className="">Luiza Figueira</li>
-<li className="">Otávio Rocha</li>
-<li className="">Rafaela Vitti</li>
-<li className="">Ruan Vaz</li>
-    </ul>
+                    <ul className="text-gray-600 w-full text-center">
+                        <li className="">Affonso Souza</li>
+                        <li className="">Andreza Freitas</li>
+                        <li className="">Danielle Santos</li>
+                        <li className="">Luiza Figueira</li>
+                        <li className="">Otávio Rocha</li>
+                        <li className="">Rafaela Vitti</li>
+                        <li className="">Ruan Vaz</li>
+                    </ul>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Montagem do website:</h3>
-<ul className="text-gray-600 w-full text-center">                
-<li className="">Pedro Martins</li>
-    </ul>
+                    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Montagem do website:</h3>
+                    <ul className="text-gray-600 w-full text-center">
+                        <li className="">Pedro Martins</li>
+                    </ul>
                 </div>
             </div>
             <Footer></Footer>
