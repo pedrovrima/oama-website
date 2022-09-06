@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, } from "@reach/accordion";
 import "@reach/accordion/styles.css";
 
-import { H3, P,H4 } from "./components"
+import { H3, P, H4 } from "./components"
 
 
 
@@ -11,7 +11,7 @@ export default function Luminosa() {
 
     return (
         < AccordionItem >
-            <AccordionButton style={{backgroundColor:"#FF8989"}} className=" border-black w-full  p-6">
+            <AccordionButton style={{ backgroundColor: "#FF8989" }} className=" border-black w-full  p-6">
                 <h2 className="font-bold text-gray-800 text-3xl ">2. O tráfico em números
 
                 </h2>
@@ -96,7 +96,7 @@ export default function Luminosa() {
 
                     <Fig section="trafico" number={9} legend={
                         <p>
-                    Sabiá-laranjeira <i>(Turdus rufiventris)</i> apreendido dentro de gaiola e com ferimentos no rosto. Autoria: Superintendência do IBAMA no Estado de Goiás.
+                            Sabiá-laranjeira <i>(Turdus rufiventris)</i> apreendido dentro de gaiola e com ferimentos no rosto. Autoria: Superintendência do IBAMA no Estado de Goiás.
 
                         </p>
                     }></Fig>
@@ -111,28 +111,28 @@ export default function Luminosa() {
 
                     <Fig section="trafico" number={10} legend={
                         <p>
-                    Canário-da-terra <i>(Sicalis flaveola)</i> em vida livre. Autoria: Birds Atlantic.
+                            Canário-da-terra <i>(Sicalis flaveola)</i> em vida livre. Autoria: Birds Atlantic.
 
                         </p>
                     }></Fig>
 
                     <P>O que fazer para diminuir os impactos do tráfico? Como proceder e como destinar os animais apreendidos desta atividade? A regra é clara: enquanto houver mercado para consumir, haverá alguém para vender. Portanto, a primeira e principal medida parte do desincentivo à captura e comercialização destes animais.</P>
                     <P>“Mas eu posso criar animais silvestres em casa?” O <a href="https://www.ibram.df.gov.br/quero-criar-um-animal-silvestre-o-que-preciso-saber/" target="_blank">site do Ibram</a> dá todas as instruções necessárias a quem deseja criar um animal silvestre de forma correta e legal:</P>
-                    
+
                     <ol className="list-decimal">
                         <li className="mb-4">
-                           <strong> Pesquise sobre o animal!</strong> <br/>
+                            <strong> Pesquise sobre o animal!</strong> <br />
                             Conheça a biologia do animal, seu nome científico, seus comportamentos típicos, alimentação, habitat etc. Essas informações ajudarão tanto na hora da compra, quanto nos cuidados diários do animal.
-                            
+
                         </li>
                         <li className="mb-4">
-                            <strong>Certifique-se se o animal desejado precisa de autorização!</strong><br/>
-                            Dependendo da espécie, não há necessidade de autorização para a criação.<br/>
+                            <strong>Certifique-se se o animal desejado precisa de autorização!</strong><br />
+                            Dependendo da espécie, não há necessidade de autorização para a criação.<br />
                             Consulte o site do Ibram.
-                            
+
                         </li>
                         <li className="mb-4">
-                            <strong>Seu animal precisa de autorização? Certifique-se de que ele seja legalizado!</strong> <br/>
+                            <strong>Seu animal precisa de autorização? Certifique-se de que ele seja legalizado!</strong> <br />
                             A única forma de possuir um animal silvestre legalizado é adquiri-lo de um criadouro ou estabelecimento comercial autorizado pelo IBAMA ou pelo órgão estadual/distrital. Consulte-os no site do IBAMA. Após a aquizição, você deve receber uma Nota Fiscal, contendo a espécie e a marcação do animal, e um Certificado de Origem com a mesma espécie e marcação da nota fiscal. Para checar a autenticidade do certificado de origem, consulte o Sistema de Gestão de Fauna (SISFAUNA).
                         </li>
                     </ol>
@@ -145,7 +145,7 @@ export default function Luminosa() {
 
                     <Fig section="trafico" number={11} legend={
                         <p>
-                    Papagaios-verdadeiros <i>(Amazona aestiva)</i> em voo. Autoria: Luiz C. Ramassotti.
+                            Papagaios-verdadeiros <i>(Amazona aestiva)</i> em voo. Autoria: Luiz C. Ramassotti.
 
                         </p>
                     }></Fig>
@@ -160,7 +160,7 @@ export default function Luminosa() {
                     <P>Se você observou ou suspeita de atividades de caça, captura ou comércio ilegal de animais silvestres em algum local próximo, denuncie! Contate diferentes esferas do poder público para garantir alguma ação.</P>
 
                     <ul>
-                        
+
                         <li className="mb-4">IBAMA – denúncias pela Linha Verde (0800 618080), na sede em Brasília ou na superintendência do Estado. Email: linhaverde.sede@ibama.gov.br.</li>
                         <li className="mb-4">Órgão estadual do meio ambiente – procure a regional mais próxima.</li>
                         <li className="mb-4">Polícia Civil – faça a denúncia pelo telefone 147.</li>
@@ -178,7 +178,22 @@ export default function Luminosa() {
                             </AccordionButton>
                             <AccordionPanel>
 
-                               
+                                <p className="mb-4">1 WILSON-WILDE, Linzi. Wildlife crime: a global problem. Forensic science, medicine, and pathology, v. 6, n. 3, p. 221-222, 2010.</p>
+                                <p className="mb-4">2 RENCTAS (Rede Nacional de Combate ao Tráfico de Animais Silvestres). <strong>1º Relatório Nacional sobre o Tráfico de Fauna Silvestre</strong>. 2011. Disponível em: . Acesso em: 15 jul. 2010.</p>
+                                <p className="mb-4">3 CHARITY, Sandra; FERREIRA, Juliana Machado. Wildlife trafficking in Brazil. <strong>Traffic International</strong>, Cambridge, United Kingdom. 140p, 2020.</p>
+                                <p className="mb-4">4 DESTRO, Guilherme Fernando Gomes et al. Efforts to combat wild animals trafficking in Brazil.<strong> Biodiversity enrichment in a diverse world</strong>, v. 1, p. 421-436, 2012.</p>
+                                <p className="mb-4">5 ALVES, RÔMULO ROMEU NÓBREGA; LIMA, JOSÉ RIBAMAR DE FARIAS; ARAUJO, Helder Farias P. The live bird trade in Brazil and its conservation implications: an overview. <strong>Bird Conservation International</strong>, v. 23, n. 1, p. 53-65, 2013.</p>
+                                <p className="mb-4">6  CLEMENTS, J. F. et al. The eBird/Clements checklist of birds of the world: v2019. 2019</p>
+                                <p className="mb-4">7 Souto, W.M.S.; Torres, M.A.R.; Sousa, B.F.C.F.; Lima, K.G.G.C.; Vieira, L.T.S.; Pereira, G.A.; Guzzi, A.; Silva, M.V. & Pralon, B.G.N. (2017) Singing for cages: The use and trade of passeriformes as wild pets in an economic center of the Amazon - NE Brazil route. <strong>Tropical Conservation Science</strong> 10:1–19.</p>
+                                <p className="mb-4">8 DESTRO, Guilherme Fernando Gomes; DE MARCO, Paulo; TERRIBILE, Levi Carina. Comparing environmental and socioeconomic drivers of illegal capture of wild birds in Brazil. Environmental conservation, v. 47, n. 1, p. 46-51, 2020</p>
+                                <p className="mb-4">9 Regueira, R.F.S. & Bernard, E. (2012) Wildlife sinks: Quantifying the impact of illegal bird trade in street markets in Brazil. <strong>Biological Conservation</strong> 149:16-22.</p>
+                                <p className="mb-4">10 WYATT, Tanya et al. Wildlife trafficking via social media in Brazil. <strong>Biological Conservation</strong>, v. 265, p. 109420, 2022</p>
+                                <p className="mb-4">11 Marini MA, GARCIA FI. Bird conservation in Brazil. <strong>Conserv Biol</strong>. 2005;19(3): 665–71.</p>
+                                <p className="mb-4">12 Dai, C. & Zhang, C. (2017) The local bird trade and its conservation impacts in the city of Guiyang, southwest China. <strong>Regional Environmental Change</strong>. Http://dx.doi.org/10.1007/s10113-017-1141-5. Acesso em 24 de novembro de 2016</p>
+                                <p className="mb-4">13 DESTRO, Guilherme Fernando Gomes et al. Climate suitability as indicative of invasion potential for the most seized bird species in Brazil. <strong>Journal for Nature Conservation</strong>, v. 58, p. 125890, 2020.</p>
+                                <p className="mb-4">14 Costa, Fabio & Monteiro, Kellen. (2017). Guia de Identificação de Aves Traficadas no Brazil. https://www.researchgate.net/publication/329488481_Guia_de_Identificacao_de_Aves_Traficadas_no_Brazil</p>
+                                <p className="mb-4">15 DESTRO, Guilherme Fernando Gomes et al. Back home? Uncertainties for returning seized animals to the source‐areas under climate change. <strong>Global change biology</strong>, v. 25, n. 10, p. 3242-3253, 2019.</p>
+
                             </AccordionPanel>
                         </AccordionItem>
                     </Accordion>
