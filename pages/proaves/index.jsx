@@ -88,6 +88,13 @@ export default function ProAves() {
                     <ul className="text-gray-600 w-full text-center">
                         <li className="">Pedro Martins</li>
                     </ul>
+
+
+                    <h3 className="text-xl font-bold text-gray-800 mt-8 mb-2 w-full text-center"> Apoio:</h3>
+                    <ul className="text-gray-600 w-full text-center">
+                        <li className="">Conselho Federal de Biologia da 4<sup>a</sup> região</li>
+                        <li className="">BirdsAtlantic</li>
+                    </ul>
                 </div>
             </div>
             <Footer></Footer>
