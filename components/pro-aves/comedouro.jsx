@@ -111,8 +111,13 @@ export default function Comedouro() {
                     </ul>
                     <P>Para dicas sobre como fazer seu próprio comedouro e/ou para adquirir o seu, acesse:</P>
 
-                    {/* 12 ideias de comedouros para pássaros que você pode fazer em casa. */}
-                    {/* Site de venda de comedouros e bebedouros. */}
+                    <a href="https://revistacasaejardim.globo.com/Casa-e-Jardim/Dicas/DIY/noticia/2020/09/faca-voce-mesmo-12-ideias-de-comedouros-para-passaros.html" className="text-yellow-600">
+                        <P>12 ideias de comedouros para pássaros que você pode fazer em casa.</P>
+                    </a>
+
+                    <a href="https://www.terradospassaros.com/loja/default.asp" className="text-yellow-600">
+                        <P>Site de venda de comedouros e bebedouros.</P>
+                    </a>
 
 
                     <Carroussel section="intro" figs={accordeonFigs}></Carroussel>
