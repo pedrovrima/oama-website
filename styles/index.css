@@ -15,6 +15,12 @@
   background: linear-gradient(90deg, #ffc400 30%, #daae51 100%);
 }
 
+.gradient2 {
+  background: linear-gradient(90deg, #8f1858 30%, #4b062b 100%);
+}
+
+
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
