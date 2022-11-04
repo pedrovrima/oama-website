@@ -24,12 +24,12 @@ export default function Jacucara() {
             <div className="absolute top-0 h-full w-full">
               <Image
                 // className="h-32"
-                src="/heros/apoie.jpg"
+                src="/jacucara/figs/1.jpg"
                 layout="fill"
                 //   width={"2000"}
                 //   height={"1000"}
                 objectFit="cover"
-                objectPosition="center"
+                objectPosition="top"
                 priority={true}
               ></Image>
             </div>
@@ -104,7 +104,7 @@ export default function Jacucara() {
             consumo do palmito causou um grande declínio populacional da
             espécie.
           </P>
-          FIGURA2
+          <Fig number={2} />
           <P>
             O fruto da juçara é altamente nutritivo e{" "}
             <A href="https://www.scielo.br/j/aabc/a/sD9XKD8d4xkpDRV5LjLxshR/?format=pdf&lang=en">
@@ -119,7 +119,7 @@ export default function Jacucara() {
             arapongas são os principais responsáveis pela dispersão das
             sementes.
           </P>
-          FIGURA3
+          <Fig number={3} />
           <P>
             A dispersão das sementes da juçara pela fauna que consome seus
             frutos é fundamental para a propagação da palmeira. Em florestas
@@ -170,7 +170,7 @@ export default function Jacucara() {
             palmeira, há menos fontes de sementes para serem dispersadas e,
             consequentemente, menor germinação de novas plântulas.
           </P>
-          figura4
+          <Fig number={4} />
           <P>
             Uma forma de conciliar exploração, consumo e conservação desta
             palmeira é substituindo a exploração do palmito pela exploração do
@@ -188,7 +188,7 @@ export default function Jacucara() {
             aumentando, consequentemente, a quantidade de frutos que poderão ser
             explorados para consumo e comercialização.{" "}
           </P>
-          figura5
+          <Fig number={5} />{" "}
           <div className="mt-12 mb-4">
             <H2>JACUTINGA</H2>
             <H3>Conheça a espécie de ave jardineira da Mata Atlântica</H3>
@@ -199,7 +199,7 @@ export default function Jacucara() {
             com o declínio da palmeira. Essa ave é a jacutinga (
             <i>Aburria jacutinga</i>).{" "}
           </P>
-          figura6
+          <Fig number={6} />
           <P>
             A jacutinga é uma ave grande: mede de 64 a 74 centímetros e pesa
             entre 1,1 e 1,4 quilo. Sua plumagem é predominantemente preta, mas
@@ -207,7 +207,7 @@ export default function Jacucara() {
             Tem também um bico azulado e a barbela (pele da região do pescoço)
             nas cores azul e vermelha.
           </P>
-          figura7
+          <Fig number={7} />{" "}
           <P>
             Restrita à Mata Atlântica do Sudeste do Brasil, Argentina e
             Paraguai, a jacutinga é uma espécie em risco de extinção. A falta de
@@ -233,7 +233,7 @@ export default function Jacucara() {
             Extinção significa deixar de existir. A extinção de uma espécie
             significa seu desaparecimento definitivo.
           </P>
-          figura 8
+          <Fig number={8} />{" "}
           <P>
             Quando dizemos que uma espécie está em risco de extinção, isso
             significa que as populações dessa espécies estão em situação de
@@ -283,7 +283,7 @@ export default function Jacucara() {
             classificada como VU, vulnerável à extinção, e a jacutinga como EN,
             em perigo de extinção.{" "}
           </P>
-          figura 9
+          <Fig number={9} />{" "}
           <div className="mt-12 mb-4">
             <H2>O que está sendo feito para proteger essas espécies?</H2>
             <Accordion collapsible multiple className="mt-6">
@@ -301,6 +301,8 @@ export default function Jacucara() {
               </Item>
             </Accordion>
           </div>
+          <H2 className="mb-8">O que você pode fazer pela conservação destas espécies?</H2>
+          <Fig number={10} />
         </div>
       </div>
     </>
@@ -312,7 +314,7 @@ const P = ({ children, ...props }) => (
 );
 
 const H2 = ({ children, ...props }) => (
-  <h2 style={{ color: "#8f1858" }} className="font-bold text-3xl px-8 md:px-0">
+  <h2 style={{ color: "#8f1858" }} className={`font-bold text-3xl px-8 md:px-0 ${props.className}`}>
     {children}
   </h2>
 );
@@ -420,7 +422,8 @@ const Acc2 = () => {
     <>
       <AccordionButton className=" border-black w-full flex justify-between items-center">
         <AccH3>
-          De volta pra casa: a reintrodução da jacutinga na natureza{" "}
+          Jacutinga sem fronteiras: a conservação da espécie na Mata Atlântica
+          argentina
         </AccH3>
         <ArrowH3 className={` ${isExpanded ? "hidden" : ""}`}>&#9660;</ArrowH3>
         <ArrowH3 className={` ${isExpanded ? "" : "hidden"}`}>&#9650;</ArrowH3>
@@ -562,3 +565,26 @@ const Item = ({ children }) => (
     {children}{" "}
   </AccordionItem>
 );
+
+function Fig(props) {
+  const { number, legend, size, objectFit } = props;
+  console.log(`public/jacucara/figs/${number}.jpg`);
+  const image = require(`public/jacucara/figs/${number}.jpg`);
+  // const image = {default:{height:1,width:1}}
+
+  return (
+    <div className="mb-6">
+      {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
+      <Image
+        objectFit={objectFit || size === "large" ? "contain" : "cover"}
+        layout="responsive"
+        height={image.default.height}
+        width={image.default.width}
+        src={image}
+      />
+      {/* </div> */}
+
+      <legend className="text-gray-500 text-sm mt-4">{legend}</legend>
+    </div>
+  );
+}
