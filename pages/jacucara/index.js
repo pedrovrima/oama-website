@@ -328,7 +328,7 @@ const H3 = ({ children }) => (
 );
 
 const AccH3 = ({ children }) => (
-  <h3 style={{ color: "#c02176" }} class="px-8 py-6 text-2xl ">
+  <h3 style={{ color: "#c02176" }} class="text-left px-8 py-6 text-2xl ">
     {children}
   </h3>
 );
