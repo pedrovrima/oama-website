@@ -303,6 +303,8 @@ export default function Jacucara() {
           </div>
           <H2 className="mb-8">O que você pode fazer pela conservação destas espécies?</H2>
           <Fig number={10} />
+          <Fig number={11} />{" "}
+
         </div>
       </div>
     </>
