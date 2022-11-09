@@ -148,18 +148,21 @@ export default function Jacucara() {
             ></iframe>
           </div>
           <P>
-            O palmito é extraído do cerne do caule da palmeira. Além da juçara,
-            o palmito pode ser extraído da pupunha e do açaizeiro (ou açaí), com
-            a diferença de que a extração do palmito da juçara mata a palmeira.
-            Isso ocorre porque, enquanto a palmeira pupunha e o açaizeiro formam
-            touceiras, a juçara possui tronco único. Além disso, a juçara demora
-            de 8 a 12 anos para produzir um palmito de qualidade, enquanto o da
-            pupunha pode ser extraído 18 meses após o plantio.
+            O palmito juçara é extraído do cerne do caule da palmeira. No
+            entanto, essa prática mata a palmeira. Além da palmeira juçara, o
+            palmito pode ser extraído de outras espécies de palmeiras, como, por
+            exemplo, a pupunha e o açaizeiro (ou açaí). A extração do palmito
+            nessas outras espécies de palmeiras é uma solução sustentável de
+            consumo. Isso porque, enquanto a palmeira pupunha e o açaizeiro
+            formam touceiras, ou seja, vários caules, a juçara possui tronco
+            único. Além disso, a juçara demora de 8 anos a 12 anos para produzir
+            um palmito de qualidade, enquanto o da pupunha pode ser extraído 18
+            meses após o plantio.
           </P>
           <P>
-            Além de ser responsável pela redução populacional da juçara pelo
-            corte direto de cada indivíduo, a extração do palmito juçara nas
-            matas naturais tem o efeito indireto de diminuir a entrada de novos
+            Além do corte direto de cada indivíduo ser responsável pela redução
+            populacional da juçara, a extração do palmito juçara nas matas
+            naturais tem o efeito indireto de reduzir a entrada de novos
             indivíduos na população local. A cada indivíduo adulto derrubado da
             palmeira, há menos fontes de sementes para serem dispersadas e,
             consequentemente, menor germinação de novas plântulas.
@@ -182,7 +185,7 @@ export default function Jacucara() {
             aumentando, consequentemente, a quantidade de frutos que poderão ser
             explorados para consumo e comercialização.{" "}
           </P>
-          <Fig number={5} />{" "}
+          <Fig number={5} legend={<p>Por Marina Vieira Souza. Ilustração <A href="http://cargocollective.com/patriciayamamoto/filter/Ju%25C3%25A7ara/Materiais-educativos" target='_blank'>Patrícia Yamamoto</A></p>}/>{" "}
           <div className="mt-12 mb-4">
             <H2>JACUTINGA</H2>
             <H3>Conheça a espécie de ave jardineira da Mata Atlântica</H3>
@@ -300,7 +303,7 @@ export default function Jacucara() {
           </H2>
           <Fig number={10} />
           <H2>Materiais Relacionados</H2>
-<Pags></Pags>
+          <Pags></Pags>
           <Fig number={11} />{" "}
         </div>
       </div>
@@ -402,12 +405,34 @@ const Acc3 = () => {
           o local após a extração da polpa do fruto.{" "}
         </P>
         <P>
-          O Sul do país é palco também de um forte projeto que combina
+          O Sul do país é palco também de importantes iniciativas que combinam
           preservação da juçara, segurança alimentar e fonte de renda para
-          produtores rurais.{" "}
+          produtores rurais. Por acreditar que a produção de alimentos e a
+          preservação ambiental podem e devem caminhar juntas, o Centro
+          Ecológico vem incentivando o cultivo da palmeira juçara em sistemas
+          agroflorestais agroecológicos há mais de duas décadas. O ponto central
+          é promover a valorização do açaí juçara e viabilizar sua cadeia
+          produtiva, buscando demonstrar que este é caminho muito mais
+          interessante nos aspectos econômicos, ambientais e sociais, promovendo
+          o que é denominado conservação através do uso.
+        </P>
+        <P>
+          Dessa forma, as comunidades rurais passam a cultivar a juçara e a se
+          engajar na preservação da espécie. Ás palmeiras cultivadas se tornam
+          matrizes produtoras de frutos, formando corredores ecológicos com as
+          áreas de mata adjacentes, possibilitando o trânsito e alimentação da
+          fauna associada. Difundindo esta ideia acredita-se que teremos um
+          efeito cascata de preservação da palmeira juçara e de espécies como a
+          Jacutinga.
+        </P>
+
+        <P>
+          Atualmente, com apoio de um Fundo de Adaptação Climática do Programa
+          das Nações Unidas para o Desenvolvimento (PNUD), o projeto
           <A href="https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/">
             {" "}
-            O projeto liderado pela ONG Centro Ecológico
+            “Combinando renda com proteção florestal”, liderado pela ONG Centro
+            Ecológico{" "}
           </A>{" "}
           oferece suporte técnico e logístico para a produção de juçara em
           sistemas agroecológicos no litoral norte gaúcho e no sul catarinense.{" "}
@@ -591,29 +616,30 @@ function Fig(props) {
   );
 }
 
-
-
 function Logo(props) {
   const { number, legend, size, objectFit, website } = props;
   const image = require(`public/jacucara/logos/${number}.png`);
   // const image = {default:{height:1,width:1}}
 
-  const fsize = number === "CNCFlora" || number==='AZAB'||number==='AZAB'? 30 : number==="OAMA"? 90 : 50
+  const fsize =
+    number === "CNCFlora" || number === "AZAB" || number === "AZAB"
+      ? 30
+      : number === "OAMA"
+      ? 90
+      : 50;
 
   return (
-    <Link href={website} target='_blank'>
-    <div className="cursor-pointer">
-      {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
-      <Image
-        
-        objectFit={ "contain"}
-        height={fsize}
-        width={fsize*(-image.default.width/-image.default.height)}
-        src={image}
-      />
-      {/* </div> */}
-
-    </div>
+    <Link href={website} target="_blank">
+      <div className="cursor-pointer">
+        {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
+        <Image
+          objectFit={"contain"}
+          height={fsize}
+          width={fsize * (-image.default.width / -image.default.height)}
+          src={image}
+        />
+        {/* </div> */}
+      </div>
     </Link>
   );
 }
@@ -624,85 +650,95 @@ const logos = [
     website: "https://www.azab.org.br/",
   },
   { name: "Aves Argentinas", website: "https://www.avesargentinas.org.ar/" },
-  { name: "cemave icmbio", website: "https://www.icmbio.gov.br/cemave/" },
-  { name: "CNCFlora", website: "" },
+  { name: "cemave icmbio", website: "https://www.gov.br/icmbio/pt-br" },
+  { name: "CNCFlora", website: "http://cncflora.jbrj.gov.br/portal" },
   { name: "JBRJ", website: "https://www.gov.br/jbrj/pt-br" },
   { name: "OAMA", website: "https://oama.eco.br" },
-  { name: "PAN", website: "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica" },
+  {
+    name: "PAN",
+    website:
+      "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica",
+  },
   { name: "Parque das Aves", website: "https://www.parquedasaves.com.br/" },
-  { name: "PN Iguaçu", website: "" },
+  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
   { name: "save", website: "http://savebrasil.org.br/" },
 ];
 
-
-const Logos = ()=>{
-
+const Logos = () => {
   return (
     <div className="grid grid-cols-2 p-12 md:p-0 md:grid-cols-10 gap-4 items-center">
-
-      {logos.map(logo=>
-      <div className="flex justify-center">
-        <Logo website={logo.website} number={logo.name}></Logo>
+      {logos.map((logo) => (
+        <div className="flex justify-center">
+          <Logo website={logo.website} number={logo.name}></Logo>
         </div>
-        )}
+      ))}
     </div>
-  )
-
-}
-
+  );
+};
 
 const pags = [
   { name: "doc", website: "https://www.youtube.com/watch?v=FtL8dOPeu6U" },
-  { name: "folder", website: "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf" },
-  { name: "wikiaves jacutinga", website: "https://www.wikiaves.com.br/wiki/jacutinga" },
+  {
+    name: "folder",
+    website:
+      "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf",
+  },
+  {
+    name: "wikiaves jacutinga",
+    website: "https://www.wikiaves.com.br/wiki/jacutinga",
+  },
   {
     name: "cncflora",
-    website: "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
+    website:
+      "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
   },
-  { name: "colorir jacutinga", website: "https://wwfbr.awsassets.panda.org/downloads/encarte_iguacu_jacutinga_a4_final_pt.pdf" },
-  { name: "news", website: "https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/" },
-  { name: "rehab", website: "https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/" },
-
+  {
+    name: "colorir jacutinga",
+    website:
+      "https://wwfbr.awsassets.panda.org/downloads/encarte_iguacu_jacutinga_a4_final_pt.pdf",
+  },
+  {
+    name: "news",
+    website:
+      "https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/",
+  },
+  {
+    name: "rehab",
+    website:
+      "https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/",
+  },
 ];
 
-
-
-const Pags = ()=>{
-
+const Pags = () => {
   return (
     <div className="grid grid-cols-1 p-12 md:p-0 md:grid-cols-3 gap-4 items-center">
-
-      {pags.map(logo=>
-      <div className="flex justify-center">
-        <Pag website={logo.website} number={logo.name}></Pag>
+      {pags.map((logo) => (
+        <div className="flex justify-center">
+          <Pag website={logo.website} number={logo.name}></Pag>
         </div>
-        )}
+      ))}
     </div>
-  )
-
-}
-
+  );
+};
 
 function Pag(props) {
   const { number, legend, size, objectFit, website } = props;
   const image = require(`public/jacucara/pags/${number}.png`);
   // const image = {default:{height:1,width:1}}
 
-const fsize = 500
+  const fsize = 500;
   return (
-    <Link href={website} target='_blank'>
-    <div className="cursor-pointer">
-      {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
-      <Image
-        
-        objectFit={ "contain"}
-        height={fsize}
-        width={fsize*(-image.default.width/-image.default.height)}
-        src={image}
-      />
-      {/* </div> */}
-
-    </div>
+    <Link href={website} target="_blank">
+      <div className="cursor-pointer">
+        {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
+        <Image
+          objectFit={"contain"}
+          height={fsize}
+          width={fsize * (-image.default.width / -image.default.height)}
+          src={image}
+        />
+        {/* </div> */}
+      </div>
     </Link>
   );
 }
