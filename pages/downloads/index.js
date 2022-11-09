@@ -163,12 +163,7 @@ const div_cient = [
     link: "Oama_Livreto_Colorir_AvesAmeaçadas.pdf"
   },
 
-  {
-    title: "Folder sobre Gatos e Aves",
-    text: "Informativo sobre a palmeira juçara, uma espécie de planta chave, endêmica da Mata Atlântica e ameaçada de extinção pela perda de habitat e exploração predatória historicamente. Com esse material você vai conhecer um pouquinho sobre essa espécie que é tão importante para as aves e para nós também. Um produto florestal de importância social, econômica e ambiental. Viva Juçara!",
-    img: "Capa baixaveis folder gatos x aves.png",
-    link: "Folder gatos x aves.pdf"
-  },
+
   {
     title: "Folder sobre Uso e Conservação da Palmeira Juçara",
     text: "Material de comunicação com a sociedade para dialogar sobre o impacto que gatos domésticos soltos têm nas populações de aves silvestres. Além de introduzir um pouco sobre esse grande problema, recomendamos algumas pequenas ações que cada um pode fazer para realizar uma guarda responsável do pet e mitigar os impactos negativos às aves. Bom para os humanos, bom para os gatos e bom para as aves!",

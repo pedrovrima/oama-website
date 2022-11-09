@@ -9,6 +9,7 @@ import {
   AccordionPanel,
   useAccordionItemContext,
 } from "@reach/accordion";
+import Link from "next/link";
 
 export default function Jacucara() {
   return (
@@ -75,14 +76,7 @@ export default function Jacucara() {
             Conservação das Aves da Mata Atlântica, organizada coletivamente
             pelas seguintes organizações:{" "}
           </P>
-          <P>
-            Observatório de Aves da Mantiqueira, Sociedade para a Conservação
-            das Aves do Brasil, Parque das Aves, Aves Argentinas, Jardim
-            Botânico do Rio de Janeiro, Associação de Zoológicos e Aquários do
-            Brasil, Parque Nacional do Iguaçu, Centro Nacional de Pesquisa e
-            Conservação de Aves Silvestres e Instituto Chico Mendes de
-            Conservação da Biodiversidade.
-          </P>
+          <Logos />
           <div className="mt-12 mb-4">
             <H2>JUÇARA </H2>
             <H3>Conheça a espécie, uma planta-chave da Mata Atlântica</H3>
@@ -301,10 +295,13 @@ export default function Jacucara() {
               </Item>
             </Accordion>
           </div>
-          <H2 className="mb-8">O que você pode fazer pela conservação destas espécies?</H2>
+          <H2 className="mb-8">
+            O que você pode fazer pela conservação destas espécies?
+          </H2>
           <Fig number={10} />
+          <H2>Materiais Relacionados</H2>
+<Pags></Pags>
           <Fig number={11} />{" "}
-
         </div>
       </div>
     </>
@@ -316,7 +313,10 @@ const P = ({ children, ...props }) => (
 );
 
 const H2 = ({ children, ...props }) => (
-  <h2 style={{ color: "#8f1858" }} className={`font-bold text-3xl px-8 md:px-0 ${props.className}`}>
+  <h2
+    style={{ color: "#8f1858" }}
+    className={`font-bold text-3xl px-8 md:px-0 ${props.className}`}
+  >
     {children}
   </h2>
 );
@@ -588,5 +588,121 @@ function Fig(props) {
 
       <legend className="text-gray-500 text-sm mt-4">{legend}</legend>
     </div>
+  );
+}
+
+
+
+function Logo(props) {
+  const { number, legend, size, objectFit, website } = props;
+  const image = require(`public/jacucara/logos/${number}.png`);
+  // const image = {default:{height:1,width:1}}
+
+  const fsize = number === "CNCFlora" || number==='AZAB'||number==='AZAB'? 30 : number==="OAMA"? 90 : 50
+
+  return (
+    <Link href={website} target='_blank'>
+    <div className="cursor-pointer">
+      {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
+      <Image
+        
+        objectFit={ "contain"}
+        height={fsize}
+        width={fsize*(-image.default.width/-image.default.height)}
+        src={image}
+      />
+      {/* </div> */}
+
+    </div>
+    </Link>
+  );
+}
+
+const logos = [
+  {
+    name: "AZAB",
+    website: "https://www.azab.org.br/",
+  },
+  { name: "Aves Argentinas", website: "https://www.avesargentinas.org.ar/" },
+  { name: "cemave icmbio", website: "https://www.icmbio.gov.br/cemave/" },
+  { name: "CNCFlora", website: "" },
+  { name: "JBRJ", website: "https://www.gov.br/jbrj/pt-br" },
+  { name: "OAMA", website: "https://oama.eco.br" },
+  { name: "PAN", website: "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica" },
+  { name: "Parque das Aves", website: "https://www.parquedasaves.com.br/" },
+  { name: "PN Iguaçu", website: "" },
+  { name: "save", website: "http://savebrasil.org.br/" },
+];
+
+
+const Logos = ()=>{
+
+  return (
+    <div className="grid grid-cols-2 p-12 md:p-0 md:grid-cols-10 gap-4 items-center">
+
+      {logos.map(logo=>
+      <div className="flex justify-center">
+        <Logo website={logo.website} number={logo.name}></Logo>
+        </div>
+        )}
+    </div>
+  )
+
+}
+
+
+const pags = [
+  { name: "doc", website: "https://www.youtube.com/watch?v=FtL8dOPeu6U" },
+  { name: "folder", website: "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf" },
+  { name: "wikiaves jacutinga", website: "https://www.wikiaves.com.br/wiki/jacutinga" },
+  {
+    name: "cncflora",
+    website: "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
+  },
+  { name: "colorir jacutinga", website: "https://wwfbr.awsassets.panda.org/downloads/encarte_iguacu_jacutinga_a4_final_pt.pdf" },
+  { name: "news", website: "https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/" },
+  { name: "rehab", website: "https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/" },
+
+];
+
+
+
+const Pags = ()=>{
+
+  return (
+    <div className="grid grid-cols-1 p-12 md:p-0 md:grid-cols-3 gap-4 items-center">
+
+      {pags.map(logo=>
+      <div className="flex justify-center">
+        <Pag website={logo.website} number={logo.name}></Pag>
+        </div>
+        )}
+    </div>
+  )
+
+}
+
+
+function Pag(props) {
+  const { number, legend, size, objectFit, website } = props;
+  const image = require(`public/jacucara/pags/${number}.png`);
+  // const image = {default:{height:1,width:1}}
+
+const fsize = 500
+  return (
+    <Link href={website} target='_blank'>
+    <div className="cursor-pointer">
+      {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
+      <Image
+        
+        objectFit={ "contain"}
+        height={fsize}
+        width={fsize*(-image.default.width/-image.default.height)}
+        src={image}
+      />
+      {/* </div> */}
+
+    </div>
+    </Link>
   );
 }
