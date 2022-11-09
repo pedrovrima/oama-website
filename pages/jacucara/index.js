@@ -60,8 +60,8 @@ export default function Jacucara() {
           </P>
           <P>
             Como essa palmeira oferece alimento para muitas espécies de animais,
-            é essencial para a fauna da Mata Atlântica. Infelizmente, essa
-            planta tão importante está ameaçada de extinção, devido ao
+            ela é essencial para a fauna da Mata Atlântica. Infelizmente, essa
+            planta tão importante está ameaçada de extinção devido ao
             desmatamento e à extração ilegal do seu palmito, uma prática que
             mata a árvore.
           </P>
@@ -69,7 +69,7 @@ export default function Jacucara() {
             Esses dois fatores também ameaçam as jacutingas, que ficam sem
             floresta e sem o seu alimento favorito! Por isso, a campanha
             Jacuçara quer divulgar a importância dessas duas espécies ameaçadas
-            de extinção, que você pode ajudar a proteger!
+            de extinção, que você pode ajudar a proteger.
           </P>
           <P>
             A campanha é uma iniciativa do
@@ -79,7 +79,7 @@ export default function Jacucara() {
             >
               Plano de Ação Nacional para Conservação das Aves da Mata Atlântica
             </A>
-            , organizada coletivamente pelas seguintes organizações:{" "}
+            , organizado coletivamente pelas seguintes organizações:{" "}
           </P>
           <Logos />
           <div className="mt-12 mb-4">
@@ -128,10 +128,9 @@ export default function Jacucara() {
             maiores do que em florestas onde encontramos apenas aves menores
             como os sabiás (<i>Turdus spp.</i>). Isso mostra que as sementes
             estão sendo selecionadas de acordo com a capacidade dos dispersores
-            locais e que são selecionadas aquelas sementes que geram novas
-            plântulas. Em áreas onde a fauna foi altamente depauperada, quem
-            fará a dispersão da juçara? A relação juçara–fauna é uma via de mão
-            dupla, em que uma depende da outra para sua perpetuação.
+            locais. Consequentemente, a ausência de aves de grande porte nas
+            florestas compromete a geração de novas palmeiras, que produziriam
+            frutos maiores.
           </P>
           <div className="mt-8 mb-4">
             <H3>O consumo da juçara</H3>
@@ -174,21 +173,27 @@ export default function Jacucara() {
           </P>
           <Fig number={4} />
           <P>
-            Uma forma de conciliar exploração, consumo e conservação desta
-            palmeira é substituindo a exploração do palmito pela exploração do
+            Uma forma de conciliar a exploração, o consumo e a conservação dessa
+            palmeira é por meio da substituição da exploração do palmito pelo
             fruto. O beneficiamento do fruto gera uma polpa saborosa e muito
-            nutritiva, com grande potencial comercial. O manejo da juçara com
-            enfoque nos frutos para obtenção de polpa é uma estratégia para a
-            sua conservação aliada ao desenvolvimento da agricultura familiar.
-            Quanto mais palmeira na mata, melhor para os extratores do fruto,
-            que encontram mais recurso para ser coletado. Para que a extração do
-            fruto seja feita de forma sustentável, é importante que a extração
-            não seja completa, sempre deixando uma parcela dos frutos para ser
-            consumida e dispersada pelos animais silvestres. Essa prática é
-            também aliada do agricultor extrativista. A dispersão da semente da
-            juçara feita pela fauna aumenta a quantidade da palmeira na área,
-            aumentando, consequentemente, a quantidade de frutos que poderão ser
-            explorados para consumo e comercialização.{" "}
+            nutritiva, com grande potencial comercial.{" "}
+          </P>
+          <P>
+            O manejo da juçara, com enfoque nos frutos para obtenção de polpa, é
+            uma estratégia para a sua conservação, aliada ao desenvolvimento da
+            agricultura familiar. Quanto mais palmeiras na mata, melhor para os
+            extratores do fruto, que encontram mais recursos para serem
+            coletados.{" "}
+          </P>
+          <P>
+            Para que a extração do fruto seja feita de maneira sustentável, é
+            importante que ela não seja realizada completamente, e uma parcela
+            dos frutos seja deixada para consumo e para ser dispersada pelos
+            animais silvestres. Essa prática é também aliada do agricultor
+            extrativista. A dispersão da semente da juçara pela fauna aumenta a
+            quantidade da palmeira na área e, consequentemente, aumenta a
+            quantidade de frutos que poderão ser explorados para o consumo e a
+            comercialização.{" "}
           </P>
           <Fig
             number={5}
@@ -210,17 +215,16 @@ export default function Jacucara() {
           </div>
           <P>
             Há uma espécie de ave com uma relação tão marcante com a palmeira
-            juçara que seu declínio populacional tem sido fortemente relacionado
-            com o declínio da palmeira. Essa ave é a jacutinga (
-            <i>Aburria jacutinga</i>).{" "}
+            juçara que a sua sobrevivência está fortemente relacionada com o com
+            a palmeira. Essa ave é a jacutinga (<i>Aburria jacutinga</i>).{" "}
           </P>
           <Fig number={6} />
           <P>
-            A jacutinga é uma ave grande: mede de 64 a 74 centímetros e pesa
-            entre 1,1 e 1,4 quilo. Sua plumagem é predominantemente preta, mas
-            com um característico topete branco e pontinhas brancas nas asas.
-            Tem também um bico azulado e a barbela (pele da região do pescoço)
-            nas cores azul e vermelha.
+            A jacutinga é uma ave grande: mede de 64 centímetros a 74
+            centímetros e pesa entre 1,1 quilo e 1,4 quilo. Sua plumagem é
+            predominantemente preta, mas com um característico topete branco e
+            pontinhas brancas nas asas. Tem também um bico azulado e a barbela
+            (pele da região do pescoço) nas cores azul e vermelha.
           </P>
           <Fig number={7} />{" "}
           <P>
@@ -229,7 +233,7 @@ export default function Jacucara() {
             seu recurso favorito, os frutos da palmeira juçara, não é o único
             desafio que esta ave enfrenta para manter suas populações estáveis.
             A perda de habitat e a caça são identificadas como as principais
-            causas do declínio populacional desta espécie.{" "}
+            causas do declínio populacional dessa espécie.{" "}
           </P>
           <P>
             Ela é carinhosamente apelidada de ave jardineira da floresta, pois
@@ -252,45 +256,55 @@ export default function Jacucara() {
           <P>
             Quando dizemos que uma espécie está em risco de extinção, isso
             significa que as populações dessa espécies estão em situação de
-            declínio, isto é, que o número de indivíduos está diminuindo. A
-            velocidade deste declínio ou o número e distribuição espacial dos
+            declínio, isto é, que o número de indivíduos está reduzindo ou que
+            eles existem em um número tão pequeno na natureza, e, por isso, as
+            chances de desaparecer são maiores.
+          </P>
+          <P>
+            Apesar de relativamente comum no meio ambiente, o processo de
+            extinção está sendo intensificado pela ação humana. Destamatamento,
+            mudanças climáticas, caça ilegal e o tráfico de animais são alguns
+            dos motivos que têm acelerado o processo de extinção.
+          </P>
+          <P>
+            A velocidade deste declínio ou o número e distribuição espacial dos
             indivíduos da espécie é que vão indicar quão alto é o risco de a
             espécie ser extinta, ou seja, o risco de que até o último indivíduo
-            morra.
+            desapareça.
           </P>
           <P>
-            A Lista Vermelha de Espécies Ameaçadas é hoje uma das principais
-            ferramentas para avaliação e indicação de risco das espécies. Criada
-            em 1964 pela União Internacional de Conservação da Natureza e dos
-            Recursos Naturais (IUCN, em inglês), a Lista Vermelha constitui um
-            catálogo detalhado sobre os dados de conservação global das espécies
-            de todo o mundo.
+            A Lista Vermelha de Espécies Ameaçadas é, hoje, uma das principais
+            ferramentas para avaliação e indicação de risco das espécies. Método
+            criado em 1964 pela União Internacional de Conservação da Natureza e
+            dos Recursos Naturais (IUCN, em inglês), a Lista Vermelha constitui
+            um catálogo detalhado sobre os dados de conservação global das
+            espécies de todo o mundo, amplamente utilizado por vários governos e
+            instituições para direcionar esforços de conservação.
           </P>
           <P>
-            As espécies são avaliadas por organizações, cientistas e
-            especialistas que analisam seus dados de ocorrência no tempo e
-            espaço. O número de indivíduos em idade reprodutiva também é
-            importante nessa análise, pois permite avaliar o tamanho da
-            população no tempo, espaço e, dependendo da qualidade desses dados,
-            estimar ainda flutuações futuras em diferentes cenários de políticas
-            públicas.{" "}
+            A partir do levantamento de uma série de informações, inclusive com
+            a participação da sociedade, as espécies são avaliadas por
+            organizações, cientistas e especialistas que analisam os dados de
+            ocorrência no tempo e no espaço, associado às principais causas que
+            ameaçam essas espécies.{" "}
           </P>
           <P>
-            As espécies analisadas são então classificadas em nove diferentes
-            categorias: Não analisada (NE), quando ainda não avaliamos a
-            respectiva espécie; Dados insuficientes (DD), quando não temos
-            muitas informações sobre a espécie; Pouco preocupante (LC), quando a
-            espécie vai muito bem, obrigada; Quase ameaçada (NT), quando há
-            indícios de declínio ou ameaças à perpetuação da espécie no
-            horizonte; Vulnerável (VU), quando a espécie apresenta alto risco de
-            extinção, caso não haja uma mudança no cenário; Em perigo (EN),
+            Os resultados dessa avaliação indicam o risco de extinção para cada
+            uma das espécies, que podem ser classificadas em uma dentre as nove
+            diferentes categorias: Não analisada (NE), quando ainda não há
+            avaliação da respectiva espécie; Dados insuficientes (DD), quando
+            não há muitas informações sobre a espécie; Pouco preocupante (LC),
+            quando a espécie vai muito bem, obrigada; Quase ameaçada (NT),
+            quando há indícios de declínio ou ameaças à perpetuação da espécie
+            no horizonte; Vulnerável (VU), quando a espécie apresenta alto risco
+            de extinção, caso não haja uma mudança no cenário; Em perigo (EN),
             quando o risco de a espécie desaparecer num futuro próximo é muito
             alto; Criticamente ameaçada (CR), quando a espécie está sob risco
             iminente de extinção e precisa de cuidados urgentes para não
             desaparecer; Extinta na natureza (EW), quando a espécie não tem mais
-            representantes na natureza, apenas aqueles mantidos sob cuidados ex
-            situ; e, por fim, Extinta (EX), quando é confirmado que morreu até o
-            último indivíduo da espécie.{" "}
+            representantes na natureza, apenas aqueles mantidos sob cuidados
+            humanos ex situ, e, por fim, Extinta (EX), quando é confirmado que
+            morreu até o último indivíduo da espécie.{" "}
           </P>
           <P>
             São consideradas como <strong>espécies ameaçadas</strong> apenas
@@ -384,7 +398,7 @@ const Acc3 = () => {
       <AccordionPanel className="px-8 py-4">
         <P>
           As ações para proteger essa espécie-chave para a Mata Atlântica
-          acontecem em múltiplas frentes ao mesmo tempo.{" "}
+          acontecem em múltiplas frentes, ao mesmo tempo.{" "}
         </P>
         <P>
           Divulgar informações sobre a espécie, suas ameaças e formas adequadas
@@ -397,15 +411,15 @@ const Acc3 = () => {
         </P>
         <P>
           Ações diretas para tentar aumentar o número de indivíduos de juçara
-          presentes nas matas são realizadas através de chuvas de sementes! A
+          presentes nas matas são realizadas por meio de chuvas de sementes. A
           Fundação Florestal (FF), instituição ligada à Secretaria de
           Infraestrutura e Meio Ambiente (SIMA) de São Paulo,{" "}
           <A href="https://www.infraestruturameioambiente.sp.gov.br/2021/07/lancamento-aereo-de-sementes-para-reflorestamento-de-especie-ameacada-de-extincao/">
             lançou cerca de 2 toneladas
           </A>{" "}
-          de sementes de juçara sobre matas do Parque Estadual da Serra do Mar.
+          de sementes de juçara sobre as matas do Parque Estadual da Serra do Mar.
           Essa ação fez parte de um programa de longa duração para promover a
-          restauração e conservação da palmeira juçara, e o propósito é
+          restauração e a conservação da palmeira juçara, e o propósito é
           continuar espalhando as sementes da espécie.
         </P>
         <P>
@@ -415,9 +429,9 @@ const Acc3 = () => {
           substituído no cardápio pelo palmito da pupunha, por exemplo. E o
           fruto pode ser extraído e consumido sem prejudicar a sobrevivência e a
           manutenção da planta. Para isso é fundamental que a extração dos
-          frutos seja feita de forma adequada, seguindo um plano de manejo em
+          frutos seja feita de maneira adequada, seguindo um plano de manejo em
           que se preservem frutos suficientes para o consumo pela fauna
-          silvestre e sementes suficientes para serem dispersadas e recrutar
+          silvestre e sementes suficientes para serem dispersadas e, dessa forma, recrutar
           novas plântulas da juçara no local. No caso de quem faz a extração do
           fruto em áreas naturais, é importante também devolver as sementes para
           o local após a extração da polpa do fruto.{" "}
@@ -488,7 +502,7 @@ const Acc2 = () => {
           como o controle da caça clandestina e da fragmentação de ambientes, em
           toda a área onde as populações de jacutinga estão presentes na
           Argentina; criar uma estratégia ex situ para a conservação da espécie,
-          incluindo um criadouro em cativeiro, um livro de registro e protocolos
+          incluindo um criadouro em cativeiro, um livro de registro (<i>Studbook</i>) e protocolos
           de resgate e manejo; e converter a jacutinga em uma imagem conhecida e
           identificável com a selva de Misiones, ao mesmo tempo em que
           diferentes públicos serão alcançados para divulgar a espécie, suas
@@ -498,7 +512,7 @@ const Acc2 = () => {
         <P>
           Para chegar a um acordo sobre um plano de ação entre as diferentes
           instituições governamentais e não governamentais que trabalham no
-          estudo e conservação da biodiversidade da Mata Atlântica argentina,
+          estudo e na conservação da biodiversidade da Mata Atlântica argentina,
           foi organizado, em 2021, o campo de trabalho "Plano para a conservação
           da jacutinga na Argentina: Workshop de diagnóstico e consenso de
           trabalho", a fim de atualizar o diagnóstico da situação, análise de
@@ -533,7 +547,7 @@ const Acc1 = () => {
           programa foi uma exigência do Instituto Chico Mendes de Conservação da
           Biodiversidade – ICMBio/APA Mananciais do Rio Paraíba do Sul, com a
           finalidade de atender a parte das condicionantes ambientais referentes
-          à licença de instalação do gasoduto Caraguatatuba-Taubaté (GASTAU)
+          à licença de instalação do gasoduto Caraguatatuba-Taubaté (GASTAU),
           construído pela Petrobras.
         </P>
         <P>
@@ -541,63 +555,28 @@ const Acc1 = () => {
           <i>Aburria jacutinga</i>) na Região da Serra do Mar e a necessidade de
           um reforço populacional urgente a fim de evitar a extinção local da
           espécie, considerada Criticamente Ameaçada (CR) de extinção, de acordo
-          com a lista de animais ameaçados no estado de São Paulo, e Em Perigo
+          com a lista de animais ameaçados no Estado de São Paulo, e Em Perigo
           (EN), de acordo com a lista nacional publicada em dezembro de 2014.
         </P>
         <P>
-          No estado do Rio de Janeiro, a espécie está extinta, foi avistada em
-          Itatiaia pela última vez em 1978 e na Serra dos Órgãos em 1980, fato
-          este que levou a extensão do programa de reintrodução de jacutingas
+          No Estado do Rio de Janeiro, a espécie está extinta. Foi avistada em
+          Itatiaia pela última vez em 1978 e na Serra dos Órgãos em 1980, o que levou a extensão do programa de reintrodução de jacutingas
           também para a Reserva Ecológica de Guapiaçu (REGUA), situada a cerca
           de 150 km ao norte da cidade do Rio de Janeiro.
         </P>
         <P>
-          A fase II do programa, iniciada em 2014, visou à reintrodução e
-          monitoramento de jacutingas: na região da Serra da Mantiqueira, em São
-          Francisco Xavier, distrito de São José dos Campos (SP); na região da
-          Serra do Mar, em áreas próximas ao Parque Estadual da Serra do Mar –
-          Núcleo Caraguatatuba/São Paulo; e no município de Cachoeiras de
-          Macacu, na Reserva Ecológica de Guapiaçu (REGUA), no estado do Rio de
-          Janeiro. Desde 2019, as reintroduções concentraram-se em um único
-          local – São Francisco Xavier –, através da utilização do software
-          Vortex para Análise da Viabilidade Populacional.
+        A fase II do programa, iniciada em 2014, visou à reintrodução e o monitoramento de jacutingas na região da Serra da Mantiqueira, em São Francisco Xavier, distrito de São José dos Campos (SP); na região da Serra do Mar, em áreas próximas ao Parque Estadual da Serra do Mar – Núcleo Caraguatatuba/São Paulo, e no município de Cachoeiras de Macacu, na Reserva Ecológica de Guapiaçu (REGUA), no Estado do Rio de Janeiro. Desde 2019, as reintroduções concentraram-se em um único local – São Francisco Xavier –, medida a conservação indicada pela  Análise da Viabilidade Populacional, utilizando o Vortex.        </P>
+        <P>
+        As ações do projeto envolvem testes de sanidade das aves, preparação comportamental, reintrodução/soltura e monitoramento, educação e disseminação da importância da conservação da jacutinga e outras aves de Mata Atlântica para a comunidade em paralelo com o envolvimento dos órgãos de fiscalização ambiental nas ações de campo. O apoio de zoológicos e dos criadouros conservacionistas de jacutingas, por meio do fornecimento de aves para serem soltas, é fundamental para o sucesso do projeto. Além disso, graças ao trabalho desenvolvido pela SAVE Brasil, a jacutinga foi elencada como uma das 25 espécies prioritárias para a conservação, a partir de um acordo de cooperação técnica entre a Associação de Zoológicos e Aquários do Brasil (AZAB), o Ministério do Meio Ambiente e o ICMBio, para a condução do <i>studbook</i> da espécie. Os studbooks são a ferramenta mais importante na gestão científica de populações ex situ de animais silvestres, assegurando tamanho suficiente, estabilidade demográfica e alto nível de diversidade genética. O Parque das Aves é o <i>studbook keeper</i> da jacutinga.        </P>
+        <P>
+        O projeto realizou a primeira soltura em junho de 2016 e, até o momento, foram 50 jacutingas soltas na Serra da Mantiqueira, no distrito de São Francisco Xavier, seis na Serra do Mar e duas na Reserva Ecológica de Guapiaçu, totalizando 58 indivíduos.
         </P>
         <P>
-          As ações do projeto envolvem testes de sanidade das aves, preparação
-          comportamental, reintrodução/soltura e monitoramento, educação e
-          disseminação da importância da conservação da jacutinga e outras aves
-          de Mata Atlântica para a comunidade em paralelo com o envolvimento dos
-          órgãos de fiscalização ambiental nas ações de campo. O apoio de
-          zoológicos e dos criadouros conservacionistas de jacutingas, através
-          do fornecimento de aves para serem soltas, é fundamental para o
-          sucesso do projeto. Além disso, graças ao trabalho desenvolvido pela
-          SAVE Brasil, a jacutinga foi elencada como uma das 25 espécies
-          prioritárias para a conservação, através de um acordo de cooperação
-          técnica entre a Associação de Zoológicos e Aquários do Brasil (AZAB),
-          o Ministério do Meio Ambiente e o ICMBio para a condução do studbook
-          da espécie. Os studbooks são a ferramenta mais importante na gestão
-          científica de populações ex situ de animais silvestres, assegurando
-          tamanho suficiente, estabilidade demográfica e alto nível de
-          diversidade genética. O Parque das Aves é o studbook keeper da
-          jacutinga.
-        </P>
-        <P>
-          O projeto realizou a primeira soltura em junho de 2016, e até o
-          momento foram 50 jacutingas soltas na Serra da Mantiqueira, no
-          distrito de São Francisco Xavier, 6 na Serra do Mar e 2 na Reserva
-          Ecológica de Guapiaçu, totalizando 58 indivíduos.
-        </P>
-        <P>
-          As aves são monitoradas por transmissores via rádio, idas a campo e/ou
-          através da participação da comunidade local, incentivando-se a prática
-          de observação de aves.
+        As aves são monitoradas por transmissores via rádio, idas a campo e/ou através da participação da comunidade local, sob o incentivo da prática da observação de aves.
         </P>
         <strong>
           <P>
-            O programa visa aumentar a população de jacutingas na Mata Atlântica
-            e estabelecer um protocolo de reintrodução e monitoramento que
-            poderá ser replicado em outros locais onde a espécie está localmente
-            extinta.
+          O programa visa aumentar a população de jacutingas na Mata Atlântica e estabelecer um protocolo de reintrodução e monitoramento que poderá ser replicado em outros locais onde a espécie está localmente extinta.
           </P>
         </strong>
       </AccordionPanel>
