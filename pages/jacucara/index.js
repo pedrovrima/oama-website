@@ -72,9 +72,14 @@ export default function Jacucara() {
             de extinção, que você pode ajudar a proteger!
           </P>
           <P>
-            A campanha é uma iniciativa do Plano de Ação Nacional para
-            Conservação das Aves da Mata Atlântica, organizada coletivamente
-            pelas seguintes organizações:{" "}
+            A campanha é uma iniciativa do
+            <A
+              href="https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
+              target="_blank"
+            >
+              Plano de Ação Nacional para Conservação das Aves da Mata Atlântica
+            </A>
+            , organizada coletivamente pelas seguintes organizações:{" "}
           </P>
           <Logos />
           <div className="mt-12 mb-4">
@@ -185,7 +190,20 @@ export default function Jacucara() {
             aumentando, consequentemente, a quantidade de frutos que poderão ser
             explorados para consumo e comercialização.{" "}
           </P>
-          <Fig number={5} legend={<p>Por Marina Vieira Souza. Ilustração <A href="http://cargocollective.com/patriciayamamoto/filter/Ju%25C3%25A7ara/Materiais-educativos" target='_blank'>Patrícia Yamamoto</A></p>}/>{" "}
+          <Fig
+            number={5}
+            legend={
+              <p>
+                Por Marina Vieira Souza. Ilustração{" "}
+                <A
+                  href="http://cargocollective.com/patriciayamamoto/filter/Ju%25C3%25A7ara/Materiais-educativos"
+                  target="_blank"
+                >
+                  Patrícia Yamamoto
+                </A>
+              </p>
+            }
+          />{" "}
           <div className="mt-12 mb-4">
             <H2>JACUTINGA</H2>
             <H3>Conheça a espécie de ave jardineira da Mata Atlântica</H3>
@@ -650,17 +668,13 @@ const logos = [
     website: "https://www.azab.org.br/",
   },
   { name: "Aves Argentinas", website: "https://www.avesargentinas.org.ar/" },
+  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
   { name: "cemave icmbio", website: "https://www.gov.br/icmbio/pt-br" },
   { name: "CNCFlora", website: "http://cncflora.jbrj.gov.br/portal" },
   { name: "JBRJ", website: "https://www.gov.br/jbrj/pt-br" },
   { name: "OAMA", website: "https://oama.eco.br" },
-  {
-    name: "PAN",
-    website:
-      "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica",
-  },
+
   { name: "Parque das Aves", website: "https://www.parquedasaves.com.br/" },
-  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
   { name: "save", website: "http://savebrasil.org.br/" },
 ];
 
