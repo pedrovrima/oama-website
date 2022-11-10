@@ -171,9 +171,6 @@ export default function Nav() {
                     flex-col
                   "
                   >
-                    <Link href="/proaves">
-                      <p className="cursor-pointer pb-1">Pró-Aves</p>
-                    </Link>
                     <Link href="/projetos">
                       <p className="cursor-pointer pb-1">Projetos</p>
                     </Link>
@@ -195,6 +192,9 @@ export default function Nav() {
                     <a target="_blank" href="/relatorio.html">
                       <p className="cursor-pointer pb-1">Relatório de Dados </p>
                     </a>
+                    <a target="_blank" href="https://oama.kyte.site">
+                      <p className="cursor-pointer pb-1">useOAMa </p>
+                    </a>
                   </div>
                 </li>
 
@@ -209,7 +209,7 @@ export default function Nav() {
                     <Link href="/estacao-de-pesquisa">
                       <p className="cursor-pointer pb-1">Estação de Pesquisa</p>
                     </Link>
-                 
+
                     <a
                       target="_blank"
                       href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr"
@@ -229,9 +229,7 @@ export default function Nav() {
                 </li>
 
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
-                  <a target="_blank" href="https://oama.kyte.site/">
-                    useOAMa
-                  </a>
+                  <Link href="/jacucara">Jacuçara</Link>
                 </li>
                 <li className="inline-block bg-yellow-400 w-full  no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                   <Link className="" href="/apoie">
@@ -255,7 +253,7 @@ export default function Nav() {
             <div className=" group mr-4 ">
               <p className="text-gray-50   font-bold">Atividades</p>
               <div className="bg-gray-900   absolute hidden p-6  w-56 group-hover:block ">
-              <Link href="/proaves">
+                <Link href="/proaves">
                   <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
                     Pró-Aves
                   </p>
@@ -287,6 +285,11 @@ export default function Nav() {
                     Relatório de Dados
                   </p>
                 </a>
+                <a target="_blank" href="https://oama.kyte.site">
+                  <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
+                    useOAMa{" "}
+                  </p>
+                </a>
               </div>
             </div>
 
@@ -298,7 +301,6 @@ export default function Nav() {
                     Estação de Pesquisa
                   </p>
                 </Link>
-             
 
                 <a
                   target="_blank"
@@ -326,12 +328,12 @@ export default function Nav() {
               </div>
             </a>
 
-            <div className=" group mr-4 ">
-              <a href="https://oama.kyte.site/">
+            <div className=" group mr-4 cursor-pointer">
+              <Link href="/jacucara">
                 <p className="text-gray-50 hover:underline  font-bold">
-                  useOAMa{" "}
+                  Jacuçara
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
           <Link href="/apoie">
