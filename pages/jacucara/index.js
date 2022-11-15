@@ -82,6 +82,16 @@ export default function Jacucara() {
             , organizado coletivamente pelas seguintes organizações:{" "}
           </P>
           <Logos />
+          <div className="flex my-8 justify-center">
+            <iframe
+              className="w-5/6 h-64 md:h-96"
+              src="https://www.youtube.com/embed/4NO3bjzNFLM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div className="mt-12 mb-4">
             <H2>JUÇARA </H2>
             <H3>Conheça a espécie, uma planta-chave da Mata Atlântica</H3>
@@ -330,6 +340,18 @@ export default function Jacucara() {
               </Item>
             </Accordion>
           </div>
+          <Fig
+            png
+            number={12}
+            legend={
+              <p>
+                Ilustração{" "}
+                <A href="https://www.instagram.com/leo_marujo/" target="_blank">
+                  Leonardo Marujo
+                </A>
+              </p>
+            }
+          />
           <H2 className="mb-8">
             O que você pode fazer pela conservação destas espécies?
           </H2>
@@ -417,9 +439,9 @@ const Acc3 = () => {
           <A href="https://www.infraestruturameioambiente.sp.gov.br/2021/07/lancamento-aereo-de-sementes-para-reflorestamento-de-especie-ameacada-de-extincao/">
             lançou cerca de 2 toneladas
           </A>{" "}
-          de sementes de juçara sobre as matas do Parque Estadual da Serra do Mar.
-          Essa ação fez parte de um programa de longa duração para promover a
-          restauração e a conservação da palmeira juçara, e o propósito é
+          de sementes de juçara sobre as matas do Parque Estadual da Serra do
+          Mar. Essa ação fez parte de um programa de longa duração para promover
+          a restauração e a conservação da palmeira juçara, e o propósito é
           continuar espalhando as sementes da espécie.
         </P>
         <P>
@@ -431,10 +453,10 @@ const Acc3 = () => {
           manutenção da planta. Para isso é fundamental que a extração dos
           frutos seja feita de maneira adequada, seguindo um plano de manejo em
           que se preservem frutos suficientes para o consumo pela fauna
-          silvestre e sementes suficientes para serem dispersadas e, dessa forma, recrutar
-          novas plântulas da juçara no local. No caso de quem faz a extração do
-          fruto em áreas naturais, é importante também devolver as sementes para
-          o local após a extração da polpa do fruto.{" "}
+          silvestre e sementes suficientes para serem dispersadas e, dessa
+          forma, recrutar novas plântulas da juçara no local. No caso de quem
+          faz a extração do fruto em áreas naturais, é importante também
+          devolver as sementes para o local após a extração da polpa do fruto.{" "}
         </P>
         <P>
           O Sul do país é palco também de importantes iniciativas que combinam
@@ -502,12 +524,12 @@ const Acc2 = () => {
           como o controle da caça clandestina e da fragmentação de ambientes, em
           toda a área onde as populações de jacutinga estão presentes na
           Argentina; criar uma estratégia ex situ para a conservação da espécie,
-          incluindo um criadouro em cativeiro, um livro de registro (<i>Studbook</i>) e protocolos
-          de resgate e manejo; e converter a jacutinga em uma imagem conhecida e
-          identificável com a selva de Misiones, ao mesmo tempo em que
-          diferentes públicos serão alcançados para divulgar a espécie, suas
-          ameaças e as ações que a instituição realiza em busca de sua
-          conservação.
+          incluindo um criadouro em cativeiro, um livro de registro (
+          <i>Studbook</i>) e protocolos de resgate e manejo; e converter a
+          jacutinga em uma imagem conhecida e identificável com a selva de
+          Misiones, ao mesmo tempo em que diferentes públicos serão alcançados
+          para divulgar a espécie, suas ameaças e as ações que a instituição
+          realiza em busca de sua conservação.
         </P>
         <P>
           Para chegar a um acordo sobre um plano de ação entre as diferentes
@@ -560,23 +582,58 @@ const Acc1 = () => {
         </P>
         <P>
           No Estado do Rio de Janeiro, a espécie está extinta. Foi avistada em
-          Itatiaia pela última vez em 1978 e na Serra dos Órgãos em 1980, o que levou a extensão do programa de reintrodução de jacutingas
-          também para a Reserva Ecológica de Guapiaçu (REGUA), situada a cerca
-          de 150 km ao norte da cidade do Rio de Janeiro.
+          Itatiaia pela última vez em 1978 e na Serra dos Órgãos em 1980, o que
+          levou a extensão do programa de reintrodução de jacutingas também para
+          a Reserva Ecológica de Guapiaçu (REGUA), situada a cerca de 150 km ao
+          norte da cidade do Rio de Janeiro.
         </P>
         <P>
-        A fase II do programa, iniciada em 2014, visou à reintrodução e o monitoramento de jacutingas na região da Serra da Mantiqueira, em São Francisco Xavier, distrito de São José dos Campos (SP); na região da Serra do Mar, em áreas próximas ao Parque Estadual da Serra do Mar – Núcleo Caraguatatuba/São Paulo, e no município de Cachoeiras de Macacu, na Reserva Ecológica de Guapiaçu (REGUA), no Estado do Rio de Janeiro. Desde 2019, as reintroduções concentraram-se em um único local – São Francisco Xavier –, medida a conservação indicada pela  Análise da Viabilidade Populacional, utilizando o Vortex.        </P>
-        <P>
-        As ações do projeto envolvem testes de sanidade das aves, preparação comportamental, reintrodução/soltura e monitoramento, educação e disseminação da importância da conservação da jacutinga e outras aves de Mata Atlântica para a comunidade em paralelo com o envolvimento dos órgãos de fiscalização ambiental nas ações de campo. O apoio de zoológicos e dos criadouros conservacionistas de jacutingas, por meio do fornecimento de aves para serem soltas, é fundamental para o sucesso do projeto. Além disso, graças ao trabalho desenvolvido pela SAVE Brasil, a jacutinga foi elencada como uma das 25 espécies prioritárias para a conservação, a partir de um acordo de cooperação técnica entre a Associação de Zoológicos e Aquários do Brasil (AZAB), o Ministério do Meio Ambiente e o ICMBio, para a condução do <i>studbook</i> da espécie. Os studbooks são a ferramenta mais importante na gestão científica de populações ex situ de animais silvestres, assegurando tamanho suficiente, estabilidade demográfica e alto nível de diversidade genética. O Parque das Aves é o <i>studbook keeper</i> da jacutinga.        </P>
-        <P>
-        O projeto realizou a primeira soltura em junho de 2016 e, até o momento, foram 50 jacutingas soltas na Serra da Mantiqueira, no distrito de São Francisco Xavier, seis na Serra do Mar e duas na Reserva Ecológica de Guapiaçu, totalizando 58 indivíduos.
+          A fase II do programa, iniciada em 2014, visou à reintrodução e o
+          monitoramento de jacutingas na região da Serra da Mantiqueira, em São
+          Francisco Xavier, distrito de São José dos Campos (SP); na região da
+          Serra do Mar, em áreas próximas ao Parque Estadual da Serra do Mar –
+          Núcleo Caraguatatuba/São Paulo, e no município de Cachoeiras de
+          Macacu, na Reserva Ecológica de Guapiaçu (REGUA), no Estado do Rio de
+          Janeiro. Desde 2019, as reintroduções concentraram-se em um único
+          local – São Francisco Xavier –, medida a conservação indicada pela
+          Análise da Viabilidade Populacional, utilizando o Vortex.{" "}
         </P>
         <P>
-        As aves são monitoradas por transmissores via rádio, idas a campo e/ou através da participação da comunidade local, sob o incentivo da prática da observação de aves.
+          As ações do projeto envolvem testes de sanidade das aves, preparação
+          comportamental, reintrodução/soltura e monitoramento, educação e
+          disseminação da importância da conservação da jacutinga e outras aves
+          de Mata Atlântica para a comunidade em paralelo com o envolvimento dos
+          órgãos de fiscalização ambiental nas ações de campo. O apoio de
+          zoológicos e dos criadouros conservacionistas de jacutingas, por meio
+          do fornecimento de aves para serem soltas, é fundamental para o
+          sucesso do projeto. Além disso, graças ao trabalho desenvolvido pela
+          SAVE Brasil, a jacutinga foi elencada como uma das 25 espécies
+          prioritárias para a conservação, a partir de um acordo de cooperação
+          técnica entre a Associação de Zoológicos e Aquários do Brasil (AZAB),
+          o Ministério do Meio Ambiente e o ICMBio, para a condução do{" "}
+          <i>studbook</i> da espécie. Os studbooks são a ferramenta mais
+          importante na gestão científica de populações ex situ de animais
+          silvestres, assegurando tamanho suficiente, estabilidade demográfica e
+          alto nível de diversidade genética. O Parque das Aves é o{" "}
+          <i>studbook keeper</i> da jacutinga.{" "}
+        </P>
+        <P>
+          O projeto realizou a primeira soltura em junho de 2016 e, até o
+          momento, foram 50 jacutingas soltas na Serra da Mantiqueira, no
+          distrito de São Francisco Xavier, seis na Serra do Mar e duas na
+          Reserva Ecológica de Guapiaçu, totalizando 58 indivíduos.
+        </P>
+        <P>
+          As aves são monitoradas por transmissores via rádio, idas a campo e/ou
+          através da participação da comunidade local, sob o incentivo da
+          prática da observação de aves.
         </P>
         <strong>
           <P>
-          O programa visa aumentar a população de jacutingas na Mata Atlântica e estabelecer um protocolo de reintrodução e monitoramento que poderá ser replicado em outros locais onde a espécie está localmente extinta.
+            O programa visa aumentar a população de jacutingas na Mata Atlântica
+            e estabelecer um protocolo de reintrodução e monitoramento que
+            poderá ser replicado em outros locais onde a espécie está localmente
+            extinta.
           </P>
         </strong>
       </AccordionPanel>
@@ -591,9 +648,10 @@ const Item = ({ children }) => (
 );
 
 function Fig(props) {
-  const { number, legend, size, objectFit } = props;
-  console.log(`public/jacucara/figs/${number}.jpg`);
-  const image = require(`public/jacucara/figs/${number}.jpg`);
+  const { number, legend, size, objectFit, png } = props;
+  const image = !png
+    ? require(`public/jacucara/figs/${number}.jpg`)
+    : require(`public/jacucara/figs/${number}.png`);
   // const image = {default:{height:1,width:1}}
 
   return (
@@ -659,7 +717,7 @@ const logos = [
 
 const Logos = () => {
   return (
-    <div className="grid grid-cols-2 p-12 md:p-0 md:grid-cols-10 gap-4 items-center">
+    <div className="w-100 grid grid-cols-2 p-12 md:p-0 md:grid-cols-10 gap-4 items-center">
       {logos.map((logo) => (
         <div className="flex justify-center">
           <Logo website={logo.website} number={logo.name}></Logo>
