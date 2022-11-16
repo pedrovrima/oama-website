@@ -72,7 +72,7 @@ export default function Jacucara() {
             de extinção, que você pode ajudar a proteger.
           </P>
           <P>
-            A campanha é uma iniciativa do
+            A campanha é uma iniciativa do 
             <A
               href="https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
               target="_blank"
@@ -225,7 +225,7 @@ export default function Jacucara() {
           </div>
           <P>
             Há uma espécie de ave com uma relação tão marcante com a palmeira
-            juçara que a sua sobrevivência está fortemente relacionada com o com
+            juçara que a sua sobrevivência está fortemente relacionada com
             a palmeira. Essa ave é a jacutinga (<i>Aburria jacutinga</i>).{" "}
           </P>
           <Fig number={6} />
@@ -705,14 +705,15 @@ const logos = [
     website: "https://www.azab.org.br/",
   },
   { name: "Aves Argentinas", website: "https://www.avesargentinas.org.ar/" },
-  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
-  { name: "cemave icmbio", website: "https://www.gov.br/icmbio/pt-br" },
+
   { name: "CNCFlora", website: "http://cncflora.jbrj.gov.br/portal" },
   { name: "JBRJ", website: "https://www.gov.br/jbrj/pt-br" },
   { name: "OAMA", website: "https://oama.eco.br" },
 
   { name: "Parque das Aves", website: "https://www.parquedasaves.com.br/" },
   { name: "save", website: "http://savebrasil.org.br/" },
+  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
+  { name: "cemave icmbio", website: "https://www.gov.br/icmbio/pt-br" },
 ];
 
 const Logos = () => {
