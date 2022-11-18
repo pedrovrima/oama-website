@@ -72,7 +72,7 @@ export default function Jacucara() {
             de extinção, que você pode ajudar a proteger.
           </P>
           <P>
-            A campanha é uma iniciativa do 
+            A campanha é uma iniciativa do
             <A
               href="https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
               target="_blank"
@@ -225,8 +225,8 @@ export default function Jacucara() {
           </div>
           <P>
             Há uma espécie de ave com uma relação tão marcante com a palmeira
-            juçara que a sua sobrevivência está fortemente relacionada com
-            a palmeira. Essa ave é a jacutinga (<i>Aburria jacutinga</i>).{" "}
+            juçara que a sua sobrevivência está fortemente relacionada com a
+            palmeira. Essa ave é a jacutinga (<i>Aburria jacutinga</i>).{" "}
           </P>
           <Fig number={6} />
           <P>
@@ -731,19 +731,15 @@ const Logos = () => {
 const pags = [
   { name: "doc", website: "https://www.youtube.com/watch?v=FtL8dOPeu6U" },
   {
-    name: "folder",
-    website:
-      "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf",
-  },
-  {
     name: "wikiaves jacutinga",
     website: "https://www.wikiaves.com.br/wiki/jacutinga",
   },
   {
-    name: "cncflora",
+    name: "folder",
     website:
-      "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
+      "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf",
   },
+
   {
     name: "colorir jacutinga",
     website:
@@ -758,6 +754,16 @@ const pags = [
     name: "rehab",
     website:
       "https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/",
+  },
+  {
+    name: "cncflora",
+    website:
+      "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
+  },
+
+  {
+    name: "palmito_legal",
+    website: "https://youtu.be/BORRYwKCkdA",
   },
 ];
 
