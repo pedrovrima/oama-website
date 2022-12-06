@@ -5,7 +5,7 @@ import Actions from "../components/actions";
 import About from "../components/about";
 import Head from "next/head";
 import Footer from "@includes/footer";
-import { EPCarousel } from "components/fp-carousel";
+import { FPCarousel } from "components/fp-carousel";
 
 export default function IndexPage() {
   return (
@@ -13,7 +13,9 @@ export default function IndexPage() {
       <Nav />
       <Hero></Hero>
       <About></About>
-      <EPCarousel></EPCarousel>
+      <div className="container mb-12 max-w-4xl mx-auto ">
+        <FPCarousel></FPCarousel>
+      </div>
       <Actions></Actions>
       <Footer></Footer>
     </>

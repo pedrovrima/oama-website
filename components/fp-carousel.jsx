@@ -1,25 +1,39 @@
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import Link from "next/link";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const FPCarousel = (props) => {
   const fotos = [
     {
-      pic: "/fotos_ep/aerea.jpeg",
+      pic: "/carousel/1.jpg",
       legend: "Portfolio OAMa",
       link: "/publicacoes/files/Portfolio_OAMa.pdf",
+      legendText:
+        "Conheça e compartilhe nossos objetivos, projetos, programas e conquistas.",
     },
     {
-      pic: "/jacucara/figs/1.jpg",
+      pic: "/carousel/2.jpg",
       legend: "Campanha Jacuçara",
       link: "/jacucara",
+      legendText:
+        "Uma ação pela divulgação de duas espécies ameaçadas e exclusivas da Mata Atlântica: a jacutinga e a palmeira-juçara.",
     },
     {
-      pic: "/proaves/intro/fig2.jpg",
+      pic: "/carousel/3.jpg",
       legend: "Campanha Pró-Aves",
       link: "/proaves",
+      legendText:
+        "Aprenda sobre seis impactos que a humanidade gera sobre as aves e que nós podemos fazer para mitigá-los.",
     },
-    { pic: "/fotos_ep/piscina.jpg", legend: "Apoie", link: "/apoie" },
+    {
+      pic: "/carousel/4.jpg",
+
+      legend: "Apoie",
+      link: "/apoie",
+      legendText:
+        "Essa é a força motora que dá vida às nossas ações. Junte-se ao nosso bando pela Conservação com Ciência.",
+    },
   ];
 
   return (
@@ -37,69 +51,29 @@ const FPCarousel = (props) => {
         className="mt-2 bg-gray-300 mb-8 sm:mb-4 w-full  h-96"
       >
         {fotos.map((img) => (
-          <div className="h-96 w-full sm:h-96  relative">
-            <Link href={img.link}>
+          <Link href={img.link}>
+            <div className="h-96 w-full sm:h-96  relative">
               <Image
                 alt={img.legend}
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 src={img.pic}
               ></Image>
-            </Link>
-
-            <div className="w-full bg-gradient-to-b from-cyan-500 to-blue-500 flex absolute bottom-12 justify-start">
-              <p className=" text-white text-6xl">{img.legend}</p>
+              <div className="absolute h-full w-full bg-gradient-to-b to-gray-900 via-transparent  from-transparent  t-0"></div>
+              <div className="flex-col items-start  px-2 md:px-12 w-full flex absolute pb-8 md:pb-12 bottom-0 justify-start">
+                <p className=" font-bold text-white text-3xl md:text-6xl">
+                  {img.legend}
+                </p>
+                <p className="text-left  text-white text-lg md:text-xl">
+                  {img.legendText}
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Carousel>
     </div>
   );
 };
 
-const EPCarousel = (props) => {
-  const fotos = [
-    { pic: "/fotos_ep/aerea.jpeg", legend: "Foto aérea da EP." },
-    { pic: "/fotos_ep/frontal.jpg", legend: "Foto frontal da EP." },
-    { pic: "/fotos_ep/lateral.jpg", legend: "Vista lateral da EP." },
-    { pic: "/fotos_ep/piscina.jpg", legend: "Piscina Natural." },
-
-    { pic: "/fotos_ep/acesso.jpg", legend: "Trilha de acesso à EP." },
-    {
-      pic: "/fotos_ep/noite.jpg",
-      legend: "Vista noturna da EP, com Pedra Selada ao fundo.",
-    },
-  ];
-
-  return (
-    <div className="flex group h-100 w-72 justify-center items-center sm:px-8">
-      <Carousel
-        showArrows={true}
-        showStatus
-        autoPlay
-        swipeable
-        emulateTouch
-        infiniteLoop
-        className="mt-2 bg-gray-700 mb-8 sm:mb-4  h-72 w-full sm:h-96 my-auto"
-      >
-        {fotos.map((img) => (
-          <div className="h-72 w-full sm:h-96  relative">
-            <Image
-              alt={img.legend}
-              layout="fill"
-              objectFit="contain"
-              src={img.pic}
-            ></Image>
-            <div className="w-full flex absolute bottom-12 justify-center">
-              <p className="w-1/3 opacity-80 sm:opacity-5 text-white bg-gray-700 rounded-md p-2 group-hover:opacity-80 ">
-                {img.legend}
-              </p>
-            </div>
-          </div>
-        ))}
-      </Carousel>
-    </div>
-  );
-};
-
-export { EPCarousel, FPCarousel };
+export { FPCarousel };
