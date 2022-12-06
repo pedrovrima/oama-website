@@ -7,7 +7,7 @@ const FPCarousel = (props) => {
   const fotos = [
     {
       pic: "/carousel/1.jpg",
-      legend: "Portfolio OAMa",
+      legend: "Portfólio OAMa",
       link: "/publicacoes/files/Portfolio_OAMa.pdf",
       legendText:
         "Conheça e compartilhe nossos objetivos, projetos, programas e conquistas.",
@@ -29,7 +29,7 @@ const FPCarousel = (props) => {
     {
       pic: "/carousel/4.jpg",
 
-      legend: "Apoie",
+      legend: "Apoio Comunitário",
       link: "/apoie",
       legendText:
         "Essa é a força motora que dá vida às nossas ações. Junte-se ao nosso bando pela Conservação com Ciência.",
