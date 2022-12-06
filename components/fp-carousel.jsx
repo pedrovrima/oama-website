@@ -24,7 +24,7 @@ const FPCarousel = (props) => {
       legend: "Campanha Pró-Aves",
       link: "/proaves",
       legendText:
-        "Aprenda sobre seis impactos que a humanidade gera sobre as aves e que nós podemos fazer para mitigá-los.",
+        "Aprenda sobre seis impactos que a humanidade gera sobre as aves e o que nós podemos fazer para mitigá-los.",
     },
     {
       pic: "/carousel/4.jpg",
