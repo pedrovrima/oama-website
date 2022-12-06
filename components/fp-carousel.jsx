@@ -26,30 +26,31 @@ const EPCarousel = (props) => {
     <div className="flex group cursor-pointer justify-center items-center sm:px-8">
       <Carousel
         showArrows={true}
-        showStatus
+        showStatus={false}
         autoPlay
         swipeable
         emulateTouch
         infiniteLoop
-        showThumbs={false}
+        // showThumbs={false}
         stopOnHover
         transitionTime={600}
-        className="mt-2 bg-gray-300 mb-8 sm:mb-4 h-96 w-full sm:h-96 my-auto"
+        className="mt-2 bg-gray-300 mb-8 sm:mb-4 w-full  h-96"
       >
         {fotos.map((img) => (
-          //   <Link href={img.link}>
           <div className="h-96 w-full sm:h-96  relative">
-            <Image
-              alt={img.legend}
-              layout="fill"
-              objectFit="cover"
-              src={img.pic}
-            ></Image>
+            <Link href={img.link}>
+              <Image
+                alt={img.legend}
+                layout="fill"
+                objectFit="contain"
+                src={img.pic}
+              ></Image>
+            </Link>
+
             <div className="w-full bg-gradient-to-b from-cyan-500 to-blue-500 flex absolute bottom-12 justify-start">
               <p className=" text-white text-6xl">{img.legend}</p>
             </div>
           </div>
-          //   </Link>
         ))}
       </Carousel>
     </div>
