@@ -4,6 +4,8 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "@includes/footer";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Treinamento() {
   return (
@@ -40,7 +42,7 @@ export default function Treinamento() {
               <div class="w-full mb-">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
               </div>
-              <p className="p-12 text-lg text-gray-600">
+              <p className="sm:p-12 text-md sm:text-lg text-gray-600">
                 A capacitação e o treinamento de profissionais para o emprego de
                 técnicas de estudo e pesquisa em Ornitologia são essenciais para
                 a qualidade dos trabalhos desenvolvidos e dos dados coletados,
@@ -60,72 +62,97 @@ export default function Treinamento() {
           </div>
 
           <div className="">
+            <div className=" hidden sm:block relative w-full sm:h-medium">
+              <Image
+                objectFit="contain"
+                // width={100}
+                // height={100}
+                src="/treinamento-cursos/1.png"
+                layout="fill"
+              />
+            </div>
             <h2 className="w-full mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
-              Programa de Treinamento em Monitoramento da Avifauna
+              INSCRIÇÕES ABERTAS para a 2º edição do PROGRAMA DE TREINAMENTO EM
+              MONITORAMENTO DE AVIFAUNA do OAMa!
             </h2>
-            <div className="flex flex-col sm:flex-row">
-              <div class="w-full my-auto sm:w-1/3 sm:px-6">
-                <div>
-                  <Image
-                    alt="Serra da Mantiqueira"
-                    layout="responsive"
-                    src="/treinamento-cursos/treinamento.jpg"
-                    width={600}
-                    objectFit="cover"
-                    height={400}
-                  />
-                </div>
+            {/* <div className="flex flex-col sm:flex-row"> */}
+            <div className="w-full my-auto">
+              <p className="text-gray-600 mb-4">
+                Em 2022, demos início ao primeiro e único programa de
+                treinamento em monitoramento de avifauna do Brasil. Nosso
+                programa é voltado para capacitar e formar ornitólogos na coleta
+                de dados de campo com qualidade técnica e ética profissional. O
+                objetivo deste programa é criar oportunidades de treinamento
+                intensivo, de imersão e de longo-prazo para ornitólogos de
+                campo.
+              </p>
+              <p className="text-gray-600 mb-4">
+                O nosso treinamento foi estruturado com base no programa do
+                Klamath Bird Observatory, adaptado para a nossa realidade local
+                e segue as diretrizes do @icmbio.cemave e a legislação ambiental
+                brasileira. O currículo do programa inclui aulas teóricas e
+                muita atividade prática focadas nas técnicas de
+                captura-marcação-recaptura com redes de neblina e anilhamento de
+                aves silvestres e de census com pontos fixos. O treinamento
+                acontece presencialmente e requer dedicação exclusiva e
+                residência na Estação de Pesquisa do OAMa, localizada na Reserva
+                Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em
+                Bocaina de Minas/MG, Serra da Mantiqueira.
+              </p>
+              <p className="text-gray-600 mb-4 ">
+                O ano de 2022 foi nosso primeiro ano de treinamento e aprendemos
+                muito sobre toda a logística e rotina das atividades. Com base
+                nisso, ajustamos o programa para melhorar a experiência de cada
+                trainee em 2023.
+              </p>
+              <TrainingCarousel></TrainingCarousel>
+              <p className="text-gray-600 mb-4">
+                Este ano teremos diferentes modalidades de treinamento.
+                Modalidade 6 meses (1 vaga) e modalidade 3 meses (4 vagas).
+                Devido a inexistência de financiamento externo e para viabilizar
+                a continuidade do programa, este ano haverá um custo de
+                mensalidade para participação no programa de treinamento. A
+                mensalidade inclui a hospedagem na estação de pesquisa,
+                deslocamento para as atividades internas do programa, materiais
+                usados durante o treinamento e todas as aulas, materiais de
+                estudo e assistências necessárias para a formação do trainee.
+                Oferecemos até duas bolsas integrais e uma bolsa parcial para as
+                quais todos podem se candidatar.
+              </p>
+              <div className=" hidden sm:block relative w-full sm:h-medium">
+                <Image
+                  objectFit="contain"
+                  // width={100}
+                  // height={100}
+                  src="/treinamento-cursos/2.png"
+                  layout="fill"
+                />
               </div>
-              <div className="w-full my-auto sm:w-2/3">
-                <p className="text-gray-600 ">
-                  O programa de treinamento em Monitoramento de Avifauna tem
-                  como objetivo promover capacitação técnica de excelência na
-                  área de ornitologia de campo e viabilizar a expansão da coleta
-                  de dados no OAMa com a participação de voluntários em
-                  treinamento. O currículo do programa inclui aulas teóricas e
-                  muita atividade prática focadas nas técnicas de
-                  captura-marcação-recaptura com redes de neblina e anilhamento
-                  de aves e de census com pontos fixos. O treinamento acontece
-                  presencialmente e requer{" "}
-                  <span className="font-bold">
-                    dedicação exclusiva e residência
-                  </span>{" "}
-                  na Estação de Pesquisa do OAMa, localizada na Reserva
-                  Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em
-                  Bocaina de Minas/MG, Serra da Mantiqueira.{" "}
-                </p>
-                <p className="text-gray-600 ">
-                  A{" "}
-                  <span className="font-bold">
-                    data de início e duração total
-                  </span>{" "}
-                  (respeitando o mínimo de 3 meses) do treinamento para cada um
-                  vai depender da disponibilidade de vaga e da possibilidade do
-                  aplicante, e será definida conjuntamente com a coordenação do
-                  OAMa após a seleção. As inscrições são de fluxo contínuo, de
-                  forma que interessados em participar podem aplicar a qualquer
-                  momento.
-                </p>
-                <p className="text-gray-600 ">
-                  Para baixar a chamada para o programa com mais detalhes,{" "}
-                  <a
-                    href="/treinamento-cursos/files/OAMa - Edital Programa Treinamento Monitoramento Avifauna 2022.pdf"
-                    target="_blank"
-                    className="underline text-yellow-600 cursor-pointer"
-                  >
-                    clique aqui
-                  </a>
-                  . Para se inscrever, preencha o{" "}
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdE4vT0vfkcmenB-sN5NQKZ1cvNZYOkRfOGLNhqXfvh8CLVBA/viewform"
-                    target="_blank"
-                    className="underline text-yellow-600 cursor-pointer"
-                  >
-                    formulário de inscrição
-                  </a>
-                  .
-                </p>
-              </div>
+
+              <p className="text-gray-600 mb-4">
+                O treinamento é intenso, com muitas horas de campo e de estudo
+                semanais. As inscrições permanecerão abertas até 20 de janeiro
+                de 2023. Para baixar a chamada para o programa com mais
+                detalhes,{" "}
+                <a
+                  className="underline text-yellow-600"
+                  href="/treinamento-cursos/files/Programa-Treinamento-OAMa2023.pdf"
+                  target={"_blank"}
+                >
+                  clique aqui
+                </a>
+                . Para se inscrever, preencha o{" "}
+                <a
+                  className="underline text-yellow-600"
+                  target={"_blank"}
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdE4vT0vfkcmenB-sN5NQKZ1cvNZYOkRfOGLNhqXfvh8CLVBA/viewform"
+                >
+                  formulário de inscrição
+                </a>
+                .
+              </p>
+              <HallOfFame />
+              {/* </div> */}
             </div>
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos
@@ -298,7 +325,7 @@ export default function Treinamento() {
                   <Image
                     alt="Serra da Mantiqueira"
                     layout="responsive"
-                    src="/treinamento-cursos/anilhamento_pratico.jpg"
+                    src="/treinamento-cursos/anilhamento_ii.png"
                     width={400}
                     objectFit="cover"
                     height={400}
@@ -307,10 +334,10 @@ export default function Treinamento() {
               </div>
               <div className="w-full sm:w-2/3  my-auto">
                 <p className="text-gray-600 text-lg font-bold">
-                  I Curso Prático Básico de Anilhamento
+                  II Curso Prático Básico de Anilhamento
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                  18 a 21 de agosto de 2022
+                  16 a 19 de fevereiro de 2023
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
@@ -360,8 +387,8 @@ export default function Treinamento() {
                   qualquer momento para garantir o bem estar dos animais.
                   Seguimos o código de ética e recomendações de práticas pelo
                   NABC e CEMAVE.
-                  <br />O curso será ministrado por Luiza Figueira e Affonso
-                  Souza.
+                  <br />O curso será ministrado por Luiza Figueira, Pedro
+                  Martins e Affonso Souza.
                 </p>
               </div>
             </div>
@@ -372,7 +399,7 @@ export default function Treinamento() {
                   <Image
                     alt="Serra da Mantiqueira"
                     layout="responsive"
-                    src="/treinamento-cursos/muda_pratico.jpg"
+                    src="/treinamento-cursos/muda_iii.png"
                     width={400}
                     objectFit="cover"
                     height={400}
@@ -381,11 +408,11 @@ export default function Treinamento() {
               </div>
               <div className="w-full sm:w-2/3  my-auto">
                 <p className="text-gray-600 text-lg font-bold">
-                  II Curso Prático de Análise de Mudas e Classificação de idade
+                  III Curso Prático de Análise de Mudas e Classificação de idade
                   em Aves
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                  21 a 24 de agosto de 2022
+                  19 a 22 de fevereiro de 2023
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
@@ -429,8 +456,8 @@ export default function Treinamento() {
                   qualquer momento para garantir o bem estar da ave. Seguimos o
                   código de ética e recomendações de práticas pelo NABC e
                   CEMAVE.
-                  <br />O curso será ministrado por Luiza Figueira e Pedro
-                  Martins.
+                  <br />O curso será ministrado por Luiza Figueira, Pedro
+                  Martins e Affonso Souza.
                 </p>
               </div>
             </div>
@@ -452,28 +479,31 @@ export default function Treinamento() {
             </h2>
             <ul className="text-lg p-12">
               <li className="list-disc">
-                Curso Análise de Muda e Classificação de Idade em Aves 2019 -
-                Presencial
+                II Curso Prático de Análise de Mudas e Classificação de idade em
+                Aves - 2022 - Presencial
               </li>
               <li className="list-disc">
-                Curso Teórico Básico de Anilhamento 2021 com Aves de Noronha -
-                Online 
-              </li>
-              <li className="list-disc">
-                Curso Teórico de Análise de Mudas e Classificação de idade em
-                Aves 2022 - Online 
-              </li>
-              <li className="list-disc">
-                Curso de Fotografia de Aves com Birds Atlantic 2022 - Presencial
-              </li>
-              <li className="list-disc">
-                {" "}
-                II Curso Teórico de Análise de Mudas e Classificação de idade em
-                Aves - 2022 - Online
+                I Curso Prático Básico de Anilhamento - 2022 - Presencial
               </li>
               <li className="list-disc">
                 II Curso Teórico Básico de Anilhamento com Aves de Noronha -
                 2022 - Online
+              </li>
+              <li className="list-disc">
+                II Curso Teórico de Análise de Mudas e Classificação de idade em
+                Aves - 2022 - Online
+              </li>
+              <li className="list-disc">
+                Curso de Fotografia de Aves com Birds Atlantic - 2022 -
+                Presencial
+              </li>
+              <li className="list-disc">
+                I Curso Teórico Básico de Anilhamento com Aves de Noronha - 2021
+                - Online{" "}
+              </li>
+              <li className="list-disc">
+                I Curso Análise de Muda e Classificação de Idade em Aves - 2019
+                - Presencial
               </li>
             </ul>
           </div>
@@ -483,3 +513,146 @@ export default function Treinamento() {
     </>
   );
 }
+
+const TrainingCarousel = () => (
+  <div className="flex group h-100 cursor-pointer justify-center items-center sm:px-8">
+    <Carousel
+      showArrows={true}
+      showStatus={false}
+      autoPlay
+      swipeable
+      emulateTouch
+      infiniteLoop
+      // showThumbs={false}
+      stopOnHover
+      transitionTime={600}
+      className="mt-2 bg-gray-300 mb-8 sm:mb-4 w-full  h-96"
+    >
+      {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => {
+        return (
+          <div className="h-96 w-full sm:h-96  relative">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src={`/treinamento-cursos/carousel/${num}.jpg`}
+            ></Image>
+          </div>
+        );
+      })}
+    </Carousel>
+  </div>
+);
+
+const HallOfFame = () => {
+  return (
+    <>
+      <h2 className="text-4xl font-bold mt-16 mb-8 text-center">
+        Trainees 2022
+      </h2>
+
+      {trainees.map((trainee, i) => {
+        return (
+          <div
+            class={`flex md:${
+              i % 2 ? "flex-row-reverse" : "flex-row"
+            } mb-8  justify-around items-center   flex-wrap`}
+          >
+            <div class="w-3/5 shadow-lg rounded-full  sm:w-1/6 m-2 ">
+              <div>
+                <Image
+                  className="rounded-full border-gray-200 border-8"
+                  src={`/treinamento-cursos/trainees/${trainee.img}.jpg`}
+                  layout="responsive"
+                  width={20}
+                  objectFit="cover"
+                  height={20}
+                ></Image>
+              </div>
+            </div>
+
+            <div class="w-full sm:w-4/6 p-2">
+              <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-1">
+                {trainee.name}
+              </h3>
+              <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+                {trainee.basic_info}
+                <br />
+                {trainee.time}
+                <br />
+                {trainee.birds}
+              </h4>
+
+              <p class="text-gray-600 ">{trainee.quote}</p>
+              <a className="underline" target="_blank" href={trainee.reel}>
+                Como foi
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const trainees = [
+  {
+    name: "Otávio Rocha",
+    basic_info: "Biólogo, 25 anos, Fortaleza (CE)",
+    time: "Estadia de fevereiro a maio",
+    birds: "90 aves processadas",
+    quote:
+      "“É inevitável não se apaixonar pela Mantiqueira, pelas aves e pelo trabalho de campo. Essa imersão transformou minha visão sobre esses animais e as possibilidades de pesquisa que podemos desenvolver.”",
+    reel: "https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link",
+    img: "trainee otávio",
+  },
+  {
+    name: "André Menini",
+    basic_info: "Biólogo, 25 anos, Caieiras (SP)",
+    time: "Estadia de fevereiro a maio",
+    birds: "104 aves processadas",
+    quote:
+      "“O programa fez total diferença na minha formação, afinal de contas, não são muitas as oportunidades para aprender sobre a técnica de anilhamento da forma correta no Brasil e tenho a certeza que tive os melhores professores. Ser trainee no OAMa abriu minha cabeça para diversas possibilidades na ornitologia.”",
+    reel: "https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link",
+    img: "trainee andré",
+  },
+  {
+    name: "Danielle Santos",
+    basic_info: "Bióloga, 23 anos, Palmas (TO)",
+    time: "Estadia de março a julho",
+    birds: "165 aves processadas",
+    quote:
+      "“O treinamento sem dúvidas foi uma oportunidade de iniciar na ornitologia com um preparo de altíssima qualidade. Cheguei no OAMa sem saber segurar uma ave com as mãos, e hoje, com as ótimas instruções que tive, sou capaz de capturar as aves e coletar os dados com segurança, agilidade e eficiência.”",
+    reel: "https://www.instagram.com/reel/CgnKTKTlKnP/?utm_source=ig_web_copy_link",
+    img: "trainee danielle",
+  },
+  {
+    name: "João Victor Ferrari",
+    basic_info: "Biólogo, 24 anos, São Borja (RS)",
+    time: "Estadia de maio a julho",
+    birds: "127 aves processadas",
+    quote:
+      "“Essa experiência agregou significativamente na minha formação, possibilitando adquirir novas habilidades e amadurecer as minhas decisões. Foi uma satisfação participar do programa de treinamento em monitoramento de avifauna do OAMa.”",
+    reel: "https://www.instagram.com/reel/CkMTadOP-y0/?utm_source=ig_web_copy_link",
+    img: "trainee joão",
+  },
+  {
+    name: "Gabriela Inhesta",
+    basic_info: "Bióloga, 24 anos, Curitiba (PR)",
+    time: "Estadia de julho a setembro",
+    birds: "41 aves processadas",
+    quote:
+      "“Estar imersa na natureza e no trabalho de campo com as aves é a realização de um grande sonho e essa foi com certeza a experiência mais bonita e enriquecedora que eu já vivi até então. Eu finalizo muito realizada e me sentindo de fato capacitada para exercer um trabalho de qualidade. “",
+    reel: "https://www.instagram.com/reel/CkMVkpSvzbi/?utm_source=ig_web_copy_link",
+    img: "trainee gabriela",
+  },
+  {
+    name: "Luiz Felipe Gonzaga",
+    basic_info: "Biólogo, 22 anos, Foz do Iguaçu (PR)",
+    time: "Estadia de agosto a novembro",
+    birds: "136 aves processadas",
+    quote:
+      "“Aprendi muito sobre a fauna local e novas metodologias, pretendo usar todo o conhecimento adquirido para novos projetos e consultoria. A estação de pesquisa é maravilhosa e me sinto muito feliz fazendo parte desta excelente equipe.”",
+    reel: "https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link",
+    img: "trainee luiz",
+  },
+];
