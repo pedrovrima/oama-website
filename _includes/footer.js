@@ -4,6 +4,7 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineWhatsApp,
+  AiOutlineYoutube,
 } from "react-icons/ai";
 
 export default function Footer() {
@@ -33,6 +34,14 @@ export default function Footer() {
                   color="white"
                   size={30}
                 ></AiOutlineInstagram>{" "}
+              </a>
+            </div>
+            <div className="m-2">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCzLcpYmPb1DR524wXb0CvHA"
+              >
+                <AiOutlineYoutube color="white" size={30}></AiOutlineYoutube>{" "}
               </a>
             </div>
             <div className="cursor-pointer m-2">

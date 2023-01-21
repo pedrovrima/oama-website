@@ -71,6 +71,15 @@ export default function Treinamento() {
                 layout="fill"
               />
             </div>
+            <div className=" sm:hidden relative w-full h-medium">
+              <Image
+                objectFit="contain"
+                // width={100}
+                // height={100}
+                src="/treinamento-cursos/1-mobile.png"
+                layout="fill"
+              />
+            </div>
             <h2 className="w-full mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               INSCRIÇÕES ABERTAS para a 2º edição do PROGRAMA DE TREINAMENTO EM
               MONITORAMENTO DE AVIFAUNA do OAMa!
@@ -125,6 +134,15 @@ export default function Treinamento() {
                   // width={100}
                   // height={100}
                   src="/treinamento-cursos/2.png"
+                  layout="fill"
+                />
+              </div>
+              <div className=" sm:hidden relative w-full h-medium">
+                <Image
+                  objectFit="contain"
+                  // width={100}
+                  // height={100}
+                  src="/treinamento-cursos/2-mobile.png"
                   layout="fill"
                 />
               </div>
