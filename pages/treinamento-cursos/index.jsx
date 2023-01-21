@@ -337,13 +337,13 @@ export default function Treinamento() {
                   II Curso Prático Básico de Anilhamento
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                  16 a 19 de fevereiro de 2023
+                  Data a definir{" "}
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
-                  <span className="font-bold">
+                  {/* <span className="font-bold">
                     Inscrições e mais informações
                     <span className="underline  text-yellow-600 cursor-pointer">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
@@ -352,7 +352,7 @@ export default function Treinamento() {
                       </a>
                     </span>{" "}
                     <br />
-                  </span>
+                  </span> */}
                   O curso tem como objetivo apresentar, na prática e experiência
                   em campo, técnicas seguras e apropriadas para 1. a manipulação
                   adequada das aves durante a extração das redes de neblina e
@@ -412,13 +412,13 @@ export default function Treinamento() {
                   em Aves
                 </p>
                 <p className="text-gray-500 text-md font-bold">
-                  19 a 22 de fevereiro de 2023
+                  {/* 19 a 22 de fevereiro de 2023 */} Data a definir.
                 </p>
                 <p className="text-gray-500 text-md font-bold">
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
-                  <span className="font-bold">
+                  {/* <span className="font-bold">
                     Inscrições e mais informações
                     <span className="underline  text-yellow-600 cursor-pointer">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
@@ -427,7 +427,7 @@ export default function Treinamento() {
                       </a>
                     </span>{" "}
                     <br />
-                  </span>
+                  </span> */}
                   Neste curso, vamos ter a oportunidade de colocar em prática o
                   conteúdo que foi apresentado durante{" "}
                   <span className="font-bold">
