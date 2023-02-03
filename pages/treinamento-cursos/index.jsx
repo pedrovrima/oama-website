@@ -87,13 +87,12 @@ export default function Treinamento() {
             {/* <div className="flex flex-col sm:flex-row"> */}
             <div className="w-full my-auto">
               <p className="text-gray-600 mb-4">
-                Em 2022, demos início ao primeiro e único programa de
-                treinamento em monitoramento de avifauna do Brasil. Nosso
-                programa é voltado para capacitar e formar ornitólogos na coleta
-                de dados de campo com qualidade técnica e ética profissional. O
-                objetivo deste programa é criar oportunidades de treinamento
-                intensivo, de imersão e de longo-prazo para ornitólogos de
-                campo.
+                Em 2022, demos início ao nosso programa de treinamento em
+                monitoramento de avifauna. Nosso programa é voltado para
+                capacitar e formar ornitólogos na coleta de dados de campo com
+                qualidade técnica e ética profissional. O objetivo deste
+                programa é criar oportunidades de treinamento intensivo, de
+                imersão e de longo-prazo para ornitólogos de campo.
               </p>
               <p className="text-gray-600 mb-4">
                 O nosso treinamento foi estruturado com base no programa do
@@ -147,7 +146,7 @@ export default function Treinamento() {
                 />
               </div>
 
-              <p className="text-gray-600 mb-4">
+              {/* <p className="text-gray-600 mb-4">
                 O treinamento é intenso, com muitas horas de campo e de estudo
                 semanais. As inscrições permanecerão abertas até 20 de janeiro
                 de 2023. Para baixar a chamada para o programa com mais
@@ -167,8 +166,8 @@ export default function Treinamento() {
                 >
                   formulário de inscrição
                 </a>
-                .
-              </p>
+                . */}
+              {/* </p> */}
               <HallOfFame />
               {/* </div> */}
             </div>
