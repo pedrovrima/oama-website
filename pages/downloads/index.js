@@ -101,96 +101,99 @@ const Publication = (props) => {
 };
 
 const div_cient = [
-
   {
     title: "Campanha pró-aves: Engaiolamento",
     text: "Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.",
     img: "engaiolamento.jpg",
-    link: "engaiolamento.pdf"
+    link: "engaiolamento.pdf",
   },
-
 
   {
     title: "Campanha pró-aves: Animais Domésticos",
     text: "Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.",
     img: "predacao.jpg",
-    link: "predacao.pdf"
+    link: "predacao.pdf",
   },
   {
     title: "Campanha pró-aves: Poluição Luminosa",
     text: "Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.",
     img: "luminosa.jpg",
-    link: "luminosa.pdf"
+    link: "luminosa.pdf",
   },
 
   {
     title: "Campanha pró-aves: Poluição Sonora",
     text: "Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.",
     img: "sonora.jpg",
-    link: "sonora.pdf"
+    link: "sonora.pdf",
   },
   {
     title: "Campanha pró-aves: Comedouros",
     text: "Panfleto informativo sobre como montar comedouros para as aves.",
     img: "comedouro.jpg",
-    link: "comedouro.pdf"
+    link: "comedouro.pdf",
   },
- 
+
   {
     title: "Campanha pró-aves: Colisão com Vidros",
     text: "Panfleto informativo sobre como mitigar as colisões com vidros.",
     img: "colisao.jpg",
-    link: "colisao.pdf"
+    link: "colisao.pdf",
   },
- 
+
   {
     title: "Livreto Bird Friendly Coalition",
     text: "Livreto informativo sobre a iniciativa Bird Friendly Coalition.",
     img: "birdF.jpg",
-    link: "BF Coalition Brochure Traduzido.pdf"
+    link: "BF Coalition Brochure Traduzido.pdf",
   },
 
   {
     title: "Ornitologia pra todo dia - conhecendo as aves",
     text: "Livreto para pequenos e grandes curiosos, com muita informação, curiosidades e atividades sobre aves, ciência e conservação. Para divertir, informar e entreter.",
     img: "livreto_Curriculo_OAMA.jpg",
-    link: "ornito_todo_dia_OAMa.pdf"
+    link: "ornito_todo_dia_OAMa.pdf",
   },
   {
     title: "Livreto de colorir - Aves ameaçadas da Mata Atlântica",
     text: "A Mata Atlântica tem uma rica diversidade de aves, e muitas espécies ocorrem exclusivamente neste bioma, e em nenhum outro lugar no mundo! Mas devido principalmente perda de habitat, caça e tráfico ilegal de animais silvestres, muitas destas espécies estão hoje ameaçadas de extinção. Para buscar estratégias e ações para proteger essas espécies existe o Plano de Ação Nacional (PAN) de aves da Mata Atlântica. Esse livrinho é o resultado de uma ação do PAN para dialogarmos mais com a sociedade sobre a existência de espécies ameaçadas. Se quisermos proteger as espécies, é importante que a sociedade conheça tanto as espécies como suas ameaças.",
     img: "mockup_livro_colorir_OAMa3.jpg",
-    link: "Oama_Livreto_Colorir_AvesAmeaçadas.pdf"
+    link: "Oama_Livreto_Colorir_AvesAmeaçadas.pdf",
   },
-
 
   {
     title: "Folder sobre Uso e Conservação da Palmeira Juçara",
     text: "Material de comunicação com a sociedade para dialogar sobre o impacto que gatos domésticos soltos têm nas populações de aves silvestres. Além de introduzir um pouco sobre esse grande problema, recomendamos algumas pequenas ações que cada um pode fazer para realizar uma guarda responsável do pet e mitigar os impactos negativos às aves. Bom para os humanos, bom para os gatos e bom para as aves!",
     img: "Imagem capa - folder juçara.png",
-    link: "informativo de distribuição - Juçara.pdf"
+    link: "informativo de distribuição - Juçara.pdf",
   },
   {
     title: "Curta-documentário 'Juçara - Consumo e Conservação'",
     text: "Essa produção abre o diálogo com a sociedade sobre a importância da palmeira juçara para a conservação da Mata Atlântica. Através de curtas entrevistas com pesquisadores, agricultores extrativistas e observadores de aves, passamos por diferentes pontos de vista e relações com a juçara. Além de apresentar a juçara, expomos sobre a relação de consumo e conservação. Documentário elaborado pelo OAMa em colaboração com o PAN Aves da Mata Atlântica, produzido por Contemplar Films e com apoio do CRBio-04.",
     img: "Juçara consumo e conservação.png",
-    direct_link: "https://www.youtube.com/watch?v=FtL8dOPeu6U"
-  }
+    direct_link: "https://www.youtube.com/watch?v=FtL8dOPeu6U",
+  },
 ];
 
 const institucional = [
   {
+    title: "Relatório Anual 2022",
+    text: "Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2022.",
+    img: "relatorio2022.png",
+    link: "Relatório_Anual_2022.pdf",
+  },
+  {
     title: "Folder",
     text: "Esse é nosso “cartão de visita”, um material informativo para apresentar o Observatório de Aves da Mantiqueira para quem ainda não nos conhece.",
     img: "_MOCKUP_Folder_Oama_2021.jpg",
-    link: "Folder_Oama.pdf"
+    link: "Folder_Oama.pdf",
   },
   {
     title: "Relatório Anual 2021",
     text: "Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2021.",
     img: "relatorio_anual_oama_2021.png",
-    link: "Relatório Anual 2021.pdf"
-  }
+    link: "Relatório Anual 2021.pdf",
+  },
   // {
   //   title:"Portfólio OAMa",
   //   text:"Material institucional, uma apresentação expandida sobre a organização, seus propósitos e razões de ser. O portfólio do OAMa é um material de comunicação para qualquer um que queira conhecer mais sobre nossas iniciativas, incluindo potenciais apoiadores da causa.",
@@ -225,7 +228,7 @@ const academic = [
       "Palestra 'Observatórios de aves: conectando ciência, conservação e pessoas'",
     text: "Apresentação sobre o papel dos observatórios de aves na conexão entre ciência, educação e conservação. Elaborada e apresentada por Luiza Figueira para Avistar 2018.",
     img: "Mockup apresentação OAMa - Avistar 2018 lfr.png",
-    link: "aud02_18-sex_11h00_luiza_figueira.pdf"
+    link: "aud02_18-sex_11h00_luiza_figueira.pdf",
   },
 
   {
@@ -233,13 +236,13 @@ const academic = [
       "Palestra 'Mudar para quê? Uma introdução ao mundo da muda das penas'",
     text: "Apresentação sobre o papel dos observatórios de aves na conexão entre ciência, educação e conservação. Elaborada e apresentada por Luiza Figueira para Avistar 2018.",
     img: "Mockup apresentação OAMa - Avistar 2019 pvm.png",
-    link: "18_A2_10h00_221_Pedro_Martins.pdf"
+    link: "18_A2_10h00_221_Pedro_Martins.pdf",
   },
   {
     title: "Palestra 'Observação de aves: ciência, educação e conservação'",
     text: "Apresentação sobre como a atividade de observar aves pode promover a conservação das espécies através da ciência cidadã e da educação e sensibilização ambiental. Elaborada e apresentada por Luiza Figueira para Avistar 2019.",
     img: "Mockup apresentação OAMa - Avistar 2019 lfr.png",
-    link: "LFR_avistar2019.pdf"
+    link: "LFR_avistar2019.pdf",
   },
   // {
   //   title:
@@ -260,35 +263,36 @@ const academic = [
     title: "Palestra 'Ciclo de muda e determinação de idade em aves'",
     text: "Trabalho sobre a importância do conhecimento sobre muda de aves dentro da ornitologia apresentado por Luiza Figueira no XXVI Congresso Brasileiro de Ornitologia, 2019.",
     img: "Mockup apresentação OAMa - CBO 2019 lfr.png",
-    link: "CBO2019LFRfinal.pdf"
+    link: "CBO2019LFRfinal.pdf",
   },
 
   {
-    title: "Palestra 'Movimentos migratórios de aves no Brasil identificados através de ciência cidadã'",
+    title:
+      "Palestra 'Movimentos migratórios de aves no Brasil identificados através de ciência cidadã'",
     text: "Estudo em desenvolvimento usando dados de e-bird para a detecção de sobre movimentos migratórios de aves do Brasil. Apresentação elaborada e apresentada por Pedro Martins no XXVI Congresso Brasileiro de Ornitologia, 2019.",
     img: "Mockup apresentação OAMa - CBO 2019 pvm.png",
-    link: "CBO2019_PedroMartins_semAnim.pdf"
+    link: "CBO2019_PedroMartins_semAnim.pdf",
   },
-
 
   {
     title: "Palestra 'Determinação de idade em aves brasileiras'",
     text: "Estudo em desenvolvimento usando dados de e-bird para a detecção de sobre movimentos migratórios de aves do Brasil. Apresentação elaborada e apresentada por Pedro Martins no XXVI Congresso Brasileiro de Ornitologia, 2019.",
     img: "Mockup apresentação OAMa - CBO 2021 pvm.png",
-    link: "Determinação de idade em aves brasileiras.pdf"
+    link: "Determinação de idade em aves brasileiras.pdf",
   },
 
   {
-    title: "Pôster 'Padrões e tendências sobre o conhecimento atual da avifauna na Serra da Mantiqueira, sudeste do Brasil'",
+    title:
+      "Pôster 'Padrões e tendências sobre o conhecimento atual da avifauna na Serra da Mantiqueira, sudeste do Brasil'",
     text: "Trabalho apresentado por Affonso Souza no XXVII Congresso Brasileiro de Ornitologia, 2021.",
     img: "Poster CBO2021 ahs.png",
-    direct_link: "https://youtu.be/_Qmz-0XjUQo"
+    direct_link: "https://youtu.be/_Qmz-0XjUQo",
   },
   {
     title: "Palestra 'O que são observatórios de aves'",
     text: "Trabalho apresentado por Luiza Figueira como abertura do simpósio sobre Observatórios de Aves no XXVII Congresso Brasileiro de Ornitologia, 2021. O simpósio foi coordenado por Luiza e tratou sobre as diferentes frentes de ação dos observatórios de aves, com apresentações sobre o monitoramento de avifauna de longo-prazo no Brasil, ações de educação e sensibilização ambiental, a pesquisa realizada por observatórios de aves, modelos de observatórios de aves, e ações de ponte com a sociedade.",
     img: "Mockup apresentação OAMa - CBO 2021 lfr.png",
-    link: "O que são Observatórios de Aves - CBO2021(1).pdf"
+    link: "O que são Observatórios de Aves - CBO2021(1).pdf",
   },
   // {
   //   title: "Palestra 'Histórico do monitoramento da avifauna na Serra da Mantiqueira'",
@@ -296,5 +300,4 @@ const academic = [
   //   img: "Mockup apresentação OAMa - para CEMAVE.png",
   //   link: ""
   // },
-
 ];
