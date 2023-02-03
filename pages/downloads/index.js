@@ -183,6 +183,12 @@ const institucional = [
     link: "Relatório_Anual_2022.pdf",
   },
   {
+    title: "Portfólio OAMa",
+    text: "Material institucional, uma apresentação expandida sobre a organização, seus propósitos e razões de ser. O portfólio do OAMa é um material de comunicação para qualquer um que queira conhecer mais sobre nossas iniciativas, incluindo potenciais apoiadores da causa.",
+    img: "portfolio.png",
+    link: "Portfolio_OAMa.pdf",
+  },
+  {
     title: "Folder",
     text: "Esse é nosso “cartão de visita”, um material informativo para apresentar o Observatório de Aves da Mantiqueira para quem ainda não nos conhece.",
     img: "_MOCKUP_Folder_Oama_2021.jpg",
@@ -194,12 +200,7 @@ const institucional = [
     img: "relatorio_anual_oama_2021.png",
     link: "Relatório Anual 2021.pdf",
   },
-  // {
-  //   title:"Portfólio OAMa",
-  //   text:"Material institucional, uma apresentação expandida sobre a organização, seus propósitos e razões de ser. O portfólio do OAMa é um material de comunicação para qualquer um que queira conhecer mais sobre nossas iniciativas, incluindo potenciais apoiadores da causa.",
-  //   img:"",
-  //   link:""
-  // },
+
   // {
   //   title:"Relatório de atividades OAMa 2021",
   //   text:"Material de comunicação para reportar as principais atividades realizadas pelo Observatório de Aves da Mantiqueira até 2021. Criamos esse material para que nossos apoiadores e todos interessados nas ações do OAMa possam conhecer um pouco de nossa caminhada.",
