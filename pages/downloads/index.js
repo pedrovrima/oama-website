@@ -177,6 +177,12 @@ const div_cient = [
 
 const institucional = [
   {
+    title: "2022 Annual Report - English Version",
+    text: "Official report of activities, finances, and everything related to the operation of OAMa in 2022.",
+    img: "relatorio2022.png",
+    link: "2022Report.pdf",
+  },
+  {
     title: "Relatório Anual 2022",
     text: "Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2022.",
     img: "relatorio2022.png",
