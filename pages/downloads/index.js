@@ -147,7 +147,12 @@ const div_cient = [
     img: "birdF.jpg",
     link: "BF Coalition Brochure Traduzido.pdf",
   },
-
+  {
+    title: "Adesivo anti-colisão",
+    text: "Arquivo para impressão do adesivo anti-colisão.",
+    img: "adesivo.jpg",
+    link: "adesivos.pdf",
+  },
   {
     title: "Ornitologia pra todo dia - conhecendo as aves",
     text: "Livreto para pequenos e grandes curiosos, com muita informação, curiosidades e atividades sobre aves, ciência e conservação. Para divertir, informar e entreter.",
