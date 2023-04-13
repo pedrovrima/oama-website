@@ -356,7 +356,7 @@ export default function Jacucara() {
             O que você pode fazer pela conservação destas espécies?
           </H2>
           <Fig number={10} />
-          <H2>Materiais Relacionados</H2>
+          <H2 id="files">Materiais Relacionados</H2>
           <Pags></Pags>
           <Fig number={11} />{" "}
         </div>
@@ -372,7 +372,8 @@ const P = ({ children, ...props }) => (
 const H2 = ({ children, ...props }) => (
   <h2
     style={{ color: "#8f1858" }}
-    className={`font-bold text-3xl px-8 md:px-0 ${props.className}`}
+    className={`font-bold text-3xl px-8 md:px-0 mb-4 ${props.className}`}
+    id={props.id}
   >
     {children}
   </h2>
@@ -396,12 +397,12 @@ const ArrowH3 = ({ children, className }) => (
   </h3>
 );
 
-const A = ({ children, href }) => (
+const A = ({ children, href, noTarget }) => (
   <a
     style={{ color: "#8f1858" }}
     className="underline"
     href={href}
-    target="_blank"
+    target={!noTarget && "_blank"}
   >
     {children}
   </a>
@@ -428,8 +429,11 @@ const Acc3 = () => {
           preservação da espécie e entenda o impacto de seu consumo – positiva
           ou negativamente. Para fazer essa ponte de comunicação e informação
           com a sociedade, foram publicados diversas cartilhas, vídeos e até
-          livros de receitas online. Você encontra uma seleção desse material
-          aqui.
+          livros de receitas online. Você encontra uma seleção desse material{" "}
+          <A noTarget href="#files">
+            aqui
+          </A>
+          .
         </P>
         <P>
           Ações diretas para tentar aumentar o número de indivíduos de juçara
@@ -764,6 +768,11 @@ const pags = [
   {
     name: "palmito_legal",
     website: "https://youtu.be/BORRYwKCkdA",
+  },
+
+  {
+    name: "livro_jucara",
+    website: "https://oama.eco.br/publicacoes/files/livro_jucara.pdf",
   },
 ];
 
