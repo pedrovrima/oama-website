@@ -192,9 +192,9 @@ export default function Nav() {
                     <a target="_blank" href="/relatorio.html">
                       <p className="cursor-pointer pb-1">Relatório de Dados </p>
                     </a>
-                    <a target="_blank" href="https://oama.kyte.site">
+                    {/* <a target="_blank" href="https://oama.kyte.site">
                       <p className="cursor-pointer pb-1">useOAMa </p>
-                    </a>
+                    </a> */}
                   </div>
                 </li>
 
@@ -285,11 +285,11 @@ export default function Nav() {
                     Relatório de Dados
                   </p>
                 </a>
-                <a target="_blank" href="https://oama.kyte.site">
+                {/* <a target="_blank" href="https://oama.kyte.site">
                   <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
                     useOAMa{" "}
                   </p>
-                </a>
+                </a> */}
               </div>
             </div>
 
