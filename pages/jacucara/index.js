@@ -16,7 +16,46 @@ export default function Jacucara() {
     <>
       <div className="pb-32">
         <Head>
-          <title>CAMPANHA JACUÇARA</title>
+          <Head>
+            <title>
+              Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara
+              na Mata Atlântica
+            </title>
+            <meta
+              name="description"
+              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+            />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <link rel="canonical" href="https://oama.eco.br/jacucara" />
+
+            {/* Open Graph (para compartilhamento no Facebook, etc.) */}
+            <meta
+              property="og:title"
+              content="Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica"
+            />
+            <meta
+              property="og:description"
+              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+            />
+            <meta property="og:image" content="/jacucara/figs/1.jpg" />
+            <meta property="og:url" content="https://oama.eco.br/jacucara" />
+            <meta property="og:type" content="website" />
+
+            {/* Twitter Card */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:title"
+              content="Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica"
+            />
+            <meta
+              name="twitter:description"
+              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+            />
+            <meta name="twitter:image" content="/jacucara/figs/1.jpg" />
+          </Head>
         </Head>
 
         <Nav />
