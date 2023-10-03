@@ -49,37 +49,43 @@ export default function Jacucara() {
         </div>
         <div class="container max-w-4xl mx-auto mt-16 ">
           <P>
-            O nome da campanha –{" "}
-            <span className="font-bold" style={{ color: "#8f1858" }}>
-              Jacuçara!
-            </span>{" "}
-            – vem da junção de jacutinga, uma ave exclusiva da Mata Atlântica, e
-            juçara, uma palmeira do mesmo bioma. A jacutinga se alimenta dos
-            frutos da palmeira-juçara e, quando voa, leva no seu sistema
-            digestivo muitas sementes, que acabam se espalhando por aí.
+            A <B>Campanha Jacuçara</B> nasceu para divulgar a importância de
+            duas espécies ameaçadas de extinção: a jacutinga e a jacuçara.
           </P>
           <P>
-            Como essa palmeira oferece alimento para muitas espécies de animais,
-            ela é essencial para a fauna da Mata Atlântica. Infelizmente, essa
-            planta tão importante está ameaçada de extinção devido ao
-            desmatamento e à extração ilegal do seu palmito, uma prática que
-            mata a árvore.
+            Agora fica fácil entender o porquê do nome Jacuçara, união do nome
+            <B>jacutinga</B>, ave exclusiva da Mata Atlântica, e <B>juçara</B>,
+            uma palmeira do mesmo bioma.{" "}
           </P>
           <P>
-            Esses dois fatores também ameaçam as jacutingas, que ficam sem
-            floresta e sem o seu alimento favorito! Por isso, a campanha
-            Jacuçara quer divulgar a importância dessas duas espécies ameaçadas
-            de extinção, que você pode ajudar a proteger.
+            A jacutinga <B>se alimenta</B> dos frutos da palmeira-juçara e,
+            quando voa, leva no seu sistema digestivo muitas sementes, que
+            acabam se espalhando por aí.
           </P>
           <P>
-            A campanha é uma iniciativa do
+            Já a juçara, oferece <B>alimento</B> para muitas espécies de animais
+            e é essencial para a fauna da Mata Atlântica.
+          </P>
+          <P>
+            Infelizmente, essa planta tão importante está ameaçada de extinção
+            devido ao <B>desmatamento</B> e à <B>extração ilegal</B> do seu
+            palmito, uma prática que mata a árvore.
+          </P>
+          <P>
+            Esses dois fatores também <B>ameaçam</B> as jacutingas, que ficam
+            sem floresta e sem o seu alimento favorito!
+          </P>
+          <P>
+            A campanha é uma iniciativa do{" "}
             <A
-              href="https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
+              href={
+                "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
+              }
               target="_blank"
             >
               Plano de Ação Nacional para Conservação das Aves da Mata Atlântica
             </A>
-            , organizado coletivamente pelas seguintes organizações:{" "}
+            , organizado coletivamente pelas seguintes organizações:
           </P>
           <Logos />
           <div className="flex my-8 justify-center">
@@ -102,54 +108,76 @@ export default function Jacucara() {
             </P>
           </div>
           <P>
-            A juçara (<i>Euterpe edulis</i>), palmeira nativa da Mata Atlântica,
-            é fonte de alimento para uma grande diversidade de animais e, por
-            isso, considerada uma espécie-chave para a preservação das matas
-            locais. Mas, se antes essa palmeira era abundante nessas terras,
-            hoje está vulnerável à extinção na natureza. Atualmente, apenas
-            cerca de 15% do remanescente de Mata Atlântica é de habitat adequado
-            para a ocorrência da espécie. Além da grande perda de habitat
-            adequado para a ocorrência da juçara, a extração predatória para
-            consumo do palmito causou um grande declínio populacional da
-            espécie.
+            A{" "}
+            <B>
+              juçara (<i>Euterpe edulis</i>)
+            </B>
+            , palmeira nativa da Mata Atlântica, é <B>fonte de alimento</B> para
+            uma grande diversidade de animais e, por isso, considerada uma{" "}
+            <B>espécie-chave</B> para a preservação de matas locais.
+          </P>
+          <P>
+            Mas, se antes essa palmeira <B>era abundante</B> nessas terras, hoje
+            está <B>vulnerável à extinção</B> na natureza. Atualmente, apenas
+            cerca de <B>15%</B> do remanescente de Mata Atlântica é de habitat
+            adequado para a ocorrência da espécie.{" "}
+          </P>
+          <P>
+            Além disso, a extração predatória para <B>consumo</B> do palmito
+            causou um grande <B>declínio</B> populacional da espécie.
           </P>
           <Fig number={2} />
-          <P>
-            O fruto da juçara é altamente nutritivo e{" "}
-            <A href="https://www.scielo.br/j/aabc/a/sD9XKD8d4xkpDRV5LjLxshR/?format=pdf&lang=en">
-              serve de alimento para, ao menos, 58 espécies de aves e 21
-              espécies de mamíferos
-            </A>
-            . Cutias, antas, catetos, esquilos e muitos outros animais se
-            beneficiam de suas sementes ou frutos. Por isso a escassez dos
-            frutos da juçara em uma floresta significa menor oferta de um
-            importante recurso alimentar para animais silvestres. Dentre os
-            animais que consomem o fruto, tucanos, jacutingas, jacus, sabiás e
-            arapongas são os principais responsáveis pela dispersão das
-            sementes.
-          </P>
+          <div className="my-4">
+            <P>
+              O fruto da juçara é <B>altamente nutritivo</B> e{" "}
+              <A href="https://www.scielo.br/j/aabc/a/sD9XKD8d4xkpDRV5LjLxshR/?format=pdf&lang=en">
+                serve de alimento para, ao menos, 58 espécies de aves e 21
+                espécies de mamíferos
+              </A>
+              . Cutias, antas, catetos, esquilos e muitos outros animais se
+              beneficiam de suas sementes ou frutos.
+            </P>
+            <P>
+              Por esse motivo, a <B>escassez</B> dos frutos da juçara em uma
+              floresta significa <B>menor oferta</B> de um importante recurso
+              alimentar para animais silvestres.{" "}
+            </P>
+            <P>
+              Dentre os animais que consomem o fruto, tucanos, jacutingas,
+              jacus, sabiás e arapongas são os principais responsáveis pela{" "}
+              <B>dispersão das sementes</B>.
+            </P>
+          </div>
           <Fig number={3} />
           <P>
-            A dispersão das sementes da juçara pela fauna que consome seus
-            frutos é fundamental para a propagação da palmeira. Em florestas
-            onde aves frugívoras de grande porte, como tucanos (
-            <i>Ramphastos spp.</i>), jacus (<i>Penelope spp</i>.) e jacutingas (
-            <i>Aburria jacutinga</i>), ainda ocorrem, as sementes de juçara são
-            maiores do que em florestas onde encontramos apenas aves menores
-            como os sabiás (<i>Turdus spp.</i>). Isso mostra que as sementes
-            estão sendo selecionadas de acordo com a capacidade dos dispersores
-            locais. Consequentemente, a ausência de aves de grande porte nas
-            florestas compromete a geração de novas palmeiras, que produziriam
+            A <B>dispersão</B> das sementes da juçara pela fauna que consome
+            seus frutos é <B>fundamental</B> para a propagação da palmeira.{" "}
+          </P>
+          <P>
+            Em florestas onde <B>aves frugívoras de grande porte</B>, como
+            tucanos (<i>Ramphastos spp.</i>), jacus (<i>Penelope spp.</i>) e
+            jacutingas (<i>Aburria jacutinga</i>), ainda ocorrem,{" "}
+            <B>as sementes de juçara são maiores</B> do que em florestas onde
+            encontramos apenas aves menores como os sabiás (<i>Turdus spp.</i>).{" "}
+          </P>
+          <P>
+            Isso mostra que as sementes estão sendo selecionadas de acordo com a
+            capacidade dos dispersores locais. Consequentemente,{" "}
+            <B>a ausência de aves de grande porte</B> nas florestas{" "}
+            <B>compromete</B> a geração de novas palmeiras, que produziriam
             frutos maiores.
           </P>
           <div className="mt-8 mb-4">
             <H3>O consumo da juçara</H3>
           </div>
           <P>
-            Além de sua importância ambiental, a juçara tem grande relevância
-            econômica e social. É utilizada na alimentação humana (palmito,
-            polpa dos frutos e botões florais) e já foi também um recurso na
-            construção civil (estipe como caibros, ripas e mourões).
+            Além de sua importância ambiental, a juçara tem grande{" "}
+            <B>relevância econômica e social</B>.{" "}
+          </P>
+          <P>
+            É utilizada na <B>alimentação humana</B> (palmito, polpa dos frutos
+            e botões florais) e já foi também um recurso na{" "}
+            <B>construção civil</B> (estipe como caibros, ripas e mourões).
           </P>
           <div className="flex my-8 justify-center">
             <iframe
@@ -163,47 +191,69 @@ export default function Jacucara() {
           </div>
           <P>
             O palmito juçara é extraído do cerne do caule da palmeira. No
-            entanto, essa prática mata a palmeira. Além da palmeira juçara, o
-            palmito pode ser extraído de outras espécies de palmeiras, como, por
-            exemplo, a pupunha e o açaizeiro (ou açaí). A extração do palmito
-            nessas outras espécies de palmeiras é uma solução sustentável de
-            consumo. Isso porque, enquanto a palmeira pupunha e o açaizeiro
-            formam touceiras, ou seja, vários caules, a juçara possui tronco
-            único. Além disso, a juçara demora de 8 anos a 12 anos para produzir
-            um palmito de qualidade, enquanto o da pupunha pode ser extraído 18
-            meses após o plantio.
+            entanto, essa prática <B>mata a palmeira</B>.{" "}
+          </P>
+          <P>
+            Além da palmeira juçara,{" "}
+            <B>o palmito pode ser extraído de outras espécies de palmeiras</B>,
+            como, por exemplo, a pupunha e o açaizeiro (ou açaí). A extração do
+            palmito nessas outras espécies de palmeiras é uma solução
+            sustentável de consumo.{" "}
+          </P>
+          <P>
+            Isso porque, enquanto a palmeira pupunha e o açaizeiro formam
+            touceiras, ou seja, vários caules,{" "}
+            <B>a juçara possui tronco único. </B>
+          </P>
+          <P>
+            Além disso, a <B>juçara</B> demora de <B>8 anos a 12 anos</B> para
+            produzir um palmito de qualidade, enquanto o da pupunha pode ser
+            extraído 18 meses após o plantio.
           </P>
           <P>
             Além do corte direto de cada indivíduo ser responsável pela redução
-            populacional da juçara, a extração do palmito juçara nas matas
-            naturais tem o efeito indireto de reduzir a entrada de novos
-            indivíduos na população local. A cada indivíduo adulto derrubado da
-            palmeira, há menos fontes de sementes para serem dispersadas e,
-            consequentemente, menor germinação de novas plântulas.
+            populacional da juçara, a <B>extração do palmito juçara</B> nas
+            matas naturais tem o efeito indireto de reduzir a entrada de novos
+            indivíduos na população local.{" "}
+          </P>
+          <P>
+            A cada indivíduo adulto derrubado da palmeira, há menos fontes de
+            sementes para serem dispersadas e, consequentemente, menor
+            germinação de novas plântulas.
           </P>
           <Fig number={4} />
           <P>
             Uma forma de conciliar a exploração, o consumo e a conservação dessa
-            palmeira é por meio da substituição da exploração do palmito pelo
-            fruto. O beneficiamento do fruto gera uma polpa saborosa e muito
-            nutritiva, com grande potencial comercial.{" "}
+            palmeira é por meio da{" "}
+            <B>substituição da exploração do palmito pelo fruto. </B>
           </P>
           <P>
-            O manejo da juçara, com enfoque nos frutos para obtenção de polpa, é
-            uma estratégia para a sua conservação, aliada ao desenvolvimento da
-            agricultura familiar. Quanto mais palmeiras na mata, melhor para os
-            extratores do fruto, que encontram mais recursos para serem
-            coletados.{" "}
+            O beneficiamento do fruto gera uma polpa saborosa e muito nutritiva,{" "}
+            <B>com grande potencial comercial</B>.
           </P>
           <P>
-            Para que a extração do fruto seja feita de maneira sustentável, é
-            importante que ela não seja realizada completamente, e uma parcela
-            dos frutos seja deixada para consumo e para ser dispersada pelos
-            animais silvestres. Essa prática é também aliada do agricultor
-            extrativista. A dispersão da semente da juçara pela fauna aumenta a
+            O manejo da juçara, com enfoque nos frutos para{" "}
+            <B>obtenção de polpa</B>, é uma estratégia para a sua conservação,
+            aliada ao desenvolvimento da agricultura familiar.{" "}
+          </P>
+          <P>
+            Quanto mais palmeiras na mata, melhor para os extratores do fruto,
+            que encontram mais recursos para serem coletados.
+          </P>
+          <P>
+            Para que a <B>extração do fruto</B> seja feita de maneira
+            sustentável, é importante que ela não seja realizada completamente
+            <B>não seja realizada completamente</B>, e{" "}
+            <B>uma parcela dos frutos</B>
+            seja deixada para consumo e para ser dispersada pelos animais
+            silvestres.{" "}
+          </P>
+          <P>
+            Essa prática é também aliada do agricultor extrativista. A{" "}
+            <B>dispersão da semente</B> da juçara pela fauna aumenta a
             quantidade da palmeira na área e, consequentemente, aumenta a
             quantidade de frutos que poderão ser explorados para o consumo e a
-            comercialização.{" "}
+            comercialização.
           </P>
           <Fig
             number={5}
@@ -226,55 +276,68 @@ export default function Jacucara() {
           <P>
             Há uma espécie de ave com uma relação tão marcante com a palmeira
             juçara que a sua sobrevivência está fortemente relacionada com a
-            palmeira. Essa ave é a jacutinga (<i>Aburria jacutinga</i>).{" "}
+            palmeira. Essa ave é a{" "}
+            <B>
+              jacutinga (<i>Aburria jacutinga</i>)
+            </B>
+            .{" "}
           </P>
           <Fig number={6} />
           <P>
-            A jacutinga é uma ave grande: mede de 64 centímetros a 74
+            A jacutinga é uma <B>ave grande</B>: mede de 64 centímetros a 74
             centímetros e pesa entre 1,1 quilo e 1,4 quilo. Sua plumagem é
-            predominantemente preta, mas com um característico topete branco e
-            pontinhas brancas nas asas. Tem também um bico azulado e a barbela
-            (pele da região do pescoço) nas cores azul e vermelha.
+            predominantemente preta, mas com um característico{" "}
+            <B>topete branco</B> e pontinhas brancas nas asas. Tem também um
+            bico azulado e a <B>barbela (pele da região do pescoço)</B> nas
+            cores azul e vermelha.
           </P>
           <Fig number={7} />{" "}
           <P>
             Restrita à Mata Atlântica do Sudeste do Brasil, Argentina e
-            Paraguai, a jacutinga é uma espécie em risco de extinção. A falta de
-            seu recurso favorito, os frutos da palmeira juçara, não é o único
-            desafio que esta ave enfrenta para manter suas populações estáveis.
-            A perda de habitat e a caça são identificadas como as principais
-            causas do declínio populacional dessa espécie.{" "}
+            Paraguai, a jacutinga é uma espécie em <B>risco de extinção.</B>{" "}
           </P>
           <P>
-            Ela é carinhosamente apelidada de ave jardineira da floresta, pois
-            espalha as sementes de muitos frutos dos quais se alimenta. São
-            registrados pelo menos 41 frutos diferentes consumidos pela
-            jacutinga. As sementes são regurgitadas ou defecadas durante e após
-            o consumo do fruto e, com isso, dispersadas por onde a jacutinga se
-            movimenta. Ela passa a maior parte de seu tempo nas partes altas das
-            árvores emergentes, mas pode ocasionalmente descer até o solo para
-            pegar frutos caídos.
+            A falta de seu recurso favorito, os frutos da palmeira juçara, não é
+            o único <B>desafio</B> que esta ave enfrenta para manter suas
+            populações estáveis. A <B>perda de habitat</B> e a caça são
+            identificadas como as <B>principais causas</B> do declínio
+            populacional dessa espécie.
+          </P>
+          <P>
+            Ela é carinhosamente apelidada de <B>ave jardineira</B> da floresta,
+            pois espalha as sementes de muitos frutos dos quais se alimenta.{" "}
+          </P>
+          <P>
+            São registrados pelo menos <B>41 frutos diferentes</B> consumidos
+            pela jacutinga. As sementes são regurgitadas ou defecadas durante e
+            após o consumo do fruto e, com isso, <B>dispersadas</B> por onde a
+            jacutinga se movimenta. Ela passa a maior parte de seu tempo nas
+            partes altas das árvores emergentes, mas pode ocasionalmente descer
+            até o solo para pegar frutos caídos.
           </P>
           <div className="mt-12 mb-4">
             <H2>O que significa estar em risco de extinção?</H2>
           </div>
           <P>
-            Extinção significa deixar de existir. A extinção de uma espécie
-            significa seu desaparecimento definitivo.
+            <B>Extinção significa deixar de existir</B>. A extinção de uma
+            espécie significa seu desaparecimento definitivo.
           </P>
           <Fig number={8} />{" "}
           <P>
-            Quando dizemos que uma espécie está em risco de extinção, isso
-            significa que as populações dessa espécies estão em situação de
-            declínio, isto é, que o número de indivíduos está reduzindo ou que
-            eles existem em um número tão pequeno na natureza, e, por isso, as
-            chances de desaparecer são maiores.
+            Quando dizemos que uma espécie está <B>em risco de extinção</B>,
+            isso <B>significa</B> que as populações dessa espécies estão em{" "}
+            <B>situação de declínio</B>, isto é, que o número de indivíduos está
+            reduzindo ou que eles existem em um número tão pequeno na natureza,
+            e, por isso, as chances de desaparecer são maiores.
           </P>
           <P>
-            Apesar de relativamente comum no meio ambiente, o processo de
-            extinção está sendo intensificado pela ação humana. Destamatamento,
-            mudanças climáticas, caça ilegal e o tráfico de animais são alguns
-            dos motivos que têm acelerado o processo de extinção.
+            Apesar de relativamente comum no meio ambiente,{" "}
+            <B>
+              o processo de extinção está sendo intensificado pela ação humana
+            </B>
+            . Destamatamento, mudanças climáticas, caça ilegal e o tráfico de
+            animais são alguns dos motivos que têm acelerado o processo de
+            extinção.
           </P>
           <P>
             A velocidade deste declínio ou o número e distribuição espacial dos
@@ -283,44 +346,73 @@ export default function Jacucara() {
             desapareça.
           </P>
           <P>
-            A Lista Vermelha de Espécies Ameaçadas é, hoje, uma das principais
-            ferramentas para avaliação e indicação de risco das espécies. Método
-            criado em 1964 pela União Internacional de Conservação da Natureza e
-            dos Recursos Naturais (IUCN, em inglês), a Lista Vermelha constitui
-            um catálogo detalhado sobre os dados de conservação global das
-            espécies de todo o mundo, amplamente utilizado por vários governos e
-            instituições para direcionar esforços de conservação.
+            <B>A Lista Vermelha de Espécies Ameaçadas</B> é, hoje, uma das
+            principais ferramentas para avaliação e indicação de risco das
+            espécies. Método criado em 1964 pela União Internacional de
+            Conservação da Natureza e dos Recursos Naturais (IUCN, em inglês), a
+            Lista Vermelha constitui <B>um catálogo detalhado</B> sobre os dados
+            de conservação global das <B>espécies de todo o mundo</B>,
+            amplamente utilizado por vários governos e instituições para
+            direcionar esforços de conservação.
           </P>
           <P>
             A partir do levantamento de uma série de informações, inclusive com
-            a participação da sociedade, as espécies são avaliadas por
+            a participação da sociedade, <B>as espécies são avaliadas</B> por
             organizações, cientistas e especialistas que analisam os dados de
             ocorrência no tempo e no espaço, associado às principais causas que
-            ameaçam essas espécies.{" "}
+            ameaçam essas espécies.
           </P>
           <P>
             Os resultados dessa avaliação indicam o risco de extinção para cada
             uma das espécies, que podem ser classificadas em uma dentre as nove
-            diferentes categorias: Não analisada (NE), quando ainda não há
-            avaliação da respectiva espécie; Dados insuficientes (DD), quando
-            não há muitas informações sobre a espécie; Pouco preocupante (LC),
-            quando a espécie vai muito bem, obrigada; Quase ameaçada (NT),
-            quando há indícios de declínio ou ameaças à perpetuação da espécie
-            no horizonte; Vulnerável (VU), quando a espécie apresenta alto risco
-            de extinção, caso não haja uma mudança no cenário; Em perigo (EN),
-            quando o risco de a espécie desaparecer num futuro próximo é muito
-            alto; Criticamente ameaçada (CR), quando a espécie está sob risco
-            iminente de extinção e precisa de cuidados urgentes para não
-            desaparecer; Extinta na natureza (EW), quando a espécie não tem mais
-            representantes na natureza, apenas aqueles mantidos sob cuidados
-            humanos ex situ, e, por fim, Extinta (EX), quando é confirmado que
-            morreu até o último indivíduo da espécie.{" "}
+            diferentes categorias:{" "}
+          </P>
+          <ul className="list-disc text-gray-600 px-8 md:px-0 mb-2">
+            <li>
+              Não analisada (NE), quando ainda não há avaliação da respectiva
+              espécie;{" "}
+            </li>
+            <li>
+              Dados insuficientes (DD), quando não há muitas informações sobre a
+              espécie;{" "}
+            </li>
+            <li>
+              Pouco preocupante (LC), quando a espécie vai muito bem, obrigada;{" "}
+            </li>
+            <li>
+              Quase ameaçada (NT), quando há indícios de declínio ou ameaças à
+              perpetuação da espécie no horizonte;{" "}
+            </li>
+            <li>
+              Vulnerável (VU), quando a espécie apresenta alto risco de
+              extinção, caso não haja uma mudança no cenário;{" "}
+            </li>
+            <li>
+              Em perigo (EN), quando o risco de a espécie desaparecer num futuro
+              próximo é muito alto; Criticamente ameaçada{" "}
+            </li>
+            <li>
+              (CR), quando a espécie está sob risco iminente de extinção e
+              precisa de cuidados urgentes para não desaparecer;{" "}
+            </li>
+            <li>
+              Extinta na natureza (EW), quando a espécie não tem mais
+              representantes na natureza, apenas aqueles mantidos sob cuidados
+              humanos ex situ, e, por fim,{" "}
+            </li>
+            <li>
+              Extinta (EX), quando é confirmado que morreu até o último
+              indivíduo da espécie.
+            </li>
+          </ul>
+          <P>
+            São consideradas como <B>espécies ameaçadas</B> apenas aquelas
+            classificadas como VU, EN e CR.{" "}
           </P>
           <P>
-            São consideradas como <strong>espécies ameaçadas</strong> apenas
-            aquelas classificadas como VU, EN e CR. A palmeira juçara está
-            classificada como VU, vulnerável à extinção, e a jacutinga como EN,
-            em perigo de extinção.{" "}
+            A <B>palmeira juçara</B> está classificada como VU,{" "}
+            <B>vulnerável à extinção</B>, e a jacutinga como EN,{" "}
+            <B>em perigo de extinção</B>.
           </P>
           <Fig number={9} />{" "}
           <div className="mt-12 mb-4">
@@ -406,6 +498,12 @@ const A = ({ children, href, noTarget }) => (
   >
     {children}
   </a>
+);
+
+const B = ({ children }) => (
+  <span style={{ color: "#8f1858" }} className="font-bold">
+    {children}
+  </span>
 );
 
 const Acc3 = () => {
