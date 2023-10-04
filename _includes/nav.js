@@ -192,9 +192,9 @@ export default function Nav() {
                     <a target="_blank" href="/relatorio.html">
                       <p className="cursor-pointer pb-1">Relatório de Dados </p>
                     </a>
-                    {/* <a target="_blank" href="https://oama.kyte.site">
-                      <p className="cursor-pointer pb-1">useOAMa </p>
-                    </a> */}
+                    <Link href="/blog">
+                      <p className="cursor-pointer pb-1">Blog </p>
+                    </Link>
                   </div>
                 </li>
 
@@ -220,7 +220,9 @@ export default function Nav() {
                 </li>
 
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
-                  <Link href="/blog">Blog</Link>
+                  <a target="_blank" href="https://use.oama.eco.br">
+                    useOAMa
+                  </a>
                 </li>
                 <li className="inline-block w-full   no-underline hover:text-gray-800 hover:text-underline py-2  px-4">
                   <a target="_blank" href="https://saltator.oama.eco.br">
@@ -285,11 +287,11 @@ export default function Nav() {
                     Relatório de Dados
                   </p>
                 </a>
-                {/* <a target="_blank" href="https://oama.kyte.site">
+                <Link href="/blog">
                   <p className="text-gray-50  pb-2 w-full cursor-pointer hover:underline font-bold">
-                    useOAMa{" "}
+                    Blog{" "}
                   </p>
-                </a> */}
+                </Link>
               </div>
             </div>
 
@@ -313,11 +315,13 @@ export default function Nav() {
               </div>
             </div>
 
-            <Link href="/blog">
+            <a target="_blank" href="https://use.oama.eco.br">
               <div className=" mr-4 cursor-pointer">
-                <p className="text-gray-50  hover:underline font-bold">Blog</p>
+                <p className="text-gray-50  hover:underline font-bold">
+                  useOAMa
+                </p>
               </div>
-            </Link>
+            </a>
 
             <a target="_blank" href="https://saltator.oama.eco.br">
               {" "}
