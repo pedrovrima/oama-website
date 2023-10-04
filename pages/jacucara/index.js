@@ -92,7 +92,7 @@ export default function Jacucara() {
             duas espécies ameaçadas de extinção: a jacutinga e a jacuçara.
           </P>
           <P>
-            Agora fica fácil entender o porquê do nome Jacuçara, união do nome
+            Agora fica fácil entender o porquê do nome Jacuçara, união do nome{" "}
             <B>jacutinga</B>, ave exclusiva da Mata Atlântica, e <B>juçara</B>,
             uma palmeira do mesmo bioma.{" "}
           </P>
