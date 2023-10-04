@@ -309,6 +309,17 @@ export default function Jacucara() {
             }
           />{" "}
           <div className="mt-12 mb-4">
+            <H3>ONDE COMPRAR POLPA DE JUÇARA?</H3>
+            <PlaceList />
+          </div>
+          <div className="mt-12 mb-4">
+            <H3>
+              DISTRIBUIÇÃO GRATUITA DE MUDA DE JUÇARA PARA PROJETOS DE
+              RESTAURAÇÃO
+            </H3>
+            <TreePlacesList />
+          </div>
+          <div className="mt-12 mb-4">
             <H2>JACUTINGA</H2>
             <H3>Conheça a espécie de ave jardineira da Mata Atlântica</H3>
           </div>
@@ -514,6 +525,15 @@ const H3 = ({ children }) => (
   <h3 style={{ color: "#c02176" }} class="my-4 px-8 text-xl md:px-0 mb-2">
     {children}
   </h3>
+);
+
+const H4 = ({ children }) => (
+  <h4
+    style={{ color: "#c02176" }}
+    class="my-4 px-8 text-lg font-bold md:px-0 mb-2"
+  >
+    {children}
+  </h4>
 );
 
 const AccH3 = ({ children }) => (
@@ -944,5 +964,152 @@ function Pag(props) {
         {/* </div> */}
       </div>
     </Link>
+  );
+}
+
+const places = {
+  "Rio de Janeiro": [
+    {
+      name: "Associação Juçara Viva",
+      location: "Resende, RJ",
+      socialMedia: "@jucaraviva",
+    },
+    {
+      name: "Juçai",
+      website: "jucai.com.br",
+    },
+  ],
+  "Santa Catarina": [
+    {
+      name: "Açai Juçara da Montanha",
+      location: "Florianópolis, SC",
+      socialMedia: "@acaijucara",
+      website: "acaijucara.com.br",
+    },
+    {
+      name: "Açaí Juçara Barbacuá",
+      location: "Praia Grande, SC",
+      socialMedia: "@acaibarbacua",
+      website: "acaibarbacua.com",
+    },
+  ],
+  "São Paulo": [
+    {
+      name: "Sítio Agroflorestal Abaetetuba",
+      location: "Ubatuba, SP",
+      socialMedia: "@sitio.abaetetuba",
+    },
+    {
+      name: "Sítio das Palmeiras",
+      location: "Ubatuba, SP",
+      socialMedia: "@sitiodaspalmeirasuba",
+    },
+  ],
+  "Rio Grande do Sul": [
+    {
+      name: "Cooperativa Econativa",
+      location: "Três Cachoeiras, RS",
+      phone: "(51) 999774531",
+      website: "econativa.coop.br",
+    },
+  ],
+};
+
+function PlaceList() {
+  return (
+    <div>
+      {Object.keys(places).map((state) => (
+        <div className="mt-8" key={state}>
+          <H4>{state}</H4>
+          {places[state].map((place) => (
+            <div className="mb-6" key={place.name}>
+              <h5 className=" font-bold">{place.name}</h5>
+              <p>{place.location}</p>
+              {place.socialMedia && (
+                <p>
+                  <A
+                    href={`https://instagram.com/${place.socialMedia.replace(
+                      "@",
+                      ""
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {place.socialMedia}
+                  </A>
+                </p>
+              )}
+              {place.website && (
+                <p>
+                  <A
+                    href={place.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {place.website}
+                  </A>
+                </p>
+              )}
+              {place.phone && <p>{place.phone}</p>}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+const treePlaces = {
+  "Minas Gerais": [
+    {
+      name: "Parque Estadual do Rio Doce",
+      website:
+        "https://www.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_avisar_cadastro&id_orgao_acesso_externo=0&CSRF_TOKEN=cfdd0939cf8f5a2dd3144b507599055cda7e70c5",
+    },
+  ],
+  "Rio de Janeiro": [
+    {
+      name: "Parque Estadual da Pedra Selada",
+      website:
+        "https://www.inea.rj.gov.br/biodiversidade-territorio/conheca-as-unidades-de-conservacao/parque-estadual-da-pedra-selada/",
+    },
+    {
+      name: "Maple Leaf Ecovillage",
+      website: "http://mapleleafecovillage.com/",
+    },
+    {
+      name: "Jardim Botânico do Rio de Janeiro",
+      website:
+        "https://www.gov.br/pt-br/servicos/obter-doacao-de-mudas-do-jardim-botanico-do-rio-de-janeiro",
+    },
+  ],
+};
+
+function TreePlacesList() {
+  return (
+    <div>
+      {Object.keys(treePlaces).map((state) => (
+        <div key={state}>
+          <H4>{state}</H4>
+          {treePlaces[state].map((place) => (
+            <div key={place.name}>
+              {place.website ? (
+                <p>
+                  <A
+                    href={place.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {place.name}
+                  </A>
+                </p>
+              ) : (
+                <></>
+              )}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
   );
 }
