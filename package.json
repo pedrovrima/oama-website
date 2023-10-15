@@ -9,27 +9,33 @@
   "dependencies": {
     "@paypal/react-paypal-js": "^5.1.1",
     "@reach/accordion": "^0.17.0",
-    "autoprefixer": "^10.0.2",
     "aws-sdk": "^2.799.0",
     "email-validator": "^2.0.4",
     "marked": "^4.0.12",
     "next": "^12.0.10",
-    "postcss": "^8.1.8",
     "react": "^17.0.2",
     "react-cool-onclickoutside": "^1.6.1",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
     "react-responsive-carousel": "^3.2.22",
-    "react-svg-morph": "^0.2.1",
+    "stripe": "^13.10.0",
     "tailwindcss-typography": "^3.1.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
     "gray-matter": "^4.0.3",
+    "postcss": "^8.4.31",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "raw-loader": "^4.0.2",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^3.3.3"
   },
   "license": "MIT"
 }
