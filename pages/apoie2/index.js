@@ -250,7 +250,7 @@ const DonationButtonGroup = () => {
   ];
 
   return (
-    <div className='grid grid-cols-2 gap-8'>
+    <div className='z-40 grid grid-cols-2 gap-8'>
       {donationMethods.map((method) => {
         return (
           <DonationButton
@@ -269,9 +269,9 @@ const DonationButton = ({ image, url, name }) => {
     <a
       href={url}
       target='_blank'
-      className='relative flex flex-row items-center group'
+      className='relative z-40 flex flex-row items-center group'
     >
-      <div className='relative flex h-16 w-16 items-center justify-center rounded-full bg-[#E9B130] group-hover:bg-[#EDC15A]'>
+      <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#E9B130] group-hover:bg-[#EDC15A]'>
         <Image
           className='z-40'
           src={image}
