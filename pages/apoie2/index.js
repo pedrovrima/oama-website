@@ -37,111 +37,116 @@ export default function Apoie2(props) {
   );
 
   return (
-    <>
+    <div className='bg-[#4E7B90]'>
       <Nav />
-      <div className='relative min-h-1/2'>
-        <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
-          <div className='absolute top-0 flex h-full w-full items-end bg-yellow-900 p-12'>
-            <h1 className='w-full text-center text-6xl font-bold text-yellow-200'>
-              Doe
+      <div className='hero-small md:hero relative h-[700px] max-h-[70vh]'>
+        <div className='items-center h-full pt-32 justify-items-center md:pb-16 lg:pb-16'>
+          <div className='absolute top-0 w-full h-full'>
+            <Image
+              className='z-40'
+              src='/apoie/capa.png'
+              layout='fill'
+              //   width={"2000"}
+              //   height={"1000"}
+              objectFit='cover'
+              objectPosition='center'
+              priority={true}
+            ></Image>
+          </div>
+          <div className='absolute top-0 flex items-center w-full h-full px-64 bg-yellow-900'>
+            <h1 className='z-50 w-1/2 text-5xl font-bold text-white '>
+              Venha pro bando em defesa das aves da Mata Atlântica!
             </h1>
           </div>
         </div>
       </div>
 
-      <div className='mx-auto max-w-screen-lg '>
-        <div className='flex justify-between gap-8'>
-          <div className='py-4'>
+      <div className='mx-auto max-w-[900px] '>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-5'>
+          <div className='col-span-3 py-24 text-justify'>
             <P>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              malesuada ornare justo sit amet dictum. Fusce sagittis commodo
-              lorem vel tempus. Aliquam nisl mi, facilisis sed diam sit amet,
-              laoreet viverra ante. Ut porttitor eu justo vel tristique. Vivamus
-              sapien nulla, fringilla auctor neque in, porttitor ultrices mi.
-              Fusce fermentum malesuada magna in pulvinar. Duis odio est,
-              maximus sed mauris sed, viverra pellentesque nisl. Integer quis
-              eros erat. In fermentum, risus non lacinia faucibus, enim dolor
-              ullamcorper risus, eget bibendum nisl lacus sed magna. Quisque
-              lectus purus, volutpat vitae posuere vitae, aliquet a nibh. Nullam
-              tempor erat urna, vitae sagittis lorem egestas aliquam. Proin a
-              dolor id justo bibendum ullamcorper vitae vitae diam. Suspendisse
-              potenti. Nullam sit amet mollis erat.
+              O OAMa está trabalhando para a construção coletiva de um futuro
+              melhor para as aves, para o ecossistema, e, consequentemente, para
+              nós!{' '}
             </P>
             <P>
-              Phasellus mollis volutpat enim. Morbi tempus elit sit amet lacus
-              iaculis tincidunt. In venenatis odio sed ante sollicitudin auctor.
-              Cras euismod nibh fringilla lorem molestie sagittis. Praesent in
-              pulvinar sem. Nunc aliquet non ex sit amet tristique. Quisque in
-              efficitur purus, quis mattis urna. Nam vitae hendrerit risus.
-              Proin elementum viverra consequat. Mauris eget ex a metus dictum
-              convallis. Integer eu sodales neque.
+              Visamos um futuro em que a sociedade dê maior importância às aves
+              e em que as pessoas sejam agentes ativos para para a conservação
+              da biodiversidade. Para transformar esse futuro em um presente
+              real, utilizamos a difusão de informação e a sensibilização
+              através do conhecimento, conectando pessoas e natureza em nossas
+              ações.{' '}
             </P>
             <P>
-              Cras felis leo, aliquam vel rutrum vel, dignissim vel felis.
-              Suspendisse sollicitudin mauris quis risus hendrerit malesuada.
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Etiam quam quam, gravida sed
-              sagittis non, pharetra non nibh. Maecenas ut placerat enim.
-              Praesent tempor nibh ac nunc iaculis ultricies. In faucibus vel
-              ligula laoreet interdum. Ut convallis vestibulum nulla sit amet
-              iaculis. Nullam orci nunc, lacinia eget dapibus sit amet,
-              consequat sit amet lectus. Etiam gravida lorem ante, et volutpat
-              odio pretium ac. Sed nec diam feugiat, vestibulum eros vitae,
-              luctus est. Proin interdum, dui et lacinia finibus, mi justo
-              bibendum dolor, vitae vehicula sem tellus vitae diam. Mauris vel
-              massa eget metus malesuada aliquam. Duis laoreet hendrerit nulla,
-              id ornare augue elementum ut. Aliquam bibendum euismod mi, et
-              venenatis mi egestas non. Maecenas eget nibh gravida, euismod
-              mauris quis, imperdiet nisi.
+              Trabalhamos com uma equipe de comunicação e divulgação científica
+              que se dedica em traduzir ciência em uma comunicação que dialoga
+              de forma sensível com a sociedade.
             </P>
             <P>
-              Vivamus fermentum lectus a mollis aliquam. Nullam id ornare purus,
-              vitae faucibus dolor. Vivamus id ipsum nec libero auctor gravida
-              eget sed nibh. Pellentesque placerat mollis metus vel accumsan.
-              Suspendisse tempor maximus vehicula. Suspendisse facilisis sem
-              nisi, vitae lobortis nunc iaculis at. Integer elementum diam non
-              purus feugiat euismod. Duis tincidunt justo at mi aliquet, quis
-              tempus mi rhoncus. Nullam eget tempor elit. Phasellus eu magna
-              turpis. Maecenas sollicitudin, ex nec condimentum convallis, ipsum
-              massa tempus dolor, sit amet malesuada ante augue a mi. Mauris
-              posuere nulla at eros consectetur efficitur. Nam pellentesque,
-              augue in pellentesque varius, eros sem bibendum justo, a tincidunt
-              enim ex non mi. Maecenas rutrum finibus suscipit. Nam vel arcu
-              elit.
+              <strong>E você pode participar desse time!</strong>
+            </P>{' '}
+            <P>
+              Nossos ações de comunicação e divulgação científica são
+              viabilizadas pelo apoio coletivo. Contamos com doadores e filiados
+              para a realização das ações.
             </P>
             <P>
-              Phasellus consectetur nec mauris vitae tempus. Morbi gravida
-              suscipit orci id placerat. Cras ac tortor laoreet, suscipit nisl
-              at, malesuada nibh. Suspendisse nec scelerisque orci. Nunc pretium
-              imperdiet erat ac tincidunt. Integer non massa eget ante laoreet
-              cursus. Nulla imperdiet aliquet imperdiet. Sed at nulla porta,
-              auctor sapien id, semper massa. Aenean dui lacus, suscipit
-              volutpat tempor sed, porttitor ut sapien. Vestibulum nisl tellus,
-              fringilla quis ante non, consectetur convallis massa. Vestibulum
-              quis sem at dui porta convallis. Praesent feugiat neque eget
-              ligula porttitor, sit amet aliquam tortor vestibulum. Pellentesque
-              euismod felis eu libero mollis porta.
+              <strong>Vem somar com a gente!</strong>
             </P>
+            <H3>COMUNICANDO CIÊNCIA PARA A CONSERVAÇÃO</H3>
+            <P>
+              Conectar pessoas com a ciência e conservação da biodiversidade
+              requer encantamento, reconhecimento e apropriação. Nossa atuação
+              nos últimos 5 anos vai além dos limites da Serra da Mantiqueira,
+              alcançando pessoas em várias partes do mundo que compreendem a
+              importância da conservação das aves e de nossos ecossistemas.{' '}
+            </P>
+            <P>
+              A conservação ambiental precisa ser um esforço multidisciplinar e
+              coletivo.
+            </P>
+            <div className='relative mt-28 h-[300px] w-full rounded-lg'>
+              <Image
+                src='/apoie/35.png'
+                layout='fill'
+                objectFit='cover'
+                className='rounded-xl'
+              />
+            </div>
           </div>
-          <Billing products={props.products} stripe={stripe} />
+          <div className='flex flex-col col-span-2'>
+            <Billing products={props.products} stripe={stripe} />
+            <div className='relative h-[500px]'>
+              <div className='absolute -top-[150px] left-[20px] w-full'>
+                <Image
+                  className=''
+                  src='/apoie/14.png'
+                  layout='fixed'
+                  width={450}
+                  height={450}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 const Billing = ({ products, stripe }) => {
   const [loadingStripe, setLoadingStripe] = useState(false);
   return (
-    <div className='relative h-fit min-w-fit bg-yellow-100 px-8 py-12'>
+    <div className='relative px-8 py-12 h-fit min-w-fit'>
       {loadingStripe && (
-        <div className='absolute left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-black opacity-80'>
-          <div className='h-20 w-20 animate-spin rounded-full border-8 border-t-8 border-gray-300 border-t-slate-300' />
+        <div className='absolute top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black opacity-80'>
+          <div className='w-20 h-20 border-8 border-t-8 border-gray-300 rounded-full animate-spin border-t-slate-300' />
         </div>
       )}
-      <p className='text-center text-2xl font-bold text-yellow-900'>
-        Torne-se um filiado OAMa
-      </p>
+      <div className='mb-8 rounded-full bg-[#E9B130] p-4 text-center text-lg leading-5 text-white '>
+        <p>TORNE-SE UM FILIADO OAMa!</p>
+        <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
+      </div>
       <div className='grid grid-cols-2 gap-8'>
         {
           //map all products
@@ -156,15 +161,16 @@ const Billing = ({ products, stripe }) => {
           })
         }
       </div>
-      <p className='mt-12 text-center text-2xl font-bold text-yellow-900'>
-        Ou faça uma doação pontual
-      </p>
+      <div className='text-md mb-8 mt-12 rounded-full bg-[#E9B130] p-4 text-center leading-5 text-white'>
+        <p>Você também pode fazer uma doação única!</p>
+        <p>É só escolher a forma de doação: </p>
+      </div>
+      <DonationButtonGroup />
     </div>
   );
 };
 
 const BillingComponent = ({ product, stripe, setLoading }) => {
-  console.log(product);
   let currencyMaker = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: product.price[0].currency,
@@ -185,7 +191,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
   }
 
   return (
-    <div className='flex h-52 w-40 flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center w-32 h-32'>
       <div
         onClick={async () => {
           setLoading(true);
@@ -194,11 +200,11 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
           window.location.href = `${payLink.url}?locale=pt`;
         }}
         style={{ backgroundImage: `url(${product.images[0]})` }}
-        className='group relative h-40 w-40 cursor-pointer rounded-full border-2 border-solid bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-yellow-200 hover:shadow-2xl'
+        className='group relative h-28 w-28 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#EDC15A] hover:shadow-2xl'
       >
-        <a className='absolute -bottom-6 w-40 rounded-full bg-yellow-400 px-4 py-2 text-yellow-900 shadow-xl transition-all duration-200 ease-in-out group-hover:bg-yellow-300 group-hover:text-yellow-900 group-hover:shadow-2xl'>
-          <p className='text-md text-center font-bold '>{product.name}</p>
-          <p className='text-md text-center'>
+        <a className='absolute -bottom-6 w-28 rounded-full bg-[#E9B130] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#EDC15A] group-hover:text-yellow-900 group-hover:shadow-2xl'>
+          <p className='text-xs font-bold text-center '>{product.name}</p>
+          <p className='text-xs text-center'>
             {currencyMaker.format(product.price[0].unit_amount / 100)} / mês
           </p>
         </a>
@@ -208,5 +214,75 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
 };
 
 const P = ({ children }) => {
-  return <p className='mb-2 px-8 text-gray-600 md:px-0'>{children}</p>;
+  return <p className='px-8 mb-6 text-white md:px-0'>{children}</p>;
+};
+
+const H3 = ({ children }) => {
+  return (
+    <h3 className='px-8 mb-6 text-lg font-bold text-white md:px-0'>
+      {children}
+    </h3>
+  );
+};
+
+const DonationButtonGroup = () => {
+  const donationMethods = [
+    {
+      name: 'PIX',
+      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      image: '/apoie/10.png',
+    },
+    {
+      name: 'PayPal',
+      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      image: '/apoie/11.png',
+    },
+    {
+      name: 'PagSeguro',
+      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      image: '/apoie/12.png',
+    },
+    {
+      name: 'Cartão de Crédito',
+      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      image: '/apoie/13.png',
+    },
+  ];
+
+  return (
+    <div className='grid grid-cols-2 gap-8'>
+      {donationMethods.map((method) => {
+        return (
+          <DonationButton
+            image={method.image}
+            url={method.url}
+            name={method.name}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+const DonationButton = ({ image, url, name }) => {
+  return (
+    <a
+      href={url}
+      target='_blank'
+      className='relative flex flex-row items-center group'
+    >
+      <div className='relative flex h-16 w-16 items-center justify-center rounded-full bg-[#E9B130] group-hover:bg-[#EDC15A]'>
+        <Image
+          className='z-40'
+          src={image}
+          height={40}
+          width={40}
+          layout='fixed'
+        />
+      </div>
+      <div className='absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#E9B130] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#EDC15A] '>
+        {name}
+      </div>
+    </a>
+  );
 };
