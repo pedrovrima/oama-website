@@ -40,8 +40,8 @@ export default function Apoie2(props) {
     <div className='bg-[#4E7B90]'>
       <Nav />
       <div className='hero-small md:hero relative h-[700px] max-h-[70vh]'>
-        <div className='items-center h-full pt-32 justify-items-center md:pb-16 lg:pb-16'>
-          <div className='absolute top-0 w-full h-full'>
+        <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+          <div className='absolute top-0 h-full w-full'>
             <Image
               className='z-40'
               src='/apoie/capa.png'
@@ -53,7 +53,7 @@ export default function Apoie2(props) {
               priority={true}
             ></Image>
           </div>
-          <div className='absolute top-0 flex items-center w-full h-full px-64 bg-yellow-900'>
+          <div className='absolute top-0 flex h-full w-full items-center bg-yellow-900 px-64'>
             <h1 className='z-50 w-1/2 text-5xl font-bold text-white '>
               Venha pro bando em defesa das aves da Mata Atlântica!
             </h1>
@@ -61,7 +61,7 @@ export default function Apoie2(props) {
         </div>
       </div>
 
-      <div className='mx-auto max-w-[900px] '>
+      <div className='mx-auto max-w-[1024px] '>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-5'>
           <div className='col-span-3 py-24 text-justify'>
             <P>
@@ -114,7 +114,7 @@ export default function Apoie2(props) {
               />
             </div>
           </div>
-          <div className='flex flex-col col-span-2'>
+          <div className='col-span-2 flex flex-col'>
             <Billing products={props.products} stripe={stripe} />
             <div className='relative h-[500px]'>
               <div className='absolute -top-[150px] left-[20px] w-full'>
@@ -137,13 +137,13 @@ export default function Apoie2(props) {
 const Billing = ({ products, stripe }) => {
   const [loadingStripe, setLoadingStripe] = useState(false);
   return (
-    <div className='relative px-8 py-12 h-fit min-w-fit'>
+    <div className='relative h-fit min-w-fit px-8 py-12'>
       {loadingStripe && (
-        <div className='absolute top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black opacity-80'>
-          <div className='w-20 h-20 border-8 border-t-8 border-gray-300 rounded-full animate-spin border-t-slate-300' />
+        <div className='absolute left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-black opacity-80'>
+          <div className='h-20 w-20 animate-spin rounded-full border-8 border-t-8 border-gray-300 border-t-slate-300' />
         </div>
       )}
-      <div className='mb-8 rounded-full bg-[#E9B130] p-4 text-center text-lg leading-5 text-white '>
+      <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white '>
         <p>TORNE-SE UM FILIADO OAMa!</p>
         <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
       </div>
@@ -161,7 +161,7 @@ const Billing = ({ products, stripe }) => {
           })
         }
       </div>
-      <div className='text-md mb-8 mt-12 rounded-full bg-[#E9B130] p-4 text-center leading-5 text-white'>
+      <div className='text-md mb-8 mt-12 w-full rounded-full bg-[#332139] p-4 text-center leading-5 text-white'>
         <p>Você também pode fazer uma doação única!</p>
         <p>É só escolher a forma de doação: </p>
       </div>
@@ -191,7 +191,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center w-32 h-32'>
+    <div className='mb-8 flex flex-col items-center justify-center'>
       <div
         onClick={async () => {
           setLoading(true);
@@ -200,11 +200,11 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
           window.location.href = `${payLink.url}?locale=pt`;
         }}
         style={{ backgroundImage: `url(${product.images[0]})` }}
-        className='group relative h-28 w-28 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#EDC15A] hover:shadow-2xl'
+        className='group relative h-36 w-36 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
       >
-        <a className='absolute -bottom-6 w-28 rounded-full bg-[#E9B130] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#EDC15A] group-hover:text-yellow-900 group-hover:shadow-2xl'>
-          <p className='text-xs font-bold text-center '>{product.name}</p>
-          <p className='text-xs text-center'>
+        <a className='absolute -bottom-6 w-36 rounded-full bg-[#332139] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#62466B]  group-hover:shadow-2xl'>
+          <p className='text-md text-center font-bold '>{product.name}</p>
+          <p className='text-md text-center'>
             {currencyMaker.format(product.price[0].unit_amount / 100)} / mês
           </p>
         </a>
@@ -214,12 +214,12 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
 };
 
 const P = ({ children }) => {
-  return <p className='px-8 mb-6 text-white md:px-0'>{children}</p>;
+  return <p className='mb-6 px-8 text-lg text-white md:px-0'>{children}</p>;
 };
 
 const H3 = ({ children }) => {
   return (
-    <h3 className='px-8 mb-6 text-lg font-bold text-white md:px-0'>
+    <h3 className='mb-6 px-8 text-lg font-bold text-white md:px-0'>
       {children}
     </h3>
   );
@@ -269,9 +269,9 @@ const DonationButton = ({ image, url, name }) => {
     <a
       href={url}
       target='_blank'
-      className='relative z-40 flex flex-row items-center group'
+      className='group relative z-40 flex flex-row items-center'
     >
-      <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#E9B130] group-hover:bg-[#EDC15A]'>
+      <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
         <Image
           className='z-40'
           src={image}
@@ -280,7 +280,7 @@ const DonationButton = ({ image, url, name }) => {
           layout='fixed'
         />
       </div>
-      <div className='absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#E9B130] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#EDC15A] '>
+      <div className='absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
         {name}
       </div>
     </a>
