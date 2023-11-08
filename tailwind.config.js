@@ -42,6 +42,8 @@ module.exports = {
 
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
+
+      euphoria: ['euphoria-black', 'sans-serif'],
     },
     textIndent: {
       // defaults to {}

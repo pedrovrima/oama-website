@@ -38,7 +38,7 @@ export default function Apoie2(props) {
   );
 
   return (
-    <>
+    <div className='font-euphoria'>
       <Nav />
       <div className=' relative h-[700px] max-h-[70vh] bg-[#4E7B90]'>
         <div className='items-center h-full pt-32 hero-small md:hero justify-items-center md:pb-16 lg:pb-16'>
@@ -134,7 +134,7 @@ export default function Apoie2(props) {
       </div>
 
       <SecondSection />
-    </>
+    </div>
   );
 }
 
@@ -207,8 +207,8 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
         className='group relative h-36 w-36 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
       >
         <a className='absolute -bottom-6 w-36 rounded-full bg-[#332139] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#62466B]  group-hover:shadow-2xl'>
-          <p className='font-bold text-center text-md '>{product.name}</p>
-          <p className='text-center text-md'>
+          <p className='text-sm font-bold text-center '>{product.name}</p>
+          <p className='text-sm text-center'>
             {currencyMaker.format(product.price[0].unit_amount / 100)} / mês
           </p>
         </a>
@@ -299,20 +299,20 @@ const DonationButton = ({ image, url, name }) => {
 
 const SecondSection = () => {
   return (
-    <div className='hero-path relative -top-[150px] z-0 mx-auto'>
+    <div className=' a hero-path relative -top-[150px] z-0 mx-auto'>
       <div className='absolute top-0 w-full h-full'>
         <Image priority src='/apoie/34.png' layout='fill' objectFit='cover' />
       </div>
       <div className=' relative z-20 mx-auto flex max-w-[1024px] flex-row py-36'>
-        <div className='absolute bottom-0 z-0 -right-20'>
+        <div className='absolute bottom-0 z-0 -right-10'>
           <Image
             src='/apoie/4.png'
             layout='fixed'
-            width={450}
-            height={450}
+            width={350}
+            height={350}
           ></Image>
         </div>
-        <div className='z-50 w-72'>
+        <div className='z-50 w-94'>
           <H2>Sua participação e apoio fazem a diferença</H2>
           <P>
             Essa campanha de financiamento coletivo tem como objetivo arcar com
@@ -320,16 +320,16 @@ const SecondSection = () => {
             do OAMa
           </P>
           <div className='relative pb-36'>
-            <div className=' absolute  -left-[90px] -top-[90px]  flex flex-row items-center gap-[20px]'>
+            <div className=' absolute  -left-[190px] -top-[120px]  flex flex-row items-center gap-[20px]'>
               <div className='z-50 rotate-[15deg]'>
                 <Image
                   src='/apoie/15.png'
                   layout='fixed'
-                  width={0.15 * 3375}
-                  height={0.15 * 3375}
+                  width={0.2 * 3375}
+                  height={0.2 * 3375}
                 ></Image>
               </div>
-              <div className=' absolute left-[250px] top-[150px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12'>
+              <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12'>
                 <div className='flex flex-row items-center justify-center h-full gap-4 text-white'>
                   <div className='flex flex-row items-center gap-2'>
                     <AiOutlineInfoCircle size={70} />
@@ -344,10 +344,11 @@ const SecondSection = () => {
         </div>
 
         <Image
+          className=''
           src='/apoie/grafico.png'
           layout='fixed'
-          width={1.2 * 3375}
-          height={1.2 * 448}
+          width={1 * 3375}
+          height={1 * 510}
         />
       </div>
     </div>
