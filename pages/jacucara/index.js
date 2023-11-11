@@ -1,20 +1,20 @@
-import Nav from "@includes/nav";
-import Image from "next/image";
-import Head from "next/head";
-import Footer from "@includes/footer";
+import Nav from '@includes/nav';
+import Image from 'next/image';
+import Head from 'next/head';
+import Footer from '@includes/footer';
 import {
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
   useAccordionItemContext,
-} from "@reach/accordion";
-import Link from "next/link";
+} from '@reach/accordion';
+import Link from 'next/link';
 
 export default function Jacucara() {
   return (
     <>
-      <div className="pb-32">
+      <div className='pb-32'>
         <Head>
           <Head>
             <title>
@@ -22,79 +22,79 @@ export default function Jacucara() {
               na Mata Atlântica
             </title>
             <meta
-              name="description"
-              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+              name='description'
+              content='Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas.'
             />
             <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
+              name='viewport'
+              content='width=device-width, initial-scale=1'
             />
-            <link rel="canonical" href="https://oama.eco.br/jacucara" />
+            <link rel='canonical' href='https://oama.eco.br/jacucara' />
 
             {/* Open Graph (para compartilhamento no Facebook, etc.) */}
             <meta
-              property="og:title"
-              content="Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica"
+              property='og:title'
+              content='Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica'
             />
             <meta
-              property="og:description"
-              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+              property='og:description'
+              content='Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas.'
             />
-            <meta property="og:image" content="/jacucara/figs/1.jpg" />
-            <meta property="og:url" content="https://oama.eco.br/jacucara" />
-            <meta property="og:type" content="website" />
+            <meta property='og:image' content='/jacucara/figs/1.jpg' />
+            <meta property='og:url' content='https://oama.eco.br/jacucara' />
+            <meta property='og:type' content='website' />
 
             {/* Twitter Card */}
-            <meta name="twitter:card" content="summary_large_image" />
+            <meta name='twitter:card' content='summary_large_image' />
             <meta
-              name="twitter:title"
-              content="Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica"
+              name='twitter:title'
+              content='Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara na Mata Atlântica'
             />
             <meta
-              name="twitter:description"
-              content="Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas."
+              name='twitter:description'
+              content='Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas.'
             />
-            <meta name="twitter:image" content="/jacucara/figs/1.jpg" />
+            <meta name='twitter:image' content='/jacucara/figs/1.jpg' />
           </Head>
         </Head>
 
         <Nav />
-        <div className=" relative hero-small md:hero min-h-1/2">
-          <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
-            <div className="absolute top-0 h-full w-full">
+        <div className='hero-small md:hero relative min-h-1/2'>
+          <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src="/jacucara/figs/1.jpg"
-                layout="fill"
+                src='/jacucara/figs/1.jpg'
+                layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
-                objectFit="cover"
-                objectPosition="top"
+                objectFit='cover'
+                objectPosition='top'
                 priority={true}
               ></Image>
             </div>
           </div>
         </div>
-        <div className="mt-16">
+        <div className='mt-16'>
           <h1
-            style={{ color: "#8f1858" }}
-            class="w-full text-5xl font-bold leading-tight text-center text-gray-800"
+            style={{ color: '#8f1858' }}
+            class='w-full text-center text-5xl font-bold leading-tight text-gray-800'
           >
             Campanha JACUÇARA
           </h1>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient2 w-72 md:w-96 opacity-25 my-0 py-0 rounded-t"></div>
+          <div class='mb-4 w-full'>
+            <div class='gradient2 mx-auto my-0 h-1 w-72 rounded-t py-0 opacity-25 md:w-96'></div>
           </div>
         </div>
-        <div class="container max-w-4xl mx-auto mt-16 ">
+        <div class='container mx-auto mt-16 max-w-4xl '>
           <P>
             A <B>Campanha Jacuçara</B> nasceu para divulgar a importância de
             duas espécies ameaçadas de extinção: a jacutinga e a jacuçara.
           </P>
           <P>
-            Agora fica fácil entender o porquê do nome Jacuçara, união do nome{" "}
+            Agora fica fácil entender o porquê do nome Jacuçara, união do nome{' '}
             <B>jacutinga</B>, ave exclusiva da Mata Atlântica, e <B>juçara</B>,
-            uma palmeira do mesmo bioma.{" "}
+            uma palmeira do mesmo bioma.{' '}
           </P>
           <P>
             A jacutinga <B>se alimenta</B> dos frutos da palmeira-juçara e,
@@ -115,29 +115,29 @@ export default function Jacucara() {
             sem floresta e sem o seu alimento favorito!
           </P>
           <P>
-            A campanha é uma iniciativa do{" "}
+            A campanha é uma iniciativa do{' '}
             <A
               href={
-                "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica"
+                'https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica'
               }
-              target="_blank"
+              target='_blank'
             >
               Plano de Ação Nacional para Conservação das Aves da Mata Atlântica
             </A>
             , organizado coletivamente pelas seguintes organizações:
           </P>
           <Logos />
-          <div className="flex my-8 justify-center">
+          <div className='my-8 flex justify-center'>
             <iframe
-              className="w-5/6 h-64 md:h-96"
-              src="https://www.youtube.com/embed/4NO3bjzNFLM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              className='h-64 w-5/6 md:h-96'
+              src='https://www.youtube.com/embed/4NO3bjzNFLM'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowfullscreen
             ></iframe>
           </div>
-          <div className="mt-12 mb-4">
+          <div className='mb-4 mt-12'>
             <H2>JUÇARA </H2>
             <H3>Conheça a espécie, uma planta-chave da Mata Atlântica</H3>
             <P>
@@ -147,29 +147,29 @@ export default function Jacucara() {
             </P>
           </div>
           <P>
-            A{" "}
+            A{' '}
             <B>
               juçara (<i>Euterpe edulis</i>)
             </B>
             , palmeira nativa da Mata Atlântica, é <B>fonte de alimento</B> para
-            uma grande diversidade de animais e, por isso, considerada uma{" "}
+            uma grande diversidade de animais e, por isso, considerada uma{' '}
             <B>espécie-chave</B> para a preservação de matas locais.
           </P>
           <P>
             Mas, se antes essa palmeira <B>era abundante</B> nessas terras, hoje
             está <B>vulnerável à extinção</B> na natureza. Atualmente, apenas
             cerca de <B>15%</B> do remanescente de Mata Atlântica é de habitat
-            adequado para a ocorrência da espécie.{" "}
+            adequado para a ocorrência da espécie.{' '}
           </P>
           <P>
             Além disso, a extração predatória para <B>consumo</B> do palmito
             causou um grande <B>declínio</B> populacional da espécie.
           </P>
           <Fig number={2} />
-          <div className="my-4">
+          <div className='my-4'>
             <P>
-              O fruto da juçara é <B>altamente nutritivo</B> e{" "}
-              <A href="https://www.scielo.br/j/aabc/a/sD9XKD8d4xkpDRV5LjLxshR/?format=pdf&lang=en">
+              O fruto da juçara é <B>altamente nutritivo</B> e{' '}
+              <A href='https://www.scielo.br/j/aabc/a/sD9XKD8d4xkpDRV5LjLxshR/?format=pdf&lang=en'>
                 serve de alimento para, ao menos, 58 espécies de aves e 21
                 espécies de mamíferos
               </A>
@@ -179,69 +179,69 @@ export default function Jacucara() {
             <P>
               Por esse motivo, a <B>escassez</B> dos frutos da juçara em uma
               floresta significa <B>menor oferta</B> de um importante recurso
-              alimentar para animais silvestres.{" "}
+              alimentar para animais silvestres.{' '}
             </P>
             <P>
               Dentre os animais que consomem o fruto, tucanos, jacutingas,
-              jacus, sabiás e arapongas são os principais responsáveis pela{" "}
+              jacus, sabiás e arapongas são os principais responsáveis pela{' '}
               <B>dispersão das sementes</B>.
             </P>
           </div>
           <Fig number={3} />
           <P>
             A <B>dispersão</B> das sementes da juçara pela fauna que consome
-            seus frutos é <B>fundamental</B> para a propagação da palmeira.{" "}
+            seus frutos é <B>fundamental</B> para a propagação da palmeira.{' '}
           </P>
           <P>
             Em florestas onde <B>aves frugívoras de grande porte</B>, como
             tucanos (<i>Ramphastos spp.</i>), jacus (<i>Penelope spp.</i>) e
-            jacutingas (<i>Aburria jacutinga</i>), ainda ocorrem,{" "}
+            jacutingas (<i>Aburria jacutinga</i>), ainda ocorrem,{' '}
             <B>as sementes de juçara são maiores</B> do que em florestas onde
-            encontramos apenas aves menores como os sabiás (<i>Turdus spp.</i>).{" "}
+            encontramos apenas aves menores como os sabiás (<i>Turdus spp.</i>).{' '}
           </P>
           <P>
             Isso mostra que as sementes estão sendo selecionadas de acordo com a
-            capacidade dos dispersores locais. Consequentemente,{" "}
-            <B>a ausência de aves de grande porte</B> nas florestas{" "}
+            capacidade dos dispersores locais. Consequentemente,{' '}
+            <B>a ausência de aves de grande porte</B> nas florestas{' '}
             <B>compromete</B> a geração de novas palmeiras, que produziriam
             frutos maiores.
           </P>
-          <div className="mt-8 mb-4">
+          <div className='mb-4 mt-8'>
             <H3>O consumo da juçara</H3>
           </div>
           <P>
-            Além de sua importância ambiental, a juçara tem grande{" "}
-            <B>relevância econômica e social</B>.{" "}
+            Além de sua importância ambiental, a juçara tem grande{' '}
+            <B>relevância econômica e social</B>.{' '}
           </P>
           <P>
             É utilizada na <B>alimentação humana</B> (palmito, polpa dos frutos
-            e botões florais) e já foi também um recurso na{" "}
+            e botões florais) e já foi também um recurso na{' '}
             <B>construção civil</B> (estipe como caibros, ripas e mourões).
           </P>
-          <div className="flex my-8 justify-center">
+          <div className='my-8 flex justify-center'>
             <iframe
-              className="w-5/6 h-64 md:h-96"
-              src="https://www.youtube.com/embed/FtL8dOPeu6U"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              className='h-64 w-5/6 md:h-96'
+              src='https://www.youtube.com/embed/FtL8dOPeu6U'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowfullscreen
             ></iframe>
           </div>
           <P>
             O palmito juçara é extraído do cerne do caule da palmeira. No
-            entanto, essa prática <B>mata a palmeira</B>.{" "}
+            entanto, essa prática <B>mata a palmeira</B>.{' '}
           </P>
           <P>
-            Além da palmeira juçara,{" "}
+            Além da palmeira juçara,{' '}
             <B>o palmito pode ser extraído de outras espécies de palmeiras</B>,
             como, por exemplo, a pupunha e o açaizeiro (ou açaí). A extração do
             palmito nessas outras espécies de palmeiras é uma solução
-            sustentável de consumo.{" "}
+            sustentável de consumo.{' '}
           </P>
           <P>
             Isso porque, enquanto a palmeira pupunha e o açaizeiro formam
-            touceiras, ou seja, vários caules,{" "}
+            touceiras, ou seja, vários caules,{' '}
             <B>a juçara possui tronco único. </B>
           </P>
           <P>
@@ -253,7 +253,7 @@ export default function Jacucara() {
             Além do corte direto de cada indivíduo ser responsável pela redução
             populacional da juçara, a <B>extração do palmito juçara</B> nas
             matas naturais tem o efeito indireto de reduzir a entrada de novos
-            indivíduos na população local.{" "}
+            indivíduos na população local.{' '}
           </P>
           <P>
             A cada indivíduo adulto derrubado da palmeira, há menos fontes de
@@ -263,17 +263,17 @@ export default function Jacucara() {
           <Fig number={4} />
           <P>
             Uma forma de conciliar a exploração, o consumo e a conservação dessa
-            palmeira é por meio da{" "}
+            palmeira é por meio da{' '}
             <B>substituição da exploração do palmito pelo fruto. </B>
           </P>
           <P>
-            O beneficiamento do fruto gera uma polpa saborosa e muito nutritiva,{" "}
+            O beneficiamento do fruto gera uma polpa saborosa e muito nutritiva,{' '}
             <B>com grande potencial comercial</B>.
           </P>
           <P>
-            O manejo da juçara, com enfoque nos frutos para{" "}
+            O manejo da juçara, com enfoque nos frutos para{' '}
             <B>obtenção de polpa</B>, é uma estratégia para a sua conservação,
-            aliada ao desenvolvimento da agricultura familiar.{" "}
+            aliada ao desenvolvimento da agricultura familiar.{' '}
           </P>
           <P>
             Quanto mais palmeiras na mata, melhor para os extratores do fruto,
@@ -282,13 +282,13 @@ export default function Jacucara() {
           <P>
             Para que a <B>extração do fruto</B> seja feita de maneira
             sustentável, é importante que ela não seja realizada completamente
-            <B>não seja realizada completamente</B>, e{" "}
+            <B>não seja realizada completamente</B>, e{' '}
             <B>uma parcela dos frutos</B>
             seja deixada para consumo e para ser dispersada pelos animais
-            silvestres.{" "}
+            silvestres.{' '}
           </P>
           <P>
-            Essa prática é também aliada do agricultor extrativista. A{" "}
+            Essa prática é também aliada do agricultor extrativista. A{' '}
             <B>dispersão da semente</B> da juçara pela fauna aumenta a
             quantidade da palmeira na área e, consequentemente, aumenta a
             quantidade de frutos que poderão ser explorados para o consumo e a
@@ -298,53 +298,53 @@ export default function Jacucara() {
             number={5}
             legend={
               <p>
-                Por Marina Vieira Souza. Ilustração{" "}
+                Por Marina Vieira Souza. Ilustração{' '}
                 <A
-                  href="http://cargocollective.com/patriciayamamoto/filter/Ju%25C3%25A7ara/Materiais-educativos"
-                  target="_blank"
+                  href='http://cargocollective.com/patriciayamamoto/filter/Ju%25C3%25A7ara/Materiais-educativos'
+                  target='_blank'
                 >
                   Patrícia Yamamoto
                 </A>
               </p>
             }
-          />{" "}
-          <div className="mt-12 mb-4">
+          />{' '}
+          <div className='mb-4 mt-12'>
             <H3>ONDE COMPRAR POLPA DE JUÇARA?</H3>
             <PlaceList />
           </div>
-          <div className="mt-12 mb-4">
+          <div className='mb-4 mt-12'>
             <H3>
               DISTRIBUIÇÃO GRATUITA DE MUDA DE JUÇARA PARA PROJETOS DE
               RESTAURAÇÃO
             </H3>
             <TreePlacesList />
           </div>
-          <div className="mt-12 mb-4">
+          <div className='mb-4 mt-12'>
             <H2>JACUTINGA</H2>
             <H3>Conheça a espécie de ave jardineira da Mata Atlântica</H3>
           </div>
           <P>
             Há uma espécie de ave com uma relação tão marcante com a palmeira
             juçara que a sua sobrevivência está fortemente relacionada com a
-            palmeira. Essa ave é a{" "}
+            palmeira. Essa ave é a{' '}
             <B>
               jacutinga (<i>Aburria jacutinga</i>)
             </B>
-            .{" "}
+            .{' '}
           </P>
           <Fig number={6} />
           <P>
             A jacutinga é uma <B>ave grande</B>: mede de 64 centímetros a 74
             centímetros e pesa entre 1,1 quilo e 1,4 quilo. Sua plumagem é
-            predominantemente preta, mas com um característico{" "}
+            predominantemente preta, mas com um característico{' '}
             <B>topete branco</B> e pontinhas brancas nas asas. Tem também um
             bico azulado e a <B>barbela (pele da região do pescoço)</B> nas
             cores azul e vermelha.
           </P>
-          <Fig number={7} />{" "}
+          <Fig number={7} />{' '}
           <P>
             Restrita à Mata Atlântica do Sudeste do Brasil, Argentina e
-            Paraguai, a jacutinga é uma espécie em <B>risco de extinção.</B>{" "}
+            Paraguai, a jacutinga é uma espécie em <B>risco de extinção.</B>{' '}
           </P>
           <P>
             A falta de seu recurso favorito, os frutos da palmeira juçara, não é
@@ -355,7 +355,7 @@ export default function Jacucara() {
           </P>
           <P>
             Ela é carinhosamente apelidada de <B>ave jardineira</B> da floresta,
-            pois espalha as sementes de muitos frutos dos quais se alimenta.{" "}
+            pois espalha as sementes de muitos frutos dos quais se alimenta.{' '}
           </P>
           <P>
             São registrados pelo menos <B>41 frutos diferentes</B> consumidos
@@ -365,23 +365,23 @@ export default function Jacucara() {
             partes altas das árvores emergentes, mas pode ocasionalmente descer
             até o solo para pegar frutos caídos.
           </P>
-          <div className="mt-12 mb-4">
+          <div className='mb-4 mt-12'>
             <H2>O que significa estar em risco de extinção?</H2>
           </div>
           <P>
             <B>Extinção significa deixar de existir</B>. A extinção de uma
             espécie significa seu desaparecimento definitivo.
           </P>
-          <Fig number={8} />{" "}
+          <Fig number={8} />{' '}
           <P>
             Quando dizemos que uma espécie está <B>em risco de extinção</B>,
-            isso <B>significa</B> que as populações dessa espécies estão em{" "}
+            isso <B>significa</B> que as populações dessa espécies estão em{' '}
             <B>situação de declínio</B>, isto é, que o número de indivíduos está
             reduzindo ou que eles existem em um número tão pequeno na natureza,
             e, por isso, as chances de desaparecer são maiores.
           </P>
           <P>
-            Apesar de relativamente comum no meio ambiente,{" "}
+            Apesar de relativamente comum no meio ambiente,{' '}
             <B>
               o processo de extinção está sendo intensificado pela ação humana
             </B>
@@ -415,40 +415,40 @@ export default function Jacucara() {
           <P>
             Os resultados dessa avaliação indicam o risco de extinção para cada
             uma das espécies, que podem ser classificadas em uma dentre as nove
-            diferentes categorias:{" "}
+            diferentes categorias:{' '}
           </P>
-          <ul className="list-disc text-gray-600 px-8 md:px-0 mb-2">
+          <ul className='mb-2 list-disc px-8 text-gray-600 md:px-0'>
             <li>
               Não analisada (NE), quando ainda não há avaliação da respectiva
-              espécie;{" "}
+              espécie;{' '}
             </li>
             <li>
               Dados insuficientes (DD), quando não há muitas informações sobre a
-              espécie;{" "}
+              espécie;{' '}
             </li>
             <li>
-              Pouco preocupante (LC), quando a espécie vai muito bem, obrigada;{" "}
+              Pouco preocupante (LC), quando a espécie vai muito bem, obrigada;{' '}
             </li>
             <li>
               Quase ameaçada (NT), quando há indícios de declínio ou ameaças à
-              perpetuação da espécie no horizonte;{" "}
+              perpetuação da espécie no horizonte;{' '}
             </li>
             <li>
               Vulnerável (VU), quando a espécie apresenta alto risco de
-              extinção, caso não haja uma mudança no cenário;{" "}
+              extinção, caso não haja uma mudança no cenário;{' '}
             </li>
             <li>
               Em perigo (EN), quando o risco de a espécie desaparecer num futuro
-              próximo é muito alto; Criticamente ameaçada{" "}
+              próximo é muito alto; Criticamente ameaçada{' '}
             </li>
             <li>
               (CR), quando a espécie está sob risco iminente de extinção e
-              precisa de cuidados urgentes para não desaparecer;{" "}
+              precisa de cuidados urgentes para não desaparecer;{' '}
             </li>
             <li>
               Extinta na natureza (EW), quando a espécie não tem mais
               representantes na natureza, apenas aqueles mantidos sob cuidados
-              humanos ex situ, e, por fim,{" "}
+              humanos ex situ, e, por fim,{' '}
             </li>
             <li>
               Extinta (EX), quando é confirmado que morreu até o último
@@ -457,27 +457,27 @@ export default function Jacucara() {
           </ul>
           <P>
             São consideradas como <B>espécies ameaçadas</B> apenas aquelas
-            classificadas como VU, EN e CR.{" "}
+            classificadas como VU, EN e CR.{' '}
           </P>
           <P>
-            A <B>palmeira juçara</B> está classificada como VU,{" "}
-            <B>vulnerável à extinção</B>, e a jacutinga como EN,{" "}
+            A <B>palmeira juçara</B> está classificada como VU,{' '}
+            <B>vulnerável à extinção</B>, e a jacutinga como EN,{' '}
             <B>em perigo de extinção</B>.
           </P>
-          <Fig number={9} />{" "}
-          <div className="mt-12 mb-4">
+          <Fig number={9} />{' '}
+          <div className='mb-4 mt-12'>
             <H2>O que está sendo feito para proteger essas espécies?</H2>
-            <Accordion collapsible multiple className="mt-6">
+            <Accordion collapsible multiple className='mt-6'>
               <Item>
-                {" "}
+                {' '}
                 <Acc1 />
               </Item>
               <Item>
-                {" "}
+                {' '}
                 <Acc2 />
               </Item>
               <Item>
-                {" "}
+                {' '}
                 <Acc3 />
               </Item>
             </Accordion>
@@ -487,20 +487,20 @@ export default function Jacucara() {
             number={12}
             legend={
               <p>
-                Ilustração{" "}
-                <A href="https://www.instagram.com/leo_marujo/" target="_blank">
+                Ilustração{' '}
+                <A href='https://www.instagram.com/leo_marujo/' target='_blank'>
                   Leonardo Marujo
                 </A>
               </p>
             }
           />
-          <H2 className="mb-8">
+          <H2 className='mb-8'>
             O que você pode fazer pela conservação destas espécies?
           </H2>
           <Fig number={10} />
-          <H2 id="files">Materiais Relacionados</H2>
+          <H2 id='files'>Materiais Relacionados</H2>
           <Pags></Pags>
-          <Fig number={11} />{" "}
+          <Fig number={11} />{' '}
         </div>
       </div>
     </>
@@ -508,13 +508,13 @@ export default function Jacucara() {
 }
 
 const P = ({ children, ...props }) => (
-  <p class="text-gray-600 px-8 md:px-0 mb-2">{children}</p>
+  <p class='mb-2 px-8 text-gray-600 md:px-0'>{children}</p>
 );
 
 const H2 = ({ children, ...props }) => (
   <h2
-    style={{ color: "#8f1858" }}
-    className={`font-bold text-3xl px-8 md:px-0 mb-4 ${props.className}`}
+    style={{ color: '#8f1858' }}
+    className={`mb-4 px-8 text-3xl font-bold md:px-0 ${props.className}`}
     id={props.id}
   >
     {children}
@@ -522,45 +522,45 @@ const H2 = ({ children, ...props }) => (
 );
 
 const H3 = ({ children }) => (
-  <h3 style={{ color: "#c02176" }} class="my-4 px-8 text-xl md:px-0 mb-2">
+  <h3 style={{ color: '#c02176' }} class='my-4 mb-2 px-8 text-xl md:px-0'>
     {children}
   </h3>
 );
 
 const H4 = ({ children }) => (
   <h4
-    style={{ color: "#c02176" }}
-    class="my-4 px-8 text-lg font-bold md:px-0 mb-2"
+    style={{ color: '#c02176' }}
+    class='my-4 mb-2 px-8 text-lg font-bold md:px-0'
   >
     {children}
   </h4>
 );
 
 const AccH3 = ({ children }) => (
-  <h3 style={{ color: "#c02176" }} class="text-left px-8 py-6 text-2xl ">
+  <h3 style={{ color: '#c02176' }} class='px-8 py-6 text-left text-2xl '>
     {children}
   </h3>
 );
 
 const ArrowH3 = ({ children, className }) => (
-  <h3 style={{ color: "#c02176" }} className={`px-8 py-6 text-lg ${className}`}>
+  <h3 style={{ color: '#c02176' }} className={`px-8 py-6 text-lg ${className}`}>
     {children}
   </h3>
 );
 
 const A = ({ children, href, noTarget }) => (
   <a
-    style={{ color: "#8f1858" }}
-    className="underline"
+    style={{ color: '#8f1858' }}
+    className='underline'
     href={href}
-    target={!noTarget && "_blank"}
+    target={!noTarget && '_blank'}
   >
     {children}
   </a>
 );
 
 const B = ({ children }) => (
-  <span style={{ color: "#8f1858" }} className="font-bold">
+  <span style={{ color: '#8f1858' }} className='font-bold'>
     {children}
   </span>
 );
@@ -570,15 +570,15 @@ const Acc3 = () => {
 
   return (
     <>
-      <AccordionButton className=" border-black w-full flex justify-between items-center">
+      <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>Da produção ao consumo consciente: protegendo a juçara</AccH3>
-        <ArrowH3 className={` ${isExpanded ? "hidden" : ""}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? "" : "hidden"}`}>&#9650;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionButton>
-      <AccordionPanel className="px-8 py-4">
+      <AccordionPanel className='px-8 py-4'>
         <P>
           As ações para proteger essa espécie-chave para a Mata Atlântica
-          acontecem em múltiplas frentes, ao mesmo tempo.{" "}
+          acontecem em múltiplas frentes, ao mesmo tempo.{' '}
         </P>
         <P>
           Divulgar informações sobre a espécie, suas ameaças e formas adequadas
@@ -586,8 +586,8 @@ const Acc3 = () => {
           preservação da espécie e entenda o impacto de seu consumo – positiva
           ou negativamente. Para fazer essa ponte de comunicação e informação
           com a sociedade, foram publicados diversas cartilhas, vídeos e até
-          livros de receitas online. Você encontra uma seleção desse material{" "}
-          <A noTarget href="#files">
+          livros de receitas online. Você encontra uma seleção desse material{' '}
+          <A noTarget href='#files'>
             aqui
           </A>
           .
@@ -596,10 +596,10 @@ const Acc3 = () => {
           Ações diretas para tentar aumentar o número de indivíduos de juçara
           presentes nas matas são realizadas por meio de chuvas de sementes. A
           Fundação Florestal (FF), instituição ligada à Secretaria de
-          Infraestrutura e Meio Ambiente (SIMA) de São Paulo,{" "}
-          <A href="https://www.infraestruturameioambiente.sp.gov.br/2021/07/lancamento-aereo-de-sementes-para-reflorestamento-de-especie-ameacada-de-extincao/">
+          Infraestrutura e Meio Ambiente (SIMA) de São Paulo,{' '}
+          <A href='https://www.infraestruturameioambiente.sp.gov.br/2021/07/lancamento-aereo-de-sementes-para-reflorestamento-de-especie-ameacada-de-extincao/'>
             lançou cerca de 2 toneladas
-          </A>{" "}
+          </A>{' '}
           de sementes de juçara sobre as matas do Parque Estadual da Serra do
           Mar. Essa ação fez parte de um programa de longa duração para promover
           a restauração e a conservação da palmeira juçara, e o propósito é
@@ -617,7 +617,7 @@ const Acc3 = () => {
           silvestre e sementes suficientes para serem dispersadas e, dessa
           forma, recrutar novas plântulas da juçara no local. No caso de quem
           faz a extração do fruto em áreas naturais, é importante também
-          devolver as sementes para o local após a extração da polpa do fruto.{" "}
+          devolver as sementes para o local após a extração da polpa do fruto.{' '}
         </P>
         <P>
           O Sul do país é palco também de importantes iniciativas que combinam
@@ -644,13 +644,13 @@ const Acc3 = () => {
         <P>
           Atualmente, com apoio de um Fundo de Adaptação Climática do Programa
           das Nações Unidas para o Desenvolvimento (PNUD), o projeto
-          <A href="https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/">
-            {" "}
+          <A href='https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/'>
+            {' '}
             “Combinando renda com proteção florestal”, liderado pela ONG Centro
-            Ecológico{" "}
-          </A>{" "}
+            Ecológico{' '}
+          </A>{' '}
           oferece suporte técnico e logístico para a produção de juçara em
-          sistemas agroecológicos no litoral norte gaúcho e no sul catarinense.{" "}
+          sistemas agroecológicos no litoral norte gaúcho e no sul catarinense.{' '}
         </P>
       </AccordionPanel>
     </>
@@ -662,15 +662,15 @@ const Acc2 = () => {
 
   return (
     <>
-      <AccordionButton className=" border-black w-full flex justify-between items-center">
+      <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>
           Jacutinga sem fronteiras: a conservação da espécie na Mata Atlântica
           argentina
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? "hidden" : ""}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? "" : "hidden"}`}>&#9650;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionButton>
-      <AccordionPanel className="px-8 py-4">
+      <AccordionPanel className='px-8 py-4'>
         <P>
           O Plano Nacional de Conservação da Jacutinga na Argentina faz parte
           dos compromissos assumidos pela Aves Argentinas, o Ministério do Meio
@@ -712,14 +712,14 @@ const Acc1 = () => {
   const { isExpanded } = useAccordionItemContext();
   return (
     <>
-      <AccordionButton className=" border-black w-full flex justify-between items-center">
+      <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>
-          De volta pra casa: a reintrodução da jacutinga na natureza{" "}
+          De volta pra casa: a reintrodução da jacutinga na natureza{' '}
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? "hidden" : ""}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? "" : "hidden"}`}>&#9650;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionButton>
-      <AccordionPanel className="px-8 py-4">
+      <AccordionPanel className='px-8 py-4'>
         <P>
           Em 2010, considerando-se a alarmante situação de conservação da
           jacutinga e as constantes pressões ao habitat da espécie,
@@ -757,7 +757,7 @@ const Acc1 = () => {
           Macacu, na Reserva Ecológica de Guapiaçu (REGUA), no Estado do Rio de
           Janeiro. Desde 2019, as reintroduções concentraram-se em um único
           local – São Francisco Xavier –, medida a conservação indicada pela
-          Análise da Viabilidade Populacional, utilizando o Vortex.{" "}
+          Análise da Viabilidade Populacional, utilizando o Vortex.{' '}
         </P>
         <P>
           As ações do projeto envolvem testes de sanidade das aves, preparação
@@ -771,12 +771,12 @@ const Acc1 = () => {
           SAVE Brasil, a jacutinga foi elencada como uma das 25 espécies
           prioritárias para a conservação, a partir de um acordo de cooperação
           técnica entre a Associação de Zoológicos e Aquários do Brasil (AZAB),
-          o Ministério do Meio Ambiente e o ICMBio, para a condução do{" "}
+          o Ministério do Meio Ambiente e o ICMBio, para a condução do{' '}
           <i>studbook</i> da espécie. Os studbooks são a ferramenta mais
           importante na gestão científica de populações ex situ de animais
           silvestres, assegurando tamanho suficiente, estabilidade demográfica e
-          alto nível de diversidade genética. O Parque das Aves é o{" "}
-          <i>studbook keeper</i> da jacutinga.{" "}
+          alto nível de diversidade genética. O Parque das Aves é o{' '}
+          <i>studbook keeper</i> da jacutinga.{' '}
         </P>
         <P>
           O projeto realizou a primeira soltura em junho de 2016 e, até o
@@ -803,8 +803,8 @@ const Acc1 = () => {
 };
 
 const Item = ({ children }) => (
-  <AccordionItem className="border-purple-100 rounded-md border-2">
-    {children}{" "}
+  <AccordionItem className='rounded-md border-2 border-purple-100'>
+    {children}{' '}
   </AccordionItem>
 );
 
@@ -816,18 +816,18 @@ function Fig(props) {
   // const image = {default:{height:1,width:1}}
 
   return (
-    <div className="mb-6">
+    <div className='mb-6'>
       {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
       <Image
-        objectFit={objectFit || size === "large" ? "contain" : "cover"}
-        layout="responsive"
+        objectFit={objectFit || size === 'large' ? 'contain' : 'cover'}
+        layout='responsive'
         height={image.default.height}
         width={image.default.width}
         src={image}
       />
       {/* </div> */}
 
-      <legend className="text-gray-500 text-sm mt-4">{legend}</legend>
+      <legend className='mt-4 text-sm text-gray-500'>{legend}</legend>
     </div>
   );
 }
@@ -838,18 +838,18 @@ function Logo(props) {
   // const image = {default:{height:1,width:1}}
 
   const fsize =
-    number === "CNCFlora" || number === "AZAB" || number === "AZAB"
+    number === 'CNCFlora' || number === 'AZAB' || number === 'AZAB'
       ? 30
-      : number === "OAMA"
+      : number === 'OAMA'
       ? 90
       : 50;
 
   return (
-    <Link href={website} target="_blank">
-      <div className="cursor-pointer">
+    <Link href={website} target='_blank'>
+      <div className='cursor-pointer'>
         {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
         <Image
-          objectFit={"contain"}
+          objectFit={'contain'}
           height={fsize}
           width={fsize * (-image.default.width / -image.default.height)}
           src={image}
@@ -862,26 +862,26 @@ function Logo(props) {
 
 const logos = [
   {
-    name: "AZAB",
-    website: "https://www.azab.org.br/",
+    name: 'AZAB',
+    website: 'https://www.azab.org.br/',
   },
-  { name: "Aves Argentinas", website: "https://www.avesargentinas.org.ar/" },
+  { name: 'Aves Argentinas', website: 'https://www.avesargentinas.org.ar/' },
 
-  { name: "CNCFlora", website: "http://cncflora.jbrj.gov.br/portal" },
-  { name: "JBRJ", website: "https://www.gov.br/jbrj/pt-br" },
-  { name: "OAMA", website: "https://oama.eco.br" },
+  { name: 'CNCFlora', website: 'http://cncflora.jbrj.gov.br/portal' },
+  { name: 'JBRJ', website: 'https://www.gov.br/jbrj/pt-br' },
+  { name: 'OAMA', website: 'https://oama.eco.br' },
 
-  { name: "Parque das Aves", website: "https://www.parquedasaves.com.br/" },
-  { name: "save", website: "http://savebrasil.org.br/" },
-  { name: "PN Iguaçu", website: "https://cataratasdoiguacu.com.br/" },
-  { name: "cemave icmbio", website: "https://www.gov.br/icmbio/pt-br" },
+  { name: 'Parque das Aves', website: 'https://www.parquedasaves.com.br/' },
+  { name: 'save', website: 'http://savebrasil.org.br/' },
+  { name: 'PN Iguaçu', website: 'https://cataratasdoiguacu.com.br/' },
+  { name: 'cemave icmbio', website: 'https://www.gov.br/icmbio/pt-br' },
 ];
 
 const Logos = () => {
   return (
-    <div className="w-100 grid grid-cols-2 p-12 md:p-0 md:grid-cols-10 gap-4 items-center">
+    <div className='w-100 grid grid-cols-2 items-center gap-4 p-12 md:grid-cols-10 md:p-0'>
       {logos.map((logo) => (
-        <div className="flex justify-center">
+        <div className='flex justify-center'>
           <Logo website={logo.website} number={logo.name}></Logo>
         </div>
       ))}
@@ -890,54 +890,54 @@ const Logos = () => {
 };
 
 const pags = [
-  { name: "doc", website: "https://www.youtube.com/watch?v=FtL8dOPeu6U" },
+  { name: 'doc', website: 'https://www.youtube.com/watch?v=FtL8dOPeu6U' },
   {
-    name: "wikiaves jacutinga",
-    website: "https://www.wikiaves.com.br/wiki/jacutinga",
+    name: 'wikiaves jacutinga',
+    website: 'https://www.wikiaves.com.br/wiki/jacutinga',
   },
   {
-    name: "folder",
+    name: 'folder',
     website:
-      "https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf",
+      'https://oama.eco.br/publicacoes/files/informativo%20de%20distribui%C3%A7%C3%A3o%20-%20Ju%C3%A7ara.pdf',
   },
 
   {
-    name: "colorir jacutinga",
+    name: 'colorir jacutinga',
     website:
-      "https://wwfbr.awsassets.panda.org/downloads/encarte_iguacu_jacutinga_a4_final_pt.pdf",
+      'https://wwfbr.awsassets.panda.org/downloads/encarte_iguacu_jacutinga_a4_final_pt.pdf',
   },
   {
-    name: "news",
+    name: 'news',
     website:
-      "https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/",
+      'https://midianinja.org/news/a-contribuicao-do-cultivo-do-acai-jucara-para-a-nutricao-e-preservacao-ambiental-no-sul-do-pais/',
   },
   {
-    name: "rehab",
+    name: 'rehab',
     website:
-      "https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/",
+      'https://blog.parquedasaves.com.br/2022/08/como-as-jacutingas-do-parque-das-aves-aprendem-a-viver-na-floresta/',
   },
   {
-    name: "cncflora",
+    name: 'cncflora',
     website:
-      "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis",
+      'http://cncflora.jbrj.gov.br/portal/pt-br/profile/Euterpe%20edulis',
   },
 
   {
-    name: "palmito_legal",
-    website: "https://youtu.be/BORRYwKCkdA",
+    name: 'palmito_legal',
+    website: 'https://youtu.be/BORRYwKCkdA',
   },
 
   {
-    name: "livro_jucara",
-    website: "https://oama.eco.br/publicacoes/files/livro_jucara.pdf",
+    name: 'livro_jucara',
+    website: 'https://oama.eco.br/publicacoes/files/livro_jucara.pdf',
   },
 ];
 
 const Pags = () => {
   return (
-    <div className="grid grid-cols-1 p-12 md:p-0 md:grid-cols-3 gap-4 items-center">
+    <div className='grid grid-cols-1 items-center gap-4 p-12 md:grid-cols-3 md:p-0'>
       {pags.map((logo) => (
-        <div className="flex justify-center">
+        <div className='flex justify-center'>
           <Pag website={logo.website} number={logo.name}></Pag>
         </div>
       ))}
@@ -952,11 +952,11 @@ function Pag(props) {
 
   const fsize = 500;
   return (
-    <Link href={website} target="_blank">
-      <div className="cursor-pointer">
+    <Link href={website} target='_blank'>
+      <div className='cursor-pointer'>
         {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
         <Image
-          objectFit={"contain"}
+          objectFit={'contain'}
           height={fsize}
           width={fsize * (-image.default.width / -image.default.height)}
           src={image}
@@ -968,49 +968,56 @@ function Pag(props) {
 }
 
 const places = {
-  "Rio de Janeiro": [
+  'Rio de Janeiro': [
     {
-      name: "Associação Juçara Viva",
-      location: "Resende, RJ",
-      socialMedia: "@jucaraviva",
+      name: 'Associação Juçara Viva',
+      location: 'Resende, RJ',
+      socialMedia: '@jucaraviva',
     },
     {
-      name: "Juçai",
-      website: "jucai.com.br",
-    },
-  ],
-  "Santa Catarina": [
-    {
-      name: "Açai Juçara da Montanha",
-      location: "Florianópolis, SC",
-      socialMedia: "@acaijucara",
-      website: "acaijucara.com.br",
-    },
-    {
-      name: "Açaí Juçara Barbacuá",
-      location: "Praia Grande, SC",
-      socialMedia: "@acaibarbacua",
-      website: "acaibarbacua.com",
+      name: 'Juçai',
+      website: 'jucai.com.br',
     },
   ],
-  "São Paulo": [
+  'Santa Catarina': [
     {
-      name: "Sítio Agroflorestal Abaetetuba",
-      location: "Ubatuba, SP",
-      socialMedia: "@sitio.abaetetuba",
+      name: 'Açai Juçara da Montanha',
+      location: 'Florianópolis, SC',
+      socialMedia: '@acaijucara',
+      website: 'acaijucara.com.br',
     },
     {
-      name: "Sítio das Palmeiras",
-      location: "Ubatuba, SP",
-      socialMedia: "@sitiodaspalmeirasuba",
+      name: 'Açaí Juçara Barbacuá',
+      location: 'Praia Grande, SC',
+      socialMedia: '@acaibarbacua',
+      website: 'acaibarbacua.com',
     },
   ],
-  "Rio Grande do Sul": [
+  'São Paulo': [
     {
-      name: "Cooperativa Econativa",
-      location: "Três Cachoeiras, RS",
-      phone: "(51) 999774531",
-      website: "econativa.coop.br",
+      name: 'Sítio Agroflorestal Abaetetuba',
+      location: 'Ubatuba, SP',
+      socialMedia: '@sitio.abaetetuba',
+    },
+    {
+      name: 'Sítio das Palmeiras',
+      location: 'Ubatuba, SP',
+      socialMedia: '@sitiodaspalmeirasuba',
+    },
+  ],
+  'Rio Grande do Sul': [
+    {
+      name: 'Cooperativa Econativa',
+      location: 'Três Cachoeiras, RS',
+      phone: '(51) 999774531',
+      website: 'econativa.coop.br',
+    },
+  ],
+  'Espírito Santo': [
+    {
+      name: 'YÇARA Extrativista',
+      location: 'Santa Teresa, ES',
+      socialMedia: '@ycara.extrativista',
     },
   ],
 };
@@ -1019,21 +1026,21 @@ function PlaceList() {
   return (
     <div>
       {Object.keys(places).map((state) => (
-        <div className="mt-8" key={state}>
+        <div className='mt-8' key={state}>
           <H4>{state}</H4>
           {places[state].map((place) => (
-            <div className="mb-6" key={place.name}>
-              <h5 className=" font-bold">{place.name}</h5>
+            <div className='mb-6' key={place.name}>
+              <h5 className='font-bold '>{place.name}</h5>
               <p>{place.location}</p>
               {place.socialMedia && (
                 <p>
                   <A
                     href={`https://instagram.com/${place.socialMedia.replace(
-                      "@",
-                      ""
+                      '@',
+                      ''
                     )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     {place.socialMedia}
                   </A>
@@ -1043,8 +1050,8 @@ function PlaceList() {
                 <p>
                   <A
                     href={place.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     {place.website}
                   </A>
@@ -1060,27 +1067,27 @@ function PlaceList() {
 }
 
 const treePlaces = {
-  "Minas Gerais": [
+  'Minas Gerais': [
     {
-      name: "Parque Estadual do Rio Doce",
+      name: 'Parque Estadual do Rio Doce',
       website:
-        "https://www.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_avisar_cadastro&id_orgao_acesso_externo=0&CSRF_TOKEN=cfdd0939cf8f5a2dd3144b507599055cda7e70c5",
+        'https://www.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_avisar_cadastro&id_orgao_acesso_externo=0&CSRF_TOKEN=cfdd0939cf8f5a2dd3144b507599055cda7e70c5',
     },
   ],
-  "Rio de Janeiro": [
+  'Rio de Janeiro': [
     {
-      name: "Parque Estadual da Pedra Selada",
+      name: 'Parque Estadual da Pedra Selada',
       website:
-        "https://www.inea.rj.gov.br/biodiversidade-territorio/conheca-as-unidades-de-conservacao/parque-estadual-da-pedra-selada/",
+        'https://www.inea.rj.gov.br/biodiversidade-territorio/conheca-as-unidades-de-conservacao/parque-estadual-da-pedra-selada/',
     },
     {
-      name: "Maple Leaf Ecovillage",
-      website: "http://mapleleafecovillage.com/",
+      name: 'Maple Leaf Ecovillage',
+      website: 'http://mapleleafecovillage.com/',
     },
     {
-      name: "Jardim Botânico do Rio de Janeiro",
+      name: 'Jardim Botânico do Rio de Janeiro',
       website:
-        "https://www.gov.br/pt-br/servicos/obter-doacao-de-mudas-do-jardim-botanico-do-rio-de-janeiro",
+        'https://www.gov.br/pt-br/servicos/obter-doacao-de-mudas-do-jardim-botanico-do-rio-de-janeiro',
     },
   ],
 };
@@ -1097,8 +1104,8 @@ function TreePlacesList() {
                 <p>
                   <A
                     href={place.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     {place.name}
                   </A>

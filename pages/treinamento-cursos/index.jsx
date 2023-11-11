@@ -16,9 +16,9 @@ export default function Treinamento() {
         </Head>
 
         <Nav />
-        <div className=" relative hero-small md:hero min-h-1/2">
-          <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
-            <div className="absolute top-0 h-full w-full">
+        <div className="relative hero-small md:hero min-h-1/2">
+          <div className="items-center h-full pt-32 lg:pb-16 md:pb-16 justify-items-center">
+            <div className="absolute top-0 w-full h-full">
               <Image
                 // className="h-32"
                 src="/heros/quem_somos.jpg"
@@ -32,7 +32,7 @@ export default function Treinamento() {
             </div>
           </div>
         </div>
-        <div className="w-3/4 sm:max-w-6xl mx-auto">
+        <div className="w-3/4 mx-auto sm:max-w-6xl">
           <div className="mt-16">
             <div className="mb-24">
               <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
@@ -42,7 +42,7 @@ export default function Treinamento() {
               <div class="w-full mb-">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
               </div>
-              <p className="sm:p-12 text-md sm:text-lg text-gray-600">
+              <p className="text-gray-600 sm:p-12 text-md sm:text-lg">
                 A capacitação e o treinamento de profissionais para o emprego de
                 técnicas de estudo e pesquisa em Ornitologia são essenciais para
                 a qualidade dos trabalhos desenvolvidos e dos dados coletados,
@@ -62,7 +62,7 @@ export default function Treinamento() {
           </div>
 
           <div className="">
-            <div className=" hidden sm:block relative w-full sm:h-medium">
+            <div className="relative hidden w-full sm:block sm:h-medium">
               <Image
                 objectFit="contain"
                 // width={100}
@@ -71,7 +71,7 @@ export default function Treinamento() {
                 layout="fill"
               />
             </div>
-            <div className=" sm:hidden relative w-full h-medium">
+            <div className="relative w-full sm:hidden h-medium">
               <Image
                 objectFit="contain"
                 // width={100}
@@ -86,7 +86,7 @@ export default function Treinamento() {
             </h2>
             {/* <div className="flex flex-col sm:flex-row"> */}
             <div className="w-full my-auto">
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 Em 2022, demos início ao nosso programa de treinamento em
                 monitoramento de avifauna. Nosso programa é voltado para
                 capacitar e formar ornitólogos na coleta de dados de campo com
@@ -94,7 +94,7 @@ export default function Treinamento() {
                 programa é criar oportunidades de treinamento intensivo, de
                 imersão e de longo-prazo para ornitólogos de campo.
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 O nosso treinamento foi estruturado com base no programa do
                 Klamath Bird Observatory, adaptado para a nossa realidade local
                 e segue as diretrizes do @icmbio.cemave e a legislação ambiental
@@ -107,14 +107,14 @@ export default function Treinamento() {
                 Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em
                 Bocaina de Minas/MG, Serra da Mantiqueira.
               </p>
-              <p className="text-gray-600 mb-4 ">
+              <p className="mb-4 text-gray-600 ">
                 O ano de 2022 foi nosso primeiro ano de treinamento e aprendemos
                 muito sobre toda a logística e rotina das atividades. Com base
                 nisso, ajustamos o programa para melhorar a experiência de cada
                 trainee em 2023.
               </p>
               <TrainingCarousel></TrainingCarousel>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 Este ano teremos diferentes modalidades de treinamento.
                 Modalidade 6 meses (1 vaga) e modalidade 3 meses (4 vagas).
                 Devido a inexistência de financiamento externo e para viabilizar
@@ -127,7 +127,7 @@ export default function Treinamento() {
                 Oferecemos até duas bolsas integrais e uma bolsa parcial para as
                 quais todos podem se candidatar.
               </p>
-              <div className=" hidden sm:block relative w-full sm:h-medium">
+              <div className="relative hidden w-full sm:block sm:h-medium">
                 <Image
                   objectFit="contain"
                   // width={100}
@@ -136,7 +136,7 @@ export default function Treinamento() {
                   layout="fill"
                 />
               </div>
-              <div className=" sm:hidden relative w-full h-medium">
+              <div className="relative w-full sm:hidden h-medium">
                 <Image
                   objectFit="contain"
                   // width={100}
@@ -146,13 +146,13 @@ export default function Treinamento() {
                 />
               </div>
 
-              {/* <p className="text-gray-600 mb-4">
+              {/* <p className="mb-4 text-gray-600">
                 O treinamento é intenso, com muitas horas de campo e de estudo
                 semanais. As inscrições permanecerão abertas até 20 de janeiro
                 de 2023. Para baixar a chamada para o programa com mais
                 detalhes,{" "}
                 <a
-                  className="underline text-yellow-600"
+                  className="text-yellow-600 underline"
                   href="/treinamento-cursos/files/Programa-Treinamento-OAMa2023.pdf"
                   target={"_blank"}
                 >
@@ -160,7 +160,7 @@ export default function Treinamento() {
                 </a>
                 . Para se inscrever, preencha o{" "}
                 <a
-                  className="underline text-yellow-600"
+                  className="text-yellow-600 underline"
                   target={"_blank"}
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdE4vT0vfkcmenB-sN5NQKZ1cvNZYOkRfOGLNhqXfvh8CLVBA/viewform"
                 >
@@ -174,7 +174,7 @@ export default function Treinamento() {
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos
             </h2>
-            {/* <div className="flex mb-8 flex-col sm:flex-row ">
+            {/* <div className="flex flex-col mb-8 sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -187,14 +187,14 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className="w-full  my-auto sm:w-2/3">
-                <p className="text-gray-600 text-lg font-bold">
+              <div className="w-full my-auto sm:w-2/3">
+                <p className="text-lg font-bold text-gray-600">
                   Curso Online Análise de Mudas e Classificação de idade em Aves
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   Adiado para 5 e 6 de março 2022
                 </p>
-                <p className="text-gray-500 text-md font-bold">Online</p>
+                <p className="font-bold text-gray-500 text-md">Online</p>
                 <p className="text-gray-600 ">
                   O curso teórico de Análise de Muda e Classificação de Idade em
                   Aves (CAMCI) acontecerá de forma remota, totalmente online.
@@ -216,7 +216,7 @@ export default function Treinamento() {
                   <a
                     href="https://www.sympla.com.br/curso-de-analise-de-mudas-e-classificacao-de-idade-em-aves__1452863"
                     target="_blank"
-                    className="underline text-yellow-600 cursor-pointer"
+                    className="text-yellow-600 underline cursor-pointer"
                   >
                     Para inscrição e mais informações, acesse a plataforma do
                     curso
@@ -238,19 +238,19 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className="w-full sm:w-2/3  my-auto">
-                <p className="text-gray-600 text-lg font-bold">
+              <div className="w-full my-auto sm:w-2/3">
+                <p className="text-lg font-bold text-gray-600">
                   II Curso Teórico de Análise de Mudas e Classificação de idade
                   em Aves
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   25 e 26 de junho de 2022
                 </p>
-                <p className="text-gray-500 text-md font-bold">Online</p>
+                <p className="font-bold text-gray-500 text-md">Online</p>
                 <p className="text-gray-600 ">
                   <span className="font-bold">
                     Inscrições e mais informações
-                    <span className="underline  text-yellow-600 cursor-pointer">
+                    <span className="text-yellow-600 underline cursor-pointer">
                       <a href="https://www.sympla.com.br/ii-curso-de-analise-de-muda-e-classificacao-de-idade-em-aves__1587958">
                         {" "}
                         aqui.{" "}
@@ -283,7 +283,7 @@ export default function Treinamento() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row mb-8">
+            <div className="flex flex-col mb-8 sm:flex-row">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -296,18 +296,18 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className="w-full sm:w-2/3  my-auto">
-                <p className="text-gray-600 text-lg font-bold">
+              <div className="w-full my-auto sm:w-2/3">
+                <p className="text-lg font-bold text-gray-600">
                   II Curso Teórico Básico de Anilhamento - OAMa + Aves de Noronha
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   09 e 10 de julho de 2022
                 </p>
-                <p className="text-gray-500 text-md font-bold">Online</p>
+                <p className="font-bold text-gray-500 text-md">Online</p>
                 <p className="text-gray-600 ">
                   <span className="font-bold">
                     Inscrições e mais informações
-                    <span className="underline  text-yellow-600 cursor-pointer">
+                    <span className="text-yellow-600 underline cursor-pointer">
                       <a href="https://www.sympla.com.br/ii-curso-de-anilhamento-teorico__1588058">
                         {" "}
                         aqui.{" "}
@@ -336,7 +336,7 @@ export default function Treinamento() {
               </div>
             </div> */}
 
-            <div className="flex flex-col sm:flex-row mb-8">
+            <div className="flex flex-col mb-8 sm:flex-row">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -349,20 +349,20 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className="w-full sm:w-2/3  my-auto">
-                <p className="text-gray-600 text-lg font-bold">
+              <div className="w-full my-auto sm:w-2/3">
+                <p className="text-lg font-bold text-gray-600">
                   II Curso Prático Básico de Anilhamento
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   Data a definir{" "}
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
                   {/* <span className="font-bold">
                     Inscrições e mais informações
-                    <span className="underline  text-yellow-600 cursor-pointer">
+                    <span className="text-yellow-600 underline cursor-pointer">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
                         {" "}
                         aqui.{" "}
@@ -410,7 +410,7 @@ export default function Treinamento() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row mb-8">
+            <div className="flex flex-col mb-8 sm:flex-row">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
                   <Image
@@ -423,21 +423,21 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className="w-full sm:w-2/3  my-auto">
-                <p className="text-gray-600 text-lg font-bold">
+              <div className="w-full my-auto sm:w-2/3">
+                <p className="text-lg font-bold text-gray-600">
                   III Curso Prático de Análise de Mudas e Classificação de idade
                   em Aves
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   {/* 19 a 22 de fevereiro de 2023 */} Data a definir.
                 </p>
-                <p className="text-gray-500 text-md font-bold">
+                <p className="font-bold text-gray-500 text-md">
                   Estação de Pesquisa OAMa
                 </p>
                 <p className="text-gray-600 ">
                   {/* <span className="font-bold">
                     Inscrições e mais informações
-                    <span className="underline  text-yellow-600 cursor-pointer">
+                    <span className="text-yellow-600 underline cursor-pointer">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
                         {" "}
                         aqui.{" "}
@@ -482,7 +482,7 @@ export default function Treinamento() {
             {/* <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Em Breve
             </h2>
-            <ul className="text-lg p-12">
+            <ul className="p-12 text-lg">
               <li className="list-disc">
                 Curso prático de anilhamento - foco em Passeriformes
               </li>
@@ -494,7 +494,7 @@ export default function Treinamento() {
             <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
               Cursos Concluídos
             </h2>
-            <ul className="text-lg p-12">
+            <ul className="p-12 text-lg">
               <li className="list-disc">
                 II Curso Prático de Análise de Mudas e Classificação de idade em
                 Aves - 2022 - Presencial
@@ -532,7 +532,7 @@ export default function Treinamento() {
 }
 
 const TrainingCarousel = () => (
-  <div className="flex group h-100 cursor-pointer justify-center items-center sm:px-8">
+  <div className="flex items-center justify-center cursor-pointer group h-100 sm:px-8">
     <Carousel
       showArrows={true}
       showStatus={false}
@@ -543,11 +543,11 @@ const TrainingCarousel = () => (
       // showThumbs={false}
       stopOnHover
       transitionTime={600}
-      className="mt-2 bg-gray-300 mb-8 sm:mb-4 w-full  h-96"
+      className="w-full mt-2 mb-8 bg-gray-300 sm:mb-4 h-96"
     >
       {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => {
         return (
-          <div className="h-96 w-full sm:h-96  relative">
+          <div className="relative w-full h-96 sm:h-96">
             <Image
               layout="fill"
               objectFit="cover"
@@ -563,7 +563,7 @@ const TrainingCarousel = () => (
 const HallOfFame = () => {
   return (
     <>
-      <h2 className="text-4xl font-bold mt-16 mb-8 text-center">
+      <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
         Trainees 2022
       </h2>
 
@@ -572,12 +572,13 @@ const HallOfFame = () => {
           <div
             class={`flex md:${
               i % 2 ? "flex-row-reverse" : "flex-row"
-            } mb-8  justify-around items-center   flex-wrap`}
+            } mb-8  justify-around items-center   relative`}
+            
           >
             <div class="w-3/5 shadow-lg rounded-full  sm:w-1/6 m-2 ">
               <div>
                 <Image
-                  className="rounded-full border-gray-200 border-8"
+                  className="border-8 border-gray-200 rounded-full"
                   src={`/treinamento-cursos/trainees/${trainee.img}.jpg`}
                   layout="responsive"
                   width={20}
