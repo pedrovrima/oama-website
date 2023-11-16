@@ -11,6 +11,7 @@
     "@reach/accordion": "^0.17.0",
     "aws-sdk": "^2.799.0",
     "email-validator": "^2.0.4",
+    "embla-carousel-react": "^8.0.0-rc14",
     "marked": "^4.0.12",
     "next": "^12.0.10",
     "react": "^17.0.2",
