@@ -14,11 +14,13 @@ export const getServerSideProps = async (context) => {
   );
 
   //load all products from stripe
-  const products = await stripe.products.list();
+  const products = await stripe.products.list({ active: true });
 
   //load all prices from stripe
   const prices = await stripe.prices.list();
 
+  const paymentLinks = await stripe.paymentLinks.list();
+  console.log(paymentLinks);
   //join them
   const fullProduct = products.data.map((product) => {
     return {
@@ -542,7 +544,7 @@ const SecondSection = () => {
 };
 
 const EmblaCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -623,7 +625,7 @@ const EmblaCarousel = () => {
 };
 
 const SecondCarrousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -634,7 +636,7 @@ const SecondCarrousel = () => {
   }, [emblaApi]);
 
   const images = [];
-  const n1 = 50;
+  const n1 = 51;
   const n2 = 61;
 
   for (let i = n1; i <= n2; i++) {

@@ -110,15 +110,15 @@ export default function Nav() {
     // </nav>
     <nav
       id='header'
-      className={`fixed top-0 z-50 w-full text-white ${
+      className={`fixed top-0 z-[99] w-full text-white ${
         scroll ? 'bg-gray-900' : ''
       }`}
     >
-      <div className='container mx-auto mt-0 flex w-full flex-wrap items-center justify-between py-2'>
+      <div className='container flex flex-wrap items-center justify-between w-full py-2 mx-auto mt-0'>
         <Link href='/'>
           <div className='flex items-center pl-4'>
             <a
-              className='toggleColour flex text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl'
+              className='flex text-2xl font-bold text-white no-underline toggleColour hover:no-underline lg:text-4xl'
               href='#'
             >
               <Image
@@ -139,9 +139,9 @@ export default function Nav() {
               setOpen(!open);
             }}
             id='nav-toggle'
-            className='focus:shadow-outline flex transform items-center p-1 text-white transition duration-300 ease-in-out hover:scale-105 hover:text-gray-900 focus:outline-none'
+            className='flex items-center p-1 text-white transition duration-300 ease-in-out transform focus:shadow-outline hover:scale-105 hover:text-gray-900 focus:outline-none'
           >
-            <svg className='h-6 w-6 fill-current' viewBox='0 0 20 20'>
+            <svg className='w-6 h-6 fill-current' viewBox='0 0 20 20'>
               <title>Menu</title>
               <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
             </svg>
@@ -159,15 +159,15 @@ export default function Nav() {
               id='nav-content'
               ref={ref}
             >
-              <ul className='list-reset flex-1 items-center justify-end lg:flex'>
-                <li className='focus:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
+              <ul className='items-center justify-end flex-1 list-reset lg:flex'>
+                <li className='inline-block w-full px-4 py-2 no-underline focus:text-underline hover:text-gray-800'>
                   <Link href='/quem-somos'>Quem somos</Link>
                 </li>
-                <li className='hover:text-underline group w-full px-4  py-2 no-underline'>
+                <li className='w-full px-4 py-2 no-underline hover:text-underline group'>
                   <p className=''>Atividades</p>
                   <div className='flex flex-col px-2 '>
                     <Link href='/projetos'>
-                      <p className='cursor-pointer pb-1'>Projetos</p>
+                      <p className='pb-1 cursor-pointer'>Projetos</p>
                     </Link>
                     {/* <Link href="/anilhamento-demonstrativo">
                       <p className="pb-1 cursor-pointer">
@@ -175,55 +175,55 @@ export default function Nav() {
                       </p>
                     </Link> */}
                     <Link href='/treinamento-cursos'>
-                      <p className='cursor-pointer pb-1'>
+                      <p className='pb-1 cursor-pointer'>
                         Cursos e Treinamento
                       </p>
                     </Link>
                     <Link href='/downloads'>
-                      <p className='cursor-pointer pb-1'>
+                      <p className='pb-1 cursor-pointer'>
                         Arquivos e Downloads
                       </p>
                     </Link>
                     <a target='_blank' href='/relatorio.html'>
-                      <p className='cursor-pointer pb-1'>Relatório de Dados </p>
+                      <p className='pb-1 cursor-pointer'>Relatório de Dados </p>
                     </a>
                     <Link href='/blog'>
-                      <p className='cursor-pointer pb-1'>Blog </p>
+                      <p className='pb-1 cursor-pointer'>Blog </p>
                     </Link>
                   </div>
                 </li>
 
-                <li className='hover:text-underline group w-full px-4  py-2 no-underline'>
+                <li className='w-full px-4 py-2 no-underline hover:text-underline group'>
                   <p className=''>Hospedagem</p>
                   <div className='flex flex-col px-2 '>
                     <Link href='/estacao-de-pesquisa'>
-                      <p className='cursor-pointer pb-1'>Estação de Pesquisa</p>
+                      <p className='pb-1 cursor-pointer'>Estação de Pesquisa</p>
                     </Link>
 
                     <a
                       target='_blank'
                       href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                     >
-                      <p className='cursor-pointer pb-1'>AirBnB</p>
+                      <p className='pb-1 cursor-pointer'>AirBnB</p>
                     </a>
                   </div>
                 </li>
 
-                <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
+                <li className='inline-block w-full px-4 py-2 no-underline hover:text-underline hover:text-gray-800'>
                   <a target='_blank' href='https://use.oama.eco.br'>
                     Loja
                   </a>
                 </li>
-                <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
+                <li className='inline-block w-full px-4 py-2 no-underline hover:text-underline hover:text-gray-800'>
                   <a target='_blank' href='https://saltator.oama.eco.br'>
                     Saltator
                   </a>
                 </li>
 
-                <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
+                <li className='inline-block w-full px-4 py-2 no-underline hover:text-underline hover:text-gray-800'>
                   <Link href='/jacucara'>Jacuçara</Link>
                 </li>
-                <li className='hover:text-underline inline-block w-full bg-yellow-400 px-4 py-2 no-underline hover:text-gray-800'>
+                <li className='inline-block w-full px-4 py-2 no-underline bg-yellow-400 hover:text-underline hover:text-gray-800'>
                   <Link className='' href='/apoie'>
                     Apoie
                   </Link>
@@ -232,7 +232,7 @@ export default function Nav() {
             </div>
           </div>
         </div>
-        <div className='hidden flex-row items-center md:flex'>
+        <div className='flex-row items-center hidden md:flex'>
           <div className='flex flex-row px-8 '>
             <Link href='/quem-somos'>
               <div className='mr-4 cursor-pointer '>
@@ -242,16 +242,16 @@ export default function Nav() {
               </div>
             </Link>
 
-            <div className='group  mr-4'>
+            <div className='mr-4 group'>
               <p className='font-bold text-gray-50'>Atividades</p>
-              <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
+              <div className='absolute hidden w-56 p-6 bg-gray-900 group-hover:block '>
                 <Link href='/proaves'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Pró-Aves
                   </p>
                 </Link>
                 <Link href='/projetos'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Projetos
                   </p>
                 </Link>
@@ -261,35 +261,35 @@ export default function Nav() {
                   </p>
                 </Link> */}
                 <Link href='/treinamento-cursos'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Cursos e Treinamento
                   </p>
                 </Link>
 
                 <Link href='/downloads'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Arquivos e Downloads
                   </p>
                 </Link>
 
                 <a target='_blank' href='/relatorio.html'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Relatório de Dados
                   </p>
                 </a>
                 <Link href='/blog'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Blog{' '}
                   </p>
                 </Link>
               </div>
             </div>
 
-            <div className='group  mr-4'>
+            <div className='mr-4 group'>
               <p className='font-bold text-gray-50'>Hospedagem</p>
-              <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
+              <div className='absolute hidden w-56 p-6 bg-gray-900 group-hover:block '>
                 <Link href='/estacao-de-pesquisa'>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     Estação de Pesquisa
                   </p>
                 </Link>
@@ -298,7 +298,7 @@ export default function Nav() {
                   target='_blank'
                   href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                 >
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p className='w-full pb-2 font-bold cursor-pointer text-gray-50 hover:underline'>
                     AirBnB
                   </p>
                 </a>
@@ -320,7 +320,7 @@ export default function Nav() {
               </div>
             </a>
 
-            <div className='group mr-4  cursor-pointer'>
+            <div className='mr-4 cursor-pointer group'>
               <Link href='/jacucara'>
                 <p className='font-bold text-gray-50 hover:underline'>
                   Jacuçara
@@ -332,7 +332,7 @@ export default function Nav() {
             <div className='flex items-end justify-end'>
               <button
                 id='navAction'
-                className='focus:shadow-outline mx-auto mr-2 mt-0 transform rounded-full bg-yellow-400 px-8 py-2 font-bold text-gray-800 shadow transition duration-300 ease-in-out hover:scale-105 hover:underline focus:outline-none lg:mx-0'
+                className='px-8 py-2 mx-auto mt-0 mr-2 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-yellow-400 rounded-full shadow focus:shadow-outline hover:scale-105 hover:underline focus:outline-none lg:mx-0'
               >
                 Apoie
               </button>
