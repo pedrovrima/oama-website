@@ -362,7 +362,7 @@ const ThirdSection = () => {
       <div className=' relative mx-auto bg-white md:h-[950px] md:max-w-screen-md md:flex-col   lg:h-[900px]  lg:max-w-[1024px] '>
         <div
           style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
-          className='absolute -top-[90px] bottom-0 left-[420px] z-50 md:-right-[380px]  md:-top-[300px] lg:-right-[200px] '
+          className='absolute -top-[120px] bottom-0 left-[320px] z-50 sm:-right-[380px] sm:-top-[90px]  md:-top-[300px] lg:-right-[200px] '
         >
           <Image
             src='/apoie/8.png'
@@ -371,8 +371,8 @@ const ThirdSection = () => {
             height={600}
           ></Image>
         </div>
-        <div className=' z-[99] -my-[100px] flex w-full flex-col gap-[80px] md:flex-row md:gap-[50px] lg:gap-[150px]'>
-          <div className='w-full max-w-[400px] py-12 pl-4 md:w-[26rem] md:py-0 lg:pl-0'>
+        <div className=' z-[99] -my-[100px] flex w-full flex-col gap-8 md:flex-row md:gap-[50px] lg:gap-[150px]'>
+          <div className='w-[450px] max-w-[350px] py-12 pl-4 sm:max-w-full md:w-[26rem] md:py-0 lg:pl-0'>
             <H2>Conheça nossas ações em comunicação e divulgação científica</H2>
             <Projects />
           </div>
@@ -390,20 +390,20 @@ const Projects = () => {
     <ul className='z-[99]'>
       {projects.map((project) => {
         return (
-          <li>
+          <li className='pb-[8px] leading-4'>
             {project.url ? (
               <Link href={project.url || ''} passHref>
                 <a
                   target='_blank'
-                  className={`${
+                  className={` ${
                     project.url && 'cursor-pointer hover:underline'
-                  }`}
+                  } `}
                 >
                   <span className='text-md font-bold text-gray-500'>
                     {project.title}
                   </span>
                   {project.description && (
-                    <span className='text-sm text-gray-400'>{` - ${project.description}`}</span>
+                    <span className='text-md text-gray-400'>{` - ${project.description}`}</span>
                   )}
                   <span className='text-sm text-gray-400'>{`, ${project.year}`}</span>
                 </a>
@@ -501,7 +501,7 @@ const SecondSection = () => {
         <Image priority src='/apoie/34.png' layout='fill' objectFit='cover' />
       </div>
       <div className=' relative z-20 mx-auto w-full py-24  md:max-w-screen-md md:py-48 lg:max-w-[1024px] lg:py-36'>
-        <div className='absolute -right-10 bottom-0 z-0'>
+        <div className='absolute -bottom-[60px] -right-10 z-0 md:bottom-0'>
           <Image
             src='/apoie/4.png'
             layout='fixed'
@@ -528,8 +528,8 @@ const SecondSection = () => {
           </div>
         </div>
         <div className='relative pb-36'>
-          <div className=' absolute  -top-[120px] right-[250px] flex  flex-row items-center gap-[20px] md:-left-[190px]'>
-            <div className='z-50 h-[650px] w-[650px] rotate-[15deg]'>
+          <div className=' absolute -top-[110px]  right-[120px] flex flex-row  items-center gap-[20px] sm:-left-[190px] md:-top-[120px]'>
+            <div className='z-50 h-[650px] w-[650px] rotate-[20deg] md:rotate-[15deg]'>
               <Image
                 src='/apoie/15.png'
                 layout='responsive'
@@ -537,10 +537,10 @@ const SecondSection = () => {
                 height={0.2 * 3375}
               ></Image>
             </div>
-            <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12'>
+            <div className=' absolute left-[340px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12 sm:left-[350px]'>
               <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
-                  <AiOutlineInfoCircle size={70} />
+                  <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
                   <p>Total de R$66.048,00 para o ano de 2024.</p>
                 </div>
                 <div className='h-[60px] w-1 rounded-full bg-white' />
