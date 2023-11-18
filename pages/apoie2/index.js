@@ -270,17 +270,17 @@ const DonationButtonGroup = () => {
     },
     {
       name: 'PayPal',
-      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      url: 'https://www.paypal.com/donate/?hosted_button_id=9HRNWTKA892WS',
       image: '/apoie/11.png',
     },
-    {
-      name: 'PagSeguro',
-      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
-      image: '/apoie/12.png',
-    },
+    // {
+    //   name: 'PagSeguro',
+    //   url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+    //   image: '/apoie/12.png',
+    // },
     {
       name: 'Cartão de Crédito',
-      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      url: 'https://donate.stripe.com/test_8wM7vreFE30U1RS3de',
       image: '/apoie/13.png',
     },
   ];
