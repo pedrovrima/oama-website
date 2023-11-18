@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 import Nav from '@includes/nav';
 import Stripe from 'stripe';
 import Image from 'next/image';
+
 import { useState } from 'react';
 import { AiOutlineInfo, AiOutlineInfoCircle } from 'react-icons/ai';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -48,8 +49,8 @@ export default function Apoie2(props) {
       <Nav />
       <div className=''>
         <div className=' relative h-[700px] max-h-[70vh] bg-[#4E7B90]'>
-          <div className='items-center h-full pt-32 hero-small md:hero justify-items-center md:pb-16 lg:pb-16'>
-            <div className='absolute top-0 w-full h-full'>
+          <div className='hero-small md:hero h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 className='z-40'
                 src='/apoie/capa.png'
@@ -61,17 +62,17 @@ export default function Apoie2(props) {
                 priority={true}
               ></Image>
             </div>
-            <div className='mx-auto flex h-full w-full max-w-[1024px] items-center'>
-              <h1 className='z-50 w-1/2 text-5xl font-bold text-white '>
+            <div className='mx-auto flex h-full w-full items-center lg:max-w-[1024px]'>
+              <h1 className='z-50 w-1/2 text-5xl font-bold text-white md:px-12 lg:px-0 '>
                 Venha pro bando em defesa das aves da Mata Atlântica!
               </h1>
             </div>
           </div>
         </div>
-        <div className='hero-path relative -top-[10px] z-20 bg-[#4E7B90] pb-24'>
-          <div className='mx-auto max-w-[1024px] '>
-            <div className='relative z-20 grid grid-cols-1 gap-8 md:grid-cols-5'>
-              <div className='col-span-3 py-24 text-justify'>
+        <div className='md:hero-path relative -top-[10px] z-20 bg-[#4E7B90] pb-24'>
+          <div className='mx-auto md:max-w-screen-md  lg:max-w-[1024px] '>
+            <div className='relative z-20 grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5'>
+              <div className='order-3 py-24 text-justify md:order-1 md:col-span-2 md:pl-12 lg:col-span-3 lg:px-0'>
                 <P>
                   O OAMa está trabalhando para a construção coletiva de um
                   futuro melhor para as aves, para o ecossistema, e,
@@ -114,19 +115,19 @@ export default function Apoie2(props) {
                   A conservação ambiental precisa ser um esforço
                   multidisciplinar e coletivo.
                 </P>
-                <div className='relative mt-28 h-[300px] w-full rounded-lg'>
+                {/* <div className='relative mt-28 h-[300px] w-full rounded-lg'>
                   <Image
                     src='/apoie/35.png'
                     layout='fill'
                     objectFit='cover'
                     className='rounded-xl'
                   />
-                </div>
+                </div> */}
               </div>
-              <div className='flex flex-col col-span-2'>
+              <div className='order-1 col-span-2'>
                 <Billing products={props.products} stripe={stripe} />
                 <div className='relative '>
-                  <div className='absolute -top-[150px] left-[20px] w-full'>
+                  <div className='absolute -right-[200px] -top-[220px] hidden w-full md:-left-[40px] md:-top-[170px] md:flex '>
                     <Image
                       className='z-20'
                       src='/apoie/14.png'
@@ -137,6 +138,14 @@ export default function Apoie2(props) {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className='relative  z-[80] -mt-[50px] h-[300px] w-full md:mb-[120px] md:h-[400px] md:w-full md:rounded-lg lg:-mt-[200px] lg:mb-16 lg:w-3/5'>
+              <Image
+                src='/apoie/35.png'
+                layout='fill'
+                objectFit='cover'
+                className='rounded-xl'
+              />
             </div>
           </div>
         </div>
@@ -152,10 +161,10 @@ export default function Apoie2(props) {
 const Billing = ({ products, stripe }) => {
   const [loadingStripe, setLoadingStripe] = useState(false);
   return (
-    <div className='relative px-8 py-12 h-fit min-w-fit'>
+    <div className='relative h-fit min-w-fit px-8 py-12'>
       {loadingStripe && (
         <div className='absolute left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-[#4E7B90] opacity-80'>
-          <div className='w-20 h-20 border-8 border-t-8 border-gray-300 rounded-full animate-spin border-t-slate-300' />
+          <div className='h-20 w-20 animate-spin rounded-full border-8 border-t-8 border-gray-300 border-t-slate-300' />
         </div>
       )}
       <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white '>
@@ -176,7 +185,7 @@ const Billing = ({ products, stripe }) => {
           })
         }
       </div>
-      <div className='text-md mb-8 mt-12 w-full rounded-full bg-[#332139] p-4 text-center leading-5 text-white'>
+      <div className='text-md mb-8 w-full rounded-full bg-[#332139] p-4 px-12 text-center leading-5 text-white md:mt-32 lg:mt-12'>
         <p>Você também pode fazer uma doação única!</p>
         <p>É só escolher a forma de doação: </p>
       </div>
@@ -206,7 +215,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center mb-8'>
+    <div className='mb-8 flex flex-col items-center justify-center'>
       <div
         onClick={async () => {
           setLoading(true);
@@ -214,12 +223,14 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
 
           window.location.href = `${payLink.url}?locale=pt`;
         }}
-        style={{ backgroundImage: `url(${product.images[0]})` }}
+        style={{
+          backgroundImage: `url(${product.images[0]})`,
+        }}
         className='group relative h-36 w-36 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
       >
         <a className='absolute -bottom-6 w-36 rounded-full bg-[#332139] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#62466B]  group-hover:shadow-2xl'>
-          <p className='text-sm font-bold text-center '>{product.name}</p>
-          <p className='text-sm text-center'>
+          <p className='text-center text-sm font-bold '>{product.name}</p>
+          <p className='text-center text-sm'>
             {currencyMaker.format(product.price[0].unit_amount / 100)} / mês
           </p>
         </a>
@@ -239,16 +250,14 @@ const P = (props) => {
 
 const H3 = ({ children }) => {
   return (
-    <h3 className='px-8 mb-6 text-lg font-bold text-white md:px-0'>
+    <h3 className='mb-6 px-8 text-lg font-bold text-white md:px-0'>
       {children}
     </h3>
   );
 };
 
 const H2 = ({ children }) => {
-  return (
-    <h3 className='mb-6 px-8 text-4xl  text-[#EDC15A] md:px-0'>{children}</h3>
-  );
+  return <h3 className='mb-6 text-4xl  text-[#EDC15A] md:px-0'>{children}</h3>;
 };
 
 const DonationButtonGroup = () => {
@@ -295,7 +304,7 @@ const DonationButton = ({ image, url, name }) => {
     <a
       href={url}
       target='_blank'
-      className='relative z-40 flex flex-row items-center group'
+      className='group relative z-40 flex flex-row items-center'
     >
       <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
         <Image
@@ -317,10 +326,10 @@ const FourthSection = () => {
   return (
     <>
       <div className='relative -my-[100px]  mx-auto flex h-[700px]  w-screen flex-row bg-[#4E7B90]'>
-        <div className='relative mx-auto flex w-screen max-w-[1024px] items-center justify-center'>
+        <div className='relative mx-auto flex w-screen items-center justify-center md:max-w-screen-md lg:max-w-[1024px]'>
           <div
             style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
-            className='absolute -right-[200px] -top-[200px] bottom-0 z-20 '
+            className='absolute -top-[200px] bottom-0 z-20 md:-right-[400px] lg:-right-[200px] '
           >
             <Image
               src='/apoie/5.png'
@@ -331,7 +340,7 @@ const FourthSection = () => {
           </div>
           <div
             style={{ rotate: '-5deg' }}
-            className='absolute -left-[350px] -top-[400px] bottom-0 z-0 '
+            className='absolute -top-[400px] bottom-0 z-0 md:-left-[400px] lg:-left-[350px] '
           >
             <Image
               src='/apoie/16.png'
@@ -350,10 +359,10 @@ const FourthSection = () => {
 const ThirdSection = () => {
   return (
     <>
-      <div className=' relative z-50 mx-auto flex h-[700px] max-w-[1024px] flex-row'>
+      <div className=' relative mx-auto bg-white md:h-[950px] md:max-w-screen-md md:flex-col   lg:h-[900px]  lg:max-w-[1024px] '>
         <div
           style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
-          className='absolute -right-[180px] -top-[400px] bottom-0 z-50 '
+          className='absolute -top-[90px] bottom-0 left-[420px] z-50 md:-right-[380px]  md:-top-[300px] lg:-right-[200px] '
         >
           <Image
             src='/apoie/8.png'
@@ -362,12 +371,12 @@ const ThirdSection = () => {
             height={600}
           ></Image>
         </div>
-        <div className=' z-[99]  -my-[100px] flex gap-[150px]'>
-          <div className='w-[26rem]'>
+        <div className=' z-[99] -my-[100px] flex w-full flex-col gap-[80px] md:flex-row md:gap-[50px] lg:gap-[150px]'>
+          <div className='w-full max-w-[400px] py-12 pl-4 md:w-[26rem] md:py-0 lg:pl-0'>
             <H2>Conheça nossas ações em comunicação e divulgação científica</H2>
             <Projects />
           </div>
-          <div className='pt-[200px]'>
+          <div className='flex justify-center md:pt-[200px]'>
             <EmblaCarousel />
           </div>
         </div>
@@ -390,7 +399,7 @@ const Projects = () => {
                     project.url && 'cursor-pointer hover:underline'
                   }`}
                 >
-                  <span className='font-bold text-gray-500 text-md'>
+                  <span className='text-md font-bold text-gray-500'>
                     {project.title}
                   </span>
                   {project.description && (
@@ -401,7 +410,7 @@ const Projects = () => {
               </Link>
             ) : (
               <p className={`${project.url && 'cursor-pointer underline'}`}>
-                <span className='font-bold text-gray-500 text-md'>
+                <span className='text-md font-bold text-gray-500'>
                   {project.title}
                 </span>
                 {project.description && (
@@ -487,57 +496,60 @@ const projects = [
 
 const SecondSection = () => {
   return (
-    <div className='  hero-path relative -top-[150px] z-0 mx-auto'>
-      <div className='absolute top-0 w-full h-full'>
+    <div className='  md:hero-path relative -top-[50px] z-0 mx-auto pb-24 md:-top-[200px] md:pb-0 lg:-top-[150px]'>
+      <div className='absolute top-0 h-full w-full'>
         <Image priority src='/apoie/34.png' layout='fill' objectFit='cover' />
       </div>
-      <div className=' relative z-20 mx-auto flex max-w-[1024px] flex-row py-36'>
-        <div className='absolute bottom-0 z-0 -right-10'>
+      <div className=' relative z-20 mx-auto w-full py-24  md:max-w-screen-md md:py-48 lg:max-w-[1024px] lg:py-36'>
+        <div className='absolute -right-10 bottom-0 z-0'>
           <Image
             src='/apoie/4.png'
             layout='fixed'
-            width={350}
+            width={200}
             height={350}
           ></Image>
         </div>
-        <div className='w-94 z-[99]'>
-          <H2>Sua participação e apoio fazem a diferença</H2>
-          <P>
-            Essa campanha de financiamento coletivo tem como objetivo arcar com
-            os gastos mensais do programa de Comunicação e Divulgação Científica
-            do OAMa
-          </P>
-          <div className='relative pb-36'>
-            <div className=' absolute  -left-[190px] -top-[120px]  flex flex-row items-center gap-[20px]'>
-              <div className='z-50 rotate-[15deg]'>
-                <Image
-                  src='/apoie/15.png'
-                  layout='fixed'
-                  width={0.2 * 3375}
-                  height={0.2 * 3375}
-                ></Image>
-              </div>
-              <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12'>
-                <div className='flex flex-row items-center justify-center h-full gap-4 text-white'>
-                  <div className='flex flex-row items-center gap-2'>
-                    <AiOutlineInfoCircle size={70} />
-                    <p>Total de R$66.048,00 para o ano de 2024.</p>
-                  </div>
-                  <div className='h-[60px] w-1 rounded-full bg-white' />
-                  <p>Meta mensal da campanha: R$5.500,00.</p>
+        <div className='flex w-full flex-col lg:flex-row lg:items-center'>
+          <div className=' z-[99] md:pl-12 lg:w-1/4 lg:pl-0'>
+            <H2>Sua participação e apoio fazem a diferença</H2>
+            <P>
+              Essa campanha de financiamento coletivo tem como objetivo arcar
+              com os gastos mensais do programa de Comunicação e Divulgação
+              Científica do OAMa
+            </P>
+          </div>
+          <div className='relative z-[70] h-[300px] w-full lg:w-[1600px]'>
+            <Image
+              src='/apoie/grafico.png'
+              layout='responsive'
+              width={500}
+              height={300}
+            ></Image>
+          </div>
+        </div>
+        <div className='relative pb-36'>
+          <div className=' absolute  -top-[120px] right-[250px] flex  flex-row items-center gap-[20px] md:-left-[190px]'>
+            <div className='z-50 h-[650px] w-[650px] rotate-[15deg]'>
+              <Image
+                src='/apoie/15.png'
+                layout='responsive'
+                width={0.2 * 3375}
+                height={0.2 * 3375}
+              ></Image>
+            </div>
+            <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12'>
+              <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
+                <div className='flex flex-row items-center gap-2'>
+                  <AiOutlineInfoCircle size={70} />
+                  <p>Total de R$66.048,00 para o ano de 2024.</p>
                 </div>
+                <div className='h-[60px] w-1 rounded-full bg-white' />
+                <p>Meta mensal da campanha: R$5.500,00.</p>
               </div>
             </div>
           </div>
         </div>
-
-        <Image
-          className=''
-          src='/apoie/grafico.png'
-          layout='fixed'
-          width={1 * 3375}
-          height={1 * 510}
-        />
+        ;
       </div>
     </div>
   );
@@ -579,16 +591,16 @@ const EmblaCarousel = () => {
   ];
 
   return (
-    <div className='relative'>
+    <div className='relative z-[80]'>
       <div className='embla' ref={emblaRef}>
-        <div className='embla__container w-[400px]'>
+        <div className='embla__container w-[320px] lg:w-[400px]'>
           {slides.map((slide) => {
             return (
               <div className='embla__slide '>
                 <div className='flex flex-col gap-6'>
                   <div className='flex h-[300px] w-[300px] items-center justify-center rounded-full bg-[#332139]'>
                     <Image
-                      className='z-40'
+                      className='z-[80]'
                       src={slide.image}
                       layout='fixed'
                       width={350}
@@ -604,7 +616,7 @@ const EmblaCarousel = () => {
           })}
         </div>
         <button
-          className='absolute -left-[50px] top-[125px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400'
+          className='absolute -left-[38px] top-[125px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:-left-[50px]'
           onClick={scrollPrev}
         >
           <IoIosArrowForward
@@ -614,7 +626,7 @@ const EmblaCarousel = () => {
           />
         </button>
         <button
-          className='absolute left-[302px] top-[125px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400'
+          className='absolute left-[290px] top-[125px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:left-[302px]'
           onClick={scrollNext}
         >
           <IoIosArrowForward size={24} color='white' />
@@ -646,15 +658,15 @@ const SecondCarrousel = () => {
   return (
     <div className='relative z-50 overflow-hidden'>
       <div className='embla' ref={emblaRef}>
-        <div className='embla__container w-[750px]'>
+        <div className='embla__container md:w-[550px] lg:w-[750px]'>
           {images.map((image, i) => {
             return (
-              <div className='flex flex-col items-center embla__slide' key={i}>
-                <div className='flex h-[400px] w-[700px] items-center justify-center rounded-xl bg-[#332139]'>
+              <div className='embla__slide flex flex-col items-center' key={i}>
+                <div className='block  h-[285.6px] w-[500px] items-center justify-center rounded-xl bg-[#332139] lg:h-[400px] lg:w-[700px]'>
                   <Image
                     className='z-40 rounded-xl'
                     src={`/apoie/${image}.jpg`}
-                    layout='fixed'
+                    layout='responsive'
                     width={700}
                     height={400}
                   />
@@ -664,7 +676,7 @@ const SecondCarrousel = () => {
           })}
         </div>
         <button
-          className='absolute left-0 top-[175px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400'
+          className='absolute left-0 top-[120px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:top-[175px]'
           onClick={scrollPrev}
         >
           <IoIosArrowForward
@@ -674,7 +686,7 @@ const SecondCarrousel = () => {
           />
         </button>
         <button
-          className='absolute right-0 top-[175px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400'
+          className='absolute right-0 top-[120px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:top-[175px]'
           onClick={scrollNext}
         >
           <IoIosArrowForward size={24} color='white' />
