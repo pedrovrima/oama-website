@@ -8,6 +8,7 @@ import { AiOutlineInfo, AiOutlineInfoCircle } from 'react-icons/ai';
 import useEmblaCarousel from 'embla-carousel-react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
+import Footer from '@includes/footer';
 
 export const getServerSideProps = async (context) => {
   const stripe = new Stripe(
@@ -63,7 +64,7 @@ export default function Apoie2(props) {
               ></Image>
             </div>
             <div className='mx-auto flex h-full w-full items-center lg:max-w-[1024px]'>
-              <h1 className='z-50 w-1/2 text-5xl font-bold text-white md:px-12 lg:px-0 '>
+              <h1 className='z-50 w-1/2 px-12 text-5xl font-bold text-white lg:px-0 '>
                 Venha pro bando em defesa das aves da Mata Atlântica!
               </h1>
             </div>
@@ -71,8 +72,8 @@ export default function Apoie2(props) {
         </div>
         <div className='md:hero-path relative -top-[10px] z-20 bg-[#4E7B90] pb-24'>
           <div className='mx-auto md:max-w-screen-md  lg:max-w-[1024px] '>
-            <div className='relative z-20 grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5'>
-              <div className='order-3 py-24 text-justify md:order-1 md:col-span-2 md:pl-12 lg:col-span-3 lg:px-0'>
+            <div className='relative z-20 grid grid-cols-1 md:grid-cols-4 md:gap-8 lg:grid-cols-5'>
+              <div className='order-3 px-8 py-24 text-justify md:order-1 md:col-span-2 md:pl-12 md:pr-0 lg:col-span-3 lg:px-0'>
                 <P>
                   O OAMa está trabalhando para a construção coletiva de um
                   futuro melhor para as aves, para o ecossistema, e,
@@ -153,6 +154,7 @@ export default function Apoie2(props) {
         <SecondSection />
         <ThirdSection />
         <FourthSection />
+        <Footer />
       </div>
     </div>
   );
@@ -171,7 +173,7 @@ const Billing = ({ products, stripe }) => {
         <p>TORNE-SE UM FILIADO OAMa!</p>
         <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
       </div>
-      <div className='grid grid-cols-2 gap-8'>
+      <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2'>
         {
           //map all products
           products.map((product) => {
@@ -185,9 +187,8 @@ const Billing = ({ products, stripe }) => {
           })
         }
       </div>
-      <div className='text-md mb-8 w-full rounded-full bg-[#332139] p-4 px-12 text-center leading-5 text-white md:mt-32 lg:mt-12'>
+      <div className='text-md mb-8 mt-12 w-full rounded-full bg-[#332139] p-4 px-12 text-center leading-5 text-white md:mt-0 md:mt-32 lg:mt-12'>
         <p>Você também pode fazer uma doação única!</p>
-        <p>É só escolher a forma de doação: </p>
       </div>
       <DonationButtonGroup />
     </div>
@@ -242,7 +243,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
 const P = (props) => {
   const { color, children } = props;
   return (
-    <p className={`mb-6 px-8 text-lg text-${color || 'white'} md:px-0`}>
+    <p className={`mb-6  text-lg text-${color || 'white'} md:px-0`}>
       {children}
     </p>
   );
@@ -285,7 +286,7 @@ const DonationButtonGroup = () => {
   ];
 
   return (
-    <div className='z-40 grid grid-cols-2 gap-8'>
+    <div className='z-40 grid auto-cols-min grid-cols-2 justify-items-center gap-2 '>
       {donationMethods.map((method) => {
         return (
           <DonationButton
@@ -304,7 +305,7 @@ const DonationButton = ({ image, url, name }) => {
     <a
       href={url}
       target='_blank'
-      className='group relative z-40 flex flex-row items-center'
+      className='group relative z-40 flex w-40 flex-row items-center'
     >
       <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
         <Image
@@ -315,7 +316,7 @@ const DonationButton = ({ image, url, name }) => {
           layout='fixed'
         />
       </div>
-      <div className='absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
+      <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
         {name}
       </div>
     </a>
@@ -325,26 +326,26 @@ const DonationButton = ({ image, url, name }) => {
 const FourthSection = () => {
   return (
     <>
-      <div className='relative -my-[100px]  mx-auto flex h-[700px]  w-screen flex-row bg-[#4E7B90]'>
+      <div className='relative mx-auto  -mb-[100px] flex h-[700px]  w-screen flex-row bg-[#4E7B90] md:-my-[100px] md:-mb-[70px]'>
         <div className='relative mx-auto flex w-screen items-center justify-center md:max-w-screen-md lg:max-w-[1024px]'>
           <div
             style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
-            className='absolute -top-[200px] bottom-0 z-20 md:-right-[400px] lg:-right-[200px] '
+            className='absolute -top-[200px] bottom-0 left-[350px] z-20 h-[600px] w-[600px] sm:-right-[400px] sm:left-auto lg:-right-[200px] '
           >
             <Image
               src='/apoie/5.png'
-              layout='fixed'
+              layout='responsive'
               width={600}
               height={600}
             ></Image>
           </div>
           <div
             style={{ rotate: '-5deg' }}
-            className='absolute -top-[400px] bottom-0 z-0 md:-left-[400px] lg:-left-[350px] '
+            className='absolute -top-[400px] bottom-0 right-[250px]  z-0 h-[800px] w-[800px] sm:-left-[400px] lg:-left-[350px] '
           >
             <Image
               src='/apoie/16.png'
-              layout='fixed'
+              layout='responsive'
               width={800}
               height={800}
             ></Image>
@@ -376,7 +377,7 @@ const ThirdSection = () => {
             <H2>Conheça nossas ações em comunicação e divulgação científica</H2>
             <Projects />
           </div>
-          <div className='flex justify-center md:pt-[200px]'>
+          <div className='mb-[220px] flex justify-center sm:mb-0 md:pt-[200px]'>
             <EmblaCarousel />
           </div>
         </div>
@@ -510,7 +511,7 @@ const SecondSection = () => {
           ></Image>
         </div>
         <div className='flex w-full flex-col lg:flex-row lg:items-center'>
-          <div className=' z-[99] md:pl-12 lg:w-1/4 lg:pl-0'>
+          <div className=' z-[99] px-12 md:pl-12 lg:w-1/4 lg:pl-0'>
             <H2>Sua participação e apoio fazem a diferença</H2>
             <P>
               Essa campanha de financiamento coletivo tem como objetivo arcar
@@ -537,7 +538,7 @@ const SecondSection = () => {
                 height={0.2 * 3375}
               ></Image>
             </div>
-            <div className=' absolute left-[340px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-12 sm:left-[350px]'>
+            <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-24 sm:left-[350px] sm:pr-12'>
               <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
                   <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
