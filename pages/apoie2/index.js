@@ -64,7 +64,7 @@ export default function Apoie2(props) {
               ></Image>
             </div>
             <div className='mx-auto flex h-full w-full items-center lg:max-w-[1024px]'>
-              <h1 className='z-50 w-1/2 px-12 text-5xl font-bold text-white lg:px-0 '>
+              <h1 className='z-50 px-12 text-5xl font-bold text-white sm:w-1/2 lg:px-0 '>
                 Venha pro bando em defesa das aves da Mata Atlântica!
               </h1>
             </div>
@@ -326,7 +326,7 @@ const DonationButton = ({ image, url, name }) => {
 const FourthSection = () => {
   return (
     <>
-      <div className='relative mx-auto  -mb-[100px] flex h-[700px]  w-screen flex-row bg-[#4E7B90] md:-my-[100px] md:-mb-[70px]'>
+      <div className='relative mx-auto  -mb-[70px] flex h-[700px]  w-screen flex-row bg-[#4E7B90] md:-my-[100px] '>
         <div className='relative mx-auto flex w-screen items-center justify-center md:max-w-screen-md lg:max-w-[1024px]'>
           <div
             style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
@@ -659,11 +659,11 @@ const SecondCarrousel = () => {
   return (
     <div className='relative z-50 overflow-hidden'>
       <div className='embla' ref={emblaRef}>
-        <div className='embla__container md:w-[550px] lg:w-[750px]'>
+        <div className='embla__container w-screen sm:w-[550px] lg:w-[750px]'>
           {images.map((image, i) => {
             return (
               <div className='embla__slide flex flex-col items-center' key={i}>
-                <div className='block  h-[285.6px] w-[500px] items-center justify-center rounded-xl bg-[#332139] lg:h-[400px] lg:w-[700px]'>
+                <div className='block  w-screen items-center justify-center rounded-xl bg-[#332139] sm:h-[285.6px] sm:w-[500px] lg:h-[400px] lg:w-[700px]'>
                   <Image
                     className='z-40 rounded-xl'
                     src={`/apoie/${image}.jpg`}
@@ -677,7 +677,7 @@ const SecondCarrousel = () => {
           })}
         </div>
         <button
-          className='absolute left-0 top-[120px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:top-[175px]'
+          className='absolute left-0 top-[40%] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 sm:top-[120px] lg:top-[175px]'
           onClick={scrollPrev}
         >
           <IoIosArrowForward
@@ -687,7 +687,7 @@ const SecondCarrousel = () => {
           />
         </button>
         <button
-          className='absolute right-0 top-[120px] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 lg:top-[175px]'
+          className='absolute -right-0 top-[40%] flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400  sm:right-0 sm:top-[120px] lg:top-[175px]'
           onClick={scrollNext}
         >
           <IoIosArrowForward size={24} color='white' />
