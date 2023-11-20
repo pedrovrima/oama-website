@@ -12,7 +12,7 @@ import Footer from '@includes/footer';
 
 export const getServerSideProps = async (context) => {
   const stripe = new Stripe(
-    'sk_test_51O1HMxHtuWeEBCtmsMlHY7OmbNW5lQK7W6MUmNxGaeQfP6qqP05I4XDnuxktaNx0IacnBkqcpZMFYLRmA8c78Z7i00EyklzL6z'
+    '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'
   );
 
   //load all products from stripe
@@ -42,7 +42,7 @@ export const getServerSideProps = async (context) => {
 
 export default function Apoie2(props) {
   const stripe = new Stripe(
-    'sk_test_51O1HMxHtuWeEBCtmsMlHY7OmbNW5lQK7W6MUmNxGaeQfP6qqP05I4XDnuxktaNx0IacnBkqcpZMFYLRmA8c78Z7i00EyklzL6z'
+    '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'
   );
 
   return (
@@ -128,7 +128,7 @@ export default function Apoie2(props) {
               <div className='order-1 col-span-2'>
                 <Billing products={props.products} stripe={stripe} />
                 <div className='relative '>
-                  <div className='absolute -right-[200px] -top-[220px] hidden w-full md:-left-[40px] md:-top-[170px] md:flex '>
+                  <div className='absolute -right-[200px] -top-[220px] hidden w-full md:-top-[130px] md:left-[10px] md:flex '>
                     <Image
                       className='z-20'
                       src='/apoie/14.png'
@@ -140,7 +140,7 @@ export default function Apoie2(props) {
                 </div>
               </div>
             </div>
-            <div className='relative  z-[80] -mt-[50px] h-[300px] w-full md:mb-[120px] md:h-[400px] md:w-full md:rounded-lg lg:-mt-[200px] lg:mb-16 lg:w-3/5'>
+            <div className='relative  z-[80] -mt-[50px] h-[300px] w-full md:mb-[120px] md:h-[400px] md:w-full md:rounded-lg lg:-mt-[160px] lg:mb-16 lg:w-3/5'>
               <Image
                 src='/apoie/35.png'
                 layout='fill'
@@ -164,30 +164,32 @@ const Billing = ({ products, stripe }) => {
   const [loadingStripe, setLoadingStripe] = useState(false);
   return (
     <div className='relative h-fit min-w-fit px-8 py-12'>
-      {loadingStripe && (
-        <div className='absolute left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-[#4E7B90] opacity-80'>
-          <div className='h-20 w-20 animate-spin rounded-full border-8 border-t-8 border-gray-300 border-t-slate-300' />
+      <div className='relative'>
+        {loadingStripe && (
+          <div className='absolute left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-[#4E7B90] opacity-80'>
+            <div className='h-20 w-20 animate-spin rounded-full border-8 border-t-8 border-gray-300 border-t-[#332139] opacity-100' />
+          </div>
+        )}
+        <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white md:mt-16 '>
+          <p>TORNE-SE UM FILIADO OAMa!</p>
+          <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
         </div>
-      )}
-      <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white '>
-        <p>TORNE-SE UM FILIADO OAMa!</p>
-        <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
+        <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2'>
+          {
+            //map all products
+            products.map((product) => {
+              return (
+                <BillingComponent
+                  setLoading={setLoadingStripe}
+                  stripe={stripe}
+                  product={product}
+                />
+              );
+            })
+          }
+        </div>
       </div>
-      <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2'>
-        {
-          //map all products
-          products.map((product) => {
-            return (
-              <BillingComponent
-                setLoading={setLoadingStripe}
-                stripe={stripe}
-                product={product}
-              />
-            );
-          })
-        }
-      </div>
-      <div className='text-md mb-8 mt-12 w-full rounded-full bg-[#332139] p-4 px-12 text-center leading-5 text-white md:mt-0 md:mt-32 lg:mt-12'>
+      <div className='text-md mb-8 mt-12 w-full rounded-full bg-[#332139] p-4 px-12 text-center leading-5 text-white  md:mt-32 lg:mt-12'>
         <p>Você também pode fazer uma doação única!</p>
       </div>
       <DonationButtonGroup />
@@ -222,12 +224,14 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
           setLoading(true);
           const payLink = await getPayLink();
 
-          window.location.href = `${payLink.url}?locale=pt`;
+          window.open(`${payLink.url}?locale=pt`, '_blank');
+          setLoading(false);
         }}
         style={{
           backgroundImage: `url(${product.images[0]})`,
+          backgroundSize: 'cover',
         }}
-        className='group relative h-36 w-36 cursor-pointer rounded-full border-2 border-solid border-[transparent] bg-cover bg-center shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
+        className='group relative h-36 w-36 cursor-pointer  rounded-full border-4 border-solid border-[#332139]  shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
       >
         <a className='absolute -bottom-6 w-36 rounded-full bg-[#332139] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#62466B]  group-hover:shadow-2xl'>
           <p className='text-center text-sm font-bold '>{product.name}</p>
@@ -265,7 +269,7 @@ const DonationButtonGroup = () => {
   const donationMethods = [
     {
       name: 'PIX',
-      url: 'https://www.paypal.com/donate?hosted_button_id=3D7ZK4JG6YH4N',
+      url: '/pix',
       image: '/apoie/10.png',
     },
     {
@@ -280,7 +284,7 @@ const DonationButtonGroup = () => {
     // },
     {
       name: 'Cartão de Crédito',
-      url: 'https://donate.stripe.com/test_8wM7vreFE30U1RS3de',
+      url: 'https://donate.stripe.com/3csbL34ezfRfdfa144',
       image: '/apoie/13.png',
     },
   ];
@@ -302,24 +306,25 @@ const DonationButtonGroup = () => {
 
 const DonationButton = ({ image, url, name }) => {
   return (
-    <a
-      href={url}
-      target='_blank'
-      className='group relative z-40 flex w-40 flex-row items-center'
-    >
-      <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
-        <Image
-          className='z-40'
-          src={image}
-          height={40}
-          width={40}
-          layout='fixed'
-        />
-      </div>
-      <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
-        {name}
-      </div>
-    </a>
+    <Link href={url} passHref>
+      <a
+        className='group relative z-40 flex w-40 flex-row items-center'
+        target='_blank'
+      >
+        <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
+          <Image
+            className='z-40'
+            src={image}
+            height={40}
+            width={40}
+            layout='fixed'
+          />
+        </div>
+        <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
+          {name}
+        </div>
+      </a>
+    </Link>
   );
 };
 
@@ -341,7 +346,7 @@ const FourthSection = () => {
           </div>
           <div
             style={{ rotate: '-5deg' }}
-            className='absolute -top-[400px] bottom-0 right-[250px]  z-0 h-[800px] w-[800px] sm:-left-[400px] lg:-left-[350px] '
+            className='absolute -left-[550px] -top-[400px] bottom-0 right-[250px]  z-0 h-[800px] w-[800px] sm:-left-[400px] lg:-left-[350px] '
           >
             <Image
               src='/apoie/16.png'
@@ -360,10 +365,10 @@ const FourthSection = () => {
 const ThirdSection = () => {
   return (
     <>
-      <div className=' relative mx-auto bg-white md:h-[950px] md:max-w-screen-md md:flex-col   lg:h-[900px]  lg:max-w-[1024px] '>
+      <div className=' relative mx-auto bg-white sm:h-[1250px] md:h-[950px] md:max-w-screen-md md:flex-col   lg:h-[900px]  lg:max-w-[1024px] '>
         <div
           style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
-          className='absolute -top-[120px] bottom-0 left-[320px] z-50 sm:-right-[380px] sm:-top-[90px]  md:-top-[300px] lg:-right-[200px] '
+          className='absolute -top-[120px] bottom-0 left-[400px] z-50 sm:-right-[380px] sm:-top-[90px]   md:-top-[210px] lg:-right-[200px] '
         >
           <Image
             src='/apoie/8.png'

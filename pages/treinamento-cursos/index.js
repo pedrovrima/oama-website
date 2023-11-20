@@ -1,48 +1,48 @@
-import Nav from "@includes/nav";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
-import Footer from "@includes/footer";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Nav from '@includes/nav';
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import Head from 'next/head';
+import Link from 'next/link';
+import Footer from '@includes/footer';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Treinamento() {
   return (
     <>
-      <div className="pb-32">
+      <div className='pb-32'>
         <Head>
           <title>Treinamento e Cursos</title>
         </Head>
 
         <Nav />
-        <div className="relative hero-small md:hero min-h-1/2">
-          <div className="items-center h-full pt-32 lg:pb-16 md:pb-16 justify-items-center">
-            <div className="absolute top-0 w-full h-full">
+        <div className='hero-small md:hero relative min-h-1/2'>
+          <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src="/heros/quem_somos.jpg"
-                layout="fill"
+                src='/heros/quem_somos.jpg'
+                layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
-                objectFit="cover"
-                objectPosition="center"
+                objectFit='cover'
+                objectPosition='center'
                 priority={true}
               />
             </div>
           </div>
         </div>
-        <div className="w-3/4 mx-auto sm:max-w-6xl">
-          <div className="mt-16">
-            <div className="mb-24">
-              <h1 class="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-                Cursos e Treinamento{" "}
+        <div className='mx-auto w-3/4 sm:max-w-6xl'>
+          <div className='mt-16'>
+            <div className='mb-24'>
+              <h1 class='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
+                Cursos e Treinamento{' '}
               </h1>
 
-              <div class="w-full mb-">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
+              <div class='mb- w-full'>
+                <div class='gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25' />
               </div>
-              <p className="text-gray-600 sm:p-12 text-md sm:text-lg">
+              <p className='text-md text-gray-600 sm:p-12 sm:text-lg'>
                 A capacitação e o treinamento de profissionais para o emprego de
                 técnicas de estudo e pesquisa em Ornitologia são essenciais para
                 a qualidade dos trabalhos desenvolvidos e dos dados coletados,
@@ -61,32 +61,32 @@ export default function Treinamento() {
             </div>
           </div>
 
-          <div className="">
-            <div className="relative hidden w-full sm:block sm:h-medium">
+          <div className=''>
+            <div className='relative hidden w-full sm:block sm:h-medium'>
               <Image
-                objectFit="contain"
+                objectFit='contain'
                 // width={100}
                 // height={100}
-                src="/treinamento-cursos/1.png"
-                layout="fill"
+                src='/treinamento-cursos/1.png'
+                layout='fill'
               />
             </div>
-            <div className="relative w-full sm:hidden h-medium">
+            <div className='relative h-medium w-full sm:hidden'>
               <Image
-                objectFit="contain"
+                objectFit='contain'
                 // width={100}
                 // height={100}
-                src="/treinamento-cursos/1-mobile.png"
-                layout="fill"
+                src='/treinamento-cursos/1-mobile.png'
+                layout='fill'
               />
             </div>
-            <h2 className="w-full mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
+            <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
               INSCRIÇÕES ABERTAS para a 2º edição do PROGRAMA DE TREINAMENTO EM
               MONITORAMENTO DE AVIFAUNA do OAMa!
             </h2>
             {/* <div className="flex flex-col sm:flex-row"> */}
-            <div className="w-full my-auto">
-              <p className="mb-4 text-gray-600">
+            <div className='my-auto w-full'>
+              <p className='mb-4 text-gray-600'>
                 Em 2022, demos início ao nosso programa de treinamento em
                 monitoramento de avifauna. Nosso programa é voltado para
                 capacitar e formar ornitólogos na coleta de dados de campo com
@@ -94,7 +94,7 @@ export default function Treinamento() {
                 programa é criar oportunidades de treinamento intensivo, de
                 imersão e de longo-prazo para ornitólogos de campo.
               </p>
-              <p className="mb-4 text-gray-600">
+              <p className='mb-4 text-gray-600'>
                 O nosso treinamento foi estruturado com base no programa do
                 Klamath Bird Observatory, adaptado para a nossa realidade local
                 e segue as diretrizes do @icmbio.cemave e a legislação ambiental
@@ -107,14 +107,14 @@ export default function Treinamento() {
                 Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em
                 Bocaina de Minas/MG, Serra da Mantiqueira.
               </p>
-              <p className="mb-4 text-gray-600 ">
+              <p className='mb-4 text-gray-600 '>
                 O ano de 2022 foi nosso primeiro ano de treinamento e aprendemos
                 muito sobre toda a logística e rotina das atividades. Com base
                 nisso, ajustamos o programa para melhorar a experiência de cada
                 trainee em 2023.
               </p>
               <TrainingCarousel></TrainingCarousel>
-              <p className="mb-4 text-gray-600">
+              <p className='mb-4 text-gray-600'>
                 Este ano teremos diferentes modalidades de treinamento.
                 Modalidade 6 meses (1 vaga) e modalidade 3 meses (4 vagas).
                 Devido a inexistência de financiamento externo e para viabilizar
@@ -127,22 +127,22 @@ export default function Treinamento() {
                 Oferecemos até duas bolsas integrais e uma bolsa parcial para as
                 quais todos podem se candidatar.
               </p>
-              <div className="relative hidden w-full sm:block sm:h-medium">
+              <div className='relative hidden w-full sm:block sm:h-medium'>
                 <Image
-                  objectFit="contain"
+                  objectFit='contain'
                   // width={100}
                   // height={100}
-                  src="/treinamento-cursos/2.png"
-                  layout="fill"
+                  src='/treinamento-cursos/2.png'
+                  layout='fill'
                 />
               </div>
-              <div className="relative w-full sm:hidden h-medium">
+              <div className='relative h-medium w-full sm:hidden'>
                 <Image
-                  objectFit="contain"
+                  objectFit='contain'
                   // width={100}
                   // height={100}
-                  src="/treinamento-cursos/2-mobile.png"
-                  layout="fill"
+                  src='/treinamento-cursos/2-mobile.png'
+                  layout='fill'
                 />
               </div>
 
@@ -171,7 +171,7 @@ export default function Treinamento() {
               <HallOfFame />
               {/* </div> */}
             </div>
-            <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
+            <h2 className='mb-6 mt-12 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
               Cursos
             </h2>
             {/* <div className="flex flex-col mb-8 sm:flex-row ">
@@ -336,30 +336,30 @@ export default function Treinamento() {
               </div>
             </div> */}
 
-            <div className="flex flex-col mb-8 sm:flex-row">
-              <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+            <div className='mb-8 flex flex-col sm:flex-row'>
+              <div class='my-auto w-full p-2 sm:w-1/3 sm:px-6  sm:py-0'>
                 <div>
                   <Image
-                    alt="Serra da Mantiqueira"
-                    layout="responsive"
-                    src="/treinamento-cursos/anilhamento_ii.png"
+                    alt='Serra da Mantiqueira'
+                    layout='responsive'
+                    src='/treinamento-cursos/anilhamento_ii.png'
                     width={400}
-                    objectFit="cover"
+                    objectFit='cover'
                     height={400}
                   />
                 </div>
               </div>
-              <div className="w-full my-auto sm:w-2/3">
-                <p className="text-lg font-bold text-gray-600">
+              <div className='my-auto w-full sm:w-2/3'>
+                <p className='text-lg font-bold text-gray-600'>
                   II Curso Prático Básico de Anilhamento
                 </p>
-                <p className="font-bold text-gray-500 text-md">
-                  Data a definir{" "}
+                <p className='text-md font-bold text-gray-500'>
+                  Data a definir{' '}
                 </p>
-                <p className="font-bold text-gray-500 text-md">
+                <p className='text-md font-bold text-gray-500'>
                   Estação de Pesquisa OAMa
                 </p>
-                <p className="text-gray-600 ">
+                <p className='text-gray-600 '>
                   {/* <span className="font-bold">
                     Inscrições e mais informações
                     <span className="text-yellow-600 underline cursor-pointer">
@@ -380,18 +380,18 @@ export default function Treinamento() {
                   temas pertinentes. Focamos nos passeriformes e nas redes de
                   neblina como método de captura. Sendo esse um curso
                   condensado, não será apresentada a parte teórica completa,
-                  <span className="font-bold">
-                    {" "}
+                  <span className='font-bold'>
+                    {' '}
                     portanto é pré-requisito indispensável ter realizado o
                     Módulo Teórico!
-                  </span>{" "}
+                  </span>{' '}
                   Ressaltamos que, pela curta duração, este curso, por si só,
                   não habilita ninguém a se tornar um anilhador, nem garante um
                   registro de anilhador sênior com o CEMAVE.
                   <br />
-                  <span className="font-bold">
+                  <span className='font-bold'>
                     Não é necessária experiência prática prévia.
-                  </span>{" "}
+                  </span>{' '}
                   Todos os alunos receberão instruções, acompanhamento
                   individual, comentários construtivos e terão oportunidades de
                   extrair aves da rede, de anilhar e de coletar dados. No
@@ -410,31 +410,31 @@ export default function Treinamento() {
               </div>
             </div>
 
-            <div className="flex flex-col mb-8 sm:flex-row">
-              <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
+            <div className='mb-8 flex flex-col sm:flex-row'>
+              <div class='my-auto w-full p-2 sm:w-1/3 sm:px-6  sm:py-0'>
                 <div>
                   <Image
-                    alt="Serra da Mantiqueira"
-                    layout="responsive"
-                    src="/treinamento-cursos/muda_iii.png"
+                    alt='Serra da Mantiqueira'
+                    layout='responsive'
+                    src='/treinamento-cursos/muda_iii.png'
                     width={400}
-                    objectFit="cover"
+                    objectFit='cover'
                     height={400}
                   />
                 </div>
               </div>
-              <div className="w-full my-auto sm:w-2/3">
-                <p className="text-lg font-bold text-gray-600">
+              <div className='my-auto w-full sm:w-2/3'>
+                <p className='text-lg font-bold text-gray-600'>
                   III Curso Prático de Análise de Mudas e Classificação de idade
                   em Aves
                 </p>
-                <p className="font-bold text-gray-500 text-md">
+                <p className='text-md font-bold text-gray-500'>
                   {/* 19 a 22 de fevereiro de 2023 */} Data a definir.
                 </p>
-                <p className="font-bold text-gray-500 text-md">
+                <p className='text-md font-bold text-gray-500'>
                   Estação de Pesquisa OAMa
                 </p>
-                <p className="text-gray-600 ">
+                <p className='text-gray-600 '>
                   {/* <span className="font-bold">
                     Inscrições e mais informações
                     <span className="text-yellow-600 underline cursor-pointer">
@@ -446,11 +446,11 @@ export default function Treinamento() {
                     <br />
                   </span> */}
                   Neste curso, vamos ter a oportunidade de colocar em prática o
-                  conteúdo que foi apresentado durante{" "}
-                  <span className="font-bold">
+                  conteúdo que foi apresentado durante{' '}
+                  <span className='font-bold'>
                     Módulo Teórico, que é pré-requisito indispensável para a
                     participação!
-                  </span>{" "}
+                  </span>{' '}
                   Pela curta duração, focaremos o máximo na prática, de forma
                   que cada aluno deverá chegar já com o conhecimento teórico
                   básico sobre o tema. Trabalharemos em campo a análise de muda
@@ -491,34 +491,34 @@ export default function Treinamento() {
                 aves
               </li>
             </ul> */}
-            <h2 className="w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800">
+            <h2 className='mb-6 mt-12 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
               Cursos Concluídos
             </h2>
-            <ul className="p-12 text-lg">
-              <li className="list-disc">
+            <ul className='p-12 text-lg'>
+              <li className='list-disc'>
                 II Curso Prático de Análise de Mudas e Classificação de idade em
                 Aves - 2022 - Presencial
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 I Curso Prático Básico de Anilhamento - 2022 - Presencial
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 II Curso Teórico Básico de Anilhamento com Aves de Noronha -
                 2022 - Online
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 II Curso Teórico de Análise de Mudas e Classificação de idade em
                 Aves - 2022 - Online
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 Curso de Fotografia de Aves com Birds Atlantic - 2022 -
                 Presencial
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 I Curso Teórico Básico de Anilhamento com Aves de Noronha - 2021
-                - Online{" "}
+                - Online{' '}
               </li>
-              <li className="list-disc">
+              <li className='list-disc'>
                 I Curso Análise de Muda e Classificação de Idade em Aves - 2019
                 - Presencial
               </li>
@@ -532,7 +532,7 @@ export default function Treinamento() {
 }
 
 const TrainingCarousel = () => (
-  <div className="flex items-center justify-center cursor-pointer group h-100 sm:px-8">
+  <div className='h-100 group flex cursor-pointer items-center justify-center sm:px-8'>
     <Carousel
       showArrows={true}
       showStatus={false}
@@ -543,14 +543,14 @@ const TrainingCarousel = () => (
       // showThumbs={false}
       stopOnHover
       transitionTime={600}
-      className="w-full mt-2 mb-8 bg-gray-300 sm:mb-4 h-96"
+      className='mb-8 mt-2 h-96 w-full bg-gray-300 sm:mb-4'
     >
       {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => {
         return (
-          <div className="relative w-full h-96 sm:h-96">
+          <div className='relative h-96 w-full sm:h-96'>
             <Image
-              layout="fill"
-              objectFit="cover"
+              layout='fill'
+              objectFit='cover'
               src={`/treinamento-cursos/carousel/${num}.jpg`}
             ></Image>
           </div>
@@ -563,7 +563,7 @@ const TrainingCarousel = () => (
 const HallOfFame = () => {
   return (
     <>
-      <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
+      <h2 className='mb-8 mt-16 text-center text-4xl font-bold'>
         Trainees 2022
       </h2>
 
@@ -571,28 +571,27 @@ const HallOfFame = () => {
         return (
           <div
             class={`flex md:${
-              i % 2 ? "flex-row-reverse" : "flex-row"
-            } mb-8  justify-around items-center   relative`}
-            
+              i % 2 ? 'flex-row-reverse' : 'flex-row'
+            } relative  mb-8 items-center   justify-around`}
           >
-            <div class="w-3/5 shadow-lg rounded-full  sm:w-1/6 m-2 ">
+            <div class='m-2 w-3/5 rounded-full  shadow-lg sm:w-1/6 '>
               <div>
                 <Image
-                  className="border-8 border-gray-200 rounded-full"
+                  className='rounded-full border-8 border-gray-200'
                   src={`/treinamento-cursos/trainees/${trainee.img}.jpg`}
-                  layout="responsive"
+                  layout='responsive'
                   width={20}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={20}
                 ></Image>
               </div>
             </div>
 
-            <div class="w-full sm:w-4/6 p-2">
-              <h3 class="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-1">
+            <div class='w-full p-2 sm:w-4/6'>
+              <h3 class='text-justify-center mb-1 text-3xl font-bold leading-none text-gray-800'>
                 {trainee.name}
               </h3>
-              <h4 class="text-xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+              <h4 class='text-justify-center mb-3 text-xl font-bold leading-none text-gray-800'>
                 {trainee.basic_info}
                 <br />
                 {trainee.time}
@@ -600,8 +599,8 @@ const HallOfFame = () => {
                 {trainee.birds}
               </h4>
 
-              <p class="text-gray-600 ">{trainee.quote}</p>
-              <a className="underline" target="_blank" href={trainee.reel}>
+              <p class='text-gray-600 '>{trainee.quote}</p>
+              <a className='underline' target='_blank' href={trainee.reel}>
                 Como foi
               </a>
             </div>
@@ -614,63 +613,63 @@ const HallOfFame = () => {
 
 const trainees = [
   {
-    name: "Otávio Rocha",
-    basic_info: "Biólogo, 25 anos, Fortaleza (CE)",
-    time: "Estadia de fevereiro a maio",
-    birds: "90 aves processadas",
+    name: 'Otávio Rocha',
+    basic_info: 'Biólogo, 25 anos, Fortaleza (CE)',
+    time: 'Estadia de fevereiro a maio',
+    birds: '90 aves processadas',
     quote:
-      "“É inevitável não se apaixonar pela Mantiqueira, pelas aves e pelo trabalho de campo. Essa imersão transformou minha visão sobre esses animais e as possibilidades de pesquisa que podemos desenvolver.”",
-    reel: "https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link",
-    img: "trainee otávio",
+      '“É inevitável não se apaixonar pela Mantiqueira, pelas aves e pelo trabalho de campo. Essa imersão transformou minha visão sobre esses animais e as possibilidades de pesquisa que podemos desenvolver.”',
+    reel: 'https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link',
+    img: 'trainee otávio',
   },
   {
-    name: "André Menini",
-    basic_info: "Biólogo, 25 anos, Caieiras (SP)",
-    time: "Estadia de fevereiro a maio",
-    birds: "104 aves processadas",
+    name: 'André Menini',
+    basic_info: 'Biólogo, 25 anos, Caieiras (SP)',
+    time: 'Estadia de fevereiro a maio',
+    birds: '104 aves processadas',
     quote:
-      "“O programa fez total diferença na minha formação, afinal de contas, não são muitas as oportunidades para aprender sobre a técnica de anilhamento da forma correta no Brasil e tenho a certeza que tive os melhores professores. Ser trainee no OAMa abriu minha cabeça para diversas possibilidades na ornitologia.”",
-    reel: "https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link",
-    img: "trainee andré",
+      '“O programa fez total diferença na minha formação, afinal de contas, não são muitas as oportunidades para aprender sobre a técnica de anilhamento da forma correta no Brasil e tenho a certeza que tive os melhores professores. Ser trainee no OAMa abriu minha cabeça para diversas possibilidades na ornitologia.”',
+    reel: 'https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link',
+    img: 'trainee andré',
   },
   {
-    name: "Danielle Santos",
-    basic_info: "Bióloga, 23 anos, Palmas (TO)",
-    time: "Estadia de março a julho",
-    birds: "165 aves processadas",
+    name: 'Danielle Santos',
+    basic_info: 'Bióloga, 23 anos, Palmas (TO)',
+    time: 'Estadia de março a julho',
+    birds: '165 aves processadas',
     quote:
-      "“O treinamento sem dúvidas foi uma oportunidade de iniciar na ornitologia com um preparo de altíssima qualidade. Cheguei no OAMa sem saber segurar uma ave com as mãos, e hoje, com as ótimas instruções que tive, sou capaz de capturar as aves e coletar os dados com segurança, agilidade e eficiência.”",
-    reel: "https://www.instagram.com/reel/CgnKTKTlKnP/?utm_source=ig_web_copy_link",
-    img: "trainee danielle",
+      '“O treinamento sem dúvidas foi uma oportunidade de iniciar na ornitologia com um preparo de altíssima qualidade. Cheguei no OAMa sem saber segurar uma ave com as mãos, e hoje, com as ótimas instruções que tive, sou capaz de capturar as aves e coletar os dados com segurança, agilidade e eficiência.”',
+    reel: 'https://www.instagram.com/reel/CgnKTKTlKnP/?utm_source=ig_web_copy_link',
+    img: 'trainee danielle',
   },
   {
-    name: "João Victor Ferrari",
-    basic_info: "Biólogo, 24 anos, São Borja (RS)",
-    time: "Estadia de maio a julho",
-    birds: "127 aves processadas",
+    name: 'João Victor Ferrari',
+    basic_info: 'Biólogo, 24 anos, São Borja (RS)',
+    time: 'Estadia de maio a julho',
+    birds: '127 aves processadas',
     quote:
-      "“Essa experiência agregou significativamente na minha formação, possibilitando adquirir novas habilidades e amadurecer as minhas decisões. Foi uma satisfação participar do programa de treinamento em monitoramento de avifauna do OAMa.”",
-    reel: "https://www.instagram.com/reel/CkMTadOP-y0/?utm_source=ig_web_copy_link",
-    img: "trainee joão",
+      '“Essa experiência agregou significativamente na minha formação, possibilitando adquirir novas habilidades e amadurecer as minhas decisões. Foi uma satisfação participar do programa de treinamento em monitoramento de avifauna do OAMa.”',
+    reel: 'https://www.instagram.com/reel/CkMTadOP-y0/?utm_source=ig_web_copy_link',
+    img: 'trainee joão',
   },
   {
-    name: "Gabriela Inhesta",
-    basic_info: "Bióloga, 24 anos, Curitiba (PR)",
-    time: "Estadia de julho a setembro",
-    birds: "41 aves processadas",
+    name: 'Gabriela Inhesta',
+    basic_info: 'Bióloga, 24 anos, Curitiba (PR)',
+    time: 'Estadia de julho a setembro',
+    birds: '41 aves processadas',
     quote:
-      "“Estar imersa na natureza e no trabalho de campo com as aves é a realização de um grande sonho e essa foi com certeza a experiência mais bonita e enriquecedora que eu já vivi até então. Eu finalizo muito realizada e me sentindo de fato capacitada para exercer um trabalho de qualidade. “",
-    reel: "https://www.instagram.com/reel/CkMVkpSvzbi/?utm_source=ig_web_copy_link",
-    img: "trainee gabriela",
+      '“Estar imersa na natureza e no trabalho de campo com as aves é a realização de um grande sonho e essa foi com certeza a experiência mais bonita e enriquecedora que eu já vivi até então. Eu finalizo muito realizada e me sentindo de fato capacitada para exercer um trabalho de qualidade. “',
+    reel: 'https://www.instagram.com/reel/CkMVkpSvzbi/?utm_source=ig_web_copy_link',
+    img: 'trainee gabriela',
   },
   {
-    name: "Luiz Felipe Gonzaga",
-    basic_info: "Biólogo, 22 anos, Foz do Iguaçu (PR)",
-    time: "Estadia de agosto a novembro",
-    birds: "136 aves processadas",
+    name: 'Luiz Felipe Gonzaga',
+    basic_info: 'Biólogo, 22 anos, Foz do Iguaçu (PR)',
+    time: 'Estadia de agosto a novembro',
+    birds: '136 aves processadas',
     quote:
-      "“Aprendi muito sobre a fauna local e novas metodologias, pretendo usar todo o conhecimento adquirido para novos projetos e consultoria. A estação de pesquisa é maravilhosa e me sinto muito feliz fazendo parte desta excelente equipe.”",
-    reel: "https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link",
-    img: "trainee luiz",
+      '“Aprendi muito sobre a fauna local e novas metodologias, pretendo usar todo o conhecimento adquirido para novos projetos e consultoria. A estação de pesquisa é maravilhosa e me sinto muito feliz fazendo parte desta excelente equipe.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
   },
 ];
