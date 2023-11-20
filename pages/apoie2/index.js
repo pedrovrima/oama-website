@@ -151,6 +151,7 @@ export default function Apoie2(props) {
         <SecondSection />
         <ThirdSection />
         <FourthSection />
+
         <Footer />
       </div>
     </div>
@@ -328,7 +329,7 @@ const DonationButton = ({ image, url, name }) => {
 const FourthSection = () => {
   return (
     <>
-      <div className='relative mx-auto  -mb-[70px] flex h-[700px]  w-screen flex-row bg-[#4E7B90] md:-my-[100px] '>
+      <div className='relative mx-auto  -mb-[70px] flex h-[700px]  w-screen flex-row bg-[#4E7B90] sm:-mb-[70px] md:-mt-[100px] '>
         <div className='relative mx-auto flex w-screen items-center justify-center md:max-w-screen-md lg:max-w-[1024px]'>
           <div
             style={{ transform: 'scaleX(-1)', rotate: '-15deg' }}
