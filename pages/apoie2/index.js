@@ -11,9 +11,8 @@ import Link from 'next/link';
 import Footer from '@includes/footer';
 
 export const getServerSideProps = async (context) => {
-  const stripe = new Stripe(
-    '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'
-  );
+  console.log(process.env);
+  const stripe = new Stripe(process.env.STRIPE_KEY);
 
   //load all products from stripe
   const products = await stripe.products.list({ active: true });
@@ -41,9 +40,7 @@ export const getServerSideProps = async (context) => {
 };
 
 export default function Apoie2(props) {
-  const stripe = new Stripe(
-    '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'
-  );
+  const stripe = new Stripe(process.env.STRIPE_KEY);
 
   return (
     <div className='max-w-[100vw] overflow-hidden font-euphoria'>
