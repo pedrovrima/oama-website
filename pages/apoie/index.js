@@ -11,7 +11,6 @@ import Link from 'next/link';
 import Footer from '@includes/footer';
 
 export const getServerSideProps = async (context) => {
-  console.log(process.env);
   const stripe = new Stripe(process.env.STRIPE_KEY);
 
   //load all products from stripe
@@ -21,7 +20,7 @@ export const getServerSideProps = async (context) => {
   const prices = await stripe.prices.list();
 
   const paymentLinks = await stripe.paymentLinks.list();
-  console.log(paymentLinks);
+
   //join them
   const fullProduct = products.data.map((product) => {
     return {
@@ -40,15 +39,17 @@ export const getServerSideProps = async (context) => {
 };
 
 export default function Apoie2(props) {
-  const stripe = new Stripe(process.env.STRIPE_KEY);
+  const stripe = new Stripe(
+    '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'
+  );
 
   return (
     <div className='max-w-[100vw] overflow-hidden font-euphoria'>
       <Nav />
       <div className=''>
         <div className=' relative h-[700px] max-h-[70vh] bg-[#4E7B90]'>
-          <div className='hero-small md:hero h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
-            <div className='absolute top-0 h-full w-full'>
+          <div className='items-center h-full pt-32 hero-small md:hero justify-items-center md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 w-full h-full'>
               <Image
                 className='z-40'
                 src='/apoie/capa.png'
@@ -161,7 +162,7 @@ export default function Apoie2(props) {
 const Billing = ({ products, stripe }) => {
   const [loadingStripe, setLoadingStripe] = useState(false);
   return (
-    <div className='relative h-fit min-w-fit px-8 py-12'>
+    <div className='relative px-8 py-12 h-fit min-w-fit'>
       <div className='relative'>
         {loadingStripe && (
           <div className='absolute left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-[#4E7B90] opacity-80'>
@@ -216,7 +217,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
   }
 
   return (
-    <div className='mb-8 flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center mb-8'>
       <div
         onClick={async () => {
           setLoading(true);
@@ -232,8 +233,8 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
         className='group relative h-36 w-36 cursor-pointer  rounded-full border-4 border-solid border-[#332139]  shadow-yellow-500 transition-all duration-200 ease-in-out hover:border-[#62466B] hover:shadow-2xl'
       >
         <a className='absolute -bottom-6 w-36 rounded-full bg-[#332139] px-4 py-2 text-white shadow-xl transition-all duration-200 ease-in-out group-hover:bg-[#62466B]  group-hover:shadow-2xl'>
-          <p className='text-center text-sm font-bold '>{product.name}</p>
-          <p className='text-center text-sm'>
+          <p className='text-sm font-bold text-center '>{product.name}</p>
+          <p className='text-sm text-center'>
             {currencyMaker.format(product.price[0].unit_amount / 100)} / mês
           </p>
         </a>
@@ -253,7 +254,7 @@ const P = (props) => {
 
 const H3 = ({ children }) => {
   return (
-    <h3 className='mb-6 px-8 text-lg font-bold text-white md:px-0'>
+    <h3 className='px-8 mb-6 text-lg font-bold text-white md:px-0'>
       {children}
     </h3>
   );
@@ -288,7 +289,7 @@ const DonationButtonGroup = () => {
   ];
 
   return (
-    <div className='z-40 grid auto-cols-min grid-cols-2 justify-items-center gap-2 '>
+    <div className='z-40 grid grid-cols-2 gap-2 auto-cols-min justify-items-center '>
       {donationMethods.map((method) => {
         return (
           <DonationButton
@@ -306,7 +307,7 @@ const DonationButton = ({ image, url, name }) => {
   return (
     <Link href={url} passHref>
       <a
-        className='group relative z-40 flex w-40 flex-row items-center'
+        className='relative z-40 flex flex-row items-center w-40 group'
         target='_blank'
       >
         <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
@@ -403,18 +404,18 @@ const Projects = () => {
                     project.url && 'cursor-pointer hover:underline'
                   } `}
                 >
-                  <span className='text-md font-bold text-gray-500'>
+                  <span className='font-bold text-gray-500 text-md'>
                     {project.title}
                   </span>
                   {project.description && (
-                    <span className='text-md text-gray-400'>{` - ${project.description}`}</span>
+                    <span className='text-gray-400 text-md'>{` - ${project.description}`}</span>
                   )}
                   <span className='text-sm text-gray-400'>{`, ${project.year}`}</span>
                 </a>
               </Link>
             ) : (
               <p className={`${project.url && 'cursor-pointer underline'}`}>
-                <span className='text-md font-bold text-gray-500'>
+                <span className='font-bold text-gray-500 text-md'>
                   {project.title}
                 </span>
                 {project.description && (
@@ -501,7 +502,7 @@ const projects = [
 const SecondSection = () => {
   return (
     <div className='  md:hero-path relative -top-[50px] z-0 mx-auto pb-24 md:-top-[200px] md:pb-0 lg:-top-[150px]'>
-      <div className='absolute top-0 h-full w-full'>
+      <div className='absolute top-0 w-full h-full'>
         <Image priority src='/apoie/34.png' layout='fill' objectFit='cover' />
       </div>
       <div className=' relative z-20 mx-auto w-full py-24  md:max-w-screen-md md:py-48 lg:max-w-[1024px] lg:py-36'>
@@ -513,7 +514,7 @@ const SecondSection = () => {
             height={350}
           ></Image>
         </div>
-        <div className='flex w-full flex-col lg:flex-row lg:items-center'>
+        <div className='flex flex-col w-full lg:flex-row lg:items-center'>
           <div className=' z-[99] px-12 md:pl-12 lg:w-1/4 lg:pl-0'>
             <H2>Sua participação e apoio fazem a diferença</H2>
             <P>
@@ -542,7 +543,7 @@ const SecondSection = () => {
               ></Image>
             </div>
             <div className=' absolute left-[350px] top-[240px] z-20 min-w-[500px] rounded-l-full rounded-r-full bg-[#4E7B90] py-4 pl-24 pr-24 sm:left-[350px] sm:pr-12'>
-              <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
+              <div className='flex flex-row items-center justify-center h-full gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
                   <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
                   <p>Total de R$66.048,00 para o ano de 2024.</p>
@@ -665,7 +666,7 @@ const SecondCarrousel = () => {
         <div className='embla__container w-screen sm:w-[550px] lg:w-[750px]'>
           {images.map((image, i) => {
             return (
-              <div className='embla__slide flex flex-col items-center' key={i}>
+              <div className='flex flex-col items-center embla__slide' key={i}>
                 <div className='block  w-screen items-center justify-center rounded-xl bg-[#332139] sm:h-[285.6px] sm:w-[500px] lg:h-[400px] lg:w-[700px]'>
                   <Image
                     className='z-40 rounded-xl'
