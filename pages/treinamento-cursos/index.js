@@ -72,7 +72,7 @@ export default function Treinamento() {
               Cursos e Treinamento
             </h2>
       
-            <TrainingCarousel></TrainingCarousel>
+            <CourseCarousel></CourseCarousel>
       
       
       <Accordion collapsible>
@@ -141,6 +141,7 @@ export default function Treinamento() {
         <br></br>
         <p className="mb-4 text-gray-600">O treinamento conta ainda com o apoio e participação oportuna de Danielle Santos, Otávio Rocha, Affonso Souza e Pedro Martins para a sua construção e realização. Danielle foi trainee OAMa e depois instrutora primária deste programa na edição anterior. Hoje Danielle é da equipe OAMa como colaboradora externa, anilhadora sênior pelo CEMAVE e mestranda pela UFRGS. Otávio é assistente de comunicação e divulgação científica do OAMa, mas se interessa e atua na área prática de monitoramento e treinamento também. Foi trainee OAMa e posteriormente participou do treinamento em monitoramento de avifauna pelo KBO (Oregon, EUA) também, sendo certificado como anilhador e treinador pelo NABC.  Affonso é coordenador de projetos OAMa, anilhador sênior do CEMAVE com experiência em monitoramento e pesquisa em campo. Pedro é co-fundador e coordenador de dados do OAMa, anilhador e treinador certificado pelo NABC.</p>
         <br></br>
+        <TrainingCarousel></TrainingCarousel>
         <p className="mb-4 text-gray-600">Para 2024 oferecemos até 8 vagas de trainees, sendo quatro vagas para 3 meses e quatro vagas para 1 mês de duração.  O treinamento tem um custo de R$1200,00 mensais para participação. Este custo vai cobrir a hospedagem na estação de pesquisa, deslocamento para as atividades internas do programa, materiais usados durante o treinamento, e o acompanhamento de um instrutor em dedicação exclusiva para acompanhar e auxiliar os trainees durante toda a formação dos trainees. 
         Caso você queira participar deste ŕograma de treinamento mas não tenha como arcar com os custos, você pode se inscrever e pleitear uma bolsa ou desconto. Buscamos oferecer o máximo de gratuidades e descontos possíveis a cada ano. Essa possibilidade varia de acordo com os apoios que conseguimos para o programa ao longo do tempo. <a href="https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit" target="blank" className="font-bold">Acesse o edital de chamada completo para detalhes.</a></p>
             {/* <div className="flex flex-col sm:flex-row"> */}
@@ -595,6 +596,35 @@ export default function Treinamento() {
 }
 
 const TrainingCarousel = () => (
+  <div className='h-100 group flex cursor-pointer items-center justify-center sm:px-8'>
+    <Carousel
+      showArrows={true}
+      showStatus={false}
+      autoPlay
+      swipeable
+      emulateTouch
+      infiniteLoop
+      // showThumbs={false}
+      stopOnHover
+      transitionTime={600}
+      className='mb-8 mt-2 h-96 w-full bg-gray-300 sm:mb-4'
+    >
+      {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => {
+        return (
+          <div className='relative h-96 w-full sm:h-96'>
+            <Image
+              layout='fill'
+              objectFit='cover'
+              src={`/treinamento-cursos/carousel/${num}.jpg`}
+            ></Image>
+          </div>
+        );
+      })}
+    </Carousel>
+  </div>
+);
+
+const CourseCarousel = () => (
   <div className="flex items-center justify-cente cursor-pointer group h-full sm:px-8">
     <Carousel
       showArrows={true}
