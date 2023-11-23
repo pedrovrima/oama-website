@@ -1,11 +1,17 @@
-import Nav from '@includes/nav';
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
-import Head from 'next/head';
-import Link from 'next/link';
-import Footer from '@includes/footer';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Nav from "@includes/nav";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
+import Footer from "@includes/footer";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+} from "@reach/accordion";
 
 export default function Treinamento() {
   return (
@@ -80,6 +86,35 @@ export default function Treinamento() {
                 layout='fill'
               />
             </div>
+            <Accordion collapsible>
+      <AccordionItem>
+        <h3 className="font-bold  text-gray-600 sm:p-12 text-lg sm:text-lg text-center bg-gray ">
+          <AccordionButton>VII BBMA - Bird Banding and Molt Analysis Workshop - Curso internacional de anilhamento de aves e análise de muda 
+            <div className="">
+              <Image
+               
+                width={25}
+                height={25}
+                src="/treinamento-cursos/drop.png"
+                
+              />
+            </div></AccordionButton>
+        </h3>
+
+        <AccordionPanel>
+        <br></br>
+
+        <p className="text-gray-600 sm:p-12 text-md sm:text-lg">O sétimo de Anilhamento de Aves e Análise de Muda (Bird Banding and Molt Analysis - BBMA VII) acontecerá de 17 a 24 de março de 2024 no Instituto Alto Montana, próximo a Itamonte, MG, na encosta norte da Serra da Mantiqueira, Mata Atlântica brasileira. A iniciativa é promovida pela Universidade Federal do Rio Grande do Sul (UFRGS) e pelo Observatório de Aves da Mantiqueira (OAMa), com apoio do Michigan Technological University (MTU) e da Universidade Federal do Rio Grande (FURG). Motivados pelo crescente número de anilhadores de aves no Brasil e pelo potencial dos sistemas de classificação de idade baseados na análise de muda para melhorar a qualidade dos dados de anilhamento, pretendemos 1) promover o melhor domínio possível das habilidades básicas de anilhamento enquanto analisamos os ciclos de muda e o envelhecimento das aves do sub-bosque florestal na região da Mata Atlântica; e 2) contribuir para a formação de anilhadores profissionais, de mente aberta e testados em campo, que aplicarão suas habilidades aqui ou em qualquer outro lugar do mundo.</p>
+        
+        <p className="text-gray-600 sm:p-12 text-md sm:text-lg">O programa do curso é voltado para anilhadores ativos, mas aceitamos candidatos com qualquer experiência, de qualquer país e/ou nível de especialização. Os instrutores de anilhamento Luiza Figueira (OAMa), Pedro Martins (OAMa) e Jared Wolfe (MTU) são todos certificados pelo North American Banding Council. Márcio Repenning (FURG) tem vinte anos de experiência em anilhamento e mais de trinta publicações sobre ecologia, comportamento e evolução de aves. Os quatro instrutores anilharam em conjunto mais de 50 mil aves. Eles possuem profundo conhecimento da avifauna sul-americana e trabalharão com uma equipe de jovens ornitólogos auxiliados por Gonçalo Ferraz. O curso do BBMA deste ano será bilíngue, com aulas ministradas em português e inglês; no entanto, o conteúdo deve ser acessível a qualquer pessoa que consiga comunicar em inglês, espanhol ou português.</p>
+      
+        <p className="text-gray-600 sm:p-12 text-md sm:text-lg">A remuneração dos instrutores será custeada pelas respectivas instituições, mas será necessário cobrar uma taxa de R$ 1.900, pagável ao Instituto Alto Montana, para hospedagem e alimentação durante todo o curso. Esta taxa também cobre o transporte de e para Resende, a cidade mais próxima com terminal rodoviário de longa distância. A aplicação para se candidatar a uma vaga no curso é gratuita e poderemos oferecer apoio parcial, dependendo do resultado dos pedidos de subsídios em andamento. O curso matriculará 16 alunos.</p>
+        
+        <p className="text-gray-600 sm:p-12 text-md sm:text-lg">PARA SE INSCREVER: Preencha o formulário disponível em <a href="https://ferrazlab.org/workshops" className="fc-blue"> https://ferrazlab.org/workshops </a> para enviar um link para seu currículo e uma breve carta (em português, inglês ou espanhol) descrevendo sua experiência anterior com anilhamento de aves e explicando por que este curso é relevante para você. Aceitaremos inscrições até 15 de dezembro de 2023 e as analisaremos prontamente, para retornarmos até sexta-feira, 23 de dezembro de 2023. Em caso de dúvidas, escreva para Gonçalo Ferraz em goncalo.ferraz@ufrgs.br. Estamos ansiosos para encontrá-lo em campo!</p>
+
+        </AccordionPanel>
+      </AccordionItem>
+      </Accordion>
             <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
               INSCRIÇÕES ABERTAS para a 2º edição do PROGRAMA DE TREINAMENTO EM
               MONITORAMENTO DE AVIFAUNA do OAMa!
