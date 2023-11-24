@@ -596,7 +596,7 @@ export default function Treinamento() {
 }
 
 const TrainingCarousel = () => (
-  <div className='h-100 group flex cursor-pointer items-center justify-center sm:px-8'>
+  <div className='h-100 group flex cursor-pointer items-center justify-center mb-8 sm:px-8'>
     <Carousel
       showArrows={true}
       showStatus={false}
@@ -615,7 +615,7 @@ const TrainingCarousel = () => (
             <Image
               layout='fill'
               objectFit='cover'
-              src={`/treinamento-cursos/carousel/${num}.jpg`}
+              src={`/treinamento-cursos/carouseltraining/${num}.jpg`}
             ></Image>
           </div>
         );
@@ -636,13 +636,13 @@ const CourseCarousel = () => (
       // showThumbs={false}
       stopOnHover
       transitionTime={600}
-      className="w-full mt-2 mb-8 sm:mb-4 h-full"
+      className="w-full mt-2 mb-8  sm:mb-4 h-full"
     >
       {Array.from({ length: 2 }, (_, i) => i + 1).map((num) => {
         return (
-          <div  className="relative w-full h-full sm:h-96">
+          <div  className="relative w-full bg-slate-300 h-full sm:h-96">
             <Image
-              className="bg-black"
+              
               layout="fill"
               
               objectFit="contain"
