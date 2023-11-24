@@ -625,7 +625,7 @@ const TrainingCarousel = () => (
 );
 
 const CourseCarousel = () => (
-  <div className="flex items-center justify-cente cursor-pointer group h-full sm:px-8">
+  <div className="m-auto group flex cursor-pointer items-center justify-center mb-8 sm:px-8 sm:w-1/1 md:w-3/4 lg:w-2/3">
     <Carousel
       showArrows={true}
       showStatus={false}
@@ -636,11 +636,11 @@ const CourseCarousel = () => (
       // showThumbs={false}
       stopOnHover
       transitionTime={600}
-      className="w-full mt-2 mb-8  sm:mb-4 h-full"
+      className="mb-8 mt-2 h-96 w-full sm:mb-4"
     >
       {Array.from({ length: 2 }, (_, i) => i + 1).map((num) => {
         return (
-          <div  className="relative w-full bg-slate-300 h-full sm:h-96">
+          <div  className="relative w-full h-96 sm:h-96">
             <Image
               
               layout="fill"
