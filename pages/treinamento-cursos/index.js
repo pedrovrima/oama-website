@@ -548,7 +548,7 @@ const CourseCarousel = () => (
     >
       {Array.from({ length: 2 }, (_, i) => i + 1).map((num) => {
         return (
-          <div  className="relative w-full h-96 sm:h-96">
+          <div  className="relative w-full bg-slate-100 h-96 sm:h-96">
             <Image
               
               layout="fill"
