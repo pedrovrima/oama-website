@@ -90,7 +90,7 @@ export default function Treinamento() {
                 <Acc1 />
               </Item>
         </Accordion>
-        <Accordion collapsible multiple className='mt-6'>
+        <Accordion collapsible multiple className=''>
               <Item>
                 {' '}
                 <Acc2 />
@@ -587,7 +587,7 @@ const Acc1 = () => {
   const { isExpanded } = useAccordionItemContext();
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionButton className='flex w-full items-center justify-between border-black border-b-0 '>
         <AccH3>
         VII BBMA - Bird Banding and Molt Analysis Workshop - Curso internacional de anilhamento de aves e análise de muda{' '}
         </AccH3>
@@ -679,7 +679,9 @@ const Acc2 = () => {
                 />
               </div>
               <p className="mb-4 text-gray-600"> Em caso de dúvidas, escreva-nos um e-mail para <a href="mailto:contato@oama.eco.br" className="font-bold">contato@oama.eco.br</a> com o título “PROGRAMA DE TREINAMENTO - DÚVIDA”.</p>
-              <p className=" bg-slate  mb-4 text-gray-600 "> O Programa de treinamento em monitoramento de avifauna do OAMa é uma ação nas áreas de educação, capacitação profissional, pesquisa e divulgação científica. Buscamos APOIO E PATROCÍNIO para viabilizar este programa anualmente de forma acessível para os trainees. Caso você ou sua empresa queira apoiar ou patrocinar o programa de treinamento, entre em contato com a gente escrevendo para <a href="mailto:contato@oama.eco.br" className="font-bold">contato@oama.eco.br</a> com o título “PROGRAMA DE TREINAMENTO - APOIO”.</p>
+              <div className="w-full bg-slate-200">
+              <p className=" bg-slate  mb-4 text-gray-600 px-4 py-4 "> O Programa de treinamento em monitoramento de avifauna do OAMa é uma ação nas áreas de educação, capacitação profissional, pesquisa e divulgação científica. Buscamos APOIO E PATROCÍNIO para viabilizar este programa anualmente de forma acessível para os trainees. Caso você ou sua empresa queira apoiar ou patrocinar o programa de treinamento, entre em contato com a gente escrevendo para <a href="mailto:contato@oama.eco.br" className="font-bold">contato@oama.eco.br</a> com o título “PROGRAMA DE TREINAMENTO - APOIO”.</p>
+              </div>
               <h3 className="text-center font-bold text-lg">Trainees que já passaram pelo treinamento OAMa</h3>
               <HallOfFame/>
        {/* <p className=" font-bold mb-4 text-gray-600"> <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1700585060955312&usg=AOvVaw02nds_Cn1Qe7ByZXl6PJWf" target="blank">Edital completo de chamada para Programa de Treinamento OAMa 2024</a></p>
