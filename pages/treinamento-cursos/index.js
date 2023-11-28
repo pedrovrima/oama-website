@@ -29,7 +29,7 @@ export default function Treinamento() {
             <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src='/heros/quem_somos.jpg'
+                src='/heros/12.jpg'
                 layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
@@ -71,10 +71,19 @@ export default function Treinamento() {
 
           <div className=''>
            <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
-              Cursos e Treinamento
+              Chamadas e inscrições abertas
             </h2>
-      
-            <CourseCarousel></CourseCarousel>
+          <div className="relative w-full h-96 ">
+            <Image
+            src={'/treinamento-cursos/carousel/2.jpg'}
+         layout="fill"
+            objectFit="contain"
+            >
+              
+            </Image>
+
+          </div>
+            {/*<CourseCarousel></CourseCarousel>*/}
             <Accordion collapsible multiple className='mt-6'>
               <Item>
                 {' '}
@@ -95,7 +104,7 @@ export default function Treinamento() {
         </Accordion>
       
 
-            
+       
             <div className='my-auto w-full'>
               
                         
@@ -122,7 +131,7 @@ export default function Treinamento() {
                 >
                   formulário de inscrição
                 </a>
-                . */}
+                . 
               {/* </p> */}
              
               {/* </div> */}
@@ -609,13 +618,14 @@ const Acc2 = () => {
     <>
       <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>
-        Programa de treinamento em monitoramento de avifauna do OAMa - Treinamento de longa-duração e imersão com residência na EP-OAMa{' '}
+        Programa de treinamento em monitoramento de avifauna do OAMa {' '}
         </AccH3>
         <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
         <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionButton>
       <AccordionPanel className='px-8 py-4'>
-      <div className='relative hidden w-full sm:block sm:h-medium'>
+      <p className="mb-3 md:mb-0">Treinamento de longa-duração e imersão com residência na EP-OAMa</p>
+      <div className='relative hidden md:block sm:h-medium'>
               <Image
                 objectFit='contain'
                 // width={100}
@@ -624,7 +634,7 @@ const Acc2 = () => {
                 layout='fill'
               />
             </div>
-            <div className='relative h-medium w-full mb-3 sm:hidden'>
+            <div className='relative h-medium w-full mb-3 md:hidden'>
               <Image
                 objectFit='contain'
                 // width={100}
