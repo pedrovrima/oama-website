@@ -546,10 +546,10 @@ const SecondSection = () => {
               <div className='flex flex-row items-center justify-center h-full gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
                   <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
-                  <p>Total de R$66.048,00 para o ano de 2024.</p>
+                  <p>Total de R$68.400,00 para o ano de 2024.</p>
                 </div>
                 <div className='h-[60px] w-1 rounded-full bg-white' />
-                <p>Meta mensal da campanha: R$5.500,00.</p>
+                <p>Meta mensal da campanha: R$5.700,00.</p>
               </div>
             </div>
           </div>
