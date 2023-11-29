@@ -29,7 +29,7 @@ export default function Treinamento() {
             <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src='/heros/quem_somos.jpg'
+                src='/heros/12.jpg'
                 layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
@@ -71,31 +71,35 @@ export default function Treinamento() {
 
           <div className=''>
            <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
-              Cursos e Treinamento
+              Chamadas e inscrições abertas
             </h2>
-      
-            <CourseCarousel></CourseCarousel>
+          <div className="relative w-full h-96 ">
+            <Image
+            src={'/treinamento-cursos/carousel/2.jpg'}
+         layout="fill"
+            objectFit="contain"
+            >
+              
+            </Image>
+
+          </div>
+            {/*<CourseCarousel></CourseCarousel>*/}
             <Accordion collapsible multiple className='mt-6'>
               <Item>
                 {' '}
                 <Acc1 />
               </Item>
         </Accordion>
-        <Accordion collapsible multiple className='mt-6'>
+        <Accordion collapsible multiple className=''>
               <Item>
                 {' '}
                 <Acc2 />
               </Item>
         </Accordion>
-        <Accordion collapsible multiple className='mt-6'>
-              <Item>
-                {' '}
-                <Acc3 />
-              </Item>
-        </Accordion>
+       
       
 
-            
+       
             <div className='my-auto w-full'>
               
                         
@@ -122,7 +126,7 @@ export default function Treinamento() {
                 >
                   formulário de inscrição
                 </a>
-                . */}
+                . 
               {/* </p> */}
              
               {/* </div> */}
@@ -583,7 +587,7 @@ const Acc1 = () => {
   const { isExpanded } = useAccordionItemContext();
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionButton className='flex w-full items-center justify-between border-black border-b-0 '>
         <AccH3>
         VII BBMA - Bird Banding and Molt Analysis Workshop - Curso internacional de anilhamento de aves e análise de muda{' '}
         </AccH3>
@@ -609,13 +613,14 @@ const Acc2 = () => {
     <>
       <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>
-        Programa de treinamento em monitoramento de avifauna do OAMa - Treinamento de longa-duração e imersão com residência na EP-OAMa{' '}
+        Programa de treinamento em monitoramento de avifauna do OAMa<p className="mt-1 md:mb-0 font-thin">Treinamento de longa-duração e imersão com residência na EP-OAMa</p> {' '}
         </AccH3>
         <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
         <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionButton>
       <AccordionPanel className='px-8 py-4'>
-      <div className='relative hidden w-full sm:block sm:h-medium'>
+      
+      <div className='relative hidden md:block sm:h-medium'>
               <Image
                 objectFit='contain'
                 // width={100}
@@ -624,7 +629,7 @@ const Acc2 = () => {
                 layout='fill'
               />
             </div>
-            <div className='relative h-medium w-full mb-3 sm:hidden'>
+            <div className='relative h-medium w-full mb-3 md:hidden'>
               <Image
                 objectFit='contain'
                 // width={100}
@@ -636,20 +641,22 @@ const Acc2 = () => {
         
         <p className="mb-4 text-gray-600">Este treinamento tem o objetivo de capacitar ornitólogos na coleta de dados de campo com qualidade técnica e ética profissional. Visamos criar oportunidades de treinamento intensivo, de imersão e de longo-prazo para ornitólogos de campo no Brasil.</p>
         
-        <p className="mb-4 text-gray-600">Este programa de treinamento foi estruturado utilizando o programa de treinamento e monitoramento com anilhamento de aves do Klamath Bird Observatory como base. Adaptamos o modelo para a nossa realidade local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação ambiental brasileira. O currículo do programa inclui aulas teóricas e muita atividade prática focadas nas técnicas de captura-marcação-recaptura com redes de neblina e anilhamento de aves de sub-bosque e de censos com pontos fixos. O treinamento acontece presencialmente e requer dedicação exclusiva e residência na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG, Serra da Mantiqueira.</p>
+        <p className="mb-4 text-gray-600">O programa de treinamento foi estruturado utilizando o programa de treinamento e monitoramento com anilhamento de aves do Klamath Bird Observatory como base. Adaptamos o modelo para a nossa realidade local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação ambiental brasileira. O currículo do programa inclui aulas teóricas e muita atividade prática focadas nas técnicas de captura-marcação-recaptura com redes de neblina e anilhamento de aves de sub-bosque e de censos com pontos fixos. O treinamento acontece presencialmente e requer dedicação exclusiva e residência na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG, Serra da Mantiqueira.</p>
        
         
         <h3 className="font-bold mb-4 text-gray-600">Equipe</h3>
         
         <p className="mb-4 text-gray-600">O programa é coordenado e supervisionado por Luiza Figueira (co-fundadora e diretora executiva do OAMa, anilhadora e treinadora certificada pelo NABC desde 2015, anilhadora sênior do CEMAVE e responsável técnica pelas licenças SISBIO e SNA-CEMAVE). </p>
       
-        <p className="mb-4 text-gray-600">André Ayres (graduando em biologia, formado pelo próprio programa de treinamento do OAMa como anilhador e instrutor de monitoramento de avifauna) é o instrutor primário em 2024. André é a pessoa responsável diretamente pela dinâmica e acompanhamento diário dos trainees durante todo o treinamento.</p>
        
-        <p className="mb-4 text-gray-600">O treinamento conta ainda com o apoio e participação oportuna de Danielle Santos, Otávio Rocha, Affonso Souza e Pedro Martins para a sua construção e realização. Danielle foi trainee OAMa e depois instrutora primária deste programa na edição anterior. Hoje Danielle é da equipe OAMa como colaboradora externa, anilhadora sênior pelo CEMAVE e mestranda pela UFRGS. Otávio é assistente de comunicação e divulgação científica do OAMa, mas se interessa e atua na área prática de monitoramento e treinamento também. Foi trainee OAMa e posteriormente participou do treinamento em monitoramento de avifauna pelo KBO (Oregon, EUA) também, sendo certificado como anilhador e treinador pelo NABC.  Affonso é coordenador de projetos OAMa, anilhador sênior do CEMAVE com experiência em monitoramento e pesquisa em campo. Pedro é co-fundador e coordenador de dados do OAMa, anilhador e treinador certificado pelo NABC.</p>
+       
+        <p className="mb-4 text-gray-600">O treinamento conta ainda com o apoio e participação de Danielle Santos, André Ayres, Karine Resende, Otávio Rocha, Affonso Souza e Pedro Martins para a sua construção e realização. </p>
         
         <TrainingCarousel></TrainingCarousel>
-        <p className="mb-4 text-gray-600">Para 2024 oferecemos até 8 vagas de trainees, sendo quatro vagas para 3 meses e quatro vagas para 1 mês de duração.  O treinamento tem um custo de R$1200,00 mensais para participação. Este custo vai cobrir a hospedagem na estação de pesquisa, deslocamento para as atividades internas do programa, materiais usados durante o treinamento, e o acompanhamento de um instrutor em dedicação exclusiva para acompanhar e auxiliar os trainees durante toda a formação dos trainees. 
-        Caso você queira participar deste ŕograma de treinamento mas não tenha como arcar com os custos, você pode se inscrever e pleitear uma bolsa ou desconto. Buscamos oferecer o máximo de gratuidades e descontos possíveis a cada ano. Essa possibilidade varia de acordo com os apoios que conseguimos para o programa ao longo do tempo. <a href="https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit" target="blank" className="font-bold">Acesse o edital de chamada completo para detalhes.</a></p>
+        <p className="mb-4 text-gray-600">O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa. Em 2023 o treinamento aconteceu entre março e outubro, e um total de 12 trainees passaram pelo OAMa nesse ano.</p>
+            
+        
+        <p className="mb-4 text-gray-600">Não estamos com chamada aberta para uma próxima edição.</p>    
             {/* <div className="flex flex-col sm:flex-row"> */}
           
               
@@ -672,10 +679,14 @@ const Acc2 = () => {
                 />
               </div>
               <p className="mb-4 text-gray-600"> Em caso de dúvidas, escreva-nos um e-mail para <a href="mailto:contato@oama.eco.br" className="font-bold">contato@oama.eco.br</a> com o título “PROGRAMA DE TREINAMENTO - DÚVIDA”.</p>
+              <div className="w-full bg-slate-200">
+              <p className=" bg-slate  mb-4 text-gray-600 px-4 py-4 "> O Programa de treinamento em monitoramento de avifauna do OAMa é uma ação nas áreas de educação, capacitação profissional, pesquisa e divulgação científica. Buscamos APOIO E PATROCÍNIO para viabilizar este programa anualmente de forma acessível para os trainees. Caso você ou sua empresa queira apoiar ou patrocinar o programa de treinamento, entre em contato com a gente escrevendo para <a href="mailto:contato@oama.eco.br" className="font-bold">contato@oama.eco.br</a> com o título “PROGRAMA DE TREINAMENTO - APOIO”.</p>
+              </div>
+              <h3 className="text-center font-bold text-lg">Trainees que já passaram pelo treinamento OAMa</h3>
+              <HallOfFame/>
+       {/* <p className=" font-bold mb-4 text-gray-600"> <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1700585060955312&usg=AOvVaw02nds_Cn1Qe7ByZXl6PJWf" target="blank">Edital completo de chamada para Programa de Treinamento OAMa 2024</a></p>
         
-        <p className=" font-bold mb-4 text-gray-600"> <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1700585060955312&usg=AOvVaw02nds_Cn1Qe7ByZXl6PJWf" target="blank">Edital completo de chamada para Programa de Treinamento OAMa 2024</a></p>
-        
-        <p className=" font-bold mb-4 text-gray-600"><a href="https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit" target="blank">Formulário e inscrição para Programa de treinamento OAMa 2024 </a> </p>
+  <p className=" font-bold mb-4 text-gray-600"><a href="https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit" target="blank">Formulário e inscrição para Programa de treinamento OAMa 2024 </a> </p>*/}
 
       </AccordionPanel>
     </>
