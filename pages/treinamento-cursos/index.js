@@ -790,7 +790,7 @@ const Acc3 = () => {
     <>
       <AccordionButton className='flex w-full items-center justify-between border-black '>
         <AccH3>Trainees que já passaram pelo treinamento OAMa </AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'rotate-180  ' : ''}`}>
+        <ArrowH3 className={`transition ${isExpanded ? 'rotate-180  ' : ''}`}>
           &#9660;
         </ArrowH3>
       </AccordionButton>
