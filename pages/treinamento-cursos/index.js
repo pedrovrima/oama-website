@@ -6,6 +6,14 @@ import Link from 'next/link';
 import Footer from '@includes/footer';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  useAccordionItemContext,
+} from '@reach/accordion';
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Treinamento() {
   return (
@@ -21,7 +29,7 @@ export default function Treinamento() {
             <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src='/heros/quem_somos.jpg'
+                src='/heros/12.jpg'
                 layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
@@ -34,7 +42,7 @@ export default function Treinamento() {
         </div>
         <div className='mx-auto w-3/4 sm:max-w-6xl'>
           <div className='mt-16'>
-            <div className='mb-24'>
+            <div>
               <h1 class='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
                 Cursos e Treinamento{' '}
               </h1>
@@ -62,90 +70,26 @@ export default function Treinamento() {
           </div>
 
           <div className=''>
-            <div className='relative hidden w-full sm:block sm:h-medium'>
-              <Image
-                objectFit='contain'
-                // width={100}
-                // height={100}
-                src='/treinamento-cursos/1.png'
-                layout='fill'
-              />
-            </div>
-            <div className='relative h-medium w-full sm:hidden'>
-              <Image
-                objectFit='contain'
-                // width={100}
-                // height={100}
-                src='/treinamento-cursos/1-mobile.png'
-                layout='fill'
-              />
-            </div>
             <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
-              INSCRIÇÕES ABERTAS para a 2º edição do PROGRAMA DE TREINAMENTO EM
-              MONITORAMENTO DE AVIFAUNA do OAMa!
+              Chamadas e inscrições abertas
             </h2>
-            {/* <div className="flex flex-col sm:flex-row"> */}
-            <div className='my-auto w-full'>
-              <p className='mb-4 text-gray-600'>
-                Em 2022, demos início ao nosso programa de treinamento em
-                monitoramento de avifauna. Nosso programa é voltado para
-                capacitar e formar ornitólogos na coleta de dados de campo com
-                qualidade técnica e ética profissional. O objetivo deste
-                programa é criar oportunidades de treinamento intensivo, de
-                imersão e de longo-prazo para ornitólogos de campo.
-              </p>
-              <p className='mb-4 text-gray-600'>
-                O nosso treinamento foi estruturado com base no programa do
-                Klamath Bird Observatory, adaptado para a nossa realidade local
-                e segue as diretrizes do @icmbio.cemave e a legislação ambiental
-                brasileira. O currículo do programa inclui aulas teóricas e
-                muita atividade prática focadas nas técnicas de
-                captura-marcação-recaptura com redes de neblina e anilhamento de
-                aves silvestres e de census com pontos fixos. O treinamento
-                acontece presencialmente e requer dedicação exclusiva e
-                residência na Estação de Pesquisa do OAMa, localizada na Reserva
-                Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista, em
-                Bocaina de Minas/MG, Serra da Mantiqueira.
-              </p>
-              <p className='mb-4 text-gray-600 '>
-                O ano de 2022 foi nosso primeiro ano de treinamento e aprendemos
-                muito sobre toda a logística e rotina das atividades. Com base
-                nisso, ajustamos o programa para melhorar a experiência de cada
-                trainee em 2023.
-              </p>
-              <TrainingCarousel></TrainingCarousel>
-              <p className='mb-4 text-gray-600'>
-                Este ano teremos diferentes modalidades de treinamento.
-                Modalidade 6 meses (1 vaga) e modalidade 3 meses (4 vagas).
-                Devido a inexistência de financiamento externo e para viabilizar
-                a continuidade do programa, este ano haverá um custo de
-                mensalidade para participação no programa de treinamento. A
-                mensalidade inclui a hospedagem na estação de pesquisa,
-                deslocamento para as atividades internas do programa, materiais
-                usados durante o treinamento e todas as aulas, materiais de
-                estudo e assistências necessárias para a formação do trainee.
-                Oferecemos até duas bolsas integrais e uma bolsa parcial para as
-                quais todos podem se candidatar.
-              </p>
-              <div className='relative hidden w-full sm:block sm:h-medium'>
-                <Image
-                  objectFit='contain'
-                  // width={100}
-                  // height={100}
-                  src='/treinamento-cursos/2.png'
-                  layout='fill'
-                />
-              </div>
-              <div className='relative h-medium w-full sm:hidden'>
-                <Image
-                  objectFit='contain'
-                  // width={100}
-                  // height={100}
-                  src='/treinamento-cursos/2-mobile.png'
-                  layout='fill'
-                />
-              </div>
+            <div className='relative h-96 w-full '>
+              <Image
+                src={'/treinamento-cursos/carousel/2.jpg'}
+                layout='fill'
+                objectFit='contain'
+              ></Image>
+            </div>
+            {/*<CourseCarousel></CourseCarousel>*/}
+            <div collapsible multiple className='mt-6'>
+              <BBMA />
+            </div>
+            <div collapsible multiple className=''>
+              {' '}
+              <Acc2 />
+            </div>
 
+            <div className='my-auto w-full'>
               {/* <p className="mb-4 text-gray-600">
                 O treinamento é intenso, com muitas horas de campo e de estudo
                 semanais. As inscrições permanecerão abertas até 20 de janeiro
@@ -166,14 +110,14 @@ export default function Treinamento() {
                 >
                   formulário de inscrição
                 </a>
-                . */}
+                . 
               {/* </p> */}
-              <HallOfFame />
+
               {/* </div> */}
             </div>
-            <h2 className='mb-6 mt-12 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
+            {/*<h2 className='w-full mt-12 mb-6 text-3xl font-bold leading-tight text-center text-gray-800'>
               Cursos
-            </h2>
+            </h2>*/}
             {/* <div className="flex flex-col mb-8 sm:flex-row ">
               <div class="w-full sm:w-1/3 p-2 sm:py-0 sm:px-6  my-auto">
                 <div>
@@ -336,7 +280,7 @@ export default function Treinamento() {
               </div>
             </div> */}
 
-            <div className='mb-8 flex flex-col sm:flex-row'>
+            {/*<div className='flex flex-col mb-8 sm:flex-row'>
               <div class='my-auto w-full p-2 sm:w-1/3 sm:px-6  sm:py-0'>
                 <div>
                   <Image
@@ -349,14 +293,14 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className='my-auto w-full sm:w-2/3'>
+              <div className='w-full my-auto sm:w-2/3'>
                 <p className='text-lg font-bold text-gray-600'>
                   II Curso Prático Básico de Anilhamento
                 </p>
-                <p className='text-md font-bold text-gray-500'>
+                <p className='font-bold text-gray-500 text-md'>
                   Data a definir{' '}
                 </p>
-                <p className='text-md font-bold text-gray-500'>
+                <p className='font-bold text-gray-500 text-md'>
                   Estação de Pesquisa OAMa
                 </p>
                 <p className='text-gray-600 '>
@@ -369,7 +313,7 @@ export default function Treinamento() {
                       </a>
                     </span>{" "}
                     <br />
-                  </span> */}
+                  </span> 
                   O curso tem como objetivo apresentar, na prática e experiência
                   em campo, técnicas seguras e apropriadas para 1. a manipulação
                   adequada das aves durante a extração das redes de neblina e
@@ -410,7 +354,7 @@ export default function Treinamento() {
               </div>
             </div>
 
-            <div className='mb-8 flex flex-col sm:flex-row'>
+            <div className='flex flex-col mb-8 sm:flex-row'>
               <div class='my-auto w-full p-2 sm:w-1/3 sm:px-6  sm:py-0'>
                 <div>
                   <Image
@@ -423,19 +367,19 @@ export default function Treinamento() {
                   />
                 </div>
               </div>
-              <div className='my-auto w-full sm:w-2/3'>
+              <div className='w-full my-auto sm:w-2/3'>
                 <p className='text-lg font-bold text-gray-600'>
                   III Curso Prático de Análise de Mudas e Classificação de idade
                   em Aves
                 </p>
-                <p className='text-md font-bold text-gray-500'>
-                  {/* 19 a 22 de fevereiro de 2023 */} Data a definir.
+                <p className='font-bold text-gray-500 text-md'>*/}
+            {/* 19 a 22 de fevereiro de 2023  Data a definir.
                 </p>
-                <p className='text-md font-bold text-gray-500'>
+                <p className='font-bold text-gray-500 text-md'>
                   Estação de Pesquisa OAMa
                 </p>
-                <p className='text-gray-600 '>
-                  {/* <span className="font-bold">
+                <p className='text-gray-600 '>*/}
+            {/* <span className="font-bold">
                     Inscrições e mais informações
                     <span className="text-yellow-600 underline cursor-pointer">
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqP_kWyAk16zeBcMPHRbvSMw76nP82fxOHEs5G4IRNf0z95w/viewform">
@@ -445,7 +389,7 @@ export default function Treinamento() {
                     </span>{" "}
                     <br />
                   </span> */}
-                  Neste curso, vamos ter a oportunidade de colocar em prática o
+            {/*Neste curso, vamos ter a oportunidade de colocar em prática o
                   conteúdo que foi apresentado durante{' '}
                   <span className='font-bold'>
                     Módulo Teórico, que é pré-requisito indispensável para a
@@ -496,6 +440,25 @@ export default function Treinamento() {
             </h2>
             <ul className='p-12 text-lg'>
               <li className='list-disc'>
+                I Curso de bioacústica de aves -2023 - presencial
+              </li>
+              <li className='list-disc'>
+                I Curso de bordado - conectando arte e conservação - 2023 -
+                Presencial
+              </li>
+              <li className='list-disc'>
+                I Curso de identificação de cogumelos - 2023 - Presencial
+              </li>
+              <li className='list-disc'>
+                III Curso Teórico Básico de Anilhamento com Aves de Noronha -
+                2023 - Online
+              </li>
+
+              <li className='list-disc'>
+                III Curso Teórico de Análise de Mudas e Classificação de idade
+                em Aves - 2023 - Online
+              </li>
+              <li className='list-disc'>
                 II Curso Prático de Análise de Mudas e Classificação de idade em
                 Aves - 2022 - Presencial
               </li>
@@ -532,7 +495,7 @@ export default function Treinamento() {
 }
 
 const TrainingCarousel = () => (
-  <div className='h-100 group flex cursor-pointer items-center justify-center sm:px-8'>
+  <div className='h-100 group mb-8 flex cursor-pointer items-center justify-center sm:px-8'>
     <Carousel
       showArrows={true}
       showStatus={false}
@@ -551,6 +514,35 @@ const TrainingCarousel = () => (
             <Image
               layout='fill'
               objectFit='cover'
+              src={`/treinamento-cursos/carouseltraining/${num}.jpg`}
+            ></Image>
+          </div>
+        );
+      })}
+    </Carousel>
+  </div>
+);
+
+const CourseCarousel = () => (
+  <div className='sm:w-1/1 group m-auto mb-8 flex cursor-pointer items-center justify-center sm:px-8 md:w-3/4 lg:w-2/3'>
+    <Carousel
+      showArrows={true}
+      showStatus={false}
+      autoPlay
+      swipeable
+      emulateTouch
+      infiniteLoop
+      // showThumbs={false}
+      stopOnHover
+      transitionTime={600}
+      className='mb-8 mt-2 h-96 w-full sm:mb-4'
+    >
+      {Array.from({ length: 2 }, (_, i) => i + 1).map((num) => {
+        return (
+          <div className='relative h-96 w-full bg-slate-100 sm:h-96'>
+            <Image
+              layout='fill'
+              objectFit='contain'
               src={`/treinamento-cursos/carousel/${num}.jpg`}
             ></Image>
           </div>
@@ -560,38 +552,267 @@ const TrainingCarousel = () => (
   </div>
 );
 
+const AccH3 = ({ children }) => (
+  <h3
+    style={{ color: '#454545' }}
+    class='text-l  px-8 py-6 text-left font-bold text-gray-600 '
+  >
+    {children}
+  </h3>
+);
+const ArrowH3 = ({ children, className }) => (
+  <h3 style={{ color: '#454545' }} className={`px-8 py-6 text-lg ${className}`}>
+    {children}
+  </h3>
+);
+const Item = ({ children }) => (
+  <AccordionItem className='border-gray rounded-md border-2'>
+    {children}{' '}
+  </AccordionItem>
+);
+const BBMA = () => {
+  return (
+    <>
+      <div className='px-8 '>
+        <h3 className='py-4 font-bold'>
+          VII BBMA - Bird Banding and Molt Analysis Workshop - Curso
+          internacional de anilhamento de aves e análise de muda{' '}
+        </h3>
+
+        {/* <h3><ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
+        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3> */}
+
+        <p className='mb-4 text-gray-600'>
+          O sétimo de Anilhamento de Aves e Análise de Muda (Bird Banding and
+          Molt Analysis - BBMA VII) acontecerá de 17 a 24 de março de 2024 no
+          Instituto Alto Montana, próximo a Itamonte, MG, na encosta norte da
+          Serra da Mantiqueira, Mata Atlântica brasileira. A iniciativa é
+          promovida pela Universidade Federal do Rio Grande do Sul (UFRGS) e
+          pelo Observatório de Aves da Mantiqueira (OAMa), com apoio do Michigan
+          Technological University (MTU) e da Universidade Federal do Rio Grande
+          (FURG). Motivados pelo crescente número de anilhadores de aves no
+          Brasil e pelo potencial dos sistemas de classificação de idade
+          baseados na análise de muda para melhorar a qualidade dos dados de
+          anilhamento, pretendemos 1) promover o melhor domínio possível das
+          habilidades básicas de anilhamento enquanto analisamos os ciclos de
+          muda e o envelhecimento das aves do sub-bosque florestal na região da
+          Mata Atlântica; e 2) contribuir para a formação de anilhadores
+          profissionais, de mente aberta e testados em campo, que aplicarão suas
+          habilidades aqui ou em qualquer outro lugar do mundo.
+        </p>
+
+        <p className='mb-4 text-gray-600'>
+          O programa do curso é voltado para anilhadores ativos, mas aceitamos
+          candidatos com qualquer experiência, de qualquer país e/ou nível de
+          especialização. Os instrutores de anilhamento Luiza Figueira (OAMa),
+          Pedro Martins (OAMa) e Jared Wolfe (MTU) são todos certificados pelo
+          North American Banding Council. Márcio Repenning (FURG) tem vinte anos
+          de experiência em anilhamento e mais de trinta publicações sobre
+          ecologia, comportamento e evolução de aves. Os quatro instrutores
+          anilharam em conjunto mais de 50 mil aves. Eles possuem profundo
+          conhecimento da avifauna sul-americana e trabalharão com uma equipe de
+          jovens ornitólogos auxiliados por Gonçalo Ferraz. O curso do BBMA
+          deste ano será bilíngue, com aulas ministradas em português e inglês;
+          no entanto, o conteúdo deve ser acessível a qualquer pessoa que
+          consiga comunicar em inglês, espanhol ou português.
+        </p>
+
+        <p className='mb-4 text-gray-600'>
+          A remuneração dos instrutores será custeada pelas respectivas
+          instituições, mas será necessário cobrar uma taxa de R$ 1.900, pagável
+          ao Instituto Alto Montana, para hospedagem e alimentação durante todo
+          o curso. Esta taxa também cobre o transporte de e para Resende, a
+          cidade mais próxima com terminal rodoviário de longa distância. A
+          aplicação para se candidatar a uma vaga no curso é gratuita e
+          poderemos oferecer apoio parcial, dependendo do resultado dos pedidos
+          de subsídios em andamento. O curso matriculará 16 alunos.
+        </p>
+
+        <p className='mb-4 text-gray-600'>
+          <span className='font-bold'>PARA SE INSCREVER:</span> Preencha o
+          formulário disponível em{' '}
+          <a
+            href='https://ferrazlab.org/workshops'
+            target='blank'
+            className='font-bold text-yellow-600 underline'
+          >
+            {' '}
+            https://ferrazlab.org/workshops
+          </a>{' '}
+          para enviar um link para seu currículo e uma breve carta (em
+          português, inglês ou espanhol) descrevendo sua experiência anterior
+          com anilhamento de aves e explicando por que este curso é relevante
+          para você. Aceitaremos inscrições até 15 de dezembro de 2023 e as
+          analisaremos prontamente, para retornarmos até sexta-feira, 23 de
+          dezembro de 2023. Em caso de dúvidas, escreva para Gonçalo Ferraz em
+          goncalo.ferraz@ufrgs.br. Estamos ansiosos para encontrá-lo em campo!
+        </p>
+      </div>
+    </>
+  );
+};
+const Acc2 = () => {
+  return (
+    <>
+      <div className='mt-24 px-8'>
+        <div className='mb-6 w-full text-center '>
+          <h2 className='text-3xl font-bold leading-tight text-gray-800 '>
+            Programa de treinamento em monitoramento de avifauna do OAMa
+          </h2>
+          <p className='mt-2 text-lg font-bold text-amber-700'>
+            No momento, não estamos com chamadas abertas para o treinamento.
+          </p>
+        </div>
+      </div>
+      <div className='px-8 '>
+        <div className='relative mb-12 mt-6 hidden sm:h-[500px] md:block'>
+          <Image
+            objectFit='contain'
+            // width={100}
+            // height={100}
+            src='/treinamento-cursos/1.png'
+            layout='fill'
+          />
+        </div>
+        <div className='relative mb-3 h-medium w-full md:hidden'>
+          <Image
+            objectFit='contain'
+            // width={100}
+            // height={100}
+            src='/treinamento-cursos/1-mobile.png'
+            layout='fill'
+          />
+        </div>
+
+        <p className='mb-4 text-gray-600'>
+          Este treinamento tem o objetivo de capacitar ornitólogos na coleta de
+          dados de campo com qualidade técnica e ética profissional. Visamos
+          criar oportunidades de treinamento intensivo, de imersão e de
+          longo-prazo para ornitólogos de campo no Brasil.
+        </p>
+
+        <p className='mb-4 text-gray-600'>
+          O programa de treinamento foi estruturado utilizando o programa de
+          treinamento e monitoramento com anilhamento de aves do Klamath Bird
+          Observatory como base. Adaptamos o modelo para a nossa realidade
+          local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação
+          ambiental brasileira. O currículo do programa inclui aulas teóricas e
+          muita atividade prática focadas nas técnicas de
+          captura-marcação-recaptura com redes de neblina e anilhamento de aves
+          de sub-bosque e de censos com pontos fixos. O treinamento acontece
+          presencialmente e requer dedicação exclusiva e residência na Estação
+          de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do
+          Patrimônio Natural (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG,
+          Serra da Mantiqueira.
+        </p>
+
+        <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
+
+        <p className='mb-4 text-gray-600'>
+          O programa é coordenado e supervisionado por Luiza Figueira
+          (co-fundadora e diretora executiva do OAMa, anilhadora e treinadora
+          certificada pelo NABC desde 2015, anilhadora sênior do CEMAVE e
+          responsável técnica pelas licenças SISBIO e SNA-CEMAVE).{' '}
+        </p>
+
+        <p className='mb-4 text-gray-600'>
+          O treinamento conta ainda com o apoio e participação de Danielle
+          Santos, André Ayres, Karine Resende, Otávio Rocha, Affonso Souza e
+          Pedro Martins para a sua construção e realização.{' '}
+        </p>
+
+        <TrainingCarousel></TrainingCarousel>
+        <p className='mb-4 text-gray-600'>
+          O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e
+          outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa.
+          Em 2023 o treinamento aconteceu entre março e outubro, e um total de
+          12 trainees passaram pelo OAMa nesse ano.
+        </p>
+
+        {/* <div className="flex flex-col sm:flex-row"> */}
+
+        <div className='relative hidden w-full sm:block sm:h-medium'>
+          <Image
+            objectFit='contain'
+            // width={100}
+            // height={100}
+            src='/treinamento-cursos/3.png'
+            layout='fill'
+          />
+        </div>
+        <div className='relative hidden h-medium w-full'>
+          <Image
+            objectFit='contain'
+            // width={100}
+            // height={100}
+            src='/treinamento-cursos/2-mobile.png'
+            layout='fill'
+          />
+        </div>
+        <p className='mb-4 text-gray-600'>
+          {' '}
+          Em caso de dúvidas, escreva-nos um e-mail para{' '}
+          <a href='mailto:contato@oama.eco.br' className='font-bold'>
+            contato@oama.eco.br
+          </a>{' '}
+          com o título “PROGRAMA DE TREINAMENTO - DÚVIDA”.
+        </p>
+        <div className='w-full bg-slate-200'>
+          <p className='mb-4 bg-yellow-200 px-4 py-4 text-gray-900'>
+            O Programa de treinamento em monitoramento de avifauna do OAMa é uma
+            ação nas áreas de educação, capacitação profissional, pesquisa e
+            divulgação científica. Buscamos APOIO E PATROCÍNIO para viabilizar
+            este programa anualmente de forma acessível para os trainees. Caso
+            você ou sua empresa queira apoiar ou patrocinar o programa de
+            treinamento, entre em contato com a gente escrevendo para{' '}
+            <a href='mailto:contato@oama.eco.br' className='font-bold'>
+              contato@oama.eco.br
+            </a>{' '}
+            com o título “PROGRAMA DE TREINAMENTO - APOIO”.
+          </p>
+        </div>
+        <Accordion collapsible>
+          <Item>
+            <Acc3 />
+          </Item>
+        </Accordion>
+
+        {/* <p className="mb-4 font-bold text-gray-600 "> <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1700585060955312&usg=AOvVaw02nds_Cn1Qe7ByZXl6PJWf" target="blank">Edital completo de chamada para Programa de Treinamento OAMa 2024</a></p>
+        
+  <p className="mb-4 font-bold text-gray-600 "><a href="https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit" target="blank">Formulário e inscrição para Programa de treinamento OAMa 2024 </a> </p>*/}
+      </div>
+    </>
+  );
+};
+const Acc3 = () => {
+  const { isExpanded } = useAccordionItemContext();
+  return (
+    <>
+      <AccordionButton className='flex w-full items-center justify-between border-black '>
+        <AccH3>Trainees que já passaram pelo treinamento OAMa </AccH3>
+        <ArrowH3 className={` ${isExpanded ? 'rotate-180  ' : ''}`}>
+          &#9660;
+        </ArrowH3>
+      </AccordionButton>
+      <AccordionPanel className='px-8 py-4'>
+        <HallOfFame />
+      </AccordionPanel>
+    </>
+  );
+};
 const HallOfFame = () => {
   return (
     <>
-      <h2 className='mb-8 mt-16 text-center text-4xl font-bold'>
-        Trainees 2022
-      </h2>
-
       {trainees.map((trainee, i) => {
         return (
-          <div
-            class={`flex md:${
-              i % 2 ? 'flex-row-reverse' : 'flex-row'
-            } relative  mb-8 items-center   justify-around`}
-          >
-            <div class='m-2 w-3/5 rounded-full  shadow-lg sm:w-1/6 '>
-              <div>
-                <Image
-                  className='rounded-full border-8 border-gray-200'
-                  src={`/treinamento-cursos/trainees/${trainee.img}.jpg`}
-                  layout='responsive'
-                  width={20}
-                  objectFit='cover'
-                  height={20}
-                ></Image>
-              </div>
-            </div>
+          <div class={`relative  mb-8 items-center   justify-around`}>
+            <div class='m-2 w-3/5 rounded-full  shadow-lg '></div>
 
-            <div class='w-full p-2 sm:w-4/6'>
-              <h3 class='text-justify-center mb-1 text-3xl font-bold leading-none text-gray-800'>
+            <div class='w-full p-2'>
+              <h3 class='text-l text-justify-center mb-2 font-bold leading-none text-gray-800'>
                 {trainee.name}
               </h3>
-              <h4 class='text-justify-center mb-3 text-xl font-bold leading-none text-gray-800'>
+              <h4 class='text-l text-justify-center mb-3 font-bold leading-none text-gray-600'>
                 {trainee.basic_info}
                 <br />
                 {trainee.time}
@@ -599,10 +820,7 @@ const HallOfFame = () => {
                 {trainee.birds}
               </h4>
 
-              <p class='text-gray-600 '>{trainee.quote}</p>
-              <a className='underline' target='_blank' href={trainee.reel}>
-                Como foi
-              </a>
+              <p class='text-md text-gray-600 '>{trainee.quote}</p>
             </div>
           </div>
         );
@@ -669,6 +887,137 @@ const trainees = [
     birds: '136 aves processadas',
     quote:
       '“Aprendi muito sobre a fauna local e novas metodologias, pretendo usar todo o conhecimento adquirido para novos projetos e consultoria. A estação de pesquisa é maravilhosa e me sinto muito feliz fazendo parte desta excelente equipe.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+  {
+    name: 'Victor Armando Sanchez Gonzales',
+    basic_info:
+      'Estudante de Ciências Ambientais, 27 anos, Barra Califórnia Sur (MX)',
+    time: 'Estadia de março a setembro',
+    birds: '171 aves processadas',
+
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'André Basílio Ayres Tavares',
+    basic_info: 'Estudante de Ciências Biológicas, 29 anos, Niterói (RJ)',
+    time: 'Estadia de março a setembro',
+    birds: '170 aves processadas',
+    quote:
+      '“Uma experiência enriquecedora e inspiradora, onde senti de fato estar contribuindo para a conservação das aves.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Natália Inácio de Almeida e Silva',
+    basic_info: 'Bióloga, 24 anos, Campinas (SP)',
+    time: 'Estadia de março a junho',
+    birds: '108 aves processadas',
+    quote:
+      '“Participar do programa de treinamento do OAMa foi uma experiência transformadora, repleta de momentos memoráveis! O programa me ensinou como dar meus primeiros passos na ornitologia, sempre com responsabilidade, respeito e segurança com as aves, além do comprometimento com sua conservação.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Thalia Matos Aguiar Viana',
+    basic_info: 'Bióloga, 23 anos, São Luís (MA)',
+    time: 'Estadia de março a junho',
+    birds: '87 aves processadas',
+    quote:
+      '“O treinamento para mim foi uma experiência essencial na minha carreira e realização no ramo da ornitologia. A partir desse programa de imersão eu tive a oportunidade de ter contato mais direto com as aves e estudá-las, além de que conheci pessoas incríveis com o mesmo amor por esses animais que me ensinaram muito e contribuíram imensamente para o meu crescimento.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Mariane Rodrigues Guedes',
+    basic_info: 'Bióloga, 27 anos, Itabuna (BA)',
+    time: 'Estadia de março a abril',
+    birds: '27 aves processadas',
+    quote:
+      '“Entender a ética/técnicas do anilhamento foi umas das melhores experiências da minha vida. Hoje vivo uma nova etapa da minha vida em que sinto que cada gotinha de conhecimento que adquiri com o OAMa foram e são essenciais para a contrução e evolução da minha vida profissional e pessoal.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Patrícia dos Santos Ferreira',
+    basic_info: 'Bióloga, 28 anos, Campos do Jordão (SP)',
+    time: 'Estadia de junho a setembro',
+    birds: '134 aves processadas',
+    quote:
+      '“Ter participado do programa de treinamento e monitoramento foi uma experiência muito enriquecedora na minha carreira como ornitóloga. Eu saio do OAMa com novas possibilidades, capacitada para lidar com a segurança das aves, adversidades no campo e com a mente repleta de conhecimento e  informações de qualidade. E o mais importante, segura e confiante sobre o meu trabalho.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Leonardo Wolff de Oliveira',
+    basic_info: 'Estudante de Biologia, 25 anos, Lages (SC)',
+    time: 'Estadia de junho a setembro',
+    birds: '115 aves processadas',
+    quote:
+      '“Sou muito grato ao OAMa por essa experiência maravilhosa! Muitos aprendizados e vivências que me guiarão para o estudo da conservação da avifauna!”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Caroline Brenda Berté',
+    basic_info: 'Bióloga, 31 anos, Foz do Iguaçu (PR)',
+    time: 'Estadia de junho a julho',
+    birds: '18 aves processadas',
+    quote:
+      '“Foi uma experiência enriquecedora para mim, tanto profissional como pessoal. O meu primeiro contato com anilhamento e foi inesquecível.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Francisco Javier Contreras Molina',
+    basic_info: 'Professor e pesquisador, 43 anos, Falcón (VE)',
+    time: 'Estadia de junho a julho',
+    birds: '18 aves processadas',
+    quote:
+      '“Conocer un grupo variado de expertos de diferentes disciplinas, regiones fue sin duda un gran aprendizaje, saber que todos se dedican a diferentes trabajos pero que coincidiamos en un tema es algo que quieres que se repita siempre. La estacion o casa de residencia muy acojedora, agradable con buenos servicios que facilitan la estadia alli y que hacen que uno se sienta en casa, aunque esta a dias de distancia. Muy agradecido siempre, esto ha sido una escuela maravillosa para mi, y me ha ayudara siempre a tomarlos como ejemplo y seran referencia para mis proyectos el resto de mi vida.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Tarso Natividade Ciolete',
+    basic_info: 'Biólogo, 31 anos, Contagem (MG)',
+    time: 'Estadia de agosto a setembro',
+    birds: '44 aves processadas',
+    quote:
+      '“Minha experiência, embora curta, foi extremamente produtiva. Tive a oportunidade de aprender na prática técnicas e conceitos que fizeram de mim um biólogo melhor.”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Daniela Ventura Del Puerto',
+    basic_info: 'Bióloga, 26 anos, Havana (CUB)',
+    time: 'Estadia de agosto a setembro',
+    birds: '46 aves processadas',
+    quote:
+      '“Es un orgullo para mi decir que fui trainee OAMa. Mi primera experiencia anillando nuevas familias de aves neotropicales y conociendo el funcionamiento de un observatorio de aves en todos sus detalles. Estoy agradecida al equipo por las enseñanzas que me llevo a Cuba para multiplicar, incluidas un poco de portuñol!”',
+    reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
+    img: 'trainee luiz',
+  },
+
+  {
+    name: 'Andreza de Freitas Nunes Oliveira',
+    basic_info: 'Bióloga, 26 anos, Fortaleza (CE)',
+    time: 'Estadia periódica de Março a Dezembro',
+    birds: '72 aves processadas',
+    quote:
+      '“O treinamento foi um divisor de águas na minha formação. Saio de lá me sentindo muito mais segura e madura em relação ao trabalho em campo e aos dados coletados. A formação vai muito além do ensino de técnicas, que por si só já valeria muito, visto que são conhecimentos pouco difundidos no Brasil, mas é a preparação de um profissional de excelência por completo.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
     img: 'trainee luiz',
   },
