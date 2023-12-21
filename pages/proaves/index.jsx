@@ -137,9 +137,14 @@ export default function ProAves() {
             {' '}
             Realização:
           </h3>
-          <div className='flex items-center justify-center w-full text-gray-600'>
+          <div className='flex flex-wrap items-center justify-center w-full px-6 text-gray-600'>
             <Image height={150} width={150} src={'/jacucara/logos/OAMA.png'} />
             <Image height={120} width={190} src={'/jacucara/logos/PAN.png'} />
+            <Image
+              height={80}
+              width={150}
+              src={'/jacucara/logos/cemave icmbio.png'}
+            />
           </div>
 
           <h3 className='w-full mt-8 mb-2 text-xl font-bold text-center text-gray-800'>
@@ -160,11 +165,7 @@ export default function ProAves() {
               width={150}
               src={'/proaves/logos/windowAlert.png'}
             />
-            <Image
-              height={80}
-              width={150}
-              src={'/jacucara/logos/cemave icmbio.png'}
-            />
+           
           </div>
           </div>
         </div>
