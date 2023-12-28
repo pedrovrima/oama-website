@@ -206,6 +206,12 @@ const div_cient = [
 
 const institucional = [
   {
+    title: 'Relatório Atividades Pró-Aves 2023',
+    text: ' Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2023.',
+    img: 'relatorioProAves2023.png',
+    link: 'relatorioProAves2023.pdf',
+  },
+  {
     title: '2022 Annual Report - English Version',
     text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2022.',
     img: 'relatorio2022.png',

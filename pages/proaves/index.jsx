@@ -17,6 +17,7 @@ import Pets from 'components/pro-aves/pets';
 import Comedouros from 'components/pro-aves/comedouro';
 import Trafico from 'components/pro-aves/trafico';
 import Colisao from 'components/pro-aves/colisao';
+import Link from 'next/link';
 
 const image = require('public/proaves/intro (copy)/fig1.jpg');
 
@@ -111,6 +112,16 @@ export default function ProAves() {
             <Luminosa></Luminosa>
           </Accordion>
 
+          <div className='flex items-center justify-center w-full'>
+            <Link passHref href={'/publicacoes/files/relatorioProAves2023.pdf'}>
+              <a
+                className='px-6 py-4 mt-8 mb-2 text-lg font-bold text-center bg-yellow-400 rounded-md min-w-fit hover:cursor-pointer hover:bg-yellow-600 hover:text-white'
+                target='_blank'
+              >
+                Confira aqui os resultados da campanha pró-aves em 2023
+              </a>
+            </Link>
+          </div>
           <h3 className='w-full mt-8 mb-2 text-xl font-bold text-center text-gray-800'>
             {' '}
             Pesquisa e elaboração de textos:
@@ -160,15 +171,13 @@ export default function ProAves() {
             />
             <Image height={70} width={70} src={'/proaves/logos/crbio.png'} />
             <Image
-
               height={150}
               width={150}
               src={'/proaves/logos/windowAlert.png'}
             />
-           
-          </div>
           </div>
         </div>
+      </div>
 
       <Footer></Footer>
     </>
