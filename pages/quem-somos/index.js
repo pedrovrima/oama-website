@@ -287,7 +287,7 @@ export default function QuemSomos() {
                   <div>
                     <Image
                       className='rounded-full border-8 border-gray-200'
-                      src='/people/DanielleSouza.jpg'
+                      src='/people/DanielleSantos.jpg'
                       layout='responsive'
                       width={50}
                       objectFit='cover'
@@ -305,16 +305,17 @@ export default function QuemSomos() {
                   </h4>
 
                   <p class='text-gray-600 '>
-                    Mestranda em Ecologia da UFRGS, foi assistente do
-                    treinamento e moniramento de aves do OAMa em 2022
+                    Bióloga, mestranda em Ecologia na UFRGS. Foi assistente de
+                    monitoramento no OAMa e tem interesse na coleta e análise de
+                    dados ornitológicos para aplicação na conservação.
                   </p>
-                  {/* <a
+                  <a
                     className='underline'
                     target='_blank'
-                    href='http://lattes.cnpq.br/5217946601349427'
+                    href='http://lattes.cnpq.br/7737815262414078'
                   >
                     Lattes
-                  </a> */}
+                  </a>
                   <a
                     className='ml-1 underline'
                     target='_blank'
