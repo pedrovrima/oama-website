@@ -218,8 +218,11 @@ export default function QuemSomos() {
                   </h4>
 
                   <p class='text-gray-600 '>
-                    Com formação em Hotelaria e Turismo, direciona seu trabalho
-                    e pesquisa para conservação da natureza há 12 anos.
+                    Com formação em Turismo e Hotelaria, especialista em
+                    Biologia da Conservação e MBA em Gestão de Projetos,
+                    direciona seu trabalho e pesquisa para conservação da
+                    natureza: fauna silvestre, áreas protegidas e ecoturismo há
+                    12 anos.
                   </p>
                   {/* <a
                     className='underline'
