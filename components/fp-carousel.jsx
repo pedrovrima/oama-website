@@ -6,6 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const FPCarousel = (props) => {
   const fotos = [
     {
+      pic: "/carousel/banner-percepcao.jpg",
+      legend: "Pesquisa de Percepção",
+      link: "https://bit.ly/4cfSNFs?r=qr",
+      legendText:
+        "A sua opinião importa, e nós queremos te ouvir!",
+    },
+    {
       pic: "/carousel/1.jpg",
       legend: "Portfólio OAMa",
       link: "/publicacoes/files/Portfolio_OAMa.pdf",
@@ -37,7 +44,7 @@ const FPCarousel = (props) => {
   ];
 
   return (
-    <div className="flex group h-100 cursor-pointer justify-center items-center sm:px-8">
+    <div className="flex items-center justify-center cursor-pointer group h-100 sm:px-8">
       <Carousel
         showArrows={true}
         showStatus={false}
@@ -48,23 +55,24 @@ const FPCarousel = (props) => {
         // showThumbs={false}
         stopOnHover
         transitionTime={600}
-        className="mt-2 bg-gray-300 mb-8 sm:mb-4 w-full  h-96"
+        className="w-full mt-2 mb-8 bg-gray-300 sm:mb-4 h-96"
       >
         {fotos.map((img) => (
-          <Link href={img.link}>
-            <div className="h-96 w-full sm:h-96  relative">
+          <Link key={img.link} href={img.link}>
+            <div className="relative w-full h-96 sm:h-96">
               <Image
                 alt={img.legend}
                 layout="fill"
                 objectFit="cover"
+                objectPosition="top"
                 src={img.pic}
               ></Image>
-              <div className="absolute h-full w-full bg-gradient-to-b to-gray-900 via-transparent  from-transparent  t-0"></div>
-              <div className="flex-col items-start  px-2 md:px-12 w-full flex absolute pb-8 md:pb-12 bottom-0 justify-start">
-                <p className=" font-bold text-white text-3xl md:text-6xl">
+              <div className="absolute w-full h-full bg-gradient-to-b to-gray-900 via-transparent from-transparent t-0"></div>
+              <div className="absolute bottom-0 flex flex-col items-start justify-start w-full px-2 pb-8 md:px-12 md:pb-12">
+                <p className="text-3xl font-bold text-white md:text-6xl">
                   {img.legend}
                 </p>
-                <p className="text-left  text-white text-lg md:text-xl">
+                <p className="text-lg text-left text-white md:text-xl">
                   {img.legendText}
                 </p>
               </div>

@@ -3,9 +3,10 @@ module.exports = {
   // purge: ["./posts/*.{js,ts,jsx,rsx,mdx}","./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}","./_includes/**/*.{js,ts,jsx,tsx}","./_layouts/**/*.{js,ts,jsx,tsx}"],
   content: [
     './pages/**/*.{html,js,jsx}',
-    './components/**/*.{html,js, jsx}',
-    './_includes/**/*.{html,js, jsx}',
-    './_layouts/**/*.{html,js, jsx}',
+    './components/**/*.{html,js,jsx}',
+    './components/*.{js,jsx}',
+    './_includes/**/*.{html,js,jsx}',
+    './_layouts/**/*.{html,js,jsx}',
   ],
 
   theme: {
