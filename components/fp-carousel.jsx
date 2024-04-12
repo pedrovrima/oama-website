@@ -6,6 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const FPCarousel = (props) => {
   const fotos = [
     {
+      pic: "/carousel/cursos.jpg",
+      legend: "Cursos 2024",
+      link: "/treinamento-cursos#curso2024",
+      legendText:
+        "Estão abertas as inscrições para os cursos OAMa 2024",
+    },
+    {
       pic: "/carousel/banner-percepcao.jpg",
       legend: "Pesquisa de Percepção",
       link: "https://bit.ly/4cfSNFs?r=qr",

@@ -13,7 +13,6 @@ import {
   AccordionPanel,
   useAccordionItemContext,
 } from '@reach/accordion';
-import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Treinamento() {
   return (
@@ -70,19 +69,23 @@ export default function Treinamento() {
           </div>
 
           <div className=''>
-            <h2 className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
+            <h2
+              className='mb-6 w-full text-center text-3xl font-bold leading-tight text-gray-800'
+              id='curso2024'
+            >
               Chamadas e inscrições abertas
             </h2>
             <div className='relative h-96 w-full '>
               <Image
-                src={'/treinamento-cursos/carousel/2.jpg'}
+                src={'/treinamento-cursos/cursos2024.png'}
                 layout='fill'
                 objectFit='contain'
               ></Image>
             </div>
             {/*<CourseCarousel></CourseCarousel>*/}
             <div collapsible multiple className='mt-6'>
-              <BBMA />
+              {/* <BBMA /> */}
+              <Cursos2024 />
             </div>
             <div collapsible multiple className=''>
               {' '}
@@ -440,7 +443,11 @@ export default function Treinamento() {
             </h2>
             <ul className='p-12 text-lg'>
               <li className='list-disc'>
-                I Curso de bioacústica de aves -2023 - presencial
+                VII BBMA - Curso internacional de anilhamento de aves e análise
+                de muda - 2024 - presencial
+              </li>
+              <li className='list-disc'>
+                I Curso de bioacústica de aves - 2023 - presencial
               </li>
               <li className='list-disc'>
                 I Curso de bordado - conectando arte e conservação - 2023 -
@@ -1022,3 +1029,98 @@ const trainees = [
     img: 'trainee luiz',
   },
 ];
+
+const Cursos2024 = () => {
+  return (
+    <div>
+      <p className='mb-4 text-center text-lg font-bold'>
+        Estão abertas as inscrições para os últimos cursos do OAMa em 2024 para
+        capacitação em monitoramento de aves!
+      </p>
+      <ul className='mb-4'>
+        <li className='mb-2'>
+          <a
+            target='_blank'
+            className='text-yellow-900 underline'
+            href='https://www.sympla.com.br/evento-online/iv-curso-de-analise-de-muda-e-classificacao-de-idade-em-aves/2396307'
+          >
+            Curso ONLINE de Análise de Mudas e Classificação de Idade em aves
+            (06 e 07 de julho de 2024);
+          </a>
+        </li>
+        <li>
+          <a
+            target='_blank'
+            className='text-yellow-900 underline'
+            href='https://forms.gle/iCLry9AfVYYDVPxo8'
+          >
+            Curso PRÁTICO de Anilhamento e Análise de Muda em aves – foco em
+            passeriformes (14 a 18 de agosto de 2024).
+          </a>
+        </li>
+      </ul>
+      <p className='mb-6'>
+        As capacitações são voltadas para ornitólogos, desde estudantes de
+        graduação até pesquisadores e professores que têm interesse em aprender
+        e/ou aperfeiçoar suas técnicas de coleta de dados durante o anilhamento
+        de passeriformes, tendo como pilar principal o bem-estar e segurança dos
+        animais, da equipe, e a qualidade dos dados.
+      </p>
+      <h3 className='mb-2 text-xl font-bold'>
+        QUAL O OBJETIVO E COMO FUNCIONAM OS CURSOS?
+      </h3>
+      <p className='mb-2'>
+        No curso <span className='font-bold underline'>ONLINE</span>,
+        aprenderemos sobre as estratégias e padrões de muda em aves e como usar
+        o método WRP para classificação de idade (ou “molt based ageing
+        system”). Por meio das aulas, visamos promover a padronização no uso de
+        terminologias e nomenclaturas para mudas e plumagens em aves, e expandir
+        esta prática de classificação de idade de aves entre os ornitólogos do
+        Brasil.
+      </p>
+      <p className='mb-2'>
+        Já no curso <span className='font-bold underline'>PRÁTICO</span>,
+        teremos aulas teóricas e experiências supervisionadas em campo para
+        exercitar a manipulação, extração de redes, aplicação de anilhas e
+        coleta de dados em aves; além do manejo responsável de uma estação de
+        anilhamento. Também teremos um foco na compreensão das estratégias e
+        padrões de muda das aves; nas terminologias e nomenclaturas para mudas e
+        plumagens; e no exercício de classificação de idade de aves pelo método
+        WRP.
+      </p>
+      <h3 className='mb-2 text-xl font-bold'>ONDE SERÃO REALIZADOS?</h3>
+      <p className='mb-2'>
+        O curso online acontecerá pela plataforma Sympla em aulas síncronas.
+      </p>
+      <p className='mb-4'>
+        O curso prático será realizado presencialmente na Estação de Pesquisa
+        OAMa (Bocaina de Minas/MG) com hospedagem e alimentação inclusas!
+      </p>
+      <h3 className='mb-2 text-xl font-bold'>QUER SABER MAIS?</h3>
+      <p>Acesse os links abaixo para mais detalhes e faça sua inscrição:</p>
+      <ul>
+        <li>
+          <a
+            target='_blank'
+            className='text-yellow-900 underline'
+            href='https://www.sympla.com.br/evento-online/iv-curso-de-analise-de-muda-e-classificacao-de-idade-em-aves/2396307'
+          >
+            {' '}
+            Curso ONLINE de Análise de Mudas e Classificação de Idade em aves;
+          </a>
+        </li>
+        <li>
+          <a
+            target='_blank'
+            className='text-yellow-900 underline'
+            href='https://forms.gle/iCLry9AfVYYDVPxo8'
+          >
+            {' '}
+            Curso PRÁTICO de Anilhamento e Análise de Muda em aves – foco em
+            passeriformes
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+};
