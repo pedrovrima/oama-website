@@ -447,6 +447,10 @@ export default function Treinamento() {
                 de muda - 2024 - presencial
               </li>
               <li className='list-disc'>
+                IV Curso Teórico Básico de Anilhamento com Aves de Noronha -
+                2024 - Online
+              </li>
+              <li className='list-disc'>
                 I Curso de bioacústica de aves - 2023 - presencial
               </li>
               <li className='list-disc'>
