@@ -736,10 +736,12 @@ const Acc2 = () => {
         <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
 
         <p className='mb-4 text-gray-600'>
-          O programa é coordenado e supervisionado por Luiza Figueira
-          (co-fundadora e diretora executiva do OAMa, anilhadora e treinadora
-          certificada pelo NABC desde 2015, anilhadora sênior do CEMAVE e
-          responsável técnica pelas licenças SISBIO e SNA-CEMAVE).{' '}
+        O programa é coordenado e supervisionado por Luiza Figueira. 
+        Luiza é co-fundadora e Diretora Executiva do OAMa, anilhadora e treinadora certificada pelo NABC desde 2015,
+         anilhadora sênior do CEMAVE e responsável técnica pelas licenças de pesquisa do OAMa no SISBIO e SNA-CEMAVE. 
+         O treinamento é conduzido por Danielle Santos, que é bióloga, mestranda da UFRGS e pesquisadora colaboradora do OAMa. 
+         Danielle foi capacitada em monitoramento de avifauna pelo OAMa, e recebeu também o treinamento de instrutor, 
+         atuando como instrutora primária de novos trainees OAMa desde 2023. {' '}
         </p>
 
         <p className='mb-4 text-gray-600'>
@@ -748,13 +750,19 @@ const Acc2 = () => {
           Pedro Martins para a sua construção e realização.{' '}
         </p>
 
-        <TrainingCarousel></TrainingCarousel>
+        
         <p className='mb-4 text-gray-600'>
           O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e
           outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa.
           Em 2023 o treinamento aconteceu entre março e outubro, e um total de
           12 trainees passaram pelo OAMa nesse ano.
         </p>
+        <p className='mb-4 text-gray-600'>
+        O programa vai além de uma capacitação pontual. A imersão no programa de monitoramento 
+        inclui um aulas teóricas, muitas atividades práticas supervisionadas, 
+        leitura e discussão de artigos científicos, elaboração de seminários e construção de materiais de comunicação científica.
+        </p>
+        <TrainingCarousel></TrainingCarousel>
 
         {/* <div className="flex flex-col sm:flex-row"> */}
 
