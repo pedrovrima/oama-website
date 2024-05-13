@@ -703,18 +703,13 @@ const Acc2 = () => {
         </p>
 
         <p className='mb-4 text-gray-600'>
-          O programa de treinamento foi estruturado utilizando o programa de
-          treinamento e monitoramento com anilhamento de aves do Klamath Bird
-          Observatory como base. Adaptamos o modelo para a nossa realidade
-          local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação
-          ambiental brasileira. O currículo do programa inclui aulas teóricas e
-          muita atividade prática focadas nas técnicas de
-          captura-marcação-recaptura com redes de neblina e anilhamento de aves
-          de sub-bosque e de censos com pontos fixos. O treinamento acontece
-          presencialmente e requer dedicação exclusiva e residência na Estação
-          de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do
-          Patrimônio Natural (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG,
-          Serra da Mantiqueira.
+        O programa de treinamento foi estruturado utilizando o programa de treinamento e monitoramento com 
+        anilhamento de aves do Klamath Bird Observatory como base. Adaptamos o modelo para a nossa realidade local,
+        e seguimos as diretrizes do ICMBio/CEMAVE e a legislação ambiental brasileira. O currículo do programa inclui
+        aulas teóricas e muita atividade prática focadas nas técnicas de captura-marcação-recaptura com redes de neblina
+        e anilhamento de aves de sub-bosque. O treinamento acontece presencialmente e requer dedicação exclusiva e residência
+        na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista,
+        em Bocaina de Minas/MG, e no Instituto Alto Montana, em Itamonte/MG.
         </p>
 
         <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
