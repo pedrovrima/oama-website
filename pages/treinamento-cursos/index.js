@@ -87,7 +87,9 @@ export default function Treinamento() {
               {/* <BBMA /> */}
               <Cursos2024 />
             </div>
+            <div id='acc2'></div>
             <div collapsible multiple className=''>
+          
               {' '}
               <Acc2 />
             </div>
@@ -667,7 +669,7 @@ const Acc2 = () => {
     <>
       <div className='mt-24 px-8'>
         <div className='mb-6 w-full text-center '>
-          <h2 className='text-3xl font-bold leading-tight text-gray-800 '>
+          <h2 className='text-3xl font-bold leading-tight text-gray-800'>
             Programa de treinamento em monitoramento de avifauna do OAMa
           </h2>
           <p className='mt-2 text-lg font-bold text-gray-600 '>
