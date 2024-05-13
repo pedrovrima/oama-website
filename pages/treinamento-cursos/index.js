@@ -28,7 +28,7 @@ export default function Treinamento() {
             <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src='/heros/12.jpg'
+                src='/heros/treinamento.jpg'
                 layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
@@ -87,7 +87,9 @@ export default function Treinamento() {
               {/* <BBMA /> */}
               <Cursos2024 />
             </div>
+            <div id='acc2'></div>
             <div collapsible multiple className=''>
+          
               {' '}
               <Acc2 />
             </div>
@@ -667,11 +669,11 @@ const Acc2 = () => {
     <>
       <div className='mt-24 px-8'>
         <div className='mb-6 w-full text-center '>
-          <h2 className='text-3xl font-bold leading-tight text-gray-800 '>
+          <h2 className='text-3xl font-bold leading-tight text-gray-800'>
             Programa de treinamento em monitoramento de avifauna do OAMa
           </h2>
-          <p className='mt-2 text-lg font-bold text-amber-700'>
-            No momento, não estamos com chamadas abertas para o treinamento.
+          <p className='mt-2 text-lg font-bold text-gray-600 '>
+          Chamada aberta para o programa de treinamento 2024. Inscrições entre 13 e 31 de maio.
           </p>
         </div>
       </div>
@@ -681,7 +683,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1.png'
+            src='/treinamento-cursos/1_horizontal.png'
             layout='fill'
           />
         </div>
@@ -690,7 +692,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1-mobile.png'
+            src='/treinamento-cursos/1_vertical.png'
             layout='fill'
           />
         </div>
@@ -703,27 +705,45 @@ const Acc2 = () => {
         </p>
 
         <p className='mb-4 text-gray-600'>
-          O programa de treinamento foi estruturado utilizando o programa de
-          treinamento e monitoramento com anilhamento de aves do Klamath Bird
-          Observatory como base. Adaptamos o modelo para a nossa realidade
-          local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação
-          ambiental brasileira. O currículo do programa inclui aulas teóricas e
-          muita atividade prática focadas nas técnicas de
-          captura-marcação-recaptura com redes de neblina e anilhamento de aves
-          de sub-bosque e de censos com pontos fixos. O treinamento acontece
-          presencialmente e requer dedicação exclusiva e residência na Estação
-          de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do
-          Patrimônio Natural (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG,
-          Serra da Mantiqueira.
+        O programa de treinamento foi estruturado utilizando o programa de treinamento e monitoramento com 
+        anilhamento de aves do Klamath Bird Observatory como base. Adaptamos o modelo para a nossa realidade local,
+        e seguimos as diretrizes do ICMBio/CEMAVE e a legislação ambiental brasileira. O currículo do programa inclui
+        aulas teóricas e muita atividade prática focadas nas técnicas de captura-marcação-recaptura com redes de neblina
+        e anilhamento de aves de sub-bosque. O treinamento acontece presencialmente e requer dedicação exclusiva e residência
+        na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista,
+        em Bocaina de Minas/MG, e no Instituto Alto Montana, em Itamonte/MG.
         </p>
-
+        <h2 className='mb-4 font-bold text-gray-600'>PARA SE INSCREVER</h2>
+      <ul className='mb-4'>
+        <li><a
+            target='_blank'
+            className='mb-4 text-yellow-900 underline '
+            href='https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1715612537262389&usg=AOvVaw2A0zIvSf0rw57g-v8kcIUe'
+          >
+            {' '}
+            Edital completo de chamada para Programa de Treinamento OAMa 2024
+          </a>
+          </li>
+          <li>
+          <a
+            target='_blank'
+            className='mb-4 text-yellow-900 underline '
+            href='https://www.google.com/url?q=https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit&sa=D&source=docs&ust=1715612537263038&usg=AOvVaw3L4imAUJHd5E5LI3pOuTCu'
+          >
+            {' '}
+            Formulário e inscrição para Programa de treinamento OAMa 2024
+          </a>
+          </li>
+          </ul>
         <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
 
         <p className='mb-4 text-gray-600'>
-          O programa é coordenado e supervisionado por Luiza Figueira
-          (co-fundadora e diretora executiva do OAMa, anilhadora e treinadora
-          certificada pelo NABC desde 2015, anilhadora sênior do CEMAVE e
-          responsável técnica pelas licenças SISBIO e SNA-CEMAVE).{' '}
+        O programa é coordenado e supervisionado por Luiza Figueira. 
+        Luiza é co-fundadora e Diretora Executiva do OAMa, anilhadora e treinadora certificada pelo NABC desde 2015,
+         anilhadora sênior do CEMAVE e responsável técnica pelas licenças de pesquisa do OAMa no SISBIO e SNA-CEMAVE. 
+         O treinamento é conduzido por Danielle Santos, que é bióloga, mestranda da UFRGS e pesquisadora colaboradora do OAMa. 
+         Danielle foi capacitada em monitoramento de avifauna pelo OAMa, e recebeu também o treinamento de instrutor, 
+         atuando como instrutora primária de novos trainees OAMa desde 2023. {' '}
         </p>
 
         <p className='mb-4 text-gray-600'>
@@ -732,31 +752,37 @@ const Acc2 = () => {
           Pedro Martins para a sua construção e realização.{' '}
         </p>
 
-        <TrainingCarousel></TrainingCarousel>
+        
         <p className='mb-4 text-gray-600'>
           O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e
           outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa.
           Em 2023 o treinamento aconteceu entre março e outubro, e um total de
           12 trainees passaram pelo OAMa nesse ano.
         </p>
+        <p className='mb-4 text-gray-600'>
+        O programa vai além de uma capacitação pontual. A imersão no programa de monitoramento 
+        inclui um aulas teóricas, muitas atividades práticas supervisionadas, 
+        leitura e discussão de artigos científicos, elaboração de seminários e construção de materiais de comunicação científica.
+        </p>
+        <TrainingCarousel></TrainingCarousel>
 
         {/* <div className="flex flex-col sm:flex-row"> */}
 
-        <div className='relative hidden w-full sm:block sm:h-medium'>
+        <div className='relative mb-12 mt-6 hidden sm:h-[500px] md:block'>
           <Image
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/3.png'
+            src='/treinamento-cursos/2_horizontal.png'
             layout='fill'
           />
         </div>
-        <div className='relative hidden h-medium w-full'>
+        <div className='relative mb-3 h-medium w-full md:hidden'>
           <Image
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/2-mobile.png'
+            src='/treinamento-cursos/2_vertical.png'
             layout='fill'
           />
         </div>
@@ -768,7 +794,7 @@ const Acc2 = () => {
           </a>{' '}
           com o título “PROGRAMA DE TREINAMENTO - DÚVIDA”.
         </p>
-        <div className='w-full bg-slate-200'>
+        {/*<div className='w-full bg-slate-200'>
           <p className='mb-4 bg-yellow-200 px-4 py-4 text-gray-900'>
             O Programa de treinamento em monitoramento de avifauna do OAMa é uma
             ação nas áreas de educação, capacitação profissional, pesquisa e
@@ -781,7 +807,7 @@ const Acc2 = () => {
             </a>{' '}
             com o título “PROGRAMA DE TREINAMENTO - APOIO”.
           </p>
-        </div>
+  </div>*/}
         <Accordion collapsible>
           <Item>
             <Acc3 />
@@ -817,12 +843,14 @@ const HallOfFame = () => {
       {trainees.map((trainee, i) => {
         return (
           <div class={`relative  mb-8 items-center   justify-around`}>
-            <div class='m-2 w-3/5 rounded-full  shadow-lg '></div>
+            <div class=' m-4 w-3/5 rounded-full  shadow-lg '></div>
 
-            <div class='w-full p-2'>
+            <div class='w-full inline-block m-2'>
+            <img src={trainee.image} alt={trainee.name} layout='fill' className='overflow-hidden m-auto p-2 items-center object-cover w-80 h-80  md:float-right md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full mb-4'/>
               <h3 class='text-l text-justify-center mb-2 font-bold leading-none text-gray-800'>
                 {trainee.name}
               </h3>
+              
               <h4 class='text-l text-justify-center mb-3 font-bold leading-none text-gray-600'>
                 {trainee.basic_info}
                 <br />
@@ -830,10 +858,13 @@ const HallOfFame = () => {
                 <br />
                 {trainee.birds}
               </h4>
+              
 
               <p class='text-md text-gray-600 '>{trainee.quote}</p>
             </div>
+            
           </div>
+          
         );
       })}
     </>
@@ -849,7 +880,7 @@ const trainees = [
     quote:
       '“É inevitável não se apaixonar pela Mantiqueira, pelas aves e pelo trabalho de campo. Essa imersão transformou minha visão sobre esses animais e as possibilidades de pesquisa que podemos desenvolver.”',
     reel: 'https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link',
-    img: 'trainee otávio',
+    image: '/people/trainee otávio.jpg',
   },
   {
     name: 'André Menini',
@@ -859,7 +890,7 @@ const trainees = [
     quote:
       '“O programa fez total diferença na minha formação, afinal de contas, não são muitas as oportunidades para aprender sobre a técnica de anilhamento da forma correta no Brasil e tenho a certeza que tive os melhores professores. Ser trainee no OAMa abriu minha cabeça para diversas possibilidades na ornitologia.”',
     reel: 'https://www.instagram.com/reel/CeMkv6QFYJM/?utm_source=ig_web_copy_link',
-    img: 'trainee andré',
+    image: '/people/trainee andré menin.jpg',
   },
   {
     name: 'Danielle Santos',
@@ -869,7 +900,7 @@ const trainees = [
     quote:
       '“O treinamento sem dúvidas foi uma oportunidade de iniciar na ornitologia com um preparo de altíssima qualidade. Cheguei no OAMa sem saber segurar uma ave com as mãos, e hoje, com as ótimas instruções que tive, sou capaz de capturar as aves e coletar os dados com segurança, agilidade e eficiência.”',
     reel: 'https://www.instagram.com/reel/CgnKTKTlKnP/?utm_source=ig_web_copy_link',
-    img: 'trainee danielle',
+    image: '/people/trainee danielle.jpg',
   },
   {
     name: 'João Victor Ferrari',
@@ -879,7 +910,7 @@ const trainees = [
     quote:
       '“Essa experiência agregou significativamente na minha formação, possibilitando adquirir novas habilidades e amadurecer as minhas decisões. Foi uma satisfação participar do programa de treinamento em monitoramento de avifauna do OAMa.”',
     reel: 'https://www.instagram.com/reel/CkMTadOP-y0/?utm_source=ig_web_copy_link',
-    img: 'trainee joão',
+    image: '/people/trainee joão.jpg',
   },
   {
     name: 'Gabriela Inhesta',
@@ -889,7 +920,7 @@ const trainees = [
     quote:
       '“Estar imersa na natureza e no trabalho de campo com as aves é a realização de um grande sonho e essa foi com certeza a experiência mais bonita e enriquecedora que eu já vivi até então. Eu finalizo muito realizada e me sentindo de fato capacitada para exercer um trabalho de qualidade. “',
     reel: 'https://www.instagram.com/reel/CkMVkpSvzbi/?utm_source=ig_web_copy_link',
-    img: 'trainee gabriela',
+    image: '/people/trainee gabriela.jpg',
   },
   {
     name: 'Luiz Felipe Gonzaga',
@@ -899,7 +930,7 @@ const trainees = [
     quote:
       '“Aprendi muito sobre a fauna local e novas metodologias, pretendo usar todo o conhecimento adquirido para novos projetos e consultoria. A estação de pesquisa é maravilhosa e me sinto muito feliz fazendo parte desta excelente equipe.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee luiz.jpg',
   },
   {
     name: 'Victor Armando Sanchez Gonzales',
@@ -909,7 +940,7 @@ const trainees = [
     birds: '171 aves processadas',
 
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/traine victor gonzales.jpg',
   },
 
   {
@@ -920,7 +951,7 @@ const trainees = [
     quote:
       '“Uma experiência enriquecedora e inspiradora, onde senti de fato estar contribuindo para a conservação das aves.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee andre ayres.jpg',
   },
 
   {
@@ -931,7 +962,7 @@ const trainees = [
     quote:
       '“Participar do programa de treinamento do OAMa foi uma experiência transformadora, repleta de momentos memoráveis! O programa me ensinou como dar meus primeiros passos na ornitologia, sempre com responsabilidade, respeito e segurança com as aves, além do comprometimento com sua conservação.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Natália Almeida.jpg',
   },
 
   {
@@ -942,7 +973,7 @@ const trainees = [
     quote:
       '“O treinamento para mim foi uma experiência essencial na minha carreira e realização no ramo da ornitologia. A partir desse programa de imersão eu tive a oportunidade de ter contato mais direto com as aves e estudá-las, além de que conheci pessoas incríveis com o mesmo amor por esses animais que me ensinaram muito e contribuíram imensamente para o meu crescimento.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Thalia Viana.jpg',
   },
 
   {
@@ -953,7 +984,7 @@ const trainees = [
     quote:
       '“Entender a ética/técnicas do anilhamento foi umas das melhores experiências da minha vida. Hoje vivo uma nova etapa da minha vida em que sinto que cada gotinha de conhecimento que adquiri com o OAMa foram e são essenciais para a contrução e evolução da minha vida profissional e pessoal.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Mariane.jpeg',
   },
 
   {
@@ -964,7 +995,7 @@ const trainees = [
     quote:
       '“Ter participado do programa de treinamento e monitoramento foi uma experiência muito enriquecedora na minha carreira como ornitóloga. Eu saio do OAMa com novas possibilidades, capacitada para lidar com a segurança das aves, adversidades no campo e com a mente repleta de conhecimento e  informações de qualidade. E o mais importante, segura e confiante sobre o meu trabalho.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Patricia.jpg',
   },
 
   {
@@ -975,7 +1006,7 @@ const trainees = [
     quote:
       '“Sou muito grato ao OAMa por essa experiência maravilhosa! Muitos aprendizados e vivências que me guiarão para o estudo da conservação da avifauna!”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee leonardo wolf.jpg',
   },
 
   {
@@ -986,7 +1017,7 @@ const trainees = [
     quote:
       '“Foi uma experiência enriquecedora para mim, tanto profissional como pessoal. O meu primeiro contato com anilhamento e foi inesquecível.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee carolina.jpg',
   },
 
   {
@@ -997,7 +1028,7 @@ const trainees = [
     quote:
       '“Conocer un grupo variado de expertos de diferentes disciplinas, regiones fue sin duda un gran aprendizaje, saber que todos se dedican a diferentes trabajos pero que coincidiamos en un tema es algo que quieres que se repita siempre. La estacion o casa de residencia muy acojedora, agradable con buenos servicios que facilitan la estadia alli y que hacen que uno se sienta en casa, aunque esta a dias de distancia. Muy agradecido siempre, esto ha sido una escuela maravillosa para mi, y me ha ayudara siempre a tomarlos como ejemplo y seran referencia para mis proyectos el resto de mi vida.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Francisco Contreras.jpg',
   },
 
   {
@@ -1008,7 +1039,7 @@ const trainees = [
     quote:
       '“Minha experiência, embora curta, foi extremamente produtiva. Tive a oportunidade de aprender na prática técnicas e conceitos que fizeram de mim um biólogo melhor.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Tarso.jpg',
   },
 
   {
@@ -1019,7 +1050,7 @@ const trainees = [
     quote:
       '“Es un orgullo para mi decir que fui trainee OAMa. Mi primera experiencia anillando nuevas familias de aves neotropicales y conociendo el funcionamiento de un observatorio de aves en todos sus detalles. Estoy agradecida al equipo por las enseñanzas que me llevo a Cuba para multiplicar, incluidas un poco de portuñol!”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Daniela Ventura.jpg',
   },
 
   {
@@ -1030,7 +1061,7 @@ const trainees = [
     quote:
       '“O treinamento foi um divisor de águas na minha formação. Saio de lá me sentindo muito mais segura e madura em relação ao trabalho em campo e aos dados coletados. A formação vai muito além do ensino de técnicas, que por si só já valeria muito, visto que são conhecimentos pouco difundidos no Brasil, mas é a preparação de um profissional de excelência por completo.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    img: 'trainee luiz',
+    image: '/people/trainee Andreza.jpg',
   },
 ];
 
