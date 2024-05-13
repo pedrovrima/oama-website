@@ -681,7 +681,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1.png'
+            src='/treinamento-cursos/1_horizontal.png'
             layout='fill'
           />
         </div>
@@ -690,7 +690,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1-mobile.png'
+            src='/treinamento-cursos/1_vertical.png'
             layout='fill'
           />
         </div>
@@ -766,21 +766,21 @@ const Acc2 = () => {
 
         {/* <div className="flex flex-col sm:flex-row"> */}
 
-        <div className='relative hidden w-full sm:block sm:h-medium'>
+        <div className='relative mb-12 mt-6 hidden sm:h-[500px] md:block'>
           <Image
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/3.png'
+            src='/treinamento-cursos/2_horizontal.png'
             layout='fill'
           />
         </div>
-        <div className='relative hidden h-medium w-full'>
+        <div className='relative mb-3 h-medium w-full md:hidden'>
           <Image
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/2-mobile.png'
+            src='/treinamento-cursos/2_vertical.png'
             layout='fill'
           />
         </div>
