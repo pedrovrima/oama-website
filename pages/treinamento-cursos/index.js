@@ -711,7 +711,28 @@ const Acc2 = () => {
         na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista,
         em Bocaina de Minas/MG, e no Instituto Alto Montana, em Itamonte/MG.
         </p>
-
+        <h2 className='mb-4 font-bold text-gray-600'>PARA SE INSCREVER</h2>
+      <ul className='mb-4'>
+        <li><a
+            target='_blank'
+            className='mb-4 text-yellow-900 underline '
+            href='https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1715612537262389&usg=AOvVaw2A0zIvSf0rw57g-v8kcIUe'
+          >
+            {' '}
+            Edital completo de chamada para Programa de Treinamento OAMa 2024
+          </a>
+          </li>
+          <li>
+          <a
+            target='_blank'
+            className='mb-4 text-yellow-900 underline '
+            href='https://www.google.com/url?q=https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit&sa=D&source=docs&ust=1715612537263038&usg=AOvVaw3L4imAUJHd5E5LI3pOuTCu'
+          >
+            {' '}
+            Formulário e inscrição para Programa de treinamento OAMa 2024
+          </a>
+          </li>
+          </ul>
         <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
 
         <p className='mb-4 text-gray-600'>
