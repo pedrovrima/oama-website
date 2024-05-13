@@ -718,11 +718,12 @@ const Acc2 = () => {
         <li><a
             target='_blank'
             className='mb-4 text-yellow-900 underline '
-            href='https://www.google.com/url?q=https://docs.google.com/document/d/1Gi3q8sruvoUSZYs-6MOB4Mu4hD4cjRWp/edit&sa=D&source=docs&ust=1715612537262389&usg=AOvVaw2A0zIvSf0rw57g-v8kcIUe'
+            href={`/treinamento-cursos/files/Edital.pdf`}
           >
             {' '}
             Edital completo de chamada para Programa de Treinamento OAMa 2024
           </a>
+          
           </li>
           <li>
           <a
