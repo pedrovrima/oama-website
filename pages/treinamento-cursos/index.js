@@ -784,8 +784,15 @@ const Acc2 = () => {
             layout='fill'
           />
         </div>
-        
-        <div className='w-full bg-slate-200'>
+        <p className='mb-4 text-gray-600'>
+          {' '}
+          Em caso de dúvidas, escreva-nos um e-mail para{' '}
+          <a href='mailto:contato@oama.eco.br' className='font-bold'>
+            contato@oama.eco.br
+          </a>{' '}
+          com o título “PROGRAMA DE TREINAMENTO - DÚVIDA”.
+        </p>
+        {/*<div className='w-full bg-slate-200'>
           <p className='mb-4 bg-yellow-200 px-4 py-4 text-gray-900'>
             O Programa de treinamento em monitoramento de avifauna do OAMa é uma
             ação nas áreas de educação, capacitação profissional, pesquisa e
@@ -798,7 +805,7 @@ const Acc2 = () => {
             </a>{' '}
             com o título “PROGRAMA DE TREINAMENTO - APOIO”.
           </p>
-        </div>
+  </div>*/}
         <Accordion collapsible>
           <Item>
             <Acc3 />
