@@ -670,8 +670,8 @@ const Acc2 = () => {
           <h2 className='text-3xl font-bold leading-tight text-gray-800 '>
             Programa de treinamento em monitoramento de avifauna do OAMa
           </h2>
-          <p className='mt-2 text-lg font-bold text-amber-700'>
-            No momento, não estamos com chamadas abertas para o treinamento.
+          <p className='mt-2 text-lg font-bold text-gray-600 '>
+          Chamada aberta para o programa de treinamento 2024. Inscrições entre 13 e 31 de maio.
           </p>
         </div>
       </div>
