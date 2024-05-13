@@ -443,7 +443,7 @@ export default function Treinamento() {
             <h2 className='mb-6 mt-12 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
               Cursos Concluídos
             </h2>
-            <ul className='p-12 text-lg'>
+            <ul className=' text-lg'>
               <li className='list-disc'>
                 VII BBMA - Curso internacional de anilhamento de aves e análise
                 de muda - 2024 - presencial
@@ -941,7 +941,7 @@ const trainees = [
     birds: '171 aves processadas',
 
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/traine victor gonzales.jpg',
+    image: '/people/traine victor gonzales.JPG',
   },
 
   {
@@ -952,7 +952,7 @@ const trainees = [
     quote:
       '“Uma experiência enriquecedora e inspiradora, onde senti de fato estar contribuindo para a conservação das aves.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee andre ayres.jpg',
+    image: '/people/trainee andre ayres.JPG',
   },
 
   {
@@ -963,7 +963,7 @@ const trainees = [
     quote:
       '“Participar do programa de treinamento do OAMa foi uma experiência transformadora, repleta de momentos memoráveis! O programa me ensinou como dar meus primeiros passos na ornitologia, sempre com responsabilidade, respeito e segurança com as aves, além do comprometimento com sua conservação.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Natália Almeida.jpg',
+    image: '/people/Trainee Natália Almeida.jpg',
   },
 
   {
@@ -974,7 +974,7 @@ const trainees = [
     quote:
       '“O treinamento para mim foi uma experiência essencial na minha carreira e realização no ramo da ornitologia. A partir desse programa de imersão eu tive a oportunidade de ter contato mais direto com as aves e estudá-las, além de que conheci pessoas incríveis com o mesmo amor por esses animais que me ensinaram muito e contribuíram imensamente para o meu crescimento.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Thalia Viana.jpg',
+    image: '/people/trainee Thalia Viana.JPG',
   },
 
   {
@@ -985,7 +985,7 @@ const trainees = [
     quote:
       '“Entender a ética/técnicas do anilhamento foi umas das melhores experiências da minha vida. Hoje vivo uma nova etapa da minha vida em que sinto que cada gotinha de conhecimento que adquiri com o OAMa foram e são essenciais para a contrução e evolução da minha vida profissional e pessoal.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Mariane.jpeg',
+    image: '/people/Trainee Mariane.jpeg',
   },
 
   {
@@ -996,7 +996,7 @@ const trainees = [
     quote:
       '“Ter participado do programa de treinamento e monitoramento foi uma experiência muito enriquecedora na minha carreira como ornitóloga. Eu saio do OAMa com novas possibilidades, capacitada para lidar com a segurança das aves, adversidades no campo e com a mente repleta de conhecimento e  informações de qualidade. E o mais importante, segura e confiante sobre o meu trabalho.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Patricia.jpg',
+    image: '/people/Trainee Patricia.JPG',
   },
 
   {
@@ -1007,7 +1007,7 @@ const trainees = [
     quote:
       '“Sou muito grato ao OAMa por essa experiência maravilhosa! Muitos aprendizados e vivências que me guiarão para o estudo da conservação da avifauna!”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee leonardo wolf.jpg',
+    image: '/people/trainee leonardo wolf.JPG',
   },
 
   {
@@ -1018,7 +1018,7 @@ const trainees = [
     quote:
       '“Foi uma experiência enriquecedora para mim, tanto profissional como pessoal. O meu primeiro contato com anilhamento e foi inesquecível.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee carolina.jpg',
+    image: '/people/Trainee carolina.JPG',
   },
 
   {
@@ -1040,7 +1040,7 @@ const trainees = [
     quote:
       '“Minha experiência, embora curta, foi extremamente produtiva. Tive a oportunidade de aprender na prática técnicas e conceitos que fizeram de mim um biólogo melhor.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Tarso.jpg',
+    image: '/people/Trainee Tarso.jpg',
   },
 
   {
@@ -1062,7 +1062,7 @@ const trainees = [
     quote:
       '“O treinamento foi um divisor de águas na minha formação. Saio de lá me sentindo muito mais segura e madura em relação ao trabalho em campo e aos dados coletados. A formação vai muito além do ensino de técnicas, que por si só já valeria muito, visto que são conhecimentos pouco difundidos no Brasil, mas é a preparação de um profissional de excelência por completo.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Andreza.jpg',
+    image: '/people/Trainee Andreza.jpg',
   },
 ];
 
