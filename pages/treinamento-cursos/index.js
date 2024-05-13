@@ -42,14 +42,14 @@ export default function Treinamento() {
         <div className='mx-auto w-3/4 sm:max-w-6xl'>
           <div className='mt-16'>
             <div>
-              <h1 class='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
+              <h1 class='w-full text-center text-5xl font-bold leading-tight text-gray-800 '>
                 Cursos e Treinamento{' '}
               </h1>
 
-              <div class='mb- w-full'>
+              <div class='mb-4 w-full'>
                 <div class='gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25' />
               </div>
-              <p className='text-md text-gray-600 sm:p-12 sm:text-lg'>
+              <p className='text-md mb-4 text-gray-600 sm:p-12 sm:text-lg'>
                 A capacitação e o treinamento de profissionais para o emprego de
                 técnicas de estudo e pesquisa em Ornitologia são essenciais para
                 a qualidade dos trabalhos desenvolvidos e dos dados coletados,
@@ -667,7 +667,7 @@ const BBMA = () => {
 const Acc2 = () => {
   return (
     <>
-      <div className='mt-24 px-8'>
+      <div className='mt-16 md:mt-24'>
         <div className='mb-6 w-full text-center '>
           <h2 className='text-3xl font-bold leading-tight text-gray-800'>
             Programa de treinamento em monitoramento de avifauna do OAMa
@@ -677,8 +677,8 @@ const Acc2 = () => {
           </p>
         </div>
       </div>
-      <div className='px-8 '>
-        <div className='relative mb-12 mt-6 hidden sm:h-[500px] md:block'>
+      <div className=''>
+        <div className='relative md:mb-0 lg:mb-12 lg:mt-6 hidden sm:h-[400px] md:block'>
           <Image
             objectFit='contain'
             // width={100}
