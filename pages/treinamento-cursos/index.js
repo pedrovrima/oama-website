@@ -729,7 +729,7 @@ const Acc2 = () => {
           <a
             target='_blank'
             className='mb-4 text-yellow-900 underline '
-            href='https://www.google.com/url?q=https://docs.google.com/forms/d/1dogTsOBhTVd-_CAXsThwvbcunKl6CzdOshIvFZFVgW8/edit&sa=D&source=docs&ust=1715612537263038&usg=AOvVaw3L4imAUJHd5E5LI3pOuTCu'
+            href='https://forms.gle/H8XNdEAAvLLETaDp7'
           >
             {' '}
             Formulário e inscrição para Programa de treinamento OAMa 2024
