@@ -742,7 +742,7 @@ const Acc2 = () => {
             <a
               target='_blank'
               className='mb-4 text-yellow-900 underline '
-              href={`/treinamento-cursos/files/public/treinamento-cursos/files/OAMa_Llamada_capacitation_2024.pdf`}
+              href={`/treinamento-cursos/files/OAMa_Llamada_capacitation_2024.pdf`}
             >
               Llamado para el Programa de Capacitación OAMa 2024
             </a>
