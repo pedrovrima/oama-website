@@ -89,7 +89,6 @@ export default function Treinamento() {
             </div>
             <div id='acc2'></div>
             <div collapsible multiple className=''>
-          
               {' '}
               <Acc2 />
             </div>
@@ -673,12 +672,13 @@ const Acc2 = () => {
             Programa de treinamento em monitoramento de avifauna do OAMa
           </h2>
           <p className='mt-2 text-lg font-bold text-gray-600 '>
-          Chamada aberta para o programa de treinamento 2024. Inscrições entre 13 e 31 de maio.
+            Chamada aberta para o programa de treinamento 2024. Inscrições entre
+            13 e 31 de maio.
           </p>
         </div>
       </div>
       <div className=''>
-        <div className='relative md:mb-0 lg:mb-12 lg:mt-6 hidden sm:h-[400px] md:block'>
+        <div className='relative hidden sm:h-[400px] md:mb-0 md:block lg:mb-12 lg:mt-6'>
           <Image
             objectFit='contain'
             // width={100}
@@ -705,46 +705,71 @@ const Acc2 = () => {
         </p>
 
         <p className='mb-4 text-gray-600'>
-        O programa de treinamento foi estruturado utilizando o programa de treinamento e monitoramento com 
-        anilhamento de aves do Klamath Bird Observatory como base. Adaptamos o modelo para a nossa realidade local,
-        e seguimos as diretrizes do ICMBio/CEMAVE e a legislação ambiental brasileira. O currículo do programa inclui
-        aulas teóricas e muita atividade prática focadas nas técnicas de captura-marcação-recaptura com redes de neblina
-        e anilhamento de aves de sub-bosque. O treinamento acontece presencialmente e requer dedicação exclusiva e residência
-        na Estação de Pesquisa do OAMa (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural (RPPN) Fazenda Boa Vista,
-        em Bocaina de Minas/MG, e no Instituto Alto Montana, em Itamonte/MG.
+          O programa de treinamento foi estruturado utilizando o programa de
+          treinamento e monitoramento com anilhamento de aves do Klamath Bird
+          Observatory como base. Adaptamos o modelo para a nossa realidade
+          local, e seguimos as diretrizes do ICMBio/CEMAVE e a legislação
+          ambiental brasileira. O currículo do programa inclui aulas teóricas e
+          muita atividade prática focadas nas técnicas de
+          captura-marcação-recaptura com redes de neblina e anilhamento de aves
+          de sub-bosque. O treinamento acontece presencialmente e requer
+          dedicação exclusiva e residência na Estação de Pesquisa do OAMa
+          (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural
+          (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG, e no Instituto Alto
+          Montana, em Itamonte/MG.
         </p>
         <h2 className='mb-4 font-bold text-gray-600'>PARA SE INSCREVER</h2>
-      <ul className='mb-4'>
-        <li><a
-            target='_blank'
-            className='mb-4 text-yellow-900 underline '
-            href={`/treinamento-cursos/files/Edital.pdf`}
-          >
-            {' '}
-            Edital completo de chamada para Programa de Treinamento OAMa 2024
-          </a>
-          
+        <ul className='mb-4'>
+          <li>
+            <a
+              target='_blank'
+              className='mb-4 text-yellow-900 underline '
+              href={`/treinamento-cursos/files/Edital_treinamento_2024.pdf`}
+            >
+              Edital de chamada para Programa de Treinamento OAMa 2024
+            </a>
           </li>
           <li>
-          <a
-            target='_blank'
-            className='mb-4 text-yellow-900 underline '
-            href='https://forms.gle/H8XNdEAAvLLETaDp7'
-          >
-            {' '}
-            Formulário e inscrição para Programa de treinamento OAMa 2024
-          </a>
+            <a
+              target='_blank'
+              className='mb-4 text-yellow-900 underline '
+              href={`/treinamento-cursos/files/OAMa_Call_training_2024.pdf`}
+            >
+              Call for Applications for the OAMa Training Program 2024
+            </a>
           </li>
-          </ul>
+          <li>
+            <a
+              target='_blank'
+              className='mb-4 text-yellow-900 underline '
+              href={`/treinamento-cursos/files/public/treinamento-cursos/files/OAMa_Llamada_capacitation_2024.pdf`}
+            >
+              Llamado para el Programa de Capacitación OAMa 2024
+            </a>
+          </li>
+          <li>
+            <a
+              target='_blank'
+              className='mb-4 text-yellow-900 underline '
+              href='https://forms.gle/H8XNdEAAvLLETaDp7'
+            >
+              {' '}
+              Formulário e inscrição para Programa de treinamento OAMa 2024
+            </a>
+          </li>
+        </ul>
         <h3 className='mb-4 font-bold text-gray-600'>Equipe</h3>
 
         <p className='mb-4 text-gray-600'>
-        O programa é coordenado e supervisionado por Luiza Figueira. 
-        Luiza é co-fundadora e Diretora Executiva do OAMa, anilhadora e treinadora certificada pelo NABC desde 2015,
-         anilhadora sênior do CEMAVE e responsável técnica pelas licenças de pesquisa do OAMa no SISBIO e SNA-CEMAVE. 
-         O treinamento é conduzido por Danielle Santos, que é bióloga, mestranda da UFRGS e pesquisadora colaboradora do OAMa. 
-         Danielle foi capacitada em monitoramento de avifauna pelo OAMa, e recebeu também o treinamento de instrutor, 
-         atuando como instrutora primária de novos trainees OAMa desde 2023. {' '}
+          O programa é coordenado e supervisionado por Luiza Figueira. Luiza é
+          co-fundadora e Diretora Executiva do OAMa, anilhadora e treinadora
+          certificada pelo NABC desde 2015, anilhadora sênior do CEMAVE e
+          responsável técnica pelas licenças de pesquisa do OAMa no SISBIO e
+          SNA-CEMAVE. O treinamento é conduzido por Danielle Santos, que é
+          bióloga, mestranda da UFRGS e pesquisadora colaboradora do OAMa.
+          Danielle foi capacitada em monitoramento de avifauna pelo OAMa, e
+          recebeu também o treinamento de instrutor, atuando como instrutora
+          primária de novos trainees OAMa desde 2023.{' '}
         </p>
 
         <p className='mb-4 text-gray-600'>
@@ -753,7 +778,6 @@ const Acc2 = () => {
           Pedro Martins para a sua construção e realização.{' '}
         </p>
 
-        
         <p className='mb-4 text-gray-600'>
           O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e
           outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa.
@@ -761,9 +785,11 @@ const Acc2 = () => {
           12 trainees passaram pelo OAMa nesse ano.
         </p>
         <p className='mb-4 text-gray-600'>
-        O programa vai além de uma capacitação pontual. A imersão no programa de monitoramento 
-        inclui um aulas teóricas, muitas atividades práticas supervisionadas, 
-        leitura e discussão de artigos científicos, elaboração de seminários e construção de materiais de comunicação científica.
+          O programa vai além de uma capacitação pontual. A imersão no programa
+          de monitoramento inclui um aulas teóricas, muitas atividades práticas
+          supervisionadas, leitura e discussão de artigos científicos,
+          elaboração de seminários e construção de materiais de comunicação
+          científica.
         </p>
         <TrainingCarousel></TrainingCarousel>
 
@@ -846,12 +872,17 @@ const HallOfFame = () => {
           <div class={`relative  mb-8 items-center   justify-around`}>
             <div class=' m-4 w-3/5 rounded-full  shadow-lg '></div>
 
-            <div class='w-full inline-block m-2'>
-            <img src={trainee.image} alt={trainee.name} layout='fill' className='overflow-hidden m-auto p-2 items-center object-cover w-80 h-80  md:float-right md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full mb-4'/>
+            <div class='m-2 inline-block w-full'>
+              <img
+                src={trainee.image}
+                alt={trainee.name}
+                layout='fill'
+                className='m-auto mb-4 h-80 w-80 items-center overflow-hidden rounded-full  object-cover p-2 md:float-right md:h-40 md:w-40 lg:h-52 lg:w-52'
+              />
               <h3 class='text-l text-justify-center mb-2 font-bold leading-none text-gray-800'>
                 {trainee.name}
               </h3>
-              
+
               <h4 class='text-l text-justify-center mb-3 font-bold leading-none text-gray-600'>
                 {trainee.basic_info}
                 <br />
@@ -859,13 +890,10 @@ const HallOfFame = () => {
                 <br />
                 {trainee.birds}
               </h4>
-              
 
               <p class='text-md text-gray-600 '>{trainee.quote}</p>
             </div>
-            
           </div>
-          
         );
       })}
     </>
