@@ -167,7 +167,7 @@ export default function Nav({ allBlack = false }) {
                   <p className=''>Atividades</p>
                   <div className='flex flex-col px-2 '>
                     <Link href='/proaves'>
-                      <p className='cursor-pointer pb-1'>Pró-Aves</p>
+                      <p className='cursor-pointer pb-1'>Ações Pró-Aves</p>
                     </Link>
                     <Link href='/projetos'>
                       <p className='cursor-pointer pb-1'>Projetos</p>
@@ -250,7 +250,7 @@ export default function Nav({ allBlack = false }) {
               <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
                 <Link href='/proaves'>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
-                    Pró-Aves
+                    Ações Pró-Aves
                   </p>
                 </Link>
                 <Link href='/projetos'>
