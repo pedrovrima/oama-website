@@ -166,6 +166,9 @@ export default function Nav({ allBlack = false }) {
                 <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
                   <p className=''>Atividades</p>
                   <div className='flex flex-col px-2 '>
+                    <Link href='/proaves'>
+                      <p className='cursor-pointer pb-1'>Pró-Aves</p>
+                    </Link>
                     <Link href='/projetos'>
                       <p className='cursor-pointer pb-1'>Projetos</p>
                     </Link>
