@@ -13,6 +13,25 @@
 }
 
 
+  @font-face {
+    font-family: 'Oswald';
+
+    src: url("../public/Oswald-VariableFont_wght.ttf") format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'Montserrat';
+
+    src: url("../public/Montserrat-VariableFont_wght.ttf") format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'MontserratSemi';
+
+    src: url("../public/Montserrat-SemiBold.ttf") format('truetype');
+  }
 
 /* Write your own custom component styles here */
 .btn-blue {
