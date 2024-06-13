@@ -203,12 +203,12 @@ export default function Nav({ allBlack = false }) {
                       <p className='cursor-pointer pb-1'>Estação de Pesquisa</p>
                     </Link>
 
-                    <a
+                    {/* <a
                       target='_blank'
                       href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                     >
                       <p className='cursor-pointer pb-1'>AirBnB</p>
-                    </a>
+                    </a> */}
                   </div>
                 </li>
 
@@ -297,14 +297,14 @@ export default function Nav({ allBlack = false }) {
                   </p>
                 </Link>
 
-                <a
+                {/* <a
                   target='_blank'
                   href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                 >
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     AirBnB
                   </p>
-                </a>
+                </a> */}
               </div>
             </div>
 
