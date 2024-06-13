@@ -36,7 +36,7 @@ export default function ProAves() {
             <div
               className="
         absolute -top-[105px]
-        left-[90px] z-50 h-[1100px] w-[500px] rounded-[50px]  bg-[url('/proaves2/pattern3.png')] bg-[length:97px] px-[59px] pt-[35px] drop-shadow-[10px_10px_rgba(148,114,35,0.5)]"
+        left-[90px] z-[20] h-[1100px] w-[500px] rounded-[50px]  bg-[url('/proaves2/pattern3.png')] bg-[length:97px] px-[59px] pt-[35px] drop-shadow-[10px_10px_rgba(148,114,35,0.5)]"
             >
               <h1 className='mb-[56px] text-center font-oswald text-[30px] font-[300] text-white'>
                 TORNE SUA VIDA PRÓ-AVES
@@ -168,8 +168,8 @@ export default function ProAves() {
           src={'/proaves2/bg2.jpeg'}
         />
       </div>
-      <div className="relative z-[19] h-screen bg-[url('/proaves2/pattern3.png')] bg-[length:97px]">
-        <div className='mx-auto max-w-[1024px] pt-[155px]'>
+      <div className="relative z-[50] h-screen bg-[url('/proaves2/pattern3.png')] bg-[length:97px]">
+        <div className='mx-auto max-w-[900px] pt-[155px]'>
           <Carousel className='w-full overflow-y-visible'>
             <CarouselContent>
               <CarouselItem>
@@ -384,7 +384,7 @@ const BasicCalendar = ({ isVisible, year, setter }) => {
           <div className='relative flex h-full items-center justify-center overflow-y-visible font-montserrat uppercase text-[#E9B130] '>
             Set
             <div className='absolute top-[35px]  z-[99] h-[200px] w-[10px] bg-white'></div>
-            <div className='caps-small absolute top-[235px] w-[300px] rounded-[50px] bg-white	  px-12 text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[235px] w-[280px] rounded-[50px] bg-white	  px-12 text-center font-montserrat normal-case'>
               <p>Lançamento da Campanha Ações Pró-Aves</p>
             </div>
           </div>
@@ -436,7 +436,7 @@ const Calendar22 = ({ isVisible, year, setter }) => {
           <div className='relative flex h-full items-center justify-center overflow-y-visible font-montserrat uppercase text-[#E9B130] '>
             Set
             <div className='absolute top-[34px]  z-[99] h-[200px] w-[10px] bg-white'></div>
-            <div className='caps-small absolute top-[233px] w-[300px] rounded-[50px] bg-white px-[28px]	  py-[10px] text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[233px] w-[280px] rounded-[50px] bg-white px-[28px]	  py-[10px] text-center font-montserrat normal-case'>
               <p>Lançamento da Campanha Ações Pró-Aves</p>
             </div>
           </div>
@@ -476,7 +476,7 @@ const Calendar23 = ({ isVisible, year, setter }) => {
           <div className='relative flex h-full items-center justify-center font-montserrat uppercase text-[#E9B130] '>
             Mai
             <div className='absolute top-[34px]  z-[99] h-[120px] w-[10px] bg-white'></div>
-            <div className='caps-small absolute top-[153px] w-[300px] rounded-[50px] bg-white	px-[47px] py-[18px] text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[153px] w-[280px] rounded-[50px] bg-white	px-[47px] py-[18px] text-center font-montserrat normal-case'>
               <p>Feira Avistar</p>
             </div>
           </div>
@@ -486,7 +486,7 @@ const Calendar23 = ({ isVisible, year, setter }) => {
           <div className='relative flex h-full items-center justify-center font-montserrat uppercase text-[#E9B130] '>
             Jul
             <div className='absolute top-[34px]  z-[99] h-[230px] w-[10px] bg-[#EB753C]'></div>
-            <div className='caps-small absolute top-[263px] w-[300px] rounded-[50px] bg-[#EB753C]	px-[47px] py-[18px] text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[263px] w-[280px] rounded-[50px] bg-[#EB753C]	px-[47px] py-[18px] text-center font-montserrat normal-case'>
               <p>Feira Avistar</p>
             </div>
           </div>
@@ -496,14 +496,14 @@ const Calendar23 = ({ isVisible, year, setter }) => {
           <div className='relative flex h-full items-center justify-center overflow-y-visible font-montserrat uppercase text-[#E9B130] '>
             Set
             <div className='absolute top-[34px]  z-[100] h-[110px] w-[10px] bg-[#22844C]'></div>
-            <div className='caps-small absolute top-[143px] z-[100] w-[300px] rounded-[50px] bg-[#22844C]	px-[47px] py-[10px] text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[143px] z-[100] w-[280px] rounded-[50px] bg-[#22844C]	px-[47px] py-[10px] text-center font-montserrat normal-case'>
               <p>Entrevistas e colagem de adevisos anti-colisão</p>
             </div>
           </div>
           <div className='relative flex h-full items-center justify-center font-montserrat uppercase text-[#E9B130] '>
             Out
             <div className='absolute top-[34px]  z-[99] h-[300px] w-[10px] bg-white'></div>
-            <div className='caps-small absolute top-[333px] z-[99] w-[300px] rounded-[50px] bg-white	px-[47px] py-[18px] text-center font-montserrat normal-case'>
+            <div className='caps-small absolute top-[333px] z-[99] w-[280px] rounded-[50px] bg-white	px-[47px] py-[18px] text-center font-montserrat normal-case'>
               <p>Dia da Ave</p>
             </div>
           </div>
@@ -511,10 +511,10 @@ const Calendar23 = ({ isVisible, year, setter }) => {
             Nov
             <div className='absolute top-[34px]  z-[98] h-[370px] w-[10px] bg-[#CF3C3C]'></div>
             <div className='absolute top-[403px] '>
-              <div className='caps-small w-[300px] rounded-[50px] bg-[#CF3C3C]	px-[47px] py-[18px] text-center font-montserrat normal-case'>
+              <div className='caps-small w-[280px] rounded-[50px] bg-[#CF3C3C]	px-[47px] py-[18px] text-center font-montserrat normal-case'>
                 <p>Curso de bordado</p>
               </div>
-              <div className='caps-small h-[70px] w-[300px] rounded-[50px] bg-[#8C78AB]	px-[47px] py-[5px] text-center font-montserrat normal-case'>
+              <div className='caps-small h-[90px] w-[280px] rounded-[50px] bg-[#8C78AB]	px-[47px] py-[5px] text-center font-montserrat normal-case'>
                 <p>Exposição e Workshop “Criaturas Eletrônicas”</p>
               </div>
             </div>
