@@ -13,9 +13,9 @@ export default function QuemSomos() {
         </Head>
 
         <Nav />
-        <div className='relative hero-small md:hero min-h-1/2'>
-          <div className='items-center h-full pt-32 justify-items-center md:pb-16 lg:pb-16'>
-            <div className='absolute top-0 w-full h-full'>
+        <div className='hero-small md:hero min-h-1/2 relative'>
+          <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
                 src='/heros/quem_somos.jpg'
@@ -40,28 +40,28 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
-        <h2 className='w-full text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Divulgação Científica
         </h2>
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {div_cient.map((dc) => (
             <Publication {...dc}></Publication>
           ))}
         </div>
-        <h2 className='w-full mt-24 text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='mt-24 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Institucional
         </h2>
 
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {institucional.map((inst) => (
             <Publication {...inst}></Publication>
           ))}
         </div>
-        <h2 className='w-full mt-24 text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='mt-24 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Acadêmico
         </h2>
 
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {academic.map((inst) => (
             <Publication {...inst}></Publication>
           ))}
@@ -80,7 +80,7 @@ const Publication = (props) => {
       href={direct_link || `/publicacoes/files/${link}`}
       target='_blank'
     >
-      <div className='flex flex-col h-full mx-2 mt-8 mb-4 rounded-lg shadow-2xl cursor-pointer'>
+      <div className='mx-2 mb-4 mt-8 flex h-full cursor-pointer flex-col rounded-lg shadow-2xl'>
         <div className=''>
           <Image
             className=''

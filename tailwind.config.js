@@ -1,21 +1,38 @@
-const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors';
+
 module.exports = {
-  // purge: ["./posts/*.{js,ts,jsx,rsx,mdx}","./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}","./_includes/**/*.{js,ts,jsx,tsx}","./_layouts/**/*.{js,ts,jsx,tsx}"],
+  darkMode: ['class'],
   content: [
     './pages/**/*.{html,js,jsx}',
     './components/**/*.{html,js,jsx}',
-    './components/*.{js,jsx}',
+    '@/components/**/*.{js,jsx}',
     './_includes/**/*.{html,js,jsx}',
     './_layouts/**/*.{html,js,jsx}',
   ],
-
+  prefix: '',
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       animation: {
         flip: 'flip 6s infinite steps(2, end)',
         rotate: 'rotate 3s linear infinite both',
       },
       keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
         flip: {
           to: {
             transform: 'rotate(360deg)',
@@ -26,6 +43,10 @@ module.exports = {
             transform: 'rotate(90deg)',
           },
         },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
 
@@ -200,7 +221,6 @@ module.exports = {
         },
       },
     }),
-
     extend: {
       colors: {
         'accent-1': '#333',
@@ -213,16 +233,17 @@ module.exports = {
         large: '70rem',
       },
     },
-  },
 
-  plugins: [
-    require('tailwindcss-typography')({
-      // all these options default to the values specified here
-      ellipsis: true, // whether to generate ellipsis utilities
-      hyphens: true, // whether to generate hyphenation utilities
-      kerning: true, // whether to generate kerning utilities
-      textUnset: true, // whether to generate utilities to unset text properties
-      componentPrefix: 'c-', // the prefix to use for text style classes
-    }),
-  ],
+    plugins: [
+      require('tailwindcss-animate'),
+      require('tailwindcss-typography')({
+        // all these options default to the values specified here
+        ellipsis: true, // whether to generate ellipsis utilities
+        hyphens: true, // whether to generate hyphenation utilities
+        kerning: true, // whether to generate kerning utilities
+        textUnset: true, // whether to generate utilities to unset text properties
+        componentPrefix: 'c-', // the prefix to use for text style classes
+      }),
+    ],
+  },
 };
