@@ -13,9 +13,9 @@ export default function QuemSomos() {
         </Head>
 
         <Nav />
-        <div className='relative hero-small md:hero min-h-1/2'>
-          <div className='items-center h-full pt-32 justify-items-center md:pb-16 lg:pb-16'>
-            <div className='absolute top-0 w-full h-full'>
+        <div className='hero-small md:hero relative min-h-1/2'>
+          <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
                 src='/heros/quem_somos.jpg'
@@ -40,28 +40,28 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
-        <h2 className='w-full text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Divulgação Científica
         </h2>
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {div_cient.map((dc) => (
             <Publication {...dc}></Publication>
           ))}
         </div>
-        <h2 className='w-full mt-24 text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='mt-24 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Institucional
         </h2>
 
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {institucional.map((inst) => (
             <Publication {...inst}></Publication>
           ))}
         </div>
-        <h2 className='w-full mt-24 text-3xl font-bold leading-tight text-center text-gray-800'>
+        <h2 className='mt-24 w-full text-center text-3xl font-bold leading-tight text-gray-800'>
           Acadêmico
         </h2>
 
-        <div className='grid w-3/4 mx-auto sm:grid-cols-3'>
+        <div className='mx-auto grid w-3/4 sm:grid-cols-3'>
           {academic.map((inst) => (
             <Publication {...inst}></Publication>
           ))}
@@ -80,7 +80,7 @@ const Publication = (props) => {
       href={direct_link || `/publicacoes/files/${link}`}
       target='_blank'
     >
-      <div className='flex flex-col h-full mx-2 mt-8 mb-4 rounded-lg shadow-2xl cursor-pointer'>
+      <div className='mx-2 mb-4 mt-8 flex h-full cursor-pointer flex-col rounded-lg shadow-2xl'>
         <div className=''>
           <Image
             className=''
@@ -101,6 +101,46 @@ const Publication = (props) => {
 };
 
 const div_cient = [
+  {
+    title: 'Campanha pró-aves: Engaiolamento',
+    text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
+    img: 'mockup folder tráfico.png',
+    link: 'Folders Campanha Pró-Aves 2024_TRÁFICO.pdf',
+  },
+
+  {
+    title: 'Campanha pró-aves: Animais Domésticos',
+    text: 'Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.',
+    img: 'mockup folder pets.png',
+    link: 'Folders Campanha Pró-Aves 2024_PETS.pdf',
+  },
+  {
+    title: 'Campanha pró-aves: Poluição Luminosa',
+    text: 'Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.',
+    img: 'mockup folder luminosa.png',
+    link: 'Folders Campanha Pró-Aves 2024_LUMINOSA.pdf',
+  },
+
+  {
+    title: 'Campanha pró-aves: Poluição Sonora',
+    text: 'Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.',
+    img: 'mockup folder sonora.png',
+    link: 'Folders Campanha Pró-Aves 2024_SONORA.pdf',
+  },
+  {
+    title: 'Campanha pró-aves: Comedouros',
+    text: 'Panfleto informativo sobre como montar comedouros para as aves.',
+    img: 'mockup folder comedouro.png',
+    link: 'Folders Campanha Pró-Aves 2024_COMEDOUROS.pdf',
+  },
+
+  {
+    title: 'Campanha pró-aves: Colisão com Vidros',
+    text: 'Panfleto informativo sobre como mitigar as colisões com vidros.',
+    img: 'mockup folder colisão.png',
+    link: 'Folders Campanha Pró-Aves 2024_COLISÃOVIDROS.pdf',
+  },
+
   {
     title: 'Guia de Aves de Visconde de Mauá e região',
     text: 'Guia dobrável de aves da região de Visconde de Mauá. Esse material de estímulo ao ecoturismo oferece um olhar introdutório à riqueza da avifauna local e os melhores lugares para passarinhar, como a Estação de Pesquisa OAMa, na RPPN Fazenda Alto da Boa Vista, no Vale das Flores, em Bocaina de Minas/MG.',
@@ -126,40 +166,40 @@ const div_cient = [
     link: 'Banner - O impacto dos pets - Campanha Ações Pró-Aves.pdf',
   },
   {
-    title: 'Campanha pró-aves: Engaiolamento',
+    title: '[ANTIGO] Campanha pró-aves: Engaiolamento',
     text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
     img: 'engaiolamento.jpg',
     link: 'engaiolamento.pdf',
   },
 
   {
-    title: 'Campanha pró-aves: Animais Domésticos',
+    title: '[ANTIGO] Campanha pró-aves: Animais Domésticos',
     text: 'Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.',
     img: 'predacao.jpg',
     link: 'predacao.pdf',
   },
   {
-    title: 'Campanha pró-aves: Poluição Luminosa',
+    title: '[ANTIGO] Campanha pró-aves: Poluição Luminosa',
     text: 'Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.',
     img: 'luminosa.jpg',
     link: 'luminosa.pdf',
   },
 
   {
-    title: 'Campanha pró-aves: Poluição Sonora',
+    title: '[ANTIGO] Campanha pró-aves: Poluição Sonora',
     text: 'Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.',
     img: 'sonora.jpg',
     link: 'sonora.pdf',
   },
   {
-    title: 'Campanha pró-aves: Comedouros',
+    title: '[ANTIGO] Campanha pró-aves: Comedouros',
     text: 'Panfleto informativo sobre como montar comedouros para as aves.',
     img: 'comedouro.jpg',
     link: 'comedouro.pdf',
   },
 
   {
-    title: 'Campanha pró-aves: Colisão com Vidros',
+    title: '[ANTIGO] Campanha pró-aves: Colisão com Vidros',
     text: 'Panfleto informativo sobre como mitigar as colisões com vidros.',
     img: 'colisao.jpg',
     link: 'colisao.pdf',
