@@ -14,7 +14,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "email-validator": "^2.0.4",
-    "embla-carousel-react": "^8.1.4",
+    "embla-carousel-react": "^8.1.5",
     "framer-motion": "^6.0.0",
     "lucide-react": "^0.394.0",
     "marked": "^4.0.12",

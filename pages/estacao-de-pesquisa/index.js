@@ -1,54 +1,54 @@
-import Nav from "@includes/nav";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
-import Footer from "@includes/footer";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Nav from '@includes/nav';
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import Head from 'next/head';
+import Link from 'next/link';
+import Footer from '@includes/footer';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function QuemSomos() {
   return (
     <>
-      <div className="pb-32">
+      <div className='pb-32'>
         <Head>
           <title>Estação de Pesquisa Refúgio da Boa Vista</title>
         </Head>
 
         <Nav />
-        <div className=" relative hero-small md:hero min-h-1/2">
-          <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
-            <div className="absolute top-0 h-full w-full">
+        <div className=' hero-small md:hero relative min-h-1/2'>
+          <div className='h-full items-center justify-items-center pt-32  md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src="/heros/quem_somos.jpg"
-                layout="fill"
+                src='/heros/quem_somos.jpg'
+                layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
-                objectFit="cover"
-                objectPosition="center"
+                objectFit='cover'
+                objectPosition='center'
                 priority={true}
               ></Image>
             </div>
           </div>
         </div>
 
-        <div className="mt-16">
-          <div className="mb-24">
-            <h1 className="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-              Estação de Pesquisa Refúgio da Boa Vista{" "}
+        <div className='mt-16'>
+          <div className='mb-24'>
+            <h1 className='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
+              Estação de Pesquisa Refúgio da Boa Vista{' '}
             </h1>
-            <div className="w-full mb-4">
-              <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div className='mb-4 w-full'>
+              <div className='gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25'></div>
             </div>
           </div>
         </div>
-        <div className="container mb-12 max-w-4xl mx-auto ">
-          <div className="w-full p-6">
-            <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+        <div className='container mx-auto mb-12 max-w-4xl '>
+          <div className='w-full p-6'>
+            <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
               Nossa casa, sua casa.
             </h3>
-            <p className="text-gray-600 ">
+            <p className='text-gray-600 '>
               A Estação de Pesquisa (EP) do OAMa é o local onde nossa equipe
               trabalha diariamente, realiza cursos, aloja voluntários e recebe
               visitantes. Alocada na antiga pousada da Reserva Particular do
@@ -58,11 +58,11 @@ export default function QuemSomos() {
               simplesmente relaxar e curtir a natureza da Serra da Mantiqueira.
             </p>
           </div>
-          <div className="w-full p-6">
-            <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+          <div className='w-full p-6'>
+            <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
               Sobre o espaço
             </h3>
-            <p className="text-gray-600 mb-4 ">
+            <p className='mb-4 text-gray-600 '>
               A EP tem três módulos (andares). No módulo inferior estão os
               quartos dos voluntários, nosso centro de visitantes e uma sauna a
               lenha. No módulo central, são quatro quartos para hóspedes, com
@@ -71,7 +71,7 @@ export default function QuemSomos() {
               lavanderia e varanda. No terceiro módulo está o escritório do
               OAMa, uma sala de atividades, um lavabo e mais uma varanda.
             </p>
-            <p className="text-gray-600 ">
+            <p className='text-gray-600 '>
               Com exceção aos eventos fechados para grupos (cursos e afins), a
               cozinha é aberta e compartilhada entre hóspedes e equipe OAMa, bem
               como os cômodos de convivência. Cada hóspede deve trazer seus
@@ -82,13 +82,13 @@ export default function QuemSomos() {
               manter a cozinha limpa e organizada para o uso coletivo.
             </p>
           </div>
-          <EPCarousel />{" "}
-          <div className="w-full p-6">
-            <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+          <EPCarousel />{' '}
+          <div className='w-full p-6'>
+            <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
               A Fazenda Boa Vista e a Reserva Particular do Patrimônio Natural
               (RPPN)
             </h3>
-            <p className="text-gray-600 ">
+            <p className='text-gray-600 '>
               A EP-OAMa fica na parte alta, na RPPN, da Fazenda Boa Vista. Uma
               Reserva Particular do Patrimônio Natural (RPPN) é uma categoria de
               unidade de conservação criada espontaneamente pela vontade do
@@ -109,18 +109,18 @@ export default function QuemSomos() {
               frios, céu azul e ensolarado, e noites estreladas.
             </p>
           </div>
-          <div className="w-full p-6">
-            <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+          <div className='w-full p-6'>
+            <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
               Como chegar / Localização
             </h3>
-            <p className="text-gray-600 mb-4 ">
+            <p className='mb-4 text-gray-600 '>
               A Fazenda Boa Vista está localizada no Vale das Flores, em Bocaina
               de Minas/MG. O acesso pode ser feito por diversas rotas, as quais
               dependem do local de origem do visitante. É possível chegar de
               carro, moto e ônibus (esta última forma mais complicada, mas não
               impossível).
             </p>
-            <p className="text-gray-600 mb-4 ">
+            <p className='mb-4 text-gray-600 '>
               Para chegar à EP-OAMa você vai precisar passar pela entrada
               compartilhada na Fazenda Boa Vista, e estacionar seu veículo no
               estacionamento compartilhado com os moradores, que fica na área
@@ -130,13 +130,13 @@ export default function QuemSomos() {
               sombreada, onde é possível escutar e ver muitas aves e outros
               animais.
             </p>
-            <div className="flex justify-center align-center">
+            <div className='align-center flex justify-center'>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.8556753168577!2d-44.503993170756644!3d-22.26634275798193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab26ce2aba56d856!2zMjLCsDE1JzU4LjgiUyA0NMKwMzAnMTIuNCJX!5e1!3m2!1spt-BR!2sbr!4v1643918890287!5m2!1spt-BR!2sbr"
-                width="600"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.8556753168577!2d-44.503993170756644!3d-22.26634275798193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab26ce2aba56d856!2zMjLCsDE1JzU4LjgiUyA0NMKwMzAnMTIuNCJX!5e1!3m2!1spt-BR!2sbr!4v1643918890287!5m2!1spt-BR!2sbr'
+                width='600'
+                height='450'
+                allowfullscreen=''
+                loading='lazy'
               ></iframe>
             </div>
           </div>
@@ -203,24 +203,24 @@ export default function QuemSomos() {
             </p>
           </div> */}
           <div>
-            <p className="text-lg px-8 font-bold">
-              {" "}
-              Reservas pelo{" "}
+            <p className='px-8 text-lg font-bold'>
+              {' '}
+              Reservas pelo{' '}
               <a
-                className="text-yellow-600"
-                href="https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr"
-                target="_blank"
+                className='text-yellow-600'
+                href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
+                target='_blank'
               >
                 AirBnB
               </a>
             </p>
 
-            <p className="text-lg px-8 font-bold">
-              {" "}
+            <p className='px-8 text-lg font-bold'>
+              {' '}
               Importante: Visando mitigar os contágios pelo novo coronavírus,
               recebemos apenas hóspedes com comprovação de pelo menos duas doses
               da vacina contra a covid-19 e sem sintomas da doença. O uso de
-              máscaras é indispensável nas áreas de convivência coletiva da EP.{" "}
+              máscaras é indispensável nas áreas de convivência coletiva da EP.{' '}
             </p>
           </div>
         </div>
@@ -233,20 +233,20 @@ export default function QuemSomos() {
 
 const EPCarousel = (props) => {
   const fotos = [
-    { pic: "/fotos_ep/aerea.jpeg", legend: "Foto aérea da EP." },
-    { pic: "/fotos_ep/frontal.jpg", legend: "Foto frontal da EP." },
-    { pic: "/fotos_ep/lateral.jpg", legend: "Vista lateral da EP." },
-    { pic: "/fotos_ep/piscina.jpg", legend: "Piscina Natural." },
+    { pic: '/fotos_ep/aerea.jpeg', legend: 'Foto aérea da EP.' },
+    { pic: '/fotos_ep/frontal.jpg', legend: 'Foto frontal da EP.' },
+    { pic: '/fotos_ep/lateral.jpg', legend: 'Vista lateral da EP.' },
+    { pic: '/fotos_ep/piscina.jpg', legend: 'Piscina Natural.' },
 
-    { pic: "/fotos_ep/acesso.jpg", legend: "Trilha de acesso à EP." },
+    { pic: '/fotos_ep/acesso.jpg', legend: 'Trilha de acesso à EP.' },
     {
-      pic: "/fotos_ep/noite.jpg",
-      legend: "Vista noturna da EP, com Pedra Selada ao fundo.",
+      pic: '/fotos_ep/noite.jpg',
+      legend: 'Vista noturna da EP, com Pedra Selada ao fundo.',
     },
   ];
 
   return (
-    <div className="flex group h-100 justify-center items-center sm:px-8">
+    <div className='h-100 group flex items-center justify-center sm:px-8'>
       <Carousel
         showArrows={true}
         showStatus
@@ -254,18 +254,18 @@ const EPCarousel = (props) => {
         swipeable
         emulateTouch
         infiniteLoop
-        className="mt-2 bg-gray-700 mb-8 sm:mb-4  h-72 w-full sm:h-96 my-auto"
+        className='my-auto mb-8 mt-2 h-72  w-full bg-gray-700 sm:mb-4 sm:h-96'
       >
         {fotos.map((img) => (
-          <div className="h-72 w-full sm:h-96  relative">
+          <div className='relative h-72 w-full  sm:h-96'>
             <Image
               alt={img.legend}
-              layout="fill"
-              objectFit="contain"
+              layout='fill'
+              objectFit='contain'
               src={img.pic}
             ></Image>
-            <div className="w-full flex absolute bottom-12 justify-center">
-              <p className="w-1/3 opacity-80 sm:opacity-5 text-white bg-gray-700 rounded-md p-2 group-hover:opacity-80 ">
+            <div className='absolute bottom-12 flex w-full justify-center'>
+              <p className='w-1/3 rounded-md bg-gray-700 p-2 text-white opacity-80 group-hover:opacity-80 sm:opacity-5 '>
                 {img.legend}
               </p>
             </div>

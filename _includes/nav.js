@@ -110,7 +110,7 @@ export default function Nav({ allBlack = false }) {
     // </nav>
     <nav
       id='header'
-      className={`fixed top-0 z-[99] w-full text-white ${
+      className={`fixed top-0 z-[999] w-full text-white ${
         scroll || allBlack ? 'bg-gray-900' : ''
       }`}
     >
