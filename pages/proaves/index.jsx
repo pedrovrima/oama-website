@@ -369,7 +369,7 @@ export default function ProAves() {
                 src={'/proaves2/tsuru-large.png'}
               />
             </div>
-            <h2 className='text-center font-oswald text-[48px] font-bold uppercase text-white'>
+            <h2 className='text-center font-oswald text-[36px] font-bold uppercase text-white md:text-[48px]'>
               Experimente a mudança pelas aves
             </h2>
             <div className='hidden lg:block'>
@@ -384,9 +384,9 @@ export default function ProAves() {
             </div>
           </div>
 
-          <div className=' grid  grid-cols-1 gap-[20px] px-[90px] py-[100px] md:grid-cols-2 lg:grid-cols-7'>
+          <div className=' grid  grid-cols-1 gap-[20px] px-[30px] py-[100px] md:grid-cols-2 md:px-[90px] lg:grid-cols-7'>
             <div className='relative order-2 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FF8989] px-[22px] py-[17px] hover:scale-[1.1] lg:order-1 lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Tráfico de <br /> animais silvestres
               </p>
               <div className='absolute  right-0 top-[5px] '>
@@ -399,7 +399,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-1 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FFF] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-2 lg:col-span-3'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Por que <br />
                 ser pró-aves?
               </p>
@@ -413,7 +413,7 @@ export default function ProAves() {
               </div>{' '}
             </div>
             <div className='relative order-3 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none  bg-[#FFAD58] px-[22px] py-[17px] hover:scale-[1.1] lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Predação <br /> por pets
               </p>
               <div className='absolute  right-[11px] top-[20px] '>
@@ -426,7 +426,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-4 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#EFCE70] px-[22px] py-[17px] hover:scale-[1.1] lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Bebedouros <br /> e comedouros
               </p>
               <div className='absolute  -bottom-[5px] right-[10px] '>
@@ -439,7 +439,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-8 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#F5ACF2] px-[22px] py-[17px] hover:scale-[1.1] lg:order-5 lg:col-span-3'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Perda <br />
                 de habitat
               </p>
@@ -453,7 +453,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-5 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#B0DF9D] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-6 lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Colisão <br /> com vidros
               </p>
               <div className='absolute  right-0 top-[5px] '>
@@ -466,7 +466,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-6 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#98C1D9] px-[22px]   py-[17px] hover:scale-[1.1] lg:order-7 lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Poluição <br />
                 sonora
               </p>
@@ -480,7 +480,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-9 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none   bg-[#EAB230] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-8 lg:col-span-3'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Resultados <br />
                 do programa em 2023
               </p>
@@ -494,7 +494,7 @@ export default function ProAves() {
               </div>
             </div>
             <div className='relative order-7 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#C9ACF5] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-9 lg:col-span-2'>
-              <p className=' font-montserrat font-bold leading-5'>
+              <p className=' z-20 font-montserrat font-bold leading-5'>
                 Poluição <br />
                 luminosa
               </p>
@@ -512,11 +512,11 @@ export default function ProAves() {
       </div>
       <div className='relative -top-[50px] -mb-[50px] bg-[#98C1DA] pt-[50px] lg:top-0 lg:mb-0 lg:pt-0'>
         <div className='mx-auto max-w-[1024px] py-[100px] '>
-          <Carousel className='mx-auto flex w-[350px] items-center justify-center gap-[20px]  px-[20px] lg:w-5/6'>
+          <Carousel className='mx-auto flex w-[350px] max-w-[90vw] items-center justify-center gap-[20px]  px-[20px] lg:w-5/6'>
             <CarouselContent className='flex '>
               {Array.from({ length: 11 }).map((_, i) => (
                 <CarouselItem className='w-full  lg:basis-[30%]'>
-                  <div className=' relative h-[400px] w-[350px] lg:w-[230px] '>
+                  <div className=' relative h-[400px] w-[350px] max-w-[90vw] lg:w-[230px] '>
                     <Image
                       src={`/proaves2/gallery/final${i + 1}.jpg`}
                       layout='fill'
