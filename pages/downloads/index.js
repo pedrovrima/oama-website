@@ -102,6 +102,12 @@ const Publication = (props) => {
 
 const div_cient = [
   {
+    title: 'Cartilha: Guarda Responsável de Pets',
+    text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
+    img: 'mockup cartilha pets.jpg',
+    link: 'Cartilha Guarda Responsável de Pets - Ações Pró-Aves.pdf',
+  },
+  {
     title: 'Campanha pró-aves: Engaiolamento',
     text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
     img: 'mockup folder tráfico.png',
@@ -140,6 +146,12 @@ const div_cient = [
     img: 'mockup folder colisão.png',
     link: 'Folders Campanha Pró-Aves 2024_COLISÃOVIDROS.pdf',
   },
+  {
+    title: 'Adesivo anti-colisão',
+    text: 'Adesivos circulares anti colisão de aves para impressão em folha A3, vinil branco fosco. Instruções de aplicação na página Ações Pró-Aves.',
+    img: 'adesivo.jpg',
+    link: 'adesivos.pdf',
+  },
 
   {
     title: 'Guia de Aves de Visconde de Mauá e região',
@@ -165,57 +177,51 @@ const div_cient = [
     img: 'icone_pets.png',
     link: 'Banner - O impacto dos pets - Campanha Ações Pró-Aves.pdf',
   },
-  {
-    title: '[ANTIGO] Campanha pró-aves: Engaiolamento',
-    text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
-    img: 'engaiolamento.jpg',
-    link: 'engaiolamento.pdf',
-  },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Engaiolamento',
+  //   text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
+  //   img: 'engaiolamento.jpg',
+  //   link: 'engaiolamento.pdf',
+  // },
 
-  {
-    title: '[ANTIGO] Campanha pró-aves: Animais Domésticos',
-    text: 'Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.',
-    img: 'predacao.jpg',
-    link: 'predacao.pdf',
-  },
-  {
-    title: '[ANTIGO] Campanha pró-aves: Poluição Luminosa',
-    text: 'Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.',
-    img: 'luminosa.jpg',
-    link: 'luminosa.pdf',
-  },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Animais Domésticos',
+  //   text: 'Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.',
+  //   img: 'predacao.jpg',
+  //   link: 'predacao.pdf',
+  // },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Poluição Luminosa',
+  //   text: 'Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.',
+  //   img: 'luminosa.jpg',
+  //   link: 'luminosa.pdf',
+  // },
 
-  {
-    title: '[ANTIGO] Campanha pró-aves: Poluição Sonora',
-    text: 'Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.',
-    img: 'sonora.jpg',
-    link: 'sonora.pdf',
-  },
-  {
-    title: '[ANTIGO] Campanha pró-aves: Comedouros',
-    text: 'Panfleto informativo sobre como montar comedouros para as aves.',
-    img: 'comedouro.jpg',
-    link: 'comedouro.pdf',
-  },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Poluição Sonora',
+  //   text: 'Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.',
+  //   img: 'sonora.jpg',
+  //   link: 'sonora.pdf',
+  // },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Comedouros',
+  //   text: 'Panfleto informativo sobre como montar comedouros para as aves.',
+  //   img: 'comedouro.jpg',
+  //   link: 'comedouro.pdf',
+  // },
 
-  {
-    title: '[ANTIGO] Campanha pró-aves: Colisão com Vidros',
-    text: 'Panfleto informativo sobre como mitigar as colisões com vidros.',
-    img: 'colisao.jpg',
-    link: 'colisao.pdf',
-  },
+  // {
+  //   title: '[ANTIGO] Campanha pró-aves: Colisão com Vidros',
+  //   text: 'Panfleto informativo sobre como mitigar as colisões com vidros.',
+  //   img: 'colisao.jpg',
+  //   link: 'colisao.pdf',
+  // },
 
   {
     title: 'Livreto Bird Friendly Coalition',
     text: 'Livreto informativo sobre a iniciativa Bird Friendly Coalition.',
     img: 'birdF.jpg',
     link: 'BF Coalition Brochure Traduzido.pdf',
-  },
-  {
-    title: 'Adesivo anti-colisão',
-    text: 'Arquivo para impressão do adesivo anti-colisão.',
-    img: 'adesivo.jpg',
-    link: 'adesivos.pdf',
   },
   {
     title: 'Ornitologia pra todo dia - conhecendo as aves',
