@@ -11,12 +11,59 @@ import {
   CarouselPrevious,
 } from '@/components/ui/acarousel';
 import Footer from '@includes/footer';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+
+import Comedouro from 'components/pro-aves/comedouro';
+import Colisao from 'components/pro-aves/colisao';
+import Intro from 'components/pro-aves/intro';
+import Luminosa from 'components/pro-aves/luminosa';
+import Pets from 'components/pro-aves/pets';
+import Sonora from 'components/pro-aves/sonora';
+import Trafico from 'components/pro-aves/trafico';
+
+const DialogContaent = ({ visible }) => {
+  if (visible === 'comedouro') {
+    return <Comedouro />;
+  }
+  if (visible === 'colisao') {
+    return <Colisao />;
+  }
+  if (visible === 'intro') {
+    return <Intro />;
+  }
+  if (visible === 'luminosa') {
+    return <Luminosa />;
+  }
+  if (visible === 'pets') {
+    return <Pets />;
+  }
+  if (visible === 'sonora') {
+    return <Sonora />;
+  }
+  if (visible === 'trafico') {
+    return <Trafico />;
+  }
+
+  return <DialogContent> </DialogContent>;
+};
 
 export default function ProAves() {
   const [year, setYear] = useState(0);
+  const [visible, setVisible] = useState(false);
+
   return (
     <div>
       <Nav />
+      <Dialog open={visible} onOpenChange={setVisible}>
+        <DialogContaent visible={visible} />
+      </Dialog>
       <div className='relative h-[99vh] overflow-hidden'>
         <div className=' absolute left-[50px] top-[100px] z-50 md:left-[120px]'>
           <Image
@@ -379,7 +426,10 @@ export default function ProAves() {
           </div>
 
           <div className=' grid  grid-cols-1 gap-[20px] px-[30px] py-[100px] md:grid-cols-2 md:px-[90px] lg:grid-cols-7'>
-            <div className='relative order-2 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FF8989] px-[22px] py-[17px] hover:scale-[1.1] lg:order-1 lg:col-span-2'>
+            <div
+              onClick={() => setVisible('trafico')}
+              className='relative order-2 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FF8989] px-[22px] py-[17px] duration-200 hover:scale-[1.06] lg:order-1 lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Tráfico de <br /> animais silvestres
               </p>
@@ -392,7 +442,10 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-1 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FFF] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-2 lg:col-span-3'>
+            <div
+              onClick={() => setVisible('intro')}
+              className='relative order-1 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FFF] px-[22px]  py-[17px] duration-200 hover:scale-[1.06] lg:order-2 lg:col-span-3'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Por que <br />
                 ser pró-aves?
@@ -406,7 +459,10 @@ export default function ProAves() {
                 />
               </div>{' '}
             </div>
-            <div className='relative order-3 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none  bg-[#FFAD58] px-[22px] py-[17px] hover:scale-[1.1] lg:col-span-2'>
+            <div
+              onClick={() => setVisible('pets')}
+              className='relative order-3 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none  bg-[#FFAD58] px-[22px] py-[17px] duration-200 hover:scale-[1.06] lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Predação <br /> por pets
               </p>
@@ -419,7 +475,10 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-4 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#EFCE70] px-[22px] py-[17px] hover:scale-[1.1] lg:col-span-2'>
+            <div
+              onClick={() => setVisible('comedouro')}
+              className='relative order-4 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#EFCE70] px-[22px] py-[17px] duration-200 hover:scale-[1.06] lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Bebedouros <br /> e comedouros
               </p>
@@ -432,8 +491,9 @@ export default function ProAves() {
                 />{' '}
               </div>
             </div>
-            <div className='relative order-8 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#F5ACF2] px-[22px] py-[17px] hover:scale-[1.1] lg:order-5 lg:col-span-3'>
-              <p className=' z-20 font-montserrat font-bold leading-5'>
+            {/* bg-[#F5ACF2] cursor-pointer duration-200 hover:scale-[1.06] */}
+            <div className='relative order-8 flex h-[160px] w-full flex-col  items-start justify-end rounded-2xl rounded-bl-none bg-[#ddd]  px-[22px] py-[17px]  lg:order-5 lg:col-span-3'>
+              <p className=' z-20 font-montserrat font-bold leading-5 text-[#efefef]'>
                 Perda <br />
                 de habitat
               </p>
@@ -446,7 +506,10 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-5 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#B0DF9D] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-6 lg:col-span-2'>
+            <div
+              onClick={() => setVisible('colisao')}
+              className='relative order-5 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#B0DF9D] px-[22px]  py-[17px] duration-200 hover:scale-[1.06] lg:order-6 lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Colisão <br /> com vidros
               </p>
@@ -459,7 +522,10 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-6 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#98C1D9] px-[22px]   py-[17px] hover:scale-[1.1] lg:order-7 lg:col-span-2'>
+            <div
+              onClick={() => setVisible('sonora')}
+              className='relative order-6 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#98C1D9] px-[22px]   py-[17px] duration-200 hover:scale-[1.06] lg:order-7 lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Poluição <br />
                 sonora
@@ -473,8 +539,9 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-9 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none   bg-[#EAB230] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-8 lg:col-span-3'>
-              <p className=' z-20 font-montserrat font-bold leading-5'>
+            {/* bg-[#EAB230] cursor-pointer hover:scale-[1.06]*/}
+            <div className=' relative order-9 flex h-[160px] w-full flex-col  items-start justify-end rounded-2xl rounded-bl-none bg-[#ddd]    px-[22px]  py-[17px] duration-200  lg:order-8 lg:col-span-3'>
+              <p className=' z-20 font-montserrat font-bold leading-5 text-[#efefef]'>
                 Resultados <br />
                 do programa em 2023
               </p>
@@ -487,7 +554,10 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='relative order-7 flex h-[160px] w-full flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#C9ACF5] px-[22px]  py-[17px] hover:scale-[1.1] lg:order-9 lg:col-span-2'>
+            <div
+              onClick={() => setVisible('luminosa')}
+              className='relative order-7 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#C9ACF5] px-[22px]  py-[17px] duration-200 hover:scale-[1.06] lg:order-9 lg:col-span-2'
+            >
               <p className=' z-20 font-montserrat font-bold leading-5'>
                 Poluição <br />
                 luminosa
@@ -509,8 +579,8 @@ export default function ProAves() {
           <Carousel className='mx-auto w-[350px] max-w-[90vw] px-[20px] lg:w-5/6'>
             <CarouselContent className='flex '>
               {Array.from({ length: 11 }).map((_, i) => (
-                <CarouselItem className='w-full  '>
-                  <div className=' relative h-[400px] w-[350px] max-w-[90vw] lg:w-[230px] '>
+                <CarouselItem className='w-full   md:basis-[45%]'>
+                  <div className=' relative h-[400px] '>
                     <Image
                       src={`/proaves2/gallery/final${i + 1}.jpg`}
                       layout='fill'
