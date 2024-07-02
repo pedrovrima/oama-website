@@ -1,67 +1,67 @@
-import Nav from "@includes/nav";
-import { useEffect, useRef } from "react";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import Image from "next/image";
-import Head from "next/head";
-import Footer from "@includes/footer";
-import Link from "next/link";
+import Nav from '@includes/nav';
+import { useEffect, useRef } from 'react';
+
+import Image from 'next/image';
+import Head from 'next/head';
+import Footer from '@includes/footer';
+import Link from 'next/link';
 export default function QuemSomos() {
   return (
     <>
-      <div className="pb-32">
+      <div className='pb-32'>
         <Head>
           <title>Projetos</title>
         </Head>
 
         <Nav />
-        <div className=" relative hero-small md:hero min-h-1/2">
-          <div className="pt-32 lg:pb-16 md:pb-16 h-full  justify-items-center items-center">
-            <div className="absolute top-0 h-full w-full">
+        <div className=' hero-small md:hero relative min-h-1/2'>
+          <div className='h-full items-center justify-items-center pt-32  md:pb-16 lg:pb-16'>
+            <div className='absolute top-0 h-full w-full'>
               <Image
                 // className="h-32"
-                src="/heros/quem_somos.jpg"
-                layout="fill"
+                src='/heros/quem_somos.jpg'
+                layout='fill'
                 //   width={"2000"}
                 //   height={"1000"}
-                objectFit="cover"
-                objectPosition="center"
+                objectFit='cover'
+                objectPosition='center'
                 priority={true}
               ></Image>
             </div>
           </div>
         </div>
 
-        <div className="mt-16">
-          <div className="mb-24">
-            <h1 className="w-full text-5xl font-bold leading-tight text-center text-gray-800">
-              Projetos{" "}
+        <div className='mt-16'>
+          <div className='mb-24'>
+            <h1 className='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
+              Projetos{' '}
             </h1>
-            <div className="w-full mb-4">
-              <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div className='mb-4 w-full'>
+              <div className='gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25'></div>
             </div>
           </div>
         </div>
-        <div className="container mb-12 max-w-4xl mx-auto ">
-          <div className="flex md:flex-row-reverse mb-8  justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+        <div className='container mx-auto mb-12 max-w-4xl '>
+          <div className='mb-8 flex flex-wrap  items-center justify-center   md:flex-row-reverse'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                  className="rounded-full border-gray-200 border-8"
-                  alt="Anilhamento em ação"
-                    src="/projetos/monitoramento.jpg"
-                  layout="responsive"
+                  className='rounded-full border-8 border-gray-200'
+                  alt='Anilhamento em ação'
+                  src='/projetos/monitoramento.jpg'
+                  layout='responsive'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Monitoramento da avifauna
               </h3>
-              <p className="text-gray-600 ">
+              <p className='text-gray-600 '>
                 O monitoramento biológico de longo prazo é o estudo padronizado
                 e constante de uma mesma área por um longo período de tempo. É
                 por meio do monitoramento de longo prazo que podemos identificar
@@ -73,30 +73,30 @@ export default function QuemSomos() {
                 atividades de pesquisa possuem licenças ambientais e permissões
                 de coleta de dados concedidas pelos órgãos competentes. Até o
                 momento, essas atividades têm sido financiadas exclusivamente
-                por nossos filiados e doadores.{" "}
+                por nossos filiados e doadores.{' '}
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row mb-8 justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+          <div className='mb-8 flex flex-wrap items-center justify-center   md:flex-row'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                    alt="Serra da Mantiqueira"
-                  className="rounded-full"
-                  layout="responsive"
-                  src="/projetos/aves_mantiqueira.jpg"
+                  alt='Serra da Mantiqueira'
+                  className='rounded-full'
+                  layout='responsive'
+                  src='/projetos/aves_mantiqueira.jpg'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Avifauna da Mantiqueira
               </h3>
-              <p className="text-gray-600 mb-8">
+              <p className='mb-8 text-gray-600'>
                 Desde o século XIX, a Mantiqueira tem sido visitada por
                 naturalistas interessados em coletar espécimes e descrever a
                 biodiversidade brasileira. Nesse sentido, as aves foram um dos
@@ -114,26 +114,26 @@ export default function QuemSomos() {
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row-reverse mb-8  justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+          <div className='mb-8 flex flex-wrap  items-center justify-center   md:flex-row-reverse'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                  className="rounded-full border-gray-200 border-8"
-                  alt="Anilhamento em ação"
-                    src="/projetos/saltator.jpg"
-                  layout="responsive"
+                  className='rounded-full border-8 border-gray-200'
+                  alt='Anilhamento em ação'
+                  src='/projetos/saltator.jpg'
+                  layout='responsive'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Saltator - app de aprendizado de vocalização de aves
               </h3>
-              <p className="text-gray-600 ">
+              <p className='text-gray-600 '>
                 O Saltator é um projeto que já está em andamento e envolve um
                 jogo, em plataforma virtual, pensado para estimular a
                 aprendizagem progressiva dos cantos das aves. O jogo, que poderá
@@ -145,30 +145,30 @@ export default function QuemSomos() {
                 espécies da avifauna da Mantiqueira, sendo que o conjunto de
                 espécies será definido por meio de dados obtidos da plataforma
                 de ciência cidadã eBird. Este projeto é parcialmente financiado
-                pelo edital PAPE CRBio-04 2021-1.{" "}
+                pelo edital PAPE CRBio-04 2021-1.{' '}
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row mb-8 justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+          <div className='mb-8 flex flex-wrap items-center justify-center   md:flex-row'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                    alt="Serra da Mantiqueira"
-                  className="rounded-full"
-                  layout="responsive"
-                  src="/projetos/dia_de_campo.jpg"
+                  alt='Serra da Mantiqueira'
+                  className='rounded-full'
+                  layout='responsive'
+                  src='/projetos/dia_de_campo.jpg'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Divulgação científica - Dia de Campo: descobrindo as aves
               </h3>
-              <p className="text-gray-600 mb-8">
+              <p className='mb-8 text-gray-600'>
                 O diálogo e a comunicação com a sociedade são prioridades para o
                 OAMa. Afinal, criar pontes entre ciência e sociedade é o pilar
                 sobre o qual construímos nossa organização. O projeto "Dia de
@@ -182,30 +182,30 @@ export default function QuemSomos() {
                 conservação e biologia das aves, com guias e sugestões de
                 atividades para serem realizadas com os visitantes, tópicos e
                 questões para serem abordados, além de materiais para exposição
-                e distribuição.{" "}
+                e distribuição.{' '}
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row-reverse mb-8  justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+          <div className='mb-8 flex flex-wrap  items-center justify-center   md:flex-row-reverse'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                  className="rounded-full border-gray-200 border-8"
-                  alt="Anilhamento em ação"
-                    src="/projetos/redes_sociais.jpg"
-                  layout="responsive"
+                  className='rounded-full border-8 border-gray-200'
+                  alt='Anilhamento em ação'
+                  src='/projetos/redes_sociais.jpg'
+                  layout='responsive'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Divulgação científica - Redes sociais
               </h3>
-              <p className="text-gray-600 ">
+              <p className='text-gray-600 '>
                 Conscientes de que a disseminação da Ciência, em linguagem
                 acessível, possibilita a sensibilização e reflexão crítica sobre
                 as relações entre cultura, sociedade, meio ambiente e economia,
@@ -227,26 +227,26 @@ export default function QuemSomos() {
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row mb-8 justify-center items-center   flex-wrap">
-            <div className="w-3/5  sm:w-1/3 p-2 sm:p-6">
+          <div className='mb-8 flex flex-wrap items-center justify-center   md:flex-row'>
+            <div className='w-3/5  p-2 sm:w-1/3 sm:p-6'>
               <div>
                 <Image
-                    alt="Serra da Mantiqueira"
-                  className="rounded-full"
-                  layout="responsive"
-                  src="/projetos/cursos.jpg"
+                  alt='Serra da Mantiqueira'
+                  className='rounded-full'
+                  layout='responsive'
+                  src='/projetos/cursos.jpg'
                   width={200}
-                  objectFit="cover"
+                  objectFit='cover'
                   height={200}
                 ></Image>
               </div>
             </div>
 
-            <div className="w-full sm:w-2/3 p-6">
-              <h3 className="text-3xl text-justify-center text-gray-800 font-bold leading-none mb-3">
+            <div className='w-full p-6 sm:w-2/3'>
+              <h3 className='text-justify-center mb-3 text-3xl font-bold leading-none text-gray-800'>
                 Cursos
               </h3>
-              <p className="text-gray-600 ">
+              <p className='text-gray-600 '>
                 A capacitação e o treinamento de profissionais para o emprego de
                 técnicas de estudo e pesquisa em Ornitologia são essenciais para
                 a qualidade dos trabalhos desenvolvidos e dos dados coletados,
@@ -261,15 +261,19 @@ export default function QuemSomos() {
                 e Determinação de Idade são os pilares da nossa base em Educação
                 Técnica.
               </p>
-              <p className="text-gray-600 ">
+              <p className='text-gray-600 '>
                 Promovemos também cursos em áreas relacionadas à ornitologia,
                 voltados para o público não acadêmico/técnico. Cursos como
                 “Fotografia e edição de fotos de aves”, ministrado por nossos
                 parceiros da BirdsAtlantic, fazem parte de nossa programação
                 anual.
               </p>
-              <p className="text-gray-600 mb-8">
-              Para saber mais sobre os cursos que o OAMa oferece, <span className="underline text-yellow-600 font-bold"><Link  href="/treinamento-cursos">acesse aqui</Link></span>.
+              <p className='mb-8 text-gray-600'>
+                Para saber mais sobre os cursos que o OAMa oferece,{' '}
+                <span className='font-bold text-yellow-600 underline'>
+                  <Link href='/treinamento-cursos'>acesse aqui</Link>
+                </span>
+                .
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import Nav from '@includes/nav';
 import { useEffect, useRef } from 'react';
-import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
+
 import Image from 'next/image';
 import Head from 'next/head';
 import Footer from '@includes/footer';
@@ -13,7 +13,7 @@ export default function QuemSomos() {
         </Head>
 
         <Nav />
-        <div className='hero-small md:hero min-h-1/2 relative'>
+        <div className='hero-small md:hero relative min-h-1/2'>
           <div className='h-full items-center justify-items-center pt-32 md:pb-16 lg:pb-16'>
             <div className='absolute top-0 h-full w-full'>
               <Image
