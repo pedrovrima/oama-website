@@ -149,12 +149,6 @@ export default function ProAves() {
                 </div>
               </div>
             </div>
-            {/* <IoArrowUpCircle
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              color='white'
-              size={50}
-              className='absolute bottom-[10px] right-[10px]  z-50 cursor-pointer '
-            /> */}
           </div>
           <div className=' absolute -bottom-[80px]  left-[990px] z-[10] opacity-40'>
             <Image
@@ -235,7 +229,7 @@ export default function ProAves() {
                 Dias de eventos
               </p>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-1.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -246,7 +240,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-2.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -257,7 +251,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-3.png'} />
               <div className='flex  w-3/4 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -268,7 +262,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-4.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -279,7 +273,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-5.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -290,7 +284,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='relative hidden h-[300px] w-full items-center justify-center overflow-visible  lg:flex'>
+            <div className='relative hidden h-[200px] w-full items-center justify-center overflow-visible sm:h-[300px]  lg:flex'>
               <div className='absolute -right-[200px] hidden h-[480px] w-[480px] lg:block'>
                 <Image
                   height={480}
@@ -299,8 +293,8 @@ export default function ProAves() {
                 />
               </div>
             </div>
-            <div className='hidden h-[300px] w-full items-center justify-center lg:flex   '></div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='hidden h-[200px] w-full items-center justify-center sm:h-[300px] lg:flex   '></div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-6.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -311,7 +305,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-7.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -322,7 +316,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-8.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -333,7 +327,7 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-9.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
@@ -344,13 +338,13 @@ export default function ProAves() {
                 </p>
               </div>
             </div>
-            <div className='flex h-[300px] w-full flex-col items-center justify-center '>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
               <Image height={70} width={70} src={'/proaves2/icon-10.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
                   14
                 </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                <p className=' font-montserrat text-[16px] font-normal leading-tight  text-white sm:text-[20px]'>
                   Parceiros e colaboradores
                 </p>
               </div>
@@ -512,10 +506,10 @@ export default function ProAves() {
       </div>
       <div className='relative -top-[50px] -mb-[50px] bg-[#98C1DA] pt-[50px] lg:top-0 lg:mb-0 lg:pt-0'>
         <div className='mx-auto max-w-[1024px] py-[100px] '>
-          <Carousel className='mx-auto flex w-[350px] max-w-[90vw] items-center justify-center gap-[20px]  px-[20px] lg:w-5/6'>
+          <Carousel className='mx-auto w-[350px] max-w-[90vw] px-[20px] lg:w-5/6'>
             <CarouselContent className='flex '>
               {Array.from({ length: 11 }).map((_, i) => (
-                <CarouselItem className='w-full  lg:basis-[30%]'>
+                <CarouselItem className='w-full  '>
                   <div className=' relative h-[400px] w-[350px] max-w-[90vw] lg:w-[230px] '>
                     <Image
                       src={`/proaves2/gallery/final${i + 1}.jpg`}
@@ -558,7 +552,7 @@ export default function ProAves() {
             <p className='font-montserratsemi text-[18px] uppercase text-white'>
               Realização
             </p>
-            <div className='mt-4 flex items-center justify-center gap-4'>
+            <div className='mt-4 flex items-center justify-center gap-4 px-[10px]'>
               <Image height={60} width={82} src={'/proaves2/rel1.png'} />
               <Image height={60} width={174} src={'/proaves2/rel2.png'} />
               <Image height={60} width={104} src={'/proaves2/rel3.png'} />
