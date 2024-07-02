@@ -7,7 +7,6 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-  useAccordionItemContext,
 } from '@/components/ui/accordion';
 import Link from 'next/link';
 
@@ -566,14 +565,10 @@ const B = ({ children }) => (
 );
 
 const Acc3 = () => {
-  const { isExpanded } = useAccordionItemContext();
-
   return (
     <>
       <AccordionTrigger className='flex w-full items-center justify-between border-black '>
         <AccH3>Da produção ao consumo consciente: protegendo a juçara</AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionTrigger>
       <AccordionContent className='px-8 py-4'>
         <P>
@@ -658,8 +653,6 @@ const Acc3 = () => {
 };
 
 const Acc2 = () => {
-  const { isExpanded } = useAccordionItemContext();
-
   return (
     <>
       <AccordionTrigger className='flex w-full items-center justify-between border-black '>
@@ -667,8 +660,6 @@ const Acc2 = () => {
           Jacutinga sem fronteiras: a conservação da espécie na Mata Atlântica
           argentina
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionTrigger>
       <AccordionContent className='px-8 py-4'>
         <P>
@@ -709,7 +700,6 @@ const Acc2 = () => {
   );
 };
 const Acc1 = () => {
-  const { isExpanded } = useAccordionItemContext();
   return (
     <>
       <AccordionTrigger className='flex w-full items-center justify-between border-black '>
