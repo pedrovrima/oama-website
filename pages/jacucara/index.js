@@ -706,8 +706,6 @@ const Acc1 = () => {
         <AccH3>
           De volta pra casa: a reintrodução da jacutinga na natureza{' '}
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
       </AccordionTrigger>
       <AccordionContent className='px-8 py-4'>
         <P>

@@ -589,9 +589,6 @@ const BBMA = () => {
           internacional de anilhamento de aves e análise de muda{' '}
         </h3>
 
-        {/* <h3><ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3> */}
-
         <p className='mb-4 text-gray-600'>
           O sétimo de Anilhamento de Aves e Análise de Muda (Bird Banding and
           Molt Analysis - BBMA VII) acontecerá de 17 a 24 de março de 2024 no
