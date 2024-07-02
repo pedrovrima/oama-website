@@ -3,11 +3,10 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-import '@reach/accordion/styles.css';
-import { DialogContent, DialogHeader } from '@/components/ui/dialog';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
+import { DialogContent, DialogHeader } from '@/components/ui/pro-aves-dialog';
 
 const imageGrid = [
   {
@@ -37,7 +36,7 @@ const imageGrid = [
 export default function Intro() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className='w-full border-black  p-6'>
+      <DialogHeader className='w-full  bg-white  p-6'>
         <h2 className='text-3xl font-bold text-gray-800 '>
           Por que ser pró-aves?
         </h2>
@@ -220,13 +219,11 @@ export default function Intro() {
         </div>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <p className='mb-4'>
                 1. CLEMENTS, J. F. et al.{' '}
                 <strong>
@@ -303,7 +300,7 @@ export default function Intro() {
                 <strong>Proceedings of the National Academy of Sciences</strong>
                 , v. 114, n. 42, p. 11175-11180, 2017.
               </p>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

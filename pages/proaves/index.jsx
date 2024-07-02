@@ -18,7 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from '@/components/ui/pro-aves-dialog';
 
 import Comedouro from 'components/pro-aves/comedouro';
 import Colisao from 'components/pro-aves/colisao';

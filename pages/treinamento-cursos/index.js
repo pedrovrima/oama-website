@@ -9,11 +9,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
+  AccordionTrigger,
+  AccordionContent,
   useAccordionItemContext,
-} from '@reach/accordion';
-
+} from '@/components/ui/accordion';
 export default function Treinamento() {
   return (
     <>
@@ -852,15 +851,15 @@ const Acc3 = () => {
   const { isExpanded } = useAccordionItemContext();
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionTrigger className='flex w-full items-center justify-between border-black '>
         <AccH3>Trainees que já passaram pelo treinamento OAMa </AccH3>
         <ArrowH3 className={`transition ${isExpanded ? 'rotate-180  ' : ''}`}>
           &#9660;
         </ArrowH3>
-      </AccordionButton>
-      <AccordionPanel className='px-8 py-4'>
+      </AccordionTrigger>
+      <AccordionContent className='px-8 py-4'>
         <HallOfFame />
-      </AccordionPanel>
+      </AccordionContent>
     </>
   );
 };

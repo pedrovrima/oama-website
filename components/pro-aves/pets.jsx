@@ -3,19 +3,18 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-import '@reach/accordion/styles.css';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
 
 import { H3, P } from './components';
 
-import { DialogHeader, DialogContent } from '@/components/ui/dialog';
+import { DialogHeader, DialogContent } from '@/components/ui/pro-aves-dialog';
 
 export default function Pets() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className=' w-full  p-6'>
+      <DialogHeader className=' w-full bg-[#FFAD58]  p-6'>
         <h2 className='text-3xl font-bold text-gray-800 '>
           Predação de aves por animais domésticos
         </h2>
@@ -264,13 +263,11 @@ export default function Pets() {
         </P>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <P>
                 1 Galibert, F., Quignon, P., Hitte, C., & André, C. (2011).
                 Toward understanding dog evolutionary and domestication history.{' '}
@@ -382,7 +379,7 @@ export default function Pets() {
                 https://jornal.usp.br/universidade/avanco-de-caes-e-gatos-em-area-de-conservacao-preocupa-cientistas/
                 Acesso em: 18 de Junho de 2022
               </P>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

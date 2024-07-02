@@ -3,13 +3,12 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-import '@reach/accordion/styles.css';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
 
 import { H3, P, H4, Carroussel } from './components';
-import { DialogContent, DialogHeader } from '@/components/ui/dialog';
+import { DialogContent, DialogHeader } from '@/components/ui/pro-aves-dialog';
 
 const carrousselImages = [
   {
@@ -44,7 +43,7 @@ const carrousselImages = [
 export default function Trafico() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className=' w-full border-black  p-6'>
+      <DialogHeader className=' w-full bg-[#FE8989] p-6'>
         <h2 className='text-3xl font-bold text-gray-800 '>
           Tráfico de animais silvestres
         </h2>
@@ -448,13 +447,11 @@ export default function Trafico() {
         </ul>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <p className='mb-4'>
                 1 WILSON-WILDE, Linzi. Wildlife crime: a global problem.
                 Forensic science, medicine, and pathology, v. 6, n. 3, p.
@@ -543,7 +540,7 @@ export default function Trafico() {
                 under climate change. <strong>Global change biology</strong>, v.
                 25, n. 10, p. 3242-3253, 2019.
               </p>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

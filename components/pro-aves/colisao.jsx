@@ -3,13 +3,12 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-import '@reach/accordion/styles.css';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
 
 import { H3, P, H4, Carroussel } from './components';
-import { DialogContent, DialogHeader } from '@/components/ui/dialog';
+import { DialogContent, DialogHeader } from '@/components/ui/pro-aves-dialog';
 
 const carrousselImages = [
   {
@@ -44,7 +43,7 @@ const carrousselImages = [
 export default function Colisao() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className=' w-full border-black  p-6'>
+      <DialogHeader className=' w-full bg-[#B1DF9D]  p-6'>
         <h2 className='text-3xl font-bold text-gray-800 '>
           Colisão com vidros
         </h2>
@@ -530,13 +529,11 @@ export default function Colisao() {
         </P>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <P>
                 1 MACHTANS, C. S.; WEDELES, C.H.R.; BAYNE, E.M. A first estimate
                 for Canada of the number of birds killed by colliding with
@@ -649,7 +646,7 @@ export default function Colisao() {
                 window. YouTube. Disponível em:
                 https://www.youtube.com/watch?v=UC9xQkUtQ98
               </P>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

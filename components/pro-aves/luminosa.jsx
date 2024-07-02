@@ -3,16 +3,15 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-import '@reach/accordion/styles.css';
-import { DialogContent, DialogHeader } from '@/components/ui/dialog';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
+import { DialogContent, DialogHeader } from '@/components/ui/pro-aves-dialog';
 
 export default function Luminosa() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className=' w-full border-black  p-6'>
+      <DialogHeader className=' w-full bg-[#C9ACF5]  p-6'>
         <h2 className='text-3xl font-bold text-gray-800 '>
           Poluição luminosa{' '}
         </h2>
@@ -500,13 +499,11 @@ export default function Luminosa() {
         ></Fig>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <p className='mb-4'>
                 1.FERNANDES, G. Wilson; COELHO, Marcel Serra; CAIRES, Tarcísio.
                 impacto ambiental da poluição luminosa. Terra 3.0-Especial{' '}
@@ -644,7 +641,7 @@ export default function Luminosa() {
                 tits. <strong>Journal of Biological Rhythms</strong>, v. 32, n.
                 4, p. 323-333, 2017.
               </p>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

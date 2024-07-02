@@ -3,17 +3,15 @@ import Image from 'next/image';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-} from '@reach/accordion';
-
-import '@reach/accordion/styles.css';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
 
 import {
   DialogContent,
   DialogTitle,
   DialogHeader,
-} from '@/components/ui/dialog';
+} from '@/components/ui/pro-aves-dialog';
 
 import { H3, P, Carroussel } from './components';
 
@@ -61,7 +59,7 @@ const accordeonFigs = [
 export default function Comedouro() {
   return (
     <DialogContent className='z-[999] h-[90vh] max-w-[90vw] overflow-y-scroll'>
-      <DialogHeader className=' w-full border-black  p-6'>
+      <DialogHeader className=' w-full bg-[#F0CE71]  p-6'>
         <DialogTitle className='text-3xl font-bold text-gray-800 '>
           Uso correto de comedouros e bebedouros de aves
         </DialogTitle>
@@ -303,13 +301,11 @@ export default function Comedouro() {
         <Carroussel section='intro' figs={accordeonFigs}></Carroussel>
 
         <Accordion collapsible>
-          <AccordionItem>
-            <AccordionButton>
-              <h3 className='mb-4 mt-12 text-xl font-bold text-gray-700'>
-                Referências &#9660;
-              </h3>
-            </AccordionButton>
-            <AccordionPanel>
+          <AccordionItem value='item1'>
+            <AccordionTrigger className='mb-4 mt-12'>
+              <h3 className=' text-xl font-bold text-gray-700'>Referências</h3>
+            </AccordionTrigger>
+            <AccordionContent>
               <P>
                 1 CAPALDI, C. A.; DOPKO, R. L.; ZELENSKI, J. M. The relationship
                 between nature connectedness and happiness: a meta-analysis.{' '}
@@ -425,7 +421,7 @@ export default function Comedouro() {
                 2021. Disponível em:
                 https://doi.org/10.1016/j.biocon.2021.109295.
               </P>
-            </AccordionPanel>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

@@ -7,10 +7,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@paypal/react-paypal-js": "^5.1.1",
+    "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
-    "@reach/accordion": "^0.17.0",
     "aws-sdk": "^2.799.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -20,9 +19,9 @@
     "lucide-react": "^0.394.0",
     "marked": "^4.0.12",
     "next": "^12.3.4",
-    "react": "^17.0.2",
+    "react": "^18",
     "react-cool-onclickoutside": "^1.6.1",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18",
     "react-icons": "^4.4.0",
     "react-responsive-carousel": "^3.2.22",
     "stripe": "^13.10.0",
