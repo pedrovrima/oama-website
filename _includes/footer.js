@@ -9,7 +9,7 @@ import {
 
 export default function Footer({ noMargin }) {
   return (
-    <footer>
+    <footer className='z-999'>
       <div
         className={`flex flex-col ${
           !noMargin && 'mt-16'

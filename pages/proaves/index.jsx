@@ -676,8 +676,19 @@ export default function ProAves() {
             </p>
             <div className='mt-4 flex items-center justify-center gap-4 px-[10px]'>
               <Image height={60} width={82} src={'/proaves2/rel1.png'} />
-              <Image height={60} width={174} src={'/proaves2/rel2.png'} />
-              <Image height={60} width={104} src={'/proaves2/rel3.png'} />
+              <a
+                href='https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/pan/pan-aves-da-mata-atlantica'
+                target='_blank'
+              >
+                <Image height={60} width={174} src={'/proaves2/rel2.png'} />
+              </a>
+              <a
+                href='https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/aves-silvestres'
+                target='_blank'
+              >
+                {' '}
+                <Image height={60} width={104} src={'/proaves2/rel3.png'} />
+              </a>
             </div>
           </div>
           <div className='mt-[30px] w-full text-center'>
@@ -685,9 +696,16 @@ export default function ProAves() {
               Apoio
             </p>
             <div className='mt-4 flex items-center justify-center gap-4'>
-              <Image height={60} width={60} src={'/proaves2/ap1.png'} />
-              <Image height={60} width={75} src={'/proaves2/ap2.png'} />
-              <Image height={60} width={60} src={'/proaves2/ap3.png'} />
+              <a
+                href='https://www.instagram.com/birdsatlantic/'
+                target='_blank'
+              >
+                <Image height={60} width={60} src={'/proaves2/ap1.png'} />
+              </a>
+              {/* <Image height={60} width={75} src={'/proaves2/ap2.png'} /> */}
+              <a href='https://crbio04.gov.br/' target='_blank'>
+                <Image height={60} width={60} src={'/proaves2/ap3.png'} />
+              </a>
             </div>
           </div>
         </div>
