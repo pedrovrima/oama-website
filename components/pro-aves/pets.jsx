@@ -140,10 +140,9 @@ export default function Pets() {
           a seguir ilustra a situação:
         </P>
 
-        <div className='flex items-center justify-center p-12'>
+        <div className='flex  items-center justify-center sm:p-12'>
           <iframe
-            width='560'
-            height='315'
+            className='aspect-video w-full max-w-[500px]'
             src='https://www.youtube.com/embed/zfsAyotGnS8'
             title='YouTube video player'
             frameborder='0'

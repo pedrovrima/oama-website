@@ -1,6 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from '@includes/nav';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+import AutoScroll from 'embla-carousel-auto-scroll';
+
+// import IncreasingNumber from 'components/increasing-number';
 import { IoArrowUpCircle } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -19,6 +23,10 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/pro-aves-dialog';
+
+const IncreasingNumber = dynamic(() => import('components/increasing-number'), {
+  ssr: false,
+});
 
 import Comedouro from 'components/pro-aves/comedouro';
 import Colisao from 'components/pro-aves/colisao';
@@ -62,22 +70,26 @@ export default function ProAves() {
     <div>
       <Nav />
       <Dialog open={visible} onOpenChange={setVisible}>
-        <DialogContaent visible={visible} />
+        <DialogContaent className='max-w-[900px]' visible={visible} />
       </Dialog>
       <div className='relative h-[99vh] overflow-hidden'>
-        <div className=' absolute left-[50px] top-[100px] z-50 md:left-[120px]'>
+        <div className=' absolute left-[10px] top-[100px] z-50 md:left-[120px]'>
           <Image
-            height={250}
-            width={250}
+            height={450}
+            width={450}
             src={'/proaves2/logo-pro-aves-texto.png'}
           />
         </div>
-        <Image
-          layout='fill'
-          objectFit='cover'
-          className=' scale-x-[-1]'
-          src={'/proaves2/cover_pro_aves.jpeg'}
-        />
+        <div className='fixed h-full w-full'>
+          <div className='relative h-full w-full'>
+            <Image
+              layout='fill'
+              objectFit='cover'
+              className='sm:scale-x-[-1]'
+              src={'/proaves2/cover_pro_aves.jpeg'}
+            />
+          </div>
+        </div>
         <div className=' absolute -bottom-[100px] -left-[160px] opacity-40'>
           <Image height={500} width={500} src={'/proaves2/blob.png'} />
         </div>
@@ -94,7 +106,13 @@ export default function ProAves() {
               <h1 className='mb-[56px] text-center font-oswald text-[30px] font-[300] text-white'>
                 TORNE SUA VIDA PRÓ-AVES
               </h1>
-              <p className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'
+              >
                 Ano após ano, populações de aves sofrem impactos diretos e
                 indiretos de ações humanas. Esse efeito negativo de nossas ações
                 sobre a biodiversidade pode ser associado ao crescimento
@@ -106,25 +124,43 @@ export default function ProAves() {
                   algumas mudanças nos hábitos individuais de cada pessoa podem
                   impedir a morte de centenas de aves.
                 </span>
-              </p>
-              <p className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'
+              >
                 O Observatório de Aves da Mantiqueira, OAMa, acredita que todos
                 podemos associar ao seu modo de vida algumas ações que favoreçam
                 a conservação das aves e seus habitats e por isso realiza
                 atividades para fomentar ações Pró-Aves na vida e no dia-a-dia
                 de todo brasileiro.
-              </p>
-              <p className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className='text-[ #1E1702] mb-8 font-montserrat text-[16px] font-[400]'
+              >
                 Essa campanha tem como objetivo apresentar alguns dos principais
                 problemas que afetam as aves e que podem ser mitigados com ações
                 simples de cada pessoa. Aqui você vai conhecer sobre o problema
                 da caça e tráfico de animais silvestres, sobre o inimigo
                 invisível que gera a morte por colisão das aves, sobre a
                 problemática das poluições luminosa e sonora e outros.
-              </p>
-              <p className='font-montserratsemi text-white'>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className='font-montserratsemi text-white'
+              >
                 A mudança precisa de todos nós para acontecer!
-              </p>
+              </motion.p>
             </div>
 
             <div className=' absolute left-[830px]  top-0 z-50 hidden lg:flex'>
@@ -239,167 +275,8 @@ export default function ProAves() {
        */}
       {/* </div>
       </div> */}
-      <div>
-        <div className='relative z-[190]  rounded-b-[50px] bg-[#E9B130] lg:rounded-none'>
-          <div className="absolute  top-0 z-[2] h-full w-full bg-[url('/proaves2/bg-grid.png')]  bg-[cover] opacity-90" />
-          <div className=' relative z-[21] mx-auto grid max-w-[1024px] grid-cols-2 lg:grid-cols-4 lg:gap-[20px]'>
-            <div className='absolute left-[502px] hidden h-[900px] w-[20px] bg-white lg:block'></div>
-            <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-1.png')] bg-[cover]">
-              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +8.600
-              </p>
-              <p className='font-oswald text-[20px] font-bold text-white'>
-                Pessoas impactadas
-              </p>
-            </div>
-            <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-2.png')] bg-[cover]">
-              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +420
-              </p>
-              <p className='font-oswald text-[20px] font-bold text-white'>
-                Folders informativos
-              </p>
-            </div>
-            <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-3.png')] bg-[cover]">
-              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +200
-              </p>
-              <p className='font-oswald text-[20px] font-bold text-white'>
-                Guias de Aves
-              </p>
-            </div>
-            <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-4.png')] bg-[cover]">
-              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                29
-              </p>
-              <p className='font-oswald text-[20px] font-bold text-white'>
-                Dias de eventos
-              </p>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-1.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  2
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Passarinhadas guidas
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-2.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  2
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Workshops
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-3.png'} />
-              <div className='flex  w-3/4 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  2
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Pesquisas de ciência cidadã{' '}
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-4.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  4
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Banners informativos{' '}
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-5.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  3
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Escolas envolvidas
-                </p>
-              </div>
-            </div>
-            <div className='relative hidden h-[200px] w-full items-center justify-center overflow-visible sm:h-[300px]  lg:flex'>
-              <div className='absolute -right-[200px] hidden h-[480px] w-[480px] lg:block'>
-                <Image
-                  height={480}
-                  width={480}
-                  src={'/proaves2/tsuru-large.png'}
-                />
-              </div>
-            </div>
-            <div className='hidden h-[200px] w-full items-center justify-center sm:h-[300px] lg:flex   '></div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-6.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  1
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Jogo de tabuleiro
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-7.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  7
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Palestras
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-8.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  3
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Vídeos informativos
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-9.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  3
-                </p>
-                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Instalações artísticas
-                </p>
-              </div>
-            </div>
-            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
-              <Image height={70} width={70} src={'/proaves2/icon-10.png'} />
-              <div className='flex w-1/3 items-center justify-center gap-2'>
-                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  14
-                </p>
-                <p className=' font-montserrat text-[16px] font-normal leading-tight  text-white sm:text-[20px]'>
-                  Parceiros e colaboradores
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="relative -top-[50px] z-[50] -mb-[50px] rounded-b-[50px]  bg-[url('/proaves2/pattern.png')] bg-[length:97px] pt-[50px] lg:top-0 lg:mb-0 lg:rounded-none lg:pt-0">
+      {/* <RenderOnClient> */}
+      <div className="relative -top-[50px] z-[50] -mb-[50px]   bg-[url('/proaves2/pattern.png')] bg-[length:97px] pt-[50px] lg:top-0 lg:mb-0 lg:rounded-none lg:pt-0">
         <div className='mx-auto max-w-[1024px]'>
           <div className='flex items-end justify-center px-[22px] pt-[46px]'>
             <div className='hidden lg:block'>
@@ -425,7 +302,13 @@ export default function ProAves() {
             </div>
           </div>
 
-          <div className=' grid  grid-cols-1 gap-[20px] px-[30px] py-[100px] md:grid-cols-2 md:px-[90px] lg:grid-cols-7'>
+          <motion.div
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className=' grid  grid-cols-1 gap-[20px] px-[30px] py-[100px] md:grid-cols-2 md:px-[90px] lg:grid-cols-7'
+          >
             <div
               onClick={() => setVisible('trafico')}
               className='relative order-2 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#FF8989] px-[22px] py-[17px] duration-200 hover:scale-[1.06] lg:order-1 lg:col-span-2'
@@ -571,12 +454,181 @@ export default function ProAves() {
                 />
               </div>
             </div>
+          </motion.div>
+        </div>
+      </div>
+      <div>
+        <div className='relative z-[190]  rounded-b-[50px] bg-[#E9B130] lg:rounded-none '>
+          <div className="absolute  top-0 z-[2] h-full w-full bg-[url('/proaves2/bg-grid.png')]  bg-[cover] opacity-90" />
+          <div className=' relative z-[21] mx-auto grid max-w-[1024px] grid-cols-2 lg:grid-cols-4 lg:gap-[20px]'>
+            <div className='absolute left-[502px] hidden h-[900px] w-[20px] bg-white lg:block'></div>
+            <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-1.png')] bg-[cover] duration-200 hover:scale-[1.06]">
+              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                +<IncreasingNumber finalNumber={8600} />
+              </p>
+              <p className='font-oswald text-[20px] font-bold text-white'>
+                Pessoas impactadas
+              </p>
+            </div>
+            <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-2.png')] bg-[cover] duration-200 hover:scale-[1.06]">
+              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                +<IncreasingNumber finalNumber={420} />
+              </p>
+              <p className='font-oswald text-[20px] font-bold text-white'>
+                Folders informativos
+              </p>
+            </div>
+            <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-3.png')] bg-[cover] duration-200 hover:scale-[1.06]">
+              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                +<IncreasingNumber finalNumber={200} />
+              </p>
+              <p className='font-oswald text-[20px] font-bold text-white'>
+                Guias de Aves
+              </p>
+            </div>
+            <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-4.png')] bg-[cover]  duration-200 hover:scale-[1.06]">
+              <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                <IncreasingNumber finalNumber={29} />
+              </p>
+              <p className='font-oswald text-[20px] font-bold text-white'>
+                Dias de eventos
+              </p>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-1.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  2
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Passarinhadas guidas
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-2.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  2
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Workshops
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-3.png'} />
+              <div className='flex  w-3/4 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  2
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Pesquisas de ciência cidadã{' '}
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-4.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  4
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Banners informativos{' '}
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-5.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  3
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Escolas envolvidas
+                </p>
+              </div>
+            </div>
+            <div className='relative hidden h-[200px] w-full items-center justify-center overflow-visible sm:h-[300px]  lg:flex'>
+              <div className='absolute -right-[200px] hidden h-[480px] w-[480px] lg:block'>
+                <Image
+                  height={480}
+                  width={480}
+                  src={'/proaves2/tsuru-large.png'}
+                />
+              </div>
+            </div>
+            <div className='hidden h-[200px] w-full items-center justify-center sm:h-[300px] lg:flex   '></div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-6.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  1
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Jogo de tabuleiro
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-7.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  7
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Palestras
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-8.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  3
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Vídeos informativos
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-9.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  3
+                </p>
+                <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
+                  Instalações artísticas
+                </p>
+              </div>
+            </div>
+            <div className='flex h-[200px] w-full flex-col items-center justify-center sm:h-[300px] '>
+              <Image height={70} width={70} src={'/proaves2/icon-10.png'} />
+              <div className='flex w-1/3 items-center justify-center gap-2'>
+                <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
+                  14
+                </p>
+                <p className=' font-montserrat text-[16px] font-normal leading-tight  text-white sm:text-[20px]'>
+                  Parceiros e colaboradores
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className='relative -top-[50px] -mb-[50px] bg-[#98C1DA] pt-[50px] lg:top-0 lg:mb-0 lg:pt-0'>
+      {/* </RenderOnClient> */}
+
+      <div className='relative -top-[50px] -mb-[50px] bg-[#98C1DA]  pt-[90px] lg:top-0 lg:mb-0 lg:pt-0'>
+        <h2 className='pt-[20px] text-center font-oswald text-[36px] font-bold uppercase text-white md:text-[48px]'>
+          Créditos
+        </h2>
         <div className='mx-auto max-w-[1024px] py-[100px] '>
-          <Carousel className='mx-auto w-[350px] max-w-[90vw] px-[20px] lg:w-5/6'>
+          <Carousel
+            opts={{ loop: true }}
+            plugins={[AutoScroll({ playOnInit: true, speed: 1 })]}
+            className='mx-auto w-[350px] max-w-[90vw] px-[20px] lg:w-5/6'
+          >
             <CarouselContent className='flex '>
               {Array.from({ length: 11 }).map((_, i) => (
                 <CarouselItem className='w-full   md:basis-[45%]'>
@@ -884,4 +936,14 @@ const Calendar24 = ({ isVisible, year, setter }) => {
       </div>
     </div>
   );
+};
+
+const RenderOnClient = ({ children }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return mounted ? children : null;
 };
