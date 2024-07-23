@@ -5,10 +5,9 @@ import Footer from '@includes/footer';
 import {
   Accordion,
   AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  useAccordionItemContext,
-} from '@reach/accordion';
+  AccordionTrigger,
+  AccordionContent,
+} from '@/components/ui/accordion';
 import Link from 'next/link';
 
 export default function Jacucara() {
@@ -566,16 +565,12 @@ const B = ({ children }) => (
 );
 
 const Acc3 = () => {
-  const { isExpanded } = useAccordionItemContext();
-
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionTrigger className='flex w-full items-center justify-between border-black '>
         <AccH3>Da produção ao consumo consciente: protegendo a juçara</AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
-      </AccordionButton>
-      <AccordionPanel className='px-8 py-4'>
+      </AccordionTrigger>
+      <AccordionContent className='px-8 py-4'>
         <P>
           As ações para proteger essa espécie-chave para a Mata Atlântica
           acontecem em múltiplas frentes, ao mesmo tempo.{' '}
@@ -652,25 +647,21 @@ const Acc3 = () => {
           oferece suporte técnico e logístico para a produção de juçara em
           sistemas agroecológicos no litoral norte gaúcho e no sul catarinense.{' '}
         </P>
-      </AccordionPanel>
+      </AccordionContent>
     </>
   );
 };
 
 const Acc2 = () => {
-  const { isExpanded } = useAccordionItemContext();
-
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionTrigger className='flex w-full items-center justify-between border-black '>
         <AccH3>
           Jacutinga sem fronteiras: a conservação da espécie na Mata Atlântica
           argentina
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
-      </AccordionButton>
-      <AccordionPanel className='px-8 py-4'>
+      </AccordionTrigger>
+      <AccordionContent className='px-8 py-4'>
         <P>
           O Plano Nacional de Conservação da Jacutinga na Argentina faz parte
           dos compromissos assumidos pela Aves Argentinas, o Ministério do Meio
@@ -704,22 +695,19 @@ const Acc2 = () => {
           pelas diferentes instituições e atores ligados à conservação da
           jacutinga.
         </P>
-      </AccordionPanel>
+      </AccordionContent>
     </>
   );
 };
 const Acc1 = () => {
-  const { isExpanded } = useAccordionItemContext();
   return (
     <>
-      <AccordionButton className='flex w-full items-center justify-between border-black '>
+      <AccordionTrigger className='flex w-full items-center justify-between border-black '>
         <AccH3>
           De volta pra casa: a reintrodução da jacutinga na natureza{' '}
         </AccH3>
-        <ArrowH3 className={` ${isExpanded ? 'hidden' : ''}`}>&#9660;</ArrowH3>
-        <ArrowH3 className={` ${isExpanded ? '' : 'hidden'}`}>&#9650;</ArrowH3>
-      </AccordionButton>
-      <AccordionPanel className='px-8 py-4'>
+      </AccordionTrigger>
+      <AccordionContent className='px-8 py-4'>
         <P>
           Em 2010, considerando-se a alarmante situação de conservação da
           jacutinga e as constantes pressões ao habitat da espécie,
@@ -797,7 +785,7 @@ const Acc1 = () => {
             extinta.
           </P>
         </strong>
-      </AccordionPanel>
+      </AccordionContent>
     </>
   );
 };
