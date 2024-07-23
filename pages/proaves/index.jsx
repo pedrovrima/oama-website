@@ -623,10 +623,9 @@ export default function ProAves() {
         <h2 className='pt-[20px] text-center font-oswald text-[36px] font-bold uppercase text-white md:text-[48px]'>
           Créditos
         </h2>
-        <div className='mx-auto max-w-[1024px] py-[100px] '>
+        <div className='mx-auto max-w-[1024px] pb-[100px] pt-[40px] '>
           <Carousel
             opts={{ loop: true }}
-            plugins={[AutoScroll({ playOnInit: true, speed: 1 })]}
             className='mx-auto w-[350px] max-w-[90vw] px-[20px] lg:w-5/6'
           >
             <CarouselContent className='flex '>
