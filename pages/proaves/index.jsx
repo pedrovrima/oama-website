@@ -75,6 +75,7 @@ export default function ProAves() {
       <div className='relative h-[99vh] overflow-hidden'>
         <div className=' absolute left-[10px] top-[100px] z-50 md:left-[120px]'>
           <Image
+            priority
             height={450}
             width={450}
             src={'/proaves2/logo-pro-aves-texto.png'}
@@ -83,6 +84,8 @@ export default function ProAves() {
         <div className='fixed h-full w-full'>
           <div className='relative h-full w-full'>
             <Image
+              priority
+              quality={50}
               layout='fill'
               objectFit='cover'
               className='sm:scale-x-[-1]'
