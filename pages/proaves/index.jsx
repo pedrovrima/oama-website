@@ -201,7 +201,7 @@ export default function ProAves() {
             <div className=' absolute left-[940px]  top-0 z-50 hidden lg:flex'>
               <div className=' relative flex h-[800px] flex-col items-center justify-center'>
                 <div className='h-full w-[3px] bg-[#EB753C]' />
-                <div className='relative  -top-[80px] '>
+                <div className='relative  -top-[50px] '>
                   <Image
                     height={105}
                     width={105}
@@ -251,6 +251,8 @@ export default function ProAves() {
           layout='fill'
           objectFit='cover'
           className=''
+          priority
+          quality={30}
           src={'/proaves2/bg2.jpeg'}
         />
       </div>
