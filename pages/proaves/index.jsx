@@ -506,7 +506,7 @@ export default function ProAves() {
                   2
                 </p>
                 <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
-                  Passarinhadas guidas
+                  Passarinhadas guiadas
                 </p>
               </div>
             </div>
