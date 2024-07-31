@@ -222,7 +222,7 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
           setLoading(true);
           const payLink = await getPayLink();
 
-          window.open(`${payLink.url}?locale=pt`);
+          window.navigate(`${payLink.url}?locale=pt`);
           setLoading(false);
         }}
         style={{
