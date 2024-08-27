@@ -124,7 +124,7 @@ export default function QuemSomos() {
                     Luiza Figueira{' '}
                   </h3>
                   <h4 class='text-justify-center mb-3 text-xl font-bold leading-none text-gray-800'>
-                    Coordenadora geral{' '}
+                    Diretora Executiva
                   </h4>
 
                   <p class='text-gray-600'>

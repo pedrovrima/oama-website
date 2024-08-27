@@ -469,15 +469,15 @@ export default function ProAves() {
             <div className='absolute left-[502px] hidden h-[900px] w-[20px] bg-white lg:block'></div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-1.png')] bg-[cover] duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={8600} />
+                +<IncreasingNumber finalNumber={24500} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
-                Pessoas impactadas
+                Pessoas impactadas online
               </p>
             </div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-2.png')] bg-[cover] duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={420} />
+                +<IncreasingNumber finalNumber={3000} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Folders informativos
@@ -493,7 +493,7 @@ export default function ProAves() {
             </div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-4.png')] bg-[cover]  duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                <IncreasingNumber finalNumber={29} />
+                +<IncreasingNumber finalNumber={30} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Dias de eventos
