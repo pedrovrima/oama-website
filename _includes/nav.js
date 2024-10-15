@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import useOnclickOutside from 'react-cool-onclickoutside';
 
 const links = [{ href: 'https://nextjs.org/docs', label: 'Doe' }];

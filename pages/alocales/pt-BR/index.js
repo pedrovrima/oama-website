@@ -1,5 +1,5 @@
 import Nav from "@includes/nav";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function IndexPage() {
   return (

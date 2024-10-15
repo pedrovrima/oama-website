@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 export default function Fig(props ) {
     const { number, legend, section,size, objectFit } = props

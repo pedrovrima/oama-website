@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import Nav from '@includes/nav';
 import Stripe from 'stripe';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 import { useState } from 'react';
 import { AiOutlineInfo, AiOutlineInfoCircle } from 'react-icons/ai';

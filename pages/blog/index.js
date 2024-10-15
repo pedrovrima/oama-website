@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getConfig, getAllPosts } from "@api";
 import { SmallHero } from "@includes/small-hero";
 import Title from "@includes/title";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {PostAuthorCard} from "@includes/post_author";
 
 export default function Blog(props) {

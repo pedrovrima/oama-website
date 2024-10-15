@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Nav from '@includes/nav';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import dynamic from 'next/dynamic';
 import AutoScroll from 'embla-carousel-auto-scroll';
 

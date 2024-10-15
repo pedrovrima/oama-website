@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { PostAuthorPost } from "@includes/post_author";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function PostLayout(props) {
   console.log(props);

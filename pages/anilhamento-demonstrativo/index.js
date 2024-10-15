@@ -1,6 +1,6 @@
 import Nav from "@includes/nav";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "@includes/footer";

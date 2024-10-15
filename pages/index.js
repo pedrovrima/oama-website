@@ -1,5 +1,5 @@
 import Nav from '@includes/nav';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Hero from '../components/hero';
 import Actions from '../components/actions';
 import About from '../components/about';
