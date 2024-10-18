@@ -19,7 +19,7 @@ export default function Blog(props) {
   console.log(props.sanityPosts);
   return (
     <DefaultLayout title={props.title} description={props.description}>
-      <SmallHero img_src='/heros/blog.jpg' />
+      <SmallHero img_src='heros/blog.jpg' />
       <Title title='Blog' />
       {/* <FirstPost post={props.posts[0]} /> */}
       <div className='mx-auto grid w-2/3 sm:grid-cols-3'>
