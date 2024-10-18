@@ -40,10 +40,10 @@ const myPortableTextComponents = {
     imageWithAlt: ({ value }) => {
       return (
         <div className='mb-8 flex flex-col items-center '>
-          <div className='relative h-[300px] w-full'>
+          <div className='relative h-[400px] w-full'>
             <Image
               layout='fill'
-              src={urlFor(value.image).url()}
+              src={urlFor(value.image).width(1200).height(600).url()}
               alt={value.alt}
               objectFit='cover'
             />
