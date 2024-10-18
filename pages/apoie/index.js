@@ -304,25 +304,26 @@ const DonationButtonGroup = () => {
 
 const DonationButton = ({ image, url, name }) => {
   return (
-    <Link href={url} passHref>
-      <a
-        className='group relative z-40 flex w-40 flex-row items-center'
-        target='_blank'
-      >
-        <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
-          <Image
-            className='z-40'
-            src={image}
-            height={40}
-            width={40}
-            layout='fixed'
-          />
-        </div>
-        <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
-          {name}
-        </div>
-      </a>
-    </Link>
+    (<Link
+      href={url}
+      passHref
+      className='group relative z-40 flex w-40 flex-row items-center'
+      target='_blank'>
+
+      <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
+        <Image
+          className='z-40'
+          src={image}
+          height={40}
+          width={40}
+          layout='fixed'
+        />
+      </div>
+      <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
+        {name}
+      </div>
+
+    </Link>)
   );
 };
 
@@ -396,22 +397,23 @@ const Projects = () => {
         return (
           <li className='pb-[8px] leading-4'>
             {project.url ? (
-              <Link href={project.url || ''} passHref>
-                <a
-                  target='_blank'
-                  className={` ${
-                    project.url && 'cursor-pointer hover:underline'
-                  } `}
-                >
-                  <span className='text-md font-bold text-gray-500'>
-                    {project.title}
-                  </span>
-                  {project.description && (
-                    <span className='text-md text-gray-400'>{` - ${project.description}`}</span>
-                  )}
-                  <span className='text-sm text-gray-400'>{`, ${project.year}`}</span>
-                </a>
-              </Link>
+              (<Link
+                href={project.url || ''}
+                passHref
+                target='_blank'
+                className={` ${
+                  project.url && 'cursor-pointer hover:underline'
+                } `}>
+
+                <span className='text-md font-bold text-gray-500'>
+                  {project.title}
+                </span>
+                {project.description && (
+                  <span className='text-md text-gray-400'>{` - ${project.description}`}</span>
+                )}
+                <span className='text-sm text-gray-400'>{`, ${project.year}`}</span>
+
+              </Link>)
             ) : (
               <p className={`${project.url && 'cursor-pointer underline'}`}>
                 <span className='text-md font-bold text-gray-500'>

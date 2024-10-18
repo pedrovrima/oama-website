@@ -833,7 +833,7 @@ function Logo(props) {
       : 50;
 
   return (
-    <Link href={website} target='_blank'>
+    <Link href={website} target='_blank' legacyBehavior>
       <div className='cursor-pointer'>
         {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
         <Image
@@ -940,7 +940,7 @@ function Pag(props) {
 
   const fsize = 500;
   return (
-    <Link href={website} target='_blank'>
+    <Link href={website} target='_blank' legacyBehavior>
       <div className='cursor-pointer'>
         {/* <div  className={` relative w-full ${size==="large"?"h-large":"h-96 sm:h-medium"}`}> */}
         <Image

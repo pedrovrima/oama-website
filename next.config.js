@@ -6,16 +6,20 @@ module.exports = {
   //     // This is the default locale you want to be used when visiting
   //     // a non-locale prefixed path e.g. `/hello`
   //     defaultLocale: 'pt-BR',},
+  images: {
+    remotePatterns: [{ hostname: 'cdn.sanity.io' }],
+  },
   webpack: function (config) {
-    config.module.rules.push({ test: /\.mdx$/, use: "raw-loader" });
-    config.module.rules.push({ test: /\.yml$/, use: "raw-loader" });
+    config.module.rules.push({ test: /\.mdx$/, use: 'raw-loader' });
+    config.module.rules.push({ test: /\.yml$/, use: 'raw-loader' });
+    config.module.rules.push({ test: /\.svg$/, use: 'raw-loader' });
     return config;
   },
   async redirects() {
     return [
       {
-        source: "/doc",
-        destination: "https://www.youtube.com/watch?v=OrGmxyzla5A",
+        source: '/doc',
+        destination: 'https://www.youtube.com/watch?v=OrGmxyzla5A',
         permanent: true,
       },
     ];

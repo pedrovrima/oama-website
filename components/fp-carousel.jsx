@@ -73,7 +73,7 @@ const FPCarousel = (props) => {
         className="w-full mt-2 mb-8 bg-gray-300 sm:mb-4 h-96"
       >
         {fotos.map((img) => (
-          <Link key={img.link} href={img.link}>
+          <Link key={img.link} href={img.link} legacyBehavior>
             <div className="relative w-full h-96 sm:h-96">
               <Image
                 alt={img.legend}

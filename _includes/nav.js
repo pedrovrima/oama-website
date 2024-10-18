@@ -115,7 +115,7 @@ export default function Nav({ allBlack = false }) {
       }`}
     >
       <div className='container mx-auto mt-0 flex w-full flex-wrap items-center justify-between py-2'>
-        <Link href='/'>
+        <Link href='/' legacyBehavior>
           <div className='flex items-center pl-4'>
             <a
               className='toggleColour flex text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl'
@@ -166,10 +166,10 @@ export default function Nav({ allBlack = false }) {
                 <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
                   <p className=''>Atividades</p>
                   <div className='flex flex-col px-2 '>
-                    <Link href='/proaves'>
+                    <Link href='/proaves' legacyBehavior>
                       <p className='cursor-pointer pb-1'>Ações Pró-Aves</p>
                     </Link>
-                    <Link href='/projetos'>
+                    <Link href='/projetos' legacyBehavior>
                       <p className='cursor-pointer pb-1'>Projetos</p>
                     </Link>
                     {/* <Link href="/anilhamento-demonstrativo">
@@ -177,12 +177,12 @@ export default function Nav({ allBlack = false }) {
                         Anilhamento Demonstrativo
                       </p>
                     </Link> */}
-                    <Link href='/treinamento-cursos'>
+                    <Link href='/treinamento-cursos' legacyBehavior>
                       <p className='cursor-pointer pb-1'>
                         Cursos e Treinamento
                       </p>
                     </Link>
-                    <Link href='/downloads'>
+                    <Link href='/downloads' legacyBehavior>
                       <p className='cursor-pointer pb-1'>
                         Arquivos e Downloads
                       </p>
@@ -190,7 +190,7 @@ export default function Nav({ allBlack = false }) {
                     <a target='_blank' href='/relatorio.html'>
                       <p className='cursor-pointer pb-1'>Relatório de Dados </p>
                     </a>
-                    <Link href='/blog'>
+                    <Link href='/blog' legacyBehavior>
                       <p className='cursor-pointer pb-1'>Blog </p>
                     </Link>
                   </div>
@@ -199,7 +199,7 @@ export default function Nav({ allBlack = false }) {
                 <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
                   <p className=''>Hospedagem</p>
                   <div className='flex flex-col px-2 '>
-                    <Link href='/estacao-de-pesquisa'>
+                    <Link href='/estacao-de-pesquisa' legacyBehavior>
                       <p className='cursor-pointer pb-1'>Estação de Pesquisa</p>
                     </Link>
 
@@ -237,7 +237,7 @@ export default function Nav({ allBlack = false }) {
         </div>
         <div className='hidden flex-row items-center md:flex'>
           <div className='flex flex-row px-8 '>
-            <Link href='/quem-somos'>
+            <Link href='/quem-somos' legacyBehavior>
               <div className='mr-4 cursor-pointer '>
                 <p className='font-bold text-gray-50 hover:underline'>
                   Quem somos
@@ -248,12 +248,12 @@ export default function Nav({ allBlack = false }) {
             <div className='group mr-4'>
               <p className='font-bold text-gray-50'>Atividades</p>
               <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
-                <Link href='/proaves'>
+                <Link href='/proaves' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Ações Pró-Aves
                   </p>
                 </Link>
-                <Link href='/projetos'>
+                <Link href='/projetos' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Projetos
                   </p>
@@ -263,13 +263,13 @@ export default function Nav({ allBlack = false }) {
                     Anilhamento Demonstrativo
                   </p>
                 </Link> */}
-                <Link href='/treinamento-cursos'>
+                <Link href='/treinamento-cursos' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Cursos e Treinamento
                   </p>
                 </Link>
 
-                <Link href='/downloads'>
+                <Link href='/downloads' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Arquivos e Downloads
                   </p>
@@ -280,7 +280,7 @@ export default function Nav({ allBlack = false }) {
                     Relatório de Dados
                   </p>
                 </a>
-                <Link href='/blog'>
+                <Link href='/blog' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Blog{' '}
                   </p>
@@ -291,7 +291,7 @@ export default function Nav({ allBlack = false }) {
             <div className='group mr-4'>
               <p className='font-bold text-gray-50'>Hospedagem</p>
               <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
-                <Link href='/estacao-de-pesquisa'>
+                <Link href='/estacao-de-pesquisa' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Estação de Pesquisa
                   </p>
@@ -324,14 +324,14 @@ export default function Nav({ allBlack = false }) {
             </a>
 
             <div className='group mr-4 cursor-pointer'>
-              <Link href='/jacucara'>
+              <Link href='/jacucara' legacyBehavior>
                 <p className='font-bold text-gray-50 hover:underline'>
                   Jacuçara
                 </p>
               </Link>
             </div>
           </div>
-          <Link href='/apoie'>
+          <Link href='/apoie' legacyBehavior>
             <div className='flex items-end justify-end'>
               <button
                 id='navAction'

@@ -49,13 +49,13 @@ export default function Footer({ noMargin }) {
               </a>
             </div>
             <div className='m-2 cursor-pointer'>
-              <Link passHref href='/whatsapp'>
-                <a target='_blank'>
-                  <AiOutlineWhatsApp
-                    color='white'
-                    size={30}
-                  ></AiOutlineWhatsApp>
-                </a>
+              <Link passHref href='/whatsapp' target='_blank'>
+
+                <AiOutlineWhatsApp
+                  color='white'
+                  size={30}
+                ></AiOutlineWhatsApp>
+
               </Link>
             </div>
           </div>

@@ -20,12 +20,12 @@ export default function Hero() {
               Atlântica
             </p>
             <div className="w-full flex flex-col   sm:justify-start sm:flex-row ">
-              <Link href="/apoie">
+              <Link href="/apoie" legacyBehavior>
                 <button className="mx-auto sm:mr-4 sm:ml-0 hover:underline bg-yellow-500 text-gray-900 font-bold rounded-full mt-6 mb-2 sm:my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
                   Apoie
                 </button>
               </Link>
-              <Link href="/newsletter">
+              <Link href="/newsletter" legacyBehavior>
                 <button className="mx-auto sm:mx-0 hover:underline bg-gray-800 text-gray-100 font-bold rounded-full sm:my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ">
                   Assine a Newsletter
                 </button>
