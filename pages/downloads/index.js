@@ -1,7 +1,7 @@
 import Nav from '@includes/nav';
 import { useEffect, useRef } from 'react';
 
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Head from 'next/head';
 import Footer from '@includes/footer';
 export default function QuemSomos() {
@@ -251,6 +251,13 @@ const div_cient = [
 ];
 
 const institucional = [
+  {
+    title: 'Relatório Anual 2023',
+    text: 'Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2023.',
+    img: 'relatorioAnual2023.png',
+    link: 'OAMarelatorioAnual2023.pdf',
+  },
+
   {
     title: 'Relatório Atividades Pró-Aves 2023',
     text: ' Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2023.',
