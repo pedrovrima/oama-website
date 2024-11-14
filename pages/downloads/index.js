@@ -102,6 +102,12 @@ const Publication = (props) => {
 
 const div_cient = [
   {
+    title: 'Colisões de Aves com Vidros',
+    text: 'Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
+    img: 'Mockup cartilha colisao.png',
+    link: 'Cartilha Colisão com vidro - Ações Pró-Aves - OAMa.pdf',
+  },
+  {
     title: 'Cartilha: Guarda Responsável de Pets',
     text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
     img: 'mockup cartilha pets.jpg',
