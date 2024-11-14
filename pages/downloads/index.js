@@ -102,7 +102,7 @@ const Publication = (props) => {
 
 const div_cient = [
   {
-    title: 'Colisões de Aves com Vidros',
+    title: 'Cartilha: Colisões de Aves com Vidros',
     text: 'Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
     img: 'Mockup cartilha colisao.png',
     link: 'Cartilha Colisão com vidro - Ações Pró-Aves - OAMa.pdf',
