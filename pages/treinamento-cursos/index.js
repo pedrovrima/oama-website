@@ -73,13 +73,13 @@ export default function Treinamento() {
             >
               Chamadas e inscrições abertas
             </h2>
-            <div className='relative h-96 w-full '>
+            {/* <div className='relative h-96 w-full '>
               <Image
                 src={'/treinamento-cursos/cursos2024.png'}
                 layout='fill'
                 objectFit='contain'
               ></Image>
-            </div>
+            </div> */}
             {/*<CourseCarousel></CourseCarousel>*/}
             <div collapsible multiple className='mt-6'>
               {/* <BBMA /> */}
@@ -787,7 +787,7 @@ const Acc2 = () => {
           elaboração de seminários e construção de materiais de comunicação
           científica.
         </p>
-        <TrainingCarousel></TrainingCarousel>
+        {/* <TrainingCarousel></TrainingCarousel> */}
 
         {/* <div className="flex flex-col sm:flex-row"> */}
         <p className='mb-4 text-gray-600'>
