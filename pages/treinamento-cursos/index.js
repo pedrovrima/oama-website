@@ -1,6 +1,6 @@
 import Nav from '@includes/nav';
 import { useEffect, useRef } from 'react';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '@includes/footer';
@@ -83,7 +83,7 @@ export default function Treinamento() {
             {/*<CourseCarousel></CourseCarousel>*/}
             <div collapsible multiple className='mt-6'>
               {/* <BBMA /> */}
-              <Cursos2024 />
+              {/* <Cursos2024 /> */}
             </div>
             <div id='acc2'></div>
             <div collapsible multiple className=''>
@@ -667,8 +667,8 @@ const Acc2 = () => {
             Programa de treinamento em monitoramento de avifauna do OAMa
           </h2>
           <p className='mt-2 text-lg font-bold text-gray-600 '>
-            Chamada aberta para o programa de treinamento 2024. Inscrições entre
-            13 e 31 de maio.
+            Chamada aberta para a quarta edição do programa de treinamento.
+            Inscrições entre 1 de dezembro de 2024 e 06 de janeiro de 2025.
           </p>
         </div>
       </div>
@@ -711,7 +711,7 @@ const Acc2 = () => {
           dedicação exclusiva e residência na Estação de Pesquisa do OAMa
           (EP-OAMa), localizada na Reserva Particular do Patrimônio Natural
           (RPPN) Fazenda Boa Vista, em Bocaina de Minas/MG, e no Instituto Alto
-          Montana, em Itamonte/MG.
+          Montana, em Itamonte/MG.{' '}
         </p>
         <h2 className='mb-4 font-bold text-gray-600'>PARA SE INSCREVER</h2>
         <ul className='mb-4'>
@@ -719,37 +719,37 @@ const Acc2 = () => {
             <a
               target='_blank'
               className='mb-4 text-yellow-900 underline '
-              href={`/treinamento-cursos/files/Edital_treinamento_2024.pdf`}
+              href={`/treinamento-cursos/files/Edital_treinamento_2025.pdf`}
             >
-              Edital de chamada para Programa de Treinamento OAMa 2024
+              Edital de chamada para Programa de Treinamento OAMa 2025
             </a>
           </li>
           <li>
             <a
               target='_blank'
               className='mb-4 text-yellow-900 underline '
-              href={`/treinamento-cursos/files/OAMa_Call_training_2024.pdf`}
+              href={`/treinamento-cursos/files/OAMa_Call_training_2025.pdf`}
             >
-              Call for Applications for the OAMa Training Program 2024
+              Call for Applications for the OAMa Training Program 2025
             </a>
           </li>
           <li>
             <a
               target='_blank'
               className='mb-4 text-yellow-900 underline '
-              href={`/treinamento-cursos/files/OAMa_Llamada_capacitation_2024.pdf`}
+              href={`/treinamento-cursos/files/OAMa_Llamada_capacitation_2025.pdf`}
             >
-              Llamado para el Programa de Capacitación OAMa 2024
+              Llamado para el Programa de Capacitación OAMa 2025
             </a>
           </li>
           <li>
             <a
               target='_blank'
               className='mb-4 text-yellow-900 underline '
-              href='https://forms.gle/H8XNdEAAvLLETaDp7'
+              href='https://docs.google.com/forms/d/e/1FAIpQLSdE4vT0vfkcmenB-sN5NQKZ1cvNZYOkRfOGLNhqXfvh8CLVBA/closedform'
             >
               {' '}
-              Formulário e inscrição para Programa de treinamento OAMa 2024
+              Formulário e inscrição para Programa de treinamento OAMa 2025
             </a>
           </li>
         </ul>
@@ -764,20 +764,21 @@ const Acc2 = () => {
           bióloga, mestranda da UFRGS e pesquisadora colaboradora do OAMa.
           Danielle foi capacitada em monitoramento de avifauna pelo OAMa, e
           recebeu também o treinamento de instrutor, atuando como instrutora
-          primária de novos trainees OAMa desde 2023.{' '}
+          primária de novos trainees OAMa desde 2023.
         </p>
 
         <p className='mb-4 text-gray-600'>
-          O treinamento conta ainda com o apoio e participação de Danielle
-          Santos, André Ayres, Karine Resende, Otávio Rocha, Affonso Souza e
-          Pedro Martins para a sua construção e realização.{' '}
+          O treinamento conta ainda com o apoio e participação Karine Resende,
+          Otávio Rocha, Affonso Souza e Pedro Martins para a sua construção e
+          realização.{' '}
         </p>
 
         <p className='mb-4 text-gray-600'>
           O primeiro ano de treinamento aconteceu em 2022 entre fevereiro e
           outubro. Recebemos e treinamos 6 trainees no primeiro ano do programa.
           Em 2023 o treinamento aconteceu entre março e outubro, e um total de
-          12 trainees passaram pelo OAMa nesse ano.
+          12 trainees passaram pelo OAMa neste ano. Em 2024 capacitamos mais 3
+          trainees pelo programa.
         </p>
         <p className='mb-4 text-gray-600'>
           O programa vai além de uma capacitação pontual. A imersão no programa
@@ -789,6 +790,15 @@ const Acc2 = () => {
         <TrainingCarousel></TrainingCarousel>
 
         {/* <div className="flex flex-col sm:flex-row"> */}
+        <p className='mb-4 text-gray-600'>
+          O Programa de treinamento em monitoramento de avifauna do OAMa é uma
+          ação nas áreas de capacitação técnica, pesquisa, e divulgação
+          científica. Buscamos APOIO E PATROCÍNIO para viabilizar este programa
+          anualmente de forma acessível para os trainees. Caso você ou sua
+          empresa queira apoiar ou patrocinar o programa de treinamento, entre
+          em contato com a gente escrevendo para contato@oama.eco.br com o
+          título “PROGRAMA DE TREINAMENTO - APOIO”.
+        </p>
 
         <div className='relative mb-12 mt-6 hidden sm:h-[500px] md:block'>
           <Image
