@@ -678,7 +678,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1_horizontal.png'
+            src='/treinamento-cursos/1_vertical.png'
             layout='fill'
           />
         </div>

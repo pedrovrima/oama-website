@@ -258,28 +258,34 @@ const div_cient = [
 
 const institucional = [
   {
+    title: '2023 Annual Report - English Version',
+    text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2023.',
+    img: 'mockup_annual_report_2023.png',
+    link: '2023 Annual Report - OAMa EN.pdf',
+  },
+  {
     title: 'Relatório Anual 2023',
     text: 'Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2023.',
-    img: 'relatorioAnual2023.png',
+    img: 'mockup relatório anual 2023.png',
     link: 'OAMarelatorioAnual2023.pdf',
   },
 
   {
     title: 'Relatório Atividades Pró-Aves 2023',
     text: ' Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2023.',
-    img: 'relatorioProAves2023.png',
+    img: 'mockup pró-aves 2023.png',
     link: 'relatorioProAves2023.pdf',
   },
   {
     title: '2022 Annual Report - English Version',
     text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2022.',
-    img: 'relatorio2022.png',
+    img: 'mockup_annual_report_2022.png',
     link: '2022Report.pdf',
   },
   {
     title: 'Relatório Anual 2022',
     text: 'Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2022.',
-    img: 'relatorio2022.png',
+    img: 'mockup relatório anual 2022.png',
     link: 'Relatório_Anual_2022.pdf',
   },
   {
