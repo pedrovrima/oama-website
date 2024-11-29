@@ -678,7 +678,7 @@ const Acc2 = () => {
             objectFit='contain'
             // width={100}
             // height={100}
-            src='/treinamento-cursos/1_vertical.png'
+            src='/treinamento-cursos/1_horizontal.png'
             layout='fill'
           />
         </div>
@@ -787,7 +787,7 @@ const Acc2 = () => {
           elaboração de seminários e construção de materiais de comunicação
           científica.
         </p>
-        {/* <TrainingCarousel></TrainingCarousel> */}
+        <TrainingCarousel></TrainingCarousel>
 
         {/* <div className="flex flex-col sm:flex-row"> */}
         <p className='mb-4 text-gray-600'>
