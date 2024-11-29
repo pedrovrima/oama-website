@@ -1,5 +1,5 @@
 import Fig from './image';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import {
   Accordion,
   AccordionItem,
@@ -61,14 +61,14 @@ export default function Colisao() {
         <P>
           As aves possuem a melhor visão entre os vertebrados. Seus olhos
           proporcionalmente grandes em relação ao corpo enxergam um amplo campo
-          de visão e, com isso, constroem imagens nítidas. A disposição dos
-          olhos no crânio das aves pode ser do tipo lateralizado ou frontal.
-          Aves com olhos lateralizados conseguem “ver o que vem de trás”,
-          enquanto aves com olhos frontais, focam rapidamente em objetos em
-          diferentes distâncias. As aves enxergam cores que nossos olhos não
-          veem, como aquelas presentes no espectro ultravioleta. Mesmo com essa
-          visão super desenvolvida, as aves são ameaçadas por um inimigo quase
-          invisível, introduzido nas paisagens pelos humanos.
+          de visão com múltiplos pontos focais e, com isso, constroem imagens
+          nítidas. A disposição dos olhos no crânio das aves pode ser do tipo
+          lateralizado ou frontal. Aves com olhos lateralizados conseguem “ver o
+          que vem de trás”, enquanto aves com olhos frontais, focam rapidamente
+          em objetos em diferentes distâncias. As aves enxergam cores que nossos
+          olhos não veem, como aquelas presentes no espectro ultravioleta. Mesmo
+          com essa visão super desenvolvida, as aves são ameaçadas por um
+          inimigo quase invisível, introduzido nas paisagens pelos humanos.
         </P>
 
         <Fig
@@ -154,10 +154,13 @@ export default function Colisao() {
         <P>
           As colisões podem ocorrer ao longo de todo o ano, embora no hemisfério
           norte elas aumentam durante a primavera, verão e outono e diminuem no
-          inverno. No hemisfério sul não há evidências de diferenças na taxa de
-          colisões entre as estações do ano. A maioria dos estudos são unânimes
-          em afirmar que as colisões ocorrem mais no período da manhã. Colisões
-          podem ocorrer em dias ensolarados ou nublados.
+          inverno. Quando o tempo está favorável a migrações e quando há baixa
+          visibilidade (ex.: nevascas, tempestades, neblina etc), seja durante a
+          noite ou o dia, o número de colisões dessas espécies de aves pode
+          aumentar.²⁴, ²⁵ No hemisfério sul não há evidências de diferenças na
+          taxa de colisões entre as estações do ano. A maioria dos estudos são
+          unânimes em afirmar que as colisões ocorrem mais no período da manhã.
+          Colisões podem ocorrer em dias ensolarados ou nublados.{' '}
         </P>
 
         <H4>Ambiente</H4>
@@ -180,7 +183,15 @@ export default function Colisao() {
               {' '}
               Fachada de prédio com vidraças próxima a uma árvore, lugar que
               aves podem usar como poleiro, para se reproduzir e/ou se
-              alimentar. Autoria: Mario Hains (Creative Commons 3.0).
+              alimentar. Fonte:{' '}
+              <a
+                href='https://noticias.unb.br/117-pesquisa/4747-unb-faz-testes-para-reduzir-mortandade-de-aves-que-colidem-em-fachadas-envidracadas'
+                target={'_blank'}
+                className='text-yellow-600'
+              >
+                UnB Notícias
+              </a>
+              .
             </p>
           }
         ></Fig>
@@ -222,17 +233,20 @@ export default function Colisao() {
           A probabilidade de colisões não depende exclusivamente da abundância
           de determinada espécie numa área. Características comportamentais e
           ecológicas específicas de cada espécie são importantes variáveis nas
-          chances de colisões com vidro. Espécies migratórias, por exemplo,
+          chances de colisões com vidro. Indivíduos juvenis inexperientes são
+          mais propensos a esses acidentes. Assim, como espécies migratórias que
           parecem ter predominância em casos de colisões na América do Norte.
-          Machos colidem mais do que fêmeas, talvez por serem mais agressivos e
-          defenderem territórios. Aves de chão e de sub-bosque colidem mais que
-          aves de dossel. Situações de predação e de competição
-          (intraespecífica) estão relacionadas com muitas colisões. Durante
-          estas ocasiões comportamentais as aves negligenciam mais o ambiente ao
-          redor, e um vidro passa ainda mais despercebido. Já o comportamento de
-          voar em bandos reduz as chances de colisão; E espécies mais frágeis,
-          como beija-flores e andorinhas têm menor chance de sobreviver após uma
-          colisão do que aves mais robustas.
+          Machos territorialistas colidem mais do que fêmeas, talvez por conta
+          de comportamentos de voo mais agressivos. Aves de chão e de sub-bosque
+          colidem mais que aves de dossel. E espécies adaptadas a ambientes
+          florestais e antropizados também são vítimas mais frequentes.
+          Situações de predação e de competição (intraespecífica) estão
+          relacionadas com muitas colisões. Durante estas ocasiões
+          comportamentais as aves negligenciam mais o ambiente ao redor, e um
+          vidro passa ainda mais despercebido. Já o comportamento de voar em
+          bandos reduz as chances de colisão; E espécies mais frágeis, como
+          beija-flores e andorinhas têm menor chance de sobreviver após uma
+          colisão do que aves mais robustas.²³
         </P>
 
         <Fig
@@ -274,7 +288,7 @@ export default function Colisao() {
           seguidos por pombos e beija-flores. A partir dos relatos de memória
           dos entrevistados, os pesquisadores estimaram um número anual de 3.2 ±
           10.2 colisões por edifício amostrado na Argentina, com uma média de
-          0.47 ± 1.22 fatalidades por ano por edifício.
+          0.47 ± 1.22 fatalidades por ano por edifício.²¹, ²²
         </P>
 
         <Fig
@@ -353,14 +367,23 @@ export default function Colisao() {
           de 1980 em Illinois, nos EUA, quando avaliou a recuperação de 31 aves
           sobreviventes e fez a necropsia de outras 300 aves que foram a óbito
           após o impacto com vidros¹⁷. Klem diagnosticou que a hemorragia
-          cerebral é a principal causa de morte das aves que colidem com vidros,
-          muito embora outras injúrias possam ocorrer, como fraturas internas e
-          externas. Em 2021, pesquisadores da Universidade Federal do Paraná¹⁵
-          publicaram um estudo a partir de análises de raio-X e necrópsia
-          constatando que traumatismos e hemorragias cranianas foram as
-          principais injúrias sofridas em aves que colidiram com vidros no
-          Brasil. Hemorragias internas no tórax e abdômen, além de fraturas de
-          bico também são lesões comuns, segundo esse estudo brasileiro.
+          cerebral é a principal causa de morte das aves que colidem com vidros.
+          De modo complementar, o estudo de Jin Lee e colabores, realizado em
+          2024, apontou que além das hemorragias cranianas, as múltiplas faturas
+          e as rupturas de órgãos internos, também contribuem significativamente
+          para a mortandade de aves colididas.
+        </P>
+        <P>
+          Em 2021, pesquisadores da Universidade Federal do Paraná¹⁵ publicaram
+          um estudo a partir de análises de raio-X e necrópsia constatando que
+          traumatismos e hemorragias cranianas foram as principais injúrias
+          sofridas em aves que colidiram com vidros no Brasil. Hemorragias
+          internas no tórax e abdômen, além de fraturas de bico também são
+          lesões comuns, segundo esse estudo brasileiro. É importante reiterar,
+          que as aves de maior porte (e.g. Columbina talpacoti, Leptotila
+          verreauxi e Zenaida auriculata), são as mais propensas a sérios danos
+          após a colisão, uma vez que colidem de maneira mais abrupta contra o
+          vidro ao compará-las com aves de menor porte 20.
         </P>
         <P>
           As aves que sobrevivem após o impacto podem conseguir voar em seguida,
@@ -400,14 +423,22 @@ export default function Colisao() {
           importante é que cubra toda a extensão do vidro. Adesivos de aves
           predadoras têm efeitos estéticos, mas podem não reduzir
           significativamente o número de colisões quando não ocupam a maior área
-          do vidro¹¹. Incentivamos o uso de adesivos circulares de 1.8 a 2 mm de
+          do vidro¹¹. Incentivamos o uso de adesivos circulares de 1.8 a 2 cm de
           diâmetro, dispostos a 10 cm de distância em si¹⁴, cobrindo a maior
-          extensão possível da estrutura envidraçada. Outra alternativa que alia
-          estética e eficácia são os adesivos UV., Eembora aparente ser
-          transparentes aos olhos humanos, esses adesivos refletem cores do
-          espectro ultravioleta, que são visíveis para a maioria dos pássaros⁶.
-          Existem ainda opções de vidros que já possuem padrões de pontos
-          inseridos ou a possibilidade de se realizar artes coloridas.
+          extensão possível da estrutura envidraçada.{' '}
+          <a
+            href='https://www.oama.eco.br/downloads'
+            className='text-yellow-600'
+            target={'_blank'}
+          >
+            Clique aqui para baixar
+          </a>{' '}
+          o modelo de adesivos anti-colisão. Outra alternativa que alia estética
+          e eficácia são os adesivos UV. Embora aparente ser transparentes aos
+          olhos humanos, esses adesivos refletem cores do espectro ultravioleta,
+          que são visíveis para a maioria dos pássaros⁶. Existem ainda opções de
+          vidros que já possuem padrões de pontos inseridos ou a possibilidade
+          de se realizar artes coloridas.
           <a
             href='https://abcbirds.org/glass-collisions/photo-gallery/'
             className='text-yellow-600'
@@ -482,7 +513,7 @@ export default function Colisao() {
           animais de estimação e barulho. Em seguida, contate a polícia
           ambiental e/ou o Centro de Triagem de Animais Silvestres (
           <a
-            href='http://www.ibama.gov.br/fauna-silvestre/cetas/o-que-sao-os-cetas'
+            href='http://www.ibama.gov.br/fauna-silvestre/cetas/o-que-sao-os-cetas” por “https://www.gov.br/ibama/pt-br/acesso-a-informacao/institucional/o-que-sao-os-cetas'
             className='text-yellow-600'
           >
             CETAS/Ibama
@@ -642,9 +673,44 @@ export default function Colisao() {
                 19, p. 293-299, 2021.
               </P>
               <P>
+                {' '}
                 19 SALLY, A. Incredibly simple tip to prevent birds flying into
                 window. YouTube. Disponível em:
-                https://www.youtube.com/watch?v=UC9xQkUtQ98
+                https://www.youtube.com/watch?v=UC9xQkUtQ98.
+              </P>
+              <P>
+                20. JIN LEE, S.; MATOS, F. N.; GONZAGA, C. R. R.; DE MEDEIROS,
+                M. A.; LEANDRO, S. F. S.; TEIXEIRA, R. H. F.; DA COSTA, A. L.
+                M.; PIRATELLI, A. J. Post mortem analysis of birds that collided
+                with glass panes reveals multiple injuries and fractures.
+                Ornithology Research, P. 1-5, 2024.
+                https://doi.org/10.1007/s43388-024-00201-4.
+              </P>
+              <P>
+                21 LOVETTE, I. J.; FITZPATRICK, J. W. (ed.). Handbook of Bird
+                Biology. 3. ed. Chichester: Wiley, 2016.
+              </P>
+              <P>
+                22 BOSTRÖM, J. E.; DIMITROVA, M.; CANTON, C.; HÅSTAD, O.;
+                QVARNSTRÖM, A.; ÖDEEN, A.. Ultra-Rapid Vision in Birds. Plos
+                One, [S.L.], v. 11, n. 3, p. 1-7, 18 mar. 2016. Public Library
+                of Science (PLoS).
+              </P>
+              <P>
+                23 VILLON, E. How dangerous is glass?: Understanding collisions
+                and bird mortality in finland. 2024. 55 f. Dissertação
+                (Mestrado) - Curso de Ecology And Evolutionary Biology, Faculty
+                Of Biological And Environmental Sciences, Helsinki, 2024.
+              </P>
+              <P>
+                24 LAO, S. et al. Bird–building collisions increase with weather
+                conditions that favor nocturnal migration and with inclement and
+                changing weather. Ornithological Applications, [S.L.], v. 125,
+                n. 1, p. 1-12, 10 nov. 2022. Oxford University Press (OUP).
+              </P>
+              <P>
+                25 KLEM D. Bird: Window Collisions. The Wilson Bulletin, [S.L.],
+                v. 101, n. 4, p. 606–620, 1989. JSTOR.
               </P>
             </AccordionContent>
           </AccordionItem>
