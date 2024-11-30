@@ -1003,7 +1003,7 @@ const trainees = [
     quote:
       '“O treinamento para mim foi uma experiência essencial na minha carreira e realização no ramo da ornitologia. A partir desse programa de imersão eu tive a oportunidade de ter contato mais direto com as aves e estudá-las, além de que conheci pessoas incríveis com o mesmo amor por esses animais que me ensinaram muito e contribuíram imensamente para o meu crescimento.”',
     reel: 'https://www.instagram.com/reel/CmFQmvQPkjf/?utm_source=ig_web_copy_link',
-    image: '/people/trainee Thalia Viana.JPG',
+    image: '/people/Trainee Thalia Viana.JPG',
   },
 
   {
