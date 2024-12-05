@@ -117,40 +117,40 @@ const div_cient = [
     title: 'Campanha pró-aves: Engaiolamento',
     text: 'Panfleto informativo sobre os efeitos do engaiolamento nos indíviduos e populações de aves.',
     img: 'mockup folder tráfico.png',
-    link: 'Folders Campanha Pró-Aves 2024_TRÁFICO.pdf',
+    link: '(LEITURA) Folder Tráfico.pdf',
   },
 
   {
     title: 'Campanha pró-aves: Animais Domésticos',
     text: 'Panfleto informativo sobre como aliar a criação de pets com o bem estar das aves.',
     img: 'mockup folder pets.png',
-    link: 'Folders Campanha Pró-Aves 2024_PETS.pdf',
+    link: '(LEITURA) Folder Pets.pdf',
   },
   {
     title: 'Campanha pró-aves: Poluição Luminosa',
     text: 'Panfleto informativo sobre como mitigar os efeitos da poluição luminosa nas aves.',
     img: 'mockup folder luminosa.png',
-    link: 'Folders Campanha Pró-Aves 2024_LUMINOSA.pdf',
+    link: '(LEITURA) Folder Luminosa.pdf',
   },
 
   {
     title: 'Campanha pró-aves: Poluição Sonora',
     text: 'Panfleto informativo sobre como mitigar os efeitos da poluição sonora nas aves.',
     img: 'mockup folder sonora.png',
-    link: 'Folders Campanha Pró-Aves 2024_SONORA.pdf',
+    link: '(LEITURA) Folder Sonora.pdf',
   },
   {
     title: 'Campanha pró-aves: Comedouros',
     text: 'Panfleto informativo sobre como montar comedouros para as aves.',
     img: 'mockup folder comedouro.png',
-    link: 'Folders Campanha Pró-Aves 2024_COMEDOUROS.pdf',
+    link: '(LEITURA) Folder Comedouros.pdf',
   },
 
   {
     title: 'Campanha pró-aves: Colisão com Vidros',
     text: 'Panfleto informativo sobre como mitigar as colisões com vidros.',
     img: 'mockup folder colisão.png',
-    link: 'Folders Campanha Pró-Aves 2024_COLISÃOVIDROS.pdf',
+    link: '(LEITURA) Folder Colisão.pdf',
   },
   {
     title: 'Adesivo anti-colisão',
