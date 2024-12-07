@@ -104,12 +104,36 @@ const div_cient = [
   {
     title: 'Cartilha: Colisões de Aves com Vidros',
     text: 'Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
-    img: 'Mockup cartilha colisao.png',
-    link: 'Cartilha-Colisão-com vidro-OAMa.pdf',
+    img: 'cartilha_colisao.png',
+    link: 'Cartilha Colisão com vidro.pdf',
   },
   {
     title: 'Cartilha: Guarda Responsável de Pets',
     text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
+    img: 'cartilha_pets.png',
+    link: 'Cartilha Guarda Responsável de Pets.pdf',
+  },
+  {
+    title: 'Pôster: Colisões de Aves com Vidros',
+    text: 'Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
+    img: 'poster_colisao.png',
+    link: 'Pôster da Cartilha Colisão com vidro.pdf',
+  },
+  {
+    title: 'Pôster: Guarda Responsável de Pets',
+    text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
+    img: 'poster_pets.png',
+    link: 'Pôster da Cartilha Guarda Responsável de Pets.pdf',
+  },
+  {
+    title: 'Impressão - Cartilha: Colisões de Aves com Vidros',
+    text: '[Arquivo para impressão] Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
+    img: 'Mockup cartilha colisao.png',
+    link: 'Cartilha-Colisão-com vidro-OAMa.pdf',
+  },
+  {
+    title: 'Impressão - Cartilha: Guarda Responsável de Pets',
+    text: '[Arquivo para impressão] Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
     img: 'mockup cartilha pets.jpg',
     link: 'Cartilha Guarda Responsável de Pets - Ações Pró-Aves.pdf',
   },
