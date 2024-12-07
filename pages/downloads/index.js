@@ -110,7 +110,7 @@ const div_cient = [
   {
     title: 'Cartilha: Guarda Responsável de Pets',
     text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
-    img: 'cartilha_pets.png',
+    img: 'cartilha_pet.png',
     link: 'Cartilha Guarda Responsável de Pets.pdf',
   },
   {
@@ -122,7 +122,7 @@ const div_cient = [
   {
     title: 'Pôster: Guarda Responsável de Pets',
     text: 'Cartilha informativa sobre como ser um bom tutor para o seu gato ou cachorro. Neste material você entenderá o que significa uma guarda responsável; as consequências de uma guarda ruim, tanto para animais domésticos, como para os animais silvestres; e quais ações pró-aves você pode aderir para minimizar esses impactos dos pets na biodiversidade.',
-    img: 'poster_pets.png',
+    img: 'poster_pet.png',
     link: 'Pôster da Cartilha Guarda Responsável de Pets.pdf',
   },
   {
