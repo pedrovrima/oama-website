@@ -102,6 +102,13 @@ const Publication = (props) => {
 
 const div_cient = [
   {
+    title: 'Relatório Pesquisa de Percepção Socioambiental 2024',
+    text: 'A Pesquisa de Percepção Socioambiental foi organizada pelo CEMAVE/ICMBio e Observatório de Aves da Mantiqueira e realizada com apoio do Parque das Aves, Rima Editora e Instituto Claravis, e com colaboração de diversos parceiros para o Plano de Ação Nacional para Conservação das Aves da Mata Atlântica. A pesquisa tem como objetivo amostrar o que as pessoas pensam e conhecem sobre as principais ameaças à conservação de aves da Mata Atlântica. Neste relatório você encontra as informações completas sobre a pesquisa e seus resultados.',
+    img: 'OAMa_relatorio_percepcao.png',
+    link: 'Relatório Pesquisa de Percepção Socioambiental 2024.pdf',
+  },
+
+  {
     title: 'Cartilha: Colisões de Aves com Vidros',
     text: 'Cartilha informativa acerca do impacto que estruturas de vidro têm em aves. Nesse material você aprenderá por que os vidros são tão prejudiciais às aves, quais fatores aumentam os riscos de acidentes, o que pode ser feito depois que uma ave colide com vidro e quais são as soluções para reduzir esse impacto. No verso da cartilha, encontra-se um pôster com orientações.',
     img: 'cartilha_colisao.png',
