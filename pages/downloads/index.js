@@ -33,7 +33,7 @@ export default function QuemSomos() {
         <div className='mt-16'>
           <div className='mb-24'>
             <h1 class='w-full text-center text-5xl font-bold leading-tight text-gray-800'>
-              Arquivos e Downlaods{' '}
+              Arquivos e Downloads{' '}
             </h1>
             <div class='mb-4 w-full'>
               <div class='gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25'></div>
@@ -288,6 +288,18 @@ const div_cient = [
 ];
 
 const institucional = [
+  {
+    title: 'Relatório Atividades Pró-Aves 2024',
+    text: ' Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2024.',
+    img: 'pro_aves_2024.png',
+    link: 'Relatório Ações Pró-Aves 2024.pdf',
+  },
+  {
+    title: 'Relatório Anual 2024',
+    text: 'Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2024.',
+    img: 'relatorio_2024.png',
+    link: 'Relatório Anual 2024 - OAMa PTBR.pdf',
+  },
   {
     title: '2023 Annual Report - English Version',
     text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2023.',

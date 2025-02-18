@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import Nav from '@includes/nav';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import dynamic from 'next/dynamic';
 import AutoScroll from 'embla-carousel-auto-scroll';
-
+import { useRouter } from 'next/navigation';
 // import IncreasingNumber from 'components/increasing-number';
 import { IoArrowUpCircle } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -65,6 +65,7 @@ const DialogContaent = ({ visible }) => {
 export default function ProAves() {
   const [year, setYear] = useState(0);
   const [visible, setVisible] = useState(false);
+  const router = useRouter();
 
   return (
     <div>
@@ -380,7 +381,7 @@ export default function ProAves() {
               </div>
             </div>
             {/* bg-[#F5ACF2] cursor-pointer duration-200 hover:scale-[1.06] */}
-            <div className='relative order-8 flex h-[160px] w-full flex-col  items-start justify-end rounded-2xl rounded-bl-none bg-[#ddd]  px-[22px] py-[17px]  lg:order-5 lg:col-span-3'>
+            {/* <div className='relative order-8 flex h-[160px] w-full flex-col  items-start justify-end rounded-2xl rounded-bl-none bg-[#ddd]  px-[22px] py-[17px]  lg:order-5 lg:col-span-3'>
               <p className=' z-20 font-montserrat font-bold leading-5 text-[#efefef]'>
                 Perda <br />
                 de habitat
@@ -393,7 +394,7 @@ export default function ProAves() {
                   width={146}
                 />
               </div>
-            </div>
+            </div> */}
             <div
               onClick={() => setVisible('colisao')}
               className='relative order-5 flex h-[160px] w-full cursor-pointer flex-col items-start justify-end rounded-2xl rounded-bl-none bg-[#B0DF9D] px-[22px]  py-[17px] duration-200 hover:scale-[1.06] lg:order-6 lg:col-span-2'
@@ -428,12 +429,19 @@ export default function ProAves() {
               </div>
             </div>
             {/* bg-[#EAB230] cursor-pointer hover:scale-[1.06]*/}
-            <div className=' relative order-9 flex h-[160px] w-full flex-col  items-start justify-end rounded-2xl rounded-bl-none bg-[#ddd]    px-[22px]  py-[17px] duration-200  lg:order-8 lg:col-span-3'>
-              <p className=' z-20 font-montserrat font-bold leading-5 text-[#efefef]'>
+            <div
+              onClick={() =>
+                router.push(
+                  'publicacoes/files/Relatório%20Ações%20Pró-Aves%202024.pdf'
+                )
+              }
+              className='relative order-9 flex h-[160px] w-full cursor-pointer flex-col items-start  justify-end rounded-2xl rounded-bl-none bg-[#FACC14] px-[22px] py-[17px]    duration-200  hover:scale-[1.06] lg:order-6  lg:col-span-3 lg:row-span-3 lg:h-[340px] lg:justify-center'
+            >
+              <p className=' z-20 font-montserrat text-[20px] font-bold leading-[1.2] '>
                 Resultados <br />
-                do programa em 2023
+                do programa em 2024
               </p>
-              <div className='absolute  right-[10px] top-[5px] '>
+              <div className='absolute  right-[25px] top-[25px] '>
                 <Image
                   src={'/proaves2/bento8.png'}
                   className=''
@@ -469,7 +477,7 @@ export default function ProAves() {
             <div className='absolute left-[502px] hidden h-[900px] w-[20px] bg-white lg:block'></div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-1.png')] bg-[cover] duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={24500} />
+                +<IncreasingNumber finalNumber={41000} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Pessoas impactadas online
@@ -477,7 +485,7 @@ export default function ProAves() {
             </div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center  bg-[url('/proaves2/bg-grid-2.png')] bg-[cover] duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={3000} />
+                +<IncreasingNumber finalNumber={4000} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Folders informativos
@@ -485,7 +493,7 @@ export default function ProAves() {
             </div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-3.png')] bg-[cover] duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={200} />
+                +<IncreasingNumber finalNumber={400} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Guias de Aves
@@ -493,7 +501,7 @@ export default function ProAves() {
             </div>
             <div className="flex h-[300px] w-full flex-col items-center justify-center bg-[url('/proaves2/bg-grid-4.png')] bg-[cover]  duration-200 hover:scale-[1.06]">
               <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                +<IncreasingNumber finalNumber={30} />
+                <IncreasingNumber finalNumber={49} />
               </p>
               <p className='font-oswald text-[20px] font-bold text-white'>
                 Dias de eventos
@@ -579,7 +587,7 @@ export default function ProAves() {
               <Image height={70} width={70} src={'/proaves2/icon-7.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  7
+                  19
                 </p>
                 <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
                   Palestras
@@ -590,7 +598,7 @@ export default function ProAves() {
               <Image height={70} width={70} src={'/proaves2/icon-8.png'} />
               <div className='flex w-1/3 items-center justify-center gap-2'>
                 <p className='font-oswald text-[48px] font-bold leading-tight text-white'>
-                  3
+                  4
                 </p>
                 <p className='font-montserrat text-[20px] font-normal  leading-tight text-white'>
                   Vídeos informativos
