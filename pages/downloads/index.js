@@ -289,6 +289,12 @@ const div_cient = [
 
 const institucional = [
   {
+    title: '2024 Annual Report - English Version',
+    text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2023.',
+    img: 'mockup_annual_report_2024.png',
+    link: '2024 Annual Report - OAMa EN.pdf',
+  },
+  {
     title: 'Relatório Atividades Pró-Aves 2024',
     text: ' Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2024.',
     img: 'pro_aves_2024.png',
