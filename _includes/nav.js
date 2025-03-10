@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import useOnclickOutside from 'react-cool-onclickoutside';
 
 const links = [{ href: 'https://nextjs.org/docs', label: 'Doe' }];
@@ -196,32 +196,32 @@ export default function Nav({ allBlack = false }) {
                   </div>
                 </li>
 
-                <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
+                {/* <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
                   <p className=''>Hospedagem</p>
                   <div className='flex flex-col px-2 '>
                     <Link href='/estacao-de-pesquisa' legacyBehavior>
                       <p className='cursor-pointer pb-1'>Estação de Pesquisa</p>
-                    </Link>
+                    </Link> */}
 
-                    {/* <a
+                {/* <a
                       target='_blank'
                       href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                     >
                       <p className='cursor-pointer pb-1'>AirBnB</p>
                     </a> */}
-                  </div>
-                </li>
+                {/* </div>
+                </li> */}
 
                 <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
                   <a target='_blank' href='https://use.oama.eco.br'>
                     Loja
                   </a>
                 </li>
-                <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
+                {/* <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
                   <a target='_blank' href='https://saltator.oama.eco.br'>
                     Saltator
                   </a>
-                </li>
+                </li> */}
 
                 <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
                   <Link href='/jacucara'>Jacuçara</Link>
@@ -288,16 +288,16 @@ export default function Nav({ allBlack = false }) {
               </div>
             </div>
 
-            <div className='group mr-4'>
+            {/* <div className='group mr-4'>
               <p className='font-bold text-gray-50'>Hospedagem</p>
               <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
                 <Link href='/estacao-de-pesquisa' legacyBehavior>
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Estação de Pesquisa
                   </p>
-                </Link>
+                </Link> */}
 
-                {/* <a
+            {/* <a
                   target='_blank'
                   href='https://www.airbnb.com.br/rooms/611433551141580157?source_impression_id=p3_1650728767_ho1%2B3Yu7QNJiEwLr'
                 >
@@ -305,8 +305,8 @@ export default function Nav({ allBlack = false }) {
                     AirBnB
                   </p>
                 </a> */}
-              </div>
-            </div>
+            {/* </div>
+            </div> */}
 
             <a target='_blank' href='https://use.oama.eco.br'>
               <div className='mr-4 cursor-pointer '>
@@ -314,14 +314,14 @@ export default function Nav({ allBlack = false }) {
               </div>
             </a>
 
-            <a target='_blank' href='https://saltator.oama.eco.br'>
+            {/* <a target='_blank' href='https://saltator.oama.eco.br'>
               {' '}
               <div className='mr-4 cursor-pointer '>
                 <p className='font-bold text-gray-50 hover:underline'>
                   Saltator
                 </p>
               </div>
-            </a>
+            </a> */}
 
             <div className='group mr-4 cursor-pointer'>
               <Link href='/jacucara' legacyBehavior>
