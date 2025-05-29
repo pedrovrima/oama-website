@@ -95,7 +95,7 @@ const FirstPost = ({ post }) => {
 const OtherPost = ({ post }) => {
   return (
     <Link href={`/blog/old/${post.slug}`}>
-      <div className='h-autocursor-pointer mx-2 mb-4 mt-8 flex flex-col rounded-lg shadow-2xl'>
+      <div className='mx-2 mb-4 mt-8 flex h-auto cursor-pointer flex-col rounded-lg shadow-2xl'>
         <div className=' '>
           <Image
             className='rounded-sm '
@@ -118,7 +118,6 @@ const OtherPost = ({ post }) => {
 };
 
 const SanityPost = ({ post }) => {
-  console.log(post);
   return (
     <Link href={`/blog/${post.slug.current}`}>
       <div className='mx-2 mb-4 mt-8 flex cursor-pointer flex-col rounded-lg shadow-2xl'>

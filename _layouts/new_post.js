@@ -10,6 +10,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import { PortableText } from 'next-sanity';
 
 export default function PostLayout(props) {
+  console.log(props.body);
   return (
     <DefaultLayout>
       <SmallHero img_src={urlFor(props?.mainImage).url()} />
@@ -62,17 +63,46 @@ const myPortableTextComponents = {
         </div>
       );
     },
+
     block: ({ value }) => {
-      return (
-        <p
-          className={`mb-4 text-lg ${
-            value.children[0]?.marks.includes('strong') ? 'pt-3 font-bold' : ''
-          }`}
-        >
-          {value.children[0]?.text}
-        </p>
-      );
+      console.log('Block value:', JSON.stringify(value, null, 2));
+      if (value.style === 'normal') {
+        return (
+          <p className='text-md mb-4'>
+            {value.children.map((child) => (
+              <span
+                key={child._key}
+                className={`${
+                  child.marks.includes('strong') ? 'font-bold' : ''
+                } ${child.marks.includes('em') ? 'italic' : ''}`}
+              >
+                {child.text}
+              </span>
+            ))}
+          </p>
+        );
+      }
+      if (value.style === 'h2') {
+        return (
+          <h2 className='mb-2 pt-4 text-lg font-bold'>
+            {value.children[0]?.text}
+          </h2>
+        );
+      }
+      return null;
     },
+  },
+  list: {
+    bullet: ({ children }) => (
+      <ul className='mb-4 list-disc pl-6'>{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className='mb-4 list-decimal pl-6'>{children}</ol>
+    ),
+  },
+  listItem: {
+    bullet: ({ children }) => <li className='text-md'>{children}</li>,
+    number: ({ children }) => <li className='text-md'>{children}</li>,
   },
   marks: {
     link: ({ children, value }) => {
