@@ -95,7 +95,7 @@ const FirstPost = ({ post }) => {
 const OtherPost = ({ post }) => {
   return (
     <Link href={`/blog/old/${post.slug}`}>
-      <div className='mx-2 mb-4 mt-8 flex cursor-pointer flex-col rounded-lg shadow-2xl'>
+      <div className='h-autocursor-pointer mx-2 mb-4 mt-8 flex flex-col rounded-lg shadow-2xl'>
         <div className=' '>
           <Image
             className='rounded-sm '
@@ -107,7 +107,7 @@ const OtherPost = ({ post }) => {
           ></Image>
         </div>
         <div className='flex h-full  flex-col justify-between  px-8 py-4'>
-          <p className='text-4xl font-bold'>{post.title}</p>
+          <p className='line-clamp-4 text-4xl font-bold'>{post.title}</p>
           <div className='mt-2'>
             <PostAuthorCard {...post}></PostAuthorCard>
           </div>
