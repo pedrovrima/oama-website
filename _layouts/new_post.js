@@ -10,7 +10,6 @@ import BlockContent from '@sanity/block-content-to-react';
 import { PortableText } from 'next-sanity';
 
 export default function PostLayout(props) {
-  console.log(props);
   return (
     <DefaultLayout>
       <SmallHero img_src={urlFor(props?.mainImage).url()} />
@@ -38,14 +37,23 @@ export default function PostLayout(props) {
 const myPortableTextComponents = {
   types: {
     imageWithAlt: ({ value }) => {
+      console.log(value);
       return (
         <div className='mb-8 flex flex-col items-center '>
-          <div className='relative h-[400px] w-full'>
+          <div
+            className='relative w-full'
+            style={{
+              aspectRatio:
+                value.width && value.height
+                  ? `${value.width} / ${value.height}`
+                  : '16/9',
+            }}
+          >
             <Image
               layout='fill'
-              src={urlFor(value.image).width(1200).height(600).url()}
+              src={urlFor(value.image).url()}
               alt={value.alt}
-              objectFit='cover'
+              objectFit='contain'
             />
           </div>
           <p className='blog-content container mx-auto mb-2 max-w-4xl list-disc text-gray-600 md:px-0'>
@@ -55,8 +63,15 @@ const myPortableTextComponents = {
       );
     },
     block: ({ value }) => {
-      console.log(value);
-      return <p className='mb-4 text-lg'>{value.children[0]?.text}</p>;
+      return (
+        <p
+          className={`mb-4 text-lg ${
+            value.children[0]?.marks.includes('strong') ? 'pt-3 font-bold' : ''
+          }`}
+        >
+          {value.children[0]?.text}
+        </p>
+      );
     },
   },
   marks: {

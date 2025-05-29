@@ -16,21 +16,23 @@ export function urlFor(source) {
 }
 
 export default function Blog(props) {
-  console.log(props.sanityPosts);
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <SmallHero img_src='heros/blog.jpg' />
       <Title title='Blog' />
       {/* <FirstPost post={props.posts[0]} /> */}
       <div className='mx-auto grid w-2/3 sm:grid-cols-3'>
-        {props.sanityPosts?.result?.map(function (post, idx) {
-          console.log(post);
-          return (
-            <>
-              <SanityPost post={post} />
-            </>
-          );
-        })}
+        {props.sanityPosts?.result
+          ?.sort((a, b) => {
+            return new Date(b.publishedAt) - new Date(a.publishedAt);
+          })
+          .map(function (post, idx) {
+            return (
+              <>
+                <SanityPost post={post} />
+              </>
+            );
+          })}
 
         {props.posts.map(function (post, idx) {
           return (
