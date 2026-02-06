@@ -9,7 +9,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
 import Footer from '@includes/footer';
-
+ 
 export const getServerSideProps = async (context) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
 
@@ -81,25 +81,21 @@ export default function Apoie2(props) {
                   Visamos um futuro em que a sociedade dê maior importância às
                   aves e em que as pessoas sejam agentes ativos para para a
                   conservação da biodiversidade. Para transformar esse futuro em
-                  um presente real, utilizamos a difusão de informação e a
-                  sensibilização através do conhecimento, conectando pessoas e
+                  um presente real, utilizamos do monitoramento e estudo da avifauna, da
+                  educação, informação e sensibilização ambiental, conectando pessoas e 
                   natureza em nossas ações.{' '}
                 </P>
                 <P>
-                  Trabalhamos com uma equipe de comunicação e divulgação
-                  científica que se dedica em traduzir ciência em uma
-                  comunicação que dialoga de forma sensível com a sociedade.
-                </P>
-                <P>
-                  <strong>E você pode participar desse time!</strong>
+                  <strong> Você pode participar desse esforço coletivo!</strong>
                 </P>{' '}
                 <P>
-                  Nossos ações de comunicação e divulgação científica são
-                  viabilizadas pelo apoio coletivo. Contamos com doadores e
-                  filiados para a realização das ações.
+                  A existência do OAMa e o sucesso de nossas ações são viabilizados, em grande
+                  parte, pelo apoio de doadores recorrentes, que dividem um pouquinho das contas 
+                  e custos mensais com a gente. Compartilhamos com nossos doadores recorrentes a
+                  visão de que o benefício é coletivo, e o custo também!
                 </P>
                 <P>
-                  <strong>Vem somar com a gente!</strong>
+                  <strong>Vem somar com a gente.!</strong>
                 </P>
                 <H3>COMUNICANDO CIÊNCIA PARA A CONSERVAÇÃO</H3>
                 <P>
@@ -170,7 +166,7 @@ const Billing = ({ products, stripe }) => {
           </div>
         )}
         <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white md:mt-16 '>
-          <p>TORNE-SE UM FILIADO OAMa!</p>
+          <p>TORNE-SE UM DOADOR RECORRENTE!</p>
           <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
         </div>
         <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2'>
