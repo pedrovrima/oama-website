@@ -374,7 +374,7 @@ const ThirdSection = () => {
         </div>
         <div className=' z-[99] -my-[100px] flex w-full flex-col gap-8 md:flex-row md:gap-[50px] lg:gap-[150px]'>
           <div className='w-[450px] max-w-[350px] py-12 pl-4 sm:max-w-full md:w-[26rem] md:py-0 lg:pl-0'>
-            <H2>Conheça nossas ações em comunicação e divulgação científica</H2>
+            <H2>Conheça algumas de nossas ações</H2>
             <Projects />
           </div>
           <div className='mb-[220px] flex justify-center sm:mb-0 md:pt-[200px]'>
@@ -513,11 +513,10 @@ const SecondSection = () => {
         </div>
         <div className='flex w-full flex-col lg:flex-row lg:items-center'>
           <div className=' z-[99] px-12 md:pl-12 lg:w-1/4 lg:pl-0'>
-            <H2>Sua participação e apoio fazem a diferença</H2>
+            <H2>Seu apio faz a diferença!</H2>
             <P>
-              Essa campanha de financiamento coletivo tem como objetivo arcar
-              com os gastos mensais do programa de Comunicação e Divulgação
-              Científica do OAMa
+              As ações do OAMa são realizadas com apoio de editais, contratações, serviços, e com a receita da marca Use.OAMa. 
+             Mas a nossa existência institucional depende fortemente do apoio de doadores recorrentes.
             </P>
           </div>
           <div className='relative z-[70] h-[300px] w-full lg:w-[1600px]'>
@@ -543,10 +542,10 @@ const SecondSection = () => {
               <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
                   <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
-                  <p>Total de R$68.400,00 para o ano de 2024.</p>
+                  <p> Custo institucional anual: R$205.769,00.</p>
                 </div>
                 <div className='h-[60px] w-1 rounded-full bg-white' />
-                <p>Meta mensal da campanha: R$5.700,00.</p>
+                <p>Nosso custo total anual: R$447.975,00.</p>
               </div>
             </div>
           </div>
