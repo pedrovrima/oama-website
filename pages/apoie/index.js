@@ -436,23 +436,11 @@ const projects = [
     url: 'publicacoes/files/ornito_todo_dia_OAMa.pdf',
   },
   {
-    title: 'Dia de Campo',
-    description: 'currículo interativo em banners',
-    year: '2019',
-  },
-  {
     title: 'Canal do Youtube',
     description: 'documentários e seminários',
     year: '2021',
     url: 'https://www.youtube.com/@observatoriodeavesdamantiq4958',
   },
-  {
-    title: 'Saltator',
-    description: 'jogo online',
-    year: '2021',
-    url: 'hhtps://saltator.oama.eco.br',
-  },
-
   {
     title: 'Juçara, conservação e consumo consciente',
     description: 'documentário',
@@ -471,8 +459,6 @@ const projects = [
     year: '2022',
     url: '/proaves',
   },
-  { title: 'Jacuçara', description: 'site', year: '2022', url: '/jacucara' },
-
   {
     title: 'Monitorando o presente, preservando o futuro',
     description: 'documentário',
@@ -482,16 +468,6 @@ const projects = [
   {
     title: 'Guia de Aves da região de Visconde de Mauá',
     description: 'folder',
-    year: '2023',
-  },
-  {
-    title: 'Impacto de pets em aves',
-    description: 'banners informativos',
-    year: '2023',
-  },
-  {
-    title: 'Campanha Jacuçara',
-    description: 'banners informativos',
     year: '2023',
   },
 ];
