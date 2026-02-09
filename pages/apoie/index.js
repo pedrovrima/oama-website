@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import Nav from '@includes/nav';
 import Stripe from 'stripe';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 
 import { useState } from 'react';
 import { AiOutlineInfo, AiOutlineInfoCircle } from 'react-icons/ai';
@@ -300,12 +300,12 @@ const DonationButtonGroup = () => {
 
 const DonationButton = ({ image, url, name }) => {
   return (
-    (<Link
+    <Link
       href={url}
       passHref
       className='group relative z-40 flex w-40 flex-row items-center'
-      target='_blank'>
-
+      target='_blank'
+    >
       <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>
         <Image
           className='z-40'
@@ -318,8 +318,7 @@ const DonationButton = ({ image, url, name }) => {
       <div className=' absolute left-[2rem]  flex h-[3.0rem] w-28 items-center justify-center rounded-full bg-[#332139] p-2 text-center text-sm font-bold leading-none text-white group-hover:bg-[#62466B] '>
         {name}
       </div>
-
-    </Link>)
+    </Link>
   );
 };
 
@@ -393,14 +392,14 @@ const Projects = () => {
         return (
           <li className='pb-[8px] leading-4'>
             {project.url ? (
-              (<Link
+              <Link
                 href={project.url || ''}
                 passHref
                 target='_blank'
                 className={` ${
                   project.url && 'cursor-pointer hover:underline'
-                } `}>
-
+                } `}
+              >
                 <span className='text-md font-bold text-gray-500'>
                   {project.title}
                 </span>
@@ -408,8 +407,7 @@ const Projects = () => {
                   <span className='text-md text-gray-400'>{` - ${project.description}`}</span>
                 )}
                 <span className='text-sm text-gray-400'>{`, ${project.year}`}</span>
-
-              </Link>)
+              </Link>
             ) : (
               <p className={`${project.url && 'cursor-pointer underline'}`}>
                 <span className='text-md font-bold text-gray-500'>
@@ -519,12 +517,12 @@ const SecondSection = () => {
              Mas a nossa existência institucional depende fortemente do apoio de doadores recorrentes.
             </P>
           </div>
-          <div className='relative z-[70] h-[300px] w-full lg:w-[1600px]'>
+          <div className='relative z-[70] w-full lg:h-[500px] lg:w-[600px]'>
             <Image
               src='/apoie/grafico.png'
               layout='responsive'
-              width={500}
-              height={300}
+              width={960}
+              height={710}
             ></Image>
           </div>
         </div>

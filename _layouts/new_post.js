@@ -107,7 +107,11 @@ const myPortableTextComponents = {
   marks: {
     link: ({ children, value }) => {
       const { href } = value;
-      return <a href={href}>{children}</a>;
+      return (
+        <a href={href} className='underline'>
+          {children}
+        </a>
+      );
     },
   },
 };
