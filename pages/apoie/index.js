@@ -9,7 +9,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
 import Footer from '@includes/footer';
-
+ 
 export const getServerSideProps = async (context) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
 
@@ -81,25 +81,21 @@ export default function Apoie2(props) {
                   Visamos um futuro em que a sociedade dê maior importância às
                   aves e em que as pessoas sejam agentes ativos para para a
                   conservação da biodiversidade. Para transformar esse futuro em
-                  um presente real, utilizamos a difusão de informação e a
-                  sensibilização através do conhecimento, conectando pessoas e
+                  um presente real, utilizamos do monitoramento e estudo da avifauna, da
+                  educação, informação e sensibilização ambiental, conectando pessoas e 
                   natureza em nossas ações.{' '}
                 </P>
                 <P>
-                  Trabalhamos com uma equipe de comunicação e divulgação
-                  científica que se dedica em traduzir ciência em uma
-                  comunicação que dialoga de forma sensível com a sociedade.
-                </P>
-                <P>
-                  <strong>E você pode participar desse time!</strong>
+                  <strong> Você pode participar desse esforço coletivo!</strong>
                 </P>{' '}
                 <P>
-                  Nossos ações de comunicação e divulgação científica são
-                  viabilizadas pelo apoio coletivo. Contamos com doadores e
-                  filiados para a realização das ações.
+                  A existência do OAMa e o sucesso de nossas ações são viabilizados, em grande
+                  parte, pelo apoio de doadores recorrentes, que dividem um pouquinho das contas 
+                  e custos mensais com a gente. Compartilhamos com nossos doadores recorrentes a
+                  visão de que o benefício é coletivo, e o custo também!
                 </P>
                 <P>
-                  <strong>Vem somar com a gente!</strong>
+                  <strong>Vem somar com a gente.!</strong>
                 </P>
                 <H3>COMUNICANDO CIÊNCIA PARA A CONSERVAÇÃO</H3>
                 <P>
@@ -170,7 +166,7 @@ const Billing = ({ products, stripe }) => {
           </div>
         )}
         <div className='mb-8 w-full rounded-full bg-[#332139] p-4 text-center text-lg leading-5 text-white md:mt-16 '>
-          <p>TORNE-SE UM FILIADO OAMa!</p>
+          <p>TORNE-SE UM DOADOR RECORRENTE!</p>
           <p className='text-sm'>Escolha o valor do seu apoio mensal</p>
         </div>
         <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2'>
@@ -378,7 +374,7 @@ const ThirdSection = () => {
         </div>
         <div className=' z-[99] -my-[100px] flex w-full flex-col gap-8 md:flex-row md:gap-[50px] lg:gap-[150px]'>
           <div className='w-[450px] max-w-[350px] py-12 pl-4 sm:max-w-full md:w-[26rem] md:py-0 lg:pl-0'>
-            <H2>Conheça nossas ações em comunicação e divulgação científica</H2>
+            <H2>Conheça algumas de nossas ações</H2>
             <Projects />
           </div>
           <div className='mb-[220px] flex justify-center sm:mb-0 md:pt-[200px]'>
@@ -517,11 +513,10 @@ const SecondSection = () => {
         </div>
         <div className='flex w-full flex-col lg:flex-row lg:items-center'>
           <div className=' z-[99] px-12 md:pl-12 lg:w-1/4 lg:pl-0'>
-            <H2>Sua participação e apoio fazem a diferença</H2>
+            <H2>Seu apio faz a diferença!</H2>
             <P>
-              Essa campanha de financiamento coletivo tem como objetivo arcar
-              com os gastos mensais do programa de Comunicação e Divulgação
-              Científica do OAMa
+              As ações do OAMa são realizadas com apoio de editais, contratações, serviços, e com a receita da marca Use.OAMa. 
+             Mas a nossa existência institucional depende fortemente do apoio de doadores recorrentes.
             </P>
           </div>
           <div className='relative z-[70] h-[300px] w-full lg:w-[1600px]'>
@@ -547,10 +542,10 @@ const SecondSection = () => {
               <div className='flex h-full flex-row items-center justify-center gap-4 text-white'>
                 <div className='flex flex-row items-center gap-2'>
                   <AiOutlineInfoCircle className='hidden sm:flex' size={70} />
-                  <p>Total de R$68.400,00 para o ano de 2024.</p>
+                  <p> Custo institucional anual: R$205.769,00.</p>
                 </div>
                 <div className='h-[60px] w-1 rounded-full bg-white' />
-                <p>Meta mensal da campanha: R$5.700,00.</p>
+                <p>Nosso custo total anual: R$447.975,00.</p>
               </div>
             </div>
           </div>
