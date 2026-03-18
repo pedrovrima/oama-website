@@ -292,7 +292,7 @@ const institucional = [
     title: 'Relatório Atividades Pró-Aves 2025',
     text: 'Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2025.',
     img: 'pro_aves_2025.jpg',
-    link: 'Relatório Ações Pró-Aves 2025.pdf',
+    link: 'relatorioProAves2025.pdf',
   },
   {
     title: '2024 Annual Report - English Version',
