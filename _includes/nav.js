@@ -120,6 +120,9 @@ export default function Nav({ allBlack = false }) {
             <a
               className='toggleColour flex text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl'
               href='#'
+              data-analytics-event='navigation_click'
+              data-analytics-label='Home Logo'
+              data-analytics-location='nav_logo'
             >
               <Image
                 alt='logo OAMa'
@@ -161,16 +164,37 @@ export default function Nav({ allBlack = false }) {
             >
               <ul className='list-reset flex-1 items-center justify-end lg:flex'>
                 <li className='focus:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
-                  <Link href='/quem-somos'>Quem somos</Link>
+                  <Link
+                    href='/quem-somos'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Quem somos'
+                    data-analytics-location='nav_mobile'
+                  >
+                    Quem somos
+                  </Link>
                 </li>
                 <li className='hover:text-underline group w-full px-4 py-2 no-underline'>
                   <p className=''>Atividades</p>
                   <div className='flex flex-col px-2 '>
                     <Link href='/proaves' legacyBehavior>
-                      <p className='cursor-pointer pb-1'>Ações Pró-Aves</p>
+                      <p
+                        className='cursor-pointer pb-1'
+                        data-analytics-event='navigation_click'
+                        data-analytics-label='Ações Pró-Aves'
+                        data-analytics-location='nav_mobile'
+                      >
+                        Ações Pró-Aves
+                      </p>
                     </Link>
                     <Link href='/projetos' legacyBehavior>
-                      <p className='cursor-pointer pb-1'>Projetos</p>
+                      <p
+                        className='cursor-pointer pb-1'
+                        data-analytics-event='navigation_click'
+                        data-analytics-label='Projetos'
+                        data-analytics-location='nav_mobile'
+                      >
+                        Projetos
+                      </p>
                     </Link>
                     {/* <Link href="/anilhamento-demonstrativo">
                       <p className="pb-1 cursor-pointer">
@@ -178,20 +202,43 @@ export default function Nav({ allBlack = false }) {
                       </p>
                     </Link> */}
                     <Link href='/treinamento-cursos' legacyBehavior>
-                      <p className='cursor-pointer pb-1'>
+                      <p
+                        className='cursor-pointer pb-1'
+                        data-analytics-event='navigation_click'
+                        data-analytics-label='Cursos e Treinamento'
+                        data-analytics-location='nav_mobile'
+                      >
                         Cursos e Treinamento
                       </p>
                     </Link>
                     <Link href='/downloads' legacyBehavior>
-                      <p className='cursor-pointer pb-1'>
+                      <p
+                        className='cursor-pointer pb-1'
+                        data-analytics-event='navigation_click'
+                        data-analytics-label='Arquivos e Downloads'
+                        data-analytics-location='nav_mobile'
+                      >
                         Arquivos e Downloads
                       </p>
                     </Link>
-                    <a target='_blank' href='/relatorio.html'>
+                    <a
+                      target='_blank'
+                      href='/relatorio.html'
+                      data-analytics-event='navigation_click'
+                      data-analytics-label='Relatório de Dados'
+                      data-analytics-location='nav_mobile'
+                    >
                       <p className='cursor-pointer pb-1'>Relatório de Dados </p>
                     </a>
                     <Link href='/blog' legacyBehavior>
-                      <p className='cursor-pointer pb-1'>Blog </p>
+                      <p
+                        className='cursor-pointer pb-1'
+                        data-analytics-event='navigation_click'
+                        data-analytics-label='Blog'
+                        data-analytics-location='nav_mobile'
+                      >
+                        Blog{' '}
+                      </p>
                     </Link>
                   </div>
                 </li>
@@ -213,7 +260,13 @@ export default function Nav({ allBlack = false }) {
                 </li> */}
 
                 <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
-                  <a target='_blank' href='https://use.oama.eco.br'>
+                  <a
+                    target='_blank'
+                    href='https://use.oama.eco.br'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Loja'
+                    data-analytics-location='nav_mobile'
+                  >
                     Loja
                   </a>
                 </li>
@@ -224,10 +277,23 @@ export default function Nav({ allBlack = false }) {
                 </li> */}
 
                 <li className='hover:text-underline inline-block w-full px-4 py-2 no-underline hover:text-gray-800'>
-                  <Link href='/jacucara'>Jacuçara</Link>
+                  <Link
+                    href='/jacucara'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Jacuçara'
+                    data-analytics-location='nav_mobile'
+                  >
+                    Jacuçara
+                  </Link>
                 </li>
                 <li className='hover:text-underline inline-block w-full bg-yellow-400 px-4 py-2 no-underline hover:text-gray-800'>
-                  <Link className='' href='/apoie'>
+                  <Link
+                    className=''
+                    href='/apoie'
+                    data-analytics-event='cta_click'
+                    data-analytics-label='Apoie'
+                    data-analytics-location='nav_mobile'
+                  >
                     Apoie
                   </Link>
                 </li>
@@ -238,7 +304,12 @@ export default function Nav({ allBlack = false }) {
         <div className='hidden flex-row items-center md:flex'>
           <div className='flex flex-row px-8 '>
             <Link href='/quem-somos' legacyBehavior>
-              <div className='mr-4 cursor-pointer '>
+              <div
+                className='mr-4 cursor-pointer '
+                data-analytics-event='navigation_click'
+                data-analytics-label='Quem somos'
+                data-analytics-location='nav_desktop'
+              >
                 <p className='font-bold text-gray-50 hover:underline'>
                   Quem somos
                 </p>
@@ -249,12 +320,22 @@ export default function Nav({ allBlack = false }) {
               <p className='font-bold text-gray-50'>Atividades</p>
               <div className='absolute hidden w-56 bg-gray-900 p-6 group-hover:block '>
                 <Link href='/proaves' legacyBehavior>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p
+                    className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Ações Pró-Aves'
+                    data-analytics-location='nav_desktop'
+                  >
                     Ações Pró-Aves
                   </p>
                 </Link>
                 <Link href='/projetos' legacyBehavior>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p
+                    className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Projetos'
+                    data-analytics-location='nav_desktop'
+                  >
                     Projetos
                   </p>
                 </Link>
@@ -264,24 +345,45 @@ export default function Nav({ allBlack = false }) {
                   </p>
                 </Link> */}
                 <Link href='/treinamento-cursos' legacyBehavior>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p
+                    className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Cursos e Treinamento'
+                    data-analytics-location='nav_desktop'
+                  >
                     Cursos e Treinamento
                   </p>
                 </Link>
 
                 <Link href='/downloads' legacyBehavior>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p
+                    className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Arquivos e Downloads'
+                    data-analytics-location='nav_desktop'
+                  >
                     Arquivos e Downloads
                   </p>
                 </Link>
 
-                <a target='_blank' href='/relatorio.html'>
+                <a
+                  target='_blank'
+                  href='/relatorio.html'
+                  data-analytics-event='navigation_click'
+                  data-analytics-label='Relatório de Dados'
+                  data-analytics-location='nav_desktop'
+                >
                   <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
                     Relatório de Dados
                   </p>
                 </a>
                 <Link href='/blog' legacyBehavior>
-                  <p className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'>
+                  <p
+                    className='w-full cursor-pointer pb-2 font-bold text-gray-50 hover:underline'
+                    data-analytics-event='navigation_click'
+                    data-analytics-label='Blog'
+                    data-analytics-location='nav_desktop'
+                  >
                     Blog{' '}
                   </p>
                 </Link>
@@ -308,7 +410,13 @@ export default function Nav({ allBlack = false }) {
             {/* </div>
             </div> */}
 
-            <a target='_blank' href='https://use.oama.eco.br'>
+            <a
+              target='_blank'
+              href='https://use.oama.eco.br'
+              data-analytics-event='navigation_click'
+              data-analytics-label='Loja'
+              data-analytics-location='nav_desktop'
+            >
               <div className='mr-4 cursor-pointer '>
                 <p className='font-bold text-gray-50 hover:underline'>Loja</p>
               </div>
@@ -325,7 +433,12 @@ export default function Nav({ allBlack = false }) {
 
             <div className='group mr-4 cursor-pointer'>
               <Link href='/jacucara' legacyBehavior>
-                <p className='font-bold text-gray-50 hover:underline'>
+                <p
+                  className='font-bold text-gray-50 hover:underline'
+                  data-analytics-event='navigation_click'
+                  data-analytics-label='Jacuçara'
+                  data-analytics-location='nav_desktop'
+                >
                   Jacuçara
                 </p>
               </Link>
@@ -336,6 +449,9 @@ export default function Nav({ allBlack = false }) {
               <button
                 id='navAction'
                 className='focus:shadow-outline mx-auto mr-2 mt-0 transform rounded-full bg-yellow-400 px-8 py-2 font-bold text-gray-800 shadow transition duration-300 ease-in-out hover:scale-105 hover:underline focus:outline-none lg:mx-0'
+                data-analytics-event='cta_click'
+                data-analytics-label='Apoie'
+                data-analytics-location='nav_desktop'
               >
                 Apoie
               </button>

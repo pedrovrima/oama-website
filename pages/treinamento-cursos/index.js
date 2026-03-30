@@ -720,6 +720,9 @@ const Acc2 = () => {
               target='_blank'
               className='mb-4 text-yellow-900 underline '
               href={`/treinamento-cursos/files/Edital_treinamento_2025.pdf`}
+              data-analytics-event='training_application_click'
+              data-analytics-label='Edital PT 2025'
+              data-analytics-location='training_application_section'
             >
               Edital de chamada para Programa de Treinamento OAMa 2025
             </a>
@@ -729,6 +732,9 @@ const Acc2 = () => {
               target='_blank'
               className='mb-4 text-yellow-900 underline '
               href={`/treinamento-cursos/files/OAMa_Call_training_2025.pdf`}
+              data-analytics-event='training_application_click'
+              data-analytics-label='Call EN 2025'
+              data-analytics-location='training_application_section'
             >
               Call for Applications for the OAMa Training Program 2025
             </a>
@@ -738,6 +744,9 @@ const Acc2 = () => {
               target='_blank'
               className='mb-4 text-yellow-900 underline '
               href={`/treinamento-cursos/files/OAMa_Llamada_capacitation_2025.pdf`}
+              data-analytics-event='training_application_click'
+              data-analytics-label='Llamado ES 2025'
+              data-analytics-location='training_application_section'
             >
               Llamado para el Programa de Capacitación OAMa 2025
             </a>
@@ -747,6 +756,9 @@ const Acc2 = () => {
               target='_blank'
               className='mb-4 text-yellow-900 underline '
               href='https://docs.google.com/forms/d/e/1FAIpQLSdE4vT0vfkcmenB-sN5NQKZ1cvNZYOkRfOGLNhqXfvh8CLVBA/closedform'
+              data-analytics-event='training_application_click'
+              data-analytics-label='Formulário Treinamento 2025'
+              data-analytics-location='training_application_section'
             >
               {' '}
               Formulário e inscrição para Programa de treinamento OAMa 2025

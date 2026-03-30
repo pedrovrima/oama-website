@@ -1,5 +1,6 @@
 import Image from "next/legacy/image";
 import { useEffect, useState } from 'react';
+import { trackEvent } from '@lib/analytics';
 
 const { default: Footer } = require('@includes/footer');
 const { default: Nav } = require('@includes/nav');
@@ -32,6 +33,10 @@ function Pix() {
           <button
             onClick={() => {
               setCopied(true);
+              trackEvent('pix_copy', {
+                donation_method: 'pix',
+                button_location: '/pix',
+              });
               navigator.clipboard.writeText(
                 '00020126360014BR.GOV.BCB.PIX0114357135120001805204000053039865802BR5923OAMa - Aves Mantiqueira6011Resende- RJ62140510DOACAOOAMA63046E50'
               );

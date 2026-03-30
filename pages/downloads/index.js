@@ -79,6 +79,9 @@ const Publication = (props) => {
       className='mb-4'
       href={direct_link || `/publicacoes/files/${link}`}
       target='_blank'
+      data-analytics-event='content_download_click'
+      data-analytics-label={title}
+      data-analytics-location='downloads_grid'
     >
       <div className='mx-2 mb-4 mt-8 flex h-full cursor-pointer flex-col rounded-lg shadow-2xl'>
         <div className=''>

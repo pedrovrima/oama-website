@@ -28,12 +28,24 @@ export default function Footer({ noMargin }) {
 
           <div className='mt-4 flex flex-row items-center  justify-center md:m-0'>
             <div className='m-2'>
-              <a target='_blank' href='https://www.facebook.com/oamantiqueira'>
+              <a
+                target='_blank'
+                href='https://www.facebook.com/oamantiqueira'
+                data-analytics-event='social_click'
+                data-analytics-label='Facebook'
+                data-analytics-location='footer'
+              >
                 <AiOutlineFacebook color='white' size={30}></AiOutlineFacebook>{' '}
               </a>
             </div>
             <div className='m-2'>
-              <a target='_blank' href='https://www.instagram.com/oamantiqueira'>
+              <a
+                target='_blank'
+                href='https://www.instagram.com/oamantiqueira'
+                data-analytics-event='social_click'
+                data-analytics-label='Instagram'
+                data-analytics-location='footer'
+              >
                 <AiOutlineInstagram
                   color='white'
                   size={30}
@@ -44,12 +56,22 @@ export default function Footer({ noMargin }) {
               <a
                 target='_blank'
                 href='https://www.youtube.com/channel/UCzLcpYmPb1DR524wXb0CvHA'
+                data-analytics-event='social_click'
+                data-analytics-label='YouTube'
+                data-analytics-location='footer'
               >
                 <AiOutlineYoutube color='white' size={30}></AiOutlineYoutube>{' '}
               </a>
             </div>
             <div className='m-2 cursor-pointer'>
-              <Link passHref href='/whatsapp' target='_blank'>
+              <Link
+                passHref
+                href='/whatsapp'
+                target='_blank'
+                data-analytics-event='social_click'
+                data-analytics-label='WhatsApp'
+                data-analytics-location='footer'
+              >
 
                 <AiOutlineWhatsApp
                   color='white'

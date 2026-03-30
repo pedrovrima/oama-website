@@ -9,6 +9,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
 import Footer from '@includes/footer';
+import { trackEventAndNavigate } from '@lib/analytics';
  
 export const getServerSideProps = async (context) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
@@ -217,10 +218,26 @@ const BillingComponent = ({ product, stripe, setLoading }) => {
         onClick={async () => {
           setLoading(true);
           const payLink = await getPayLink();
+          const destination = `${payLink.url}?locale=pt`;
 
-          window.location.assign(`${payLink.url}?locale=pt`);
-          setLoading(false);
+          trackEventAndNavigate({
+            eventName: 'donation_click',
+            eventParams: {
+              donation_method: 'stripe_recurring',
+              donation_plan: product.name,
+              currency: product.price[0].currency,
+              value: product.price[0].unit_amount / 100,
+              destination_url: destination,
+            },
+            navigate: () => {
+              setLoading(false);
+              window.location.assign(destination);
+            },
+          });
         }}
+        data-analytics-event='donation_method_select'
+        data-analytics-label={product.name}
+        data-analytics-location='apoie_recurring_grid'
         style={{
           backgroundImage: `url(${product.images[0]})`,
           backgroundSize: 'cover',
@@ -304,6 +321,9 @@ const DonationButton = ({ image, url, name }) => {
       href={url}
       passHref
       className='group relative z-40 flex w-40 flex-row items-center'
+      data-analytics-event='donation_click'
+      data-analytics-label={name}
+      data-analytics-location='apoie_one_time_methods'
       target='_blank'
     >
       <div className='relative  flex h-16 w-16 items-center justify-center rounded-full bg-[#332139] group-hover:bg-[#62466B]'>

@@ -14,6 +14,50 @@
 <meta name="date" content="2024-02-09" />
 
 <title>Relatório de dados</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RFRQHFHPN8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', 'G-RFRQHFHPN8');
+document.addEventListener('click', function(event) {
+  var target = event.target.closest('a, button');
+  var href;
+  var url;
+  var label;
+
+  if (!target || typeof gtag !== 'function') return;
+
+  label = (target.getAttribute('aria-label') || target.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120);
+
+  if (target.tagName === 'BUTTON') {
+    gtag('event', 'button_click', {
+      button_text: label,
+      button_location: window.location.pathname
+    });
+    return;
+  }
+
+  href = target.getAttribute('href');
+  if (!href) return;
+
+  try {
+    url = new URL(href, window.location.href);
+  } catch (e) {
+    return;
+  }
+
+  if (/\.(pdf|docx?|xlsx?|csv|txt|zip|rar|7z|pptx?)$/i.test(url.pathname)) {
+    gtag('event', 'file_download_click', {
+      file_name: url.pathname.split('/').pop(),
+      file_extension: (url.pathname.split('.').pop() || '').toLowerCase(),
+      link_text: label,
+      link_path: url.pathname
+    });
+  }
+});
+</script>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
