@@ -4,6 +4,7 @@ import Image from 'next/legacy/image';
 import dynamic from 'next/dynamic';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import { useRouter } from 'next/navigation';
+import Head from 'next/head';
 // import IncreasingNumber from 'components/increasing-number';
 import { IoArrowUpCircle } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -69,6 +70,9 @@ export default function ProAves() {
 
   return (
     <div>
+      <Head>
+        <title>ProAves</title>
+      </Head>
       <Nav />
       <Dialog open={visible} onOpenChange={setVisible}>
         <DialogContaent className='max-w-[900px]' visible={visible} />

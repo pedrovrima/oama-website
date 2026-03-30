@@ -8,6 +8,7 @@ import { AiOutlineInfo, AiOutlineInfoCircle } from 'react-icons/ai';
 import useEmblaCarousel from 'embla-carousel-react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
+import Head from 'next/head';
 import Footer from '@includes/footer';
 import { trackEventAndNavigate } from '@lib/analytics';
  
@@ -46,6 +47,9 @@ export default function Apoie2(props) {
 
   return (
     <div className='max-w-[100vw] overflow-hidden font-euphoria'>
+      <Head>
+        <title>Apoie</title>
+      </Head>
       <Nav />
       <div className=''>
         <div className=' relative h-[700px] max-h-[70vh] bg-[#4E7B90]'>

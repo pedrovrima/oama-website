@@ -17,7 +17,7 @@ export default function Treinamento() {
     <>
       <div className='pb-32'>
         <Head>
-          <title>Treinamento e Cursos</title>
+          <title>Treinamento</title>
         </Head>
 
         <Nav />

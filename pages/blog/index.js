@@ -17,7 +17,7 @@ export function urlFor(source) {
 
 export default function Blog(props) {
   return (
-    <DefaultLayout title={props.title} description={props.description}>
+    <DefaultLayout title='Blog' description={props.description}>
       <SmallHero img_src='heros/blog.jpg' />
       <Title title='Blog' />
       {/* <FirstPost post={props.posts[0]} /> */}

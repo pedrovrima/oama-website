@@ -8,7 +8,7 @@ export default function Newsletter() {
     <>
     <div className="pb-32">
       <Head>
-        <title>Assine a Newsletter</title>
+        <title>Newsletter</title>
       </Head>
 
       <Nav />

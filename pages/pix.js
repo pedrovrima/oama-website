@@ -1,6 +1,7 @@
 import Image from "next/legacy/image";
 import { useEffect, useState } from 'react';
 import { trackEvent } from '@lib/analytics';
+import Head from 'next/head';
 
 const { default: Footer } = require('@includes/footer');
 const { default: Nav } = require('@includes/nav');
@@ -17,6 +18,9 @@ function Pix() {
 
   return (
     <div className='flex min-h-[100vh] flex-col justify-between '>
+      <Head>
+        <title>Pix</title>
+      </Head>
       <Nav allBlack />
       <div className='mx-auto my-[100px] h-full'>
         <h1 className='mb-4 text-3xl font-bold'>Doe OAMa</h1>

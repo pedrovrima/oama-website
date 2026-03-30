@@ -16,10 +16,7 @@ export default function Jacucara() {
       <div className='pb-32'>
         <Head>
           <Head>
-            <title>
-              Campanha Jacuçara: A Importância da Jacutinga e da Palmeira Juçara
-              na Mata Atlântica
-            </title>
+            <title>Jacuçara</title>
             <meta
               name='description'
               content='Descubra a Campanha Jacuçara e entenda a relação vital entre a jacutinga e a palmeira juçara na Mata Atlântica. Saiba como podemos proteger essas espécies ameaçadas.'

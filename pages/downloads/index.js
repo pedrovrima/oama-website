@@ -9,7 +9,7 @@ export default function QuemSomos() {
     <>
       <div className='pb-32'>
         <Head>
-          <title>Arquivos e Downloads</title>
+          <title>Downloads</title>
         </Head>
 
         <Nav />
