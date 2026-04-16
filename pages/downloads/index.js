@@ -292,6 +292,18 @@ const div_cient = [
 
 const institucional = [
   {
+    title: 'Relatório Anual 2025',
+    text: 'Relatório oficial de atividades, finanças e tudo mais relacionado ao funcionamento do OAMa em 2025.',
+    img: 'relatorio_2025.png',
+    link: 'Relatório Anual 2025 - OAMa PTBR.pdf',
+  },
+  {
+    title: '2025 Annual Report - English Version',
+    text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2025.',
+    img: 'mockup_annual_report_2025.png',
+    link: '2025 Annual Report - OAMa EN.pdf',
+  },
+  {
     title: 'Relatório Atividades Pró-Aves 2025',
     text: 'Aqui você confere as atividades realizadas, os produtos elaborados, resultados alcançados e orçamento realizado para a execução do Programa Pró-Aves de 2025.',
     img: 'pro_aves_2025.jpg',
@@ -299,7 +311,7 @@ const institucional = [
   },
   {
     title: '2024 Annual Report - English Version',
-    text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2023.',
+    text: 'Official report of activities, finances, and everything related to the operation of OAMa in 2024.',
     img: 'mockup_annual_report_2024.png',
     link: '2024 Annual Report - OAMa EN.pdf',
   },
