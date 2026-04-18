@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Levantamento Bibliográfico sobre Mudas e Classificação de Idades</title>
+    <style>
+      @font-face {
+        font-family: 'Oswald';
+        src: url('/Oswald-VariableFont_wght.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Montserrat';
+        src: url('/Montserrat-VariableFont_wght.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'MontserratSemi';
+        src: url('/Montserrat-SemiBold.ttf') format('truetype');
+      }
+
+      :root {
+        --bg: #eab308;
+        --surface: #ffffff;
+        --surface-soft: #fffbeb;
+        --text: #111827;
+        --muted: #6b7280;
+        --stroke: #e5e7eb;
+        --stroke-strong: #d1d5db;
+        --accent: #facc15;
+        --shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+        --radius: 18px;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      .wrap {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 40px 18px 56px;
+      }
+
+      header {
+        margin-bottom: 24px;
+      }
+
+      .camci-card {
+        border: 1px solid var(--stroke);
+        border-radius: 24px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        padding: 28px 22px 22px;
+      }
+
+            .title {
+        margin: 0;
+        color: var(--text);
+        font-family: 'Oswald', Impact, sans-serif;
+        font-weight: 500;
+        line-height: 1.05;
+        letter-spacing: 0.01em;
+        font-size: clamp(30px, 5vw, 48px);
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .disclaimer {
+        max-width: 760px;
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-style: italic;
+      }
+
+      .controls {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      @media (min-width: 900px) {
+        .controls { grid-template-columns: 1fr 220px; align-items: center; }
+      }
+
+      .search,
+      select {
+        border: 1px solid var(--stroke);
+        background: var(--surface);
+        color: var(--text);
+        border-radius: 14px;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+      }
+
+      .search input {
+        width: 100%;
+        border: 0;
+        outline: none;
+        color: var(--text);
+        background: transparent;
+        font: inherit;
+      }
+
+      .search input::placeholder { color: #9ca3af; }
+
+      .search .hint {
+        color: var(--muted);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      select {
+        width: 100%;
+        padding: 12px 14px;
+        outline: none;
+        font: inherit;
+      }
+
+      .meta {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--stroke);
+        background: var(--surface-soft);
+        padding: 7px 12px;
+        border-radius: 999px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--text);
+      }
+
+      .dot.warn {
+        background: var(--accent);
+      }
+
+      main { margin-top: 18px; }
+
+      .year {
+        margin-top: 16px;
+        border-radius: var(--radius);
+        border: 1px solid var(--stroke);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .year-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--stroke);
+      }
+
+      .year-title {
+        margin: 0;
+        color: var(--text);
+        font-family: 'Oswald', Impact, sans-serif;
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+      }
+
+      .year-count {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .grid {
+        padding: 14px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      @media (min-width: 900px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+
+      .paper {
+        border: 1px solid var(--stroke);
+        background: var(--surface);
+        border-radius: 16px;
+        padding: 16px;
+        transition: border-color 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .paper:hover {
+        border-color: var(--stroke-strong);
+        box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+      }
+
+      .paper h3 {
+        margin: 0;
+        color: var(--text);
+        font-family: 'MontserratSemi', 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      .paper .cite {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .paper .tags {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .paper .tag {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--stroke);
+        background: var(--surface-soft);
+        padding: 5px 10px;
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 11px;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s, color 0.15s;
+        user-select: none;
+      }
+
+      .paper .tag:hover {
+        background: #fef08a;
+        border-color: #ca8a04;
+        color: #78350f;
+      }
+
+      .actions {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--stroke);
+        background: var(--surface-soft);
+        color: var(--text);
+        padding: 9px 12px;
+        border-radius: 12px;
+        font: 700 12px/1 'MontserratSemi', 'Montserrat', sans-serif;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        border-color: var(--stroke-strong);
+        background: #f3f4f6;
+        text-decoration: none;
+      }
+
+      .btn.primary {
+        border-color: var(--text);
+        background: var(--text);
+        color: #ffffff;
+      }
+
+      .btn.primary:hover {
+        background: #000000;
+        border-color: #000000;
+      }
+
+      .empty {
+        margin: 20px 0 0;
+        padding: 18px;
+        border: 1px dashed var(--stroke-strong);
+        border-radius: var(--radius);
+        color: var(--muted);
+        background: var(--surface);
+        display: none;
+      }
+
+      footer {
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          padding-top: 24px;
+          padding-bottom: 40px;
+        }
+
+        .title {
+          font-size: clamp(28px, 9vw, 38px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+          <div class="camci-card">
+          <h1 class="title">Levantamento Bibliográfico sobre Mudas e Classificação de Idades</h1>
+          <p class="disclaimer"><em>Levantamento gerado automaticamente para o Curso de Análise de Mudas e Classificação de Idade em Aves. Não se trata de uma busca extensiva da literatura e não inclui todos os artigos disponíveis sobre o tema.</em></p>
+
+          <div class="controls">
+            <div class="search" role="search">
+              <input id="q" type="search" placeholder="Buscar por autor, título, DOI ou tag..." autocomplete="off" />
+              <span class="hint" id="hint">Ctrl+K</span>
+            </div>
+            <select id="year" aria-label="Filtrar por ano">
+              <option value="">Todos os anos</option>
+            </select>
+          </div>
+
+          <p class="subtitle">
+            Use a busca para localizar autores, títulos, DOI ou temas. Clique em <strong>Abrir DOI</strong> para acessar o artigo e em <strong>Copiar citação</strong> para reutilizar a referência.
+          </p>
+
+          <div class="meta">
+            <span class="pill"><span class="dot"></span><span id="count">0</span>&nbsp;itens visíveis</span>
+            <span class="pill"><span class="dot warn"></span>Filtre por ano ou por palavra-chave</span>
+          </div>
+          </div>
+      </header>
+
+      <main id="content">
+        <div class="empty" id="empty">Nenhum item encontrado com os filtros atuais.</div>
+      </main>
+
+      <footer>
+        <p>Dica: pesquise por termos como WRP, preformative, molt limits ou phenology.</p>
+      </footer>
+    </div>
+
+    <script>
+      // Data: 2006-2026 (molt strategies, molt terminology, molt limits, ageing/WRP, molt-migration).
+      // Note: dataset is curated, not exhaustive.
+      var PAPERS = [
+        // 2026
+        { year: 2026, authors: "Zuberogoitia, I.; Zabala, J.; Buechley, E. R.; et al.", title: "Balancing moult, migration, and breeding in a long-lived partially migrant raptor", venue: "Journal of Avian Biology 2026(2)", doi: "10.1002/jav.03590", url: "https://doi.org/10.1002/jav.03590", tag: "molt strategy; moult-migration-breeding tradeoffs" },
+        { year: 2026, authors: "Barshep, Y.; Bitrus, K. Z.; Tieleman, B. I.; Nwaogu, C. J.", title: "Diet-manipulated body condition affects onset and speed of moult in common bulbuls in a tropical environment", venue: "Journal of Avian Biology 2026(1)", doi: "10.1002/jav.03522", url: "https://doi.org/10.1002/jav.03522", tag: "drivers of molt timing/rate" },
+        { year: 2026, authors: "Klumpp, M. V.; Hegemann, A.", title: "Stable immune function during moult regardless of age-specific moulting strategy in a European passerine", venue: "Journal of Avian Biology 2026(1)", doi: "10.1002/jav.03531", url: "https://doi.org/10.1002/jav.03531", tag: "physiology during molt; age-specific strategies" },
+        { year: 2026, authors: "Mezebish Quinn, T.; Badzinski, S.; Hobson, K.; et al.", title: "Integrating telemetry data and stable isotope (delta2H) signatures to refine estimates of Greater Scaup breeding and molt origins", venue: "Avian Conservation and Ecology 21(1)", doi: "10.5751/ace-03041-210108", url: "https://doi.org/10.5751/ace-03041-210108", tag: "molt origins; movement ecology" },
+        { year: 2026, authors: "Depot, K. M.; Poole, A. F.; Purtell, G.", title: "A Photographic Guide to Plumage-Based Estimation of Nestling Age in Osprey", venue: "Journal of Raptor Research 60(2)", doi: "10.3356/jrr2590", url: "https://doi.org/10.3356/jrr2590", tag: "plumage-based ageing guide" },
+
+        // 2025
+        { year: 2025, authors: "Mumme, R. L.; Mulvihill, R. S.; Norman, D.", title: "Sex- and age-related differences in post-breeding molt phenology are phylogenetically and ecologically widespread in passerines", venue: "Ornithology 143(1): 1-12", doi: "10.1093/ornithology/ukaf039", url: "https://doi.org/10.1093/ornithology/ukaf039", tag: "comparative molt phenology" },
+        { year: 2025, authors: "Valeris-Chacin, C.; Zamorano-Escalona, T.; Chavez-Vasquez, K.; et al.", title: "Differences in molt timing, duration, and intensity between sexes in a Rufous-collared Sparrow population from central Chile", venue: "Journal of Field Ornithology 96(4)", doi: "10.5751/jfo-00689-960405", url: "https://doi.org/10.5751/jfo-00689-960405", tag: "sex differences in molt" },
+        { year: 2025, authors: "Turner, S.; Tonra, C.; Dossman, B.; et al.", title: "Prealternate molt intensity and timing in six Nearctic-Neotropical migratory warblers", venue: "Journal of Field Ornithology 96(4)", doi: "10.5751/jfo-00699-960401", url: "https://doi.org/10.5751/jfo-00699-960401", tag: "prealternate molt variation" },
+        { year: 2025, authors: "Adekola, O. E.; Ryan, P. G.", title: "Variation in wing and tail moult intensity in white-chinned petrels", venue: "Journal of Avian Biology 2025(1)", doi: "10.1111/jav.03327", url: "https://doi.org/10.1111/jav.03327", tag: "seabird flight-feather molt" },
+        { year: 2025, authors: "Scher, R. L.", title: "The Second Prebasic Molt of a Ring-billed Gull at Anchorage, Alaska", venue: "Western Birds 56(4): 294-298", doi: "10.21199/wb56.4.4", url: "https://doi.org/10.21199/wb56.4.4", tag: "second prebasic; ageing/ID" },
+        { year: 2025, authors: "Spasic, A. N.; Viverette, C.; Bressette, A. K.; et al.", title: "Female ornamentation is correlated with weather conditions during molt in Prothonotary Warbler: a 13-year study", venue: "Ornithology 142(4)", doi: "10.1093/ornithology/ukaf027", url: "https://doi.org/10.1093/ornithology/ukaf027", tag: "molt-environment; plumage signal" },
+        { year: 2025, authors: "Mumme, R. L.; Mulvihill, R. S.; Norman, D.", title: "Estimation of molt phenology under molt- and date-dependent sampling bias: conventional vs recapture-based methods", venue: "The Wilson Journal of Ornithology 137(4): 532-549", doi: "10.1080/15594491.2025.2527999", url: "https://doi.org/10.1080/15594491.2025.2527999", tag: "methods; molt phenology bias" },
+        { year: 2025, authors: "Guzman, P. E.; Amedee, N. A.; Warr, H. M.; et al.", title: "Grooming time parallels molt intensity in wild-caught feral rock pigeons", venue: "Journal of Avian Biology 2025(4)", doi: "10.1002/jav.03489", url: "https://doi.org/10.1002/jav.03489", tag: "behavior vs molt intensity" },
+        { year: 2025, authors: "Clark, W. S.", title: "Second replacement of proximal rectrices during the second prebasic molt of White-tailed Hawks in south Texas", venue: "The Wilson Journal of Ornithology 137(2): 218-223", doi: "10.1080/15594491.2024.2444749", url: "https://doi.org/10.1080/15594491.2024.2444749", tag: "rectrix replacement; ageing" },
+        { year: 2025, authors: "Sokolovskis, K.; Piironen, A.; Laaksonen, T.", title: "Translocation experiment provides evidence for oblique social learning of moult migration (taiga bean geese)", venue: "Journal of Avian Biology 2025(3)", doi: "10.1111/jav.03263", url: "https://doi.org/10.1111/jav.03263", tag: "molt-migration; social learning" },
+
+        // 2024
+        { year: 2024, authors: "Perez, M.; Brandolin, P.", title: "Molt patterns, aging, and sexing criteria for ten temperate Neotropic bird species", venue: "Journal of Field Ornithology 95(3)", doi: "10.5751/jfo-00527-950309", url: "https://doi.org/10.5751/jfo-00527-950309", tag: "molt-based ageing/sexing criteria" },
+        { year: 2024, authors: "Pyle, P.; Howell, S. N. G.; Rogers, D. I.; Corben, C.", title: "Moult terminology: envisioning an evolutionary approach", venue: "Journal of Avian Biology 2024(3-4)", doi: "10.1111/jav.03169", url: "https://doi.org/10.1111/jav.03169", tag: "terminology synthesis" },
+        { year: 2024, authors: "Boersch-Supan, P. H.; Hanmer, H. J.; Robinson, R. A.", title: "Extended molt phenology models improve inferences about molt duration and timing", venue: "Ornithology 141(2)", doi: "10.1093/ornithology/ukae003", url: "https://doi.org/10.1093/ornithology/ukae003", tag: "methods; molt phenology modeling" },
+        { year: 2024, authors: "Clark, C. J.; Areta, J. I.; Quiroga, J.", title: "Citizen science data reveal molt into drab nonbreeding plumage in five woodstar species", venue: "The Wilson Journal of Ornithology 136(3): 307-319", doi: "10.1676/23-00064", url: "https://doi.org/10.1676/23-00064", tag: "plumage/molt transitions" },
+        { year: 2024, authors: "Will, A.; McFarland, H.; Latty, C.; Powell, A.", title: "Geolocators, stable isotopes, and citizen science identify migratory timing, route, and spring molt of Smith's Longspurs", venue: "Avian Conservation and Ecology 19(1)", doi: "10.5751/ace-02629-190113", url: "https://doi.org/10.5751/ace-02629-190113", tag: "spring molt timing/location" },
+        { year: 2024, authors: "Kim, H.; Siegel, R.; Stephens, J.; et al.", title: "Annual migratory movement, apparent molt-migration, migration schedule, and diffuse migratory connectivity of Hermit Warblers", venue: "Avian Conservation and Ecology 19(2)", doi: "10.5751/ace-02622-190206", url: "https://doi.org/10.5751/ace-02622-190206", tag: "molt-migration inference" },
+        { year: 2024, authors: "Scher, R. L.", title: "Second Prebasic Molt of a Black-headed Gull at Anchorage, Alaska", venue: "Western Birds 55(1): 59-69", doi: "10.21199/wb55.1.5", url: "https://doi.org/10.21199/wb55.1.5", tag: "second prebasic; ageing/ID" },
+
+        // 2023
+        { year: 2023, authors: "Tattoni, D. J.", title: "An Eccentric Preformative Molt with Incomplete Replacement of Primary Coverts in a Dark-eyed Junco", venue: "Western Birds 54(3): 248-251", doi: "10.21199/wb54.3.7", url: "https://doi.org/10.21199/wb54.3.7", tag: "eccentric preformative molt; molt limits" },
+        { year: 2023, authors: "Rueda-Hernandez, R.; Guallar, S.; Pyle, P.", title: "Preformative molt extent of Cardellina warblers increases with breeding latitude and migration distance", venue: "The Wilson Journal of Ornithology 135(1): 46-55", doi: "10.1676/22-00048", url: "https://doi.org/10.1676/22-00048", tag: "preformative extent predictors" },
+        { year: 2023, authors: "Carnes, B.; Ash, A.", title: "Many Central American hummingbirds can be aged and sexed by molt patterns and bill corrugations", venue: "Journal of Field Ornithology 94(3)", doi: "10.5751/jfo-00305-940311", url: "https://doi.org/10.5751/jfo-00305-940311", tag: "ageing/sexing; molt + bill" },
+        { year: 2023, authors: "Stewart, M.; Pyle, P.; Clark, W.", title: "Molt and body measurements for Gray Hawks in the Lower Rio Grande Valley of Texas", venue: "Journal of Field Ornithology 94(4)", doi: "10.5751/jfo-00389-940410", url: "https://doi.org/10.5751/jfo-00389-940410", tag: "molt + morphometrics" },
+        { year: 2023, authors: "Cockle, K.; Villalba, O.; Farina, N.; et al.", title: "Non-breeding ecology of Common Nighthawk: habitat, activity patterns, molt, and migration", venue: "Journal of Field Ornithology 94(3)", doi: "10.5751/jfo-00293-940308", url: "https://doi.org/10.5751/jfo-00293-940308", tag: "molt in full annual-cycle" },
+        { year: 2023, authors: "Ferreira, D.; Figueira, L.; Cunha, F.; Lopes, L.", title: "Molt strategy and delayed plumage maturation in the Lined Seedeater", venue: "Journal of Field Ornithology 94(3)", doi: "10.5751/jfo-00310-940309", url: "https://doi.org/10.5751/jfo-00310-940309", tag: "delayed plumage maturation" },
+
+        // 2022
+        { year: 2022, authors: "Abraham, E. C.; Paxton, E. H.", title: "Molt patterns, aging criteria, and molt-breeding seasonality of native forest birds from Hawai'i", venue: "The Wilson Journal of Ornithology 134(3): 416-427", doi: "10.1676/21-00062", url: "https://doi.org/10.1676/21-00062", tag: "molt-based ageing criteria; seasonality" },
+        { year: 2022, authors: "Pyle, P.", title: "Using Macaulay Library images to determine avian molt strategies: a case study on hummingbirds", venue: "The Wilson Journal of Ornithology 134(1): 52-65", doi: "10.1676/21-00012", url: "https://doi.org/10.1676/21-00012", tag: "photo-based inference of molt strategy" },
+        { year: 2022, authors: "Harms, T. M.; Dinsmore, S. J.", title: "First documented molt migration of a wild Trumpeter Swan", venue: "The Wilson Journal of Ornithology 134(2): 352-358", doi: "10.1676/21-00055", url: "https://doi.org/10.1676/21-00055", tag: "molt migration" },
+        { year: 2022, authors: "Clark, W. S.", title: "Atypical molt sequences among primaries of Harris's Hawks in south Texas", venue: "The Wilson Journal of Ornithology 134(4): 699-702", doi: "10.1676/22-00028", url: "https://doi.org/10.1676/22-00028", tag: "atypical sequences; ageing cautions" },
+        { year: 2022, authors: "Vanausdall, R. A.; Collins, D. P.; Conway, W. C.; et al.", title: "Body condition and molt chronology of waterfowl in east central Texas", venue: "Journal of Field Ornithology 93(4)", doi: "10.5751/jfo-00178-930405", url: "https://doi.org/10.5751/jfo-00178-930405", tag: "molt chronology; waterfowl" },
+        { year: 2022, authors: "Pyle, P.; Carnes, B. H.", title: "Molt Strategies by Age and Subspecies in the Willow Flycatcher", venue: "Western Birds 53(3): 216-231", doi: "10.21199/wb53.3.4", url: "https://doi.org/10.21199/wb53.3.4", tag: "molt strategy + ageing criteria" },
+        { year: 2022, authors: "Tattoni, D. J.; LaBarbera, K.; Hathcock, C. D.", title: "Incidence and Extent of Eccentric Preformative Molt in the California and Canyon Towhees", venue: "Western Birds 53(2): 163-168", doi: "10.21199/wb53.2.5", url: "https://doi.org/10.21199/wb53.2.5", tag: "eccentric preformative molt" },
+
+        // 2021
+        { year: 2021, authors: "Ward, G. M.; Mahoney, S. M.; Joly, S.; Reudink, M. W.", title: "Effects of age and weather during moult on mountain bluebird structural colouration", venue: "Journal of Avian Biology 52(2)", doi: "10.1111/jav.02616", url: "https://doi.org/10.1111/jav.02616", tag: "molt conditions -> plumage signals" },
+        { year: 2021, authors: "Hutton, P.; McKenna, J.; McGraw, K. J.", title: "Urban links to molt schedule, body condition and carotenoid-based coloration in House Finch", venue: "Journal of Avian Biology 52(5)", doi: "10.1111/jav.02761", url: "https://doi.org/10.1111/jav.02761", tag: "molt schedule + condition" },
+        { year: 2021, authors: "Terrill, R. S.; Fong, Y.; Wolfe, J. D.; Zellmer, A. J.", title: "Threshold models improve estimates of molt parameters in datasets with small sample sizes", venue: "Ornithology 138(3)", doi: "10.1093/ornithology/ukab038", url: "https://doi.org/10.1093/ornithology/ukab038", tag: "methods; molt parameter estimation" },
+        { year: 2021, authors: "Mumme, R. L.; Mulvihill, R. S.; Norman, D.", title: "High-intensity flight feather molt and comparative molt ecology of warblers of eastern North America", venue: "Ornithology 138(1)", doi: "10.1093/ornithology/ukaa072", url: "https://doi.org/10.1093/ornithology/ukaa072", tag: "comparative flight-feather molt ecology" },
+        { year: 2021, authors: "Wolfe, J. D.; Terrill, R. S.; Johnson, E. I.; Powell, L. L.; Ryder, T. B.", title: "Ecological and evolutionary significance of molt in lowland Neotropical landbirds", venue: "Ornithology 138(1)", doi: "10.1093/ornithology/ukaa073", url: "https://doi.org/10.1093/ornithology/ukaa073", tag: "molt as life-history axis; Neotropics" },
+        { year: 2021, authors: "Guallar, S.; Rueda-Hernandez, R.; Pyle, P.", title: "Evolution of the preformative molt in Cardinalidae correlates with transitions from forest to open habitats", venue: "Ornithology 138(1)", doi: "10.1093/ornithology/ukaa070", url: "https://doi.org/10.1093/ornithology/ukaa070", tag: "preformative molt evolution" },
+        { year: 2021, authors: "Scholer, M. N.; Kennedy, J. C.; Carnes, B. H.; Jankowski, J. E.", title: "Preformative molt, plumage maturation, and age criteria for 7 species of manakins", venue: "The Wilson Journal of Ornithology 133(3): 379-526", doi: "10.1676/20-00125", url: "https://doi.org/10.1676/20-00125", tag: "age criteria; manakins" },
+        { year: 2021, authors: "Carnes, B.; Antezana Aponte, M.; Huayanca Munarriz, R.; Martinez, A. E.", title: "Preformative molt extent and aging/sexing criteria for eight hummingbird species in SE Peru", venue: "Ornitologia Neotropical 32(2): 106-115", doi: "10.58843/ornneo.v32i2.867", url: "https://doi.org/10.58843/ornneo.v32i2.867", tag: "ageing/sexing; hummingbirds" },
+        { year: 2021, authors: "Walker, B. L.; Schroeder, M. A.", title: "Atypical primary molt patterns in greater sage-grouse: implications for age classification", venue: "Wildlife Biology 2021(2)", doi: "10.2981/wlb.00855", url: "https://doi.org/10.2981/wlb.00855", tag: "age classification; atypical molt" },
+        { year: 2021, authors: "Fine, J.; VanBuskirk, R. L.; Parlapiano, J. B.; Baumann, M. J.", title: "Notes on age, provenance, and Pluvialis molt in vagrancy documentation", venue: "Western Birds 52(2): 183-187", doi: "10.21199/wb52.2.10", url: "https://doi.org/10.21199/wb52.2.10", tag: "ageing/ID notes; molt in documentation" },
+
+        // 2020
+        { year: 2020, authors: "Delhey, K.; Guallar, S.; Rueda-Hernandez, R.; et al.", title: "Partial or complete? The evolution of post-juvenile moult strategies in passerine birds", venue: "Journal of Animal Ecology 89(12): 2896-2908", doi: "10.1111/1365-2656.13354", url: "https://doi.org/10.1111/1365-2656.13354", tag: "evolution of post-juvenile molt strategies" },
+        { year: 2020, authors: "Guallar, S.; Jovani, R.", title: "Wing-feather moult phenotypes differ between the preformative and prealternate episodes and along passerine phylogeny", venue: "Ibis 162(3): 778-786", doi: "10.1111/ibi.12798", url: "https://doi.org/10.1111/ibi.12798", tag: "preformative vs prealternate phenotypes; phylogeny" },
+        { year: 2020, authors: "Unitt, P.; Hargrove, L.; Clark, K. B.", title: "Overlap of Molt and Fall Migration of the Western Tanager and Warbling Vireo in Southern California", venue: "Western Birds 51(1): 59-64", doi: "10.21199/wb51.1.5", url: "https://doi.org/10.21199/wb51.1.5", tag: "overlap of molt and migration" },
+        { year: 2020, authors: "Pyle, P.", title: "Molt, Age, and Identification of the Masked and Nazca Boobies in California", venue: "Western Birds 51(2): 129-149", doi: "10.21199/wb51.2.6", url: "https://doi.org/10.21199/wb51.2.6", tag: "molt-based ageing/ID; seabirds" },
+
+        // 2019
+        { year: 2019, authors: "Grissot, A.; Graham, I. M.; Quinn, L.; et al.", title: "Breeding status influences timing but not duration of moult in the Northern Fulmar", venue: "Ibis", doi: "10.1111/ibi.12714", url: "https://doi.org/10.1111/ibi.12714", tag: "moult phenology: breeding status effects" },
+        { year: 2019, authors: "Fernandez-Eslava, B.; Alonso, D.; Galicia, D.; Arizaga, J.", title: "Estimation of moult duration in birds with suspended moults: the case of the Red Crossbill and its relation to reproduction", venue: "Journal of Ornithology", doi: "10.1007/s10336-019-01739-7", url: "https://doi.org/10.1007/s10336-019-01739-7", tag: "moult phenology modeling; suspended moult" },
+        { year: 2019, authors: "Jiguet, F.; Kardynal, K. J.; Piha, M.; et al.", title: "Stable isotopes reveal the common winter moult of central rectrices in a long-distance migrant songbird", venue: "Journal of Ornithology", doi: "10.1007/s10336-019-01671-w", url: "https://doi.org/10.1007/s10336-019-01671-w", tag: "stable isotopes; winter rectrix moult" },
+        { year: 2019, authors: "Park, J.-G.; Park, C.-U.; Jin, K.-S.; et al.", title: "Moult and plumage patterns of the critically endangered Yellow-breasted Bunting at a stopover site in Korea", venue: "Journal of Ornithology", doi: "10.1007/s10336-019-01716-0", url: "https://doi.org/10.1007/s10336-019-01716-0", tag: "moult/plumage patterns at stopover; ageing context" },
+        { year: 2019, authors: "Ramirez, J.; Panuccio, M.", title: "Flight feather moult in Western Marsh Harriers during autumn migration", venue: "Avian Research", doi: "10.1186/s40657-019-0146-9", url: "https://doi.org/10.1186/s40657-019-0146-9", tag: "flight-feather moult during migration; raptor" },
+        { year: 2019, authors: "Kolzsch, A.; Muskens, G. J. D. M.; Szinai, P.; et al.", title: "Flyway connectivity and exchange primarily driven by moult migration in geese", venue: "Movement Ecology", doi: "10.1186/s40462-019-0148-6", url: "https://doi.org/10.1186/s40462-019-0148-6", tag: "moult-migration shaping flyway connectivity" },
+        { year: 2019, authors: "Brides, K.; Wood, K. A.; Petrek, S. W.; et al.", title: "Moult migration, site fidelity and survival of British Greylag Geese at Windermere, Cumbria", venue: "Ringing & Migration", doi: "10.1080/03078698.2019.1887673", url: "https://doi.org/10.1080/03078698.2019.1887673", tag: "moult migration; site fidelity and survival" },
+        { year: 2019, authors: "Mackentley, N.; Jacobs, E. A.; Evans, D. L.", title: "Ageing Northern Saw-whet Owls from remigial molt patterns", venue: "Journal of Raptor Research", doi: "10.3356/0892-1016-53.4.387", url: "https://doi.org/10.3356/0892-1016-53.4.387", tag: "molt-based ageing; owls" },
+        { year: 2019, authors: "Carnes, B. H.; Ash, A.", title: "Evidence for Suspension of Prebasic Molt in a White-eyed Vireo", venue: "Western Birds", doi: "10.21199/wb50.1.7", url: "https://doi.org/10.21199/wb50.1.7", tag: "molt strategy; suspended prebasic" },
+        { year: 2019, authors: "Akatani, K.; Takagi, M.", title: "Remigial and rectricial molt sequences in a captive Ryukyu Scops-Owl", venue: "The Wilson Journal of Ornithology", doi: "10.1676/1559-4491-131.4.828", url: "https://doi.org/10.1676/1559-4491-131.4.828", tag: "flight-feather molt sequences; ageing relevance" },
+        { year: 2019, authors: "Klug, P. E.; Homan, H. J.; Peer, B. D.; Linz, G. M.", title: "Flight feather molt in Common Grackles", venue: "The Wilson Journal of Ornithology", doi: "10.1676/1559-4491-131.4.807", url: "https://doi.org/10.1676/1559-4491-131.4.807", tag: "flight-feather molt description; phenology" },
+
+        // 2018
+        { year: 2018, authors: "Tonra, C. M.; Reudink, M. W.", title: "Expanding the traditional definition of molt-migration", venue: "The Auk 135(4): 1123-1132", doi: "10.1642/auk-17-187.1", url: "https://doi.org/10.1642/auk-17-187.1", tag: "molt-migration definition/framework" },
+        { year: 2018, authors: "Rohwer, S.; Rohwer, V. G.", title: "Primary molt in Gruiforms and simpler molt summary tables", venue: "PeerJ 6:e5499", doi: "10.7717/peerj.5499", url: "https://doi.org/10.7717/peerj.5499", tag: "primary molt patterns + summary methods" },
+        { year: 2018, authors: "Guallar, S.; Ruiz-Sanchez, A.; Rueda-Hernandez, R.; Pyle, P.", title: "Preformative wing molt in 23 Neotropical resident passerine species", venue: "Ornitologia Neotropical 29: S3-S10", doi: "10.58843/ornneo.v29i2.186", url: "https://doi.org/10.58843/ornneo.v29i2.186", tag: "preformative wing molt; Neotropics" },
+        { year: 2018, authors: "Pyle, P.; Ayyash, A.; Bartosik, M. B.", title: "Replacement of Primaries during Prealternate Molt in North American Larus Gulls", venue: "Western Birds 49(4): 293-306", doi: "10.21199/wb49.4.9", url: "https://doi.org/10.21199/wb49.4.9", tag: "prealternate primaries; gulls" },
+        { year: 2018, authors: "Quispe, R.; Yohannes, E.; Gahr, M.", title: "Seasonality at the equator: isotope signatures and hormonal correlates of molt phenology in a non-migratory Amazonian songbird", venue: "Frontiers in Zoology 15(1)", doi: "10.1186/s12983-018-0284-7", url: "https://doi.org/10.1186/s12983-018-0284-7", tag: "tropical molt phenology; isotopes + hormones" },
+
+        // 2017
+        { year: 2017, authors: "Kiat, Y.; Sapir, N.", title: "Age-Dependent Modulation of Songbird Summer Feather Molt by Temporal and Functional Constraints", venue: "The American Naturalist 189(2): 184-195", doi: "10.1086/690031", url: "https://doi.org/10.1086/690031", tag: "constraints on molt timing; age dependence" },
+        { year: 2017, authors: "Imlay, T. L.; Steenweg, R. J.; Garcia-Perez, B.; et al.", title: "Temporal and spatial patterns of flight and body feather molt of swallows in North and South America", venue: "Journal of Field Ornithology 88(4): 405-415", doi: "10.1111/jofo.12235", url: "https://doi.org/10.1111/jofo.12235", tag: "comparative molt phenology; swallows" },
+        { year: 2017, authors: "Wiegardt, A. K.; Barton, D. C.; Wolfe, J. D.", title: "Post-breeding population dynamics indicate upslope molt-migration by Wilson's Warblers", venue: "Journal of Field Ornithology 88(1): 47-52", doi: "10.1111/jofo.12185", url: "https://doi.org/10.1111/jofo.12185", tag: "upslope molt-migration" },
+
+        // 2016
+        { year: 2016, authors: "Bridge, E. S.; Ross, J. D.; Contina, A. J.; Kelly, J. F.", title: "Do molt-migrant songbirds optimize migration routes based on primary productivity?", venue: "Behavioral Ecology 27(3): 784-792", doi: "10.1093/beheco/arv199", url: "https://doi.org/10.1093/beheco/arv199", tag: "molt-migration route optimization" },
+        { year: 2016, authors: "Kiat, Y.; Izhaki, I.; Sapir, N.", title: "Determinants of wing-feather moult speed in songbirds", venue: "Evolutionary Ecology 30(4): 783-795", doi: "10.1007/s10682-016-9838-3", url: "https://doi.org/10.1007/s10682-016-9838-3", tag: "molt speed determinants" },
+        { year: 2016, authors: "Marmillot, V.; Gauthier, G.; Cadieux, M.; Legagneux, P.", title: "Plasticity in moult speed and timing in an arctic-nesting goose species", venue: "Journal of Avian Biology 47(5): 650-658", doi: "10.1111/jav.00982", url: "https://doi.org/10.1111/jav.00982", tag: "plasticity in molt speed/timing" },
+        { year: 2016, authors: "Pyle, P.; Tranquillo, K.; Kayano, K.; Arcilla, N.", title: "Molt patterns, age criteria, and molt-breeding dynamics in American Samoan landbirds", venue: "The Wilson Journal of Ornithology 128(1): 56-69", doi: "10.1676/wils-128-01-56-69.1", url: "https://doi.org/10.1676/wils-128-01-56-69.1", tag: "tropical molt patterns; ageing criteria" },
+        { year: 2016, authors: "Rockey, W. L.", title: "Preformative molt adjustment in phenologically divergent populations of the Lesser Goldfinch", venue: "The Wilson Journal of Ornithology 128(1): 70-74", doi: "10.1676/wils-128-01-70-74.1", url: "https://doi.org/10.1676/wils-128-01-70-74.1", tag: "population variation; preformative timing" },
+        { year: 2016, authors: "Siegel, R. B.; Taylor, R.; Saracco, J. F.; et al.", title: "GPS-tracking reveals non-breeding locations and apparent molt migration of a Black-headed Grosbeak", venue: "Journal of Field Ornithology 87(2): 196-203", doi: "10.1111/jofo.12149", url: "https://doi.org/10.1111/jofo.12149", tag: "tracking evidence for molt-migration" },
+
+        // 2015
+        { year: 2015, authors: "Howell, S. N. G.; Pyle, P.", title: "Use of 'definitive' and other terms in molt nomenclature: a response to Wolfe et al. (2014)", venue: "The Auk 132(2): 365-369", doi: "10.1642/auk-14-180.1", url: "https://doi.org/10.1642/auk-14-180.1", tag: "terminology clarification" },
+        { year: 2015, authors: "Morrison, C. A.; Baillie, S. R.; Clark, J. A.; et al.", title: "Flexibility in the timing of post-breeding moult in passerines in the UK", venue: "Ibis 157(2): 340-350", doi: "10.1111/ibi.12234", url: "https://doi.org/10.1111/ibi.12234", tag: "phenology plasticity" },
+        { year: 2015, authors: "Saino, N.; Rubolini, D.; Ambrosini, R.; et al.", title: "Light-level geolocators reveal covariation between winter plumage molt and phenology in a trans-Saharan migratory bird", venue: "Oecologia 178(4): 1105-1112", doi: "10.1007/s00442-015-3299-1", url: "https://doi.org/10.1007/s00442-015-3299-1", tag: "geolocators; molt timing covariance" },
+        { year: 2015, authors: "Lourenco, P. M.; Piersma, T.", title: "Migration distance and breeding latitude correlate with scheduling of prealternate body moult in migratory waders", venue: "Journal of Ornithology 156(3): 657-665", doi: "10.1007/s10336-015-1175-8", url: "https://doi.org/10.1007/s10336-015-1175-8", tag: "prealternate scheduling; waders" },
+
+        // 2014
+        { year: 2014, authors: "Wolfe, J. D.; Johnson, E. I.; Terrill, R. S.", title: "Searching for consensus in molt terminology 11 years after Howell et al.'s 'first basic problem'", venue: "The Auk 131(3): 371-377", doi: "10.1642/auk-13-087.1", url: "https://doi.org/10.1642/auk-13-087.1", tag: "molt terminology debate" },
+        { year: 2014, authors: "Guallar, S.; Ruiz-Sanchez, A.; Rueda-Hernandez, R.; Pyle, P.", title: "Moult topography and its application to the study of partial wing-moult in two neotropical wrens", venue: "Ibis 156(2): 311-320", doi: "10.1111/ibi.12138", url: "https://doi.org/10.1111/ibi.12138", tag: "molt topography; partial wing-molt" },
+        { year: 2014, authors: "Jukema, J.; Wiersma, P.", title: "Climate change and advanced primary moult in Eurasian Golden Plovers", venue: "Ardea 102(2): 153-160", doi: "10.5253/arde.v102i2.a5", url: "https://doi.org/10.5253/arde.v102i2.a5", tag: "climate-linked molt phenology shift" },
+        { year: 2014, authors: "Rogers, K. G.; Rogers, D. I.; Weston, M. A.", title: "Prolonged and flexible primary moult overlaps extensively with breeding in Hooded Plovers", venue: "Ibis 156(4): 840-849", doi: "10.1111/ibi.12184", url: "https://doi.org/10.1111/ibi.12184", tag: "overlap of breeding and primary molt" },
+
+        // 2013
+        { year: 2013, authors: "Rohwer, S.", title: "Molt intensity and conservation of a molt migrant in Northwest Mexico", venue: "The Condor 115(2): 421-433", doi: "10.1525/cond.2013.120090", url: "https://doi.org/10.1525/cond.2013.120090", tag: "molt-migrant intensity; conservation" },
+        { year: 2013, authors: "Pyle, P.", title: "Molt homologies in ducks and other birds: response to Hawkins (2011)", venue: "Waterbirds 36(1): 77-81", doi: "10.1675/063.036.0111", url: "https://doi.org/10.1675/063.036.0111", tag: "molt homologies/terminology; ducks" },
+        { year: 2013, authors: "Gargallo, G.", title: "Feather selection and replacement patterns demonstrate Goldfinches fix postjuvenile moult extent prior to moult initiation", venue: "Journal of Ornithology 154(1): 219-230", doi: "10.1007/s10336-012-0888-1", url: "https://doi.org/10.1007/s10336-012-0888-1", tag: "mechanism for molt limits; postjuvenile extent" },
+        { year: 2013, authors: "Echeverry-Galvis, M. A.; Hau, M.", title: "Flight performance and feather quality: price of overlapping moult and breeding", venue: "PLoS ONE 8(5): e61106", doi: "10.1371/journal.pone.0061106", url: "https://doi.org/10.1371/journal.pone.0061106", tag: "cost of overlap molt+breeding" },
+
+        // 2012
+        { year: 2012, authors: "Rohwer, S.; Broms, K.", title: "Use of feather loss intervals to estimate molt duration", venue: "The Auk 129(4): 653-659", doi: "10.1525/auk.2012.12096", url: "https://doi.org/10.1525/auk.2012.12096", tag: "methods; molt duration estimation" },
+        { year: 2012, authors: "de la Hera, I.; DeSante, D. F.; Mila, B.", title: "Feather growth rate and mass in Nearctic passerines with variable migratory behavior and molt pattern", venue: "The Auk 129(2): 222-230", doi: "10.1525/auk.2012.11212", url: "https://doi.org/10.1525/auk.2012.11212", tag: "feather growth physiology; molt strategies" },
+        { year: 2012, authors: "Singer, H. V.; Sedinger, J. S.; Nicolai, C. A.; et al.", title: "Timing of adult remigial wing molt in female Black Brant", venue: "The Auk 129(2): 239-246", doi: "10.1525/auk.2012.11180", url: "https://doi.org/10.1525/auk.2012.11180", tag: "wing molt phenology; geese" },
+
+        // 2011
+        { year: 2011, authors: "Johnson, E. I.; Wolfe, J. D.; Ryder, T. B.; Pyle, P.", title: "Modifications to a molt-based ageing system proposed by Wolfe et al. (2010)", venue: "Journal of Field Ornithology 82(4): 422-424", doi: "10.1111/j.1557-9263.2011.00345.x", url: "https://doi.org/10.1111/j.1557-9263.2011.00345.x", tag: "WRP modifications" },
+        { year: 2011, authors: "Bridge, E. S.; Fudickar, A. M.; Kelly, J. F.; et al.", title: "Causes of bimodal stable isotope signatures in the feathers of a molt-migrant songbird", venue: "Canadian Journal of Zoology 89(10): 951-959", doi: "10.1139/z11-064", url: "https://doi.org/10.1139/z11-064", tag: "stable isotopes; interpreting molt-migrant signals" },
+        { year: 2011, authors: "Hoye, B. J.; Buttemer, W. A.", title: "Inexplicable inefficiency of avian molt? Insights from an opportunistically breeding arid-zone species", venue: "PLoS ONE 6(2): e16230", doi: "10.1371/journal.pone.0016230", url: "https://doi.org/10.1371/journal.pone.0016230", tag: "molt strategy constraints; opportunistic breeder" },
+        { year: 2011, authors: "Radley, P.; Crary, A. L.; Bradley, J.; et al.", title: "Molt patterns, biometrics, and age and gender classification of landbirds on Saipan, Northern Mariana Islands", venue: "The Wilson Journal of Ornithology 123(3): 588-594", doi: "10.1676/10-154.1", url: "https://doi.org/10.1676/10-154.1", tag: "applied ageing/sexing with molt patterns" },
+        { year: 2011, authors: "Rohwer, S.; Irwin, D. E.", title: "Molt, orientation, and avian speciation", venue: "The Auk 128(2): 419-425", doi: "10.1525/auk.2011.10176", url: "https://doi.org/10.1525/auk.2011.10176", tag: "conceptual link: molt/migration/orientation and speciation" },
+        { year: 2011, authors: "Rohwer, S.; Hobson, K. A.; Yang, S.", title: "Stable isotopes (deltaD) reveal east-west differences in scheduling of molt and migration in Northern Rough-winged Swallows", venue: "The Auk 128(3): 522-530", doi: "10.1525/auk.2011.10273", url: "https://doi.org/10.1525/auk.2011.10273", tag: "isotopes; molt vs migration scheduling" },
+        { year: 2011, authors: "Rohwer, S.; Viggiano, A.; Marzluff, J. M.", title: "Reciprocal tradeoffs between molt and breeding in albatrosses", venue: "The Condor 113(1): 61-71", doi: "10.1525/cond.2011.100092", url: "https://doi.org/10.1525/cond.2011.100092", tag: "trade-offs molt vs breeding" },
+        { year: 2011, authors: "Cornelius, J. M.; Perfito, N.; Zann, R.; et al.", title: "Physiological trade-offs in self-maintenance: plumage molt and stress physiology in birds", venue: "Journal of Experimental Biology 214(16): 2768-2777", doi: "10.1242/jeb.057174", url: "https://doi.org/10.1242/jeb.057174", tag: "physiology; molt and stress" },
+        { year: 2011, authors: "De La Hera, I.; Schaper, S. V.; Diaz, J. A.; et al.", title: "Variation in molt duration of passerines explained by tail-feather growth rate", venue: "The Auk 128(2): 321-329", doi: "10.1525/auk.2011.10181", url: "https://doi.org/10.1525/auk.2011.10181", tag: "molt duration modeling" },
+        { year: 2011, authors: "Stutchbury, B. J. M.; Gow, E. A.; Done, T.; et al.", title: "Effects of post-breeding moult and energetic condition on timing of songbird migration into the tropics", venue: "Proceedings B 278(1702): 131-137", doi: "10.1098/rspb.2010.1220", url: "https://doi.org/10.1098/rspb.2010.1220", tag: "carry-over effects; molt -> migration timing" },
+
+        // 2010
+        { year: 2010, authors: "Wolfe, J. D.; Ryder, T. B.; Pyle, P.", title: "Using molt cycles to categorize the age of tropical birds: an integrative new system", venue: "Journal of Field Ornithology 81(2): 186-194", doi: "10.1111/j.1557-9263.2010.00276.x", url: "https://doi.org/10.1111/j.1557-9263.2010.00276.x", tag: "WRP foundational paper" },
+        { year: 2010, authors: "Mettke-Hofmann, C.; Sinclair, P. H.; Hamel, P. B.; Greenberg, R.", title: "Implications of prebasic and a previously undescribed prealternate molt for aging Rusty Blackbirds", venue: "The Condor 112(4): 854-861", doi: "10.1525/cond.2010.100150", url: "https://doi.org/10.1525/cond.2010.100150", tag: "ageing impacted by prealternate molt" },
+        { year: 2010, authors: "De La Hera, I.; Perez-Tris, J.; Telleria, J. L.", title: "Relationships among timing of moult, moult duration and feather mass in long-distance migratory passerines", venue: "Journal of Avian Biology 41(6): 609-614", doi: "10.1111/j.1600-048x.2010.05075.x", url: "https://doi.org/10.1111/j.1600-048x.2010.05075.x", tag: "timing vs duration vs feather mass" },
+        { year: 2010, authors: "Vagasi, C. I.; Pap, P. L.; Barta, Z.", title: "Haste makes waste: accelerated molt adversely affects plumage ornaments in House Sparrows", venue: "PLoS ONE 5(12): e14215", doi: "10.1371/journal.pone.0014215", url: "https://doi.org/10.1371/journal.pone.0014215", tag: "trade-off: molt speed vs ornament quality" },
+
+        // 2009
+        { year: 2009, authors: "Rohwer, S.; Ricklefs, R. E.; Rohwer, V. G.; Copple, M. M.", title: "Allometry of the duration of flight feather molt in birds", venue: "PLoS Biology 7(6): e1000132", doi: "10.1371/journal.pbio.1000132", url: "https://doi.org/10.1371/journal.pbio.1000132", tag: "allometry of flight-feather molt duration" },
+        { year: 2009, authors: "Pyle, P.", title: "Age determination and molt strategies in North American alcids", venue: "Marine Ornithology 37(3)", doi: "10.5038/2074-1235.37.3.847", url: "https://doi.org/10.5038/2074-1235.37.3.847", tag: "molt strategies for age determination; alcids" },
+        { year: 2009, authors: "Pyle, P.; Leitner, W. A.; Lozano-Angulo, L.; et al.", title: "Temporal, spatial, and annual variation in the occurrence of molt-migrant passerines in the Mexican Monsoon region", venue: "The Condor 111(4): 583-590", doi: "10.1525/cond.2009.090085", url: "https://doi.org/10.1525/cond.2009.090085", tag: "molt-migration hotspot ecology" },
+        { year: 2009, authors: "Wolfe, J. D.; Pyle, P.; Ralph, C. J.", title: "Breeding seasons, molt patterns, and gender and age criteria for selected northeastern Costa Rican resident landbirds", venue: "The Wilson Journal of Ornithology 121(3): 556-567", doi: "10.1676/08-111.1", url: "https://doi.org/10.1676/08-111.1", tag: "tropical age/sex criteria + molt" },
+        { year: 2009, authors: "Barry, J. H.; Butler, L. K.; Rohwer, S.; Rohwer, V. G.", title: "Documenting molt-migration in Western Kingbird using two measures of collecting effort", venue: "The Auk 126(2): 260-267", doi: "10.1525/auk.2009.07137", url: "https://doi.org/10.1525/auk.2009.07137", tag: "molt-migration documentation" },
+
+        // 2008
+        { year: 2008, authors: "Rohwer, S.", title: "A primer on summarizing molt data for flight feathers", venue: "The Condor 110(4): 799-806", doi: "10.1525/cond.2008.8320", url: "https://doi.org/10.1525/cond.2008.8320", tag: "methods primer; molt scoring" },
+        { year: 2008, authors: "Rohwer, V. G.; Rohwer, S.; Barry, J. H.", title: "Molt scheduling of western Neotropical migrants and upslope movement of Cassin's Vireo", venue: "The Condor 110(2): 365-370", doi: "10.1525/cond.2008.8321", url: "https://doi.org/10.1525/cond.2008.8321", tag: "molt scheduling; upslope movement" },
+        { year: 2008, authors: "Reudink, M. W.; Marra, P. P.; Langin, K. M.; et al.", title: "Molt-migration in the American Redstart revisited: explaining variation in feather deltaD signatures", venue: "The Auk 125(3): 744-748", doi: "10.1525/auk.2008.2708.1", url: "https://doi.org/10.1525/auk.2008.2708.1", tag: "molt-migration via isotopes" },
+
+        // 2007
+        { year: 2007, authors: "Pyle, P.", title: "Revision of molt and plumage terminology in ptarmigan based on evolutionary considerations", venue: "The Auk 124(2): 508-514", doi: "10.1093/auk/124.2.508", url: "https://doi.org/10.1093/auk/124.2.508", tag: "terminology revision; ptarmigan" },
+
+        // 2006
+        { year: 2006, authors: "Bridge, E. S.", title: "Influences of morphology and behavior on wing-molt strategies in seabirds", venue: "Marine Ornithology 34(1)", doi: "10.5038/2074-1235.34.1.677", url: "https://doi.org/10.5038/2074-1235.34.1.677", tag: "comparative wing-molt strategies" },
+        { year: 2006, authors: "Butler, L. K.; Rohwer, S.; Rogers, M.", title: "Prebasic molt and molt-related movements in Ash-throated Flycatchers", venue: "The Condor 108(3): 647-660", doi: "10.1093/condor/108.3.647", url: "https://doi.org/10.1093/condor/108.3.647", tag: "prebasic molt + molt-related movement" },
+        { year: 2006, authors: "Debruyne, C. A.; Hughes, J. M.; Hussell, D. J. T.", title: "Age-related timing and patterns of prebasic body molt in wood warblers (Parulidae)", venue: "The Wilson Journal of Ornithology 118(3): 374-379", doi: "10.1676/04-120.1", url: "https://doi.org/10.1676/04-120.1", tag: "age-related prebasic body molt" },
+        { year: 2006, authors: "Perez, G. E.; Hobson, K. A.", title: "Isotopic evaluation of interrupted molt in Loggerhead Shrike", venue: "The Condor 108(4): 877-886", doi: "10.1093/condor/108.4.877", url: "https://doi.org/10.1093/condor/108.4.877", tag: "interrupted molt; isotopes" }
+      ];
+
+      (function () {
+        var q = document.getElementById('q');
+        var yearSel = document.getElementById('year');
+        var content = document.getElementById('content');
+        var empty = document.getElementById('empty');
+        var count = document.getElementById('count');
+        var hint = document.getElementById('hint');
+
+        function norm(s) {
+          return (s || '').toLowerCase().trim();
+        }
+
+        function citation(p) {
+          var link = p.url || (p.doi ? ('https://doi.org/' + p.doi) : '');
+          var parts = [];
+          parts.push(p.authors + ' (' + String(p.year) + ').');
+          parts.push(p.title + '.');
+          if (p.venue) parts.push(p.venue + '.');
+          if (link) parts.push(link);
+          return parts.join(' ');
+        }
+
+        function haystack(p) {
+          return norm([p.year, p.authors, p.title, p.venue, p.doi, p.url, p.tag].join(' '));
+        }
+
+        function el(tag, attrs, text) {
+          var node = document.createElement(tag);
+          if (attrs) {
+            Object.keys(attrs).forEach(function (k) {
+              if (k === 'class') node.className = attrs[k];
+              else if (k === 'html') node.innerHTML = attrs[k];
+              else node.setAttribute(k, attrs[k]);
+            });
+          }
+          if (typeof text === 'string') node.textContent = text;
+          return node;
+        }
+
+        function renderPaper(p) {
+          var card = el('article', { class: 'paper', 'data-year': String(p.year) });
+          card.setAttribute('data-haystack', haystack(p));
+
+          var h3 = el('h3');
+          var a = el('a', { href: (p.url || ('https://doi.org/' + p.doi)), target: '_blank', rel: 'noreferrer' }, p.title);
+          h3.appendChild(a);
+          card.appendChild(h3);
+
+          var citeLine = p.authors + ' (' + String(p.year) + '). ' + (p.venue ? (p.venue + '. ') : '') + (p.doi ? ('DOI: ' + p.doi) : '');
+          card.appendChild(el('p', { class: 'cite' }, citeLine));
+          if (p.tag) {
+            var tagWrap = el('div', { class: 'tags' });
+            p.tag.split(';').map(function (t) { return t.trim(); }).filter(Boolean).forEach(function (t) {
+              var pill = el('span', { class: 'tag', title: 'Filtrar por: ' + t });
+              pill.textContent = t;
+              pill.addEventListener('click', function () {
+                q.value = t;
+                applyFilters();
+                q.focus();
+              });
+              tagWrap.appendChild(pill);
+            });
+            card.appendChild(tagWrap);
+          }
+
+          var actions = el('div', { class: 'actions' });
+          actions.appendChild(el('a', { class: 'btn primary', href: (p.url || ('https://doi.org/' + p.doi)), target: '_blank', rel: 'noreferrer' }, 'Abrir DOI'));
+          var btn = el('button', { class: 'btn', type: 'button' }, 'Copiar citação');
+          btn.setAttribute('data-copy', citation(p));
+          actions.appendChild(btn);
+          card.appendChild(actions);
+          return card;
+        }
+
+        function renderYearSection(y, papers) {
+          var sec = el('section', { class: 'year', 'data-year': String(y) });
+          var head = el('div', { class: 'year-head' });
+          head.appendChild(el('h2', { class: 'year-title' }, String(y)));
+          head.appendChild(el('div', { class: 'year-count' }, String(papers.length) + ' itens'));
+          sec.appendChild(head);
+          var grid = el('div', { class: 'grid' });
+          papers.forEach(function (p) { grid.appendChild(renderPaper(p)); });
+          sec.appendChild(grid);
+          return sec;
+        }
+
+        function uniqYears() {
+          var ys = {};
+          PAPERS.forEach(function (p) { ys[p.year] = true; });
+          return Object.keys(ys).map(function (x) { return Number(x); }).sort(function (a, b) { return b - a; });
+        }
+
+        function renderAll() {
+          // Keep the empty node at top.
+          while (content.firstChild) content.removeChild(content.firstChild);
+          content.appendChild(empty);
+
+          var years = uniqYears();
+          years.forEach(function (y) {
+            var ps = PAPERS.filter(function (p) { return p.year === y; });
+            content.appendChild(renderYearSection(y, ps));
+          });
+        }
+
+        function populateYearSelect() {
+          var years = uniqYears();
+          years.forEach(function (y) {
+            yearSel.appendChild(el('option', { value: String(y) }, String(y)));
+          });
+        }
+
+        function applyFilters() {
+          var needle = norm(q.value);
+          var y = yearSel.value;
+          var visible = 0;
+          var perYear = {};
+
+          Array.prototype.slice.call(document.querySelectorAll('.paper')).forEach(function (card) {
+            var okYear = !y || card.getAttribute('data-year') === y;
+            var hay = norm(card.getAttribute('data-haystack'));
+            var okNeedle = !needle || hay.indexOf(needle) !== -1;
+            var show = okYear && okNeedle;
+            card.style.display = show ? '' : 'none';
+            if (show) {
+              visible++;
+              var yy = card.getAttribute('data-year');
+              perYear[yy] = (perYear[yy] || 0) + 1;
+            }
+          });
+
+          Array.prototype.slice.call(document.querySelectorAll('section.year')).forEach(function (sec) {
+            var yy = sec.getAttribute('data-year');
+            sec.style.display = (perYear[yy] || 0) > 0 ? '' : 'none';
+            var c = sec.querySelector('.year-count');
+            if (c) c.textContent = String(perYear[yy] || 0) + ' itens';
+          });
+
+          count.textContent = String(visible);
+          empty.style.display = visible === 0 ? 'block' : 'none';
+        }
+
+        function setupShortcuts() {
+          var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+          hint.textContent = isMac ? 'Cmd+K' : 'Ctrl+K';
+          document.addEventListener('keydown', function (e) {
+            if ((isMac ? e.metaKey : e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+              e.preventDefault();
+              q.focus();
+            }
+          });
+        }
+
+        document.addEventListener('click', function (e) {
+          var t = e.target;
+          if (!t) return;
+          var txt = t.getAttribute && t.getAttribute('data-copy');
+          if (!txt) return;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(txt).then(function () {
+              var old = t.textContent;
+              t.textContent = 'Copiado';
+              setTimeout(function () { t.textContent = old; }, 900);
+            });
+          }
+        });
+
+        populateYearSelect();
+        renderAll();
+        setupShortcuts();
+        applyFilters();
+
+        q.addEventListener('input', applyFilters);
+        yearSel.addEventListener('change', applyFilters);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+Levantamento online (ultimos 5 anos) - muda e classificacao de idade em aves
+Gerado em: 2026-04-16
+
+Escopo
+- Periodo alvo: 2021-2026 (inclusive).
+- Topicos: estrategias/ciclos de muda, terminologia de muda e plumagens (H-P / Howell-Pyle), muda preformativa (incl. excentrica), limites de muda, muda-migracao, e criterios de envelhecimento/age-coding baseados em muda/plumagem (incl. WRP e aplicacoes).
+- Fontes usadas no levantamento: metadados via Crossref + paginas/DOIs de periodicos (quando acessivel). Observacao: algumas consultas a DOIs de periodicos bateram limite de requisicao (HTTP 429), entao recomenda-se confirmar metadados diretamente no DOI/jornal ao final.
+
+Artigos identificados (2026)
+1) Zuberogoitia, I.; Zabala, J.; Buechley, E. R.; McGrady, M.; Margalida, A.; Martinez, J. E.; Arkumarev, V.; Abad Gomez-Pantoja, J. M.; van Overveld, T.; Garcia-Alfonso, M.; Kovacs, A.; Morant, J.; De la Riva, M.; Rivas, J. L.; Oliva-Vidal, P.; Martinez, J. M.; Peshev, H.; Porter, R.; Dobrev, V.; Donazar, J. A. (2026). Balancing moult, migration, and breeding in a long-lived partially migrant raptor. Journal of Avian Biology 2026(2). https://doi.org/10.1002/jav.03590  [molt strategy; moult-migration-breeding tradeoffs]
+2) Barshep, Y.; Bitrus, K. Z.; Tieleman, B. I.; Nwaogu, C. J. (2026). Diet-manipulated body condition affects onset and speed of moult in common bulbuls in a tropical environment. Journal of Avian Biology 2026(1). https://doi.org/10.1002/jav.03522  [drivers of molt timing/rate]
+3) Klumpp, M. V.; Hegemann, A. (2026). Stable immune function during moult regardless of age-specific moulting strategy in a European passerine. Journal of Avian Biology 2026(1). https://doi.org/10.1002/jav.03531  [physiology during molt; age-specific strategies]
+4) Mezebish Quinn, T.; Badzinski, S.; Hobson, K.; Kilburn, J.; Kusack, J.; Paton, P.; Petrie, S.; Tozer, D.; McWilliams, S. (2026). Integrating telemetry data and stable isotope (delta2H) signatures to refine estimates of Greater Scaup breeding and molt origins. Avian Conservation and Ecology 21(1). https://doi.org/10.5751/ace-03041-210108  [molt origins; movement ecology]
+5) Depot, K. M.; Poole, A. F.; Purtell, G. (2026). A Photographic Guide to Plumage-Based Estimation of Nestling Age in Osprey. Journal of Raptor Research 60(2). https://doi.org/10.3356/jrr2590  [plumage-based ageing guide]
+
+Artigos identificados (2025)
+1) Mumme, R. L.; Mulvihill, R. S.; Norman, D. (2025). Sex- and age-related differences in post-breeding molt phenology are phylogenetically and ecologically widespread in passerines. Ornithology 143(1): 1-12. https://doi.org/10.1093/ornithology/ukaf039  [comparative molt phenology]
+2) Valeris-Chacin, C.; Zamorano-Escalona, T.; Chavez-Vasquez, K.; Rios-Robles, G.; Klesse, M.; Cornejo-Escobar, P.; Osorio, M.; Vasquez, R. (2025). Differences in molt timing, duration, and intensity between sexes in a Rufous-collared Sparrow population from central Chile. Journal of Field Ornithology 96(4). https://doi.org/10.5751/jfo-00689-960405  [sex differences in molt]
+3) Turner, S.; Tonra, C.; Dossman, B.; Shaikh, M.; Ciaburri, I.; Robinson, C.; Marra, P.; Reudink, M. (2025). Prealternate molt intensity and timing in six Nearctic-Neotropical migratory warblers. Journal of Field Ornithology 96(4). https://doi.org/10.5751/jfo-00699-960401  [prealternate molt variation]
+4) Adekola, O. E.; Ryan, P. G. (2025). Variation in wing and tail moult intensity in white-chinned petrels. Journal of Avian Biology 2025(1). https://doi.org/10.1111/jav.03327  [seabird flight-feather molt]
+5) Scher, R. L. (2025). The Second Prebasic Molt of a Ring-billed Gull at Anchorage, Alaska. Western Birds 56(4): 294-298. https://doi.org/10.21199/wb56.4.4  [second prebasic; ageing/ID]
+6) Spasic, A. N.; Viverette, C.; Bressette, A. K.; Zimba, P. V.; Johnson, E. I.; Caguazango, A.; Bayly, N.; Bulluck, L. P. (2025). Female ornamentation is correlated with weather conditions during molt in Protonotaria citrea: a 13-year study. Ornithology 142(4). https://doi.org/10.1093/ornithology/ukaf027  [molt-environment; plumage signal]
+7) Mumme, R. L.; Mulvihill, R. S.; Norman, D. (2025). Estimation of molt phenology under molt- and date-dependent sampling bias: conventional vs recapture-based methods. The Wilson Journal of Ornithology 137(4): 532-549. https://doi.org/10.1080/15594491.2025.2527999  [methods; molt phenology bias]
+8) Guzman, P. E.; Amedee, N. A.; Warr, H. M.; Linnell, R. J.; Waller, M. M.; Clayton, D. H.; Bush, S. E. (2025). Grooming time parallels molt intensity in wild-caught feral rock pigeons. Journal of Avian Biology 2025(4). https://doi.org/10.1002/jav.03489  [behavior vs molt intensity]
+9) Clark, W. S. (2025). Second replacement of proximal rectrices during the second prebasic molt of White-tailed Hawks in south Texas. The Wilson Journal of Ornithology 137(2): 218-223. https://doi.org/10.1080/15594491.2024.2444749  [rectrix replacement; ageing]
+10) Sokolovskis, K.; Piironen, A.; Laaksonen, T. (2025). Translocation experiment provides evidence for oblique social learning of moult migration (taiga bean geese). Journal of Avian Biology 2025(3). https://doi.org/10.1111/jav.03263  [molt-migration; social learning]
+
+Artigos identificados (2024)
+1) Perez, M.; Brandolin, P. (2024). Molt patterns, aging, and sexing criteria for ten temperate Neotropic bird species. Journal of Field Ornithology 95(3). https://doi.org/10.5751/jfo-00527-950309  [molt-based ageing/sexing criteria]
+2) Pyle, P.; Howell, S. N. G.; Rogers, D. I.; Corben, C. (2024). Moult terminology: envisioning an evolutionary approach. Journal of Avian Biology 2024(3-4). https://doi.org/10.1111/jav.03169  [terminology synthesis; H-P/Wolf-Pyle debates]
+3) Boersch-Supan, P. H.; Hanmer, H. J.; Robinson, R. A. (2024). Extended molt phenology models improve inferences about molt duration and timing. Ornithology 141(2). https://doi.org/10.1093/ornithology/ukae003  [methods; molt phenology modeling]
+4) Clark, C. J.; Areta, J. I.; Quiroga, J. (2024). Citizen science data reveal molt into drab nonbreeding plumage in five woodstar species. The Wilson Journal of Ornithology 136(3): 307-319. https://doi.org/10.1676/23-00064  [hummingbird plumage/molt transitions]
+5) Will, A.; McFarland, H.; Latty, C.; Powell, A. (2024). Migratory timing, route, and spring molt of Smith's Longspurs. Avian Conservation and Ecology 19(1). https://doi.org/10.5751/ace-02629-190113  [spring molt timing/location]
+6) Kim, H.; Siegel, R.; Stephens, J.; Hagar, J.; Furnas, B.; Jeong, M.-S.; McComb, B.; Betts, M. (2024). Molt-migration and migratory connectivity of Hermit Warblers. Avian Conservation and Ecology 19(2). https://doi.org/10.5751/ace-02622-190206  [molt-migration inference]
+7) Scher, R. L. (2024). Second Prebasic Molt of a Black-headed Gull at Anchorage, Alaska. Western Birds 55(1): 59-69. https://doi.org/10.21199/wb55.1.5  [second prebasic; ageing/ID]
+
+Artigos identificados (2023)
+1) Tattoni, D. J. (2023). An Eccentric Preformative Molt with Incomplete Replacement of Primary Coverts in a Dark-eyed Junco. Western Birds 54(3): 248-251. https://doi.org/10.21199/wb54.3.7  [eccentric preformative molt; molt limits]
+2) Rueda-Hernandez, R.; Guallar, S.; Pyle, P. (2023). Preformative molt extent of Cardellina warblers increases with breeding latitude and migration distance. The Wilson Journal of Ornithology 135(1): 46-55. https://doi.org/10.1676/22-00048  [predictors of preformative extent]
+3) Carnes, B.; Ash, A. (2023). Many Central American hummingbirds can be aged and sexed by molt patterns and bill corrugations. Journal of Field Ornithology 94(3). https://doi.org/10.5751/jfo-00305-940311  [ageing/sexing; molt + bill]
+4) Stewart, M.; Pyle, P.; Clark, W. (2023). Molt and body measurements for Gray Hawks in south Texas. Journal of Field Ornithology 94(4). https://doi.org/10.5751/jfo-00389-940410  [molt + morphometrics; ageing/sexing]
+5) Cockle, K.; Villalba, O.; Farina, N.; Bodrati, A.; Pagano, L.; Stein, E.; Norris, A. (2023). Non-breeding ecology of Common Nighthawk: habitat, activity, molt, and migration. Journal of Field Ornithology 94(3). https://doi.org/10.5751/jfo-00293-940308  [molt in full annual-cycle]
+6) Ferreira, D.; Figueira, L.; Cunha, F.; Lopes, L. (2023). Molt strategy and delayed plumage maturation in the Lined Seedeater. Journal of Field Ornithology 94(3). https://doi.org/10.5751/jfo-00310-940309  [delayed plumage maturation; ageing]
+
+Artigos identificados (2022)
+1) Abraham, E. C.; Paxton, E. H. (2022). Molt patterns, aging criteria, and molt-breeding seasonality of 8 native forest birds from Hawai'i. The Wilson Journal of Ornithology 134(3): 416-427. https://doi.org/10.1676/21-00062  [molt-based ageing criteria; seasonality]
+2) Pyle, P. (2022). Using Macaulay Library images to determine avian molt strategies: hummingbirds case study. The Wilson Journal of Ornithology 134(1): 52-65. https://doi.org/10.1676/21-00012  [photo-based inference of molt strategy]
+3) Harms, T. M.; Dinsmore, S. J. (2022). First documented molt migration of a wild Trumpeter Swan. The Wilson Journal of Ornithology 134(2): 352-358. https://doi.org/10.1676/21-00055  [molt migration]
+4) Clark, W. S. (2022). Atypical molt sequences among primaries of Harris's Hawks in south Texas. The Wilson Journal of Ornithology 134(4): 699-702. https://doi.org/10.1676/22-00028  [atypical sequences; ageing cautions]
+5) Vanausdall, R. A.; Collins, D. P.; Conway, W. C.; Kraai, K.; Mason, C. D.; Gunnels, J. W. (2022). Body condition and molt chronology of waterfowl in east central Texas. Journal of Field Ornithology 93(4). https://doi.org/10.5751/jfo-00178-930405  [molt chronology; waterfowl]
+6) Pyle, P.; Carnes, B. H. (2022). Molt strategies by age and subspecies in the Willow Flycatcher. Western Birds 53(3): 216-231. https://doi.org/10.21199/wb53.3.4  [molt strategy + ageing criteria]
+7) Tattoni, D. J.; LaBarbera, K.; Hathcock, C. D. (2022). Eccentric preformative molt in California and Canyon Towhees. Western Birds 53(2): 163-168. https://doi.org/10.21199/wb53.2.5  [eccentric preformative molt]
+
+Artigos identificados (2021)
+1) Ward, G. M.; Mahoney, S. M.; Joly, S.; Reudink, M. W. (2021). Effects of age and weather during moult on mountain bluebird structural coloration. Journal of Avian Biology 52(2). https://doi.org/10.1111/jav.02616  [molt conditions -> plumage signals]
+2) Hutton, P.; McKenna, J.; McGraw, K. J. (2021). Urban links to molt schedule, condition and carotenoid coloration in House Finch. Journal of Avian Biology 52(5). https://doi.org/10.1111/jav.02761  [molt schedule + condition]
+3) Terrill, R. S.; Fong, Y.; Wolfe, J. D.; Zellmer, A. J. (2021). Threshold models improve estimates of molt parameters in small samples. Ornithology 138(3). https://doi.org/10.1093/ornithology/ukab038  [methods; molt parameter estimation]
+4) Mumme, R. L.; Mulvihill, R. S.; Norman, D. (2021). High-intensity flight feather molt and comparative molt ecology of eastern North American warblers. Ornithology 138(1). https://doi.org/10.1093/ornithology/ukaa072  [comparative flight-feather molt ecology]
+5) Wolfe, J. D.; Terrill, R. S.; Johnson, E. I.; Powell, L. L.; Ryder, T. B. (2021). Ecological and evolutionary significance of molt in lowland Neotropical landbirds. Ornithology 138(1). https://doi.org/10.1093/ornithology/ukaa073  [molt as life-history axis; Neotropics]
+6) Guallar, S.; Rueda-Hernandez, R.; Pyle, P. (2021). Evolution of the preformative molt in Cardinalidae correlates with habitat transitions. Ornithology 138(1). https://doi.org/10.1093/ornithology/ukaa070  [preformative molt evolution]
+7) Scholer, M. N.; Kennedy, J. C.; Carnes, B. H.; Jankowski, J. E. (2021). Preformative molt, plumage maturation, and age criteria for 7 species of manakins. The Wilson Journal of Ornithology 133(3): 379-526. https://doi.org/10.1676/20-00125  [age criteria; manakins]
+8) Carnes, B.; Antezana Aponte, M.; Huayanca Munarriz, R.; Martinez, A. E. (2021). Preformative molt extent and aging/sexing criteria for eight hummingbird species in SE Peru. Ornitologia Neotropical 32(2): 106-115. https://doi.org/10.58843/ornneo.v32i2.867  [ageing/sexing; hummingbirds]
+9) Walker, B. L.; Schroeder, M. A. (2021). Atypical primary molt patterns in greater sage-grouse: implications for age classification. Wildlife Biology 2021(2). https://doi.org/10.2981/wlb.00855  [age classification; atypical molt]
+10) Fine, J.; VanBuskirk, R. L.; Parlapiano, J. B.; Baumann, M. J. (2021). Notes on age and Pluvialis molt in vagrancy documentation. Western Birds 52(2): 183-187. https://doi.org/10.21199/wb52.2.10  [ageing/ID notes; molt in documentation]
